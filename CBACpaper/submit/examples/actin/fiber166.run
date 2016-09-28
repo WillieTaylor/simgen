@@ -1,0 +1,13 @@
+NOMOVE
+PARAM actin.model
+END
+GROUP 0 4
+HELIX -16  -5    0.0     0
+INPUT actin.dat
+HELIX -16  -5  -27.5  -166
+INPUT actin.dat
+HELIX -16  -5  -55.0  -332
+INPUT actin.dat
+HELIX -16  -5  -82.5  -501
+INPUT actin.dat
+END

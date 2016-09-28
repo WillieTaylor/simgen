@@ -1,0 +1,6 @@
+SCALE 0.158 .633  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM his4sec.model
+PARAM dna4seg.model
+END
+INPUT nuc1seg.dat
+END

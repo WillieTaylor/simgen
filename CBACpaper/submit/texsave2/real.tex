@@ -1,0 +1,79 @@
+\subsection{Real data}
+
+In this section two examples are provided using known macromolecules.
+As the previous section used a globular protein structure, an example is
+taken firstly of an integral membrane protein to illustrate a different 
+combination of objects and secondly of an RNA structure to show how the
+different objects can be combined to represent nucleic acid structures.
+As the basic method implements only geometric constraints, both examples
+were extended to incorporate external distance constraints derived from
+the analysis of correlated mutations.  (See \cite{} for a review).
+
+\subsubsection{Rhodopsin}
+
+The first structure of an integral trans-membrane (TM) protein to be determined was
+that of bacteriorhodopsin and this protein and its much larger sister family,
+the opsins (including GPCR receptors), remains a favourite for testing
+modelling and prediction methods.
+
+These structures consist of 7-TM helices arranged in a simple bundle.  Each
+was modelled as an \AH\ confined in an tube, as described above for the
+small globular protein.   The seven tubes were then contained in a larger
+tube which had a diameter narrow enough to confine the helices in a compact
+packing arrangement in the plane of the membrane and long enought to allow 
+the helices to shift relative to each other to a reasonable extent up and
+down relative to the membrane.   Because the ends of the helical tubes are
+not constrained to lie wihtin their containing tube, they are still free to 
+twist relative to each other, as is commonly observerd in such structures.
+
+As an exercise in structure prediction, the helices were allowed to move
+under the influence of the pairwise residue constraints derived from the
+correlated mutation analysis, starting from a number of configurations
+obtained from combinatorial enumeration over a hexagonal lattice \cite{}.
+The resulting models were then ranked on how well they had satisied the
+given constraints.
+
+\begin{figure}
+\centering
+\subfigure[Score vs RMSD]{
+\label{Fig:secstr2DFS}
+\rotatebox{270}{
+\epsfxsize=160pt \epsfbox{figs/rhod/rms04.ps}
+}}
+\caption{
+\label{Fig:myo2DFS}
+{\bf Myosin-V structure.}
+The structure of dimeric myosin-V ({\tt 2DFS}), determined by single-particle cryo-electron microscopy
+is shown ($a$) with secondary structures represented in cartoon style (using {\small RASMOL}) with
+\AH\ coloured pink and \Bs s yellow.  ($b$) The same structure is shown as a virtual \CA\
+backbone with the two heavy chains coloured cyan and green and their associated light-chains
+in alternating yellow/orange and red/magenta, respectively.
+}
+\end{figure}
+
+The method was also applied to a protein of unknown structure, flhA, which is
+a component in the type-III secretion system.
+
+\subsubsection{SAM riboswitch}
+
+The structure of the S-adenylate-methionine (SAM) riboswitch is a small RNA involved
+in the control of something.   RNA secondary structure prediction methods produce
+a "clover-leaf" structure reminiscent of tRNA, and like that molecule, its structure
+can be viewed as two basepaired hairpins with each being an insertion into the other.
+Unlike the secondary structure prediction, the tertiary structure reveals an additional
+short region of base-pairing between the two hairpins (a pseudo-knot) which serves
+to lock the 3D structure.   Interestingly, these interactions are clearly predicted
+by the correlation analysis and, together with the more 'trivial' base-pairing
+correlations, were used as constraints for modelling.
+
+The predicted base-paired regions were set-up as tubes with the phosphates of the paired bases
+at either end of a smaller tube forming rungs of a ladder (as described above) and these stem-loops
+were then specified to be confined inside a larger sphere.    Random starting positions were taken
+for each of the stem-loops and under the influence of the confining pull (to move inside the
+sphere), their bonded phosphates and the imposed distance constraints, the stem-loop moved
+inwards and packed to best accommodate the constraints.    As not all the constraints can be
+simultaneously satisfied (due to possible prediction error), once inside the sphere,
+the longest constraints were gradually culled (with a stochastic bias to retain the
+strongest and those not within a stem-loop).   By the end of a short run, a compact
+structure remained and, as with the TM-protein predictions, after many runs, the structures
+were ranked on how well they satisfied the constraints.

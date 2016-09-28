@@ -1,0 +1,7 @@
+wireframe off
+backbone 10
+cpk 100
+select *A
+colour cyan
+select *B
+colour orange

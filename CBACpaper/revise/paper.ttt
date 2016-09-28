@@ -1,0 +1,41 @@
+\begin{table*}
+
+\centering
+\begin{tabular}{l|rrr|rrr||rrr|rrr|}
+$a$  & \multicolumn{12}{c}{\bf hard:soft = 50:20} \\
+     & \multicolumn{6}{|c||}{\bf subunit} & \multicolumn{6}{c|}{\bf domains} \\
+     & \multicolumn{3}{|c|}{no link} & \multicolumn{3}{c||}{link on}  & \multicolumn{3}{c|}{no link} & \multicolumn{3}{c|}{link on}\\
+\hline
+miss & 2.29 & 2.82 & 3.32 &   2.27 & 2.81 & 3.48 &      2.40 & 3.06 & 4.16 &   2.10 & 3.12 & 4.45 \\
+clip & 2.31 & 3.02 & 3.68 &   2.61 & 3.04 & 3.58 &      2.34 & 3.72 & 5.17 &   2.87 & 3.93 & 5.45 \\
+half & 2.60 & 3.82 & 5.01 &   2.48 & 3.84 & 5.18 &      2.48 & 3.84 & 5.18 &   3.02 & 4.71 & 8.28 \\
+full & 4.19 & 5.13 & 6.28 &   3.48 & 5.26 & 7.01 &      3.74 & 5.25 & 7.09 &   3.71 & 5.72 & 8.47 \\
+\hline \hline
+       \multicolumn{13}{c}{} \\
+$b$  & \multicolumn{12}{c}{\bf hard:soft = 100:20} \\
+     & \multicolumn{6}{|c||}{\bf subunit} & \multicolumn{6}{c|}{\bf domains} \\
+     & \multicolumn{3}{|c|}{no link} & \multicolumn{3}{c||}{link on}  & \multicolumn{3}{c|}{no link} & \multicolumn{3}{c|}{link on}\\
+\hline
+miss & 2.36 & 2.91 & 3.50 &   2.06 & 2.75 & 3.27 &      2.08 & 2.93 & 4.18 &   2.27 & 3.11 & 4.25 \\
+clip & 2.50 & 3.04 & 3.62 &   2.54 & 3.08 & 3.81 &      2.35 & 3.64 & 5.14 &   2.61 & 3.79 & 5.45 \\
+half & 2.63 & 3.60 & 4.83 &   2.35 & 3.68 & 4.76 &      2.73 & 4.40 & 7.63 &   2.78 & 4.37 & 6.65 \\
+full & 3.80 & 4.66 & 5.48 &   3.52 & 4.56 & 5.49 &      3.31 & 4.83 & 8.26 &   3.04 & 5.09 & 8.45 \\
+\hline \hline
+\end{tabular}
+\caption{
+\label{Tab:bumps}
+{\bf Collision induced distortions}.
+The RMSD values observed in the small chemotaxis-Y protein (PDB code: {\tt 3chy}) during the collision
+of two 8-domain/subunit collisions are tabulated as the minimum, average and maximum values when each
+domain is compared pairwise with each other before and after the collision.   Four degrees of collision
+severity were tested from a complete {\bf miss} through a glancing blow ({\bf clip}) to a {\bf half} face
+collision and finally an almost head-on collision ({\bf full}).    The models were tested both as individual
+{\bf subunit}s and as {\bf domains} linked in a Hilbert curve.   The 'loose' C-terminal \AH\ was either
+tethered ({\bf link on}) or free ({\bf no link}).    Two parameter combinations were tested with the
+{\bf hard:soft} repulsion ratio at both domain and secondary structure levels set to ($a$) 50:20 and ($b$)
+100:20, as a percentage of the unit weight at the atomic level.  The repulsion parameters for the
+highest protein level was held at the lower value of 20:10.
+}
+\end{table*}
+\efloatseparator
+ 

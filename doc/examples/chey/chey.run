@@ -1,0 +1,10 @@
+#NOMOVE
+#NORUN
+TINKER
+PUTPDB
+PARAM chey.model
+END
+GROUP 0 1
+INPUT chey.dat
+#LINKS local alpha.links
+END

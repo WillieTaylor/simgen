@@ -1,0 +1,235 @@
+I would like to thank the referees for their very careful and thoughtful evaluation of my work.
+They raise mainy useful points and focus in particular on the relationship of the method to
+other approaches (MD, MC, etc.) and how they can be combined and/or reconciled.
+
+This is also a relationship that I have been considering myself for some time and although I
+do not have any all-encompassing answers, there are some potential routes ahead that could
+be usefully discussed as I am sure may readers from the molecular dynamics community will be
+wondering the same things.
+
+If I have understood correctly, it would appear that reviewer-1 views the method as a "wrapper" 
+that is to be applied over/around conventional atomistic approaches.   This is indeed a possible 
+route along which the current work could develop but not a position that it has yet attained.
+(For many of the reasons identified by the referee).
+
+Firstly, I should clarify that if the sizes and shapes of the multi-level objects have been
+choosen correctly, then, left to itself, the current method will do nothing (ie: no object will
+move) and if there is motion, then that indicates that some bump-radius at some level is too
+large.
+
+It is left entirely up to the user how things should move, which is done by implementing some
+custom code in what is called the "driver" routine.   Now of course, this code could be 
+molecular dynamics, Lagrangian mechanics or Monte Carlo, or as implemented in the collision
+examples, a simple displacement of a single object.
+
+The problem with implementing anything complicated in the driver routine is that at some
+point, the current method will start to interfere with the (common) coordinates and if the
+driver code requires consistency in terms of distances and derived potentials, forces and
+velocities, then all the problems envisaged by the referee will arise.
+
+The simplest approach to this problem is to attach a warning notice stating that it cannot
+be used in combination with any method that requires global internal consistency.   The only
+route I can see to avoid this incompatibility would be through a Monte Carlo like approach
+in which the displacements made at all levels are treated as a (semi) random Monte Carlo
+move of the system.
+
+A second path to resolve the dielema might be through a variation of Gaussian elastic
+networks, as suggested by referee-1.   This indeed is the path I am currently following and
+am using the method in conjunction with a potential based network.    However, elastic
+networks require a fixed topology that cannot be expected to remain intact across the
+large displacements envisaged for the current method.
+
+
+
+Reviewer #1
+
+This work provides an improved method for fast collision detection in a multi-scale simulation setting.  The scale of the
+simulated systems is impressive due to clever use of geometrical rules suitable for the purpose of simulating biomolecules.
+Moreover, the results of the simulation model combined with contact prediction constraints are promising.
+The work tackles in principle an important problem for the simulation of systems of large (biomolecules),
+however the manner in which the problem is solved may have some serious drawbacks for most simulation approaches.
+
+My main concern with this work is that the purpose of the simulations that can use the developed collision detection is unclear,
+and is perhaps not well defined in the manuscript. Can the scheme be used in simulations that model Brownian motion, particle dynamics
+or sample the configurational space for models based on potentials with only repulsive (hard sphere) terms?
+Or may the scheme even be adapted for standard simulation approaches such as molecular dynamics or Monte Carlo that sample molecular
+systems with potentials that contain attractive terms?
+
+The reason that the purpose of the simulation is important, is that the underlying simulation model will dictate rules the simulation
+will need to adhere to, such as correct thermodynamic sampling (e.g. detailed balance) or correct particle dynamics.
+
+Moreover, it is not entirely clear if the multi-scale collision detection scheme is supposed to be lossless,
+in that it should only speed up a simulation of hard spheres, but not interfere with it; in this case the result obtained with the
+scheme should be in agreement with the simulation on the child nodes alone. This could be checked for the smaller systems.
+
+Nevertheless, some constraints on the scheme have been set in the abstract:
+
+“ … into a general method that allows points (atoms) to be contained within a variety of shapes but still retaining the property
+that the interaction (or collision) of these higher-level objects is based on contact between their component atoms ”
+
+However, it is not clear if it should read “ is only based on contact between their component atoms”; in other words, are the parental
+objects allowed to interfere with the simulation, or should they only function as bounding boxes?
+
+There are two ways in which the scheme interferes with the simulation; in both cases it is when parental objects have a direct effect
+on their children.
+    where translation, rotation etc from parental objects are transferred to the child nodes
+    where the child nodes are not allowed to leave the volume of the parental object, implemented by the ‘keeper’ routine.
+Both effects will make it difficult to implement the scheme as part of standard MD or MC approaches, as they will interfere with the simulation model.
+
+However, for the first effect the scheme may in fact estimate a true hard sphere simulation, if the parental objects were given an effective
+potential for the collective behaviour of the child nodes; it would be possible to make estimates for such potentials, see for example ref  [Bolhuis et. al.]
+
+The second effect is more problematic, as it would make the model intrinsically unsuitable for either the investigation of dynamic behaviour
+(as the dynamics are not conserved by this procedure) or sampling of the full configurational space (as the parent object effectively reduces
+and interferes with the possible degrees of freedom of the child objects).
+A possible solution to this problem would be the adjustment of the parent object, rather than the location of the child - however the suitability
+of this approach can only be tested if the purpose of the simulation is well defined.
+
+On the other hand, the bounding parental objects, may indeed give an advantage in coarse-grained simulation of biomolecules by preventing severe
+restructuring of child elements; this would for example be similar to how elastic networks are used to constrain (coarse-grained) MD simulations.
+However, for most simulation purposes it would be better to make such constraints explicit, in terms of an explicit bias or energy potential - such
+that corrections can be made afterwards, rather than modifying the simulation steps which would typically lead to unwanted effects in both MD and MC simulations.
+
+In conclusion, the work provides a promising scheme for collision detection, but its applicability to commonly used simulation techniques is unclear.
+
+
+Recommendations:
+
+Define the type of simulations that may use the collision detection scheme more precisely. Then show if the current collision detection adheres
+to the simulation model with some explicit results (e.g. for the purpose of sampling the configurational space, compare a simulation based on the child
+objects alone with one where the parental objects are used).
+
+Define more clearly if the speed up in collision detection should in principle be lossless, in that the parameters should only affect the
+precision of the results, but not the fundamental outcomes compared to simulation of the lowest level objects.
+
+Add a discussion of what changes need to be made, if this technique was to be used in more commonly used simulation techniques such as MD or
+MC with attractive potentials.
+
+Add a discussion on advantages and disadvantages of allowing parental objects to change the paths of the child nodes, possibly suggesting any
+alternatives to the current implementation.
+
+Some references that may aid the suggested discussion:
+Example of importance of simulation of hard spheres, sampling the configurational space carefully.
+
+    Eldridge,
+     M. D., P. A. Madden, and D. Frenkel. "Entropy-driven formation of a superlattice in a hard-sphere binary mixture." Nature 365, no. 6441 (1993): 35-37
+
+
+    Example of
+     patchy coloid system, using tubes with hemispheres, giving interesting ‘system’ results.
+
+
+    Vácha,
+     Robert, Sara Linse, and Mikael Lund. "Surface effects on aggregation kinetics of amyloidogenic peptides." Journal of the American Chemical Society 136, no. 33 (2014): 11776-11782.
+
+    DOI:
+     10.1021/ja505502e
+
+
+
+    This article
+     shows how polymers composed of hard elements can result in jelly like effective potentials with a softer repulsive term.
+
+    Bolhuis,
+     P. G., A. A. Louis, J. P. Hansen, and E. J. Meijer. "Accurate effective pair potentials for polymer solutions." The Journal of Chemical Physics 114, no. 9 (2001): 4296-4311.DOI:http://dx.doi.org/10.1063/1.1344606
+
+
+
+    Example of
+     an elastic network used as a geometric constraint in a coarse grained simulation. Here the constraint is added as a force field (or energy potential).
+
+
+    Periole,
+     Xavier, Marco Cavalli, Siewert-Jan Marrink, and Marco A. Ceruso. "Combining an elastic network with a coarse-grained molecular force field: structure, dynamics, and intermolecular recognition." Journal of Chemical Theory and Computation 5, no. 9 (2009): 2531-2543.
+
+
+
+    Another example
+     of simple patchy colloid models of protein, with important results.
+
+    Gögelein,
+     Christoph, Gerhard Nägele, Remco Tuinier, Thomas Gibaud, Anna Stradner, and Peter Schurtenberger. "A simple patchy colloid model for the phase behavior of lysozyme dispersions." The Journal of chemical physics129, no. 8 (2008): 085102.
+
+
+
+    The list of
+     references on coarse-grained protein and DNA models is not very extensive; adding a few recent references may help this work be noticed in the right community.
+
+
+
+Minor comments:
+
+    Page 3 ‘single
+     sphere’ - in fact some patchy colloids systems may give interesting results for the behaviour of larger systems of biomolecules, see for example [Vacha et. al., Gögelein et. al.]
+
+    page 4 ‘..
+     on the ”world” coordinate frame is less relevant ’. Even though an arbitrary coordinate frame may be less relevant and is certainly less elegant, such an approach may be more efficient computationally due to its simplicity - to make any conclusions, this should
+     probably be tested.
+
+    page 5 -  pipe
+     with hemispherical end-caps has been used before to model parts of protein structures,  perhaps cite [Vacha et. al.]
+
+    page 6 - a
+     schematic drawing may help to explain the couplings of different levels of the hierarchy in the simulation.
+
+    Section 2
+     is very detailed and long - perhaps a focus on the most important advances (ellipsoid calculations) may show the importance of these results more effectively; the other parts could be available through via supplemental material. On the other hand, a description
+     of the simulation scheme itself seems to missing [on lowest level object alone].
+
+    page 27 -
+     typo ‘these constructs was engineered’ 
+
+    page 33, section
+     3.2 - details on how the distance constraints are added to the simulation are not given; please consider adding a section in the methods to describe this.
+
+    page 34, section
+     3.2.1, last paragraph - it is unclear which protein is referred to in this last section
+
+    page 36, caption
+     figure 5 which PDB is used for the calculations?
+
+    page 39, Figure
+     7 - what do the red and blue colours mean?
+
+    page 41 -
+     “...loss of fine detail” - perhaps the current scheme also does not fully solve this problem, due to the way it may interfere with a simulation model (see above).
+
+    There is a
+     reference to the source code, but no link is provided. Is it available?
+
+
+
+
+Reviewer #2
+
+The paper by William Taylor describes a coarse-graining approach directed at proteins and nucleic acids.
+The approach uses hierarchical levels of bounding objects to enclose more fine-grained objects.
+
+The bounding objects comprise of spheres, tubes and ellipsoids as it is argued that these shapes are well
+suited to enclose shapes frequently encountered in biomolecules.
+The approach avoids the evaluation of interactions between non-overlapping higher-order objects and thus saves
+computational time, but retains the lower-level detail that is evaluated for inter-penetrating bounding objects.
+It is highlighted, that similar strategies are used successfully in computer graphics.
+
+The study goes on to optimize coupling parameters between different hierarchical levels in order to reproduce
+collision events between multimeric proteins. Subsequently, the higher-order bounding objects are used as constraints
+for structure prediction for the case of transmembrane proteins as well as folded nucleic acid riboswitches.
+
+I think coarse-graining strategy outlined in the manuscript is novel and interesting, although it is at a very
+early level of refinement. I don’t think this is a problem and is clearly stated by the author.
+
+While I think that the structure refinement test cases are interesting, I am not entirely sure which biological processes
+the collision simulations are supposed to mimic. Due to their interaction with an aqueous environment, high-speed collisions
+of proteins (outside maybe some mass spectrometry techniques) seem to me unlikely to have any biological relevance.
+
+In my opinion, few sentences could be added to the discussion as to how to model solvent interactions on a higher
+hierarchical level. Maybe a friction process corresponding to diffusion of different shapes or surface area etc.
+might be introduced at a coarse level. I don’t insist on friction being the right thing to do, but I think that some
+thought and space should be devoted to the issue of solvent in the discussion.
+The aqueous environment is crucially important for biological processes.
+
+Overall, I think the manuscript describes an interesting approach to coarse graining specifically directed at biomolecules.
+It is clear and easy to read, describes the applied strategies and procedures in detail and shows some test cases in which
+the procedures can be applied successfully. I highly recommend that the paper be published with some minor revisions
+addressing issue of solvation.
+

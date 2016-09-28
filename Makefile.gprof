@@ -1,0 +1,61 @@
+# run with profiling tool
+# 
+# run program (./main) to write file gmon.out
+# run gprof as:
+# gprof ./simprot gmon.out > gprof.log
+#
+
+main  : main.cpp potter.o driver.o looker.o minder.o params.o models.o viewer.o shaker.o keeper.o linker.o bumper.o sorter.o fixers.o util.o cell.o data.o geom.o util.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -pg -O2 main.cpp -o main potter.o driver.o looker.o minder.o params.o models.o viewer.o shaker.o keeper.o linker.o bumper.o sorter.o fixers.o util.o cell.o data.o geom.o -lGL -lGLU -lglut -lpthread -lm
+
+
+potter.o : potter.cpp util.hpp data.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -pg -O2 potter.cpp
+
+driver.o : driver.cpp util.hpp data.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -pg -O2 driver.cpp
+
+looker.o : looker.cpp util.hpp data.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -pg -O2 looker.cpp
+
+minder.o : minder.cpp util.hpp data.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -O3 minder.cpp
+
+params.o : params.cpp util.hpp data.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -pg -O2 params.cpp
+
+models.o : models.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -pg -O2 models.cpp
+
+viewer.o : viewer.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -pg -O2 viewer.cpp
+
+shaker.o : shaker.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -pg -O2 shaker.cpp
+
+keeper.o : keeper.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -pg -O2 keeper.cpp
+
+linker.o : linker.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -pg -O2 linker.cpp
+
+bumper.o : bumper.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -pg -O2 bumper.cpp
+
+sorter.o : sorter.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -pg -O2 sorter.cpp
+
+fixers.o : fixers.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -pg -O2 fixers.cpp
+
+cell.o : cell.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -pg -O2 cell.cpp
+
+data.o : data.cpp util.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -pg -O2 data.cpp
+
+geom.o : geom.cpp util.hpp geom.hpp Vec.hpp Mat.hpp
+	c++ -c -pg -O2 geom.cpp
+
+util.o : util.cpp util.hpp
+	c++ -c -pg -O2 util.cpp

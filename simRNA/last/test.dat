@@ -1,0 +1,6 @@
+PARAM test.model
+END
+GROUP 0  1
+INPUT stem.bit
+
+LINKS local link.all

@@ -1,0 +1,9 @@
+#NORUN
+#NOMOVE
+#NOVIEW
+SCALE 0.15
+PARAM stem.model
+END
+GROUP 0 1
+INPUT stem.dat
+#LINKS pdbid pairs.dat

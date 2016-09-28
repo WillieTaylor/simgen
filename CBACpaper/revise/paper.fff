@@ -1,0 +1,508 @@
+\begin{figure*}
+[h]
+\centering
+\begin{singlespace}
+\begin{tiny}
+\begin{Verbatim}[frame=single]
+int Cell::bumpin () {
+// the children of the current cell <this> are checked for intra-family bumps
+// <level> is the position in the hierarchy of the current object
+// <depth> is the atomic (lowest) level
+       :
+       kidlev = level+1;
+       :
+       FOR(i,in) { Cell *a = list[i].a, *b = list[i].b;
+               bump = touch(a,b); // -ve is bad
+               if (bump > -NOISE) continue; // ignore touching objects
+               if (kidlev<depth) m = bumpex(a,b); else m = 0;  // bumping a+b children parted in bumpex()
+               if (exempt(a,b)) continue;      // exempt parents (exempt atoms are skipped in getBumpin())
+               // the pair (a,b) are bumping so repel with a kick using the number of bumping children (m)
+               //      unless weight=0 then just use unmodified <soft> value
+               if (weight) { // Gaussian switch from soft to hard with increasing <m>
+                       d = (float)m; f = exp(-d*d*0.01);
+                       boot = f*soft + (1.0-f)*hard;
+                       boot *= kick;
+               } else { boot = soft; }
+               d = (a->xyz|b->xyz)-bump*over; // clash = -ve bump
+               part2cells(a,b,d,-boot); // -kick = repel only
+               :
+       }
+}
+\end{Verbatim}
+\end{tiny}
+\end{singlespace}
+\caption*{
+Box 1:
+\label{Fig:box1}
+\begin{footnotesize}
+{\bf Code for the {\ttfamily \bfseries bumpin()} routine} which repels colliding children within the current
+object ({\tt Cell} structure).  The routine is called recursively over the tree of objects.   When two
+children are in collision, their combined children are evaluated for collisions by {\tt bumpex()}
+(see below and Box 2) which returns the number of collisions detected between the families.
+\end{footnotesize}
+}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+[h]
+\centering
+\begin{singlespace}
+\begin{tiny}
+\begin{Verbatim}[frame=single]
+int bumpex ( Cell *a, Cell *b ) {
+// the children of the cell <a> and <b> are checked for inter-family bumps
+float   strength = 0.1;
+        :
+        kidlev = level+1;
+        if (kidlev==depth) kick = hard; else kick = soft;
+        axis = b->xyz - a->xyz;
+        axis.setVec(soft);        // <soft> length vector from a to b (NB has to be set at atom level)
+        :
+        FOR(i,a->kids) { Cell* ai = a->child[i];
+                FOR(j,b->kids) { Cell* bj = b->child[j];
+                        if (exempt(ai,bj)) continue;
+                        bump = touch(ai,bj);
+                        if (bump > -NOISE) continue; // ignore touching objects
+                        d = (ai->xyz|bj->xyz)-bump*over; // d = target gap (NB clash has -ve bump)
+                        moveCell(ai,axis,-1);        // nudge ai towards a
+                        moveCell(bj,axis, 1);        // nudge bj towards b
+                        part2cells(ai,bj,d,-kick*strength); // -kick = repel only
+                        :
+                        bumpex(ai,bj);
+                        n++;
+                }
+        }
+        return n;
+}
+\end{Verbatim}
+\end{tiny}
+\end{singlespace}
+\caption*{
+Box 2:
+\label{Fig:box2}
+\begin{footnotesize}
+{\bf Code for the {\ttfamily \bfseries bumpex()} routine} which repels colliding children between two objects ({\tt Cell}s).
+The routine is called from {\tt bumpin()} and acts recursively on pairs of colliding children and their children.
+\end{footnotesize}
+}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+[h]
+\centering
+\begin{singlespace}
+\begin{tiny}
+\begin{Verbatim}[frame=single]
+float touch ( Cell *a, Cell *b )
+{ // closest approach between two object surfaces
+  // +ve = separation, -ve = penetration depth
+       :
+       rab = ra + rb;  // average of bump radii
+       tab = ta * tb;  // product of object types
+       if (tab>1) s = Seg(b->endN,b->endC);
+       switch (tab) {
+               case 1: // spheres = centre distance
+                       return (pa|pb)-rab;
+               case 2: // sphere+tube (closest approach to line segment or ends)
+                       if (pa.vec_in_seg(s)) return pa.vec_to_line(s)-rab;
+                       return fmin(pa|s.A,pa|s.B) - rab;
+               case 3: // sphere+ellipsoid (in keeper.cpp)
+                       return vec_to_egg(pa,s,db) - ra;
+               case 4: // tubes = closest approach of 2 line segments
+                       return seg_to_seg(Seg(a->endN,a->endC),Seg(b->endN,b->endC))-rab;
+               case 6: // tube+ellipsoid (in bumper.cpp)
+                       return tube_to_egg(a,b);
+               case 9: // ellipsoid (in bumper.cpp)
+                       return egg_to_egg(a,b);
+       }
+}
+\end{Verbatim}
+\end{tiny}
+\end{singlespace}
+\caption*{
+Box 3:
+\label{Fig:box3}
+\begin{footnotesize}
+{\bf Code for the {\ttfamily \bfseries touch()} routine} which returns the distance between the surfaces of two objects.
+Each combination of the three object types: sphere, tube, ellipsoid (coded 1,2,3), are treated separately.
+\end{footnotesize}
+}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+[h]
+\centering
+\epsfxsize=300pt \epsfbox{figs/geom/ellipse.eps}
+\caption*{
+Box 4:
+\label{Fig:box4}
+\begin{footnotesize}
+{\bf Construct for the {\ttfamily \bfseries inEgg()} routine} which determines if a sphere and an ellipsoid make contact.
+The point {\tt o} is the centre of a sphere lying outside an ellipsoid with major axis
+length {\tt a} and minor axis length {\tt b}.  The ellipse (blue) lies in the plane of the ellipsoid axis of rotational
+symmetry and the point {\tt o}, with foci are marked as {\tt f1} and {\tt f2}.   If {\tt d} is the distance from a
+focus to the minor axis end-point, and {\tt c} is the focus to centre distance, then the length of a focus1-surface-focus2
+path along the major axis is {\tt c+a+(a-c)} = 2{\tt a} and at the minor axis is 2{\tt d}.  Since the paths are equal: {\tt d} = {\tt a};
+so {\tt c}$^2$ =  {\tt d}$^2$-{\tt b}$^2$ = {\tt a}$^2$-{\tt b}$^2$ and {\tt c} = {\tt sqrt(a$^2$-b$^2$)}.  Knowing {\tt c},
+the path to {\bf o} (dashed) can be found and if this is less than 2{\tt a}, the point lies inside, otherwise out.  However,
+we want the surface of the sphere not its centre, but the locus of the centre of a sphere (with radius {\tt r}) in contact with an
+ellipsoid is also an ellipsoid, so modifying the semi-axis lengths to {\tt a}+{\tt r} and {\tt b}+{\tt r} gives the required result.
+\end{footnotesize}
+}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+[h]
+\centering
+\begin{singlespace}
+\begin{tiny}
+\begin{Verbatim}[frame=single]
+float tube_to_egg ( Cell *a, Cell *b ) {
+// returns an approximation to the closest approach of a tube <a> to an ellipsoid <b> surface
+// NB the value returned by inEgg() is not a surface distance but is zero on the surface
+// NB assumes radially symmetric ellipsoid
+       :
+       p1 = a->endN; p2 = a->xyz; p3 = a->endC;
+       DO { float d;
+               d1 = inEgg(p1,cb,sizeb);
+               d2 = inEgg(p2,cb,sizeb);
+               d3 = inEgg(p3,cb,sizeb);
+               if (d1<0 || d2<0 || d3<0) return -999.9; // flag bump;
+               d = p1|p3;
+               if (d < 0.01) { // pretty close
+                       d = vec_to_egg(p2,cb,sizeb);
+                       return d - sizea*0.5;
+               }
+               if (d1+d2 < d2+d3) {
+                       p3 = p2; p2 = p1 & p2;
+               } else {
+                       p1 = p2; p2 = p3 & p2;
+               }
+       }
+}
+\end{Verbatim}
+\end{tiny}
+\end{singlespace}
+\caption*{
+Box 5:
+\label{Fig:box5}
+\begin{footnotesize}
+{\bf Code for the {\ttfamily \bfseries tube\_to\_egg} routine} that determines if a tube and an ellipsoid make contact.
+The method uses the fast {\tt inEgg()} routine (Box 4) to check for contact and if none is found, returns the separating
+distance using the {\tt vec\_to\_egg()} routine which is based on the algorithm described at:
+{\tt http://www.iquilezles.org/www/articles/ellipsedist/ellipsedist.htm}.
+\end{footnotesize}
+}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+[h]
+\centering
+\epsfxsize=410pt \epsfbox{figs/geom/ellipsoid.eps}
+\caption*{
+Box 6:
+\label{Fig:box6}
+\begin{footnotesize}
+{\bf Construct for the {\ttfamily \bfseries egg\_to\_egg()} routine} that determines if two ellipsoid make contact.
+The progressively smaller inscribed triangles do not lie on the same plane but on the surface of the ellipsoid
+as calculated by the {\tt shell()} routine described in Box 7.   The first division generates four triangles
+(bold black lines) and separation of their mid-points, projected on the surface (black dots) is measured between
+the two ellipsoids.   The triangles associated with the closest pair are then sub-divided in a similar way
+(fine lines) and by the third of fourth division, the midpoints lie close to the contact normal between the
+two surfaces (green line).
+\end{footnotesize}
+}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+[h]
+\centering
+\begin{singlespace}
+\begin{tiny}
+\begin{Verbatim}[frame=single]
+Vec sholl ( Vec line, Vec cent, float A, float B, Vec axis ) {
+// returns the point on the ellipsoid (<axes> = A>B=C at 0) surface cut by a <line> from the <cent>re
+Vec    surf;
+float  AA=A*A, BB=B*B, aa,bb,b, d,ff,gg,hh;
+/*
+in the plane of the major axis (A) and the <line> with components a,b to A,
+the point where the line cuts the surface has corresponding components g,h.
+Now    gg/AA + hh/BB = 1
+and    g/a = h/b
+so     gg = AA(1-hh/BB) = aa.hh/bb
+       AA - hh.AA/BB = hh.aa/bb
+       AA = hh.aa/bb + hh.AA/BB
+       hh = AA/(aa/bb+AA/BB)
+*/
+       line -= cent;                                   // shift line to origin
+       b = line.vec_to_line(axis);                     // perpendicular dist from line to axis
+       bb = b*b;
+       ff = line.sqr();
+       aa = ff-bb;
+       hh = AA/(aa/bb+AA/BB);
+       gg = aa*hh/bb;
+       d = sqrt((gg+hh)/ff);
+       surf = line*d;                                  // extend <line> to ellipsoid surface
+       return cent+surf;                               // added back to centre
+}
+\end{Verbatim}
+\end{tiny}
+\end{singlespace}
+\caption*{
+Box 7:
+\label{Fig:box3}
+\begin{footnotesize}
+{\bf Code for the {\ttfamily \bfseries sholl()} routine} which returns the point at which a line from the
+centre cuts the ellipsoid surface.  This routine is specific for a prolate ellipsoid but is called inside
+a wrapper called {\tt shell()} that reconfigures the parameters to deal with any ellipsoid.
+\end{footnotesize}
+}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+[h]
+\centering
+\begin{singlespace}
+\begin{tiny}
+\begin{Verbatim}[frame=single]
+int packBall ( Cell* cell, Cell* child, float strict )
+{
+       :
+       radius -= model->sizes[child->level]*0.5;       // keep totally inside
+       if (push < -NOISE) shell = 1;                   // confine to shell (+/-margin)
+                else      shell = 0;                   // confine inside
+       :
+       shift = cell->xyz - child->xyz;                 // shift from child to zero
+       d = shift.len();                                // distance from child to parent
+       if (shell) {
+               if (d>radius*margin && d<radius*margout) return 0; // in the margin zone
+               if (d > radius) push = -push;           // outside the sphere (so pull)
+       } else {
+               if (d < radius*margout) return 0;       // within the sphere
+       }
+       shift *= push;
+       child->move(shift);
+       return 1;
+}
+
+\end{Verbatim}
+\end{tiny}
+\end{singlespace}
+\caption*{
+Box 8:
+\label{Fig:box8}
+\begin{footnotesize}
+{\bf Code for the {\ttfamily \bfseries packBall()} routine} that confines objects inside a sphere.
+The objects are confined by their centres plus their radius or the shorter of their semi-axis lengths.
+This only corresponds exactly to their surface for a sphere, so the ends of tubes and oblate ellipsoids
+can extend beyond their enclosing surface.
+The {\tt shell} flag sets the option for them to be confined at the surface.
+\end{footnotesize}
+}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+
+\centering
+\subfigure[64+64]{
+\epsfxsize=190pt \epsfbox{figs/cube/crash2.eps}
+}
+\subfigure[512+512]{
+\epsfxsize=192pt \epsfbox{figs/cube/crash3.eps}
+}
+\subfigure[4096+4096]{
+\epsfxsize=390pt \epsfbox{figs/cube/crash4.eps}
+}
+\caption[]{
+\label{Fig:cubes}
+\begin{footnotesize}
+{\bf Idealised chain collisions} of increasing size. $a$) Two 64 atom chains are directed into each
+other from left and right.   Groups of 8 atoms are enclosed in 8 transparent green virtual spheres
+which in turn are enclosed in a larger red sphere.  $b$) A third level is added to the hierarchy
+with the virtual spheres and atoms now coloured by their collision state: dark-blue designates no
+clash while cyan to green to yellow colours are associated with collisions of increasingly distant
+relatives.  Cyan = same parent (cousins), green = second cousins, yellow = third. $c$) The number
+of levels is increased to four but with smaller atoms and the virtual spheres not rendered to allow
+the distribution of clashes to be visualised at the atomic level.  The colliding bodies remain distinct
+with only occasional flashes of red (fourth cousins) indicating clashes between atoms in the collision
+interface (which runs bottom left to top right).   The distortion of the structures has been
+distributed evenly through many localized (green) interactions.
+\end{footnotesize}
+}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+
+\centering
+\subfigure[]{
+\epsfxsize=190pt \epsfbox{figs/prot/net3chy.eps}
+}
+\subfigure[]{
+\epsfxsize=190pt \epsfbox{figs/prot/bad3chy.eps}
+}
+\caption[]{
+\label{Fig:bumps}
+\begin{footnotesize}
+{\bf Small globular protein Che-Y} used for testing.
+$a$) The \CA\ backbone is drawn in a ball-and-stick representation with secondary structures
+contained in transparent tubes: red = \AH, green = \Bs s and cyan = loops.  Residues in these
+tubes are restrained to lie at the surface but only weakly for loops.   Thin lines connect
+residues in \A\ and \B\ elements that are hydrogen-bonded.   In some of the tests, an additional
+link was added between the two loop segments that connect domains (horizontal line lower-front).
+The ellipsoid that contains the whole domain is rendered as a feint mesh.
+$b$) Superposition of structure before and after collision represented by a stick \CA\ backbone
+and ball-and-stick backbone, respectively.   The chains are coloured from amino (blue) terminus
+through the spectrum to the carboxy (red) terminus.  The largest deviation is seen in the
+C-terminal \AH\ which contributed most to the overall 5\AA\ root mean square deviation.
+This level was set as a target threshold to remain below.
+\end{footnotesize}
+}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+
+\centering
+\subfigure[]{
+\epsfxsize=190pt \epsfbox{figs/prot/bump1.eps}
+}
+\subfigure[]{
+\epsfxsize=190pt \epsfbox{figs/prot/bump2.eps}
+}
+\subfigure[]{
+\epsfxsize=190pt \epsfbox{figs/prot/bump3.eps}
+}
+\subfigure[]{
+\epsfxsize=190pt \epsfbox{figs/prot/bump4.eps}
+}
+\caption[]{
+\label{Fig:bumps}
+\begin{footnotesize}
+{\bf Multi-domain protein collisions}.  Two 8256 residue chains, aranged as 64 domains each in a
+Hilbert curve, are directed into each other.  The frames $a$---$d$ show the progression of the
+collision from initial contact to the point where the structures are almost past each other.
+Pairs of colliding objects are coloured by their separation in the structural hierarchy (as described
+in Figure 1) from green for first-cousins through yellow, red and magenta for inreasing levels or removal.
+\end{footnotesize}
+}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+
+\centering
+\subfigure[rhodopsin]{
+\label{Fig:rhod-model}
+\epsfxsize=140pt \epsfbox{figs/rhod/rhod.eps}
+}
+\subfigure[FlhA]{
+\label{Fig:flhA-model}
+\epsfxsize=211pt \epsfbox{figs/rhod/ring.eps}
+}
+\caption{
+\label{Fig:TMmodels}
+{\bf Transmembrane proteins} were modelled as \AH\ tubes inside a "kinder-surprise"
+confining tube (yellow), the axis of which lies perpendicular to the membrane plane.
+$a$) A model of rhodopsin with 7-TM helices.
+$b$) A model of the type-III secretion protein FlhA which is predicted to have 8-TM helices
+and is thought to form a ring of nine copies in the membrane forming a pore.
+}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+
+\centering
+\subfigure[Score vs RMSD]{
+\label{Fig:rhod-score}
+\epsfxsize=270pt \epsfbox{figs/rhod/rmsds.eps}
+}
+\subfigure[rhodopsin model]{
+\label{Fig:rhod-super}
+\epsfxsize=120pt \epsfbox{figs/rhod/super.eps}
+}
+\caption{
+\label{Fig:rhod-pred}
+{\bf Rhodopsin predictions}
+$a$) The RMSD of the predicted models (X-axis) is plotted against how well each model matches
+the constraints derived from the correlated mutation analysis (Y-axis: high is good, with
+the score of the native structure marked by a green line).
+Blue dots are from the current modelling method with red dots calculated by the FILM3
+method.  The RMSD is over the TM-helices only.
+$b$) The highest scoring rhodopsin model is superposed on the native structure (PDB code {\tt 1GZM}).
+Both structures are shown as a virtual \CA\ backbone coloured blue (amino) to red (carboxy)
+with the \CA\ positions rendered as small spheres on the predicted structure.
+The helices lie close together but deviations can be seen in the loops and at the termini.
+}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+
+\centering
+\subfigure[0]{
+\label{Fig:ribo0}
+\epsfxsize=212pt \epsfbox{figs/ribo/rna0.eps}
+}
+\subfigure[5]{
+\label{Fig:ribo1}
+\epsfxsize=178pt \epsfbox{figs/ribo/rna1.eps}
+}
+\subfigure[20]{
+\label{Fig:ribo2}
+\epsfxsize=220pt \epsfbox{figs/ribo/rna2.eps}
+}
+\subfigure[100]{
+\label{Fig:ribo3}
+\epsfxsize=171pt \epsfbox{figs/ribo/rna5.eps}
+}
+\caption{
+\label{Fig:myo2DFS}
+{\bf SAM riboswitch simulation} in which the phosphate backbone (silver) is linked by
+thin green tube when basepaired (or cyan for loops) with basepaired regions (stem-loops)
+contained inside red tubes.  The blue central sphere is the target volume inside which
+stem-loops aim to be contained.   At the start ($a$, time 0), the phosphates are in their
+flat predicted secondary structure positions.   Thin lines link pairs of phosphates with
+a target distance constraint with most corresponding to basepaired nucleotides.
+The system is simulated with random, but decreasing motion, applied to the stem-loop tubes
+and the structure moves rapidly to a packed conformation inside the target sphere
+(frames $b$ to $d$).
+}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}
+
+\centering
+\subfigure[]{
+\label{Fig:ribo-score}
+\epsfxsize=235pt \epsfbox{figs/ribo/score.eps}
+}
+\subfigure[]{
+\label{Fig:ribo-model}
+\epsfxsize=155pt \epsfbox{figs/ribo/best.eps}
+}
+\caption{
+\label{Fig:ribo}
+{\bf SAM riboswitch models:} $a$) are scored by how well they fit the top 50 constraints
+and this value (Y-axis) is plotted against the RMSD of the model from the known structure.
+The blue dots mark models that started from the 'default' secondary structure layout
+(Figure 6a) and the red dots started from the alternative arrangement with two stemloops
+(top and right) in swapped positions.
+$b$) The phosphate backbone of a high scoring model (ball and stick) is superposed on the
+known structure (stick).  Both chains are coloured blue ($5'$) to red ($3'$).
+The cyan and yellow segments (towards the front) incorporate the long-range links that
+form the pseudo-knot.
+}
+\end{figure*}
+\efloatseparator
+ 

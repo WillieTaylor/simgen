@@ -1,0 +1,8 @@
+NORUN
+#NOMOVE
+SCALE 0.15
+PARAM dnaseg.model
+END
+GROUP 0  1
+INPUT dnaseg.dat
+END

@@ -1,0 +1,5 @@
+The method developed here provides a fast and flexible way to capture the
+structure of most macromolecules in a hierarchy of increasingly larger coarse-grained
+levels without losing the detailed low-level representation.   Although much testing
+remains to be done, the system has the potential to be applied to very large dynamic
+systems including both protein and nucleic acids.

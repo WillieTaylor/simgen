@@ -1,0 +1,6 @@
+wireframe off
+backbone 10
+cpk 15
+colour group
+set picking monitor
+label %r

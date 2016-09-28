@@ -1,0 +1,11 @@
+RNA
+          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,  	// align : 1 = call to realign() for SSEs
+	  0,    1,    2,    1,    0,    0,    0,    0,    0,    0,  	// types : type for each level, -ve = wire
+        300,  200,  100,    5,    0,    0,    0,    0,    0,    0,  	// sizes :(diamater = []/10, grid = size*2)
+	  0,  200,  100,   45,    0,    0,    0,    0,    0,    0,  	// bumps :(11 = i-->i+2 dist in alpha)
+	  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,  	// links : number of assigned slots
+	  0,    0,    0,    1,    0,    0,    0,    0,    0,    0,  	// chain :(1=linear, -1=circular)
+	  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,  	// move  :kick size (uses []/100)
+	  0,    0,    5,    0,    0,    0,    0,    0,    0,    0,  	// keep  :confinement kick (uses 1-[]/100 on children)
+	  0,    0,    0,   50,    0,    0,    0,    0,    0,    0,  	// bump  :kick size (uses []/100)
+	  0,    0,    0,   18,    0,    0,    0,    0,    0,    0   	// bonds : bond length

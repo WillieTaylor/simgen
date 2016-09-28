@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.7)
+The top-level auxiliary file: paper.aux
+A level-1 auxiliary file: abstract.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: methods.aux
+A level-1 auxiliary file: apply.aux
+A level-1 auxiliary file: conclude.aux
+The style file: latex/jtb.bst
+Database file #1: latex/newrefs.bib
+Database file #2: myosin.bib
+You've used 38 entries,
+            2238 wiz_defined-function locations,
+            861 strings with 10999 characters,
+and the built_in function-call counts, 35982 in all, are:
+= -- 5231
+> -- 1827
+< -- 18
++ -- 3990
+- -- 1504
+* -- 2756
+:= -- 6681
+add.period$ -- 117
+call.type$ -- 38
+change.case$ -- 221
+chr.to.int$ -- 36
+cite$ -- 150
+duplicate$ -- 494
+empty$ -- 1105
+format.name$ -- 274
+if$ -- 5518
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 40
+newline$ -- 196
+num.names$ -- 114
+pop$ -- 212
+preamble$ -- 1
+purify$ -- 223
+quote$ -- 0
+skip$ -- 427
+stack$ -- 0
+substring$ -- 2507
+swap$ -- 1215
+text.length$ -- 109
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 224
+warning$ -- 0
+while$ -- 251
+width$ -- 0
+write$ -- 500

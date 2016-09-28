@@ -1,0 +1,7 @@
+backbone 100
+select *.P
+cpk 200
+label %r
+colour labels white
+set picking monitor
+

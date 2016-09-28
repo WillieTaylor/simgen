@@ -1,0 +1,673 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 14.91      1.90     1.90                             rotate
+ 13.19      3.58     1.68 11659183     0.00     0.00  drawCell
+  8.63      4.68     1.10                             vsqr
+  8.09      5.71     1.03                             vnorm
+  5.26      6.38     0.67 22654574     0.00     0.00  moveCell
+  5.10      7.03     0.65 11410575     0.00     0.00  getFrame
+  4.32      7.58     0.55   117922     0.00     0.00  spinCell
+  3.77      8.06     0.48                             VmulM
+  2.67      8.40     0.34  9773160     0.00     0.00  part2cells
+  2.59      8.73     0.33      602     0.55     1.63  orientBody
+  2.59      9.06     0.33                             vsub
+  2.04      9.32     0.26      255     1.02     1.02  sortXYZview
+  2.04      9.58     0.26                             MmulV
+  1.96      9.83     0.25   607399     0.00     0.00  fixgeom
+  1.81     10.06     0.23      186     1.24     3.14  linkCell
+  1.73     10.28     0.22                             torsion
+  1.49     10.47     0.19                             vddif
+  1.37     10.65     0.18                             vdif
+  1.33     10.82     0.17                             drawWorld
+  1.33     10.99     0.17                             vadd
+  1.18     11.14     0.15      289     0.52     0.52  shakeCell
+  0.94     11.26     0.12                             vdot
+  0.86     11.37     0.11   602826     0.00     0.00  fixdist
+  0.78     11.47     0.10   314739     0.00     0.00  sortXYZrank
+  0.71     11.56     0.09   394209     0.00     0.00  shifter
+  0.63     11.64     0.08       99     0.81     0.81  fixSSEaxis
+  0.63     11.72     0.08                             vprod
+  0.55     11.79     0.07   667167     0.00     0.00  fixSheet
+  0.47     11.85     0.06      188     0.32     2.01  bondCell
+  0.47     11.91     0.06      113     0.53     1.42  sortXYZcell
+  0.47     11.97     0.06                             angle
+  0.47     12.03     0.06                             vave
+  0.47     12.09     0.06                             vunit
+  0.39     12.14     0.05      292     0.17     2.46  patchCell
+  0.39     12.19     0.05                             VtoM
+  0.39     12.24     0.05                             vmul
+  0.31     12.28     0.04                             vsum
+  0.24     12.31     0.03                             Mdet
+  0.24     12.34     0.03                             max
+  0.24     12.37     0.03   512665     0.00     0.00  drawBonds
+  0.24     12.40     0.03      297     0.10     1.95  spinsCell
+  0.24     12.43     0.03       95     0.32     0.39  reset2axis
+  0.24     12.46     0.03                             vtri
+  0.16     12.48     0.02   495728     0.00     0.00  findPole
+  0.16     12.50     0.02      714     0.03     0.03  bumpfix
+  0.16     12.52     0.02                             MmulM
+  0.16     12.54     0.02                             angdif
+  0.16     12.56     0.02                             sortPairs
+  0.16     12.58     0.02                             vatA
+  0.16     12.60     0.02                             vdiv
+  0.16     12.62     0.02                             vinit
+  0.16     12.64     0.02                             vmod
+  0.08     12.65     0.01   507883     0.00     0.00  drawLinks
+  0.08     12.66     0.01   488966     0.00     0.00  drawLink
+  0.08     12.67     0.01     8109     0.00     0.00  bumpex
+  0.08     12.68     0.01       90     0.11     0.33  fixANYaxis
+  0.08     12.69     0.01        2     5.00     5.00  cellout
+  0.08     12.70     0.01        2     5.00     5.00  sceneCell
+  0.08     12.71     0.01                             angle1pi
+  0.08     12.72     0.01                             dot2line
+  0.08     12.73     0.01                             dotOline
+  0.08     12.74     0.01                             read_line
+  0.04     12.74     0.01                             vradd
+  0.00     12.74     0.00   502915     0.00     0.00  goodTri
+  0.00     12.74     0.00    15857     0.00     0.00  setWcent
+  0.00     12.74     0.00    15579     0.00     0.00  getWcent
+  0.00     12.74     0.00     9811     0.00     0.00  packTube
+  0.00     12.74     0.00     5121     0.00     0.00  packBall
+  0.00     12.74     0.00      618     0.00     0.00  getFront
+  0.00     12.74     0.00      617     0.00     0.00  rankLive
+  0.00     12.74     0.00      389     0.00     0.08  bumper
+  0.00     12.74     0.00      290     0.00     0.63  groupCell
+  0.00     12.74     0.00      184     0.00     0.00  driver
+  0.00     12.74     0.00      181     0.00     5.32  linker
+  0.00     12.74     0.00      144     0.00     0.08  bumpin
+  0.00     12.74     0.00      142     0.00    10.18  shaker
+  0.00     12.74     0.00      139     0.00     1.31  keeper
+  0.00     12.74     0.00      129     0.00     0.00  readlinks
+  0.00     12.74     0.00      128     0.00     0.00  sheetset
+  0.00     12.74     0.00       29     0.00     0.00  makeTubes
+  0.00     12.74     0.00        7     0.00     0.00  makeBody
+  0.00     12.74     0.00        3     0.00   105.45  sorter
+  0.00     12.74     0.00        1     0.00     0.00  init
+  0.00     12.74     0.00        1     0.00     0.00  modelin
+  0.00     12.74     0.00        1     0.00     1.20  pass1set
+  0.00     12.74     0.00        1     0.00     0.00  pass2set
+  0.00     12.74     0.00        1     0.00     0.00  pass3set
+  0.00     12.74     0.00        1     0.00   103.66  presort
+  0.00     12.74     0.00        1     0.00     0.00  setangle
+  0.00     12.74     0.00        1     0.00    11.20  startup
+  0.00     12.74     0.00        1     0.00     0.00  viewer
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.08% of 12.74 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     22.6    0.17    2.71                 drawWorld [1]
+                1.68    0.05 11659183/11659183     drawCell [3]
+                0.33    0.65     602/602         orientBody [8]
+                0.00    0.00     618/618         getFront [86]
+                0.00    0.00     617/617         rankLive [87]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]     14.9    1.90    0.00                 rotate [2]
+-----------------------------------------------
+                1.68    0.05 11659183/11659183     drawWorld [1]
+[3]     13.6    1.68    0.05 11659183         drawCell [3]
+                0.03    0.01  512665/512665      drawBonds [50]
+                0.01    0.00  507883/507883      drawLinks [70]
+-----------------------------------------------
+                                                 <spontaneous>
+[4]     12.8    0.00    1.63                 move [4]
+                0.00    1.45     142/142         shaker [5]
+                0.00    0.18     139/139         keeper [30]
+-----------------------------------------------
+                0.00    1.45     142/142         move [4]
+[5]     11.4    0.00    1.45     142         shaker [5]
+                0.05    0.67     292/292         patchCell [12]
+                0.03    0.55     297/297         spinsCell [16]
+                0.15    0.00     289/289         shakeCell [35]
+-----------------------------------------------
+                                                 <spontaneous>
+[6]      8.6    1.10    0.00                 vsqr [6]
+-----------------------------------------------
+                                                 <spontaneous>
+[7]      8.1    1.03    0.00                 vnorm [7]
+-----------------------------------------------
+                             11727025             orientBody [8]
+                0.33    0.65     602/602         drawWorld [1]
+[8]      7.7    0.33    0.65     602+11727025 orientBody [8]
+                0.65    0.00 11410575/11410575     getFrame [14]
+                             11727025             orientBody [8]
+-----------------------------------------------
+                0.00    0.96     181/181         link [10]
+[9]      7.6    0.00    0.96     181         linker [9]
+                0.23    0.35     186/186         linkCell [15]
+                0.06    0.32     188/188         bondCell [20]
+-----------------------------------------------
+                                                 <spontaneous>
+[10]     7.6    0.00    0.96                 link [10]
+                0.00    0.96     181/181         linker [9]
+-----------------------------------------------
+                0.00    0.00    4265/9773160     bumpex [69]
+                0.00    0.00    8098/9773160     bumpin [67]
+                0.11    0.18 3116106/9773160     linkCell [15]
+                0.11    0.18 3175456/9773160     fixdist [19]
+                0.12    0.20 3469235/9773160     bondCell [20]
+[11]     7.0    0.34    0.55 9773160         part2cells [11]
+                0.55    0.00 18713528/22654574     moveCell [13]
+-----------------------------------------------
+                             1201593             patchCell [12]
+                0.05    0.67     292/292         shaker [5]
+[12]     5.6    0.05    0.67     292+1201593 patchCell [12]
+                0.11    0.29  602826/602826      fixdist [19]
+                0.25    0.02  607399/607399      fixgeom [24]
+                             1201593             patchCell [12]
+-----------------------------------------------
+                             19826295             moveCell [13]
+                0.00    0.00     146/22654574     pass1set [80]
+                0.00    0.00    4999/22654574     packTube [81]
+                0.00    0.00    8798/22654574     bumpex [69]
+                0.01    0.00  249710/22654574     reset2axis [51]
+                0.02    0.00  575515/22654574     fixgeom [24]
+                0.09    0.00 3101878/22654574     shifter [31]
+                0.55    0.00 18713528/22654574     part2cells [11]
+[13]     5.3    0.67    0.00 22654574+19826295 moveCell [13]
+                             19826295             moveCell [13]
+-----------------------------------------------
+                0.65    0.00 11410575/11410575     orientBody [8]
+[14]     5.1    0.65    0.00 11410575         getFrame [14]
+-----------------------------------------------
+                             3468205             linkCell [15]
+                0.23    0.35     186/186         linker [9]
+[15]     4.6    0.23    0.35     186+3468205 linkCell [15]
+                0.11    0.18 3116106/9773160     part2cells [11]
+                0.07    0.00  667167/667167      fixSheet [43]
+                             3468205             linkCell [15]
+-----------------------------------------------
+                             2752621             spinsCell [16]
+                0.03    0.55     297/297         shaker [5]
+[16]     4.5    0.03    0.55     297+2752621 spinsCell [16]
+                0.55    0.00  117666/117922      spinCell [17]
+                             2752621             spinsCell [16]
+-----------------------------------------------
+                             8818917             spinCell [17]
+                0.00    0.00     256/117922      pass1set [80]
+                0.55    0.00  117666/117922      spinsCell [16]
+[17]     4.3    0.55    0.00  117922+8818917 spinCell [17]
+                             8818917             spinCell [17]
+-----------------------------------------------
+                                                 <spontaneous>
+[18]     3.8    0.48    0.00                 VmulM [18]
+-----------------------------------------------
+                0.11    0.29  602826/602826      patchCell [12]
+[19]     3.1    0.11    0.29  602826         fixdist [19]
+                0.11    0.18 3175456/9773160     part2cells [11]
+-----------------------------------------------
+                             3491322             bondCell [20]
+                0.06    0.32     188/188         linker [9]
+[20]     3.0    0.06    0.32     188+3491322 bondCell [20]
+                0.12    0.20 3469235/9773160     part2cells [11]
+                             3491322             bondCell [20]
+-----------------------------------------------
+                                                 <spontaneous>
+[21]     2.6    0.33    0.00                 vsub [21]
+-----------------------------------------------
+                0.00    0.32       3/3           rank [23]
+[22]     2.5    0.00    0.32       3         sorter [22]
+                0.20    0.00     195/255         sortXYZview [25]
+                0.04    0.07      83/113         sortXYZcell [34]
+-----------------------------------------------
+                                                 <spontaneous>
+[23]     2.5    0.00    0.32                 rank [23]
+                0.00    0.32       3/3           sorter [22]
+-----------------------------------------------
+                0.25    0.02  607399/607399      patchCell [12]
+[24]     2.1    0.25    0.02  607399         fixgeom [24]
+                0.02    0.00  575515/22654574     moveCell [13]
+-----------------------------------------------
+                0.06    0.00      60/255         presort [39]
+                0.20    0.00     195/255         sorter [22]
+[25]     2.0    0.26    0.00     255         sortXYZview [25]
+-----------------------------------------------
+                                                 <spontaneous>
+[26]     2.0    0.26    0.00                 MmulV [26]
+-----------------------------------------------
+                                                 <spontaneous>
+[27]     1.7    0.22    0.00                 torsion [27]
+-----------------------------------------------
+                                                 <spontaneous>
+[28]     1.5    0.19    0.00                 vddif [28]
+-----------------------------------------------
+                             2720021             groupCell [29]
+                0.00    0.18     290/290         keeper [30]
+[29]     1.4    0.00    0.18     290+2720021 groupCell [29]
+                0.09    0.09  394209/394209      shifter [31]
+                0.00    0.00    9811/9811        packTube [81]
+                0.00    0.00    5121/5121        packBall [85]
+                             2720021             groupCell [29]
+-----------------------------------------------
+                0.00    0.18     139/139         move [4]
+[30]     1.4    0.00    0.18     139         keeper [30]
+                0.00    0.18     290/290         groupCell [29]
+-----------------------------------------------
+                0.09    0.09  394209/394209      groupCell [29]
+[31]     1.4    0.09    0.09  394209         shifter [31]
+                0.09    0.00 3101878/22654574     moveCell [13]
+-----------------------------------------------
+                                                 <spontaneous>
+[32]     1.4    0.18    0.00                 vdif [32]
+-----------------------------------------------
+                                                 <spontaneous>
+[33]     1.3    0.17    0.00                 vadd [33]
+-----------------------------------------------
+                             2161915             sortXYZcell [34]
+                0.02    0.03      30/113         presort [39]
+                0.04    0.07      83/113         sorter [22]
+[34]     1.3    0.06    0.10     113+2161915 sortXYZcell [34]
+                0.10    0.00  314739/314739      sortXYZrank [40]
+                             2161915             sortXYZcell [34]
+-----------------------------------------------
+                             2701985             shakeCell [35]
+                0.15    0.00     289/289         shaker [5]
+[35]     1.2    0.15    0.00     289+2701985 shakeCell [35]
+                             2701985             shakeCell [35]
+-----------------------------------------------
+                                                 <spontaneous>
+[36]     1.2    0.00    0.15                 fixs [36]
+                0.08    0.00      98/99          fixSSEaxis [41]
+                0.03    0.01      95/95          reset2axis [51]
+                0.01    0.02      90/90          fixANYaxis [56]
+-----------------------------------------------
+                                                 <spontaneous>
+[37]     0.9    0.00    0.12                 main [37]
+                0.00    0.10       1/1           presort [39]
+                0.00    0.01       1/1           startup [68]
+                0.01    0.00       1/2           cellout [72]
+                0.00    0.00       1/99          fixSSEaxis [41]
+                0.00    0.00       1/1           modelin [94]
+                0.00    0.00       1/1           setangle [97]
+-----------------------------------------------
+                                                 <spontaneous>
+[38]     0.9    0.12    0.00                 vdot [38]
+-----------------------------------------------
+                0.00    0.10       1/1           main [37]
+[39]     0.8    0.00    0.10       1         presort [39]
+                0.06    0.00      60/255         sortXYZview [25]
+                0.02    0.03      30/113         sortXYZcell [34]
+-----------------------------------------------
+                0.10    0.00  314739/314739      sortXYZcell [34]
+[40]     0.8    0.10    0.00  314739         sortXYZrank [40]
+-----------------------------------------------
+                             1761993             fixSSEaxis [41]
+                0.00    0.00       1/99          main [37]
+                0.08    0.00      98/99          fixs [36]
+[41]     0.6    0.08    0.00      99+1761993 fixSSEaxis [41]
+                             1761993             fixSSEaxis [41]
+-----------------------------------------------
+                                                 <spontaneous>
+[42]     0.6    0.08    0.00                 vprod [42]
+-----------------------------------------------
+                0.07    0.00  667167/667167      linkCell [15]
+[43]     0.5    0.07    0.00  667167         fixSheet [43]
+-----------------------------------------------
+                                                 <spontaneous>
+[44]     0.5    0.06    0.00                 angle [44]
+-----------------------------------------------
+                                                 <spontaneous>
+[45]     0.5    0.06    0.00                 vave [45]
+-----------------------------------------------
+                                                 <spontaneous>
+[46]     0.5    0.06    0.00                 vunit [46]
+-----------------------------------------------
+                                                 <spontaneous>
+[47]     0.4    0.05    0.00                 VtoM [47]
+-----------------------------------------------
+                                                 <spontaneous>
+[48]     0.4    0.05    0.00                 vmul [48]
+-----------------------------------------------
+                                                 <spontaneous>
+[49]     0.3    0.04    0.00                 vsum [49]
+-----------------------------------------------
+                0.03    0.01  512665/512665      drawCell [3]
+[50]     0.3    0.03    0.01  512665         drawBonds [50]
+                0.01    0.00  479467/488966      drawLink [71]
+-----------------------------------------------
+                             1733447             reset2axis [51]
+                0.03    0.01      95/95          fixs [36]
+[51]     0.3    0.03    0.01      95+1733447 reset2axis [51]
+                0.01    0.00  249710/22654574     moveCell [13]
+                             1733447             reset2axis [51]
+-----------------------------------------------
+                0.00    0.03     389/389         bump [53]
+[52]     0.2    0.00    0.03     389         bumper [52]
+                0.02    0.00     714/714         bumpfix [59]
+                0.00    0.01     144/144         bumpin [67]
+-----------------------------------------------
+                                                 <spontaneous>
+[53]     0.2    0.00    0.03                 bump [53]
+                0.00    0.03     389/389         bumper [52]
+-----------------------------------------------
+                                                 <spontaneous>
+[54]     0.2    0.03    0.00                 Mdet [54]
+-----------------------------------------------
+                                                 <spontaneous>
+[55]     0.2    0.03    0.00                 max [55]
+-----------------------------------------------
+                             1730631             fixANYaxis [56]
+                0.01    0.02      90/90          fixs [36]
+[56]     0.2    0.01    0.02      90+1730631 fixANYaxis [56]
+                0.02    0.00  495728/495728      findPole [58]
+                0.00    0.00  502915/502915      goodTri [82]
+                0.00    0.00   13022/15857       setWcent [83]
+                             1730631             fixANYaxis [56]
+-----------------------------------------------
+                                                 <spontaneous>
+[57]     0.2    0.03    0.00                 vtri [57]
+-----------------------------------------------
+                0.02    0.00  495728/495728      fixANYaxis [56]
+[58]     0.2    0.02    0.00  495728         findPole [58]
+-----------------------------------------------
+                0.02    0.00     714/714         bumper [52]
+[59]     0.2    0.02    0.00     714         bumpfix [59]
+-----------------------------------------------
+                                                 <spontaneous>
+[60]     0.2    0.02    0.00                 MmulM [60]
+-----------------------------------------------
+                                                 <spontaneous>
+[61]     0.2    0.02    0.00                 angdif [61]
+-----------------------------------------------
+                                                 <spontaneous>
+[62]     0.2    0.02    0.00                 sortPairs [62]
+-----------------------------------------------
+                                                 <spontaneous>
+[63]     0.2    0.02    0.00                 vatA [63]
+-----------------------------------------------
+                                                 <spontaneous>
+[64]     0.2    0.02    0.00                 vdiv [64]
+-----------------------------------------------
+                                                 <spontaneous>
+[65]     0.2    0.02    0.00                 vinit [65]
+-----------------------------------------------
+                                                 <spontaneous>
+[66]     0.2    0.02    0.00                 vmod [66]
+-----------------------------------------------
+                              114236             bumpin [67]
+                0.00    0.01     144/144         bumper [52]
+[67]     0.1    0.00    0.01     144+114236  bumpin [67]
+                0.01    0.00    8109/8109        bumpex [69]
+                0.00    0.00    8098/9773160     part2cells [11]
+                              114236             bumpin [67]
+-----------------------------------------------
+                0.00    0.01       1/1           main [37]
+[68]     0.1    0.00    0.01       1         startup [68]
+                0.01    0.00       2/2           sceneCell [73]
+                0.00    0.00       1/1           pass1set [80]
+                0.00    0.00       1/1           pass2set [95]
+                0.00    0.00       1/1           pass3set [96]
+                0.00    0.00       1/129         readlinks [89]
+-----------------------------------------------
+                                4217             bumpex [69]
+                0.01    0.00    8109/8109        bumpin [67]
+[69]     0.1    0.01    0.00    8109+4217    bumpex [69]
+                0.00    0.00    4265/9773160     part2cells [11]
+                0.00    0.00    8798/22654574     moveCell [13]
+                                4217             bumpex [69]
+-----------------------------------------------
+                0.01    0.00  507883/507883      drawCell [3]
+[70]     0.1    0.01    0.00  507883         drawLinks [70]
+                0.00    0.00    9499/488966      drawLink [71]
+-----------------------------------------------
+                0.00    0.00    9499/488966      drawLinks [70]
+                0.01    0.00  479467/488966      drawBonds [50]
+[71]     0.1    0.01    0.00  488966         drawLink [71]
+-----------------------------------------------
+                0.01    0.00       1/2           main [37]
+                0.01    0.00       1/2           keyboard [78]
+[72]     0.1    0.01    0.00       2         cellout [72]
+-----------------------------------------------
+                               38692             sceneCell [73]
+                0.01    0.00       2/2           startup [68]
+[73]     0.1    0.01    0.00       2+38692   sceneCell [73]
+                               38692             sceneCell [73]
+-----------------------------------------------
+                                                 <spontaneous>
+[74]     0.1    0.01    0.00                 angle1pi [74]
+-----------------------------------------------
+                                                 <spontaneous>
+[75]     0.1    0.01    0.00                 dot2line [75]
+-----------------------------------------------
+                                                 <spontaneous>
+[76]     0.1    0.01    0.00                 dotOline [76]
+-----------------------------------------------
+                                                 <spontaneous>
+[77]     0.1    0.01    0.00                 read_line [77]
+-----------------------------------------------
+                                                 <spontaneous>
+[78]     0.0    0.00    0.01                 keyboard [78]
+                0.01    0.00       1/2           cellout [72]
+-----------------------------------------------
+                                                 <spontaneous>
+[79]     0.0    0.01    0.00                 vradd [79]
+-----------------------------------------------
+                               19346             pass1set [80]
+                0.00    0.00       1/1           startup [68]
+[80]     0.0    0.00    0.00       1+19346   pass1set [80]
+                0.00    0.00     256/117922      spinCell [17]
+                0.00    0.00     146/22654574     moveCell [13]
+                0.00    0.00     128/128         sheetset [90]
+                0.00    0.00     128/129         readlinks [89]
+                               19346             pass1set [80]
+-----------------------------------------------
+                0.00    0.00    9811/9811        groupCell [29]
+[81]     0.0    0.00    0.00    9811         packTube [81]
+                0.00    0.00    4999/22654574     moveCell [13]
+-----------------------------------------------
+                0.00    0.00  502915/502915      fixANYaxis [56]
+[82]     0.0    0.00    0.00  502915         goodTri [82]
+-----------------------------------------------
+                0.00    0.00    2835/15857       pass3set [96]
+                0.00    0.00   13022/15857       fixANYaxis [56]
+[83]     0.0    0.00    0.00   15857         setWcent [83]
+                0.00    0.00   15579/15579       getWcent [84]
+-----------------------------------------------
+                0.00    0.00   15579/15579       setWcent [83]
+[84]     0.0    0.00    0.00   15579         getWcent [84]
+-----------------------------------------------
+                0.00    0.00    5121/5121        groupCell [29]
+[85]     0.0    0.00    0.00    5121         packBall [85]
+-----------------------------------------------
+                0.00    0.00     618/618         drawWorld [1]
+[86]     0.0    0.00    0.00     618         getFront [86]
+-----------------------------------------------
+                0.00    0.00     617/617         drawWorld [1]
+[87]     0.0    0.00    0.00     617         rankLive [87]
+-----------------------------------------------
+                0.00    0.00     184/184         acts [105]
+[88]     0.0    0.00    0.00     184         driver [88]
+-----------------------------------------------
+                0.00    0.00       1/129         startup [68]
+                0.00    0.00     128/129         pass1set [80]
+[89]     0.0    0.00    0.00     129         readlinks [89]
+-----------------------------------------------
+                0.00    0.00     128/128         pass1set [80]
+[90]     0.0    0.00    0.00     128         sheetset [90]
+-----------------------------------------------
+                0.00    0.00       8/29          init [93]
+                0.00    0.00      21/29          makeBody [92]
+[91]     0.0    0.00    0.00      29         makeTubes [91]
+-----------------------------------------------
+                0.00    0.00       7/7           makeTypes [149]
+[92]     0.0    0.00    0.00       7         makeBody [92]
+                0.00    0.00      21/29          makeTubes [91]
+-----------------------------------------------
+                0.00    0.00       1/1           viewer [98]
+[93]     0.0    0.00    0.00       1         init [93]
+                0.00    0.00       8/29          makeTubes [91]
+-----------------------------------------------
+                0.00    0.00       1/1           main [37]
+[94]     0.0    0.00    0.00       1         modelin [94]
+-----------------------------------------------
+                               19346             pass2set [95]
+                0.00    0.00       1/1           startup [68]
+[95]     0.0    0.00    0.00       1+19346   pass2set [95]
+                               19346             pass2set [95]
+-----------------------------------------------
+                               19346             pass3set [96]
+                0.00    0.00       1/1           startup [68]
+[96]     0.0    0.00    0.00       1+19346   pass3set [96]
+                0.00    0.00    2835/15857       setWcent [83]
+                               19346             pass3set [96]
+-----------------------------------------------
+                               19346             setangle [97]
+                0.00    0.00       1/1           main [37]
+[97]     0.0    0.00    0.00       1+19346   setangle [97]
+                               19346             setangle [97]
+-----------------------------------------------
+                0.00    0.00       1/1           view [194]
+[98]     0.0    0.00    0.00       1         viewer [98]
+                0.00    0.00       1/1           init [93]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [54] Mdet                   [82] goodTri                [31] shifter
+  [60] MmulM                  [29] groupCell              [62] sortPairs
+  [26] MmulV                  [93] init                   [34] sortXYZcell
+  [18] VmulM                  [30] keeper                 [40] sortXYZrank
+  [47] VtoM                   [15] linkCell               [25] sortXYZview
+  [61] angdif                  [9] linker                 [22] sorter
+  [44] angle                  [92] makeBody               [17] spinCell
+  [74] angle1pi               [91] makeTubes              [16] spinsCell
+  [20] bondCell               [55] max                    [68] startup
+  [52] bumper                 [94] modelin                [27] torsion
+  [69] bumpex                 [13] moveCell               [33] vadd
+  [59] bumpfix                 [8] orientBody             [63] vatA
+  [67] bumpin                 [85] packBall               [45] vave
+  [72] cellout                [81] packTube               [28] vddif
+  [75] dot2line               [11] part2cells             [32] vdif
+  [76] dotOline               [80] pass1set               [64] vdiv
+  [50] drawBonds              [95] pass2set               [38] vdot
+   [3] drawCell               [96] pass3set               [98] viewer
+  [71] drawLink               [12] patchCell              [65] vinit
+  [70] drawLinks              [39] presort                [66] vmod
+   [1] drawWorld              [87] rankLive               [48] vmul
+  [88] driver                 [77] read_line               [7] vnorm
+  [58] findPole               [89] readlinks              [42] vprod
+  [56] fixANYaxis             [51] reset2axis             [79] vradd
+  [41] fixSSEaxis              [2] rotate                  [6] vsqr
+  [43] fixSheet               [73] sceneCell              [21] vsub
+  [19] fixdist                [83] setWcent               [49] vsum
+  [24] fixgeom                [97] setangle               [57] vtri
+  [14] getFrame               [35] shakeCell              [46] vunit
+  [86] getFront                [5] shaker
+  [84] getWcent               [90] sheetset

@@ -1,0 +1,962 @@
+%!PS-Adobe-3.0
+%%BoundingBox: 18 36 577 806
+%%Title: Enscript Output
+%%Creator: GNU Enscript 1.6.5.90
+%%CreationDate: Thu Apr 28 06:24:52 2016
+%%Orientation: Portrait
+%%Pages: (atend)
+%%DocumentMedia: A4 595 842 0 () ()
+%%DocumentNeededResources: (atend)
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset Enscript-Prolog 1.6.5 90
+%
+% Procedures.
+%
+
+/_S {	% save current state
+  /_s save def
+} def
+/_R {	% restore from saved state
+  _s restore
+} def
+
+/S {	% showpage protecting gstate
+  gsave
+  showpage
+  grestore
+} bind def
+
+/MF {	% fontname newfontname -> -	make a new encoded font
+  /newfontname exch def
+  /fontname exch def
+
+  /fontdict fontname findfont def
+  /newfont fontdict maxlength dict def
+
+  fontdict {
+    exch
+    dup /FID eq {
+      % skip FID pair
+      pop pop
+    } {
+      % copy to the new font dictionary
+      exch newfont 3 1 roll put
+    } ifelse
+  } forall
+
+  newfont /FontName newfontname put
+
+  % insert only valid encoding vectors
+  encoding_vector length 256 eq {
+    newfont /Encoding encoding_vector put
+  } if
+
+  newfontname newfont definefont pop
+} def
+
+/MF_PS { % fontname newfontname -> -	make a new font preserving its enc
+  /newfontname exch def
+  /fontname exch def
+
+  /fontdict fontname findfont def
+  /newfont fontdict maxlength dict def
+
+  fontdict {
+    exch
+    dup /FID eq {
+      % skip FID pair
+      pop pop
+    } {
+      % copy to the new font dictionary
+      exch newfont 3 1 roll put
+    } ifelse
+  } forall
+
+  newfont /FontName newfontname put
+
+  newfontname newfont definefont pop
+} def
+
+/SF { % fontname width height -> -	set a new font
+  /height exch def
+  /width exch def
+
+  findfont
+  [width 0 0 height 0 0] makefont setfont
+} def
+
+/SUF { % fontname width height -> -	set a new user font
+  /height exch def
+  /width exch def
+
+  /F-gs-user-font MF
+  /F-gs-user-font width height SF
+} def
+
+/SUF_PS { % fontname width height -> -	set a new user font preserving its enc
+  /height exch def
+  /width exch def
+
+  /F-gs-user-font MF_PS
+  /F-gs-user-font width height SF
+} def
+
+/M {moveto} bind def
+/s {show} bind def
+
+/Box {	% x y w h -> -			define box path
+  /d_h exch def /d_w exch def /d_y exch def /d_x exch def
+  d_x d_y  moveto
+  d_w 0 rlineto
+  0 d_h rlineto
+  d_w neg 0 rlineto
+  closepath
+} def
+
+/bgs {	% x y height blskip gray str -> -	show string with bg color
+  /str exch def
+  /gray exch def
+  /blskip exch def
+  /height exch def
+  /y exch def
+  /x exch def
+
+  gsave
+    x y blskip sub str stringwidth pop height Box
+    gray setgray
+    fill
+  grestore
+  x y M str s
+} def
+
+/bgcs { % x y height blskip red green blue str -> -  show string with bg color
+  /str exch def
+  /blue exch def
+  /green exch def
+  /red exch def
+  /blskip exch def
+  /height exch def
+  /y exch def
+  /x exch def
+
+  gsave
+    x y blskip sub str stringwidth pop height Box
+    red green blue setrgbcolor
+    fill
+  grestore
+  x y M str s
+} def
+
+% Highlight bars.
+/highlight_bars {	% nlines lineheight output_y_margin gray -> -
+  gsave
+    setgray
+    /ymarg exch def
+    /lineheight exch def
+    /nlines exch def
+
+    % This 2 is just a magic number to sync highlight lines to text.
+    0 d_header_y ymarg sub 2 sub translate
+
+    /cw d_output_w cols div def
+    /nrows d_output_h ymarg 2 mul sub lineheight div cvi def
+
+    % for each column
+    0 1 cols 1 sub {
+      cw mul /xp exch def
+
+      % for each rows
+      0 1 nrows 1 sub {
+        /rn exch def
+        rn lineheight mul neg /yp exch def
+        rn nlines idiv 2 mod 0 eq {
+	  % Draw highlight bar.  4 is just a magic indentation.
+	  xp 4 add yp cw 8 sub lineheight neg Box fill
+	} if
+      } for
+    } for
+
+  grestore
+} def
+
+% Line highlight bar.
+/line_highlight {	% x y width height gray -> -
+  gsave
+    /gray exch def
+    Box gray setgray fill
+  grestore
+} def
+
+% Column separator lines.
+/column_lines {
+  gsave
+    .1 setlinewidth
+    0 d_footer_h translate
+    /cw d_output_w cols div def
+    1 1 cols 1 sub {
+      cw mul 0 moveto
+      0 d_output_h rlineto stroke
+    } for
+  grestore
+} def
+
+% Column borders.
+/column_borders {
+  gsave
+    .1 setlinewidth
+    0 d_footer_h moveto
+    0 d_output_h rlineto
+    d_output_w 0 rlineto
+    0 d_output_h neg rlineto
+    closepath stroke
+  grestore
+} def
+
+% Do the actual underlay drawing
+/draw_underlay {
+  ul_style 0 eq {
+    ul_str true charpath stroke
+  } {
+    ul_str show
+  } ifelse
+} def
+
+% Underlay
+/underlay {	% - -> -
+  gsave
+    0 d_page_h translate
+    d_page_h neg d_page_w atan rotate
+
+    ul_gray setgray
+    ul_font setfont
+    /dw d_page_h dup mul d_page_w dup mul add sqrt def
+    ul_str stringwidth pop dw exch sub 2 div ul_h_ptsize -2 div moveto
+    draw_underlay
+  grestore
+} def
+
+/user_underlay {	% - -> -
+  gsave
+    ul_x ul_y translate
+    ul_angle rotate
+    ul_gray setgray
+    ul_font setfont
+    0 0 ul_h_ptsize 2 div sub moveto
+    draw_underlay
+  grestore
+} def
+
+% Page prefeed
+/page_prefeed {		% bool -> -
+  statusdict /prefeed known {
+    statusdict exch /prefeed exch put
+  } {
+    pop
+  } ifelse
+} def
+
+% Wrapped line markers
+/wrapped_line_mark {	% x y charwith charheight type -> -
+  /type exch def
+  /h exch def
+  /w exch def
+  /y exch def
+  /x exch def
+
+  type 2 eq {
+    % Black boxes (like TeX does)
+    gsave
+      0 setlinewidth
+      x w 4 div add y M
+      0 h rlineto w 2 div 0 rlineto 0 h neg rlineto
+      closepath fill
+    grestore
+  } {
+    type 3 eq {
+      % Small arrows
+      gsave
+        .2 setlinewidth
+        x w 2 div add y h 2 div add M
+        w 4 div 0 rlineto
+        x w 4 div add y lineto stroke
+
+        x w 4 div add w 8 div add y h 4 div add M
+        x w 4 div add y lineto
+	w 4 div h 8 div rlineto stroke
+      grestore
+    } {
+      % do nothing
+    } ifelse
+  } ifelse
+} def
+
+% EPSF import.
+
+/BeginEPSF {
+  /b4_Inc_state save def    		% Save state for cleanup
+  /dict_count countdictstack def	% Count objects on dict stack
+  /op_count count 1 sub def		% Count objects on operand stack
+  userdict begin
+  /showpage { } def
+  0 setgray 0 setlinecap
+  1 setlinewidth 0 setlinejoin
+  10 setmiterlimit [ ] 0 setdash newpath
+  /languagelevel where {
+    pop languagelevel
+    1 ne {
+      false setstrokeadjust false setoverprint
+    } if
+  } if
+} bind def
+
+/EndEPSF {
+  count op_count sub { pos } repeat	% Clean up stacks
+  countdictstack dict_count sub { end } repeat
+  b4_Inc_state restore
+} bind def
+
+% Check PostScript language level.
+/languagelevel where {
+  pop /gs_languagelevel languagelevel def
+} {
+  /gs_languagelevel 1 def
+} ifelse
+%%EndResource
+%%BeginResource: procset Enscript-Encoding-88591 1.6.5 90
+/encoding_vector [
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/space        	/exclam       	/quotedbl     	/numbersign   	
+/dollar       	/percent      	/ampersand    	/quoteright   	
+/parenleft    	/parenright   	/asterisk     	/plus         	
+/comma        	/hyphen       	/period       	/slash        	
+/zero         	/one          	/two          	/three        	
+/four         	/five         	/six          	/seven        	
+/eight        	/nine         	/colon        	/semicolon    	
+/less         	/equal        	/greater      	/question     	
+/at           	/A            	/B            	/C            	
+/D            	/E            	/F            	/G            	
+/H            	/I            	/J            	/K            	
+/L            	/M            	/N            	/O            	
+/P            	/Q            	/R            	/S            	
+/T            	/U            	/V            	/W            	
+/X            	/Y            	/Z            	/bracketleft  	
+/backslash    	/bracketright 	/asciicircum  	/underscore   	
+/quoteleft    	/a            	/b            	/c            	
+/d            	/e            	/f            	/g            	
+/h            	/i            	/j            	/k            	
+/l            	/m            	/n            	/o            	
+/p            	/q            	/r            	/s            	
+/t            	/u            	/v            	/w            	
+/x            	/y            	/z            	/braceleft    	
+/bar          	/braceright   	/tilde        	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/.notdef      	/.notdef      	/.notdef      	/.notdef      	
+/space        	/exclamdown   	/cent         	/sterling     	
+/currency     	/yen          	/brokenbar    	/section      	
+/dieresis     	/copyright    	/ordfeminine  	/guillemotleft	
+/logicalnot   	/hyphen       	/registered   	/macron       	
+/degree       	/plusminus    	/twosuperior  	/threesuperior	
+/acute        	/mu           	/paragraph    	/bullet       	
+/cedilla      	/onesuperior  	/ordmasculine 	/guillemotright	
+/onequarter   	/onehalf      	/threequarters	/questiondown 	
+/Agrave       	/Aacute       	/Acircumflex  	/Atilde       	
+/Adieresis    	/Aring        	/AE           	/Ccedilla     	
+/Egrave       	/Eacute       	/Ecircumflex  	/Edieresis    	
+/Igrave       	/Iacute       	/Icircumflex  	/Idieresis    	
+/Eth          	/Ntilde       	/Ograve       	/Oacute       	
+/Ocircumflex  	/Otilde       	/Odieresis    	/multiply     	
+/Oslash       	/Ugrave       	/Uacute       	/Ucircumflex  	
+/Udieresis    	/Yacute       	/Thorn        	/germandbls   	
+/agrave       	/aacute       	/acircumflex  	/atilde       	
+/adieresis    	/aring        	/ae           	/ccedilla     	
+/egrave       	/eacute       	/ecircumflex  	/edieresis    	
+/igrave       	/iacute       	/icircumflex  	/idieresis    	
+/eth          	/ntilde       	/ograve       	/oacute       	
+/ocircumflex  	/otilde       	/odieresis    	/divide       	
+/oslash       	/ugrave       	/uacute       	/ucircumflex  	
+/udieresis    	/yacute       	/thorn        	/ydieresis    	
+] def
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%%IncludeResource: font Courier-Bold
+%%IncludeResource: font Courier
+/HFpt_w 10 def
+/HFpt_h 10 def
+/Courier-Bold /HF-gs-font MF
+/HF /HF-gs-font findfont [HFpt_w 0 0 HFpt_h 0 0] makefont def
+/Courier /F-gs-font MF
+/F-gs-font 10 10 SF
+/#copies 1 def
+% Pagedevice definitions:
+gs_languagelevel 1 gt {
+  <<
+    /PageSize [595 842] 
+  >> setpagedevice
+} if
+%%BeginResource: procset Enscript-Header-simple 1.6.5 90
+
+/do_header {	% print default simple header
+  gsave
+    d_header_x d_header_y HFpt_h 3 div add translate
+
+    HF setfont
+    user_header_p {
+      5 0 moveto user_header_left_str show
+
+      d_header_w user_header_center_str stringwidth pop sub 2 div
+      0 moveto user_header_center_str show
+
+      d_header_w user_header_right_str stringwidth pop sub 5 sub
+      0 moveto user_header_right_str show
+    } {
+      5 0 moveto fname show
+      45 0 rmoveto fmodstr show
+      45 0 rmoveto pagenumstr show
+    } ifelse
+
+  grestore
+} def
+%%EndResource
+/d_page_w 559 def
+/d_page_h 770 def
+/d_header_x 0 def
+/d_header_y 755 def
+/d_header_w 559 def
+/d_header_h 15 def
+/d_footer_x 0 def
+/d_footer_y 0 def
+/d_footer_w 559 def
+/d_footer_h 0 def
+/d_output_w 559 def
+/d_output_h 755 def
+/cols 1 def
+%%EndSetup
+%%Page: (1) 1
+%%BeginPageSetup
+_S
+18 36 translate
+/pagenum 1 def
+/fname (changes.txt) def
+/fdir (.) def
+/ftail (changes.txt) def
+% User defined strings:
+/fmodstr (Tue Apr 12 16:50:58 2016) def
+/pagenumstr (1) def
+/user_header_p false def
+/user_footer_p false def
+%%EndPageSetup
+do_header
+5 742 M
+(39c39) s
+5 731 M
+(< use of a bounding-box construct.  This is a box in which a group of points are contained) s
+5 720 M
+(---) s
+5 709 M
+(> use of a bounding-box construct.  This is a box in which a group of points is contained) s
+5 698 M
+(56c56) s
+5 687 M
+(< they too are elongated.   In this work, the original method based on sphere's is) s
+5 676 M
+(---) s
+5 665 M
+(> they too are elongated.   In this work, the original method based on spheres is) s
+5 654 M
+(87,90c87,89) s
+5 643 M
+(< straight section of pipe with hemi-spherical end-caps\).   The use of the original box) s
+5 632 M
+(< registered on the coordinate frame was avoided for reasons mentioned above and without) s
+5 621 M
+(< this registration, any advantage is lost in calculating the overlap between arbitrarily) s
+5 610 M
+(< orientated rectangular boxes.) s
+5 599 M
+(---) s
+5 588 M
+(> straight section of pipe with hemi-spherical end-caps\).  Both spheres and tubes have been) s
+5 577 M
+(> used widely in coarse-grainned modelling, with the latter being a good representation) s
+5 566 M
+(> for an RNA stem-loop or an \\AH\\ or even a general peptide \\cite{VachaRet14}.) s
+5 555 M
+(139c138,143) s
+5 544 M
+(< dependent on the displacement of the children as in high speed collisions, any) s
+5 533 M
+(---) s
+5 522 M
+(> dependent on the displacement of the children as in high speed\\footnote{) s
+5 511 M
+(> The term "speed" is used throught to refer to the step size per cycle of any) s
+5 500 M
+(> geometric transformation.   As the stepsize is not related to any physical) s
+5 489 M
+(> process, it does not have any implications for biological macromolecules.) s
+5 478 M
+(> }) s
+5 467 M
+(> collisions, any) s
+5 456 M
+(208c212) s
+5 445 M
+(< was accommodated in the refinement of ideal distances and angles.) s
+5 434 M
+(---) s
+5 423 M
+(> was accommodated in the choice of ideal distances and angles.) s
+5 412 M
+(18c18) s
+5 401 M
+(< the high-level objects are the bounding-volvumes for their children. ) s
+5 390 M
+(---) s
+5 379 M
+(> the high-level objects are the bounding-volumes for their children. ) s
+5 368 M
+(166c166) s
+5 357 M
+(< is itself recursive and id called on the children of any clashing children that it encoun) s
+5 346 M
+(ters. ) s
+5 335 M
+(---) s
+5 324 M
+(> is itself recursive and is called on the children of any clashing children that it encoun) s
+5 313 M
+(ters. ) s
+5 302 M
+(171c171) s
+5 291 M
+(< which are dealt with by the {\\tt touch\(\)} routine.i \(Box 3\).) s
+5 280 M
+(---) s
+5 269 M
+(> which are dealt with by the {\\tt touch\(\)} routine \(Box 3\).) s
+5 258 M
+(423c423) s
+5 247 M
+(< The error is typically less than 0.001\\%.) s
+5 236 M
+(---) s
+5 225 M
+(> The error is typically less than 0.1\\%.) s
+5 214 M
+(0a1,46) s
+5 203 M
+(> \\section{Bonds and links}) s
+5 192 M
+(> ) s
+5 181 M
+(> The maintenance of bond and link lengths is very similar and the two routines,) s
+5 170 M
+(> \\TT{bonder} and \\TT{linker}, that implement this task will be considered together.) s
+5 159 M
+(> Both recursively traverse the object tree looking for things to fix.) s
+5 148 M
+(> ) s
+5 137 M
+(> \\subsection{\\TT{bonder}}) s
+5 126 M
+(> ) s
+5 115 M
+(> \\subsubsection{Bond lengths}) s
+5 104 M
+(> ) s
+5 93 M
+(> The \\TT{bonder} simply checks if an object has any assigned bonds and if so, uses) s
+5 82 M
+(> the utility {\\tt part2cells\(\)} to push them towards their assigned bond length.) s
+5 71 M
+(> ) s
+5 60 M
+(> \\subsubsection{Nucleic acid exceptions}) s
+5 49 M
+(> ) s
+5 38 M
+(> Exceptions need to be made when bonding tubes in nucleic acids, which occur both at) s
+5 27 M
+(> the secondary structure level as basepairs and the domain level) s
+5 16 M
+(> as segments of double helix. ) s
+5 5 M
+(> ) s
+_R
+S
+%%Page: (2) 2
+%%BeginPageSetup
+_S
+18 36 translate
+/pagenum 2 def
+/fname (changes.txt) def
+/fdir (.) def
+/ftail (changes.txt) def
+% User defined strings:
+/fmodstr (Tue Apr 12 16:50:58 2016) def
+/pagenumstr (2) def
+/user_header_p false def
+/user_footer_p false def
+%%EndPageSetup
+do_header
+5 742 M
+(> For basepairs, if these are part of a double helix, their 'bond-length' is the distance) s
+5 731 M
+(> between their mid-points \(object centre\) which is refined to an ideal base-stacking separ) s
+5 720 M
+(ation.  ) s
+5 709 M
+(> Outside a base-pair, say in a loop region, the 'secondary structure', like a loop in a pr) s
+5 698 M
+(otein,) s
+5 687 M
+(> can contain multiple nucleotides and no bond length is refined.) s
+5 676 M
+(> ) s
+5 665 M
+(> At the domain level, double-stranded DNA segments will always be bonded end-to-end) s
+5 654 M
+(> at a specific distance that allows the helix to run continuously from one segment to) s
+5 643 M
+(> the next.   On the other hand, when the segment is an RNA stem-loop, the chain can enter) s
+5 632 M
+(> and exit the same end of the tube or, with an insertion, even through the side.) s
+5 621 M
+(> ) s
+5 610 M
+(> ) s
+5 599 M
+(> \\subsection{\\TT{linker}}) s
+5 588 M
+(> ) s
+5 577 M
+(> \\subsubsection{Breaking links}) s
+5 566 M
+(> ) s
+5 555 M
+(> The \\TT{linker} follows the same basic outline as the \\TT{bonder} but with the main) s
+5 544 M
+(> difference that links can be made and broken during the simulation.   The dynamic creatio) s
+5 533 M
+(n) s
+5 522 M
+(> of links is not a built-in feature of \\NAME\\ and must be provided through the user-suppli) s
+5 511 M
+(ed) s
+5 500 M
+(> \\TT{driver} routine.   However, if a link becomes over stretched, it is automatically des) s
+5 489 M
+(troyed in) s
+5 478 M
+(> the \\TT{linker}.    The default length of a link is the bump diameter and the default ext) s
+5 467 M
+(ension) s
+5 456 M
+(> is 50\\%, beyond which the link breaks.) s
+5 445 M
+(> ) s
+5 434 M
+(> \\subsubsection{Preset link lengths}) s
+5 423 M
+(> ) s
+5 412 M
+(> Local links are automatically created for standard secondary structures,  not only betwee) s
+5 401 M
+(n the H-bonded) s
+5 390 M
+(> connections in the \\AH, i---i+3 and i---i+4, but also between the i-1---i+1 separation al) s
+5 379 M
+(ong a \\Bs.) s
+5 368 M
+(> However, the non-local links between strands in a \\BS\\ must be user defined.) s
+5 357 M
+(17c17) s
+5 346 M
+(< motion to propel two identical objects into each other.   To avoid a direct "head-on") s
+5 335 M
+(---) s
+5 324 M
+(> displacement to propel two identical objects into each other.   To avoid a direct "head-o) s
+5 313 M
+(n") s
+5 302 M
+(25c25,30) s
+5 291 M
+(< To investigate the the contribution of the soft repulsion component of higher level objec) s
+5 280 M
+(ts,) s
+5 269 M
+(---) s
+5 258 M
+(> The model was initially tested with only a hard repulsion at the atomic level.) s
+5 247 M
+(> However, without the protective shell of their parent, the bonds between atoms were flexi) s
+5 236 M
+(ble enough ) s
+5 225 M
+(> to allow bonded pairs to transiently pass through each other resulting ) s
+5 214 M
+(> in interpenetrating chains, even though these still preserved their steric and average bo) s
+5 203 M
+(nd lengths.) s
+5 192 M
+(> ) s
+5 181 M
+(> To investigate the contribution of the soft repulsion component of higher level objects,) s
+5 170 M
+(116c121) s
+5 159 M
+(< Collisions between these constructs was engineered as above with the coordinates) s
+5 148 M
+(---) s
+5 137 M
+(> Collisions between these constructs were engineered as above, with the coordinates) s
+5 126 M
+(126c131) s
+5 115 M
+(< for the equivalent sized "cubic" chains of the previous subsection \($hard = 1.0$, $soft =) s
+5 104 M
+( 0.1$\).) s
+5 93 M
+(---) s
+5 82 M
+(> for the equivalent sized Hilbert chains of the previous subsection \($hard = 1.0$, $soft =) s
+5 71 M
+( 0.1$\).) s
+5 60 M
+(11c11) s
+5 49 M
+(< mutations.  \(See \\cite{TaylorWRet13} for a review\).) s
+5 38 M
+(---) s
+5 27 M
+(> mutations.  \(See ref.\\cite{TaylorWRet13} for a review\).) s
+5 16 M
+(43,45d42) s
+5 5 M
+(< The method was also applied to a protein of unknown structure, FlhA, which is) s
+_R
+S
+%%Page: (3) 3
+%%BeginPageSetup
+_S
+18 36 translate
+/pagenum 3 def
+/fname (changes.txt) def
+/fdir (.) def
+/ftail (changes.txt) def
+% User defined strings:
+/fmodstr (Tue Apr 12 16:50:58 2016) def
+/pagenumstr (3) def
+/user_header_p false def
+/user_footer_p false def
+%%EndPageSetup
+do_header
+5 742 M
+(< a component in the type-III secretion system and thought to form a ring) s
+5 731 M
+(< of nine proteins \(\\Fig{flhA-model}\).) s
+5 720 M
+(47c44) s
+5 709 M
+(< As an exercise in structure prediction, the helices were allowed to move) s
+5 698 M
+(---) s
+5 687 M
+(> As an exercise in structure refinement, the helices were allowed to move) s
+5 676 M
+(55a53,56) s
+5 665 M
+(> The method was also applied to a protein of unknown structure, FlhA: which is) s
+5 654 M
+(> a core component in the bacterial flagellum motor \(in its type-III secretion ) s
+5 643 M
+(> sub-system\) and thought to form a ring of nine proteins \(\\Fig{flhA-model}\).) s
+5 632 M
+(> ) s
+5 621 M
+(94c95) s
+5 610 M
+(< $b$\) The highest scoring rhodopsin model is superposed on the native structure.) s
+5 599 M
+(---) s
+5 588 M
+(> $b$\) The highest scoring rhodopsin model is superposed on the native structure \(PDB code ) s
+5 577 M
+({\\tt 1GZM}\).) s
+5 566 M
+(106c107) s
+5 555 M
+(< prediction methods produce a "clover-leaf" structure reminiscent of tRNA, and like that m) s
+5 544 M
+(olecule, its) s
+5 533 M
+(---) s
+5 522 M
+(> prediction methods \\cite{HofackerIL03} produce a "clover-leaf" structure reminiscent of t) s
+5 511 M
+(RNA, and like that molecule, its) s
+5 500 M
+(197a199,201) s
+5 489 M
+(> The blue dots mark models that started from the 'default' secondary structure layout) s
+5 478 M
+(> \(Figure 6a\) and the red dots started from the alternative arrangement with two stemloops) s
+5 467 M
+(> \(top and right\) in swapped positions.) s
+5 456 M
+(2a3,10) s
+5 445 M
+(> The behaviour of the current method has been investigated using two distinct) s
+5 434 M
+(> approaches: in the examples involving collisions, a constant driving displacement) s
+5 423 M
+(> was applied to a single high-level object \(to force it to make contact with ) s
+5 412 M
+(> another object\), by contrast,  in the examples involving constraint satisfaction the ) s
+5 401 M
+(> displacements were instead applied to the lowest level objects \("atoms"\).  In the first) s
+5 390 M
+(> case, the response of the lower level objects to maintain structural integrity was monito) s
+5 379 M
+(red) s
+5 368 M
+(> whereas in the second, the resulting rearrangement of the higher levels objects was of in) s
+5 357 M
+(terest.) s
+5 346 M
+(> ) s
+5 335 M
+(57c65) s
+5 324 M
+(< a binding event would stil rely on external knowledge of the residues involved.) s
+5 313 M
+(---) s
+5 302 M
+(> a binding event would still rely on external knowledge of the residues involved.) s
+5 291 M
+(79c87) s
+5 280 M
+(< be transfered to another assembly or a large multi-domain chain may be cleaved.) s
+5 269 M
+(---) s
+5 258 M
+(> be transferred to another assembly or a large multi-domain chain may be cleaved.) s
+5 247 M
+(82a91,123) s
+5 236 M
+(> ) s
+5 225 M
+(> \\subsection{Relationship to other methods}) s
+5 214 M
+(> ) s
+5 203 M
+(> Given a model in which all the constraints have been chosen well to avoid bond) s
+5 192 M
+(> or bump violations at all levels, then in the absence of any user applied displacements,) s
+5 181 M
+(> the behaviour of the current method is to do nothing.) s
+5 170 M
+(> It is left entirely up to the user how things should move, which is done by implementing) s
+5 159 M
+(> custom code in what is called the "driver" routine.    This code can be either very) s
+5 148 M
+(> simple, such as the few lines of code needed to implement the collision displacement or) s
+5 137 M
+(> quite complicated such as the code to apply the distance constraints described in the) s
+5 126 M
+(> Results section.) s
+5 115 M
+(> ) s
+5 104 M
+(> Extrapolating this progression, the constraints could be applied in the form of a potenti) s
+5 93 M
+(al and) s
+5 82 M
+(> indeed a potential could even be applied to many pairs of atoms \\cite{PerioleXet09}.   Th) s
+5 71 M
+(e next) s
+5 60 M
+(> obvious step would be to implement full molecular dynamics, Lagrangian mechanics or Monte) s
+5 49 M
+( Carlo.) s
+5 38 M
+(> However, the problem with implementing anything complicated in the driver routine is that) s
+5 27 M
+( at some) s
+5 16 M
+(> point, the current method will start to act on the \(common\) coordinates and if the) s
+5 5 M
+(> driver code requires consistency in terms of distances and derived potentials, forces and) s
+_R
+S
+%%Page: (4) 4
+%%BeginPageSetup
+_S
+18 36 translate
+/pagenum 4 def
+/fname (changes.txt) def
+/fdir (.) def
+/ftail (changes.txt) def
+% User defined strings:
+/fmodstr (Tue Apr 12 16:50:58 2016) def
+/pagenumstr (4) def
+/user_header_p false def
+/user_footer_p false def
+%%EndPageSetup
+do_header
+5 742 M
+(> velocities, then a multitude of problems will arise.) s
+5 731 M
+(> ) s
+5 720 M
+(> The simplest approach to this problem is to attach a warning notice stating that \\NAME\\ c) s
+5 709 M
+(annot) s
+5 698 M
+(> be used in combination with any method that requires global internal consistency.   The o) s
+5 687 M
+(nly) s
+5 676 M
+(> route that might avoid this incompatibility would be through a more stochastic approach) s
+5 665 M
+(> in which the displacements made at all levels are treated as a \(semi\) random Monte Carlo) s
+5 654 M
+(> move of the system.) s
+5 643 M
+(> A second path to resolve the problem might be through a variation of Gaussian elastic) s
+5 632 M
+(> networks, However, elastic) s
+5 621 M
+(> networks require a fixed topology that cannot be expected to remain intact across the) s
+5 610 M
+(> large \(driven\) displacements envisaged for the current method.) s
+5 599 M
+(> ) s
+5 588 M
+(> These possible developments will be reconsidered at a later time as it is currently) s
+5 577 M
+(> unclear, not only how a consistent potential could be applied but also how potentials) s
+5 566 M
+(> on different levels should interact.) s
+_R
+S
+%%Trailer
+%%Pages: 4
+%%DocumentNeededResources: font Courier-Bold Courier 
+%%EOF

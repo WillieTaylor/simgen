@@ -1,0 +1,9 @@
+#NOMOVE
+#NORUN
+NOVIEW
+SCALE 0.158 6.33  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM test.mod
+END
+GROUP 0 1
+INPUT secout.dat
+#LINKS pdbid links.dat

@@ -1,0 +1,4 @@
+SCALE 0.158 6.33  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM prot3.linear.model
+END
+INPUT unit1.dat

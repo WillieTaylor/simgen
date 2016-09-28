@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.7)
+The top-level auxiliary file: select.aux
+The style file: unsrt.bst
+Reallocated field_info (elt_size=4) to 10014 items from 5000.
+Database file #1: select.bib
+You've used 218 entries,
+            1791 wiz_defined-function locations,
+            1826 strings with 39238 characters,
+and the built_in function-call counts, 58318 in all, are:
+= -- 5609
+> -- 2445
+< -- 62
++ -- 889
+- -- 671
+* -- 4046
+:= -- 9166
+add.period$ -- 725
+call.type$ -- 218
+change.case$ -- 214
+chr.to.int$ -- 0
+cite$ -- 218
+duplicate$ -- 2468
+empty$ -- 5473
+format.name$ -- 671
+if$ -- 12930
+int.to.chr$ -- 0
+int.to.str$ -- 218
+missing$ -- 219
+newline$ -- 1126
+num.names$ -- 293
+pop$ -- 395
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1138
+stack$ -- 0
+substring$ -- 5052
+swap$ -- 586
+text.length$ -- 62
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 689
+width$ -- 221
+write$ -- 2513

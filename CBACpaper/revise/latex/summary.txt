@@ -1,0 +1,1121 @@
+       
+AbadCet87, Refined crystal structure of dogfish {M4} 
+AbagyanRAet88, A Simple Qualitative Representation of Polypeptide Chain
+AbagyanRAet89, An Automatic Search for Similar Spatial Arrangements
+AbagyanRAet93, Towards protein folding by global energy optimization.,
+AbolaEEet87, Protein data bank, book Crystallographic Databases---{I}nformation Content,
+AdamsCC94, The knot book: an elementary introduction to
+AdamsMJet70, Structure of Lactate Dehydrogenase at {2.8 \AA}
+AdzhubeiAAet93a, Left-handed polyproline-{II} helices as an element in
+AdzhubeiAAet93b, Left-handed polyproline-{II} helices commonly occur in globular-proteins,
+AdzhubeiAAet94, Conservation of polyproline-{II} helices in homologous proteins:
+AleskerVet96, Detection of non-topological motifs in protein structures,
+AlexandrovNNet92, Common Spatial Arrangements of Backbone Fragments in
+AlexandrovNNet94, Biological meaning, statistical significance, and classification of
+AlexandrovNNet96, Analysis of topological and nontopological structural similarities
+AlexandrovRNNet98, Alignment algorithm for modeling and threading, 
+AllenPet87, Identification of {T} cell and {I}a contact
+AltschuhDet87a, Correlation of coordinated amino-acid substitutions with function
+AltschuhDet87b, Correlation of coordinated amino-acid substitutions with function
+AltschuhDet87c, Correlation of coordinated amino-acid substitutions with function
+AltschuhDet88b, Coordinated amino acid changes in homologous protein
+AltschulSF91, Amino acid substitution matrices from an information
+AltschulSFet86a, Locally optimal subalignments using nonlinear similarity functions.,
+AltschulSFet86b, Optimal sequence alignment using affine gap costs.,
+AltschulSFet86c, A nonlinear measure of subalignment similarity and
+AltschulSFet89, Weights for data related by a tree,
+AltschulSFet90a, Basic local alignment search tool.,  
+AltschulSFet90b, Protein database searches for multiple alignments., 
+AltschulSFet94, Issues in searching molecular sequence databases, 
+AltschulSFet97, Gapped {BLAST} and {PSI-BLAST}: a new generation
+AmzelLMet79,       
+AnfinsenCB73, Principles that govern the folding of protein
+AppelRDet94, A new generation of information retrieval tools
+ArgosP87a, A sensitive procedure to compare amino acid
+ArgosPet90, Sensitivity comparison of protein amino acid sequences.,
+ArnoldGEet92, Use of conditional probabilities for determining relationships
+ArtymiukPJet81, Genes pieced together:    
+ArtymiukPJet90, Structural Resemblance between the Families of Bacterial
+ArtymiukPJet92a, Three-Dimensional Structural Resemblance Between Leucine  
+ArtymiukPJet92b, Similarity Searching in Databases of Three-Dimensional 
+ArtymiukPJet94, A graph-theoretic approach to the identification of
+ArtymiukPJet95, The use of graph theoretical methods for
+AszodiAet93a, Connection topology of proteins,   
+AszodiAet94a, Folding polypeptide $\alpha$-carbon backbones by  
+AszodiAet94b, Secondary structure formation in model polypeptide chains,
+AszodiAet94c, Modelling secondary structure formation by distance geometry
+AszodiAet95a, Estimating polypeptide $\alpha$-carbon distances from multiple 
+AszodiAet95b, Protein Fold Determination Using a small Number
+AszodiAet95c, Global fold determination from a small number
+AszodiAet96a, Homology modelling by distance geometry,  
+AszodiAet97a, Hierarchical Inertial Projection:    
+AszodiAet97b, Distance based comparative modelling,   
+AszodiAet97c, Protein Modelling by Multiple Sequence Threading and
+BabiorBMet77, Superoxide-forming enzyme from human neutrophils:  
+BacharOet93, A Computer Vision Based Technique for {3-D}
+BagleySCet95, Characterizing the microenvironment surrounding protein sites, 
+BainsW87, Evolutionary paradoxes and natural non-selection,  
+BairochAet91, The {SWISS-PROT} protein sequence data bank, 
+BairochAet96, The {PROSITE} database, its status in 1995,
+BairochAet97, The {PROSITE} database, its status in 1997,
+BairochAet97, {The {SWISS-PROT} protein sequence data bank and
+BajajMet84, Evolution and the Tertiary Structure of Proteins,
+BajajMet87, On the tertiary structures of the extracellular
+BakerDet93, Coordinate-space formulation of polymer lattice cluster theory,
+BakerENet84, Hydrogen-bonding in globular-proteins,    
+BaldwinJM93, The probable arrangement of the helices in
+BanghamJA88, Data-sieving hydrophobicity plots,    
+BannerDWet75, Structure of Chicken Muscle Triose Phosphate Isomerase
+BarakatMTet90, Molecular Structure Matching by Simulated Annealing. 
+BarlowDJet86, book Protein Engineering: Applications in Science, The
+BarlowDJet88a, Helix Geometry in Proteins,   
+BartonGJ92, Computer speed and sequence comparison,  
+BartonGJet87a, A strategy for the rapid multiple alignment
+BartonGJet87b, Evaluation and improvements in the automatic alignment
+BartonGJet88, {LOPAL} and {SCAMP}:    
+BartonGJet90a, Flexible protein sequence patterns: a sensitive method
+BartonGJet91b, Amino acid sequence analysis of the annexin
+BashfordDet87, Determinants of a protein fold - unique
+BazanJF90, Structural design and molecular evolution of a
+BelfortM93, An expanding universe of introns,  
+BementTRet77, Locating Maximum Variance Segments in Sequential Data,
+BenhamCJet93, Disulphide bonding patterns and protein topologies, 
+BennerSA89, Patterns of divergence in homologous proteins as
+BennerSAet90a, Evolution and structural theory:   
+BennerSAet91a, {RNA} world,     
+BennerSAet91b, Patterns of divergence in homologous proteins as
+BennerSAet92a, Correct structure prediction?,    
+BennerSAet93a, Predicted secondary structure for the src homology-3
+BennerSAet93b, Empirical and structural models for insertions and
+BennerSAet93c, Reading the palimpsest: book The {RNA} world:
+BennetMJet95, 3{D} domain swapping: a mechanism for oligomer
+BergJ88, Proposed structure for the {Zn$^{++}$}-binding domains from
+BermanHMet00, The Protein Data Bank,   
+BermanHMet00a, The Protein Data Bank,   
+BernsteinFCet77, The protein databank: a computer-based archival file
+BhattacharyaSet94, Cytosine nucleoside/nucleotide deaminases and apolipoprotein {B} 
+BiouVet97, The crystal structure of plant acetohydroxy acid
+BishopMJet84a, Fast computer search for similar {DNA} sequences,
+BjorkmanPJet87, Structure of the human class {I} histocompatibility
+BlaisdellBE86, A measure of the similarity of sets
+BlakeCCF78, Do genes-in-pieces imply proteins-in-pieces?,   
+BlakeCCF81, Exons and the structure, function and evolution
+BlakeCCFet87, Exon and domain evolution in the proenzymes
+BlanckAet87, The halo-opsin gene: {II}. sequence, primary structure
+BleasbyAJet90, Construction of validated, non-redundant composite protein sequence
+BlundellTLet86, Three-dimensional structural aspects of the design of
+BlundellTLet87, Knowledge-based prediction of protein structures and the
+BlundellTLet88, Knowledge-based protein modelling and design.,  
+BlundellTLet90b, X-ray analyses of aspartic proteinases:  
+BlundellTLet93b, Catching a common fold,   
+BlundellTLet96, Symmetry, stability, and dynamics of multidomain and
+BohrJet93, Protein structures from distance inequalities.,  
+BonneauRet01, Rosetta in {CASP4}: progress in ab initio
+BordenKLBet96, The {RING} finger domain: a recent example
+BorkPet92a, An {ATP}ase domain common to prokaryotic cell
+BorkPet93b, Convergent evolution of similar enzymatic function on
+BorkPet94bb, From genome sequences to protein function, 
+BoswellDRet84, Sequence comparison by exponentially-damped alignment.,  
+BowieJU00, Helix-bundle membrane protein fold templates,  
+BowieJUet90a, Identification of protein folds: matching hydrophobicity patterns
+BowieJUet91b, A Method to Identify Protein Sequences That
+BowieJUet93a, Inverted protein-structure prediction,    
+BowieJUet93b, 3d profiles - principles and applications, 
+BowieJUet94, An evolutionary approach to folding small alpha-helical
+BrandenCet91, Introduction to Protein Structure,   
+BraunWet85, Calculation of Protein Conformations by Proton-Proton 
+BrazmaAet98, Approaches to the Automatic Discovery of Patterns
+BrendelVet92, Methods and algorithms for statistical-analysis of protein
+BrennerSEet97, {Assessing sequence comparison methods},   
+BrennerSEet98, {Assessing sequence comparison methods with reliable structurally
+BreuerJet95a, Phylogenetic analysis of the full--length env-genes of
+BreuerJet95b, Human-immunodeficiency-virus type-2 ({HIV}-2) env gene analysis: 
+BrintATet89, Rapid Geometric Searching in Protein Structures, 
+BronDet73, Algorithm 457: finding all cliques of an
+BrooksBRet83, {CHARMM} A program for macromolecular energy, minimisation,
+BrownNP92b, Patterns in Secondary Structure Packing---A Database for
+BrownNPet96, A protein structure comparison methodology,  
+BruceAet92, Critical point phenomena: universal physics at large
+BrungerATet93, Computational challenges for macromolecular structure  
+BryantSH96, Evaluation of threading specificity and accuracy, 
+BryantSHet91b, The frequency of ion-pair substructures in proteins
+BryantSHet93a, An empirical energy function for threading protein-sequence
+BystroffCet98, Prediciton of local structure in protein susing
+CammackRet71, Ferredoxins: are they living fossils?,  
+CapiliADet02, Solution Structure of the Phd Domain from
+CarsonM91, RIBBONS 2.0,     
+CavalierSmithT91, Intron phylogeny: a new hypothesis,  
+ChanHSet90a, Origins of structure in globular-proteins,  
+ChanSCet92, A survey of multiple sequence comparison methods,
+ChenPet92, Crystal structure of glycinamide ribonucleotide  
+ChothiaC84, Principles that determine the structure of proteins,
+ChothiaC88, Protein structure: the 14$^{th}$ barrel rolls out,
+ChothiaC92, Proteins - 1000 families for the molecular
+ChothiaCet74, Structure of proteins: packing of $\alpha$-helices and
+ChothiaCet81a, Helix to helix packing in proteins, 
+ChothiaCet81b, Relative orientation of close-packed $\beta$-pleated sheets in
+ChothiaCet82, Orthogonal packing of $\beta$-pleated sheets in proteins,
+ChothiaCet85, Helix movements in proteins.,   
+ChothiaCet86a, The relation between divergence of sequence and
+ChothiaCet87b, The evolution of protein structures,  
+ChothiaCet90a, The Classification and Origins of Protein Folding
+ChothiaCet93a, New folds for all-$\beta$ proteins,  
+ChothiaCet94, Sequences and topology,    
+ChouKCet85, Interactions between an $\alpha$-helix and a $\beta$-sheet:
+ChouKCet90, Conformational and geometrical properties of idealised 
+ChouPYet74b, Prediction of protein conformation.,   
+ChouPYet78, Prediction of the secondary structure of proteins
+ClaessensMet89, Modelling the polypeptide backbone with 'spare-parts' from
+ClarkDAet91, Protein Topology Prediction Through Constraint-Based  
+ClarkRAet90, Two cytosolic components of the human neutrophil
+CohenBIet91, Pattern-based approaches to protein-structure prediction,  
+CohenCPet90, Alpha-helical coilled coils and bundles:  
+CohenCet94, $\alpha$-helical coiled coils:    
+CohenFEet79, Protein Folding:     
+CohenFEet80a, bookProtein Folding, Analysis and prediction of the
+CohenFEet80b, Analysis and prediction of protein $\beta$-sheet structures
+CohenFEet80c, On the use of chemically derived distance
+CohenFEet80d, On the prediction of protein structure: 
+CohenFEet81, Analysis of the Tertiary Structure of Protein
+CohenFEet82a, Analysis and Prediction of the Packing of
+CohenFEet93, Protein-structure prediction - recent successes and failures,
+CollochNet93, Comparison of three algorithms for the assignment
+ColonnaCesariFet90, Excluded volume approximation to protein solvent interaction:
+ColonnaFet86, Interdomain motion in liver alcohol dehydrogenase. 
+ConklinD95, Machine discovery of protein motifs,  
+ConklinDet02, Association of nucleotide patterns with gene function
+ConnollyMLet80, Linked and threaded loops in proteins, 
+CorreaPE90, The building of protein structures from $\alpha$-carbon
+CovellDG92, Folding protein $\alpha$-carbon chains into compact forms
+CozzarelliNRet90, {DNA} topology and its biological effects, 
+CrawfordIPet87, Prediction of secondary structure by evolutionary comparison:
+CreightonTE93, Proteins: Structures and molecular properties,  
+CrickFHC68, = The origin of the genetic code,
+CrippenGM74, Topology of globular proteins,   
+CrippenGM75, Topology of globular proteins. {II},  
+CrippenGM78, The tree structural organisation of proteins, 
+CrippenGM91b, Prediction of protein folding from amino-acid-sequence over
+CrippenGMet88, Distance Geometry and Molecular Conformation, book Chemometrics
+CrippenGMet95, How many protein folding motifs are there?,
+CronetPet93, Modelling of transmembrane 7 helix bundles, 
+DandekarTet92a, Potential of genetic algorithms in protein folding
+DandekarTet94a, Folding the main-chain of small proteins with
+DavidsonARet94, Folded proteins occur frequently in libraries of
+DayhoffMOet72a, A model of evolutionary change in proteins.,
+DayhoffMOet78, A model of evolutionary change in proteins.,
+DeGradoWFet89, Protein Design, a Minimalist Approach,  
+DeGrootBLet97, Prediction of protein conformational freedom from distance
+DebeDAet99,  Protein fold determination from sparse distance
+DegtyarenkoKNet98, {PROMISE:} a database of information on prosthetic
+DeisenhoferJ81, Human {FC} fragment and its complex with
+DeisenhoferJet84, {X}-ray structure analysis of a membrane protein
+DeisenhoferJet85, Structure of the protein subunits in the
+DeisenhoferJet89, The photosynthetic reaction center from the purple
+DentonMet01, Laws of form revisited,   
+DepiereuxEet91, Simultaneous and multivariate alignment of protein sequences:
+DesmetJet92, The dead-end elimination theorem and its use
+DevereuxJet84, A comprehensive set of sequence analysis programs
+DiamondR76, On the Comparison of Conformations using Linear
+DiamondR88, A Note on the Rotational Superposition Problem,
+DiamondR92, On the Multiple Simultaneous Superposition of Molecular
+DibbNJet89, Evidence that introns arose at proto-splice sites,
+DickersonREet69, The structure and action of proteins, 
+DiederichsK95, Structural superposition of proteins with unknown alignment
+DillKA93a, Folding proteins - finding a needle in
+DillKAet93b, Cooperativity in protein folding kinetics.,  
+DillKAet97, From {L}eventhal to pathways to funnels., 
+DingDFet94, A Differential Geometric Treatment of Protein Structure
+DongZet94, {Na$_2$K$_{21}$Tl$_{19}$}, a novel thallium compound containing isolated
+DonnellyDet89, An analysis of the periodicity of conserved
+DonnellyDet93, Modelling $\alpha$-helical transmembrane domains:   
+DoolittleRF85, The genealogy of some recently evolved vertabrate
+DoolittleRF87, Of {URF}s and {ORF}s:   
+DoolittleRF90a, Molecular Evolution:     
+DoolittleRF91, Counting and discounting the universe of exons,
+DoolittleRFet86, Relationships of Human Protein Sequences to Those
+DoolittleRFet89, Origins and evolutionary relationships of retroviruses, 
+DoolittleWF87, What introns have to tell us: hierarchy
+DoritRLet90, How big is the universe of exons?,
+DoverG82, Molecular drive: a cohesive mode of species
+DuncanBSet93, Approximation and characterization of molecular surfaces, 
+EdwardsMSet87, Structural and sequence patterns in loops 
+EfimovAV87, Pseudo-homology of protein standard structures formed by
+EfimovAV91a, Structure of $\alpha - \alpha$-hairpins with short
+EfimovAV91b, Structure of coiled $\beta - \beta$-hairpins and
+EfimovAV93, Standard structures in proteins,   
+EfimovAV97, Structural trees for protein superfamilies,  
+EidhammerIet00, Structure Comparison and Structure Patterns,  
+EidhammerIet03, Protein Bioinformatics:     
+EisenbergD84, Three-Dimensional Structure of Membrane and Surface 
+EisenbergDet82a, The helical hydrophobic moment:   
+EisenbergDet82b, Hydrophobic moments and protein structure.,  
+EisenbergDet84a, The hydrophobic moment detects periodicity in protein
+EisenbergDet84b, Analysis of Membrane and Surface Protein Sequences
+EisenbergDet89, Hydrophobic Moments as Tools for Analyzing Protein
+EklundHet84, Crystallographic investigations of nicotinamide   
+EllisKESet01, Nifs and Sufs in malaria,  
+Elrod-EricksonMet96, {Zif268} protein-{DNA} complex refined at 1.6 {\AA}:
+EngelJet87b, Calcium binding domains and calcium induced 
+EngelmanDMet80, Path of the polypeptide in bacteriorhodopsin, 
+EricksonBWet83, Recognition of Patterns in Genetic Sequences, book
+EscalierVet98, Pairwise and multiple identification of three-dimensional common
+EverettRDet93, A novel arrangement of zinc-binding residues and
+FactorADet91, Graphical Representation of Hydrogen Bonding Patterns in
+FairallLet92, Sequence-specific binding by a two zinc-finger 
+FairallLet93, The crystal structure of a two zinc-finger
+FarberGKet90, The evolution of {$\alpha/\beta$} barrel enzymes, 
+FariselliDet90,  Role of evolutionary information in predicting
+FeldmanMWet97, Microsatellite genetic distances with range constraints: 
+FellowJSet93, New programs for protein tertiary structure prediction,
+FengDFet87, Progressive Sequence Alignment as a Prerequisite to
+FengDFet90, Progressive alignment and phylogenetic tree construction 
+Fernandez-ReyesDet03a, Modelling and identification of   
+FilmanDJet82, Crystal structures of {{\em Escherichia coli}} and
+FinkelsteinAV91, Rate of beta-structure formation in polypeptides, 
+FinkelsteinAV94, Implications of the random characteristics of protein
+FinkelsteinAVet87, Why do Globular Proteins Fit the Limited
+FinkelsteinAVet91b, A search for the most stable folds
+FinkelsteinAVet93a, Computation of biopolymers - a general-approach to
+FinkelsteinAVet93b, Why are the same protein folds used
+FinneyJL, Volume occupation, environment, and accessibility in proteins:
+FischelFet90, Alignment of Protein Sequences using Secondary Structure:
+FischelghodsianFet90, Alignment of protein sequences using secondary structure
+FischerDet92, An Efficient Automated Computer Vision Based Technique
+FischerDet93a, Spatial, sequence-order-independent structural comparison of alpha/beta 
+FischerDet93b, Surface Motifs by a Computer Vision Technique:
+FischerDet94, 3-dimensional, sequence order-independent structural comparison of a
+FischerDet95, A 3{D} sequence-independent representation of the protein
+FischerDet96,  Protein fold recognition using sequence-derived predictions
+FischerDet96, Assessing the performance of fold recognition methods
+FitchWM66, An improved method for testing for evolutionary
+FlocknerHet95, Progress in fold recognition,   
+FloresTPet93, Comparison of Conformational Characteristics in Structurally 
+FloresTPet94, An Algorithm for Automatically Generating Protein Topology
+FloryPJ69, Statistical Mechanics of Chain Molecules,  
+FlowerDR98, A topological nomenclature for protein structure, 
+FragaS82, Theoretical prediction of protein antigenic determinants from
+FragaS83, Determination of antigenic determinants.,   
+FragaSet85, Theoretical studies of protein structures: prediction of
+FreemontPSet91, A novel cysteine-rich sequence motif,  
+FrenchSet83, What is a Conservative Mutation?,  
+FribourgSet00, Structural characterization of the cysteine-rich domain of
+FriedrichsMSet89, Toward Protein Tertiary Structure Recognition by Means
+FriedrichsMSet91, Generalised protein tertiary structure recognition using 
+FrommelCet85, An estimate of the effect of point
+FukuyamaKet90, Tertiary structure of oxidized flavodoxin from an
+FureyWet83, Structure of a novel {B}ence-{J}ones protein ({RHE})
+GamblinSJet91, Activity and specificity of human aldolases 
+GarciaRCet88, Phosphorylation of the subunits of cytochrome $b_{-245}$
+GardnerMJet94, Phylogenetic analysis of the rpo{B} gene from
+GariepyJet83, Primary sequence analysis and folding behaviour of
+GarnierJet78, Analysis of the accuracy and implications of
+GarnierJet91, The protein structure code: what is its
+GarrattRCet85, The influence of tertiary structure on secondary
+GarrattRet91, An extension of secondary structure prediction towards
+GatchellDWet00, Discrimination of near-native protein structures from misfolded
+GeisowMJet87, Anexins --- a new family of {C}a$^{2+}$-regulated
+GeorgeRAet02a, Protein domain identification and improved sequence similarity
+GeorgeRAet02b, {SnapDRAGON} --- a method to delineate protein
+GerberPRet87, Superimposing Several Sets of Atomic Coordinates, 
+GersteinMet95, Using a measure of structural variation to
+GestelandRFet93, The {RNA} world:    
+GibratJFet87, Further Developments of Protein Secondary Structure 
+GibratJFet96, Surprising similarities in structure comparison,  
+GibratJFet97, The {VAST} protein structure comparison method, 
+GibsonTJ90, = Metabolic complexity in the {RNA} world
+GibsonTJet88, A model for the tertiary structure of
+GibsonTJet93b, Proposed structure for the dna-binding domain of
+GibsonTJet94, {PH} domain: the first anniversary,  
+GilbertDet98, Motif-based searching in {TOPS} protein topology databases,
+GilbertDet99a, Motif-based searching in {TOPS} protein topology databases,
+GilbertW78, Why genes in pieces?,   
+GilbertW87, The exon theory of genes,  
+GoMet81, Correlation of {DNA} exonic regions with protein
+GoMet87, Protein architecture and the origin of introns,
+GoadWBet82, Pattern recognition in nucleic acid sequences I:
+GobelUet94a, Correlated mutations and residue contacts in proteins,
+GodzikA96, = The structural alignment between two proteins:
+GodzikAet92, Sequence structure matching in globular-proteins - application
+GodzikAet92a, Topology fingerprint approach to the inverse protein
+GodzikAet93b, Lattice representations of globular-proteins - how good
+GoldbergDE89, Genetic Algorithms in Search Optimization and Machine
+GoldbergDP99, Finding the right fold,   
+GoldmanN93a, Statistical tests of models of {DNA} substitution,
+GoldmanN93b, Nucleotide, dinucleotide and trinucleotide frequencies  
+GoldmanN93c, Simple diagnostic statistical tests of models for
+GoldmanN93d, Further results on error minimization in the
+GoldmanN94, Variance to mean ratio {$R(t)$} for Poisson
+GoldmanNet92, Human origins: genetics and geography,  
+GoldmanNet94, A codon-based model of nucleotide  
+GoldmanNet95, An assessment of estimation procedures for multilevel
+GoldmanNet96, Combining protein evolution and secondary structure, 
+GoldsteinDBet97, Launching microsatellites:     
+GonnetGHet92b, Exhaustive matching of the entire protein-sequence database,
+GrandoriRet94, Six new candidate members of the $\alpha$/$\beta$
+GranthamR74, Amino acid difference formula to help explains
+GreenNM91, Biological membranes:     
+GreenNM94a, Stereoimages: a practical approach,   
+GreenNM94b, Transmembrane helices of the {P}-type ion pumps,
+GreenNM94c, Membrane structure, book Encyclopaedia of Molecular Biology,
+GreenNMet86, book Calcium and the Cell, Structural and
+GreenNMet88, A consensus structure for cation pumps, book
+GreenP94, Ancient conserved regions in gene sequences, 
+GreenPet93, Ancient conserved regions in new gene-sequences and
+GregoretLMet90, Novel method for the rapid evaluation of
+GregoretLMet91, Protein folding: effect of packing density on
+GregoryDSet93, The prediction and characterization of metal binding
+GribskovMet87a, Profile analysis: detection of distantly related proteins,
+GriggsJRet90, On the number of alignments of k-sequences,
+GrindleyHMet93, Identificaton of tertiary structure resemblance in proteins
+HadleyCet99, A systematic comparison of protein structure classifications
+HallJDet88, A software tool for finding locally optimal
+HanggiGet94, Pattern recognition and self-correcting distance geometry calculations
+HaniuMet88, Complete amino-acid sequence of {NADPH}-cytochrome-p-450 reductase 
+HarrisonAet02, Quantifying the similarities within fold space, 
+HatrickKet94a, Sequence conservation and correlation measures in protein
+HavelTF90, The sampling properties of some distance geometry
+HavelTF93, Predicting the structure of the flavodoxin from
+HavelTFet79, Effects of Distance Constraints on Macromolecular 
+HavelTFet91, A new method for building protein conformations
+HawkinsDMet73, Optimal Zonation of Digitized Sequential Data, 
+HendersonRet90, Model for the structure of Bacteriorhodopsin based
+HendlichMet90, Identification of native protein folds amongst a
+HendricksonWA79, Transformations to Optimize the Superposition of Similar
+HenikoffSet92, Amino acid substitution matrices from protein blocks,
+HenikoffSet92, Amino acid substitution matrices from protein blocks,
+HenikoffSet93, Performance evaluation of amino acid substitution matrices,
+HenikoffSet97, Superior performance in protein homology detection with
+HeringaJ99, Two strategies for sequence comparison:  
+HeringaJet93, A method to recognize distant repeats in
+HeringaJet97, Three-dimensional Domain Duplication, Swapping and Stealing, 
+HeringaJet99a, Strain in protein structures as viewed 
+HeringaJet99b, Strain in protein structures as viewed 
+HidekiSet92, Cytochrome $b_{558}$, a component of the phagocyte
+HigginsDGet00a, = Preface, book Bioinformatics: Sequence structure and
+HigginsDGet00b, = Multiple sequence alignment, book Protein structure
+HigginsDGet88, CLUSTAL: a package for performing multiple sequence
+HigginsDGet92, CLUSTAL {V}: improved software for multiple sequence
+HigginsDGet94, The evolution of titin and related giant
+HigginsDGet98, Multiple Sequence Alignment, book Protein Sequence and
+HilbertMFet91, Three-dimensional models of neurotransmitter {G}-binding  
+HindsDAet92, A lattice model for protein-structure prediction at
+HindsDAet93, A low resolution model for protein-structure prediction,
+HirstJDet91b, Prediction of {ATP}-binding motifs:   
+HodgmanC92, Patterns and Specificity-Nucleotide Binding Proteins and book
+HolWGJet78, The $\alpha$-Helix Dipole and the Properties of
+HolbrookSRet90a, Predicting surface exposure of amino acids from
+HolbrookSRet93b, Probe - a computer-program employing an integrated
+HollandJ75, Adaptation in Natural and Artificial Systems, 
+HolmLet91, Database algorithn for generating protein backbone and
+HolmLet92a, Evaluation of protein models by atomic solvation
+HolmLet92b, A Database of Protein Structure Families with
+HolmLet93a, Protein-structure comparison by alignment of distance matrices,
+HolmLet93b, Globin fold in a bacterial toxin, 
+HolmLet93c, Structural alignment of gobins, phycocyanins and colicin
+HolmLet94a, Parser for protein-folding units,   
+HolmLet94b, Searching protein structure databases has come of
+HolmLet97, Dali/{FSSP} classification of three-dimensional protein folds, 
+HolmLet98, Touring protein fold space with Dali/{FSSP}, 
+HolmSander93b, Protein-Structure Comparison by Alignment of Distance 
+HonigB99, Protein Folding: from Leventhal Paradox to structure
+HonzatkoRB86, Automated Calculation of Coordinate Transformations for 
+HuHet03, Comparison of a {QM/MM} force field and
+HuJCet90, Sequence requirements for coiled-coils:   
+HuangESet93, Automatic and Accurate Method for Analysis of
+HuangX94, A context dependant method for comparing sequences,
+HuangXet90, A space-efficient algorithm for local similarities, 
+HubbardTJPet97, {SCOP:} a structural classification of proteins database,
+HuberRet90a, The calcium binding sites in human annexin
+HuberRet90b, The crystal and molecular structure of human
+HugheyRet96, {Hidden {Markov} models for sequence analysis: {Extension}
+HurstJKet91, Rosonance Raman and Electron Paramagnetic Resonance Structural
+HutchinsonEGet93, The greek key motif - extraction, classification
+HutchinsonEGet96, {PROMOTIF} -- {A} program to identify and
+HydeCCet88, Three-dimensional structure of the tryptophan  
+ImajohOhmiSet92, Topology of Cytochrome $b_{558}$ in Neutrophil 
+IslamSAet95, Identification and analysis of domains in proteins,
+JacobsSAet02, The active site of the {SET} domain
+JaninJ79a, The protein kingdom:    
+JaninJet80, Packing of $\alpha$-helices onto $\beta$-pleated sheets and
+JaninJet83, {Structural domains in proteins an their role
+JaninJet85, {Domains in proteins: definitions, location and structural
+JardetzkyTSet91, Identification of self peptides bound to purified
+JenningsMJ89, Topography of membrane proteins,   
+JohannissenLOet03, = Protein fold comparison by the alignment
+JohnsonLB, The Books of Bokonon,   
+JohnsonMS91, Comparisons of Protein Structures,   
+JohnsonMSet90a, Molecular anatomy: phyletic relationships derived from 3-dimensional
+JohnsonMSet90b, Phylogenetic-relationships from 3-dimensional protein structures,  
+JohnsonMSet93, Alignment and searching for common protein folds
+JohnsonMSet96, Discrimination of common protein folds:  
+JonassenI97, Efficient discovery of conserved patterns using a
+JonassenIet00a, Searching the Protein Structure Databank with Weak
+JonassenIet02, Structure motif discovery and mining the {PDB},
+JonassenIet95, Finding flexible patterns in unaligned protein sequences,
+JonassenIet99, Discovery of local packing motifs in protein
+JonesDT01, Predicting novel protein folds by using {FRAGFOLD},
+JonesDT91, The application of fractal clustering to efficient
+JonesDT94a, {\em De novo} protein design using pairwise
+JonesDT95a, Theoretical approaches to designing novel sequences to
+JonesDT99a, Protein secondary structure prediction based on position-specific
+JonesDT99b, Gen{THREADER}: an efficient and reliable protein fold
+JonesDTet00a, The {PSIPRED} protein structure prediction server, 
+JonesDTet92a, The Rapid generation of mutation data matrices
+JonesDTet92b, A new approach to protein fold recognition,
+JonesDTet93a, Progress towards recognising protein folds from amino
+JonesDTet94a, A mutation data matrix for transmembrane proteins,
+JonesDTet94b, A model recognition approach to the prediction
+JonesDTet94c, Protein fold recognition,    
+JonesDTet95, Successful protein fold recognition by optimal sequence
+JonesDTet98, Towards structural genomics for transmembrane proteins, 
+JonesSet98, Domain assignment for protein structures using a
+JonesTAet86, Using known substructures in protein model building
+JoshiAK91, Natural language processing,    
+KabschW76, A Solution for the Best Rotation to
+KabschW78, A Discussion of the Solution for the
+KabschWet83a, How good are predictions of protein secondary
+KabschWet83b, Dictionary of Protein Secondary Structure: Pattern 
+KajavaAV92, Left-handed topology of super-secondary structure formed by
+KakinumaKet86, Electron spin resonance studies on a flavoprotein
+KanaokaMet89, Alignment of protein sequences using the hydrophobic
+KappOet95, {Alignment of 700 globin sequences: {Extent} of
+KarlinSet90a, Statistical composition of high-scoring segments from molecular
+KarlinSet90b, Methods for assessing the statistical significance of
+KarlinSet91a, Statistical-methods and insights for protein and {DNA}-sequences,
+KarlinSet92a, Significant similarity and dissimilarity in homologous proteins,
+KarlinSet93a, Applications and statistics for multiple high-scoring segments
+KarlinSet94, Measuring residue associations in protein structures --
+KarlinSet96, Characterizations of diverse residue clusters in protein
+KarpenMEet89, Comparing Short Protein Substructures by a Method
+KarplusK95, Evaluating regularizers for estimating distributions of amino
+KarplusKet98, Hidden {M}arkov models for detecting remote protein
+KarplusPAet91, Atomic structure of ferredoxin-{NADP$^+$} reductase:  
+KasinosNet92, A robust and efficient automated docking algorithm
+KauzmannW59, Relative probabilities of isomers in cystine-containing book
+KearsleySK89, On the Orthogonal Transformation used for Structural
+KearsleySK90, An Algorithm for the Simultaneous Superposition of
+KellyCet90, Sequencing and characterization of the 185 {KD}a
+KendrewJCet60,       
+KendrewJCet70,       
+KenknightCE84, Comparison of Methods of Matching Protein Structures,
+KettleboroughCAet91, Humanisation of a mouse monoclonal antibody by
+KikuchiTet86, Spatial geometric arrangements of sisulphide-crosslinked  
+KimCAet96, A 2.2\AA\ resolution crystal structure of a
+KimJet94, {Multiple sequence alignment using simmulated annealing}, 
+KingRDet96,  Identification and application of the concepts
+KlapperMHet80, The `knotting' problem in proteins: loop penetration,
+KleywegtGJet97, Detecting Folding Motifs and Similarities in book
+KnellerDGet90,  Improvements in protein secondary structure prediction
+KnightonDRet91, Crystal structure of the catalytic subunit of
+KnottTJet86, Human apolipoprotein {B}: complete c{DNA} sequence and
+KochIet92, Analysis of protein sheet topologies by graph
+KochIet96, An algorithm for finding maximal common subtopologies
+KoehlPet92a, Computing the geometry of a molecule in
+KolaskarASet92, Sequence alignment approach to pick up conformationally
+KomiyaHet88, Structure of the reaction centre from {{\em
+KooninEVet94, {Computer amalysis of bacterial haloacid dehalogenases defines
+KraulisPJ91, = {MOLSCRIPT}: A Program to Produce Both
+KretsingerRH80, Structure and evolution of calcium-modulated proteins, 
+KretsingerRHet73,       
+KroghAet94, {Hidden {Markov} models in computational biology: 
+KrzanowskiWJ90, Principles of Multivariate Analysis,   
+KubotaYet81, Homology in protein sequences expressed by correlation
+KuhnHW55, The Hungarian Method for the Assignment Problem,
+KuntzIDet76, Calculation of protein tertiary structure.,  
+KuntzIDet89,  Distance geometry    
+KuntzIDet89, Distance Geometry,     
+KyteJ95, Structure in Protein Chemistry,   
+KyteJ95a, Structure in protein chemistry,   
+KyteJ95b, Mechanism in protein chemistry,   
+LaCourTFMet85, Structural details of the binding of guanosine
+LaPollaRJet91b, Sequence and structural analysis of surface protein
+LaThangueNBet93, A structural similarity between mamalian and yeast
+LabeitSet90, A regular pattern of two types of
+LamondAI90, = Catalytic {RNA} and the origin of
+LandoltMCet93, The amino acid composition is different between
+LapattoRet89, X-Ray Analysis of {HIV-1} Proteinase at {2.7
+LathropRH94, The protein threading problem with sequence amino
+LathropRHet96, Global optimum protein threading with gapped alignment
+LathropRHet96, Global optimum protein threading with gapped alignment
+LawerenceCEet91, Hydrophobic potentials from statistical-analysis of protein structures,
+LawrenceCEet93, Detecting subtle sequence signals:   
+LeNguyenDet90, Molecular recognition between serine proteases and new
+LeahyDJet92, Crystal structure of a soluble form of
+LeeBKet71, The interpretation of Protein Structures:  
+LeeCet91a, Prediction of protein side-chain conformation by packing
+LegerOJet00, Preparation of recombinant antibodies from immune rodent
+LeggeJ1899, The {I} {C}hing: the book of changes,
+LemerCMet95, Protein structure prediction by threading methods: 
+LeskAM79, Detection of Three-Dimensional Patterns of Atoms in
+LeskAM86, A Toolkit for Computational Molecular Biology. {II}.\
+LeskAM93, Boolean programming formulation of some pattern-matching problems
+LeskAMet80, How Different Amino Acid Sequences Determine Similar
+LeskAMet86, Alignment of the amino acid sequences of
+LeskAMet89a, Structural principles of $\alpha$/$\beta$-barrel proteins:  
+LeskAMet92, Does protein-structure determine amino-acid-sequence,   
+LestAM95, Three-dimensional pattern matching in protein structure analysis,
+LevineJMet93a, Quantification of secondary structure prediction improvement 
+LevineMet84, A Method for the Systematic Comparison of
+LevinthalC69, , book Mossbauer Spectroscopy in Biological Systems,
+LevittM76b, A simplified representation of protein conformations for
+LevittM78, Conformational preferences of amino acids in globular
+LevittM83a, Protein folding by restrained energy minimization and
+LevittM83b, Computer simulation of {DNA} double-helix dynamics., 
+LevittM83c, Molecular dynamics of native proteins: {I}. Computer
+LevittM83d, Molecular dynamics of native proteins: {II}. 
+LevittM92a, Accurate modelling of protein conformation by automatic
+LevittMet77, Automatic identification of secondary structure in globular
+LevittMet98, A unified statistical framework for sequence comparison
+LiangCet94a, Topological chirality of proteins,   
+LiangCet94b, Knots in proteins,    
+LiangCet95, Topological features of protein structures:  
+LiebmanMN82, Correlation of Structure and Function in Biologically
+LightDRet81, Characteristics of the cofactor requirements for the
+LinKet02a, Amino acid substitution matrices from an artificial
+LinKet02b, Threading using neural networks ({TUNE}):  
+LinKet02c, Amino acid encoding schemes from protein structural
+LinKet03a, {CAO} matrices from an artificial neural network
+LipmanDJet83, Contextual constraints on synonymous codon choice, 
+LipmanDJet85a, Rapid and sensitive protein similarity searches., 
+LiuSet97, The largest common similar substructure problem, 
+LogsdonJMet94, Origin of introns - early or late?,
+LuHet02, A distance-dependent atomic knowledge-based potential  
+LuZLet01, Transmembrane domains 4 and 7 of the
+LuZLet02, Seven-transmembrane receptors: crystals clarify,   
+LundOet96,  Relationship between protein structure and geometrical
+LuoXet93, Vertex mobility of polyhedra, Quasi-periodic crystals: a
+LupasAet91, Predicting coiled coils from protein sequences, 
+LuthyRet91, Secondary structure-based profiles - use of structure-conserving
+LuthyRet92, Assessment of Protein Models with Three-Dimensional 
+MacKayAL67, Optimisation of the genetic code,  
+MacKayAL83, The numerical geometry of biological structures, book
+MacLennanDHet97, The mechanism of {C}a{$^{2+}$} transport by sarco(endo)plasmic
+Mackay84, Quaternion Transformation of Molecular Orientation,  
+MackayAL74,  Generalized structural geometry   
+MaddenDRet91, The structure of {HLA-B27} reveals nonamer self-peptides
+MadejTet95, Threading a database of protein cores, 
+MaglioOet02, A major {IgE} epitope-containing grass pollen allergen
+MahadevanDet01, Predicted fold for the ABri amyloid subunit:
+MahadevanDet99, The extracellular regions of PSMA and the
+MaiorovVNet92, Contact potential that recognizes the correct folding
+MaiorovVNet94, Significance of root-mean-square deviation in comparing three-dimensional
+MajorFet91, The Combination of Symbolic and Numerical Computation
+MandlerJ88a, {ANTIGEN}: protein surface residue prediction.,  
+MansfieldML94, Are there knots in proteins,  
+MansfieldML97, Fit to be tied,   
+Manual{BairochA90b, The {SwissProt} protein sequence databank user manual,
+Manual{GishW92, {{NRDB} program},     
+MaoB89, Molecular topology of multiple-disulphide polypeptide chains, 
+MaoB93, Topological chirality of proteins,   
+MarquartMet80, The intact immunoglobulin molecule {KOL} and its
+MartinBL97, Post- and co-translational modification of proteins, enzyme
+MasaharuKet89, Alignment of protein sequences using the hydrophobic
+MatsudaHet97, An approach to detection of protein structural
+MatthewsBWet81, Relation between Hen Egg White Lysozyme and
+MatthewsBWet85, Comparisons of protein structures,   
+MayACW01a, Optimal classification of protein sequences  
+MayACW02a, Definition of the tempo of  
+MayACW96, {Pairwise iterative superposition of distantly related proteins
+MayACWet94a, Protein structure comparisons using a combination of
+MayACWet95, Improved genetic algorithm-based protein structure comparisons: pairwise
+McClureMAet94, Comparative analysis of multiple protein-sequence  
+McGuffinLJet01, What are the baselines for fold recognition?,
+McLachlan82, Rapid Comparison of Protein Structures,  
+McLachlanAD71, Test for comparing related amino acid sequences.
+McLachlanAD72a, Repeating sequences and gene duplication in proteins.,
+McLachlanAD72b, A Mathematical Procedure for Superimposing Atomic 
+McLachlanAD77, Analysis of periodic patterns in amino acid
+McLachlanAD79, Gene duplication in the structural evolution of
+McLachlanAD82b, ,      
+McLachlanAD83, Analysis of gene duplication repeats in the
+McLachlanAD84, How Alike are the Shapes of Two
+McLachlanADet76, the 14-fold periodicity in $\alpha$-tropomyosin and the
+MehtaPKet95, A simple and fast approach to prediction
+MenascoWet95, How hard is it to untie a
+MeyerAet91, Coelacanth's relationships,     
+MichelGet02, The Structure of the {RlmB 23S rRNA}
+MichieADet96, Analaysis of domain structural class using an
+MichieADet96, Analysis of Domain Structural Class using an
+MillerJet85, Repetitive zinc-binding domains    
+MillerMet89, Crystal structure of a retroviral protease proves
+MillerRTet96, Protein fold recognition by sequence threading: 
+MillerWet88, Sequence comparison with concave weighting functions, 
+MinJRet02, Structure of the {SET} Domain Lysine Methyltransferase
+MitchellEMet89, Use of Techniques Derived from Graph Theory
+MitchellTJet89, A molecular modeling study of the interaction
+MizuguchiKet95, Comparison of spatial arrangements of secondary structural
+MizuguchiKet98, {HOMSTRAD}: a database of protein structure alignments
+MombelliEet03a, Hydrogen-bonding propensities of sphingomyelin in solution and
+MonodJ72, Chance and Necessity:    
+MorrisALet92b, Stereochemical quality of protein structure coordinates, 
+MottRFet89, A test for the statistical significance of
+MottRFet90a, Tests for the statistical significance of protein
+MottRFet90b, {STATSEARCH}: a {GCG}-compatible program for assessing statistical
+MuirheadHet67, Structure and Function of Haemoglobin {III}.\ {A}
+MunroREJet99, bookPeptide and Protein drug analysis, Structure prediction
+MurataM90, Three-way Needlemand-Wunsch algorithm.,    
+MurataMet85, Simultaneous comparison of three protein sequences, 
+MurphyMEPet97, Structural comparison of cupredoxin domains: Domain recycling
+MurthyMRN84, A Fast Method of Comparing Protein Structures,
+MurzinAG92, Structural principles for the propeller assembly of
+MurzinAG93, Can homologous proteins evolve different enzymatic activities?,
+MurzinAG94, New protein folds,    
+MurzinAGet88, General Architecture of the $\alpha$-Helical Globule, 
+MurzinAGet92a, $\beta$-trefoil fold:     
+MurzinAGet92b, Protein architecture: new superfamilies,   
+MurzinAGet94a, Principles determining the structure of $\beta$-sheet barrels
+MurzinAGet94b, Principles determining the structure of $\beta$-sheet barrels
+MurzinAGet95, {SCOP}: a structural classification of proteins database
+MusacchioAet92, {SH3} --- an abundant protein domain in
+NaganoK77, Logical analysis of the mechanism of protein
+NakashimaHet92, The amino acid composition is different between
+NaviaMAet89, 3-dimensional structure of aspartyl protease from human
+NeedlemanSBet70, A general method applicable to the search
+NeherE94, How frequent are correlated changes in families
+NeuwaldAFet97, Extracting protein alignment models from the sequence
+NewmanA94, Small nuclear {RNA}s and pre-m{RNA} splicing, 
+NiermannTet90, Improving the prediction of secondary structure of
+NikasIet86, Predicted structural features of ribonucleotide reductase 
+NishikawaKet72b, ,      
+NishikawaKet74, Comparison of Homologous Tertiary Structures of Proteins,
+NishikawaKet74a, ,      
+NishikawaKet83a, Classification of Proteins into Groups Based on
+NishikawaKet83b, Classification of Proteins into Groups Based on
+NishikawaKet86, Radial locations of amino-acid residues in a
+NishikawaKet93a, Development fo pseudoenergy potentials for assessing 
+NishikawaKet93b, Pseudoenergy potentials for protein 3d-profile analysis, 
+NojimaH87, Molecular evolution of the calmodulin gene, 
+NorthACTet94, Coiled-coil stutter and link segments in keratin
+NotredameCet96, {{SAGA}: sequence alignment by genetic algorithm}, 
+NotredameCet97, {{RAGA}: {RNA} sequence alignment by genetic algorithm},
+NotredameCet98a, {{COFFEE}: an objective function for multiple sequence
+NotredameCet98b, {Optimisation of ribosomal {RNA} profile alignments}, 
+NotredameCet99, T-coffee: a new method for multiple sequence
+NugentJHAet89, Identification of the haem binding subunit of
+NurekiOet02, An Enzyme with a Deep Trefoil Knot
+NussinovRet91, Efficient detection of 3-dimensional structural motifs in
+OSheaEKet91, X-ray structure of the {GCN4} leucine zipper:
+OgunMet01, The merozoite surface    
+OliveiraLet93, A common motif in {G}-protein coupled transmembrane
+OllisDLet92, The $\alpha$/$\beta$ hydrolase fold,   
+OrengoCA92b, A review of methods for protein structure
+OrengoCA94, Classification of protein folds,   
+OrengoCAet90a, A rapid method for protein structure alignment
+OrengoCAet92, Fast protein structure comparison for databank searching,
+OrengoCAet93a, Recurring structural motifs in proteins with different
+OrengoCAet93b, A local alignment method for protein structure
+OrengoCAet93c, Identification and classification of protein fold families,
+OrengoCAet93d, Alpha plus beta folds revisited: some favoured
+OrengoCAet94a, Protein fold families and structural motifs, book
+OrengoCAet94b, Protein superfaimiles and domain superfolds,  
+OrengoCAet96, {SSAP}: sequential structure alignment program for protein
+OrengoCAet97a, {CATH} --- A Hierarchic Classification of Protein
+OuzounisCet93b, Prediction of protein-structure by evaluation of sequence-structure
+OveringtonJPet93, Molecular recognition in protein families - a
+OveringtonJet90, Tertiary structural constraints on protein evolutionary 
+OveringtonJet92, Environment-specific amino-acid substitution tables - tertiary templates
+OzkanBet98, Recognition of native structure from complete enumeration
+PachebatJAet01, The 22kDa componet of the protein complex
+PadlanEAet75, Variability of Three-Dimensional Structure in  
+PaiEFet90a, Refined crystal structure of the triphosphate 
+PalmerJDet91, The recent origins of introns,  
+Papadimitrou90, Combinatorial Optimization - Algorithms and Complexity, 
+PardoLet92, On the use of the transmembrane domain
+ParkBet96, Energy functions that discriminate {X}-ray and near
+ParkosCAet85, Primary structure and unique expression of the
+ParkosCAet87, Purified cytochrome $b$ from human granulocyte plasma
+ParryDAD82, Coiled-coils in $\alpha$-helix containing proteins: analysis 
+PascarellaSet92a, A data-bank merging related protein structures and
+PascarellaSet92b, Analysis of insertions/deletions in protein structures, 
+PastoreAet90, Comparison of the structures of globins and
+PastoreAet91, Topological Mirror Images in Protein Structure 
+PatthyL85, Evolution of the proteases of blood coagulation
+PatthyL91, Exons - Original building blocks of proteins?,
+PatthyL94, Introns and exons,    
+PaulssonMet85, Evidence for coiled-coil $\alpha$-helical regions in 
+PazosFet97, Correlated mutations contain information about protein-protein 
+PearlLHet87a, Sequence specificity of retroviral proteases,  
+PearlLHet87b, A structural model for the retroviral proteases,
+PearsonWR90, Rapid and Sensitive Sequence Comparison with {FASTP}
+PearsonWRet92, Dynamic Programming algorithms for biological sequence comparison,
+PennesXet98, A geometric algorithm to find small but
+PenroseR90, The Emperor's New Mind:   
+PetersenKet03a, Modelling zinc-binding proteins with {GADGET}:  
+PetskoGAet93, On the origin of enzymatic species, 
+PhDThesis{BairochA90a, PC/Gene: a protein and nucleic acid sequence
+PhDThesis{BrownNP92a, Patterns in protein secondary structure packing: 
+PhDThesis{JonesDT93, Structural approaches to protein sequence analysis, 
+PhDThesis{MunroREJ99, Protein Structure Prediction and Modelling,  
+PhDThesis{TaylorWR81, Analysis and Prediction of Protein Structure, 
+PhillipsDC66, {The three-dimensional structure of an enzyme}, 
+PhillipsDC70, The Development of Crystallographic Enzymology, book British
+PhillipsDCet78, An analysis of the structure of triose
+PiatigorskyJGet91, The Recruitment of Crystallins: New Functions Precede
+PickettSDet92a, Evaluation of the sequence template method for
+PollockDD97a, Increased accuracy in analytical molecular distance estimation.,
+PollockDDet97a, Effectiveness of correlation analysis in identifying protein
+PollockDDet97b, Microsatellite behavior with range constraints:  
+PollockDDet99a,  Coevolving protein residues: maximum likelihood identification
+PonderJWet87, Tertiary templates for proteins: use of packing
+PreissnerRet98, Dictionary of interfaces in proteins {(DIP)}. Data
+PresnellSRet89, Topological Distribution of Four-$\alpha$-Helical Bundles,  
+PresnellSRet92, A segment-based approach to protein secondary structure
+PresnellSRet93a, Artificial neural networks for pattern-recognition in biochemical
+PresnellSRet93b, Macmatch - a tool for pattern-based protein
+PressWHet86, Numerical Recipes: The Art of Scientific Computing,
+PrimigMet92, Anatomy of a transcription factor important for
+PtitsynOB83, Protein as an ``Edited'' Statistical Copolymer, book
+PtitsynOBet75, A model of myoglobin self-organisation,  
+PtitsynOBet80b, Similarities of Protein Topologies: Evolutionary  
+PtitsynOBet83, Theory of protein secondary structure and algorithm
+PurisimaEOet84a, Conversion from a virtual-bond chain to a
+PurisimaEOet84b, Conversion from a virtual-bond chain to a
+RackovskyR90, Quantitative Organisation of the Known Protein {X}-Ray
+RackovskySet78, Differential Geometry and Polymer Conformation. 1. 
+RackovskySet80, Differential Geometry and Polymer Conformation. 2. 
+RackovskySet84, Differential Geometry and Protein Folding,  
+RackovskySet88, Protein Comparison and Classification: A Differential 
+RaoRossmann73, Comparison of Super-Secondary Structures in Proteins, 
+RaoSTet73, SUPERSECONDARY STRUCTURE     
+RashinAA81, {Location of domains in globular proteins}, 
+RawlingsCJet85b, Reasoning About Protein Topology Using the Logic
+RawlingsCJet86a, Using {PROLOG} to represent and reason about
+RechidRet89, A new interactive protein sequence alignment program
+ReczkoMet97, An update of the DEF database of
+ReczkoMet97, An update of the {DEF} database of
+ReesDCet89, The hydrophobic organisation of membrane proteins, 
+ReidERet99, bookPeptide and Protein drug analysis, Practical principles
+ReizerJet93a, Exopolyphosphate phosphatase and guanosine pentaphosphate phosphatase belong
+RemingtonSJet78, A General Method to Assess the Similarity
+RemingtonSJet80, A Systematic Approach to the Comparison of
+ReyAet93, Computer modeling and folding of 4-helix bundles,
+RiceDWet97, A {3D-1D} substitution matrix for protein fold
+RichardsFM74, The interpretation of Protein Structures:  
+RichardsFM77, Areas, Volumes, Packing, and Protein Structure, 
+RichardsFMet88, Identification of Structural Motifs from Protein Coordinate
+RichardsonJS77, {$\beta$-Sheet} Topology and the Relatedness of Proteins,
+RichardsonJS81, The Anatomy and Taxonomy of Protein Structure,
+RichardsonJS85, Describing patterns of protein tertiary Structure, 
+RichardsonJSet78, The {$\beta$-bulge}:     
+RichmondTJet78, Packing of $\alpha$-Helices: Geometrical Constraints and 
+RingCSet93b, Modeling protein structures - construction and their
+RippmannFet91a, Visualization of structural similarity in proteins 
+RippmannFet91b, A hypothetical model for the peptide binding
+RislerJLet88, Amino acid substitutions in structurally related proteins.
+RittingerKet98, Support for shared ancestry of GAPs, 
+RodriguesVet88, Predicted structure of a major {{\em Schistosoma
+RoguevAet01, The {\em Saccharomyces cervisiae} {Set1} complex includes
+RoseGD79, {Hierarchic organisation of domains in globular proteins},
+RoseJet91, A Fast Unbiased Comparison of Protein Structures
+RossmannMGet74, Chemical and biological evolution of nucleotide binding
+RossmannMGet75, A comparison of the heme binding pocket
+RossmannMGet76, Exploring structural homology of proteins.,  
+RossmannMGet77, The taxonomy of protein structure,  
+RostB95, {TOPITS}: Threading One-dimensional Predictions Into book The
+RostBet93b, Prediction of protein secondary structure at better
+RostBet94a, Redefining the goals of secondary structure prediction,
+RostBet94b, {PHD}: an automatic mail server for protein
+RostBet95a, Progress of {1D} protein structure prediction at
+RothbardJBet86, bookModern trends in human leukemia, Pattern recognition
+RothbardJBet88a, A structural model of {HLA-DR1} restricted {T}-cell
+RothbardJBet88b, A sequence pattern common to {T}-cell epitopes
+RothbardJBet89a, Structural analysis of a peptide -- {HLA}
+RothbardJBet89b, {T}-cell recognition of a peptide/{H2-Kd} complex 
+RotrosenDet90, Evidence for a functional cytoplasmic domain of
+RussellRB98, Detection of protein three-dimensional side-chain patterns: {New}
+RussellRBet92, Multiple Protein Sequence Alignment From Tertiary 
+RussellRBet92a, Multiple protein-sequence alignment from tertiary  
+RussellRBet92b, Conservation analysis and structure prediction of the
+RussellRBet93, the limits of protein secondary structure prediction
+RussellRBet96, Protein fold recognition by mapping predicted secondary
+SaitoNet88, Mechanism of protein folding: {I}.  
+SaitoTet91, Some structural features of the iron-uptake regulation
+SaitohSet93b, A geometrical constraint approach for reproducing the
+SaitouNet87, The Neighbor-Joining method: a new method for
+SalamovAAet95,  Prediction of protein secondary structure by
+SaldanhaJWet02a, A Model for the Cytoplasmic Domain of
+SaldanhaJWet99, A single backmutation in the human kIV
+SalemGMet99,  Correlation of observed fold frequency with
+SalemmeFR81, Conformational and geometrical properties of $\beta$-sheets in
+SalemmeFRet81a, Conformational and geometrical properties of $\beta$-sheets in
+SalemmeFRet81b, Conformational and geometrical properties of $\beta$-sheets in
+SaliAet90a, Definition of general topological equivalence in protein
+SaliAet90b, From comparisons of protein sequences and structures
+SaliAet92a, Domain flexibility in aspartic proteinases,  
+SalzbergSet92, Predicting protein secondary structure with a nearest-neighbor
+SandakBet98, Flexible docking allowing induced fit in proteins:
+SanderCet79, Degeneracy of information contained in amino acid
+SanderCet91, Database of Homology-Derived Protein Structures and the
+SanderCet93a, The {HSSP} data-base of protein structure-sequence alignments,
+SankoffDet83b, Time Warps, String Edits, and Macromolecules: The
+SaperMAet91, Refined structure of the human histocompatibility antigen
+SaqiMASet91b, A simple method to generate non-trivial alternate
+SaqiMASet92a, Towards an automatic method of predicting protein-structure
+SaqiMASet94b, Identification of sequence motifs from a set
+SaulFAet78, Preliminary refinement and structural analysis of 
+SayleRet95, {RasMol}: Biomolecular graphics for all,  
+ScheerlinckJPYet92, Recurrent $\alpha\beta$ loop structure in TIM barrel
+SchifferMet67, Use of helical wheels to represent the
+SchmidtRet97, LPFC: An Internet library of protein family
+SchonigerMet92, A local algorithm for {DNA}-sequence alignment with
+SchulzGE77, Recognition of Phylogenetic Relationships from Polypeptide 
+SchulzGE80, Gene duplication in glutathione reductase,  
+SchulzGEet79b, Principles of Protein Structure,   
+Schwartzet78, Matrices for detecting distant relationships, book {Atlas
+ScruttonNS93, {$\alpha/\beta$} barrel evolution and the modular assembly
+SedgewickR90, Algorithms in {C},    
+SegalAW87, Absence of both cytochrome $b_{-245}$ subunits from
+SegalAW89, The electron transport chain of the microbicidal
+SegalAWet78, Novel cytochrome $b$ system in  
+SegalAWet92, Cytochrome $b_{-245}$ is a flavocytochrome containing {FAD}
+SelaMet59, On the reformation of disulphide bridges in
+SelbigJ95, Contact pattern-induced pair potentials for protein fold
+SellersPH74a, An algorithm for the difference between two
+SellersPH74b, On the theory and computation of evolutionary
+SellersPH79, Pattern recognition in genetic sequences.,  
+ShaojianS93, Reduced representation model of protein structure prediction:
+ShapiroAet92, A Method for Multiple Superposition of Structures,
+ShapiroJAet77, Introduction: New pathways in the evolution of
+SharpPMet91, Coelacanth's relationships,     
+ShenkinPSet91, Information-theoretical entropy as a measure of sequence
+SheridanRPet85a, Amino Acid Composition and Hydrophobicity Patterns of
+SheridanRPet85b, Generating Plausible Protein Folds by Secondary Structure
+ShiJSet01, {FUGUE}: Sequence-structure homology recognition using environment-specific 
+ShindyalovINet94,  Can three-dimensional contacts in protein structures
+SibbaldPRet90a, Scrutineer: a computer program that flexibly seeks
+SibbaldPRet91b, Automated protein-sequence pattern handling and prosite searching,
+SiddiquiASet95, continuous and discontinuous domains -- an algorithm
+SipplMJ82, On the Problem of Comparing Protein Structures:
+SipplMJ90, Calculation of Conformational Ensembles from Potentials of
+SipplMJ93, Boltzmann principle, knowledge-based mean fields and protein-folding
+SipplMJet91, Superposition of 3-dimensional objects - a fast
+SipplMJet92a, Detection of native-like models for amino-acid-sequences of
+SkarzynskiTet87, Structure of holo-glyceraldehyde-3-phosphate    
+SklenarHet89, describing protein structure:    
+SkolnickJet01a, Defrosting the frozen approximation: {PROSPECTOR}--- A new
+SkolnickJet01b, Ab initio protein structure prediction via a
+SkolnickJet89b, Dynamic {Monte Carlo} Study of the Folding
+SkolnickJet90a, Simulations of the folding of a globular
+SkolnickJet91, Dynamic monte-carlo simulations of a new lattice
+SkolnickJet93a, A method for predicting protein-structure from sequence,
+SmithRFet90a, Automatic generation of primary sequence patterns from
+SmithRFet92, Pattern-induced multi-sequence alignment ({PIMA}) algorithm  
+SmithTFet81a, Identification of common molecular subsequences.,  
+SmithTFet81b, Comparison of bio-sequences.,    
+SmithTFet85, The statistical distribution of nucleic acid similarities.,
+SmithWWet77b, Structure of the semiquinone form of flavodoxin
+SneathPHA66, Relations between Chemical Structure and Biological Activity
+SonnhammerELLet94, A workbench for large-scale sequence homology analysis,
+SowdhaminiRet95, An automatic method involving cluster analysis of
+SowdhaminiRet96, A database of globular protein structural domains:
+SowdhaminiRet98, {CAMPASS}: A database of structurally aligned protein
+SrinivasanSet93,  An automated method of modeling proteins
+SrinivasanSet93, An automated method of modeling proteins on
+SteitzJA88, Snurps,      
+SternbergMJEet76b, On the Conformation of Proteins: The Handedness
+SternbergMJEet77a, On the Conformation of Proteins: The Handedness
+SternbergMJEet77b, On the Conformation of Proteins: An Analysis
+SternbergMJEet81, Analysis and prediction of structural motifs in
+SternbergMJEet82a, A combinatorial approach to the prediction of
+SternbergMJEet84, Modelling the {ATP}-binding site of oncogene products
+SternbergMJEet85a, Modelling {SRC} and the {EGF} receptors by
+SternbergMJEet85b, Reasoning About Protein Topology Using the Logic
+StevensAet03a, = Retroviral capsid determinants of the {Fv1
+StockDWet91, Coelacanth's relationships,     
+StokesDLet94, Structure, transmembrane topology and helix packing 
+StoltzfusAet94, Testing the exon theory of genes: 
+StormoGD90a, Consensus patterns in {RNA}, bookMolecular Evolution: 
+StoutenPFet92, New triple-helical model for the shaft of
+StultzCMet93b, Structural-analysis based on state-space modeling,  
+SubbaraoNet91, Defining topological equivalences in macromoleculs,  
+SubbiahSet93, Structural Similarity of {DNA}-Binding Domains of 
+SudarsanamSet94,  Homology modeling of divergent proteins 
+SutcliffeMJet87a, Knowledge based modelling of homologous proteins: 
+SutcliffeMJet87b, Knowledge based modelling of homologous proteins: 
+SwansonR84a, A unifying concept for the amino acid
+SwindellsMB95a, A procedure for detecting structural domains in
+SwindellsMB95b, A procedure for the automatic determination of
+SwindellsMBet95, Intrinsic $\phi$,$\psi$ propensities of amino acids, 
+SzebenyiDMEet86, The refined structure of vitamin {D-dependent} 
+TainerJAet84, The reactivity of anti-peptide antibodies is a
+TakusagawaFet96, A real knot in Protein,  
+TangJet78, Structural evidence for gene duplication in the
+TaylorSAet88, Glomerular basement membrane thickness in male and
+TaylorWR00a, = Searching for the ideal forms of
+TaylorWR00b, = A deeply knotted protein and how
+TaylorWR00c, = Protein structure, book Handbook of Statistical
+TaylorWR00d, = Protein structure comparison using {SAP}, book
+TaylorWR01a, Defining linear segments in protein structure, 
+TaylorWR02a, A Periodic Table for Protein Structure, 
+TaylorWR02b, Protein structure comparison using bipartite graph matching,
+TaylorWR02c, Comparing secondary structure `stick' models of proteins
+TaylorWR84, An algorithm to compare secondary structure predictions,
+TaylorWR86a, Identification of protein sequence homology by consensus
+TaylorWR86b, The classification of amino acid conservation., 
+TaylorWR86c, Toward a practical grammar of protein structure:
+TaylorWR86d, A general algorithm for the recognition of
+TaylorWR87b, Multiple sequence alignment by a pairwise algorithm.,
+TaylorWR88a, A flexible method to align large numbers
+TaylorWR88b, Pattern matching methods in protein sequence comparison
+TaylorWR88c, Macromolecular structure and specificity,   
+TaylorWR89, A Template Based Method of Pattern Matching
+TaylorWR90a, Hierarchical method to align large numbers of
+TaylorWR90b, Comparison of predicted and {X}-ray crystal structures
+TaylorWR91a, Sequence analysis: spinning in hyperspace,  
+TaylorWR91b, Towards protein tertiary fold prediction using distance
+TaylorWR92a, Patterns in Protein sequence and Structure, 
+TaylorWR92b, Patterns, Predictions and Problems (Introduction), book Patterns
+TaylorWR92c, New paths from dead ends,  
+TaylorWR92d, Sequencing and computer time,   
+TaylorWR93a, Protein fold refinement:    
+TaylorWR93b, Modelling protein structure from remote sequence similarity:
+TaylorWR93d, Modelling protein structure from remote sequence similarity,
+TaylorWR93e, Protein structure prediction from sequence,  
+TaylorWR94a, Protein structure modelling from remote sequence similarity,
+TaylorWR94b, Remotely related sequences and structures:  
+TaylorWR94c, Motif-biased protein sequence alignment,   
+TaylorWR95a, An investigation of conservation-biased gap-penalties for multiple
+TaylorWR95b, Sequence alignment of proteins and nucleic acids,
+TaylorWR96a, A non-local gap-penaly for profile alignment, 
+TaylorWR96b, Multiple protein sequence alignment: bookComputer methods for
+TaylorWR96c, Sequence alignment of proteins and nucleic acids,
+TaylorWR97b, Random models for double dynamic score normalisation,
+TaylorWR97c, Evolution and relationships of protein families, bookNucleic
+TaylorWR97d, Multiple sequence threading: an analysis of alignment
+TaylorWR97e, Residual colours: a proposal for aminochromography, 
+TaylorWR98a, Dynamic databank searching with templates and multiple
+TaylorWR99a, Protein structure alignment using iterated double dynamic
+TaylorWR99b, Protein structure domain identification,   
+TaylorWR99c, The properties of amino acids in sequences,
+TaylorWRet01b, Protein Structure: Geometry, Topology and Classification, 
+TaylorWRet02a, A {Fourier} analysis of symmetry in protein
+TaylorWRet03a, A Knot or Not a Knot? {SET}ting
+TaylorWRet03b, = A Tangled Problem,   
+TaylorWRet03c, = {\em Ab initio} modelling of the
+TaylorWRet03d, = Consensus molecular models for the amino
+TaylorWRet83a, Prediction of super-secondary structure in proteins., 
+TaylorWRet83b, A elipsoidal approximation of protein shape 
+TaylorWRet84, Recognition of Super-Secondary Structure in Proteins, 
+TaylorWRet87, A predicted structure for the calcium dependant
+TaylorWRet89a, Protein Structure Alignment    
+TaylorWRet89b, A holistic approach to protein structure comparison
+TaylorWRet89c, The Predicted Secondary Structures of the 
+TaylorWRet90, Comparison of predicted and {X}-ray crystal structures
+TaylorWRet91, Templates, Consensus Patterns and Motifs,  
+TaylorWRet93a, Deriving an amino acid distance matrix, 
+TaylorWRet93b, A structural model for the nucleotide binding
+TaylorWRet94a, A method for $\alpha$-helical integral membrane protein
+TaylorWRet94b, Building protein folds using distance geometry: book
+TaylorWRet94c, Compensating changes in protein multiple sequence alignments,
+TaylorWRet94d, Multiple protein structure alignment,   
+TaylorWRet94e, Modelling and predicting protein structure using distance
+TaylorWRet95a, Modelling and predicting $\alpha$-helical transmembrane structures, book
+TaylorWRet95b, {\em Structure in Protein Chemistry} (by {J.~Kyte}),
+TaylorWRet97a, Protein fold topology and structural families, book
+TaylorWRet97c, Multiple sequence threading: Conditional gap placement, 
+TaylorWRet99a, Iterated sequence databank search methods,  
+TaylorWRet99b, {QUEST}: an iterated sequence databank search method,
+TaylorWRet99c, Multiple protein structure alignment using double-dynamic programming,
+TechReport{BarlowCloseDet88, The {GAWK} manual,    
+TechReport{FeldmanRJ76, Atlas of protein structure on microfiche, 
+TellerDC76, Accessible area, packing volumes and interaction surfaces
+ThomasDJ91, A simplified mechanical model of proteins tested
+ThomasDJ94, The graduation of secondary structure elements, 
+ThomasDT94, The graduation of secondary structure elements in
+ThomazeauKet00, Structure of Spinach Acetohydroxyacid Isomeroreductase Complexed with
+ThompsonJDet94a, Improved sensitivity of profile searches through the
+ThompsonJDet94b, CLUSTAL-{W}: improving the sensitivity of progressive 
+ThompsonJDet97, CLUSTAL-{X} windows interface: flexible strategies for multiple
+ThompsonJet03, {CRM1}, a member    
+ThorneJLet91, An evolutionary model for maximum likelihood alignment
+ThorneJLet92, Inching toward reality: an improved likelihood model
+ThorntonJM81, Disulphide bridges in globular proteins,  
+ThorntonJM92, Lessons from analysing protein structure,  
+ThorntonJMet83b, = Amino and carboxy-terminal regions in globular
+ThorntonJMet85, bookInvestigation and exploitation of antibody combining sites,
+ThorntonJMet86, Location of 'continuous' antigenic determinants in the
+ThorntonJMet89b, Protein structure prediction, book Protein Sequencing: A
+ThorntonJMet91a, Protein Structure: prediction of progress at last,
+ThorntonJMet94, Protein motifs and folding recognition,  
+ThorntonJMet95a, Protein folds: towards understanding folding from inspection
+ThorntonJMet95b, Protein folds and folding,   
+ThorntonJMet99, Protein folds, functions and evolution,  
+ThoulessD92, Condensed matter in less than three dimensions,
+TohHet85, Retroviral protease-like sequence in the yeast transposon
+TraxlerBet93, The topological analysis of integral cytoplasmic 
+TrievelRCet02, = Structure and Catalytic Mechanism of a
+TruccoDet01, The merozoite surface    
+UllmannJR76, An Algorithm for Subgraph Isomorphism,  
+UngerRet89, A {3D} Building Blocks Approach to Analyzing
+UngerRet93, Genetic algorithms for protein folding simulations., 
+UnwinN93, Nicotinic acetylcholine-receptor at 9-\AA ngstrom resolution, 
+VanGunsterenWFet77, Algorithms for macromolecular dynamics and constraint dynamics,
+VankayalapatiHet03, Targeting aurora2 kinase in oncogenesis: a structural
+VernetTet92, Correlation of co-ordinated amino acid changes at
+VingronMet90a, Determination of reliable regions in protein sequence
+VingronMet91a, Motif recognition and alignment for many sequences
+VingronMet91b, ,      
+VingronMet94, Sequence alignment and penalty choice: review of
+VingronMet97, = Towards integration of multiple alignment and
+VolzKet91, Crystal structure of {{\em Escherichia coli}} che-{Y}
+VonnegutK63, Cat's cradle,     
+VriendGet91, Detetion of common three-dimensional substructures in proteins,
+WakoHet98, Novel method to detect a motif of
+WalkerJEet82, Distantly related sequences in the $\alpha$-subunits and
+WallaceACet96, Derivation of {3D} coordinate templates for searching
+WallaceACet97, = {TESS}: A geometric hashing algorithm for
+WangJet90, Atomic structure of a fragment of human
+WangZX94, Assessing the accuracy of protein secondary structure
+WatermanMS84a, Efficient sequence alignment algorithms.,   
+WatermanMS84b, General methods of sequence comparison,  
+WatermanMS88a, Computer-analysis of nucleic-acid sequences,   
+WatermanMSet78, {RNA} secondary structure:    
+WatermanMSet87a, A new algorithm for best subsequence alignments
+WatermanMSet87b, Phase transitions in sequence matches and nucleic
+WatermanMSet94a, Rapid and accurate estimates of statistical significance
+WattWet91, Comparison of the crystal-structures of a flavodoxin
+WeberIT90, Evaluation of homology modeling of {HIV} preotease,
+WeberPCet80, Structural and functional diversity in 4-$\alpha$-helical proteins,
+WeiLet94, Protein kinase superfamily ---   
+WeiLet97, Using the radial distribution of physical features
+WeiLet98, Recognizing Protein Binding Sites Using Statistical Descriptions
+WernerEet96a, A novel 11-residue coilled-coil motif predicts a
+WernerEet98, A {\em {P}lasmodium chabaudi} protein contains a
+WestheadDRet98, An atlas of protein topology cartoons available
+WesthofEet84, Correlation between segmental mobility and the location
+WhiteJVet94, Modeling Protein Cores with Markov Random Fields,
+WierengaRKet85,       
+WierengaRKet86, Prediction of the occurrence of the ADP-binding
+WierengaRKet87, Structure determination of the glycosomal  
+WilburWJ85, On the {PAM} matrix model of protein
+WillettP95, Searching for phamacophoric patterns in databases of
+WilmannsMet92, Three-dimensional structure of the bifunctional  
+WilmannsMet93, 3-dimensional profiles from residue-pair preferences - identification
+WilsonJH85, Genetic recombination,     
+WilsonJRet02, Crystal structure and functional analysis of the
+WistowGet87, Recruitment of enzymes as lens structural proteins,
+WlodawerAet89, Conserved folding in retroviral proteases:  
+WodakSJet93, Generating and testing protein folds,  
+WootonJC94, sequences with `unusual' amino acid compositions, 
+XiaZet90, Molecular structure of flavocytochrome $b_2$ at 
+YamashitaMMet90, Where metal-ions bind in proteins,  
+YangZet94, Comparison of models for nucleotide substitution used
+YangZet95, Maximum likelihood trees from {DNA} sequences: 
+YeeDPet93b, Families and the structural relatedness among globular
+YoderMDet93, Unusual structural features in the parallel $\beta$-helix
+ZhangJHet98, Protein sequence similarity searches using patterns as
+ZhangXet02, Structure of the Neurospora {SET} Domain Protein
+ZhuZYet92, A variable gap penalty-function and feature weights
+ZhuZYet96, Clusters of charged residues in protein three-dimensional
+ZimmBHet59, Theory of the phase transition between helix
+ZimmerR98, New scoring schemes for protein fold recognition
+ZintzarasEet94a, Growing a classification tree using the apparent
+ZukerM89a, On finding all suboptimal foldings of an
+ZukerM91, Suboptimal sequence alignment in molecular biology, 
+ZukerMet89, The alignment of protein structures in three
+ZvelebilMJet87, Prediction of Protein Secondary Structure and Active
+ZwanzigRet92, Levinthal's paradox,     
+ZzzzZ00, Alignment of protein sequences using the hydrophobic
+deVliegJet88, Combined Procedure of Distance Geometry and Restrained
+vonHeijneG92, Membrane-protein structure prediction:    
+vonHeijneGet88, Topogenic signals in integral membrane-proteins,  

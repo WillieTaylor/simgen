@@ -1,0 +1,275 @@
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=latex 2010.5.4)  26 MAY 2011 16:34
+entering extended mode
+ %&-line parsing enabled.
+**paper
+(./paper.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german-x-2008-06-18, ngerman-x-2008-06-18, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, la
+tin, mongolian, mongolian2a, bokmal, nynorsk, polish, portuguese, romanian, rus
+sian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turkish, ukenglis
+h, ukrainian, uppersorbian, welsh, loaded.
+(/usr/share/texmf/tex/latex/base/article.cls
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size12.clo
+File: size12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./latex/ntgclass/a4.sty
+
+LaTeX Warning: You have requested package `latex/ntgclass/a4',
+               but the package provides `a4'.
+
+Package: a4 2004/04/15 v1.2g A4 based page layout
+) (/usr/share/texmf/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/lib/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 90.
+
+(/usr/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+\epsfxsize=\dimen105
+\epsfysize=\dimen106
+)
+(./latex/subfigure/subfigure.sty
+
+LaTeX Warning: You have requested package `latex/subfigure/subfigure',
+               but the package provides `subfigure'.
+
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip43
+\subfigcapskip=\skip44
+\subfigcaptopadj=\dimen107
+\subfigbottomskip=\skip45
+\subfigcapmargin=\dimen108
+\subfiglabelskip=\skip46
+\c@subfigure=\count87
+\c@lofdepth=\count88
+\c@subtable=\count89
+\c@lotdepth=\count90
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip47
+\subfig@bottom=\skip48
+)
+(./latex/multirow/multirow.sty
+\bigstrutjot=\dimen109
+) (./latex/setspace/setspace.sty
+
+LaTeX Warning: You have requested package `latex/setspace/setspace',
+               but the package provides `setspace'.
+
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+Package: `setspace' 6.7 <2000/12/01>
+)
+\@input{latex/header.aux}
+\openout2 = `latex/header.aux'.
+
+(./latex/header.tex) (./paper.aux (./abstract.aux) (./intro.aux) (./methods.aux
+) (./apply.aux) (./conclude.aux))
+\openout1 = `paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 37.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 37.
+ [1
+
+
+
+]
+\openout2 = `abstract.aux'.
+
+
+No file abstract.tex.
+\openout2 = `intro.aux'.
+
+(./intro.tex
+Overfull \hbox (44.13339pt too wide) in paragraph at lines 12--22
+[]\OT1/cmr/m/n/12 With the ex-cep-tion of real-time scan-ning atomic force mi-c
+roscopy [[]],
+ []
+
+[2
+
+
+
+
+
+]
+Overfull \hbox (31.85168pt too wide) in paragraph at lines 42--58
+\OT1/cmr/m/n/12 in-ter-ac-tion [[], [], []],
+ []
+
+
+Overfull \hbox (5.20186pt too wide) in paragraph at lines 42--58
+\OT1/cmr/m/n/12 units [[], []] (be-ing two ex-am-ples from the actin/myosin
+ []
+
+[3]) [4]
+\openout2 = `methods.aux'.
+
+ (./methods.tex [5
+
+
+
+]
+File: figs/control.eps Graphic file (type eps)
+ <figs/control.eps> [6] [7]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 103.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 103.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 103.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 106.
+ [8] [9] [10] [11]
+[12] [13]) [14] [15]
+\openout2 = `apply.aux'.
+
+ (./apply.tex
+Overfull \hbox (41.4612pt too wide) in paragraph at lines 16--30
+\OT1/cmr/m/n/12 state but bound to a dif-fer-ent actin molecule along the actin
+ fil-a-ment [[]].
+ []
+
+
+Overfull \hbox (28.15317pt too wide) in paragraph at lines 33--36
+\OT1/cmr/m/n/12 We will in-tro-duce the data-structure from the top down, start
+-ing with file (\OT1/cmtt/m/n/12 actmyo.run\OT1/cmr/m/n/12 )
+ []
+
+[16
+
+
+
+] [17]
+File: figs/secstr2DFS.eps Graphic file (type eps)
+ <figs/secstr2DFS.eps>
+File: figs/chains2DFS.eps Graphic file (type eps)
+ <figs/chains2DFS.eps>
+File: figs/myo5full.rod.eps Graphic file (type eps)
+ <figs/myo5full.rod.eps>
+File: figs/myo5head.rod.eps Graphic file (type eps)
+
+<figs/myo5head.rod.eps> [18] [19] [20]
+File: figs/myo5head.dom.ps Graphic file (type eps)
+ <figs/myo5head.dom.ps>
+File: figs/headslice1.eps Graphic file (type eps)
+
+<figs/headslice1.eps>
+File: figs/headslice2.eps Graphic file (type eps)
+ <figs/headslice2.eps> [21]
+File: figs/headtrace.eps Graphic file (type eps)
+ <figs/headtrace.eps>
+File: figs/actintrace.eps Graphic file (type eps)
+
+<figs/actintrace.eps> [22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 383--388
+
+ []
+
+[24]
+Overfull \hbox (54.8829pt too wide) in paragraph at lines 426--447
+\OT1/cmr/m/n/12 fined by en-ergy min-imi-sa-tion [[], [], [],
+ []
+
+[25]
+File: figs/cycle.ps Graphic file (type eps)
+ <figs/cycle.ps> [26] [27] [28] [29]
+File: figs/step1.eps Graphic file (type eps)
+ <figs/step1.eps>
+File: figs/step2.eps Graphic file (type eps)
+ <figs/step2.eps>
+File: figs/walkL.eps Graphic file (type eps)
+
+<figs/walkL.eps>
+File: figs/walkR.eps Graphic file (type eps)
+ <figs/walkR.eps>
+File: figs/trace.eps Graphic file (type eps)
+ <figs/trace.eps>
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+File: figs/search.eps Graphic file (type eps)
+ <figs/search.eps>) [30]
+[31] [32] [33]
+\openout2 = `conclude.aux'.
+
+ (./conclude.tex) [34
+
+
+
+] (./paper.bbl [35
+
+
+] [36] [37]) [38]
+(./paper.aux (./abstract.aux) (./intro.aux) (./methods.aux) (./apply.aux)
+(./conclude.aux)) ) 
+Here is how much of TeX's memory you used:
+ 1059 strings out of 493887
+ 12246 string characters out of 1155273
+ 65580 words of memory out of 3500000
+ 4305 multiletter control sequences out of 10000+50000
+ 9931 words of font info for 35 fonts, out of 3000000 for 5000
+ 714 hyphenation exceptions out of 8191
+ 32i,8n,24p,1421b,273s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on paper.dvi (38 pages, 87372 bytes).

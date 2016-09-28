@@ -1,0 +1,9 @@
+#NOMOVE
+NORUN
+TINKER
+PUTPDB
+PARAM test.model
+END
+GROUP 0 1
+INPUT test.dat
+END

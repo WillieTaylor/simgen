@@ -1,0 +1,10 @@
+#NORUN
+#NOMOVE
+PARAM crash2.model
+END
+GROUP 0 1
+GROUP 0 2
+TRANS -10.0  -4.0   0.0
+INPUT cube1.dat
+TRANS  10.0   4.0   0.0
+INPUT cube1.dat

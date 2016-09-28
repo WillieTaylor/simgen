@@ -1,0 +1,278 @@
+\section{Example Application (actin)}
+
+
+In this section, the construction of a model of an actin molecule is described
+starting with a single actin.
+
+\subsection{Monomer construction}
+
+\begin{singlespace}
+\ \\
+------------------------------------------
+actin.run
+------------------------------------------
+\begin{verbatim}
+PARAM actin.model
+END
+GROUP 0 1
+INPUT actin.dat
+END
+\end{verbatim}
+---------------------------------------------------------------------------------------------------
+\end{singlespace}
+
+The parameter file {\tt actin.model} specifies a 4-level hierarchy which is almost identical to
+the example given previously.
+
+\begin{singlespace}
+\ \\
+------------------------------------------
+actin.model
+---------------------------------------
+\begin{footnotesize}
+\begin{verbatim}
+PROT sse 
+   0,    3,    3,    2,    1,    0,    0,    0,    0,    0,  	// type
+3000, -150,  -70,   -8,    2,    0,    0,    0,    0,    0,  	// size
+   0,  150,   70,    8,    8,    0,    0,    0,    0,    0,  	// bump
+   0,    0,    0,    6,    4,    0,    0,    0,    0,    0,  	// links
+   0,    0,    3,    1,    1,    0,    0,    0,    0,    0,  	// bonds
+   0,    1,   -1,   -1,    1,    0,    0,    0,    0,    0,  	// move
+   0,    1,    1,    1,    0,    0,    0,    0,    0,    0,  	// keep
+   0,    0,    0,    0,    4,    0,    0,    0,    0,    0,  	// bond 
+   0,   10,   10,   10,   10,    0,    0,    0,    0,    0,  	// hard
+   0,    1,    2,    5,    0,    0,    0,    0,    0,    0,  	// soft
+\end{verbatim}
+\end{footnotesize}
+---------------------------------------------------------------------------------------------------
+\end{singlespace}
+
+The {\tt INPUT} file {\tt actin.dat} reads each of actin's four domains in separate files
+into an oblate ellipsoid and reconnects the chain through the domains using {\tt REBOND}
+commands.
+
+\begin{singlespace}
+\ \\
+------------------------------------------
+actin.dat
+------------------------------------------
+\begin{verbatim}
+GROUP 5 4    -5.0  1.0  0.0    5.0  0.0  0.0
+INPUT actin.dom1.dat
+INPUT actin.dom2.dat
+INPUT actin.dom3.dat
+INPUT actin.dom4.dat
+REBOND atomid  32 127
+REBOND atomid 172  33
+REBOND atomid  90 173
+REBOND atomid 216 281
+REBOND atomid 372 217
+REBOND atomid 280  91
+RETERM atomid   1 126
+\end{verbatim}
+---------------------------------------------------------------------------------------------------
+\end{singlespace}
+
+Each of the four domains are also contained within an ellipsoid and the top part
+of the first two show how the ellipsoids are tailored to each domain shape.
+The division of the {\tt ATOM} records into secondary structure groups is generated
+automatically, along with the axis end-points by a program that is described in an appendix.
+
+\begin{singlespace}
+\ \\
+------------------------------------------
+actin.dom1.dat
+---------------------------------------
+\begin{verbatim}
+GROUP 10 19    0  1  0    0 -1  0
+GROUP 0 6
+ATOM      1  CA  GLY A   1     -23.868 -17.022  -6.339  1.33  1.00
+ATOM      2  CA  GLY A   2     -21.762 -20.183  -6.100  1.33  1.00
+ATOM      3  CA  GLY A   3     -18.845 -17.924  -6.394  1.33  1.00
+ATOM      4  CA  GLY A   4     -20.602 -14.455  -6.961  1.33  1.00
+ATOM      5  CA  GLY A   5     -20.699 -14.221  -3.138  1.33  1.00
+ATOM      6  CA  GLY A   6     -17.825 -16.538  -2.703  1.33  1.00
+GROUP 2 5   -14.79 -14.10 -3.15   -4.36 -8.33 -0.83
+ATOM      7  CA  GLY A   7     -14.841 -14.717  -4.363  1.33  2.00
+ATOM      8  CA  GLY A   8     -12.300 -13.449  -1.827  1.33  2.00
+ATOM      9  CA  GLY A   9      -9.949 -10.497  -2.418  1.33  2.00
+ATOM     10  CA  GLY A  10      -6.767 -10.364  -0.491  1.33  2.00
+ATOM     11  CA  GLY A  11      -4.370  -7.485  -0.937  1.33  2.00
+GROUP 0 6
+ATOM     12  CA  GLY A  12      -1.017  -8.244   0.718  1.33  1.00
+ATOM     13  CA  GLY A  13       0.995  -5.192   1.721  1.33  1.00
+:
+120 more lines
+:
+ATOM    119  CA  GLY A 119      -0.359 -27.580 -16.028  1.33  1.00
+ATOM    120  CA  GLY A 120       1.825 -26.970 -12.925  1.33  1.00
+GROUP 1 6    1.77 -24.25 -13.35    0.40 -17.76 -15.53
+ATOM    121  CA  GLY A 121       2.324 -23.445 -11.325  1.33  3.00
+ATOM    122  CA  GLY A 122       3.335 -22.259 -14.760  1.33  3.00
+ATOM    123  CA  GLY A 123      -0.391 -22.075 -15.685  1.33  3.00
+ATOM    124  CA  GLY A 124      -1.234 -18.947 -13.632  1.33  3.00
+ATOM    125  CA  GLY A 125       2.182 -17.434 -14.080  1.33  3.00
+ATOM    126  CA  GLY A 126       1.159 -16.277 -17.640  1.33  3.00
+SHEET
+BETA   9 20 7
+BETA   20 9 7
+BETA   9 58 6
+BETA   8 57 6
+BETA   58 9 6
+:
+40 more lines
+:
+BETA   19 29 1
+BETA   17 30 1
+BETA   17 12 1
+BETA   16 32 1
+BETA   12 17 1
+\end{verbatim}
+---------------------------------------------------------------------------------------------------
+\end{singlespace}
+
+The first domain is contained in a sphere ({\tt sort = 10}) but because it is an ellipsoidal object
+it has axis end-points defined.  Since the value of {\tt sort} is positive, these end-points only
+specify the direction of the axis and not its length.
+
+The second domain has a negative {\tt sort} value so the length of the specified axis sets the size.
+As the absolute value of {\tt sort} is over 10, the object will be a prolate ellipsoid with a 
+diameter scaled to preserve the axial ratio associated with {\tt sort} = 15.
+
+\begin{singlespace}
+\ \\
+------------------------------------------
+actin.dom2.dat
+---------------------------------------
+\begin{verbatim}
+GROUP -15 8     0 0 -25   0 -10 25
+GROUP 2 5    1.42 -7.71  8.19    6.31 -14.04 18.22
+ATOM      1  CA  GLY A   1       1.363  -7.636   8.264  1.00  2.00
+ATOM      2  CA  GLY A   2       3.361  -8.978  11.218  1.00  2.00
+ATOM      3  CA  GLY A   3       3.992 -12.395  12.769  1.00  2.00
+ATOM      4  CA  GLY A   4       5.160 -12.308  16.329  1.00  2.00
+ATOM      5  CA  GLY A   5       7.149 -15.046  17.922  1.00  2.00
+GROUP 0 13
+ATOM      6  CA  GLY A   6       7.323 -15.011  21.823  1.00  1.00
+ATOM      7  CA  GLY A   7      10.702 -14.236  23.284  1.00  1.00
+ATOM      8  CA  GLY A   8       9.826 -16.218  26.547  1.00  1.00
+:
+many more lines
+:
+\end{verbatim}
+---------------------------------------------------------------------------------------------------
+\end{singlespace}
+
+The full path of the \CA-chain through the four domains is: 1-2-1-3-4-3-1, which corresponds to a
+branched (Y-shaped) topology with domain 1 being visited three times.  To accommodate this, the
+value of $nbonds = 3$ in the parameter file for the domain level.   Strictly, all the others should
+be 2, but the program allocates a minimum of 2 anyway if a chain is requested.   In a linear chain 
+these are referred to by the 'short-hand' pointers {\tt sis} for the previous object in the chain
+and {\tt bro} for the following.   Thus a chain of 4 objects (A--D) appears as:
+\begin{singlespace}
+\begin{verbatim}
+                     bro-->B    bro-->C    bro-->D    bro-->x
+                      A          B          C          D
+                 x<--sis    A<--sis    B<--sis    C<--sis
+\end{verbatim}
+\end{singlespace}
+With {\tt x} being an end-of-chain marker (actually the parent cell).  If the chain is
+circular then {\tt D.bro-->A} and {\tt A.sis-->D}.
+In terms of the underlying structure that holds the bonding data, is equivalent to:
+\begin{singlespace}
+\begin{verbatim}
+                    bond1-->B  bond1-->C  bond1-->D  bond1-->(x)
+                    next1 = 1  next1 = 1  next1 = 1  next1 = -1
+                      A          B          C          D
+               -1 = next0  0 = next0  0 = next0  0 = next0
+              (x)<--bond0  A<--bond0  B<--bond0  C<--bond0
+\end{verbatim}
+\end{singlespace}
+The seemingly redundant {\tt next} values tell where to find the next link.
+However, in a branched topology they have a less trivial job as can be seen when the {\tt C}
+object is made into a side branch:
+\begin{singlespace}
+\begin{verbatim}
+                                  bond1-->(x)
+                                  next1 = -1
+                                    C      
+                               2 = next0 
+                               B<--bond0    
+                                                 
+                                                 
+                                                 
+                                  bond2-->D      
+                                  next2 = 0      
+                                    B            
+                    bond1-->B     bond1-->C     bond1-->(x)
+                    next1 = 1     next1 = 0     next1 = -1
+                      A             B             D    
+                -1 = next0     0 = next0     0 = next0
+               (x)<--bond0     A<--bond0     B<--bond0
+\end{verbatim}
+\end{singlespace}
+So following the path of links from {\tt A1}:
+\begin{verbatim}
+        A1-->B1-->C0-->B2-->D0-->B0-->A0-->(x)
+\end{verbatim}
+In this representation, the connection through the actin domains is:
+\begin{verbatim}
+        A1-->B0-->A2-->C1-->D0-->C0-->A0-->(x)
+\end{verbatim}
+
+
+\subsection{Filament construction}
+
+Actin polymerises into a helical filament (with a left-handed twist) which consists of
+repeated actin molecules related by a rotation of -166\degre\ and 27.5\AA\ translation
+\cite{HolmesKC09}.  The subunit used here is taken from the structure of the filament
+(PDB code = {\tt 1M8Q}) which has a fiber axis along Z, the simple {\tt HELIX} command
+(described in the previous section) can be used to regenerate the filament.  However,
+as the internal coordinates of the molecule will have been centred on the origin,
+these require the first two values of the {\TT HELIX} command to shift the molecule
+(in X and Y) off the axis, then the standard helical parameters quoted above can be
+applied.   The file {\tt actin13.run} generates 13 subunits which is the half-repeat
+length of the filament.  For longer filaments, clearly it would be worthwile writing
+a script to generate the runfile.
+
+\begin{singlespace}
+\ \\
+------------------------------------------
+actin13.run
+------------------------------------------
+\begin{verbatim}
+NOMOVE
+HIDDEN
+PARAM actin.model
+END
+GROUP 0 13
+HELIX -16  -5    0.0     0
+INPUT actin.dat
+HELIX -16  -5  -27.5  -166
+INPUT actin.dat
+HELIX -16  -5  -55.0  -332
+INPUT actin.dat
+HELIX -16  -5  -82.5  -498
+INPUT actin.dat
+HELIX -16  -5 -110.0  -664
+INPUT actin.dat
+HELIX -16  -5 -137.5  -830
+INPUT actin.dat
+HELIX -16  -5 -165.0  -996
+INPUT actin.dat
+HELIX -16  -5 -192.5 -1162
+INPUT actin.dat
+HELIX -16  -5 -220.0 -1328
+INPUT actin.dat
+HELIX -16  -5 -247.5 -1494
+INPUT actin.dat
+HELIX -16  -5 -275.0 -1660
+INPUT actin.dat
+HELIX -16  -5 -302.5 -1826
+INPUT actin.dat
+HELIX -16  -5 -330.0 -1992
+INPUT actin.dat
+END
+\end{verbatim}
+---------------------------------------------------------------------------------------------------
+\end{singlespace}

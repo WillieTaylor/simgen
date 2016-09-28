@@ -1,0 +1,1008 @@
+\section{\TT{bumper}}
+
+The \TT{bumper} routine has the task of identifying objects that have approached closer
+than permitted and repelling them by a fixed-size kick specified in the parameter file.
+It must overcome two difficulties:  firstly, for large numbers of objects, it is too
+computationally expensive to compare all-against-all and, secondly, the objects do not
+all have simple shapes so the surface-surface distance between all combinations of
+object shapes must be accommodated.
+
+\subsection{Avoiding $N \times N$}
+
+The \TT{bumper} routine uses the hierarchic structure of the data to avoid a $N^2$
+order calculation between all pairs of objects.  Beginning at the highest level (1)
+all objects at that level are compared pairwise but only if two objects at this level
+are in collision, are their children then considered.  In computer-graphics terms,
+the high-level objects are the "bounding-boxes" for their children. 
+
+However, before the parents are repelled, a calculation is made of how many collisions
+there are between their children.  These two distinct calculations of collisions
+within a family and collisions between families are performed by {\tt bumpin()}
+and {\tt bumpex()}, respectively.
+
+\subsubsection{{\tt bumpin()}}
+
+If the number of children in a family is less than 20 ({\tt SWITCH}), then {\tt bumpin()}
+uses a simple pairwise algorithm (in {\tt getBumps()}) to provide a list of objects that
+are potentially in collision.  Over {\tt SWITCH} children, then an approximate algorithm
+is used that is based on the partially sorted X,Y,Z lists maintained by {\tt sorter} (more
+below).  This selection is based on the largest dimension of the object:  the maximum
+axis length for an ellipsoid or the larger of the length and diameter of a tube.  The list
+is sorted by degree of violation so {\tt bumpin()} will deal with the worst cases first.
+
+{\tt bumpin()} firstly checks the true separation of the two objects ({\tt a,b}) using
+{\tt touch()} which returns a negative distance if the objects inter-penetrate. (Details
+will be provided in the next section).   If {\tt a} and {\tt b} are not atoms, then
+a count ({\tt m}) is made of how many collisions occur between their children using {\tt bumpex()}
+(of which, more below).  If both $hard$ and $soft$ collision parameters have been specified,
+then the degree of repulsion is calculated using {\tt m} as described earlier (and explicitly
+in code below) with the result being used by {\tt part2cells()} to push the objects symmetrically
+back towards a distance ({\tt d}) where they are no longer in collision. 
+\begin{singlespace}
+\ \\
+------------------------------------------------------------------------------------------------------
+\begin{tiny}
+\begin{verbatim}
+int Cell::bumpin () {
+// the children of the current cell <this> are checked for intra-family bumps
+       :
+       kidlev = level+1;
+       :
+       for (i=0; i<in; i++) { Cell *a = list[i].a, *b = list[i].b;
+               bump = touch(a,b);
+               if (bump > -NOISE) continue;
+               if (kidlev<depth) m = bumpex(a,b); else m = 0;  // bumping a+b children parted in bumpex() 
+               if (exempt(a,b)) continue;      // exempt parents (exempt atoms skipped in getBumpin()) 
+               // the pair (a,b) are bumping so repel more with more bumping children (m)
+               //      unless weight=0 then just use unmodified <soft> value
+               if (weight) { // Gaussian switch from soft to hard with increasing <m>
+                       d = (float)m; d = exp(-d*d);
+                       boot = d*soft + (1.0-d)*hard;
+                       boot *= kick;
+               } else { boot = kick; }
+               d = (a->xyz|b->xyz)-bump*over; // clash = -ve bump
+               part2cells(a,b,d,-boot); // -kick = repel only
+               :
+       }
+}
+\end{verbatim}
+\end{tiny}
+------------------------------------------------------------------------------------------------------
+\end{singlespace}
+
+Both {\tt bumpin()} and {\tt getBumps()} employ a filter encoded in {\tt exempt()} that is
+{\tt TRUE} if the two objects are exempt from collisions, for example, if they are bonded or linked.
+Note that {\tt exempt()} only checks at the atomic level in {\tt getBumps()} for some reason. 
+In  {\tt bumpin()}, however, {\tt exempt()} is only called after  {\tt bumpex()} as the children
+(and their offspring) of two exempt objects might well be making unwanted collisions.
+
+\subsubsection{{\tt bumpex()}}
+
+{\tt bumpex()} evaluates each pair of children between their two colliding parents
+and returns the number of collisions.  As it does so, it also takes stems to rectify the
+situation by separating the clashing kids.  As it is known to which parent the child belongs,
+each is given a nudge back towards their parent before being separated. 
+The strength of these kicks depend on both the $hard$ and $soft$ parameter values:
+the nudge back home is $soft$ while the separation at the atomic level is $hard$,
+otherwise $soft$.  
+\begin{singlespace}
+\ \\
+------------------------------------------------------------------------------------------------------
+\begin{tiny}
+\begin{verbatim}
+int bumpex ( Cell *a, Cell *b ) {
+// the children of the cell <a> and <b> are checked for inter-family bumps
+float   strength = 0.1;
+        :
+        kidlev = level+1;
+        if (kidlev==Data::depth) kick = hard; else kick = soft;
+        axis = b->xyz - a->xyz;
+        axis.setVec(soft);        // soft length vector from a to b (NB has to be set at atom level)
+        :
+        DO(i,a->kids) { Cell* ai = a->child[i];
+                DO(j,b->kids) { Cell* bj = b->child[j];
+                        if (exempt(ai,bj)) continue;
+                        bump = touch(ai,bj);
+                        if (bump > -NOISE) continue;
+                        d = (ai->xyz|bj->xyz)-bump*over; // d = target gap (NB clash has -ve bump)
+                        moveCell(ai,axis,-1);        // nudge ai towards a
+                        moveCell(bj,axis, 1);        // nudge bj towards b
+                        part2cells(ai,bj,d,-kick*strength); // -kick = repel only
+                        :
+                        n++;
+                }
+        }
+        return n;
+}
+\end{verbatim}
+\end{tiny}
+------------------------------------------------------------------------------------------------------
+\end{singlespace}
+
+The application of the {{\tt bumpin()}, {{\tt bumpex()} pair is not recursive: ie:
+{{\tt bumpex()} does not call {{\tt bumpin()} on colliding children.  However, once
+{{\tt bumpin()} has completed at one level, it continues to traverse the hierarchic
+tree of objects.
+
+\subsection{Calculating contact}
+
+\NAME\ emploies three object types, giving six possible types of encounter
+which are dealt with by the {\tt touch()} routine.
+\begin{singlespace}
+\ \\
+------------------------------------------------------------------------------------------------------
+\begin{tiny}
+\begin{verbatim}
+float touch ( Cell *a, Cell *b )
+{ // closest approach between two object surfaces
+  // +ve = separation, -ve = penetration depth
+       :
+       rab = ra + rb;  // average of bump radii
+       tab = ta * tb;  // product of object types
+       if (tab>1) s = Seg(b->endN,b->endC);
+       switch (tab) {  // smallest type cell first
+               case 0: // virtual spheres don't bump?
+                       return (pa|pb)-rab; // 9999.9;
+               case 1: // spheres = centre distance
+                       return (pa|pb)-rab;
+               case 2: // sphere+tube (closest approach to line segment or ends)
+                       if (pa.vec_in_seg(s)) return pa.vec_to_line(s)-rab;
+                       return fmin(pa|s.A,pa|s.B) - rab;
+               case 3: // sphere+ellipsoid (in keeper.cpp)
+                       return vec_to_egg(pa,s,db) - ra;
+               case 4: // tubes = closest approach of 2 line segments
+                       return seg_to_seg(Seg(a->endN,a->endC),Seg(b->endN,b->endC))-rab;
+               case 6: // tube+ellipsoid (in bumper.cpp)
+                       return tube_to_egg(a,b);
+               case 9: // ellipsoid (in bumper.cpp)
+                       return egg_to_egg(a,b);
+       }
+}
+\end{verbatim}
+\end{tiny}
+------------------------------------------------------------------------------------------------------
+\end{singlespace}
+
+\subsubsection{Sphere/Sphere}
+
+Is the simplest case, with surface contact made at the average distance of their bumping diameters.
+(Or the sum of the corresponding radii: $R_{ab} = R_a + R_b$, for two objects $a$ and $b$).
+
+\subsubsection{Sphere/Tube}
+
+For a sphere and a tube, the closest approach is the shortest sphere-centre to tube axis 
+line-segment, less their joint radii ($R_{ab}$).   If a perpendicular construction from the 
+sphere centre to the axis line lies within the tube end-points then this, less $R_{ab}$,
+is the closest approach of their surfaces.  Otherwise, it is simply the shorter tube-end to
+sphere distance (less $R_{ab}$).
+
+\subsubsection{Sphere/Ellipsoid}
+
+The distance of a point from the surface of a general (scalene) ellipsoid in not trivial,
+however, as \NAME\ only deals with spheroids, a simple construction based on the focii of
+their ellipse-of-rotation can be used to decide if a point is inside or outside the ellipsoid.
+A path from one focus to any point on the ellipse and back to the other focus, has a constant
+length.  (A property often exploited to draw an ellipse with a fixed length of string).
+The distance of the focii from the centre can be solved from the lengths of the axes, A and B,
+as: $c = \surd(a^2-b^2)$, where $a$ and $b$ are the semi-axis lengths.  (See construction below).
+So if the summed distance from any point to the focii is longer than the 'string', it is outside
+and, if less, it is inside.
+\begin{singlespace}
+\ \\
+------------------------------------------------------------------------------------------------------
+\begin{footnotesize}
+\begin{verbatim}
+                             * external point
+                     ..-+-../
+                .    d /|  /    .           d = focus pole distance
+              .       /b| /       .         b = minor axis length/2
+             :       /  |/c        :        c = foucs cent distance
+        endN |------x---+---x------| endC   x = focii on major axis
+                       cent                 a = major axis length/2
+	length of focus1-surface-focus2 path:
+	at major axis = c+a+(a-c) = 2a
+	at minor axis = 2d, dd = bb+cc
+	since the paths are equal: d = a;
+	so	cc = dd-bb = aa-bb
+	and 	c = sqrt(aa-bb)
+\end{verbatim}
+\end{footnotesize}
+------------------------------------------------------------------------------------------------------
+\end{singlespace}
+
+The sum of the focii distances less the 'string' length is zero on the surface but elsewhere is not
+the true distance to the surface.  However, when scaled by 1.4, this value is a good approximation
+to the true distance to the surface for both prolate and oblate ellipsoids and is the value returned
+by the routine {\tt inEgg()}, which encodes this algorithm.   In its most minimal form, the algorithm
+only needs to calculate two distances but as the focii positions are not stored {\tt inEgg()} does
+a bit more. 
+
+In the range $0\ldots R_{ab}$ a much more complicated but accurate routine {\tt vec\_to\_egg()} is
+used to return the true value of the distance between the surfaces.
+
+\subsubsection{Tube/Tube}
+
+If a mutual perpendicular line (the contact normal) is constructed between the axes of a pair
+of tubes and if the ends of this lie between the end-points of the tubes, then this is the
+closest approach.   Othersise one of the four end-end distances will be shortest.   The shortest
+distance, less $R_{ab}$ is the distance between the surfaces.
+
+\subsubsection{Tube/Ellipsoid}
+
+The distance of a tube to an ellipsoid is found using the same algorithm described above
+for a point (sphere) and elipsoid ({\tt inEgg()} by iteratively bisecting the line between the
+tube end-points.
+
+Starting with the three end---mid---end points along the axis ($p1,p2,p3$), then if any value
+($d1,d2,d3$) returned by {\tt inEgg()} is negative, there is a clash.   Otherwise, the point
+associated with the largest value can be excluded and the calculation repeated with the remaining
+two points and their midpoint.   The algorithm converges rapidly and is stopped when the points
+get too close.   At the end, the true distance to the ellipsoid surface is returned using the
+more complicated {\tt vec\_to\_egg()} routine.
+\begin{singlespace}
+\ \\
+------------------------------------------------------------------------------------------------------
+\begin{tiny}
+\begin{verbatim}
+float tube_to_egg ( Cell *a, Cell *b ) {
+// returns an approximation to the closest approach of a tube <a> to an ellipsoid <b> surface
+// NB the value returned by inEgg() is not a surface distance but is zero on the surface
+// NB assumes radially symmeric ellipsoid
+       :
+       p1 = a->endN; p2 = a->xyz; p3 = a->endC;
+       LOOP { float d;
+               d1 = inEgg(p1,cb,sizeb);
+               d2 = inEgg(p2,cb,sizeb);
+               d3 = inEgg(p3,cb,sizeb);
+               if (d1<0 || d2<0 || d3<0) return -999.9; // flag bump;
+               d = p1|p3;
+               if (d < 0.01) { // pretty close
+                       d = vec_to_egg(p2,cb,sizeb);
+                       return d - sizea*0.5;
+               }
+               if (d1+d2 < d2+d3) {
+                       p3 = p2; p2 = p1 & p2;
+               } else {
+                       p1 = p2; p2 = p3 & p2;
+               }
+       }
+}
+\end{verbatim}
+\end{tiny}
+------------------------------------------------------------------------------------------------------
+\end{singlespace}
+
+\subsubsection{Ellipsoid/Ellipsoid}
+
+As would be expected, the best is kept to last.
+Surprisingly, there is no analytic solution for the contact normal between two ellipsoid
+surfaces as the expression for this is quartic and requires a numerical solution.
+A solution probaly could be found for the more symmetric case of two spheroids but not
+by me.   Instead, an iterative algorithm is used to find the contact normal using an
+algorithm that is an extension of that used for the simpler tube/ellipsoid problem. 
+
+Rather than iteratively bisect a line, as was done on the tube axis, extending the approach
+to a surface leads to the iterative trisection of a triangle --- or rather two, as there
+are two ellipsoids to consider.  A starting set of triangles was obtained from the end-points 
+of the axes, giving 8 triangles per ellipsoid and a starting pair was selected which had the
+shortest mid/mid point distance.  In all the iterations, the mid point is not simply the mean
+of the vertices but is the point where the extension of a line from the centre through this point
+cuts the ellipsoid surface.  The utility routine {\tt sholl()} that calculates this is given
+below and is called by the wrapper routine {\tt shell()} that identifies the ellipsoid type
+as there is different routine ({\tt shall()}) that deals with scalene ellipsoids.
+\begin{singlespace}
+\ \\
+------------------------------------------------------------------------------------------------------
+\begin{tiny}
+\begin{verbatim}
+Vec sholl ( Vec line, Vec cent, float A, float B, Vec axis ) {
+// returns the point on the ellipsoid (<axes> = A>B=C at 0) surface cut by a <line> from the <cent>re
+/*
+in the plane of the major axis (A) and the <line> with components a,b to A,
+the point where the line cuts the surface has corresponding components g,h.
+Now    gg/AA + hh/BB = 1
+and    g/a = h/b
+so     gg = AA(1-hh/BB) = aa.hh/bb
+       AA - hh.AA/BB = hh.aa/bb
+       AA = hh.aa/bb + hh.AA/BB
+       hh = AA/(aa/bb+AA/BB)
+*/
+Vec    surf;
+float  AA=A*A, BB=B*B, aa,bb,b, d,ff,gg,hh;
+       line -= cent;                                   // shift line to origin
+       b = line.vec_to_line(axis);                     // perpendicular dist from line to axis
+       bb = b*b;
+       ff = line.sqr();
+       aa = ff-bb;
+       hh = AA/(aa/bb+AA/BB);
+       gg = aa*hh/bb;
+       d = sqrt((gg+hh)/ff);
+       surf = line*d;                                  // extend <line> to ellipsoid surface
+       return cent+surf;                               // added back to centre
+}
+\end{verbatim}
+\end{tiny}
+------------------------------------------------------------------------------------------------------
+\end{singlespace}
+
+As the selection of the two starting quadrants is based on a rough estimate, all 64 distances are ranked
+and the top three combinations taken as separate starting pairs.   The routine then iterates down to the
+best pair of (sub-)$_n$triangles in each (max $n=3$) and takes the solution with the shortest separation.
+As a safe-guard, a number of points (currently 10) are scattered randomly around these mid-points and
+the closest pair selected.  
+
+This solution is then checked using {\tt vec\_to\_egg()} to find the distance from each point to the
+opposing ellipsoid.  These should be identical if the true contact normal has been found and any discrepency
+greater than 50\% is reported.  This may seem generous but errors arise, not because of a poor solution,
+but because the ellipsoids may have moved during the calculation as {\tt vec\_to\_egg()} reloads the current
+axis end-points.  With minimal motion, the error is typically less than 0.001\%.
+
+%--------------------------------------------------
+%from cell.cpp
+%
+%float inEgg ( Vec, Vec, Vec, float );
+%
+%// short temp names for Data::globals
+%char  *names;
+%int   *shape, *links, *chain, *split, *local, *align;
+%float *sizes, *bumps, *kicks, *keeps, *bonds, *repel, *rejel;
+%// common temp variables
+%int   total, depth, model, moltype, subtype;
+%
+%///////// bumper
+%
+%float touch ( Cell *a, Cell *b )
+%{ // closest approach between two cell bump surfaces (of the same shape type)
+%  // +ve = separation, -ve = penetration depth
+%float	ra, rb, da, db, d, rab;
+%int	ta, tb, tab;
+%Vec	pa, pb;
+%Seg	s;
+%	if (a->type > b->type) { Cell *c = a; a = b; b = c; } // swap
+%	ta = a->type; tb = b->type;
+%	da = Data::model[a->model].bumps[a->level]; ra = da*0.5;
+%	db = Data::model[b->model].bumps[b->level]; rb = db*0.5;
+%	pa = a->xyz; pb = b->xyz;
+%	rab = ra + rb;
+%	tab = ta * tb;
+%	if (tab>1) s = Seg(b->endN,b->endC);
+%	switch (tab) { // smallest type cell first
+%		case 0:	// virtual spheres don't bump?
+%			return (pa|pb)-rab; // 9999.9;
+%		case 1:	// spheres = centre distance
+%			return (pa|pb)-rab;
+%		case 2:	// sphere+tube (closest approach to line segment or ends)
+%			if (pa.vec_in_seg(s)) return pa.vec_to_line(s)-rab;
+%			return fmin(pa|s.A,pa|s.B) - rab;
+%		case 3:	// sphere+ellipsoid (in keeper.cpp)
+%			return vec_to_egg(pa,s,db) - ra;
+%		case 4:	// tubes = closest approach of 2 line segments
+%			return seg_to_seg(Seg(a->endN,a->endC),Seg(b->endN,b->endC))-rab;
+%		case 6:	// tube+ellipsoid (in bumper.cpp)
+%			return tube_to_egg(a,b);
+%		case 9: // ellipsoid (in bumper.cpp)
+%			return egg_to_egg(a,b);
+%	}
+%}
+%
+%int bumpex ( Cell *a, Cell *b ) {
+%// the children of the cell <a> and <b> are checked for inter-family bumps
+%int	i, j, level = a->level, kidlev, n = 0;
+%float	d, bumpa,bumpb, bump, over = 1.101;
+%float	kicka, kickb, hard, soft, kick;
+%float	strength = 0.1;
+%Vec	axis;
+%	if (a->solid > 0 || b->solid > 0 ) return 0;
+%	if (a->empty > 0 || b->empty > 0 ) return 0;
+%	if (a->kids == 0 || b->kids == 0 ) return 0;	// no children to bump
+%	if (a->level != b->level) return 0; // different level
+%	kidlev = level+1;
+%	kicka = Data::model[a->model].repel[kidlev],
+%	kickb = Data::model[b->model].repel[kidlev],
+%	hard = 0.5*(kicka+kickb);
+%	kicka = Data::model[a->model].rejel[kidlev],
+%	kickb = Data::model[b->model].rejel[kidlev],
+%	soft = 0.5*(kicka+kickb);
+%	if (kidlev==Data::depth) kick = hard; else kick = soft;
+%	axis = b->xyz - a->xyz;
+%	axis.setVec(soft);	// soft length vector from a to b (NB has to be set at atom level)
+%	DO(i,a->kids) { Cell* ai = a->child[i];
+%		if (ai->empty) continue;
+%		DO(j,b->kids) { Cell* bj = b->child[j];
+%			if (bj->empty) continue;
+%			if (exempt(ai,bj)) continue;
+%			bump = touch(ai,bj);
+%			if (bump > -NOISE) continue;
+%			d = (ai->xyz|bj->xyz)-bump*over; // d = target gap (NB clash has -ve bump)
+%			moveCell(ai,axis,-1);	// nudge ai towards a
+%			moveCell(bj,axis, 1);	// nudge bj towards b
+%			part2cells(ai,bj,d,-kick*strength); // -kick = repel only
+%                        ai->bump = LIVE; bj->bump = LIVE;
+%                        ai->hit = bj; bj->hit = ai;
+%			n++;
+%		}
+%	}
+%	return n;
+%}
+%
+%int Cell::bumpin () {
+%// the children of the current cell <this> are checked for intra-family bumps
+%Bumps	*list;
+%int	i, j, kidlev, in, m, n = 0;
+%float	d, bump, boot, kick, over = 1.01;
+%float	hard, soft;
+%int	weight = 0;
+%	if (this->bump > 0) { // count-down refractory period and if over, clear hit
+%	// the plan is to use the period of bumping to activate MD/refinement in potter() 
+%		this->bump--;
+%		if (this->bump==0) this->hit = 0;
+%	}
+%	if (solid > 0 ) return 0;
+%	if (empty > 0 ) return 0;
+%	if (kids == 0 ) return 0;	// no children to bump
+%	list = new Bumps[HOLD*kids];
+%	kidlev = level+1;
+%	hard = Data::model[model].repel[kidlev]; // hard (for hard-shell bump)
+%	soft = Data::model[model].rejel[kidlev]; // soft (for jelly bumping)
+%	depth = Data::depth;
+%	if (kidlev==depth) {
+%		kick = hard; // atomic level has hard-shell bump
+%	} else {
+%		kick = soft; // higher levels have jelly bumping modified by kids if...
+%		if (kick > NOISE) weight = 1; // +ve = weight kick by kids (as Gauss(m) soft<-->hard)
+%	}
+%	if (kick < 0.0) kick = -kick;
+%	in = getBumpin(this,list); // list of bumping pairs (by NxN or sort for big N) 
+%	for (i=0; i<in; i++) { Cell *a = list[i].a, *b = list[i].b;
+%		bump = touch(a,b);
+%		if (bump > -NOISE) continue;
+%		if (kidlev<depth) m = bumpex(a,b); else m = 0;	// bumping a+b children parted in bumpex() 
+%		if (exempt(a,b)) continue;	// exempt parents (exempt atoms skipped in getBumpin()) 
+%		// the pair (a,b) are bumping so repel more with more bumping children (m)
+%		//	unless weight=0 then just use unmodified <soft> value
+%		if (weight) { // Gaussian switch from soft to hard with increasing <m>
+%			d = (float)m; d = exp(-d*d);
+%			boot = d*soft + (1.0-d)*hard;
+%			boot *= kick;
+%		} else { boot = kick; }
+%		d = (a->xyz|b->xyz)-bump*over; // clash = -ve bump
+%		part2cells(a,b,d,-boot); // -kick = repe/l only
+%		if (kidlev<depth) {
+%               		a->bump = LIVE; b->bump = LIVE;
+%                        // a->hit = b; b->hit = a; // replace current interaction? trapped in exempt()?
+%               		if (!a->hit) a->hit = b;
+%			if (!b->hit) b->hit = a;
+%		}
+%		n++;
+%	}
+%	delete [] list;
+%}
+%
+%void Cell::bumps () {
+%	this->bumpin();
+%	for (int i=0; i<kids; i++) child[i]->bumps();
+%}
+%
+%
+%--------------------------------------------------
+%from bumper.cpp
+%
+%
+%#include "util.hpp"
+%#include "geom.hpp"
+%#include "cell.hpp"
+%#include "data.hpp"
+%
+%float inEgg ( Vec, Seg, float );
+%
+%void bumper ()
+%{
+%	Cell::world->bumps();
+%}
+%
+%bool exempt ( Cell *a, Cell *b )
+%{ // returns 1 if <a> and <b> are exempt from bumping
+%//if (a->hit) { Pi(a->level) Pi(a->id) Pi(a->bump) NL }
+%	if (a->hit && a->hit==b) return 1;
+%	if (b->hit && b->hit==a) return 1;
+%	DO(k,a->nbonds) { if (a->bond[k].to==b) return 1; }
+%	DO(k,b->nbonds) { if (b->bond[k].to==a) return 1; }
+%	DO(k,a->nlinks) { if (a->link[k].to==b) return 1; }
+%	DO(k,b->nlinks) { if (b->link[k].to==a) return 1; }
+%	return 0;
+%}
+%
+%#define SWITCH 20	// number of cells below which bump testing is pairwise
+%
+%int sortBumps ( const void *ac, const void *bc )
+%{
+%        Bumps   *a = (Bumps*)ac, *b = (Bumps*)bc;
+%        if (a->d < b->d) return -1;
+%        if (a->d > b->d) return  1;
+%        return 0;
+%}
+%
+%int getBumpin ( Cell *cell, Bumps *pairs ) {
+%// return the number (and <list>) of possible bumping pairs in cell <c> closer than <bump>
+%// <bump>: spheres=rad.s, tubes=lengths, ellipsoids=max-axes
+%Cell	*a, *b;
+%float	d, dd, bump, bbump;
+%Cell	*kid = cell->child[0];
+%Data    *p = Data::model+kid->model;
+%int	kidlev = kid->level;
+%float	size = p->bumps[kidlev];
+%int	type = cell->type,
+%	kids = cell->kids,
+%	hold = HOLD*kids,
+%	i, j, k, m, n=0;
+%int	*close = new int[hold];
+%	if (kids==1) return 0;
+%	if (kids < SWITCH) {	// use pairwise
+%		for (i=0; i<kids-1; i++) {
+%			a = cell->child[i];
+%			if (a->empty) continue;
+%			for (j=i+1; j<kids; j++) {
+%				b = cell->child[j];
+%				if (b->empty) continue;
+%				if (kidlev==Data::depth && exempt(a,b)) continue; // just filter atom level
+%				if (a->len > size) bump = a->len; else bump = size;
+%				if (b->len > size) bump += b->len; else bump += size;
+%				bump *= 0.5; bbump = bump*bump;
+%				dd = a->xyz||b->xyz;
+%				if (dd > bbump) continue;
+%				pairs[n].c = 0; // not used
+%				pairs[n].a = a; pairs[n].b = b;
+%				pairs[n].d = sqrt(dd);
+%				pairs[n].bump = bump;
+%				n++;
+%				if (n == hold) break;
+%			}
+%			if (n == hold) break;
+%		}
+%		if (n==0) return 0;
+%		qsort(pairs,n,sizeof(Bumps),sortBumps);         // sort on separation (closest first)
+%		return n;
+%	} else	// use sorted lists to find pairs
+%	{ int   got, span = 5+(int)sqrt((float)kids);
+%		for (i=0; i<kids; i++) {
+%			a = cell->child[i];
+%			if (a->empty) continue;
+%			m = 0;
+%			for (j=0; j<3; j++) // gather locally ranked children in each dimension
+%			{ int	rat = a->ranks[j], out;
+%				out = 0;
+%				for (k=rat-span; k<rat+span; k++) { // check the local rank list
+%					if (k>=kids) break;	// intra-family so max=kids
+%					if (k<0) continue;	// not on list yet
+%					if (k==rat) continue;	// skip self
+%					if (n == hold) break;
+%					b  = cell->rank[k][j];
+%					if (b->empty) continue;
+%					if (kidlev==Data::depth && exempt(a,b)) continue; // filter atom level
+%					close[m] = 10*(b->uid) + j + 1;	// code dim as j/10
+%					m++;
+%					if (m==hold) break;
+%				}
+%				if (m==hold) break;
+%			}
+%			sort(close,m);
+%			got = 1; // 123 = XYZ (in sorted order in pairs)
+%			DO(ii,m) { int hit, dim;  // keep only children present in all 3 dimensions
+%				hit = (int)(0.1*(float)close[ii]);
+%				dim = close[ii]-hit*10;
+%				if (dim != got) continue;
+%				if (got==3) { float d; // keep
+%					got = 0;
+%					b = Cell::uid2cell[hit];
+%					if (a->len > size) bump = a->len; else bump = size;
+%					if (b->len > size) bump += b->len; else bump += size;
+%					bump *= 0.5; bbump = bump*bump;
+%					dd = a->xyz||b->xyz;
+%					if (dd < bbump) {
+%						pairs[n].c = 0; // not used
+%						pairs[n].a = a; pairs[n].b = b;
+%						pairs[n].d = sqrt(dd);
+%						pairs[n].bump = bump;
+%						n++;
+%					}
+%					if (n==hold) break;
+%				}
+%				if (n==hold) break;
+%				got++;
+%			}
+%		}
+%		if (n==0) return 0;
+%		qsort(pairs,n,sizeof(Bumps),sortBumps);         // sort on separation (closest first)
+%		m = 1;
+%		DO(ii,n) { // remove duplicate entries
+%			if (ii==0) continue;
+%			if ((pairs[ii].a->uid==pairs[ii-1].a->uid) && (pairs[ii].b->uid==pairs[ii-1].b->uid)) continue;
+%			if ((pairs[ii].a->uid==pairs[ii-1].b->uid) && (pairs[ii].b->uid==pairs[ii-1].a->uid)) continue;
+%			pairs[m] = pairs[ii];
+%			m++;
+%		}
+%		return m;
+%	}
+%}
+%
+%float tube_to_egg ( Cell *a, Cell *b ) {
+%// returns an approximation to the closest approach of a tube <a> to an ellipsoid <b> surface
+%// NB the value returned by inEgg() is not a surface distance but is zero on the surface
+%// NB assumes radially symmeric ellipsoid
+%Seg	ca = Seg(a->endN,a->endC),	cb = Seg(b->endN,b->endC);
+%Data	*pa = Data::model+a->model,	*pb = Data::model+b->model;
+%float	sizea = pa->sizes[a->level],	sizeb = pb->sizes[b->level];
+%float	d1,d2,d3;
+%Vec	p1,p2,p3;
+%	if (a->type!=2 && b->type!=3) { Pt(Bad types in tube_to_egg()) Pi(a->type) Pi(b->type) NL exit(1); }
+%	p1 = a->endN; p2 = a->xyz; p3 = a->endC;
+%	LOOP { float d;
+%		d1 = inEgg(p1,cb,sizeb);
+%		d2 = inEgg(p2,cb,sizeb);
+%		d3 = inEgg(p3,cb,sizeb);
+%		if (d1<0 || d2<0 || d3<0) return -999.9; // flag bump;
+%		d = p1|p3;
+%		if (d < 0.01) { // pretty close
+%			d = vec_to_egg(p2,cb,sizeb);
+%			return d - sizea*0.5;
+%		}
+%		if (d1+d2 < d2+d3) {
+%			p3 = p2; p2 = p1 & p2;
+%		} else {
+%			p1 = p2; p2 = p3 & p2;
+%		}
+%	}
+%}
+%
+%// tested in newsims/bumpell
+%#define Nrand  10 // 20 // WAS 500 for testing
+%#define Nhold 500
+%
+%Seg trisect ( int, Vec*, Vec*, Vec*, Vec*, Vec, Vec, Mat, Mat, Vec, Vec, Vec, Vec, float, int );
+%Vec shell ( Vec, Vec, Vec, Mat, Vec );
+%Vec shall ( Vec, Vec, Vec, Mat, Vec );
+%Vec sholl ( Vec, Vec, float, float, Vec );
+%float bumping ( int, Vec*, Vec*, Vec, Vec, Vec, Vec, Mat, Mat );
+%float in_egg ( Vec, Vec, Vec, Mat );
+%
+%float egg_to_egg ( Cell *a, Cell *b ) {
+%// returns a good approximation to the closest approach of two (general) ellipsoid surfaces
+%Data	*pa = Data::model+a->model,	*pb = Data::model+b->model;
+%float	sizea = pa->sizes[a->level],	sizeb = pb->sizes[b->level],	// A=B diameter
+%	denda = a->endN|a->endC,	dendb = b->endN|b->endC,	// C axis length
+%	dmina,dminb, dmaxa,dmaxb, dmin,dmax, da,db, d;
+%Seg	ca = Seg(a->endN,a->endC), cb = Seg(b->endN,b->endC), c, p;
+%Seg	ends, best;
+%float	dends, wsum;
+%float	**mat, score, rand = 0.2; // WAS 0.5 for testing
+%Mat	axesA, axesB;
+%Vec	axisA, axisB, centA, centB, bestA, bestB, surfA, surfB;
+%Vec	quad[8], quadA[8], quadB[8], sectA[6], sectB[6];
+%Vec	dispA[Nrand], dispB[Nrand];
+%Vec	mid, ave, aimA, aimB;
+%Vec	moveA, moveB;
+%Pairs	dist[64];
+%int	rank[64];
+%int	qA,qB, qAtop,qBtop, n = 0;
+%Vec	allA[Nhold], allB[Nhold];
+%Vec	randout;
+%int	on = 0;
+%	if (a->ends < 0) sizea = denda/Data::Eratio[a->sort]; // use given ratio and C length
+%	if (b->ends < 0) sizeb = dendb/Data::Eratio[b->sort]; // use given ratio and C length
+%	dmina = min(sizea,denda);	dminb = min(sizeb,dendb);
+%	dmaxa = max(sizea,denda);	dmaxb = max(sizeb,dendb);
+%	dmin = (dmina+dminb)*0.5;	dmax = (dmaxa+dmaxb)*0.5;
+%	d = a->xyz|b->xyz;
+%	if (d > dmax) return 999.9;	// beyond maximum contact distance
+%	if (d < dmin) return d-dmin;	// centres closer than minimum separation
+%	sizea *= 0.5; sizeb *= 0.5; denda *= 0.5; dendb *= 0.5;	// reset to semiaxis lengths
+%	mat = new float*[6]; DO(i,6) mat[i] = new float[6];
+%	centA = a->xyz; centB = b->xyz;
+%	mid = (centA+centB)*0.5;
+%	axisA.x = denda;  axisA.y = axisA.z = sizea;
+%	axisB.x = dendb;  axisB.y = axisB.z = sizeb;
+%	axesA.A = a->endC - a->xyz;
+%	randout = (axesA.A^centB).norm();
+%	axesA.B = (axesA.A^randout).getVec(sizea);
+%	axesA.C = (axesA.A^axesA.B).getVec(sizea);
+%	axesB.A = b->endC - b->xyz;
+%	axesB.B = (axesB.A^randout).getVec(sizeb);
+%	axesB.C = (axesB.A^axesB.B).getVec(sizeb);
+%	quad[0] =  Vec( 1, 1, 1); quad[1] =  Vec( 1, 1,-1); 
+%	quad[2] =  Vec( 1,-1, 1); quad[3] =  Vec( 1,-1,-1);
+%	quad[4] =  Vec(-1, 1, 1); quad[5] =  Vec(-1, 1,-1);
+%	quad[6] =  Vec(-1,-1, 1); quad[7] =  Vec(-1,-1,-1);
+%	DO(i,8) // make real axis end-points for both ellipsoids and put surface centroids in quad[AB]
+%	{ Vec	midA, midB;
+%		midA = centA + (axesA.A*quad[i].x + axesA.B*quad[i].y + axesA.C*quad[i].z)/3.0;
+%		allA[i] = quadA[i] =  shell(midA,centA,axisA,axesA,quad[i]);
+%		midB = centB + (axesB.A*quad[i].x + axesB.B*quad[i].y + axesB.C*quad[i].z)/3.0;
+%		allB[i] = quadB[i] =  shell(midB,centB,axisB,axesB,quad[i]);
+%	}
+%	sectA[0] = centA+axesA.A; sectB[0] = centB+axesB.A;
+%	sectA[1] = centA+axesA.B; sectB[1] = centB+axesB.B;
+%	sectA[2] = centA+axesA.C; sectB[2] = centB+axesB.C;
+%	sectA[3] = centA-axesA.A; sectB[3] = centB-axesB.A;
+%	sectA[4] = centA-axesA.B; sectB[4] = centB-axesB.B;
+%	sectA[5] = centA-axesA.C; sectB[5] = centB-axesB.C;
+%	DO(i,6) { allA[i+8] = sectA[i]; allB[i+8] = sectB[i]; }
+%	d = bumping(14, allA,allB, centA,centB, axisA,axisB, axesA,axesB);
+%	if (d>NOISE) return -d;
+%	n = 0;
+%	dends = 9999.9;
+%	wsum = 0.0;
+%	ave.zero();
+%	d = centA | centB;
+%	DO(i,14) DO(j,14)
+%	{ float w, dij; Vec aij; Vec pAi = allA[i], pBj = allB[j];
+%		dij = pAi|pBj;  aij = pAi+pBj;
+%		if (dij > d) continue;
+%		if (dij < dends) { dends = dij; best.A = pAi; best.B = pBj; }
+%		w = 1.0/(dij*dij); wsum += w;
+%		ave += aij*0.5*w;
+%		n++;
+%	}
+%	ave /= wsum;
+%	aimA = shell(ave,centA,axisA,axesA,quad[0]);
+%	aimB = shell(ave,centB,axisB,axesB,quad[0]);
+%	n = 0;
+%	DO(i,8) DO(j,8) {
+%		dist[n].a = i; dist[n].b = j; 
+%		dist[n].s = (quadA[i]|quadB[j])+(aimA|quadA[i])+(aimB|quadB[j]);
+%		n++;
+%	}
+%	sort(dist,rank,-n);
+%	dmin = 999.9;
+%	allA[6] = aimA; allB[6] = aimB;
+%	DO(i,3) // test just the top 3
+%	{ int	r = rank[i], qA = dist[r].a, qB = dist[r].b;
+%	  float dab;
+%		// pass quadrant end-points and mid-points in sect[AB] to trisect()
+%		sectA[0] = centA + axesA.A*quad[qA].x;
+%		sectA[2] = centA + axesA.B*quad[qA].y;
+%		sectA[4] = centA + axesA.C*quad[qA].z;
+%		sectA[1] = shell((sectA[0]+sectA[2])*0.5,centA,axisA,axesA,quad[qA]);
+%		sectA[3] = shell((sectA[2]+sectA[4])*0.5,centA,axisA,axesA,quad[qA]);
+%		sectA[5] = shell((sectA[4]+sectA[0])*0.5,centA,axisA,axesA,quad[qA]);
+%		sectB[0] = centB + axesB.A*quad[qB].x;
+%		sectB[2] = centB + axesB.B*quad[qB].y;
+%		sectB[4] = centB + axesB.C*quad[qB].z;
+%		sectB[1] = shell((sectB[0]+sectB[2])*0.5,centB,axisB,axesB,quad[qB]);
+%		sectB[3] = shell((sectB[2]+sectB[4])*0.5,centB,axisB,axesB,quad[qB]);
+%		sectB[5] = shell((sectB[4]+sectB[0])*0.5,centB,axisB,axesB,quad[qB]);
+%		DO(j,6) { allA[j] = sectA[j]; allB[j] = sectB[j]; }
+%		ends = trisect(7,allA,allB,sectA,sectB,centA,centB,axesA,axesB,axisA,axisB,quad[qA],quad[qB],9999.9,0);
+%		if (ends.B.z > 9999.0) return -ends.B.x;	// found bumping
+%		dab = ends.len();
+%		if (dab > dmin) continue;
+%		best = ends; dmin = dab; qAtop = qA; qBtop = qB; n = i;
+%	}
+%	rand *= sqrt(dmin);
+%	moveA = best.A;
+%	DO(i,Nrand) { Vec v = moveA; v.set_disp(rand);
+%		surfA = shell(v,centA,axisA,axesA,quad[qAtop]);
+%		dispA[i] = surfA;
+%		d = surfA|best.B; if (d<dmin) { moveA = surfA; dmin = d; }
+%	}
+%	moveB = best.B;
+%	DO(i,Nrand) { Vec v = moveB; v.set_disp(rand);
+%		surfB = shell(v,centB,axisB,axesB,quad[qBtop]);
+%		dispB[i] = surfB;
+%		d = surfB|moveA; if (d<dmin) { moveB = surfB; dmin = d; }
+%	}
+%	DO(i,Nrand) DO(j,Nrand) {
+%		d = dispA[i]|dispB[j];
+%		if (d<dmin) {
+%			moveA = dispA[i]; moveB = dispB[j]; dmin = d;
+%		}
+%	}
+%	return dmin;
+%}
+%
+%float check_normal ( Vec A, Vec a0, Vec a1, Vec a2,  Vec B, Vec b0, Vec b1, Vec b2 ) {
+%// return the sum of the distances that the normals from <A> and <B> pass their opposing points
+%Vec	normA, normB;
+%float	toA, toB;
+%	normA = A+((a1-a0)^(a2-a0));
+%	normB = B+((b1-b0)^(b2-b0));
+%	toA = A.vec_to_line(B,normB);
+%	toB = B.vec_to_line(A,normA);
+%	return toA+toB;
+%}
+%
+%Seg trisect ( int on, Vec *allA, Vec *allB, Vec *sectA, Vec *sectB, Vec centA, Vec centB, Mat axesA, Mat axesB, Vec axisA, Vec axisB, Vec qA, Vec qB, float last , int depth ) {
+%int	set[4][3] = { 1,2,3, 3,4,5, 5,0,1, 1,3,5 };
+%Vec	midA,midB, bestA,bestB, surfA,surfB;
+%int	triA0,triB0, triA1,triB1, triA2,triB2;
+%float	wsum, w, d, dif, dab, dmin;
+%Vec	A0,A1,A2, B0,B1,B2;
+%Vec	aim, aimA, aimB;
+%Vec	a[8], b[8];
+%Seg	ends;
+%int	p,q;
+%	aimA.zero();
+%	aimB.zero();
+%	wsum = 0.0;
+%	DO(i,on) DO(j,on) {
+%		d = allA[i]|allB[j]; w = 1.0/(d*d);
+%		aimA += allA[i]*w; aimB += allB[j]*w;
+%		wsum += w;
+%	} // set target points <aimA>,<aimB> to weighted mean and project onto surface
+%	aimA /= wsum; aimB /= wsum;
+%	aimA = shell(aimA,centA,axisA,axesA,qA);
+%	aimB = shell(aimB,centB,axisB,axesB,qB);
+%	allA[on] = aimA; allB[on] = aimB; on++;	// append to current surface points
+%	dmin = 9999.9;
+%	DO(i,on) DO(j,on) { // find min of all current surface pairs
+%		d = allA[i]|allB[j];
+%		if (d<dmin) { dmin = d; p = i; q = j; }
+%	}
+%	aimA = allA[p]; aimB = allB[q];
+%	DO(i,4) // make midpoints for the 4 triangles in segments A and B
+%	{ int	si0 = set[i][0], si1 = set[i][1], si2 = set[i][2];
+%		midA = (sectA[si0]+sectA[si1]+sectA[si2])/3.0;
+%		allA[on+i] = a[i] = shell(midA,centA,axisA,axesA,qA);
+%		midB = (sectB[si0]+sectB[si1]+sectB[si2])/3.0;
+%		allB[on+i] = b[i] = shell(midB,centB,axisB,axesB,qB);
+%	}	// and append to collection of points <on> the surfaces 
+%	on += 4;
+%	d = bumping(on, allA,allB, centA,centB, axisA,axisB, axesA,axesB);
+%	if (d>NOISE) { 
+%		return Seg(Vec(d,0,9999.9)); // Seg.B.z > 9999 = bump 
+%	}
+%	dmin = 9999.9;
+%	w = (float)depth;
+%	if (depth > 1) w = sqrt(w);
+%	DO(i,4) // loop over the 4 midpoints in segment A
+%	{ int	si0 = set[i][0], si1 = set[i][1], si2 = set[i][2];
+%		midA = a[i];
+%		DO(j,4) // loop over the 4 midpoints in segment B
+%		{ int	sj0 = set[j][0], sj1 = set[j][1], sj2 = set[j][2];
+%			midB = b[j];
+%			d = check_normal(midA,sectA[si0],sectA[si1],sectA[si2],midB,sectB[sj0],sectB[sj1],sectB[sj2]);
+%			dab = w*sqrt(d)+(2.0/(1+w))*(midA|midB)+(aimA|midA)+(aimB|midB);
+%			if (dab<dmin) {
+%				dmin = dab;
+%				triA0=si0; triA1=si1; triA2=si2;
+%				triB0=sj0; triB1=sj1; triB2=sj2;
+%				p = i; q = j;
+%			}
+%		}
+%	}
+%	// set best triangle pair for next iteration
+%	A0 = sectA[triA0]; A1 = sectA[triA1]; A2 = sectA[triA2];
+%	B0 = sectB[triB0]; B1 = sectB[triB1]; B2 = sectB[triB2];
+%	surfA = a[p]; surfB = b[q];
+%	dab = surfA|surfB;
+%	dif = last-dab;
+%	//if ((depth > 3 && last-dab < 0.001)||(depth > 6)) {
+%	if (depth==3) { // go with whatever (4xfaster than above)
+%		// NB for depth > 7, grid points get too close. For depth=9, on=92 (check Nhold)
+%		d = bumping(on, allA,allB, centA,centB, axisA,axisB, axesA,axesB);
+%		if (d>NOISE) { 
+%			return Seg(Vec(d,0,9999.9)); // Seg.B.z > 9999 = bump 
+%		}
+%		dmin = 9999.9;
+%		DO(i,on) DO(j,on) { // find min of all current surface pairs
+%			d = allA[i]|allB[j];
+%			if (d<dmin) { dmin = d; p = i; q = j; }
+%		}
+%		surfA = allA[p]; surfB = allB[q];
+%		return Seg(surfA,surfB);
+%	}
+%	sectA[0] = A0; allA[on+0] = sectA[1] = shell((A0+A1)*0.5,centA,axisA,axesA,qA);
+%	sectA[2] = A1; allA[on+1] = sectA[3] = shell((A1+A2)*0.5,centA,axisA,axesA,qA);
+%	sectA[4] = A2; allA[on+2] = sectA[5] = shell((A2+A0)*0.5,centA,axisA,axesA,qA);
+%	sectB[0] = B0; allB[on+0] = sectB[1] = shell((B0+B1)*0.5,centB,axisB,axesB,qB);
+%	sectB[2] = B1; allB[on+1] = sectB[3] = shell((B1+B2)*0.5,centB,axisB,axesB,qB);
+%	sectB[4] = B2; allB[on+2] = sectB[5] = shell((B2+B0)*0.5,centB,axisB,axesB,qB);
+%	d = bumping(on+3, allA,allB, centA,centB, axisA,axisB, axesA,axesB);
+%	if (d>NOISE) { 
+%		return Seg(Vec(d,0,9999.9)); // Seg.B.z > 9999 = bump 
+%	}
+%	// pass sub-triangles (and append to surface collection)
+%	ends = trisect(on+3,allA,allB,sectA,sectB,centA,centB,axesA,axesB,axisA,axisB,qA,qB,dab,depth+1);
+%	return ends;
+%}
+%
+%float bumping ( int n, Vec *allA, Vec *allB, Vec centA, Vec centB, Vec axisA, Vec axisB, Mat axesA, Mat axesB )
+%{
+%int	p, q = 0;
+%float	d = 0.0, dmin = 999.9;
+%Vec	surfA, surfB, quad = Vec(1,1,1);
+%	DO(i,n) // check if any points lie inside the other ellipsoid
+%	{ float din;
+%		din = in_egg(allA[i],centB,axisB,axesB);
+%		if (din < 1.0-NOISE) { // A is in B (flag with q=1)
+%			if (din<dmin) { dmin = din; p = i; q =  1; }
+%		}
+%		din = in_egg(allB[i],centA,axisA,axesA);
+%		if (din < 1.0-NOISE) { // B is in A (flag with q=-1)
+%			if (din<dmin) { dmin = din; p = i; q = -1; }
+%		}
+%	}
+%	if (q>0) { // A is deeper inside B
+%		surfB = shell(allA[p],centB,axisB,axesB,quad);
+%		d = surfB|allA[p];
+%		// Pi(n) Pr(dmin) Pt(A inside B by) Pr(d) NL
+%	}
+%	if (q<0) { // B is deeper inside A
+%		surfA = shell(allB[p],centA,axisA,axesA,quad);
+%		d = surfA|allB[p];
+%		// Pi(n) Pr(dmin) Pt(B inside A by) Pr(d) NL
+%	}
+%	return d;
+%}
+%
+%float in_egg ( Vec p, Vec c, Vec x, Mat axes ) {
+%// Returns the fractional distance <d> of point <p> to the ellipsoid surface.
+%// <d> < 1 = inside, <d> > 1 = outside
+%// The ellipsoid has axes <M> (at 0 with lengths x)
+%float	d;
+%Vec	r, q = (p-c).get_frac(axes);		// q = components of <p> in basis set <M>
+%	r = Vec(q.x*x.x, q.y*x.y, q.z*x.z);	// r = real-space position of <p> in <M>
+%	d = r.x*r.x/(x.x*x.x) + r.y*r.y/(x.y*x.y) + r.z*r.z/(x.z*x.z); // surface definition
+%	return d;
+%}
+%
+%Vec shall ( Vec line, Vec cent, Vec axis, Mat axes, Vec quad ) {
+%// returns the point on the ellipsoid (<axes>=ABC at 0) surface cut by a <line> from the <cent>re
+%/*
+%if the axes lie on XYZ then,
+%	xx/AA + yy/BB + zz/CC = 1
+%	x = pa, y = pb, z = pc
+%	pp = 1/(aa/AA+bb/BB+cc/CC)
+%	line = abc, surf = xyz
+%*/
+%Mat	frame;
+%Vec	surf;
+%float	A,B,C, a,b,c, p;
+%	line -= cent;					// quadrant centroid shifted to origin
+%	frame = Mat(axes.A.getVec()*quad.x, axes.B.getVec()*quad.y, axes.C.getVec()*quad.z);
+%	surf = line*frame;				// rotated to A=X, B=Y, C=Z
+%	A=axis.x, B=axis.y, C=axis.z;			// semi-axis lengths
+%	a=surf.x, b=surf.y, c=surf.z;			// rotated point
+%	p = 1.0/sqrt(a*a/(A*A)+b*b/(B*B)+c*c/(C*C));	// scale factor
+%	surf *= p;					// to put point on ellipsoid surface
+%	surf *= frame.get_trans();			// rotated back to ABC frame
+%	return cent+surf;				// added back to centre
+%}
+%
+%Vec sholl ( Vec line, Vec cent, float A, float B, Vec axis ) {
+%// returns the point on the ellipsoid (<axes> = A>B=C at 0) surface cut by a <line> from the <cent>re
+%/*
+%in the plane of the major axis (A) and the <line> with components a,b to A,
+%the point where the line cuts the surface has corresponding components g,h.
+%Now	gg/AA + hh/BB = 1
+%and	g/a = h/b
+%so	gg = AA(1-hh/BB) = aa.hh/bb
+%	AA - hh.AA/BB = hh.aa/bb
+%	AA = hh.aa/bb + hh.AA/BB
+%	hh = AA/(aa/bb+AA/BB)
+%*/
+%Vec	surf;
+%float	AA=A*A, BB=B*B, aa,bb,b, d,ff,gg,hh;
+%	line -= cent;					// shift line to origin
+%	b = line.vec_to_line(axis);			// perpendicular dist from line to axis
+%	bb = b*b;
+%	ff = line.sqr();
+%	aa = ff-bb;
+%	hh = AA/(aa/bb+AA/BB);
+%	gg = aa*hh/bb;
+%	d = sqrt((gg+hh)/ff);
+%	surf = line*d;					// extend <line> to ellipsoid surface
+%	return cent+surf;				// added back to centre
+%}
+%
+%Vec shell ( Vec line, Vec cent, Vec axis, Mat axes, Vec quad ) {
+%float	ab, bc, ca, close = NOISE;
+%	ab = axis.x - axis.y;
+%	bc = axis.y - axis.z;
+%	ca = axis.z - axis.x;
+%	// check for oblate/prolate
+%	if (ab*ab < close) return sholl(line,cent,axis.z,axis.x,axes.C);
+%	if (bc*bc < close) return sholl(line,cent,axis.x,axis.y,axes.A);
+%	if (ca*ca < close) return sholl(line,cent,axis.y,axis.z,axes.B);
+%	// otherwise scalene
+%	return shall(line,cent,axis,axes,quad);
+%}

@@ -1,0 +1,131 @@
+\subsection{Summary}
+
+The behaviour of the current method has been investigated using two distinct
+approaches: in the examples involving collisions, a constant driving displacement
+was applied to a single high-level object (to force it to make contact with 
+another object), by contrast,  in the examples involving constraint satisfaction the 
+displacements were instead applied to the lowest level objects ("atoms").  In the first
+case, the response of the lower level objects to maintain structural integrity was monitored
+whereas in the second, the resulting rearrangement of the higher levels objects was of interest.
+
+\subsubsection{Collision algorithms}
+
+The algorithm described in this work for the interaction of a hierarchy of objects
+seeks to circumvent a fundamental problem in coarse-grained modelling which
+is the loss of fine detail when components become 'bundled' together.
+The "currants-in-jelly" model developed here provides a flexible approach in which
+the contribution of the soft high-level objects (jelly-like) can be controlled
+to protect the underlying atomic structure (currants) while still allowing
+them to interact.
+
+Idealised macromolecular chains were used to establish the parameters
+to achieve this degree of interaction over a hierarchy spanning four levels.
+In a more realistic example using a small globular protein, the extent of the 
+distortion experienced by the protein domain structure during collision was then 
+examined and the parameters refined to allow an acceptable degree of deformation.
+
+\subsubsection{Constraint satisfaction}
+
+The model of steric repulsion established for idealised systems was then
+combined with sets of predicted distance constraints, derived from correlated
+mutation analysis,  in two differing applications.    Firstly, an integral
+trans-membrane protein was modelled in which the packing of the seven
+helices was refined but without topological rearrangement.  Secondly,
+an RNA structure was 'folded' under the predicted constraints, starting only
+from its 2-dimensional secondary structure prediction.
+
+From the large sequence alignment available for the membrane protein, high
+quality distance predictions could be obtained, which combined with good
+starting configurations (provided by a simplified lattice model) led to 
+the production of high-scoring models with a low RMSD to the known structure.
+By contrast, the RNA structure predictions had high RMSD values and although
+the stem-loops were correctly located in the higher-scoring models, topological
+differences remained which may be a result of constraints imposed by the
+flat starting conformation.
+
+\subsection{Limitations and potential}
+
+Whilst the methods and parameters established here have been shown to be
+effective, it is unlikely that they are optimal and many aspects of the
+model remain to be explored.    The approach taken above was to pick
+reasonable values for the extent and strength of an interaction and test
+a few variations and combinations in the surrounding parameter-space.
+A more systematic approach is needed, and for this the speed of the current
+method is a great advantage as many simulations can be run, allowing the
+parameter space to be more fully explored and optimal combinations found
+for different types of macromolecule.
+
+An earlier, simpler, version of the current method was used to model the
+dynamic interaction of actin and myosin.   However, because the atomic (residue)
+surfaces did not interact directly in that model, artificial constraints had
+to be added to drive the molecular recognition events.  In the current
+method, the residue-level surfaces can now come in contact, allowing a more
+realistic representation of molecular recognition based on steric compatibility.
+However, without a proper atomic interaction potential, the recognition of 
+a binding event would still rely on external knowledge of the residues involved.
+
+It was assumed that the parameters used at the start of the simulation remained
+the same throughout and equal for all components independently of their
+position or interactions.   However, all these aspects could be varied and
+if there is a pair of objects that interact preferentially, their parameters
+can be set to allow their surfaces to meet whereas others might present a
+hard-shell repulsion.  For example, in the actin/myosin example mentioned
+above, the actin monomers close to the myosin head could allow atomic
+interactions whereas all other interactions retain a high-level repulsion.
+
+The effectiveness of the approach relies on having a rich multi-layer
+hierarchy of substructures.   Fortunately, as seen from the varied examples
+provided, this is the prevalent situation for the majority of biological
+macromolecules.   In the simulation of more homogeneous materials, such
+as water, it is unlikely that the approach would be useful.  Similarly, for
+a long chain, such as DNA, although segments can be grouped like a string
+of sausages, the interaction of two such chains would require evaluation
+of the all pairs of sausages.
+
+In large molecules, especially those composed of subunits, the components may not
+remain the same throughout a simulation and during an interaction, one subunit may
+be transferred to another assembly or a large multi-domain chain may be cleaved.
+In its current formulation, the program does not accommodate this, however, such
+events could easily be incorporated simply by updating the list of children held
+by each object or adding new children to the list. 
+
+\subsection{Relationship to other methods}
+
+Given a model in which all the constraints have been chosen well to avoid bond
+or bump violations at all levels, then in the absence of any user applied displacements,
+the behaviour of the current method is to do nothing.
+It is left entirely up to the user how things should move, which is done by implementing
+custom code in what is called the "driver" routine.    This code can be either very
+simple, such as the few lines of code needed to implement the collision displacement or
+quite complicated such as the code to apply the distance constraints described in the
+Results section.
+
+Extrapolating this progression, the constraints could be applied in the form of a potential and
+indeed a potential could even be applied to many pairs of atoms \cite{PerioleXet09}.   The next
+obvious step would be to implement full molecular dynamics, Lagrangian mechanics or Monte Carlo.
+However, the problem with implementing anything complicated in the driver routine is that at some
+point, the current method will start to act on the (common) coordinates and if the
+driver code requires consistency in terms of distances and derived potentials, forces and
+velocities, then a multitude of problems will arise.
+
+The simplest approach to this problem is to attach a warning notice stating that \NAME\ cannot
+be used in combination with any method that requires global internal consistency.   The only
+route that might avoid this incompatibility would be through a more stochastic approach
+in which the displacements made at all levels are treated as a (semi) random Monte Carlo
+move of the system.
+A second path to resolve the problem might be through a variation of Gaussian elastic
+networks, However, elastic
+networks require a fixed topology that cannot be expected to remain intact across the
+large (driven) displacements envisaged for the current method.
+
+These possible developments will be reconsidered at a later time as it is currently
+unclear, not only how a consistent potential could be applied but also how potentials
+on different levels should interact.
+
+\subsection{Conclusion}
+
+The method developed here provides a fast and flexible way to capture the
+structure of most macromolecules in a hierarchy of increasingly larger coarse-grained
+levels without losing the detailed low-level representation.   Although much testing
+remains to be done, the system has the potential to be applied to very large dynamic
+systems including both protein and nucleic acids.

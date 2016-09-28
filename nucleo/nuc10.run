@@ -1,0 +1,55 @@
+#HIDDEN -2
+NORUN
+SCALE 0.158 .633  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM his5sec.model
+PARAM dna5seg.model
+END
+GROUP 0 10
+	INPUT nucseg.dat
+	TRANS  0  0  -30
+	TWIST    0  90  -10     0  90  10    110
+	INPUT nucseg.dat
+	TRANS  0  0  -60
+	TWIST    0  90  -10     0  90  10    220
+	INPUT nucseg.dat
+	TRANS  0  0  -90
+	TWIST    0  90  -10     0  90  10    330
+	INPUT nucseg.dat
+	TRANS  0  0  -120
+	TWIST    0  90  -10     0  90  10    440
+	INPUT nucseg.dat
+	TRANS  0  0  -150
+	TWIST    0  90  -10     0  90  10    550
+	INPUT nucseg.dat
+	TRANS  0  0  -180
+	TWIST    0  90  -10     0  90  10    660
+	INPUT nucseg.dat
+	TRANS  0  0  -210
+	TWIST    0  90  -10     0  90  10    770
+	INPUT nucseg.dat
+	TRANS  0  0  -240
+	TWIST    0  90  -10     0  90  10    880
+	INPUT nucseg.dat
+	TRANS  0  0  -270
+	TWIST    0  90  -10     0  90  10    990
+	INPUT nucseg.dat
+REBOND atomid   1141  1959
+REBOND atomid   1988  1142
+REBOND atomid   2294  3112
+REBOND atomid   3141  2295
+REBOND atomid   3447  4265
+REBOND atomid   4294  3448
+REBOND atomid   4600  5418
+REBOND atomid   5447  4601
+REBOND atomid   5753  6571
+REBOND atomid   6600  5754
+REBOND atomid   6906  7724
+REBOND atomid   7753  6907
+REBOND atomid   8059  8877
+REBOND atomid   8906  8060
+REBOND atomid   9212  10030
+REBOND atomid   10059  9213
+REBOND atomid   10365  11183
+REBOND atomid   11212  10366
+RETERM atomid 806 835
+END

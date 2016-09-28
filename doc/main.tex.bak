@@ -1,0 +1,359 @@
+\section{\TT{main}}
+
+The program \NAME\ simulates the motion and interaction of a collection of objects.
+The objects can be a sphere, tube or ellipsoid and can be bonded or linked together.
+Each object can contain other objects (called children) and the motion of a parent
+object applies to all its offspring.   The objects have no mass or momentum and any
+movement is applied as a fixed-size step which is made irrespective of whether the
+move creates a violation of any constraint, such as bond-length or leads to an 
+undesired steric overlap between objects.   
+
+In the same way that objects move irrespective of any constraint, so too, bond
+lengths and steric constraints are independently enforced by applying a fixed length
+movement to restore the bond length or separate an overlap.  Precedence in the application
+of these, often conflicting corrections, is random as each algorithm executes as an
+asynchronous process (a thread), all operating on the same set of positional coordinates.
+
+The process generating motion is the \TT{shaker}, bonds and link lengths are fixed
+by the \TT{linker} and steric clashes by the \TT{bumper}.   In addition there is a 
+routine that keeps children within the boundaries of their parent (the 
+\TT{keeper}) and one that helps maintain local geometry (the \TT{fixer}) and the
+configuration is visualised (using openGL) by the \TT{viewer}.
+
+The structure of the objects is set-up through a command script that is interpreted
+by the \TT{models} routine and the parameters that control their behaviour is read
+by the \TT{params} routine.   Both these routines have many built-in settings that
+allow the constraints commonly found in protein and nucleic acids (such as their
+secondary structures) to be automatically generated without having to specify every
+detail.
+
+\NAME\ is currently configured to accept a hierarchy of objects in up to 10 levels
+(not all of which need be used).   The top level is referred to as the "world" and
+the lowest as "atomic" (not because the objects necessarily represent atoms but only
+because they have no further divisions).  Objects interact directly (through bumps
+bonds and links) only with other objects on the same level.   Besides following the
+geometric transformations of their parents, interaction between levels is confined 
+to keeping families (parent and children) together.   As mentioned above, this can
+be enforced using the \TT{keeper} but the default action is for the parent to track
+the centroid position of its children and for the children to shift together so their
+centroid tracks the position of their parent.   This mutual co-location is implemented
+by the \TT{center} ("er" not "re") routine.
+
+In the input stream (read by \TT{models})
+each group of objects is introduced with the line \Tt{GROUP 0 N}, where \Tt{N} is
+the number of children in the group.   For example:
+\begin{verbatim}
+        GROUP 0 1
+            GROUP 0 2
+                GROUP 0 3
+                    ATOM...
+                    ATOM...
+                    ATOM...
+                GROUP 0 4
+                    ATOM...
+                    ATOM...
+                    ATOM...
+                    ATOM...
+\end{verbatim}
+specifies a world consisting of a single object that contains one child that itself
+has two children with three and four children each at the atomic level.  The atoms at
+the lowest level are specified by the \Tt{ATOM} command, which conveniently, has a
+format that is identical to that used by the Protein structure DataBank (PDB), which
+is the source of most of the structures being simulated.
+
+The above example does not specify the nature of the objects in each group (although
+those specified by \Tt{ATOM} commands are, by default, spheres).  Objects on the same
+level within a group (such as the \Tt{ATOM}s or their parents in the above example)
+are assumed to have the same properties, and to prevent repeated specification of
+these, they are defined in a parameter file (read by \TT{params}).  This file consists
+of a set of rows and columns with each column specifying a set of parameters for
+each level.
+
+After a model has been set-up and executed, after an initial period of equilibration
+(during which conflicting constraints will attempt to resolve themselves), the structure
+will remain still or jiggle around, depending on the degree of motion assigned to the
+objects on each level.   Behaviour of a more purposeful nature can be introduced through
+the \TT{driver} routine which implements a set of user-specified behaviours, such as 
+moving components of the model to execute some action.   Irrespective of the instructions
+issued from this routine, all the remaining routines will continue to act independently
+
+Each routine will be elaborated below, beginning with the set-up routines (\TT{models}
+and \TT{params}) followed by the main routines (\TT{shaker}, \TT{linker}, \TT{bumper}
+and \TT{keeper} that implement their specifications.  Finally, the minor routines:
+\TT{fixer}, \TT{sorter}, \TT{center} and \TT{looker} will be described.
+
+%#include "util.hpp"
+%#include "geom.hpp"
+%#include "cell.hpp"
+%#include "data.hpp"
+%
+%int argcin; char** argvin;
+%
+%void params ( FILE* );
+%void models ( FILE* );
+%void driver ();
+%void bumper ();
+%void shaker ();
+%void potter ( int, int );
+%void tinker ( float );
+%void keeper ( Cell* );
+%void bonder ( Cell* );
+%void linker ( Cell* );
+%void center ();
+%void sorter ();
+%void viewer ( int, char** );
+%void presort ();
+%void driver (); // in application directory
+%void looker (); // in application directory
+%Cell* setScene ( Cell* );
+%void fixSSEaxis( Cell*, float );
+%
+%//           100000000 = 1/10 sec.
+%long nanos = 100000000;	// good speed for watching
+%int  delay = 1;//10;
+%int  lastlook = 0;
+%
+%float	atom2pdb;	// scale factor
+%
+%void *acts ( void *ptr )
+%{
+%	sleep(1); // delay start to allow stuff to be set
+%	if (Data::norun) printf("Starting driver (but not used)\n");
+%		    else printf("Starting driver\n");
+%	while (1) {
+%		if (Data::norun==0) driver(); // application control (user provided)
+%		timeout(nanos);
+%	}
+%}
+%
+%void *look ( void *ptr )
+%{
+%	sleep(60);
+%	printf("Starting looker \n");
+%	while (1) {
+%		sleep(2);
+%		if (Data::frame > 99) {
+%			looker(); // watches and measures things (user provided)
+%			exit(1);
+%		}
+%		lastlook++;
+%	}
+%}
+%
+%void *fixs ( void *ptr )
+%{
+%float	weight = (float)nanos/100000000.0; // = 1 when speed = 1, .1 for 10, .01 for 100
+%	sleep(1); // delay start to allow ends to be set
+%	printf("Starting fixers \n");
+%	weight *= 0.1;
+%	while (1) {
+%//		fixSSEaxis(Cell::world,weight);
+%		timeout(nanos);
+%/*
+%		fixRNAaxis(world,0,weight);
+%		nanosleep(&wait,NULL);
+%		fixRNAstem(world,0,weight);
+%		nanosleep(&wait,NULL);
+%		fixDOMaxis(world,0,1.0);
+%		fixANYaxis(world,0,weight);
+%		nanosleep(&wait,NULL);
+%		reset2axis(world,0,weight);
+%*/
+%	}
+%}
+%
+%void *move ( void *ptr )
+%{
+%	printf("Starting mover\n");
+%	while (1) {
+%		Data::frame++;
+%		shaker();		// makes random displacements at all levels
+%		keeper(Cell::world);	// keeps children inside their parent
+%		center();		// keeps children centred on their parent
+%//		tinker(0.1);		// geometry patch-up using stored local data
+%		timeout(nanos);
+%	}
+%}
+%
+%void *link ( void *ptr )
+%{
+%	printf("Starting linker \n");
+%	while (1) {
+%		bonder(Cell::world);
+%		linker(Cell::world);
+%		timeout(nanos);
+%	}
+%}
+%
+%void *rank ( void *ptr )
+%{
+%	printf("Starting sorter \n");
+%	while (1) {
+%		sorter(); // sorts the ranked lists
+%		timeout(1,nanos); // <------------NB + 1 sec.
+%	}
+%}
+%
+%void *bump ( void *ptr )
+%{
+%	printf("Starting bumper \n");
+%	while (1) {
+%		bumper();
+%		timeout(nanos/100);
+%	}
+%}
+%
+%void *pots ( void *ptr )
+%{
+%struct  timespec start, finish;
+%long	runtime, delay;
+%int	m = Data::depth;
+%char	*flag = (char*)ptr;
+%int	cycles = 1;
+%	printf("Starting molecular dynamics for %s\n", flag);
+%	while(1) { timespec start,finish;
+%   		clock_gettime(CLOCK_REALTIME, &start);
+%		if (flag[0]=='a') {
+%			potter(m,cycles);
+%		} else {
+%			DO1(i,m-1) potter(i,(cycles*m)/i);
+%		}
+%		clock_gettime(CLOCK_REALTIME, &finish);
+%		runtime = timedifL(start,finish);
+%		if (runtime < nanos) {
+%			delay = nanos - runtime;
+%			//Ps(flag) Pt(waiting for) Pi(delay) Pi(cycles) NL
+%			timeout(delay);
+%			cycles++;
+%		}
+%	}
+%}
+%
+%void *view ( void *ptr )
+%{
+%	printf("Starting viewer \n");
+%	viewer(argcin,argvin); // sets-up graphical objects (types) thrn runs by callback
+%}
+%
+%main ( int argc, char** argv ) {
+%pthread_t thread[10];
+%FILE    *run;
+%int	i, j, m, n;
+%long    rseed = (long)time(0);
+%        srand48(rseed);
+%	if (argc>2) { int speed;
+%		sscanf(argv[2],"%d", &speed);
+%		if (speed > 0) nanos /= speed;
+%		if (speed < 0) nanos *= -speed;
+%		Pt(Running at) Pi(speed) NL
+%	}
+%	run = 0;
+%        if (argc > 1) run = fopen(argv[1],"r");
+%        if (!run) {
+%                printf("Assume test.run\n");
+%                run = fopen("test.run","r");
+%                if (!run) { printf("No test.run file\n"); return 1; }
+%        }
+%	Cell::world = new Cell;		// create the top-level cell structure (set in models())
+%	params(run);
+%	models(run);
+%	fclose(run);
+%Pi(Cell::total) NL
+%Pi(Data::depth) NL
+%Pr(Data::shrink) NL
+%Cell::world->print();
+%	Cell::world->move(-Cell::world->xyz);
+%	Pt(Reset) Pv(Cell::world->xyz) NL
+%	Cell::scene = setScene(Cell::world);
+%	Cell::scene->sort = 0;
+%	presort();
+%	Data::frame = -10;
+%	argcin=argc; argvin=argv;
+%	if (Data::noview) {
+%		Pt(No viewing) NL
+%	} else {
+%		pthread_create( thread+0, 0, view, 0 );
+%	}
+%	pthread_create( thread+1, 0, rank, 0 );
+%	if (Data::norun < 1) {
+%		pthread_create( thread+2, 0, move, 0 );
+%		pthread_create( thread+3, 0, bump, 0 );
+%		pthread_create( thread+4, 0, link, 0 );
+%	}
+%//	pthread_create( thread+5, 0, fixs, 0 );
+%//	pthread_create( thread+6, 0, acts, 0 );
+%//	pthread_create( thread+7, 0, look, 0 );
+%/* toy MD calls
+%	pthread_create( thread+8, 0, pots, (void*)"atoms" );
+%	pthread_create( thread+9, 0, pots, (void*)"other" );
+%*/
+%	sleep(99999);
+%}
+%
+%/* code to stretch chain
+%if (Data::frame<200) {
+%DO(i,Cell::total) { Cell *c=Cell::uid2cell[i];
+%if (c->level==3) c->xyz.x -= 0.005*(i-Cell::total/2);
+%}
+%DO(i,Cell::total) { Cell *c=Cell::uid2cell[i];
+%if (c->level==2) { Vec x = (c->endC - c->endN)*0.5;
+%c->xyz = c->starts->xyz & c->finish->xyz;
+%c->endN = c->xyz-x; c->endC = c->xyz+x; }
+%} 
+%nanosleep(&wait,NULL);
+%continue;
+%}
+%*/
+%
+%main  : main.cpp potter.o driver.o looker.o params.o models.o viewer.o shaker.o keeper.o linker.o bumper.o sorter.o fixers.o util.o cell.o data.o geom.o util.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -ggdb main.cpp -o main potter.o driver.o looker.o params.o models.o viewer.o shaker.o keeper.o linker.o bumper.o sorter.o fixers.o util.o cell.o data.o geom.o -lGL -lGLU -lglut -lpthread -lm
+%
+%
+%potter.o : potter.cpp util.hpp data.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -c -ggdb potter.cpp
+%
+%driver.o : driver.cpp util.hpp data.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -c -ggdb driver.cpp
+%
+%looker.o : looker.cpp util.hpp data.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -c -ggdb looker.cpp
+%
+%params.o : params.cpp util.hpp data.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -c -ggdb params.cpp
+%
+%models.o : models.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -c -ggdb models.cpp
+%
+%viewer.o : viewer.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -c -ggdb viewer.cpp
+%
+%shaker.o : shaker.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -c -ggdb shaker.cpp
+%
+%keeper.o : keeper.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -c -ggdb keeper.cpp
+%
+%linker.o : linker.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -c -ggdb linker.cpp
+%
+%bumper.o : bumper.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -c -ggdb bumper.cpp
+%
+%sorter.o : sorter.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -c -ggdb sorter.cpp
+%
+%fixers.o : fixers.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -c -ggdb fixers.cpp
+%
+%cell.o : cell.cpp util.hpp data.hpp cell.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -c -ggdb cell.cpp
+%
+%data.o : data.cpp util.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -c -ggdb data.cpp
+%
+%geom.o : geom.cpp util.hpp geom.hpp Vec.hpp Mat.hpp
+%	c++ -c -ggdb geom.cpp
+%
+%util.o : util.cpp util.hpp
+%	c++ -c -ggdb util.cpp
+%

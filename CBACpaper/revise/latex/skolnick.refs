@@ -1,0 +1,46 @@
+MULTIPROSPECTOR: An algorithm for the prediction of protein-protein interactions by multimeric threading.
+Skolnick J, Lu L, and Lu H. Proteins 2002 Nov 15;49(3):350-64.
+Function first: a powerful approach to post-genomic drug discovery.
+Betz S, Baxter S, Fetrow J: Drug Discovery Today, 2002, 7;16:865-871.
+The protein folding problem, a biophysical enigma.
+Fetrow J, Giammona A, Kolinski A, Skolnick J: Curr Pharma Biotech (In press).
+Ab Initio Protein Structure Prediction on a Genomic Scale: Application to the Mycoplasma Genitalium Genome.
+Kihara D, Zhang Y, Kolinski A, Skolnick J: Proc Natl Acad Sci USA 2002 Apr 30;99(9):5993-8.
+Structural genomics in pharmaceutical design.
+Mueller L, Montelione GT: J Struct Funct Genomics 2002 (In press).
+High throughput analysis of protein assignments and secondary structure: Rapid data collection using triple resonance CryoProbes?, parallel processing on LINUX-based processor architectures and automated analysis using AutoAssign? software.
+Monleón D, Colson K, Moseley HNB, Anklin C, Oswald R, Szyperski T, Montelione GT: J Struct Funct Genomics 2002 (In press).
+MULTIPROSPECTOR: An Algorithm for the Prediction of Protein-Protein Interactions by Multimeric Threading.
+Skolnick J, Lu L, and Lu H: Proteins (Submitted).
+A unified approach to the prediction of protein structure and function.
+Skolnick J, Kolinski A: Advances in Chemical Physics 2002;120:131-92.
+Docking of small ligands to low-resolution and theoretically predicted receptor structures.
+Wojciechowski M, Skolnick J: Journal of Computational Physics Special Issue 2002;23:189-97.
+Defrosting the frozen approximation: PROSPECTOR: A new approach to threading.
+Skolnick J, Kihara D: Proteins 2001; 42:319-31.
+Ab initio protein structure prediction via a combination of threading, lattice folding, clustering, and structure refinement.
+Skolnick J, Kolinski A, Kihara D, Betancourt MR, Rotkiewicz P, Boniecki M: Proteins Special Issue 2001;5:149-56.
+TOUCHSTONE: An Ab initio Protein Structure Prediction Method that Uses Threading-Based Tertiary Restraints.
+Kihara D, Lu H, Kolinski A, Skolnick J: Proc Natl Acad Sci 2001 Aug 28;98(18):10125-30.
+*Note: This publication references GeneFormatics' SAPPHIRE? technology.
+Enhanced Functional Annotation of Protein Sequences via the Use of Structural Descriptors.
+Di Gennaro J, Siew N, Hoffman B, Zhang L, Skolnick J, Neilson L, Fetrow J: J Struct Biol 2001;134:232-45.
+Automatic determination of protein backbone resonance assignments from triple-resonance NMR data.
+Moseley HNB, Monleón D, Montelione GT: Meths Enzymology 2001,339:91-108.
+Structural genomics: An approach to the protein folding problem.
+Montelione GT: Proc Natl Acad Sci USA 2001;98:13488-9.
+Generalized Comparative Modeling (GENECOMP): A combination of sequence comparison, threading, and lattice modeling for protein structure prediction and refinement.
+Kolinski A, Betancourt MR, Kihara D, Rotkiewicz P, Skolnick J: Proteins 2001 Aug 1;44(2):133-49.
+*This publication references GeneFormatics' GEM? Technology.
+Genomic-scale comparison of sequence- and structure-based methods of function prediction: Does structure provide additional insight?
+Fetrow J, Siew N, Di Gennaro J, Martinez-Yamout M, Dyson HJ, Skolnick J: Protein Science 2001;10:1005-14.
+Sequence- and structure-based protein function prediction from genomic information.
+Baxter SM, Fetrow JS: Curr Opin Drug Discov Devel 2001 May;4(3):291-5.
+From genes to protein structure and function: Novel applications of computational approaches in the genomic era.
+Skolnick J, Fetrow JS: TIBTECH 2000;18:34-9.
+Structural genomics and its importance for gene function analysis.
+Skolnick J, Fetrow JS, Kolinski A: Nature Biotechnology 2000;18:283-7.
+Quantitative challenges in the post-genomic sequence era.
+Montelione GT, Anderson S: The Investigational Drugs Database (IDdb) 2000 Mar 15.
+Protein NMR spectroscopy in structural genomics.
+Montelione GT, Zheng D, Huang YJ, Szyperski T: Nature Struct Biol 2000;7:

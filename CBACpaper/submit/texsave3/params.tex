@@ -1,0 +1,475 @@
+\section{\TT{params}}
+
+\subsection{Model parameter specification}
+
+The \TT{params} routine reads the file specified by the first argument on the \NAME\ command
+line (usually "something.run"), or by default, "test.run" if no name is given.  The main
+purpose of the \TT{params} routine is to read a file of parameters (specified by the
+\Tt{PARAMS} command described below) and set-up the generic behaviours for each level in
+the model hierarchy.
+
+Each property is specified
+on one line as a series of integers corresponding to successively deeper levels.  There
+can be up to 10 levels and unused fields are left as trailing zeros which can be followed
+by an optional comment.   Presently, there are also ten different properties specified
+by the parameter file which will be described below.  (With their parameter name italicized
+in the sub-section title).
+
+Firstly however, the routine expects a
+declaration of the molecule type, which can be any of: \Tt{PROT}, \Tt{RNA}, \Tt{DNA},
+\Tt{CHEM} or \Tt{CELL}.  Any other text will probably behave in a protein-like way.
+This can be followed by a secondary command that is used by the \TT{viewer} to specify
+a colour scheme for rendering which will be described under the section on that routine.
+
+Except for models specified as \Tt{CHEM}, 
+it is assumed that the lowest (most detailed) level of the molecular representation will
+be a backbone 'virtual' chain, without any atomic detail.  
+
+\subsubsection{\Tt{Line 1}: {\em type} of object}
+
+As described above, there can be three types of object, a: sphere, tube and ellipsoid that
+are specified by the numbers 1,2,3, respectively.   There can also be a virtual object that
+can have all the properties of a sphere but is not rendered except as a tiny sphere.
+Ellipsoids (with axis lengths, $A,B,C$) can only be oblate ($A<B=C$) or prolate ($A>B=C$).
+These shapes are generally, referred to as spheroids but the term ellipsoid will be retained
+below to maintain a distinction from the sphere-object (which persists even when $A=B=C$).
+
+If a negative number is specified, then the object is rendered as a wire mesh but otherwise
+behaves identically.
+
+\subsubsection{\Tt{Line 2}: {\em size} of object}
+
+The second line specifies the size of the object.  For spheres and tubes, this is the diameter
+while for ellipsoids it is the diameter at the centrt across the axis of symmetry ($B$ or $C$,
+in the above specification).   The values specified in the parameter file are used at a tenth
+their size inside \NAME.
+
+With a specified known type of molecule (protein of nucleic acid), standard values will be
+adopted and maintained for bond lengths and internal secondary structure links (more below).
+This means that higher levels (eg: protein domains) are free to move within their specified
+constraints.  While this is usually the normal desired behaviour, it is sometimes required
+that the local starting geometry of the configuration should be preserved.  This is implemented
+by the \TT{tinker} and a negative prefix on the \Tt{size} value will signal that it should be
+active during the simulation for that level of structure. 
+
+\subsubsection{\Tt{Line 3}: {\em bump} size of object}
+
+Although it might be assumed that objects will bump when their surfaces make contact,
+there are situations where it is useful to have a different bump size, which can be specified
+on this line.
+
+\subsubsection{\Tt{Line 4}: number of {\em links}}
+
+Any object can form links to any other object (on the same level) but to avoid allocating unused
+space to objects that never link, the maximum number of links can be specified on this line. 
+
+\subsubsection{\Tt{Line 5}: number of {\em bonds}}
+
+The number of bonds an object can make is specified in an identical manner but has some
+implications for polymers (protein, nucleic acid) that are expected to form chains.
+
+Specifying a non-zero number of bonds for a polymer automatically results in the creation
+of bonds between adjacent monomers within their group. 
+So in the \Tt{GROUP} structure declared in the previous section, if bonds
+were specified at the atomic level, then there would be two chains of 3 and 4 monomers.
+If bonds were allocated to the next level up (nominally the secondary structure level), then
+a chain of two secondary structures would be created.  However, for consistency, the
+program will also create the bond joining their two atomic level chains (giving a single
+chain of 7 monomers at the 'atomic' level).  If the atomic level has no bonds, then each
+secondary structure in the chain will contain a group of free-floating atoms.
+
+If the number of bonds specified is negative, this is taken as a flag to create a circular
+chain.  So in the current example, a negative number on the atomic level will create two
+circular chains of 3 and 4 monomers.   If the secondary structure level is also negative,
+and the atomic level positive, there will be a 'ring' of 2 secondary structures containing 
+a ring of 7 monomers and if both values are negative, the 'ring' of 2 will contain a
+triangular and a square ring with no bond between them.
+
+In some higher level polymer domain configurations and chemical structures, each object
+may form multiple bonds and the value of the bond number is equivalent to the maximum
+valance of the object.  
+
+\subsubsection{\Tt{Line 6}: {\em move} step size}
+
+The step size applied by the \TT{shaker} is specified on this line.   As with all motion,
+it is applied from the top level downwards with every movement at the higher level also
+propagated to all offspring below.
+
+If the specified value of $size$ ($S$) is positive, the motion is a translation in a random direction
+with a magnitude of $S$/100, followed by a rotation in a random direction with a angular
+displacement of $S$/100 radians.
+
+If the value is negative, then just the translation is applied.
+
+\subsubsection{\Tt{Line 7}: {\em keep} within parent boundaries}
+
+If a child strays outside its parent's boundary (as defined by its $size$), then a shift
+(or kick) is applied to redirect it inwards with a magnitude specified on this line.
+Note that the value appears in the position of the level of the parent but is applied
+to the level below).
+
+If the parent is a sphere, then 'inwards' is towards its centre  and for an ellipsoid,
+'inwards' is towards the nearest focus (simpler than calculating surface normals).  For a tube,
+the default action is to shift the child towards the surface whether inside or outside
+the tube, in a direction perpendicular to the tube axis.
+
+If the value of the parameter is negative, then these default actions are reversed and
+children within spheres and ellipsoids will be directed towards the parental surface
+while children will be free to wander inside the tube.
+
+Some of these behaviours can be modified for individual objects by values specified in
+the model description read in the \TT{models} routine described below.
+
+\subsubsection{\Tt{Line 8}: {\em bond} length}
+
+The bond lengths specified on this line are the default ideal values which every bond
+associated with that level will be refined towards.  As not all objects are spheres, the
+bond length is not a simple centre---centre distance.   For spheres, it is the distance
+between the surfaces (so the centre---centre distance = $bond+size$).  For tubes, it is
+the desired separation between the ends of two tubes (axis end---end distance) and for
+ellipsoids it is the equivalent pole---pole distance between the ends of their axes of
+symmetry.  (The ends of the $A$ axis, in the example above.).
+
+A negative value of the bond length evokes a behaviour that prevents the default joining
+of chains of children when their parents are in a chain.  This is 
+useful when constructing a fiber formed from unbonded subunits (such as actin).
+
+\subsubsection{\Tt{Line 9}: {\em hard} bump repulsion}
+
+The way in which objects bump is simple only at the atomic level where a kick is applied
+to both atoms in a direction away from their common centre with a magnitude of $M$/100,
+where $M$ is the specified value.  This repulsion is applied when the distance between
+the atom centres is less than the value of $bump$ and is independent of the degree of
+penetration or any other constraint.
+
+\subsubsection{\Tt{Line 10}: {\em soft} bump repulsion}
+
+Objects at a higher level do not behave in this way but can 'happily' inter-penetrate,
+providing none of their children are clashing.   The degree to which they are separated
+is a function of the number of inter-family bumps on a non-linear scale between the value
+of the $hard$ repulsion specified on the previous line and the $soft$ value specified
+on this line.  Specifically, the kick size, $k$, is: $k = g*S + (1-g)*H$, where $S$ 
+and $H$ are the $hard$ and $soft$ values and $g = \exp (-m^2)$, for $m$ child collisions.
+
+As the value of $g$ ranges from 1 (no bumping children) to 0 (many bumping children) the
+degree of parental repulsion will scale from $soft$ to $hard$.   This means that if $soft$
+has a non-zero value, then there will be a 'soft' repulsion before any of the children in the
+two families clash.  This creates a 'jelly' like behaviour to the collision of high-level
+objects.
+
+If the value of $soft$ is negative, then the behaviour of the objects reverts to hard repulsion.
+
+\subsection{An example input file}
+
+\begin{singlespace}
+------------------------------------------------------------------------------------------------------
+\begin{footnotesize}
+\begin{verbatim}
+PROT sec
+    0,    0,    3,    2,    1,    0,    0,    0,    0,    0    	// type
+ 9999, -120,  -50,   -8,    2,    0,    0,    0,    0,    0    	// size
+    0,  120,   50,    8,    8,    0,    0,    0,    0,    0    	// bump
+    0,    0,    0,    6,    4,    0,    0,    0,    0,    0    	// nlinks
+    0,    0,    0,    1,    1,    0,    0,    0,    0,    0    	// nbonds
+    0,    0,    1,    1,    1,    0,    0,    0,    0,    0    	// move
+    0,    2,    5,   10,    0,    0,    0,    0,    0,    0    	// keep
+    0,    0,    0,    0,    4,    0,    0,    0,    0,    0    	// bond
+    0,   10,   10,   10,   10,    0,    0,    0,    0,    0    	// hard bump
+    0,    1,    2,    5,    0,    0,    0,    0,    0,    0    	// soft bump
+\end{verbatim}
+\end{footnotesize}
+------------------------------------------------------------------------------------------------------
+\end{singlespace}
+
+In this example, a protein model is set-up with 4 levels (not including the world).
+From bottom up, the levels corresponds to: \CA-chain, secondary structure elements,
+domains and individual chains (subunits). 
+
+The first column describes the world simply as big (9999).  Other values can be assigned to
+the world and, except that it will not move or be rendered, it is a normal object.
+A useful behaviour is to give it a smaller size and assign a value to $keep$ to stop
+objects wandering too far away. 
+
+The atomic level (fifth column) specifies each atom is a small sphere ($size = 2$) and is in
+a linear chain ($nbonds > 0$).  So with a relatively long bond between atoms ($bond = 4$),
+the chain will will appear as a "ball-and-stick" model (with an atom---atom distance of 6). 
+It has a bump size that is larger than this ($bump = 8$) but as bonded atoms do not bump (more
+detail in the \Tt{bumper} section), this will first apply to neighbours-but-one along the chain,
+preventing the virtual bond angle dropping much below 90\degree. (Since $6*6+6*6 \approx 8*8$).
+%The value of 8 was chosen as it is the closest approach made between monomers in an \AH\ and
+%as linked atoms do bump, this will avoid disruption. (In \AA ngstroms, this is 8*3.8/6 = 5.1
+%which is close to the i---i+2 distance in the \AH)). 
+
+Each atom has the capacity to make 4 links, two of which will be automatically used in local
+secondary structure formation).  The atoms will have a slight motion and a reasonably strong
+($hard$) bump repulsion.
+
+The secondary structure level is a chain ($nbonds = 1$) of tubes ($type = 2$) with equal
+$size$ and $bump$ values that just enclose their atomic configurations. Note that the $size$
+values at this level and above are negative, indicating that there is no generic bond length 
+and the local geometry will be preserved by the \Tt{tinker}.   If the $size$ value were positive,
+the \TT{linker} would enforce the generic bond length, which is set at zero, and would link
+the tubes without any spacer.  So not a disaster, but causing a marked shift away from
+the original structure once the simulation is started.  Quite a few links are allocated (6)
+and as none are automatically assigned at this level (?), there is scope to tie-down the 
+structure further.  A value of $keep$ is specified to hold the atoms to the tube surface
+(except in loop regions where this is not enforced).
+Both the $hard$ and $soft$ bump settings are now used so the secondary
+structures have a bit of a jelly-like constitution.
+
+At the next higher (domain) level, the objects are ellipsoids (of softer jelly) and are still
+in a chain.  Parents are also a bit more relaxed about keeping their children close.  These
+trends continue to the next (subunit) level which is no longer chained and is rendered as a
+virtual sphere ($type = 0$).
+ 
+
+\subsection{Global value specification}
+
+Although the main purpose of \TT{params} is to parameterise the model behaviour, it also
+sets-up some general behaviours most of which are used in 'debugging' the model specification
+script described in the next section.
+
+\subsubsection{\Tt{NORUN}}
+
+Compile and run the model but do not execute the \TT{driver} routine.
+
+\subsubsection{\Tt{NOMOVE}}
+
+Compile and run the model but do not execute the \TT{shaker}, \TT{keeper} or \TT{bumper} routines.
+(Or the \TT{driver} routine).
+This command is very useful for checking (and as the \TT{viewer} is active, seeing) if the model 
+is OK before it has the chance to do anything (like explode).
+
+\subsubsection{\Tt{NOVIEW}}
+
+The \TT{viewer} is not executed.   Essential for use in batch mode, say on a computer cluster.
+
+\subsubsection{\Tt{HIDDEN}}
+
+Freezes execution of objects that are out of view, either outside the field-of-view or
+beyond the back-plan or behind the point-of-view.   Distant objects also become solid and
+their contents are frozen.
+
+\subsubsection{\Tt{TINKER <update>}}
+
+Activates the regularisation routine {\tt tinker()}, described under the section on
+minor routines.
+
+\subsubsection{\Tt{SCALE <in> <out>}}
+
+Sets two scale factors, the first is applied to all coordinates read in by \TT{models} and the
+second to coordinates written out (usually from \TT{looker}).  Default values are used for
+protein and nucleic acid for input but when writing very large structures in PDB format, a
+small scale factor is often needed to get the values to fit the format.
+
+The line: {\tt SCALE 0.158 0.633  \# scalein = .6/3.8, scaleout = 3.8/6}, scales a PDB input
+to have a CA---CA bond length of 0.6 and an output length of 0.38 (tenth size).
+
+\subsubsection{\Tt{SHRINK <value>}}
+
+This scale factor is applied on every simulation cycle to the highest level (1, not counting
+the world). A factor of $1-<value>$ is applied to the positions of all level-1 objects causing
+them to fall towards the centre of the world.   Its main use has been in testing collisions
+as it saves time waiting for wandering objects to collide.
+
+\subsubsection{\Tt{PARAM <filename>}}
+
+This is the key command that specifies the name of the file containing all the model parameters
+described in the first section (which is usually called "something.model").
+Up to five models can be introduced by separate \Tt{PARAM} lines and are assigned numbers
+starting with zero upwards, in order of their occurrence.
+
+The {\tt PARAM} command(s) must follow all the above commands and be followed by the {\tt END}
+command.
+
+\subsubsection{\Tt{END}}
+
+Marks the end of the parameter input stage and the start of the model description.
+
+
+
+
+%#include "util.hpp"
+%#include "geom.hpp"
+%#include "cell.hpp"
+%#include "data.hpp"
+%
+%void paramin ( char*, int );
+%
+%int params ( FILE *run ) {
+%// read the global behaviour values and model data
+%// NB commands must come in the order specified below as there is no loop 
+%int	n, io, nmodels;
+%float	s, sget, sput;
+%char	line[222];
+%	Data::shrink = 0.0;	// used as 1-shrink (-ve = mass factor)
+%	Data::scalein = 0.1;	// default unless specified by SCALE <in> <out>
+%	Data::scaleout = 1.0;	// unless specified by SCALE
+%	LOOP {
+%		io = read_line(run,line);
+%		if (io < 0) { Pt(Unexpected end of file\n) exit(1); }
+%		if (io==0) continue;
+%		if (line[0]=='#') continue; // NB comments (#) only at start
+%		break;
+%	}
+%	if (line[0]=='N' && line[2]=='R') {
+%		Data::norun = 1;		// NORUN flag (skip driver)
+%		read_line(run,line);
+%	}
+%	if (line[0]=='N' && line[2]=='M') {
+%		Data::norun = 2;		// NOMOVE flag (no linker,shaker,bumper) 
+%		read_line(run,line);
+%	}
+%	if (line[0]=='N' && line[2]=='V') {
+%		Data::noview = 1;		// NOVIEW flag (skip viewer)
+%		read_line(run,line);
+%	}
+%	if (line[0]=='H' && line[2]=='D') {
+%		Data::hidden = 1;		// HIDDEN flag (skip viewer)
+%		if (io > 7) {
+%			sscanf(line+6,"%d", &n);
+%			Data::hidden = n;
+%		}
+%		read_line(run,line);
+%	}
+%	if (line[0]=='S' && line[1]=='C') { // output SCALE factor (saved in world->far)
+%		Ps(line) NL
+%		sscanf(line+6,"%f %f", &sget, &sput);
+%		Data::scalein = sget;
+%		Data::scaleout = sput;
+%		read_line(run,line);
+%	}
+%	if (line[0]=='S' && line[2]=='R') { // SHRINK factor (saved later in scene->far)
+%		Ps(line) NL
+%		sscanf(line+7,"%f", &s);
+%		Data::shrink = s;
+%		read_line(run,line);
+%	}
+%	if (line[0] != 'P') {
+%		printf("Need a PARAM filename\n");
+%		return 2;
+%	}
+%	nmodels = 0;
+%	while (1) { char atomtype; // read in param file(s)
+%		printf("Reading parameters from %s\n", line+6);
+%		paramin(line+6,nmodels);
+%		nmodels++;
+%		read_line(run,line);
+%		if (line[0] == 'P') continue;
+%		if (line[0] == 'M' || line[0] == 'E') { // MODEL or END to finish
+%			printf("End of parameters\n\n");
+%			Pt(Read) Pi(nmodels) NL
+%			DO(i,nmodels) // set the atomic bond lengths
+%			{ float len = Data::model[i].sizes[Data::depth]
+%				    + Data::model[i].bonds[Data::depth];
+%				printf("Model %d is", i);
+%				if (Data::model[i].moltype==0) { // protein
+%					Data::bondCA = len;
+%					Pt(protein with) Pr(Data::bondCA) NL
+%				}
+%				if (Data::model[i].moltype==1) { // nucleic
+%					Data::bondPP = len;
+%					Pt(nucleic with) Pr(Data::bondPP) NL
+%				}
+%				if (Data::model[i].moltype==2) { // chemistry
+%					Pt(chemical) NL
+%				}
+%				if (Data::model[i].moltype==3) { // cells
+%					Pt(cells) NL
+%				}
+%			}
+%			break;
+%		}
+%		Pt(Bad) Ps(line) NL exit(1);
+%	}
+%	Data::nmodels = nmodels;
+%	if (line[0] == 'M') { int model;
+%		sscanf(line+6,"%d", &model);
+%		printf("Using model %d\n", model);
+%	}
+%}
+%
+%void paramin ( char *param, int n ) {
+%int	i, j, io;
+%FILE	*dat;
+%char	*at;
+%char	line[222];
+%char	name;
+%Data	*model = Data::model+n;
+%	dat = fopen(param,"r");
+%	if (!dat) { printf("%s parameter file not found\n", param); exit(1); }
+%	io = read_line(dat,line);
+%	model->moltype = model->subtype = 0; // default (any protein-like chain)
+%        if (line[0]=='P') model->subtype = 1; // PROTein (CA-CA = 3.8)
+%        if (line[0]=='R') { model->moltype = 1; model->subtype = 0; } // RNA
+%        if (line[0]=='D') { model->moltype = 1; model->subtype = 1; } // DNA
+%        if (line[1]=='H') model->moltype = 2; // CHEM (needs fixing)
+%        if (line[1]=='E') model->moltype = 3; // CELLs
+%	model->colours = 0;		// default = colour by level
+%	if (strlen(line) > 4) {
+%        	if (toupper(line[5])=='S') model->colours = 1; // PROT with SSE coloured red/green
+%        	if (toupper(line[5])=='B') model->colours = 2; // flash Bumps in a different colour
+%	}
+%	name = line[io-1];
+%	i = 0;
+%	while (1) {
+%		Pi(i)
+%		if (read_line(dat,line) < 0) break;
+%		if (line[0] == '/') continue;
+%		*(strstr(line,"/")) = '\0';
+%		at = line;
+%		for (j=0; j<N; j++) { int in;
+%			sscanf(at,"%d", &in);
+%			if (in != 0) Data::depth = max(Data::depth,j);
+%			printf("%5d ", in);
+%			at = strstr(at,","); at++;
+%			switch (i) {
+%				case 0 :
+%					model->shape[j] = in;
+%					//	-ve = render as wireframe
+%					break;
+%				case 1 :
+%					model->sizes[j] = 0.1*(float)abs(in);
+%					//	-ve = use values in prox and dist 
+%					if (in<0) model->local[j] = 1; else  model->local[j] = 0;
+%					break;
+%				case 2 :
+%					model->bumps[j] = 0.1*(float)in;
+%					//	-ve
+%					break;
+%				case 3 :
+%					model->links[j] = in;
+%					//	-ve
+%					break;
+%				case 4 :
+%					model->chain[j] = in;
+%					//	-ve = circular
+%					break;
+%				case 5 :
+%					model->kicks[j] = 0.01*(float)in;
+%					//	-ve
+%					break;
+%				case 6 :
+%					model->keeps[j] = 0.01*(float)in;
+%					//	-ve = shell for types 1,3 or tube = open
+%					break;
+%				case 7 :
+%					model->bonds[j] = 0.1*(float)in;
+%					//	-ve = no bond between cousins
+%					if (in<0) model->split[j] = 1; else  model->split[j] = 0;
+%					break;
+%				case 8 :
+%					model->repel[j] = 0.01*(float)in; // hard bump
+%					//	-ve don't repel children within parent
+%					break;
+%				case 9 :
+%					model->rejel[j] = 0.001*(float)in; // soft bump
+%					//	-ve don't repel children within parent
+%					break;
+%			}
+%		} NL
+%		i++;
+%		if (i==N) break;
+%	}
+%	fclose(dat);
+%}

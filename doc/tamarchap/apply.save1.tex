@@ -1,0 +1,272 @@
+\section{Example Application}
+
+The program described in the previous section corresponds to a general
+geometry engine but does not contain any implementation of forces that
+are more typically found in molecular dynamics (MD) or Monte Carlo (MC)
+programs.  As it stands, objects simulated will simply shake and diffuse
+in a random way under the constraints of the imposed steric exclusion,
+linkage constraints and shape envelope confinement.  For anything of
+biological interest to occur,  such as a transition from one state to
+another, then high level directions must be imposed.   These can range
+from being completely determined, where the starting and final states
+are fully specified and only the pathway between is of interest or
+the change can be applied to just a part of the system and the interset
+is to see how the full system adjusts.
+
+To illustrate how such a system can be implemented in more concrete
+terms, we will take the example of a molecular motor, specifically
+myosin-V on an actin filament, in which large directed changes are
+applied to a component of the system (myosin)  to drive it from one
+defined (bound) state to another then back to the original state but
+bound to a different actin molecule along the actin filament.  The 
+system will be introduced in two parts: firstly, by describing how the
+model was set-up as a hierarchical data structure, then secondly, how
+the dynamics were introduced.   The first part is done through data
+files that have been aluded to in the previous section, however, the
+second part requires direct run-time interaction with the simulation
+and this is implemented as a specific user-defined routine called
+the {\tt driver} (Fig.1) which interacts only with the common data
+structure and executes as an indepent parallel process.
+
+\subsection{Model Construction}
+
+We will introduce the data-structure from the top down, starting 
+with files that specify the two main components: a myosin-V dimer
+and the actin filament.
+
+\begin{verbatim}
+PARAM myosin.model
+PARAM actin.model
+END
+GROUP 2
+MODEL 0
+INPUT myosin.dimer.dat
+MODEL 1
+INPUT actin.linear.dat
+\end{verbatim}
+
+The above run file directs the INPUT from two files for the myosin dimer
+({\tt myosin.dimer.dat}) and an actin filament ({\tt actin.linear.dat})
+that constitute two units (GROUPs) at the highest level.  Each group is 
+is preceded by a specification of the parameter set (MODEL) that they
+will use (0 and 1) which corresponds to the PARAMeter files:
+{\tt myosin.model} and {\tt actin.model}, respectively.  These files consist
+of columns of numbers with each column specifying the values for the
+different parameters at each level in the hierarchy.   The file 
+{\tt myosin.model} consists of seven columns:
+
+\begin{verbatim}
+	  0,    0,    0,    3,    1,    2,    1
+       9999, 1000,  500,  140,   70,   24,    5
+	  0,  100,  100,   50,   20,   20,   11
+	  0,    0,    0,    1,    2,    6,    4
+	  0,    0,    0,    1,    3,    1,    1
+	  0,    0,    1,    1,    1,    1,    1
+	  0,    1,    1,    1,    1,    1,    0
+	  0,    0,    1,    5,    5,    5,    5
+	  0,    0,    0,    1,    0,    0,    3
+\end{verbatim}
+
+where the first is the size of the 'world' and the following six define
+six levels in the hierarchy.  For example; the top line specifices the shape
+associated with each level with: 1=sphere, 2=cylinder, 3=ellipsoid and 
+0 being a virtual sphere that is not rendered.  The following two lines
+specify the size of each object and its bumping radius (both in arbitrary
+units).   The equivalent lines for the {\tt actin.model} file show a
+slightly different structure using different values:
+
+\begin{verbatim}
+	  0,    0,    1,    3,    1,    2,    1
+       9999, 3000,  120,  120,   70,   24,    5
+	  0,  400,  100,    0,   70,   20,   11
+          :
+\end{verbatim}
+
+\subsubsection{Myosin}
+
+Considering firstly the myosin model, the file {\tt myosin.dimer.dat} contains
+another two GROUPs both specified by the file {\tt myosin.dat}:
+
+\begin{verbatim}
+GROUP 2
+SPINY 180.0
+TRANS   55.0 -250.0 -450.0
+INPUT myosin.dat
+TRANS  -55.0 -250.0 -450.0
+INPUT myosin.dat
+\end{verbatim}
+
+The first INPUT is preceded by two geometrical transforms in which the contents
+of the file are rotated 180\degr\ about the Y axis (SPINY) then translated 
+(TRANS x y z).  The second file is only translated but in the opposite direction
+along X producing two copies related by a twofold axis.
+
+The file {\tt myosin.dat} contains two components of the myosin molecule which 
+are referred to as the "head" and the "tail" and are set up as two GROUPs in what
+is now the third level in the hierarch.   From the parameter file {\tt myosin.model}
+it can be seen (col:4) that these objects are the first to have a defined shape
+and will behave and be rendered as ellipsoids.
+
+\begin{verbatim}
+GROUP 2
+TRANS  -31.0 136.5 59.0
+INPUT myosin.head.dat
+INPUT myosin.tail.dat
+\end{verbatim}
+
+The file {\tt myosin.head.dat} specifies the structure of the myosin head-group 
+which is the globular kinase domain of the protein while the file {\tt myosin.tail.dat}
+specifies the extended alpha-helical tail with its associated calmodulin-like
+light chains. (Sometimes referred to as the lever-arm or the "leg").   Although these
+files contain coordinate data from the same protein structure ({\tt 1DGS}), they have 
+been processed separately which put their centroid to the origin and a translation
+(TRANS) was applied to the head group to restore their proper relative positions.
+By specifying the head and the tail as separate groups (units), they can be
+operated on independently by geometric transforms allowing the {\tt driver} routine
+to recreate a large relative motion between them called the "power-stroke" in which
+the tail swings through a large angle.
+
+The myosin head group was split into seven domains as described previously () all of
+which are contained in distinct files {\tt head.dom\[1-7\].dat}.  The level-3 unit that
+contains the domains was defined as an ellipsoid and its end-points are defined on the
+GROUP definition line (along with the number of children it contains). 
+
+\begin{verbatim}
+GROUP 7  -1.2 -42.6 -37.2    4.32 34.44 39.0
+INPUT head.dom1.dat
+INPUT head.dom2.dat
+INPUT head.dom3.dat
+INPUT head.dom4.dat
+INPUT head.dom5.dat
+INPUT head.dom6.dat
+INPUT head.dom7.dat
+REBOND 134 169
+REBOND 275 320
+REBOND 411 429
+REBOND 495 412
+REBOND 428 276
+REBOND 292 541
+REBOND 667 496
+REBOND 540 293
+REBOND 319 135
+REBOND 168 668
+\end{verbatim}
+
+The path of the chain through the seven head-group domains does not correspond simply
+to the domain order.  Since each domain group is defined automatically by compactness,
+(giving sets of units that should move together), it is necessary to specify the 
+chain path through the domains.  This is done using the identity of units
+at the atomic level, sequentially numbered over the scope of the current group. 
+Each rewiring of the units is specified by a REBOND command which states that the
+unit with the first identity number should be bonded to the unit with the second 
+identity number.  For example; "REBOND 134 169" specifies that residue 134 should
+now link to residue 169.  The resulting loose end at 135 is picked-up by the later
+command "REBOND 319 135".   These connections can be specified "by-hand" but are
+written automatically by the preprocessing program that defines the domains.
+
+Each domain file now takes us down to the lowest (atomic) level at which the actual
+X,Y,Z, coordinates are encountered.   To avoid the proliferation of many small files,
+the two lowest levels (secondary structures and residues) are defined together with
+the first GROUP command stating that there are nine secondary structures in the 
+group and the second (lower level) GROUP command specifying six ATOMS (atomic-level
+units) in each subgroup.   The coordinate data (from the PDB file) is given at the
+atom level along with the secondary structure state encoded in the final column as:
+1=loop, 2=beta and 3=alpha.   As the secondary structures are defined in the
+parameter file as cylinders, they are given end-point coordinates on the GROUP
+command line.  If these are omitted, as with the first loop segment, default 
+end-points are generated inside the program.
+
+\begin{verbatim}
+GROUP 9
+GROUP 6 
+ATOM      1  CA  GLY A   1      -3.537 -37.198 -20.771  1.00  1.00
+ATOM      2  CA  GLY A   2      -1.470 -34.014 -20.628  1.00  1.00
+ATOM      3  CA  GLY A   3       1.589 -35.231 -18.657  1.00  1.00
+ATOM      4  CA  GLY A   4       3.165 -37.036 -21.663  1.00  1.00
+ATOM      5  CA  GLY A   5       6.875 -37.568 -22.449  1.00  1.00
+ATOM      6  CA  GLY A   6       8.601 -34.333 -23.626  1.00  1.00
+GROUP 7    6.15 -31.57 -21.01   12.09 -24.98 -5.29
+ATOM      7  CA  GLY A   7       6.079 -32.117 -21.857  1.00  2.00
+ATOM      8  CA  GLY A   8       7.638 -29.779 -19.295  1.00  2.00
+ATOM      9  CA  GLY A   9       6.751 -28.831 -15.716  1.00  2.00
+ATOM     10  CA  GLY A  10       7.995 -26.626 -12.874  1.00  2.00
+:
+SHEET
+BETA   44 36
+BETA   43 37
+BETA   37 43
+BETA   36 44
+BETA   36 23
+BETA   23 36
+\end{verbatim}
+
+The links between \Bs s in a SHEET are specified as pairings on the BETA
+records at the end of the file.
+
+The structure of the tail component follows along similar lines and will not
+be described in detail.
+
+\subsubsection{Actin}
+
+The highest level actin specific file, {\tt actin.linear.dat} describes a segment
+of an actin filament which consists of repeated actin molecules related by helical
+symmetry with a rotation of -167\degre\ and 55\AA.  Because of the way they interact
+with the myosin, actins were taken in pairs (called a dimer) giving a shift between
+dimers of 23\degre\ and 110\AA\footnote{
+NB: the internal coordinates in the data structure are not \AA ngstroms}.  
+These relationships could be encoded by separate 
+rotate and translate commands but as helical symmetry is common a combined HELIX
+command was created specifying the two components together:
+
+\begin{verbatim}
+GROUP 16
+INPUT actin.dimer.dat
+HELIX 0.0 0.0 -5.8 26.0
+INPUT actin.dimer.dat
+HELIX 0.0 0.0 -11.6 52.0
+INPUT actin.dimer.dat
+HELIX 0.0 0.0 -17.4 78.0
+INPUT actin.dimer.dat
+HELIX 0.0 0.0 -23.2 104.0
+INPUT actin.dimer.dat
+:
+\end{verbatim}
+
+Each {\tt actin.dimer.dat} file simply introduces another level in the hierarchy
+and maintains the same symmetry around the fibre axis but because the dimer centre lies on the
+axis, only a shift along Z is needed at the higher level.
+
+\begin{verbatim}
+GROUP 2
+HELIX  -3.55  -0.45  0.0    0.0
+INPUT actin.one.dat
+HELIX   3.55   0.45 -2.9 -167.0
+INPUT actin.one.dat
+\end{verbatim}
+
+The actin molecule consists of four domains forming a flat disc which was naturally encoded
+as an oblate ellipsoid.   This was (hand) specified by an axis of length 10 (-5 to 5) which
+relative to the size of the domain specified in {\tt actin.model} gives an excessive axial ratio 
+which is set to the maximum allowed ratio of 5.
+
+\begin{verbatim}
+GROUP 4    -5.0  0.0  0.0    5.0  0.0  0.0
+INPUT actin.dom1.dat
+INPUT actin.dom2.dat
+INPUT actin.dom3.dat
+INPUT actin.dom4.dat
+RELINK 32 127
+RELINK 172 33
+RELINK 90 173
+RELINK 216 281
+RELINK 372 217
+RELINK 280 91
+ENDS   372 126
+\end{verbatim}
+
+As with the myosin head domains, the chain path through the actin domains must be relinked.
+This also entails the creation of a new terminal position which is specified by the ENDS 
+command.   (The equivalent myosin command falls in the tail segment).
+
+Each domain file ({\tt actin.dom\[1--4\].dat}) is similar to the equivalent myosin head
+group domain files and introduce no novel features.

@@ -1,0 +1,174 @@
+I would like to thank the referees for their very careful and thoughtful evaluation of my work.
+They raise mainy useful points and focus in particular on the relationship of the method to
+other approaches (MD, MC, etc.) and how they can be combined and/or reconciled.
+
+This is also a relationship that I have been considering myself for some time and although I
+do not have any all-encompassing answers, there are some potential routes ahead that could
+be usefully discussed as I am sure many readers from the molecular dynamics community will be
+wondering the same things.
+
+If I have understood correctly, it would appear that reviewer-1 views the method as a "wrapper" 
+that is to be applied over/around conventional atomistic approaches.   This is indeed a possible 
+route along which the current work could develop but not a position that it has yet attained.
+(For many of the reasons identified by the referee).
+
+Firstly, I should clarify that if the sizes and shapes of the multi-level objects have been
+choosen correctly, then, left to itself, the current method will do nothing (ie: no object will
+move) and if there is motion, then that indicates that some bump-radius at some level is too
+large.
+
+It is left entirely up to the user how things should move, which is done by implementing some
+custom code in what is called the "driver" routine.   Now of course, this code could be 
+molecular dynamics, Lagrangian mechanics or Monte Carlo, or as implemented in the collision
+examples, a simple displacement of a single object.
+
+The problem with implementing anything complicated in the driver routine is that at some
+point, the current method will start to interfere with the (common) coordinates and if the
+driver code requires consistency in terms of distances and derived potentials, forces and
+velocities, then all the problems envisaged by the referee will arise.
+
+The simplest approach to this problem is to attach a warning notice stating that it cannot
+be used in combination with any method that requires global internal consistency.   The only
+route I can see to avoid this incompatibility would be through a Monte Carlo like approach
+in which the displacements made at all levels are treated as a (semi) random Monte Carlo
+move of the system.
+
+A second path to resolve the dilema might be through a variation of Gaussian elastic
+networks, as suggested by referee-1.   This indeed is the path I am currently investigating
+by using the method in conjunction with a potential based network.    However, elastic
+networks require a fixed topology that cannot be expected to remain intact across the
+large (driven) displacements envisaged for the current method.
+
+I hope this discussion provides some answers to the general questions raised by the referees
+and on the assumption that it will be useful to others, I have expanded it into a new
+section in the Discussion where I hope it will put the current method in the wider context
+of other molecular simulation methods.
+
+
+Reviewer #1
+
+Recommendations:
+
+>Define the type of simulations that may use the collision detection scheme more precisely. Then show if the current collision detection adheres
+>to the simulation model with some explicit results (e.g. for the purpose of sampling the configurational space, compare a simulation based on the child
+>objects alone with one where the parental objects are used).
+>
+Results were presented for a range of parameters moving from a low to high weight on the higher level object repulsion.
+However the high level repulsion was never reduced to zero (as the referee suggests).    This was avoided because, without the protective
+shell of the parent, the bonds between atoms are flexible enough to allow two bonded pairs to transiently pass through each other resulting 
+in interpenetrating chains, even though these still preserve their steric and average bond lengths.   A comment to this effect has been added
+to the text. (In the Results section describing chain collisions).
+
+>Define more clearly if the speed up in collision detection should in principle be lossless, in that the parameters should only affect the
+>precision of the results, but not the fundamental outcomes compared to simulation of the lowest level objects.
+>
+As should now be clear from the general discussion above, the addition of a repulsive term to higher level objects
+will fundamentally affect the behaviour of the lower objects.   While added speed is a benefit, the main purpose
+of the higher level objects is to 'protect' their 'children' from the disruptive effect of other impinging objects.
+
+>Add a discussion of what changes need to be made, if this technique was to be used in more commonly used simulation techniques such as MD or
+>MC with attractive potentials.
+>
+This should now be covered by the additional discussion section (along the lines outlined above).
+
+>Add a discussion on advantages and disadvantages of allowing parental objects to change the paths of the child nodes, possibly suggesting any
+>alternatives to the current implementation.
+>
+The discussion has been extended to cover this aspect also.
+
+>Some references that may aid the suggested discussion:
+>
+The suggested references have been very useful and a few have now been cited.
+
+
+Minor comments:
+
+Almost all minor comments have all been corrected or clarified. (Details below)
+
+
+Minor comments:
+
+>     Page 3 ‘single sphere’ - in fact some patchy colloids systems may give interesting results for the behaviour of larger systems of biomol
+> ecules, see for example [Vacha et. al., Gögelein et. al.]
+> 
+Now mentioned later
+
+>     page 4 ‘.. on the ”world” coordinate frame is less relevant ’. Even though an arbitrary coordinate frame may be less relevant and is
+>  certainly less elegant, such an approach may be more efficient computationally due to its simplicity - to make any conclusion
+> s, this should probably be tested.
+> 
+As this is only a comparison to a constraint in computer games, no change was made
+
+>     page 5 -  pipes with hemispherical end-caps has been used before to model parts of protein structures,  perhaps cite [Vacha et. al.]
+> 
+Now cited.
+
+>     page 6 - a
+>      schematic drawing may help to explain the couplings of different levels of the hierarchy in the simulation.
+> 
+While the levels can be represented in a diagram, I could not see any way to make a clear picture of their dynamic relationships.
+
+>     Section 2
+>      is very detailed and long - perhaps a focus on the most important advances (ellipsoid calculations) may show the importance
+>      of these results more effectively; the other parts could be available through via supplemental material.
+>
+Some or all of this material may be moved to Supplementary Material (following discussion with the Editor).
+
+> On the other hand, a description of the simulation scheme itself seems to missing [on lowest level object alone].
+> 
+As explained in the general comments above and in the new section in the Discussion, there is no simulation scheme, just
+displacement and rotation in response to bump and bond violations. 
+
+>     page 27 - typo ‘these constructs was engineered’ 
+> 
+Fixed
+
+>     page 33, section 3.2 - details on how the distance constraints are added to the simulation are not given;
+>     please consider adding a section in the methods to describe this.
+> 
+A short section has been added to the Methods covering both bonds and links which are implemented by the same code.
+
+>     page 34, section
+>      3.2.1, last paragraph - it is unclear which protein is referred to in this last section
+> 
+The FlhA protein has been clarified (as a bacterial flagellum protein) and is now methined in a separate
+pragraph from the rhodopsin application.
+
+>     page 36, caption
+>      figure 5 which PDB is used for the calculations?
+> 
+PDB code added. (1GZM)
+
+>     page 39, Figure
+>      7 - what do the red and blue colours mean?
+> 
+Clarified as the models from the two different starting configurations.
+
+>     page 41 -
+>      “...loss of fine detail” - perhaps the current scheme also does not fully solve this problem, due to the way it may inter
+> fere with a simulation model (see above).
+> 
+I only said "seeks to circumvent".   I don't think this implies a full solution.
+
+
+ 
+ Reviewer #2
+
+>While I think that the structure refinement test cases are interesting, I am not entirely sure which biological processes
+>the collision simulations are supposed to mimic. Due to their interaction with an aqueous environment, high-speed collisions
+>of proteins (outside maybe some mass spectrometry techniques) seem to me unlikely to have any biological relevance.
+>
+References to "speed" describe the speed of the simulation in terms of Angstroms moved per time step
+but as the method does not specify any absolute time scale the correspondance to real time is arbitrary.
+Although not attempted in the paper, an absolute time/speed might be estimated in terms of the diffusion
+rate of proteins both in gas and aqueous phase and I would guess that the simulated collisions lie 
+closer to the gaseous end (as assumed by the referee).   However, the purpose of the collisions was
+to test how well the higher level objects were able to buffer their children (and their children, etc.),
+not to mimic a biological process.   A footnote to clarify this has been added at the first mention of the term
+
+>In my opinion, few sentences could be added to the discussion as to how to model solvent interactions on a higher
+>hierarchical level. Maybe a friction process corresponding to diffusion of different shapes or surface area etc.
+>
+As outlined above, a more general section has been added to the Discussion on the relationship of the current
+work to existing dynamics methods.   This mentions Brownian and Lagrangian approaches (both of which typically
+incorporate a friction term) which is related to implicit solvent modelling.

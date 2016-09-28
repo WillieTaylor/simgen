@@ -1,0 +1,24 @@
+#NORUN
+#NOMOVE
+SCALE 0.15
+PARAM dead.model
+END
+GROUP 0 1
+GROUP 0 1
+INPUT stem1.dat
+#INPUT stem1a.dat
+#INPUT stem1b.dat
+#INPUT stem2a.dat
+#INPUT stem2b.dat
+#INPUT loops.dat
+#REBOND pdbid  13 14
+#REBOND pdbid  20 21
+#REBOND pdbid  28 29
+#REBOND pdbid  36 37
+#REBOND pdbid  43 44
+#REBOND pdbid  66 67
+#REBOND pdbid  85 86
+#RETERM pdbid   1 94
+#LINKS pdbid links.dat
+#PRINT
+END

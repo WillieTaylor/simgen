@@ -1,0 +1,979 @@
+Scopus
+EXPORT DATE: 8 September 2009
+
+Mortuza, G.B., Goldstone, D.C., Pashley, C., Haire, L.F., Palmarini, M., Taylor, W.R., Stoye, J.P., Taylor, I.A.
+Structure of the Capsid Amino-Terminal Domain from the Betaretrovirus, Jaagsiekte Sheep Retrovirus
+(2009) Journal of Molecular Biology, 386 (4), pp. 1179-1192. Cited 4 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-60149096064&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Hollup, S.M., Taylor, W.R., Jonassen, I.
+Structural fragments in protein model refinement
+(2008) Protein and Peptide Letters, 15 (9), pp. 964-971. 
+http://www.scopus.com/inward/record.url?eid=2-s2.0-52749085183&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Bartlett, G.J., Taylor, W.R.
+Using scores derived from statistical coupling analysis to distinguish correct and incorrect folds in de-novo protein structure prediction
+(2008) Proteins: Structure, Function and Genetics, 71 (2), pp. 950-959. Cited 1 time.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-41149161782&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Bartlett, G.J., Chelliah, V., Klose, D., Lin, K., Sheldon, T., Jonassen, I.
+Prediction of protein structure from ideal forms
+(2008) Proteins: Structure, Function and Genetics, 70 (4), pp. 1610-1619. Cited 2 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-39749097808&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Chelliah, V., Taylor, W.R.
+Functional site prediction selects correct protein models
+(2008) BMC Bioinformatics, 9 (SUPPL. 1), art. no. S13, . Cited 1 time.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-41949120229&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Sheldon, T.J., Miguel-Aliaga, I., Gould, A.P., Taylor, W.R., Conklin, D.
+A novel family of single VWC-domain proteins in invertebrates
+(2007) FEBS Letters, 581 (27), pp. 5268-5274. Cited 2 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-35548956345&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Evolutionary transitions in protein fold space
+(2007) Current Opinion in Structural Biology, 17 (3), pp. 354-361. Cited 14 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-34347383961&partnerID=40
+DOCUMENT TYPE: Review
+SOURCE: Scopus
+
+Taylor, W.R.
+Protein knots and fold complexity: Some new twists
+(2007) Computational Biology and Chemistry, 31 (3), pp. 151-162. Cited 15 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-34248570354&partnerID=40
+DOCUMENT TYPE: Review
+SOURCE: Scopus
+
+Taylor, W.R.
+A molecular model for the origin of protein translation in an RNA world
+(2006) Journal of Theoretical Biology, 243 (3), pp. 393-406. Cited 1 time.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-33750486189&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Transcription and translation in an RNA world
+(2006) Philosophical Transactions of the Royal Society B: Biological Sciences, 361 (1474), pp. 1751-1760. Cited 2 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-33750083647&partnerID=40
+DOCUMENT TYPE: Conference Paper
+SOURCE: Scopus
+
+Taylor, W.R.
+Topological accessibility shows a distinct asymmetry in the folds of βα proteins
+(2006) FEBS Letters, 580 (22), pp. 5263-5267. Cited 5 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-33748796668&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Jonassen, I., Klose, D., Taylor, W.R.
+Protein model refinement using structural fragment tessellation
+(2006) Computational Biology and Chemistry, 30 (5), pp. 360-366. Cited 6 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-33748797669&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Lin, K., Klose, D., Fraternali, F., Jonassen, I.
+Dynamic domain threading
+(2006) Proteins: Structure, Function and Genetics, 64 (3), pp. 601-614. Cited 7 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-33746268462&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Decoy models for protein structure comparison score normalisation
+(2006) Journal of Molecular Biology, 357 (2), pp. 676-699. Cited 6 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-33344460713&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Snell, E.A., Brooke, N.M., Taylor, W.R., Casane, D., Philippe, H., Holland, P.W.H.
+An unusual choanoflagellate protein released by Hedgehog autocatalytic processing
+(2006) Proceedings of the Royal Society B: Biological Sciences, 273 (1585), pp. 401-407. Cited 4 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-34249055210&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Snell, E.A., Brooke, N.M., Taylor, W.R., Casane, D., Philippe, H., Holland, P.W.
+An unusual choanoflagellate protein released by Hedgehog autocatalytic processing.
+(2006) Proceedings. Biological sciences / The Royal Society., 273 (1585), pp. 401-407. Cited 11 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-33646687946&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Vesterstrøm, J., Taylor, W.R.
+Flexible secondary structure based protein structure comparison applied to the detection of circular permutation
+(2006) Journal of Computational Biology, 13 (1), pp. 43-62. Cited 8 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-33644869455&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Modelling molecular stability in the RNA world
+(2005) Computational Biology and Chemistry, 29 (4), pp. 259-272. Cited 4 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-23144461759&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Stirring the primordial soup
+(2005) Nature, 434 (7034), p. 705. Cited 5 times.
+DOCUMENT TYPE: Short Survey
+SOURCE: Scopus
+
+Lin, K., Simossis, V.A., Taylor, W.R., Heringa, J.
+A simple and fast secondary structure prediction method using hidden neural networks
+(2005) Bioinformatics, 21 (2), pp. 152-159. Cited 54 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-13444266488&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+A molecular model for transcription in the RNA world based on the ribosome large subunit
+(2004) Computational Biology and Chemistry, 28 (5-6), pp. 313-319. Cited 5 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-9544228324&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Murray, K.B., Taylor, W.R., Thornton, J.M.
+Toward the detection and validation of repeats in protein structure
+(2004) Proteins: Structure, Function and Genetics, 57 (2), pp. 365-380. Cited 8 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-4544298192&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Stevens, A., Bock, M., Ellis, S., LeTissier, P., Bishop, K.N., Yap, M.W., Taylor, W., Stoye, J.P.
+Retroviral capsid determinants of Fv1 NB and NR tropism
+(2004) Journal of Virology, 78 (18), pp. 9592-9598. Cited 23 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-4444326082&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Jonassen, I.
+A structural pattern-based method for protein fold recognition
+(2004) Proteins: Structure, Function and Genetics, 56 (2), pp. 222-234. Cited 9 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-3042726390&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Stoye, J.P.
+Consensus structural models for the amino terminal domain of the retrovirus restriction gene Fv1 and the Murine Leukaemia Virus capsid proteins
+(2004) BMC Structural Biology, 4, art. no. 1, pp. 1-15. Cited 7 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-2942514454&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Johannissen, L.O., Taylor, W.R.
+Protein fold comparison by the alignment of topological strings
+(2003) Protein Engineering, 16 (12), pp. 949-955. Cited 7 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-1442359492&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Lin, K., Kleinjung, J., Taylor, W.R., Heringa, J.
+Testing homology with Contact Accepted mutatiOn (CAO): A contact-based Markov model of protein evolution
+(2003) Computational Biology and Chemistry, 27 (2), pp. 93-102. Cited 8 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0038010382&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Munro, R.E.J., Petersen, K., Bywater, R.P.
+Ab initio modelling of the N-terminal domain of the secretin receptors
+(2003) Computational Biology and Chemistry, 27 (2), pp. 103-114. Cited 7 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0038348418&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Xiao, B., Gamblin, S.J., Lin, K.
+A knot or not a knot? SETting the record 'straight' on proteins
+(2003) Computational Biology and Chemistry, 27 (1), pp. 11-15. Cited 16 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0042924171&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Petersen, K., Taylor, W.R.
+Modelling zinc-binding proteins with GADGET: Genetic algorithm and distance geometry for exploring topology
+(2003) Journal of Molecular Biology, 325 (5), pp. 1039-1059. Cited 7 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0037474530&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Lin, K.
+A tangled problem
+(2003) Nature, 421 (6918), p. 25. Cited 33 times.
+DOCUMENT TYPE: Short Survey
+SOURCE: Scopus
+
+Taylor, W.R., Lin, K.
+Protein knots: A tangled problem.
+(2003) Nature, 421 (6918), p. 25. 
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Saldanha, J.W., Czabotar, P.E., Hay, A.J., Taylor, W.R.
+A model for the cytoplasmic domain of the influenza A virus M2 channel by analogy to the HIV-1 Vpu protein
+(2002) Protein and Peptide Letters, 9 (6), pp. 495-502. Cited 3 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0242418213&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Lin, K., May, A.C.W., Taylor, W.R.
+Amino acid encoding schemes from protein structure alignments: Multi-dimensional vectors to describe residue types
+(2002) Journal of Theoretical Biology, 216 (3), pp. 361-365. Cited 7 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0036389409&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Lin, K., May, A.C.W., Taylor, W.R.
+Threading using neural Network (TUNE): The measure of protein sequence-structure compatibility
+(2002) Bioinformatics, 18 (10), pp. 1350-1357. Cited 11 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0036772706&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Comparing secondary structure 'stick' models of proteins using graph matching with double dynamic programming.
+(2002) Ernst Schering Research Foundation workshop, (38), pp. 133-148. 
+DOCUMENT TYPE: Review
+SOURCE: Scopus
+
+Taylor, W.R., Heringa, J., Baud, F.
+A Fourier analysis of symmetry in protein structure
+(2002) Protein Engineering, 15 (2), pp. 79-89. Cited 17 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0036221375&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+A 'periodic table' for protein structures
+(2002) Nature, 416 (6881), pp. 657-660. Cited 49 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0037061460&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Protein structure comparison using bipartite graph matching and its application to protein structure classification.
+(2002) Molecular & cellular proteomics : MCP, 1 (4), pp. 334-339. Cited 10 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0036545421&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Jonassen, I., Eidhammer, I., Conklin, D., Taylor, W.R.
+Structure motif discovery and mining the PDB
+(2002) Bioinformatics, 18 (2), pp. 362-367. Cited 19 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0036184678&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Lin, K., May, A.C.W., Taylor, W.R.
+Amino acid substitution matrices from an artificial neural network model
+(2001) Journal of Computational Biology, 8 (5), pp. 471-481. Cited 6 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0034767654&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Defining linear segments in protein structure
+(2001) Journal of Molecular Biology, 310 (5), pp. 1135-1150. Cited 14 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0035958742&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., May, A.C.W., Brown, N.P., Aszódi, A.
+Protein structure: Geometry, topology and classification
+(2001) Reports on Progress in Physics, 64 (4), pp. 517-590. Cited 21 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0035029073&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Trucco, C., Fernandez-Reyes, D., Howell, S., Stafford, W.H., Scott-Finnigan, T.J., Grainger, M., Ogun, S.A., Taylor, W.R., Holder, A.A.
+The merozoite surface protein 6 gene codes for a 36 kDa protein associated with the Plasmodium falciparum merozoite surface protein-1 complex
+(2001) Molecular and Biochemical Parasitology, 112 (1), pp. 91-101. Cited 63 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0035862693&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Jonassen, I., Eidhammer, I., Grindhaug, S.H., Taylor, W.R.
+Searching the protein structure databank with weak sequence patterns and structural constraints
+(2000) Journal of Molecular Biology, 304 (4), pp. 599-619. Cited 17 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0034623980&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Eidhammer, I., Jonassen, I., Taylor, W.R.
+Structure comparison and structure patterns
+(2000) Journal of Computational Biology, 7 (5), pp. 685-716. Cited 86 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0034531045&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Protein structure comparison using SAP.
+(2000) Methods in molecular biology (Clifton, N.J.), 143, pp. 19-32. Cited 8 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Higgins, D.G., Taylor, W.R.
+Multiple sequence alignment.
+(2000) Methods in molecular biology (Clifton, N.J.), 143, pp. 1-18. Cited 2 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+A deeply knotted protein structure and how it might fold
+(2000) Nature, 406 (6798), pp. 916-919. Cited 111 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0034710671&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Searching for the ideal forms of proteins
+(2000) Biochemical Society Transactions, 28 (2), pp. 264-269. Cited 6 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0033963523&partnerID=40
+DOCUMENT TYPE: Conference Paper
+SOURCE: Scopus
+
+Taylor, W.R., Sælensminde, G., Eidhammer, I.
+Multiple protein sequence alignment using double-dynamic programming
+(2000) Computers and Chemistry, 24 (1), pp. 3-12. Cited 6 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0033631725&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Brown, N.P.
+Iterated sequence databank search methods
+(1999) Computers and Chemistry, 23 (3-4), pp. 365-385. Cited 3 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0033563456&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Protein structural domain identification
+(1999) Protein Engineering, 12 (3), pp. 203-216. Cited 43 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0032951163&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Pollock, D.D., Taylor, W.R., Goldman, N.
+Coevolving protein residues: Maximum likelihood identification and relationship to structure
+(1999) Journal of Molecular Biology, 287 (1), pp. 187-198. Cited 103 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0033582946&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Protein structure comparison using iterated double dynamic programming
+(1999) Protein Science, 8 (3), pp. 654-665. Cited 67 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0033011876&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Jonassen, I., Eidhammer, I., Taylor, W.R.
+Discovery of local packing motifs in protein structures
+(1999) Proteins: Structure, Function and Genetics, 34 (2), pp. 206-219. Cited 31 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0033081985&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, William R., Brown, Nigel P.
+Iterated sequence databank search methods
+(1999) Computers and Chemistry, 23 (3), pp. 363-385. Cited 2 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0032634616&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Jones, D.T., Taylor, W.R.
+Towards structural genomics for transmembrane proteins
+(1998) Biochemical Society Transactions, 26 (3), pp. 429-438. Cited 6 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Werner, E.B.E., Taylor, W.R., Holder, A.A.
+A Plasmodium chabaudi protein contains a repetitive region with a predicted spectrin-like structure
+(1998) Molecular and Biochemical Parasitology, 94 (2), pp. 185-196. Cited 15 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0032146649&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Dynamic sequence databank searching with templates and multiple alignment
+(1998) Journal of Molecular Biology, 280 (3), pp. 375-406. Cited 23 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0032540981&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Aszódi, A., Munro, R.E.J., Taylor, W.R.
+Protein modeling by multiple sequence threading and distance geometry
+(1997) Proteins: Structure, Function and Genetics, 29 (SUPPL. 1), pp. 38-42. Cited 7 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0031303336&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Aszódi, A., Taylor, W.R.
+Hierarchic inertial projection: A fast distance matrix embedding algorithm
+(1997) Computers and Chemistry, 21 (1), pp. 13-23. Cited 5 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0002419003&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Munro, R.E.J.
+Multiple sequence threading: Conditional gap placement
+(1997) Folding and Design, 2 (4), pp. S33-S39. Cited 6 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0030634724&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Aszódi, A., Munro, R.E.J., Taylor, W.R.
+Distance geometry based comparative modelling
+(1997) Folding and Design, 2 (3), pp. S3-S6. Cited 9 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0030623726&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Multiple sequence threading: An analysis of alignment quality and stability
+(1997) Journal of Molecular Biology, 269 (5), pp. 902-943. Cited 45 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0031588007&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Residual colours: A proposal for aminochromography
+(1997) Protein Engineering, 10 (7), pp. 743-746. Cited 17 times.
+DOCUMENT TYPE: Short Survey
+SOURCE: Scopus
+
+Heringa, J., Taylor, W.R.
+Three-dimensional domain duplication, swapping and stealing
+(1997) Current Opinion in Structural Biology, 7 (3), pp. 416-421. Cited 53 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0030989408&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Pollock, D.D., Taylor, W.R.
+Effectiveness of correlation analysis in identifying protein residues undergoing correlated evolution
+(1997) Protein Engineering, 10 (6), pp. 647-657. Cited 55 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0030743758&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Random structural models for double dynamic programming score evaluation
+(1997) Journal of Molecular Evolution, 44 (SUPPL. 1), pp. S174-S180. Cited 5 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Werner, E., Holder, A.A., Aszódi, A., Taylor, W.R.
+A novel 11-residue coiled-coil motif predicts a histidine zipper
+(1996) Protein and Peptide Letters, 3 (2), pp. 139-146. Cited 7 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0000619593&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Aszódi, A., Taylor, W.R.
+Homology modelling by distance geometry
+(1996) Folding and Design, 1 (5), pp. 325-334. Cited 29 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0030322828&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+[20] Multiple protein sequence alignment: Algorithms and gap insertion
+(1996) Methods in Enzymology, 266, pp. 343-367. Cited 11 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+A non-local gap-penalty for profile alignment
+(1996) Bulletin of Mathematical Biology, 58 (1), pp. 1-18. Cited 2 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0029680109&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Orengo, C.A., Taylor, W.R.
+[36] SSAP: sequential structure alignment program for protein structure comparison
+(1996) Methods in Enzymology, 266, pp. 617-635. Cited 122 times.
+DOCUMENT TYPE: Review
+SOURCE: Scopus
+
+Brown, N.P., Orengo, C.A., Taylor, W.R.
+A protein structure comparison methodology
+(1996) Computers and Chemistry, 20 (3), pp. 359-380. Cited 28 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+An investigation of conservation-biased gap-penalties for multiple protein sequence alignment
+(1995) Gene, 165 (1), pp. GC27-GC35. Cited 8 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0028852001&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Aszódi, A., Taylor, W.R.
+Estimating polypeptide α-carbon distances from multiple sequence alignments
+(1995) Journal of Mathematical Chemistry, 17 (2), pp. 167-184. Cited 3 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-33344471371&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Asozdi, A., Gradwell, R.J., Taylor, W.R.
+Global fold determination from a small number of distance restraints
+(1995) Journal of Molecular Biology, 251 (2), pp. 308-326. Cited 54 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0029097099&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Motif-biased protein sequence alignment.
+(1994) Journal of computational biology : a journal of computational molecular cell biology, 1 (4), pp. 297-310. Cited 9 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0028679124&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Hatrick, K., Taylor, W.R.
+Sequence conservation and correlation measures in protein structure prediction
+(1994) Computers and Chemistry, 18 (3), pp. 245-249. Cited 4 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0011126780&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Protein structure modelling from remote sequence similarity
+(1994) Journal of Biotechnology, 35 (2-3), pp. 281-291. Cited 6 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0028239370&partnerID=40
+DOCUMENT TYPE: Conference Paper
+SOURCE: Scopus
+
+Chothia, C., Taylor, W.R.
+Sequences and topology
+(1994) Current Opinion in Structural Biology, 4 (3), pp. 381-382. 
+DOCUMENT TYPE: Editorial
+SOURCE: Scopus
+
+Taylor, W.R.
+Remotely related sequences and structures: Analysis and predictive modelling
+(1994) Trends in Biotechnology, 12 (5), pp. 154-158. Cited 4 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0028298124&partnerID=40
+DOCUMENT TYPE: Review
+SOURCE: Scopus
+
+Bhattacharya, S., Navaratnam, N., Morrison, J.R., Scott, J., Taylor, W.R.
+Cytosine nucleoside/nucleotide deaminases and apolipoprotein B mRNA editing
+(1994) Trends in Biochemical Sciences, 19 (3), pp. 105-106. Cited 34 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Jones, D.T., Taylor, W.R., Thornton, J.M.
+A mutation data matrix for transmembrane proteins
+(1994) FEBS Letters, 339 (3), pp. 269-275. Cited 98 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0028153788&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Aszodi, A., Taylor, W.R.
+Folding polypeptide α-carbon backbones by distance geometry methods
+(1994) Biopolymers, 34 (4), pp. 489-505. Cited 16 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0028166611&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Jones, D.T., Green, N.M.
+A method for α-helical integral membrane protein fold prediction
+(1994) Proteins: Structure, Function and Genetics, 18 (3), pp. 281-294. Cited 64 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0028175436&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Aszodi, A., Taylor, W.R.
+Secondary structure formation in model polypeptide chains
+(1994) Protein Engineering, 7 (5), pp. 633-644. Cited 15 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0028221104&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Flores, T.P., Orengo, C.A.
+Multiple protein structure alignment
+(1994) Protein Science, 3 (10), pp. 1858-1870. Cited 61 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0028150923&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Hatrick, K.
+Compensating changes in protein multiple sequence alignments
+(1994) Protein Engineering, 7 (3), pp. 341-348. Cited 75 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0027952860&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Orengo, C.A., Flores, T.P., Jones, D.T., Taylor, W.R., Thornton, J.M.
+Recurring structural motifs in proteins with different functions
+(1993) Current Biology, 3 (3), pp. 131-139. Cited 25 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0000454088&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+La Thangue, N.B., Taylor, W.R.
+A structural similarity between mammalian and yeast transcription factors for cell-cycle-regulated genes
+(1993) Trends in Cell Biology, 3 (3), pp. 75-76. Cited 2 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Protein structure prediction from sequence
+(1993) Computers and Chemistry, 17 (2), pp. 117-122. Cited 3 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0005034822&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Aszodi, A., Taylor, W.R.
+Connection topology of proteins
+(1993) Computer Applications in the Biosciences, 9 (5), pp. 523-529. Cited 7 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0027372053&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Jones, D.T., Segal, A.W.
+A structural model for the nucleotide binding domains of the flavocytochrome b-245 β-chain
+(1993) Protein Science, 2 (10), pp. 1675-1685. Cited 62 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0027504142&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Orengo, C.A., Taylor, W.R.
+A local alignment method for protein structure motifs
+(1993) Journal of Molecular Biology, 233 (3), pp. 488-497. Cited 34 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0027451713&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Protein fold refinement: Building models from idealized folds using motif constraints and multiple sequence data
+(1993) Protein Engineering, 6 (6), pp. 593-604. Cited 14 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0027326222&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Orengo, C.A., Flores, T.P., Taylor, W.R., Thornton, J.M.
+Identification and classification of protein fold families
+(1993) Protein Engineering, 6 (5), pp. 485-500. Cited 133 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0027220647&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Jones, D.T.
+Deriving an amino acid matrix
+(1993) Journal of Theoretical Biology, 164 (1), pp. 65-83. Cited 24 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0027481987&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Sequencing and computer time [2]
+(1992) Science, 258 (5087), p. 1421. 
+DOCUMENT TYPE: Letter
+SOURCE: Scopus
+
+Jones, D.T., Taylor, W.R., Thornton, J.M.
+A new approach to protein fold recognition
+(1992) Nature, 358 (6381), pp. 86-89. Cited 619 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0026690571&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Jones, D.T., Taylor, W.R., Thornton, J.M.
+The rapid generation of mutation data matrices from protein sequences
+(1992) Computer Applications in the Biosciences, 8 (3), pp. 275-282. Cited 1385 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0026691182&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Orengo, C.A., Brown, N.P., Taylor, W.R.
+Fast structure alignment for protein databank searching
+(1992) Proteins: Structure, Function and Genetics, 14 (2), pp. 139-167. Cited 78 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0026759751&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Jones, D.T.
+Templates, consensus patterns and motifs
+(1991) Current Opinion in Structural Biology, 1 (3), pp. 327-333. Cited 4 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-3142625286&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Towards protein tertiary fold prediction using distance and motif constraints
+(1991) Protein Engineering, 4 (8), pp. 853-870. Cited 12 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Rippmann, F., Taylor, W.R.
+Visualization of structural similarity in proteins
+(1991) Journal of Molecular Graphics, 9 (3), pp. 169-174+163-164. Cited 7 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0025789049&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.
+Spinning in hyperspace
+(1991) Nature, 353 (6343), pp. 388-389. Cited 2 times.
+DOCUMENT TYPE: Short Survey
+SOURCE: Scopus
+
+Rippmann, F., Taylor, W.R., Rothbard, J.B., Green, N.M.
+A hypothetical model for the peptide binding domain of hsp70 based on the peptide binding domain of HLA
+(1991) EMBO Journal, 10 (5), pp. 1053-1059. Cited 64 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0025811860&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Garratt, R.C., Thornton, J.M., Taylor, W.R.
+An extension of secondary structure prediction towards the prediction of tertiary structure
+(1991) FEBS Letters, 280 (1), pp. 141-146. Cited 7 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0025964419&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+LaPolla, R.J., Haron, J.A., Kelly, C.G., Taylor, W.R., Bohart, C., Hendricks, M., pyati, J., Graff, R.T., Ma, J.K.-C., Lehner, T.
+Sequence and structural analysis of surface protein antigen I/II (SpaA) of Streptococcus sobrinus
+(1991) Infection and Immunity, 59 (8), pp. 2677-2685. Cited 41 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0025818050&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Kelly, C., Evans, P., Ma, J.K.-C., Bergmeier, L.A., Taylor, W., Brady, L.J., Lee, S.F., Bleiweis, A.S., Lehner, T.
+Sequencing and characterization of the 185 kDa cell surface antigen of Streptococcus mutans
+(1990) Archives of Oral Biology, 35 (SUPPL. 1), pp. S33-S38. Cited 10 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0025581576&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Orengo, C.A., Taylor, W.R.
+A rapid method of protein structure alignment
+(1990) Journal of Theoretical Biology, 147 (4), pp. 517-551. Cited 29 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0025649353&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Hierarchical method to align large numbers of biological sequences
+(1990) Methods in Enzymology, 183, pp. 456-474. Cited 11 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0025371707&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Geisow, M.J., Ali, S.M., Boustead, C., Burgoyne, R.D., Taylor, W.R., Walker, J.H.
+Structures and functions of a supergene family of calcium and phospholipid binding proteins.
+(1990) Progress in clinical and biological research, 349, pp. 111-121. 
+DOCUMENT TYPE: Review
+SOURCE: Scopus
+
+Taylor, W.R.
+A template based method of pattern matching in protein sequences
+(1989) Progress in Biophysics and Molecular Biology, 54 (3), pp. 159-252. Cited 8 times.
+DOCUMENT TYPE: Review
+SOURCE: Scopus
+
+Taylor, W.R., Orengo, C.A.
+Protein structure alignment
+(1989) Journal of Molecular Biology, 208 (1), pp. 1-22. Cited 287 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0024349252&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Orengo, C.A.
+A holistic approach to protein structure alignment
+(1989) Protein Engineering, 2 (7), pp. 505-519. Cited 17 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Rothbard, J.B., Busch, R., Howland, K., Bal, V., Fenton, C., Taylor, W.R., Lamb, J.R.
+Structural analysis of a peptide-HLA class II complex: Identification of critical interactions for its formation and recognition by T cell receptor
+(1989) International Immunology, 1 (5), pp. 479-486. Cited 19 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0024443584&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Rothbard, J.B., Pemberton, R.M., Bodmer, H.C., Askonas, B.A., Taylor, W.R.
+Identification of residues necessary for clonally specific recognition of a cytotoxic T cell determinant
+(1989) EMBO Journal, 8 (8), pp. 2321-2328. Cited 7 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0024440755&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Green, N.M.
+The predicted secondary structures of the nucleotide-binding sites of six cation-transporting ATPases lead to a probable tertiary fold
+(1989) European Journal of Biochemistry, 179 (1), pp. 241-248. Cited 53 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0024521211&partnerID=40
+DOCUMENT TYPE: Review
+SOURCE: Scopus
+
+Rodrigues, V., Chaudhri, M., Knight, M., Meadows, H., Chambers, A.E., Taylor, W.R., Kelly, C., Simpson, A.J.G.
+Predicted structure of a major Schistosoma mansoni eggshell protein
+(1989) Molecular and Biochemical Parasitology, 32 (1), pp. 7-13. Cited 8 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0024439026&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+A flexible method to align large numbers of biological sequences
+(1988) Journal of Molecular Evolution, 28 (1-2), pp. 161-169. Cited 93 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Pattern matching methods in protein sequence comparison and structure prediction.
+(1988) Protein Engineering, 2 (2), pp. 77-86. Cited 14 times.
+DOCUMENT TYPE: Review
+SOURCE: Scopus
+
+Rothbard, J.B., Lechler, R.I., Howland, K., Bal, V., Eckels, D.D., Sekaly, R., Long, E.O., Taylor, W.R., Lamb, J.R.
+Structural model of HLA-DR1 restricted T cell antigen recognition
+(1988) Cell, 52 (4), pp. 515-523. Cited 40 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0024297580&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Green, N.M., Taylor, W.R., MacLennan, D.H.
+A consensus structure for cation pumps.
+(1988) Progress in clinical and biological research, 273, pp. 15-24. 
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Rothbard, J.B., Taylor, W.R.
+A sequence pattern common to T cell epitopes.
+(1988) EMBO Journal, 7 (1), pp. 93-100. Cited 114 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0023779206&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Rothbard, J.B., Townsend, A., Edwards, M., Taylor, W.
+Pattern recognition among T-cell epitopes.
+(1987) Hamatologie und Bluttransfusion, 31, pp. 324-331. 
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Engel, J., Taylor, W., Paulsson, M., Sage, H., Hogan, B.
+Calcium binding domains and calcium-induced conformational transition of SPARC/BM-40/osteonectin, an extracellular glycoprotein expressed in mineralized and nonmineralized tissues
+(1987) Biochemistry, 26 (22), pp. 6958-6965. Cited 70 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0023643437&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Geisow, M.J.
+Predicted structure for the calcium-dependent membrane-binding proteins p35, p36 and p32
+(1987) Protein Engineering, 1 (3), pp. 183-187. Cited 3 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Geisow, M.J., Walker, J.H., Boustead, C., Taylor, W.
+Localization and structure of novel calcium-regulated phospholipid-binding proteins.
+(1987) Biochemical Society Transactions, 15 (5), pp. 800-802. Cited 4 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Multiple sequence alignment by a pairwise algorithm
+(1987) Computer Applications in the Biosciences, 3 (2), pp. 81-87. Cited 33 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0023364009&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Pearl, L.H., Taylor, W.R.
+A structural model for the retroviral proteases
+(1987) Nature, 329 (6137), pp. 351-354. Cited 181 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0023189868&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Bajaj, M., Waterfield, M.D., Schlessinger, J., Taylor, W.R., Blundell, T.
+On the tertiary structure of the extracellular domains of the epidermal growth factor and insulin receptors
+(1987) Biochimica et Biophysica Acta - Protein Structure and Molecular Enzymology, 916 (2), pp. 220-226. Cited 61 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0023241481&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+Identification of protein sequence homology by consensus template alignment
+(1986) Journal of Molecular Biology, 188 (2), pp. 233-254. Cited 90 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0022550940&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R.
+The classification of amino acid conservation
+(1986) Journal of Theoretical Biology, 119 (2), pp. 205-218. Cited 195 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Garratt, R.C., Taylor, W.R., Thornton, J.M.
+The influence of tertiary structure on secondary structure prediction. Accessibility versus predictability for β-structure
+(1985) FEBS Letters, 188 (1), pp. 59-62. Cited 5 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0002502432&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Thornton, J.M.
+Recognition of super-secondary structure in proteins
+(1984) Journal of Molecular Biology, 173 (4), pp. 487-514. Cited 14 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Sternberg, M.J.E., Taylor, W.R.
+Modelling the ATP-binding site of oncogene products, the epidermal growth factor receptor and related proteins
+(1984) FEBS Letters, 175 (2), pp. 387-392. Cited 13 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0021165548&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Taylor, W.R., Thornton, J.M.
+Prediction of super-secondary structure in proteins
+(1983) Nature, 301 (5900), pp. 540-542. Cited 12 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0021099107&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Sternberg, M.J., Cohen, F.E., Taylor, W.R.
+A combinational approach to the prediction of the tertiary fold of globular proteins.
+(1982) Biochemical Society Transactions, 10 (5), pp. 299-301. Cited 4 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Cohen, F.E., Sternberg, M.J.E., Taylor, W.R.
+Analysis and prediction of the packing of a-helices against a β-sheet in the tertiary structure of globular proteins
+(1982) Journal of Molecular Biology, 156 (4), pp. 821-862. Cited 38 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Sternberg, M.J., Cohen, F.E., Taylor, W.R., Feldmann, R.J.
+Analysis and predication of structural motifs in the glycolytic enzymes.
+(1981) Philosophical transactions of the Royal Society of London. Series B: Biological sciences, 293 (1063), pp. 177-189. Cited 6 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0019889099&partnerID=40
+DOCUMENT TYPE: Review
+SOURCE: Scopus
+
+Cohen, F.E., Sternberg, M.J.E., Taylor, W.R.
+Analysis of the tertiary structure of protein β-sheet sandwiches
+(1981) Journal of Molecular Biology, 148 (3), pp. 253-272. Cited 27 times.
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+
+Cohen, F.E., Sternberg, M.J.E., Taylor, W.R.
+Analysis and prediction of protein β-sheet structures by a combinatorial approach
+(1980) Nature, 285 (5764), pp. 378-382. Cited 26 times.
+http://www.scopus.com/inward/record.url?eid=2-s2.0-0019317327&partnerID=40
+DOCUMENT TYPE: Article
+SOURCE: Scopus
+

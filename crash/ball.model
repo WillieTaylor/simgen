@@ -1,0 +1,11 @@
+CHEM b
+	  0,    1,    1,    1,    0,    0,    0,    0,    0,    0,  	// types (type for each level), -ve = wire
+       5000,   70,   30,    5,    0,    0,    0,    0,    0,    0,  	// sizes (diamater = []/10, grid = size*2)
+	  0,   65,   30,   10,    0,    0,    0,    0,    0,    0,  	// bumps (11 = i-->i+2 in alpha)
+	  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,  	// links
+	  0,    1,    1,    1,    0,    0,    0,    0,    0,    0,  	// chain (N=linear, -N=circular), N = valance
+	  0,    1,   -2,   -5,    0,    0,    0,    0,    0,    0,  	// move kick (use []/100)
+	  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,  	// keep (use 1-[]/100 on children)
+	  0,    0,    3,    6,    0,    0,    0,    0,    0,    0,  	// bond 
+	  0,   10,   10,   10,    0,    0,    0,    0,    0,    0,  	// bump kick (use []/100)
+	  0,   10,   10,   10,    0,    0,    0,    0,    0,    0,  	// bump kick (use []/100)

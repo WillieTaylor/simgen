@@ -1,0 +1,36 @@
+SCALE 0.158 6.33  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM null.model
+END
+GROUP 0 3
+# rear low left
+TRANS -40.0 -25.0  -30.0
+INPUT 3chy.dat
+# rear top left
+SPINZ 180.0
+TRANS  40.0  25.0  -30.0
+INPUT 3chy.dat
+# fore low left
+SPINY 180.0
+TRANS  40.0 -25.0   30.0
+INPUT 3chy.dat
+# fore top left 
+SPINY 180.0
+SPINZ 180.0
+TRANS -40.0  25.0   30.0
+INPUT 3chy.dat
+# rear low right
+TRANS   0.0 -25.0  -30.0
+INPUT 3chy.dat
+# rear top right
+SPINZ 180.0
+TRANS  80.0  25.0  -30.0
+INPUT 3chy.dat
+# fore low right
+SPINY 180.0
+TRANS  80.0 -25.0   30.0
+INPUT 3chy.dat
+# fore top right
+SPINY 180.0
+SPINZ 180.0
+TRANS   0.0  25.0   30.0
+INPUT 3chy.dat

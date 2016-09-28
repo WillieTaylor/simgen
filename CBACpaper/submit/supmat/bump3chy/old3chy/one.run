@@ -1,0 +1,5 @@
+SCALE 0.158 6.33  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM null.model
+END
+GROUP 0 1
+INPUT 3chy.zero.dat

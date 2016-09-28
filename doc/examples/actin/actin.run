@@ -1,0 +1,6 @@
+NOMOVE
+PARAM actin.model
+END
+GROUP 0 1
+INPUT actin.dat
+END

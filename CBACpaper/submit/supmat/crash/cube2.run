@@ -1,0 +1,37 @@
+NORUN
+#NOMOVE
+PARAM ball3.model
+END
+GROUP 0 1
+GROUP 0 1
+GROUP 0 8
+SPINX  90.0
+SPINZ -90.0
+TRANS -8.0  -8.0   8.0
+INPUT cube1.dat
+SPINX -90.0
+SPINY -90.0
+TRANS -8.0   8.0   8.0
+INPUT cube1.dat
+SPINX -90.0
+SPINY -90.0
+TRANS -8.0   8.0  -8.0
+INPUT cube1.dat
+SPINX 180.0
+TRANS -8.0  -8.0  -8.0
+INPUT cube1.dat
+SPINX 180.0
+TRANS  8.0  -8.0  -8.0
+INPUT cube1.dat
+SPINX -90.0
+SPINY  90.0
+TRANS  8.0   8.0  -8.0
+INPUT cube1.dat
+SPINX -90.0
+SPINY  90.0
+TRANS  8.0   8.0   8.0
+INPUT cube1.dat
+SPINX  90.0
+SPINZ  90.0
+TRANS  8.0  -8.0   8.0
+INPUT cube1.dat

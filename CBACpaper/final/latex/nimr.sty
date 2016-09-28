@@ -1,0 +1,193 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% nimr.sty, used in conjunction with nimr.bst, will produce a NIMR
+% house style, including hybrid apalike/named bibliography style.
+%
+
+% Optionally shift the page to the right for binding margin.
+\def\binding{\hoffset=.25in}
+
+% emphasis for subsubsection headings
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}{-3.25ex plus 
+ -1ex minus -.2ex}{1.5ex plus .2ex}{\normalsize\bf}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TITLE PAGE
+%
+% \maketitle produces an un-numbered front page with title/author/date and
+% optional abstract. To generate an abstract use:
+% \abstract{.....}
+% This should appear after \begin{document} and before \maketitle.
+% The contents can be italicised, eg.
+% \abstract{\em .....}
+% and new paragraphs (without a separating blank line) can be created
+% inside the abstract with:
+% \newpara
+%
+% 25-4-90, Nigel Brown, maketitle mechanism stolen from article.sty
+
+\newif\if@abstract	% define a new test for an abstract
+\@abstractfalse		% set it to false initially
+\def\abstract#1{\@abstracttrue\gdef\@abstract{#1}}
+
+\def\maketitle{\par
+ \begingroup
+   \def\thefootnote{\fnsymbol{footnote}}
+   \def\@makefnmark{\hbox
+       to 0pt{$^{\@thefnmark}$\hss}}
+   \if@twocolumn
+     \twocolumn[\@maketitle]
+     \else \newpage
+     \global\@topnum\z@        % Prevents figures from going at top of page.
+     \@maketitle \fi\thispagestyle{plain}\@thanks
+ \endgroup
+ \setcounter{footnote}{0}
+ \let\maketitle\relax
+ \let\@maketitle\relax
+ \gdef\@thanks{}\gdef\@author{}\gdef\@title{}\let\thanks\relax}
+
+\def\@maketitle{\newpage
+ \null
+ \vskip 2em                  % Vertical space above title.
+ \begin{center}
+  {\LARGE \@title \par}      % Title set in \LARGE size. 
+   \vskip 1.5em              % Vertical space after title.
+   {\large                   % each author set in \large, in a
+    \lineskip .5em           % tabular environment
+    \begin{tabular}[t]{c}\@author 
+    \end{tabular}\par}                   
+  \vskip 1em                % Vertical space after author.
+  {\large \@date}           % Date set in \large size.
+  \par
+  \vskip 1.5em              % Vertical space after date.
+ \end{center}
+ \if@abstract		    % is there an abstract?
+  \if@twocolumn
+  \section*{Abstract}
+  \else \small 
+  \begin{center}
+  {\bf Abstract\vspace{-.5em}\vspace{0pt}} 
+  \end{center}
+  \fi
+  \@abstractenv\@abstract\@endabstractenv
+ \fi}
+
+\def\@abstractenv{\list{}{\listparindent 1.5em
+    \itemindent\listparindent
+    \rightmargin\leftmargin \parsep 0pt}\item[]}
+\let\@endabstractenv=\endlist
+
+\newcommand{\newpara}{\\\indent}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIBLIOGRAPHY
+%
+% 1) Bibliography entries formatted alphabetically, last name first,
+%    each entry having a hanging indentation (default 0) and no label.
+% 2) References in the following formats:
+%               (Author, 1986)                   \cite{}
+%               (Author and Author, 1986)        \cite{}
+%               (Author {\em et al.}, 1986).     \cite{}
+%                Author (1986)                   \incite{}    NPB
+%                Author, 1986                    \inincite{}  NPB
+% 3) Multiple references in the forms
+%               (Author1, 1986; Author2, 1987)   \cite{}
+%                Author1, 1986; Author2, 1987    \inincite{}  NPB
+%
+% To be used as an optional argument to the \documentstyle command, eg.
+%       \documentstyle[11pt,nimr]{book}
+%
+% The default style lays out references with a small hanging indentation
+% controlled by this macro:
+%    \setlength{\bibhang}{2em}
+% By default the indent is set to zero.
+% Change the indent with a similar line in the preamble of your document. 
+%
+% 16-Sep-86, original version of apalike.sty by Susan King and Oren Patashnik.
+% 13-Oct-87 changes:
+%       Fixed bug in last line by adding the {} that disappeard when
+%               the \hbox{} was removed from the pre-APALIKE definition;
+%       added club and widow penalties;
+%       patched the \newblock LaTeX bug from `-.07em' to simply `.07em';
+%       and made this work for document styles that don't define `chapter'.
+% 1-Feb-90 merge of named.sty and apalike.sty to use ';' between multiple
+% 	citations in labels (from named.sty) and to work with all standard
+%	document styles (from apalike.sty). removed bibliography labels
+%	in the bibliography list. NPB
+% 22-Feb-91 removed shortcite, added incite, merged apalike with named.
+%
+% The `nimr' bibliography style creates citations with labels like
+%	\citeauthoryear{author-info}{year}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\@up#1{\raise.2ex\hbox{#1}}
+
+\let\@internalcite\cite
+
+\def\cite{\def\@citeseppen{-1000}%
+%\def\@cite##1##2{\@up(\nobreak\hskip 0in{##1\if@tempswa , ##2\fi}\@up)}%
+ \def\@cite##1##2{(\nobreak\hskip 0in{##1\if@tempswa , ##2\fi})}%
+ \def\citeauthoryear##1##2{##1, ##2}\@internalcite}
+
+\def\incite{\def\@citeseppen{-1000}%
+ \def\@cite##1##2{\nobreak\hskip 0in{##1\if@tempswa , ##2\fi}}%
+%\def\citeauthoryear##1##2{##1 \@up(##2\@up)}\@internalcite}
+ \def\citeauthoryear##1##2{##1 (##2)}\@internalcite}
+
+\def\inincite{\def\@citeseppen{-1000}%
+ \def\@cite##1##2{\nobreak\hskip 0in{##1\if@tempswa , ##2\fi}}%
+ \def\citeauthoryear##1##2{##1, ##2}\@internalcite}
+
+\def\citeauthor#1{\def\@cite##1##2{{##1\if@tempswa , ##2\fi}}%
+ \def\citeauthoryear##1##2{##1}\@citedata{#1}}
+
+\def\citeyear#1{\def\@cite##1##2{{##1\if@tempswa , ##2\fi}}%
+ \def\citeauthoryear##1##2{##2}\@citedata{#1}}
+
+\def\@citedata#1{\@tempswafalse%
+ \if@filesw\immediate\write\@auxout{\string\citation{#1}}\fi
+  \def\@citea{}\@cite{\@for\@citeb:=#1\do
+    {\@citea\def\@citea{,\penalty\@citeseppen\ }\@ifundefined
+       {b@\@citeb}{{\bf ?}\@warning
+       {Citation `\@citeb' on page \thepage \space undefined}}%
+{\csname b@\@citeb\endcsname}}}{}}
+
+% don't box citations, separate with ; and a space
+% also, make the penalty between citations negative: a good place to break
+\def\@citex[#1]#2{\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi
+  \def\@citea{}\@cite{\@for\@citeb:=#2\do
+    {\@citea\def\@citea{;\penalty\@citeseppen\ }\@ifundefined
+       {b@\@citeb}{{\bf ?}\@warning
+       {Citation `\@citeb' on page \thepage \space undefined}}%
+{\csname b@\@citeb\endcsname}}}{#1}}
+
+% raise the brackets in bibliography labels
+%\def\@biblabel#1{\def\citeauthoryear##1##2{##1, ##2}%
+%  \raise.2ex\hbox{[}#1\raise.2ex\hbox{]}\hfill}
+
+% don't label references at all!
+\def\@biblabel#1{}
+
+% Set length of hanging indentation for bibliography entries.
+\newlength{\bibhang}
+\setlength{\bibhang}{2em}
+
+% \thebibliography environment depends on whether or not `chapter's can exist.
+\@ifundefined{chapter}{\def\thebibliography#1{\section*{References\@mkboth
+  {REFERENCES}{REFERENCES}}\list
+  {\relax}{\setlength{\labelsep}{0em}
+        \setlength{\itemindent}{-\bibhang}
+        \setlength{\leftmargin}{\bibhang}}
+    \def\newblock{\hskip .11em plus .33em minus .07em}
+    \sloppy\clubpenalty4000\widowpenalty4000
+    \sfcode`\.=1000\relax}}%
+{\def\thebibliography#1{\chapter*{References\@mkboth
+  {REFERENCES}{REFERENCES}}\list
+  {\relax}{\setlength{\labelsep}{0em}
+        \setlength{\itemindent}{-\bibhang}
+        \setlength{\leftmargin}{\bibhang}}
+    \def\newblock{\hskip .11em plus .33em minus .07em}
+    \sloppy\clubpenalty4000\widowpenalty4000
+    \sfcode`\.=1000\relax}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

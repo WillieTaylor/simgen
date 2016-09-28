@@ -1,0 +1,36 @@
+\section{Conclusions}
+
+In this chapter we have described a general multi-scale modelling
+and simulation system that can be easily customised to any large
+system both in terms of setting-up the model geometry and in
+directing the behaviour of the simulation.
+
+The use of a multi-level approach to the treatment of collisions
+means that, at higher levels, the system does not depend strongly
+on the choice of size or shape assigned to each level.   Thus,
+crude shape approximations do not determine the direct behaviour
+of the system but just alert the lower level to check for
+collisions.   The propagation of this cascade reaches down to the 
+atomic level where eventually the "hard-sphere" repulsion is
+implemented giving a more realistic representation of the true
+excluded volume. 
+
+Unlike a conventional MD or MC simulation, the approach we have
+described cannot be expected to generate predictive behaviour 
+from a summation of atomic interactions.  It relies instead on
+a hierarchy of user or data defined constraints, such as the 
+definition of secondary structures and their packing interactions.
+However, these constraints can be incomplete and the missing 
+constraints will allow freedom for change in the system that
+will be stochastically explored through the underlying random
+motion that can be applied at every level.
+
+The example we provided of the actin/myosin motor is typical of
+the scale of application that the system can accommodate, both 
+in terms of number of atoms and size of displacement.  While
+there are many aspects of the behaviour of the system that can
+be adjusted to reproduce realistic behaviour, we see its use
+mainly as a way of setting up the physical constraints for a 
+complex system that can then be used to test if a hypothesis 
+about the dynamics of the system is consistent with its physical
+structure.

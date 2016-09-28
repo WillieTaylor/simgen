@@ -1,0 +1,63 @@
+#NOVIEW
+#NORUN
+#NOMOVE
+SCALE 0.158 0.633  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM memb.model
+PARAM stay.model
+PARAM move.model
+END
+GROUP 0 4
+	MODEL 0
+	TRANS 0 10 0
+	GROUP 0 7    0 -10 0  0  10 0
+#	membrane = flat ellipsoid containing TM helices
+#		insTM PDBid = 300-301 (1 GROUP)
+		INPUT insTM.dat
+#		secTM1 PDBid = 400-401 (2 GROUPs) 
+		INPUT secTM1.dat
+#		secTM2 PDBid = 400-401 (3 GROUPs) 
+		TRANS  5 5 0
+		INPUT linkTM.dat
+		TRANS  10 0 0
+		INPUT secTM2.dat
+#		natTM PDBid = 500-501 (1 GROUP)
+		TRANS  10 0 10
+		INPUT natTM.dat
+	TER
+	LINKS pdbid lockTM.links
+	MODEL 1
+	SPINS  -90  -90   0
+	TRANS   15 40 0
+#       short axis from 47------36
+        GROUP -7 2  -12 8 4   10  6 -5
+#		sec11 PDBid = 402-403
+#		lexA  PDBid = 302-303
+		INPUT sec11.dat
+	TER
+	SPINS   60  0 -90
+	TRANS   0 50 26
+	GROUP -15 3   -20 0 0   20 0 0
+#		insB PDBid = 304-305
+		INPUT insB.dat
+		TRANS 20 0 0
+#		insC PDBid = 306-307
+		INPUT insC.dat
+#		insA PDBid = 308-309
+		INPUT insA.dat
+	TER
+	MODEL 2
+	SPINS  90  30  20
+	TRANS -20 -20 -40
+	GROUP -15 6    -15 -10 -15    15  10  15
+		INPUT nnatA2.dat
+	TER
+TER
+REBOND pdbid  301 302
+REBOND pdbid  303 304
+REBOND pdbid  401 402
+REBOND pdbid  403 404
+RETERM pdbid  300 309
+RETERM pdbid  400 405
+REBOND pdbid  501 502
+RETERM pdbid  500 503
+#PRINT

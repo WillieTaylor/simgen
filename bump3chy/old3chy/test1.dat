@@ -1,0 +1,7 @@
+GROUP 0 3
+TRANS  15.0  -15.0   15.0
+INPUT empty.dat
+TRANS  15.0   15.0   15.0
+INPUT unit0.dat
+TRANS -15.0   15.0   15.0
+INPUT empty.dat

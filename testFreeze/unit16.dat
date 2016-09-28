@@ -1,0 +1,33 @@
+GROUP 0 16
+TRANS  220.  -17.0   17.0
+INPUT unit0.dat
+TRANS  190.  -17.0   17.0
+INPUT unit0.dat
+TRANS  160.  -17.0   17.0
+INPUT unit0.dat
+TRANS  130.  -17.0   17.0
+INPUT unit0.dat
+TRANS  100.  -17.0   17.0
+INPUT unit0.dat
+TRANS  77.0   17.0   17.0
+INPUT unit0.dat
+TRANS  47.0   17.0  -17.0
+INPUT unit0.dat
+TRANS  17.0  -17.0  -17.0
+INPUT unit0.dat
+TRANS -17.0  -17.0  -17.0
+INPUT unit0.dat
+TRANS -47.0   17.0  -17.0
+INPUT unit0.dat
+TRANS -77.0   17.0   17.0
+INPUT unit0.dat
+TRANS -100.  -17.0   17.0
+INPUT unit0.dat
+TRANS -130.  -17.0   17.0
+INPUT unit0.dat
+TRANS -160.  -17.0   17.0
+INPUT unit0.dat
+TRANS -190.  -17.0   17.0
+INPUT unit0.dat
+TRANS -220.  -17.0   17.0
+INPUT unit0.dat

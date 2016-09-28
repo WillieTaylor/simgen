@@ -1,0 +1,14 @@
+SCALE 0.158 .633  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM his5sec.model
+PARAM dna5seg.model
+END
+GROUP 0 2
+	INPUT nucseg.dat
+	TRANS  0  0  -30
+	TWIST    0  90  -10     0  90  10    110
+	INPUT nucseg.dat
+REBOND atomid  1141  1959
+REBOND atomid  1988  1142
+RETERM atomid   806   835
+#PRINT
+END

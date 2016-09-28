@@ -1,0 +1,10 @@
+NORUN
+#NOMOVE
+SCALE 0.15
+PARAM stem.model
+END
+GROUP 0  1
+INPUT stem.dat
+#INPUT dnaseg.dat
+END
+#LINKS pdbid link.test

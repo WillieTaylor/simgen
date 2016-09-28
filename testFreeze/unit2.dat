@@ -1,0 +1,9 @@
+GROUP 0 2
+SPINX  90.0
+SPINZ  90.0
+TRANS  0  -35.0   0
+INPUT unit0.dat
+SPINX -90.0
+SPINZ -90.0
+TRANS  0   35.0   0
+INPUT unit0.dat

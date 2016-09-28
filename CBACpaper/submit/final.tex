@@ -1,0 +1,90 @@
+\subsection{Summary}
+
+\subsubsection{Collision algorithms}
+
+The algorithm described in this work for the interaction of a hierarchy of objects
+seeks to circumvent a fundamental problem in coarse-grained modelling which
+is the loss of fine detail when components become 'bundled' together.
+The "currants-in-jelly" model developed here provides a flexible approach in which
+the contribution of the soft high-level objects (jelly-like) can be controlled
+to protect the underlying atomic structure (currants) while still allowing
+them to interact.
+
+Idealised macromolecular chains were used to establish the parameters
+to achieve this degree of interaction over a hierarchy spanning four levels.
+In a more realistic example using a small globular protein, the extent of the 
+distortion experienced by the protein domain structure during collision was then 
+examined and the parameters refined to allow an acceptable degree of deformation.
+
+\subsubsection{Constraint satisfaction}
+
+The model of steric repulsion established for idealised systems was then
+combined with sets of predicted distance constraints, derived from correlated
+mutation analysis,  in two differing applications.    Firstly, an integral
+trans-membrane protein was modelled in which the packing of the seven
+helices was refined but without topological rearrangement.  Secondly,
+an RNA structure was 'folded' under the predicted constraints, starting only
+from its 2-dimensional secondary structure prediction.
+
+From the large sequence alignment available for the membrane protein, high
+quality distance predictions could be obtained, which combined with good
+starting configurations (provided by a simplified lattice model) led to 
+the production of high-scoring models with a low RMSD to the known structure.
+By contrast, the RNA structure predictions had high RMSD values and although
+the stem-loops were correctly located in the higher-scoring models, topological
+differences remained which may be a result of constraints imposed by the
+flat starting conformation.
+
+\subsection{Limitations and potential}
+
+Whilst the methods and parameters established here have been shown to be
+effective, it is unlikely that they are optimal and many aspects of the
+model remain to be explored.    The approach taken above was to pick
+reasonable values for the extent and strength of an interaction and test
+a few variations and combinations in the surrounding parameter-space.
+A more systematic approach is needed, and for this the speed of the current
+method is a great advantage as many simulations can be run, allowing the
+parameter space to be more fully explored and optimal combinations found
+for different types of macromolecule.
+
+An earlier, simpler, version of the current method was used to model the
+dynamic interaction of actin and myosin.   However, because the atomic (residue)
+surfaces did not interact directly in that model, artificial constraints had
+to be added to drive the molecular recognition events.  In the current
+method, the residue-level surfaces can now come in contact, allowing a more
+realistic representation of molecular recognition based on steric compatibility.
+However, without a proper atomic interaction potential, the recognition of 
+a binding event would stil rely on external knowledge of the residues involved.
+
+It was assumed that the parameters used at the start of the simulation remained
+the same throughout and equal for all components independently of their
+position or interactions.   However, all these aspects could be varied and
+if there is a pair of objects that interact preferentially, their parameters
+can be set to allow their surfaces to meet whereas others might present a
+hard-shell repulsion.  For example, in the actin/myosin example mentioned
+above, the actin monomers close to the myosin head could allow atomic
+interactions whereas all other interactions retain a high-level repulsion.
+
+The effectiveness of the approach relies on having a rich multi-layer
+hierarchy of substructures.   Fortunately, as seen from the varied examples
+provided, this is the prevalent situation for the majority of biological
+macromolecules.   In the simulation of more homogeneous materials, such
+as water, it is unlikely that the approach would be useful.  Similarly, for
+a long chain, such as DNA, although segments can be grouped like a string
+of sausages, the interaction of two such chains would require evaluation
+of the all pairs of sausages.
+
+In large molecules, especially those composed of subunits, the components may not
+remain the same throughout a simulation and during an interaction, one subunit may
+be transfered to another assembly or a large multi-domain chain may be cleaved.
+In its current formulation, the program does not accommodate this, however, such
+events could easily be incorporated simply by updating the list of children held
+by each object or adding new children to the list. 
+
+\subsection{Conclusion}
+
+The method developed here provides a fast and flexible way to capture the
+structure of most macromolecules in a hierarchy of increasingly larger coarse-grained
+levels without losing the detailed low-level representation.   Although much testing
+remains to be done, the system has the potential to be applied to very large dynamic
+systems including both protein and nucleic acids.

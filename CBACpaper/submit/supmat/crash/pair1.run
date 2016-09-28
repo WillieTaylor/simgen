@@ -1,0 +1,13 @@
+#NORUN
+#NOMOVE
+PARAM ball2.model
+END
+GROUP 0 2
+SPINX  90.0
+SPINZ -90.0
+TRANS -50.0  -20.0   0.0
+INPUT cube1.dat
+SPINX -90.0
+SPINY -90.0
+TRANS  50.0   20.0   0.0
+INPUT cube1.dat

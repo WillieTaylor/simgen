@@ -1,0 +1,90 @@
+\section{Introduction}
+
+Physical methods for the determination of macromolecular structure have
+improved greatly over the past decade, resulting in a wealth of large
+molecular structures including both protein and nucleic acid.   Most,
+if not all of these structures are dynamic, either in their assembly
+(and disassembly) such as cytoskeletal fibrils and viruses or often have
+large motions associated with their function, such as the F1/F0 ATP
+synthetase complex.  Indeed for the class of molecular motors, motion
+is the essential aspect of their function \cite{SpudichJA94,AstumianRD01}.
+
+With the exception of real-time scanning atomic force microscopy \cite{KoderaNet10}, which
+is still not a widely used method, most of the physical techniques, such
+as electron microscopy or X-ray crystallography, provide only snap-shots
+of discrete states of a dynamic system \cite{CoureuxPDet04,BershitskySYet09}.   This can be augmented by data
+from a wide variety of physical methods, such as spectroscopy or single
+particle measurements \cite{ForkeyJNet03,VeigelCet05}, that can provide dynamic information against
+which the different 'snap-shots' can be interpreted.   However, given the
+coordinates for different states, it is still natural to want to visualise 
+how the system progresses from one to the other, or given a set of components,
+to wonder how they might assemble into a complex.
+
+An impression of how complex systems behave can be gleaned by interpolating
+between states using a physics-based 'morphing engine' \cite{KrebsWGet00}, similar
+to those used in animating cartoon characters in popular games and movies. 
+Depending on the constraints of the data, these can to some extent be predictive
+but more typically, simply recapitulate the relationship between the existing 
+structures in a more accessible manner.   At the other extreme to this
+top-down approach, molecular dynamics methods can be used to animate large
+structures from the bottom up:  that is by summing the interactions of
+individual atoms into increasingly larger motions \cite{SchlickT02,BurghardtTPet07,KawakuboTet09}.
+
+Both the top-down and bottom-up approaches have their problems.  The top-down
+approach may not have a geometry engine of sufficient quality to ensure that
+the system does not wander into un-natural configurations between known
+states, which if a problem if there is a large difference between the states
+(or just one known state).    Conversely, with the bottom-up approach, the
+repeated summation of small atomic forces into large motions is likely to
+be a divergent process, giving little confidence in the uniqueness of
+the final configuration.
+
+The ideal solution to both these problems is to combine the two approaches.
+However, this raises a new set of questions as to the best way that this
+can be done and there is a variety of approaches depending on whether the
+aim is mainly to predict or recapitulate.   This type of modelling is broadly
+referred to as coarse-grained (CG) as the constraints from the data are
+imposed at a level above atomic interaction \cite{IzvekovSet05,ZhangZet09,TaylorWRet10a},  
+typically in the form of distance-based elastic constraints between neighbouring
+units \cite{ParkerDet09,ZhengW11} (being two examples from the actin/myosin motor discussed below).
+The definition of levels is essentially arbitrary but for proteins and RNA there is a good
+succession in which each level incorporates roughly an order of 10 elements
+from the lower level giving a progression form atoms to residues/bases to
+secondary structures to domains to multi-domain/chain macromolecules or
+assemblies.   This follows the conventional structural hierarchy of
+primary, secondary, tertiary and quaternary with the allowance that in the
+latter, it is often arbitrary whether the units are linked as domains or
+exist as distinct chains \cite{TaylorWRet05}.
+
+As structural constraints are imposed 
+at levels above atomic, they becomes less general until the highest
+level may be specific to a particular known state of a large system.
+For example:  atomic interactions are the same in all molecules, whether
+nucleic acid or protein.  Interactions at the monomer level require 
+knowledge of the chemical structure of four bases for RNA/DNA and twenty
+amino acids for proteins.  At the secondary structure level, both RNA
+and protein become very different and the interaction (packing) of the
+secondary structures can only be described because of the large numbers
+of structures in which they have been observed.  The interaction has
+shifted from being fundamental to being empirical.  At the domain level
+constraints on the fold of the chain must be derived largely from a
+specific fold and at the top level of a multi-domain chain or multi-chain
+assembly, constraints derive from a unique structure.
+
+If only one of these levels of constraint is utilised, then the others 
+become poorly determined (or must be kept fixed).  As discussed above, using only atomic 
+interaction leads to uncertainty at the higher levels and using just 
+high-level information (say, domain/domain distances) leaves the
+atomic detail unspecified.  Taken by itself, any intermediate level
+will leave those above and below less well constrained.  The ideal solution
+clearly is not to neglect any level but to impose constraints at every
+level, ranging from the generic at the lowest level to the specific at the highest.  
+This is sometimes referred to as multi-level modelling.
+Shifts from one set of high-level constraints to
+another can then be used to model the transition from one state of the
+system to another while preserving integrity through the lower levels.
+
+In this chapter, we will give an overview of a new generalised coarse-grained
+multi-level simulation method that we have developed along the lines
+described above with a view to simulating the motion of large macromolecular
+systems and, in particular, molecular motors.   

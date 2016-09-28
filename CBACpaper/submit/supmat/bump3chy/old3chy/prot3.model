@@ -1,0 +1,11 @@
+PROT
+          0,    0,    0,    0,    0,    0,    0,    0,    0,    0,  	// align : 1 = call to realign() for SSEs
+	  0,    1,    2,    1,    0,    0,    0,    0,    0,    0,  	// types : type for each level, -ve = wire
+        300,   60,   -9,   -3,    0,    0,    0,    0,    0,    0,  	// sizes :diamater = []/10,  -ve = local fix
+	  0,   60,    9,    6,    0,    0,    0,    0,    0,    0,  	// bumps :6 = i-->i+2 dist in alpha
+	  0,    0,    2,    4,    0,    0,    0,    0,    0,    0,  	// links : number of assigned slots
+	  0,    1,    1,    1,    0,    0,    0,    0,    0,    0,  	// chain :1=linear, -1=circular
+	  0,    0,    1,    1,    0,    0,    0,    0,    0,    0,  	// move  :kick size (uses []/100)
+	  0,   10,   10,    0,    0,    0,    0,    0,    0,    0,  	// keep  :kick (uses 1-[]/100 on children)
+	  0,   10,   10,   10,    0,    0,    0,    0,    0,    0,  	// bump  :kick size (uses []/100)
+	  0,    3,    9,    3,    0,    0,    0,    0,    0,    0   	// bonds : bond length

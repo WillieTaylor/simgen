@@ -1,0 +1,8 @@
+wireframe off
+backbone 111
+colour temperature
+select *.CB
+cpk 333
+select *.CBn,*.CBc
+cpk 222
+select

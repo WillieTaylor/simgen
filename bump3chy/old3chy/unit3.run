@@ -1,0 +1,5 @@
+NORUN
+SCALE 0.158 .63333   # scalein = .6/3.8, scaleout = 3.8/.6 = 6.33333
+PARAM prot5.model
+END
+INPUT unit3.dat

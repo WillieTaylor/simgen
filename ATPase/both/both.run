@@ -1,0 +1,17 @@
+#NOMOVE
+#NORUN
+UNWEIGHT
+SCALE 0.158 6.33  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM memb.model
+PARAM Aunit.model
+PARAM Cring.model
+END
+SPINX 90
+GROUP 0 3
+MODEL 1
+INPUT Aunit.dat
+MODEL 2
+INPUT Cring.dat
+MODEL 0
+TRANS 200 200 145
+INPUT memb.dat

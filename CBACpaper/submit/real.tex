@@ -1,0 +1,203 @@
+\subsection{Distance constraint satisfaction}
+
+In this section two examples are provided using known macromolecules in
+which the steric exclusion (collision) parameters identified in the previous section are
+combined with a set of distance constraints.
+As the previous section used a globular protein structure, an example is
+taken firstly of an integral membrane protein to illustrate a different 
+combination of objects and secondly of an RNA structure to show how the
+different objects can be combined to represent nucleic acid structures.
+Predicted distance constraints were derived from the analysis of correlated
+mutations.  (See \cite{TaylorWRet13} for a review).
+
+The two examples also illustrate different strategies of constraint
+satisfaction.   For the membrane protein, a set of protein-like starting 
+structures is generated using a lattice based model \cite{TaylorWRet94a} and the
+predicted distance constraints are used essentially for refinement rather
+than to rearrange the helix packing.  In this situation, the distance
+constraints are introduced progressively in order of their strength
+(probability of being correct) and only retained if they initially
+fall (and remain) within twice their target distance.   This prevents
+inconsistent long range constraints disrupting the model.  By contrast,
+the nucleic acid example has no ideal starting structure, except its
+(2-dimensional) secondary structure prediction and in this situation,
+the top 50 constraints were introduced at the start and gradually culled
+if they did not approach their target separation.  
+
+\subsubsection{Rhodopsin}
+
+The first structure of an integral trans-membrane (TM) protein to be determined
+was that of bacteriorhodopsin and this protein (PDB code: {\tt 1BRD}) and its
+much larger sister family the opsins, which includes the GPCR receptors (eg: PDB code:
+{\tt 1GZM}), remains a favourite for testing modelling and prediction methods.
+
+These structures consist of 7-TM helices arranged in a simple bundle
+Each was modelled as an \AH\ confined in an tube, as described above for the
+small globular protein.   The seven tubes were then contained in a larger
+tube which had a diameter narrow enough to confine the helices in a compact
+packing arrangement in the plane of the membrane and long enough to allow 
+the helices to shift to a reasonable extent up and down relative to the membrane.  
+Because the ends of the helical tubes are not constrained to lie within their
+containing tube, they are still free to tilt relative to each other, as is
+commonly observed in such structures.  (\Fig{rhod-model}).
+The method was also applied to a protein of unknown structure, FlhA, which is
+a component in the type-III secretion system and thought to form a ring
+of nine proteins (\Fig{flhA-model}).
+
+As an exercise in structure prediction, the helices were allowed to move
+under the influence of the pairwise residue constraints derived from the
+correlated mutation analysis, starting from a number of configurations
+obtained from combinatorial enumeration over a hexagonal lattice \cite{TaylorWRet94a}.
+The resulting models were then ranked on how well they had satisfied the
+given constraints.  Plotting this score against RMSD (\Fig{rhod-score}),
+gave a clear indication for model selection and, as can be seen from the
+RMSD values, the highest scoring model was a good prediction (\Fig{rhod-super}).
+
+\begin{figure}
+\centering
+\subfigure[rhodopsin]{
+\label{Fig:rhod-model}
+\epsfxsize=140pt \epsfbox{figs/rhod/rhod.eps}
+}
+\subfigure[FlhA]{
+\label{Fig:flhA-model}
+\epsfxsize=211pt \epsfbox{figs/rhod/ring.eps}
+}
+\caption{
+\label{Fig:TMmodels}
+{\bf Transmembrane proteins} were modelled as \AH\ tubes inside a "kinder-surprise"
+confining tube (yellow), the axis of which lies perpendicular to the membrane plane.
+$a$) A model of rhodopsin with 7-TM helices.
+$b$) A model of the type-III secretion protein FlhA which is predicted to have 8-TM helices
+and is thought to form a ring of nine copies in the membrane forming a pore.
+}
+\end{figure}
+
+\begin{figure}
+\centering
+\subfigure[Score vs RMSD]{
+\label{Fig:rhod-score}
+\epsfxsize=270pt \epsfbox{figs/rhod/rmsds.eps}
+}
+\subfigure[rhodopsin model]{
+\label{Fig:rhod-super}
+\epsfxsize=120pt \epsfbox{figs/rhod/super.eps}
+}
+\caption{
+\label{Fig:rhod-pred}
+{\bf Rhodopsin predictions}
+$a$) The RMSD of the predicted models (X-axis) is plotted against how well each model matches
+the constraints derived from the correlated mutation analysis (Y-axis: high is good, with
+the score of the native structure marked by a green line).
+Blue dots are from the current modelling method with red dots calculated by the FILM3
+method.  The RMSD is over the TM-helices only.
+$b$) The highest scoring rhodopsin model is superposed on the native structure.
+Both structures are shown as a virtual \CA\ backbone coloured blue (amino) to red (carboxy)
+with the \CA\ positions rendered as small spheres on the predicted structure.
+The helices lie close together but deviations can be seen in the loops and at the termini.
+}
+\end{figure}
+
+
+\subsubsection{SAM riboswitch}
+
+The structure of the S-adenylate-methionine type-I riboswitch (SAM-I) is a small (94 base) RNA involved
+in the control of bacterial gene expression (PDB code:{\tt 2GIS}).   Consensus RNA secondary structure
+prediction methods produce a "clover-leaf" structure reminiscent of tRNA, and like that molecule, its
+structure can be viewed as two basepaired hairpins (stem-loops) with each being an insertion into the
+other.  Unlike the secondary structure prediction, the tertiary structure reveals an additional
+short region of base-pairing between the two hairpins (a pseudo-knot) which serves
+to lock the 3D structure.   Interestingly, these interactions are clearly predicted
+by the correlation analysis and, together with the more 'trivial' base-pairing
+correlations, were used as constraints for modelling.
+
+The predicted base-paired regions were set-up as tubes with the phosphates of the paired bases
+at either end of a smaller tube forming rungs of a ladder (as described above) and these stem-loops
+were then specified to be confined inside a larger sphere.    The flat clover-leaf secondary structure
+prediction was taken as a starting position for each phosphate (\Fig{ribo0}) and under the
+influence of the confining pull (to move inside the central sphere), their bonded phosphates
+and the imposed distance constraints, the stem-loops moved inwards quickly (\Fig{ribo1} and (c))
+and packed to best accommodate the constraints (\Fig{ribo3}).    As not all the constraints can be
+simultaneously satisfied (due to prediction error), once inside the sphere,
+the longest constraints were gradually culled (with a stochastic bias to retain the
+strongest and those not within a stem-loop).   By the end of a short run, a compact
+structure remained and, as with the TM-protein predictions, after many runs the structures
+were ranked on how well they satisfied the constraints.
+
+\begin{figure}
+\centering
+\subfigure[0]{
+\label{Fig:ribo0}
+\epsfxsize=212pt \epsfbox{figs/ribo/rna0.eps}
+}
+\subfigure[5]{
+\label{Fig:ribo1}
+\epsfxsize=178pt \epsfbox{figs/ribo/rna1.eps}
+}
+\subfigure[20]{
+\label{Fig:ribo2}
+\epsfxsize=220pt \epsfbox{figs/ribo/rna2.eps}
+}
+\subfigure[100]{
+\label{Fig:ribo3}
+\epsfxsize=171pt \epsfbox{figs/ribo/rna5.eps}
+}
+\caption{
+\label{Fig:myo2DFS}
+{\bf SAM riboswitch simulation} in which the phosphate backbone (silver) is linked by
+thin green tube when basepaired (or cyan for loops) with basepaired regions (stem-loops)
+contained inside red tubes.  The blue central sphere is the target volume inside which
+stem-loops aim to be contained.   At the start ($a$, time 0), the phosphates are in their
+flat predicted secondary structure positions.   Thin lines link pairs of phosphates with
+a target distance constraint with most corresponding to basepaired nucleotides.
+The system is simulated with random, but decreasing motion, applied to the stem-loop tubes
+and the structure moves rapidly to a packed conformation inside the target sphere
+(frames $b$ to $d$).    
+}
+\end{figure}
+
+The packing of four stem-loops has only two distinct spatial arrangements corresponding to
+the left and right enantiomers of a tetrahedral configuration.   However, the connections 
+between consecutive stem loops are not restricted, leading to many possible topologies
+(some of which are knotted).   Plotting the constraint score against RMSD revealed a
+small but distinct bias of higher scoring models to have lower RMSDs, especially when
+models containing excessive P-P clashes were excluded.
+
+However, comparing the higher scoring models against the known structure, differences
+were found in the orientation of the halves of stem-loops either side of the mutual
+"insertion" point.  In the native structure the two halves of the stems are aligned but
+in most models the halves have a kinked alignment as there is little in the model to
+direct their packing away from a tetrahedral juxtaposition.   While this difference
+accounts for most of the deviation, more importantly, even the models with the lowest 
+RMSD had a topological differences from the native.     
+
+It seemed likely that this topological error may have its roots in the restricted
+clover-leaf starting configuration.   If all cyclic permutations of the stems around the
+leaf are considered, then, allowing for symmetry, there is only one other possible
+configuration in which two stems have been switched and this configuration
+also reduces the separation of the pseudo-knot distance constraints.  This new starting
+model produced a much more distinct skew towards high-scoring, low RMSD models
+(\Fig{ribo-score}) however, the best models, despite having the correct juxtaposition
+of the stem-loops, still retained the same topological error.  (Figure 7(b)).
+A more detailed analysis of this problem will be considered more fully elsewhere.
+
+\begin{figure}
+\centering
+\subfigure[]{
+\label{Fig:ribo-score}
+\epsfxsize=235pt \epsfbox{figs/ribo/score.eps}
+}
+\subfigure[]{
+\label{Fig:ribo-model}
+\epsfxsize=155pt \epsfbox{figs/ribo/best.eps}
+}
+\caption{
+\label{Fig:ribo}
+{\bf SAM riboswitch models:} $a$) are scored by how well they fit the top 50 constraints
+and this value (Y-axis) is plotted against the RMSD of the model from the known structure.
+$b$) The phosphate backbone of a high scoring model (ball and stick) is superposed on the 
+known structure (stick).  Both chains are coloured blue ($5'$) to red ($3'$).
+The cyan and yellow segments (towards the front) incorporate the long-range links that
+form the pseudo-knot.
+}
+\end{figure}

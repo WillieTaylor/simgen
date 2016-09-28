@@ -1,0 +1,288 @@
+#!/bin/bash
+# Part of latex2rtf by Scott Prahl (Nov 2009)
+#
+# This version uses latex and dvips
+#              with convert (Part of ImageMagick)
+#
+# This script file will convert a latex file into a PNG image.
+# Because latex2rtf also needs to convert EPS files, these are 
+# also converted.  By default latex2png assumes that the input
+# file is a latex file, however, if the extension is .eps, then
+# the file is treated an EPS file. 
+#
+# When the latex file contains the tag 'INLINE_DOT_ON_BASELINE' then
+# a dot is assumed to have been placed at the beginning of a latex
+# This dot is used to locate the baseline of the equation for 
+# alignment in the RTF file.  This shell script will create a PGN
+# (portable gray map) file that can be used to determine the 
+# height of the equation baseline
+#
+#set -x  # uncomment for debugging
+#
+
+DVIPS="dvips -q -l 1 -E -R"
+LATEX="latex --interaction batchmode --output-format dvi"
+PDFLATEX="latex --interaction batchmode --output-format pdf"
+XELATEX="xelatex --interaction batchmode"
+CONVERT="convert"
+PDF2EPS="eps2eps"
+GREP="grep"
+AWK="awk"
+SED="sed"
+# !!!!!!!!!!!!!!!! Note !!!!!!!!!!!!!!
+# Under MS Windows, although this script runs under bash shell,
+# LaTeX is run in the Windows environment and thus needs the ";" as separator.
+TEXINPSEP=":" #Unix
+#TEXINPSEP=";"  #MS Windows
+VERSION="1.50"
+
+help()
+{
+cat <<HELP
+latex2png -- convert latex file to PNG image
+
+USAGE: latex2png [-d density] [-o offset] [-h] [-e] [-k] [-c] [-g] [-m] [-H home dir] file[.tex|.eps]
+
+OPTIONS: 
+         -c color image
+         -g gray image  
+         -m monochrome  (default)
+         -e only create EPS files
+         
+         -d density     (default 300 dpi)
+         -o offset      (default 5)
+         -h             help
+         -H /home/dir   directory to be included in search path (default '.')
+         -k             keep intermediate files (for debugging)
+
+EXAMPLES: 
+         latex2png -d 144 /tmp/file   #create /tmp/file.png at 144 dpi
+         latex2png file.eps           #create file.png
+         latex2png file.tex           #create file.png via latex
+         latex2png -H . /tmp/file     #search the cwd for image files
+
+HELP
+exit 0
+}
+
+version()
+{
+echo "latex2png $VERSION"
+exit 0
+}
+
+opt_d=300       # default to 300 dpi
+opt_o=5	        # default for 300 dpi
+opt_k=0         # default to killing intermediate files
+home_dir="."    # default to current directory
+ext="tex"       # default to latex input
+out="-depth 24" # default to color output
+inline=0        # default to no special equation processing
+
+while [ -n "$1" ]; do
+case $1 in
+    -e) opt_eps=1;         shift 1;; #create eps file
+    -g) out="-depth 8";    shift 1;; #gray
+    -c) out="-depth 24";   shift 1;; #color
+    -m) out="-monochrome"; shift 1;; #monochrome
+    -h) help;              shift 1;;
+    -k) opt_k=1;           shift 1;; 
+    -d) opt_d=$2;          shift 2;; #shift by 2 due to argument
+    -o) opt_o=$2;          shift 2;;
+    -H) home_dir=$2;       shift 2;;
+    -v) version;           shift 1;;
+    --) break;;
+    -*) echo "latex2png: error: no such option $1"; exit 1;;
+    *)  break;;
+esac
+done
+
+# is there an input file?
+if [ -z "$1" ] ; then
+    echo "latex2png: error: no input file specified"
+    exit 1
+fi
+
+# is it an eps file?
+if [ `echo $1 | ${GREP} -c eps` -eq 1 ] ; then
+   ext="eps"
+   if [ $opt_eps ] ; then
+        exit 1
+   fi
+fi
+
+#process 'latex2png file.tex' and 'latex2png file' equivalently
+name=`basename $1 ".$ext"`
+dir=`dirname $1`
+
+#add $home_dir to latex/dvips search path
+cd $home_dir
+TEXINPUTS=`pwd`${TEXINPSEP}
+export TEXINPUTS
+cd $dir
+    
+# does the input file exist?
+if [ ! -f "$name.$ext" ] ; then
+ echo "latex2png: error: input file $name.$ext does not exist in directory $dir"
+ exit 1
+fi
+
+if [ $ext = "tex" ] ; then
+
+    inline=`${GREP} -c INLINE_DOT_ON_BASELINE $name.$ext`
+
+    rm -f $name.dvi
+    rm -f $name.pdf
+    rm -f $name.eps
+    rm -f $name.png
+
+
+    $PDFLATEX $name > /dev/null
+    if [ -e "$name.pdf" ] ; then
+       $PDF2EPS $name.pdf $name.eps
+       if [ ! -e "$name.eps" ] ; then
+          echo "latex2png: error: eps2eps failed to translate $name.pdf to $name.eps"
+          exit 1
+       fi
+    else
+       if [ $opt_k -eq 1 ] ; then
+          echo "latex2png: pdflatex failed to translate $name.tex to $name.pdf, trying xelatex"
+       fi
+       $XELATEX $name > /dev/null
+       if [ -e "$name.pdf" ] ; then
+          $PDF2EPS $name.pdf $name.eps
+          if [ ! -e "$name.eps" ] ; then
+             echo "latex2png: error: eps2eps failed to translate $name.pdf to $name.eps"
+             exit 1
+          fi
+       else
+          if [ $opt_k -eq 1 ] ; then
+             echo "latex2png: xelatex failed to translate $name.tex to $name.dvi, trying latex"
+          fi
+          $LATEX $name > /dev/null
+          if [ -e "$name.dvi" ] ; then
+             $DVIPS -o $name.eps $name.dvi
+             if [ ! -e "$name.eps" ] ; then
+               if [ $opt_k -eq 1 ] ; then
+                  echo "latex2png: error: dvips failed to translate $name.dvi to $name.eps"
+                  exit 1
+               fi
+               exit 1
+             fi
+          else
+             echo "latex2png: error: pdflatex, xelatex and latex all failed to translate $name.tex"
+             exit 1
+          fi
+       fi
+    fi
+ 
+    if [ $opt_eps ] ; then
+        if [ $inline -eq 1 ] ; then
+           # extract the BoundingBox of the eps with adjustment stuff
+           # parameters are: llx lly urx ury
+           bbb=`${GREP} -C 0 %%BoundingBox: $name.eps`
+           llydraft=$(echo $bbb | $AWK -F" " '{print $3}' )
+           urydraft=$(echo $bbb | $AWK -F" " '{print $5}' )
+           # now create an eps without the adjustment stuff
+           $SED -e "s/\^I_g//" $name.tex >$name.tmp
+           rm $name.tex
+           rm -f $name.pdf
+           rm $name.eps
+           mv $name.tmp $name.tex
+
+           $PDFLATEX $name > /dev/null
+           if [ -e "$name.pdf" ] ; then
+              $PDF2EPS $name.pdf $name.eps
+           else
+              if [ $opt_k -eq 1 ] ; then
+                 echo "latex2png: pdflatex failed to translate $name.tex w/o adj to $name.pdf, trying xelatex"
+              fi
+              $XELATEX $name > /dev/null
+              if [ -e "$name.pdf" ] ; then
+                 $PDF2EPS $name.pdf $name.eps
+              else
+                 if [ $opt_k -eq 1 ] ; then
+                    echo "latex2png: error: xelatex failed to translate $name.tex w/o adj to $name.pdf, trying latex"
+                 fi
+                 $LATEX $name > /dev/null
+                 if [ -e "$name.dvi" ] ; then
+                    $DVIPS -o $name.eps $name.dvi
+                 else
+                    echo "latex2png: pdflatex, xelatex and latex all failed to translate $name.tex w/o adj"
+                    exit 1
+                 fi
+              fi
+           fi
+           if [ ! -e "$name.eps" ] ; then
+              echo "latex2png: error: failed to translate $name.tex to $name.eps"
+              exit 1
+           fi
+
+           # extract the BoundingBox of the eps without adjustment stuff
+           bbb=`${GREP} -C 0 %%BoundingBox: $name.eps`
+           llyfin=$(echo $bbb | $AWK -F" " '{print $3}' )
+           uryfin=$(echo $bbb | $AWK -F" " '{print $5}' )
+           # use the maximum y extension
+           if [ "$llydraft" -lt "$llyfin" ] ; then
+              $SED -b -e "/%%BoundingBox:/s/$llyfin/$llydraft/" $name.eps >$name.tmp
+              rm $name.eps
+              mv $name.tmp $name.eps
+           fi
+           if [ "$urydraft" -gt "$uryfin" ] ; then
+              $SED -b -e "/%%BoundingBox:/s/$uryfin/$urydraft/" $name.eps >$name.tmp
+              rm $name.eps
+              mv $name.tmp $name.eps
+           fi
+        fi
+        if [ $opt_k -eq 0 ] ; then
+            rm -f $name.pdf $name.dvi $name.aux $name.log $name.out
+        fi
+        exit 0
+    fi
+fi
+
+# WH: added "-type TrueColor" to ensure compatibility with older versions of Word and with IrfanView
+$CONVERT -units PixelsPerInch -density ${opt_d}x${opt_d} -trim +repage $name.eps -type TrueColor $out $name.png
+
+if [ ! -e "$name.png" ] ; then
+    echo "latex2png: error: convert (ImageMagick) failed to translate $name.eps to $name.png"
+    exit 1
+fi
+
+# -i is for images of equations that include an extra dot on the baseline
+#    this dot must be cropped out, and its height must be determined.
+#    The height is determined from $name.pbm --- the first column of the image
+#    The dot is cropped out of $name-tmp.png and any extra white space
+#    is removed to create the final image $name.png
+# 
+if [ $inline -eq 1 ] ; then
+
+	mv $name.png $name-tmp.png
+	
+	# remove fewer pixels from the left side on small images
+	width=`identify -format "%[fx:w-2]" $name-tmp.png`
+	if [ ${width} -gt ${opt_o} ] ; then
+		width=${opt_o}
+	fi
+	
+	# strip the initial dot and white space on the left
+	# we must keep the white space on the bottom so we add border on the east
+	# so that the bottom does not get trimmed away
+	$CONVERT $name-tmp.png -chop ${width}x0 -gravity East -background white -splice 1x0 -trim +repage $name.png
+
+	# extract first column of png and stick it in a bitmap
+	$CONVERT $name-tmp.png -crop 1x0 +repage $name.pbm
+
+    if [ $opt_k -eq 0 ] ; then
+        rm -f $name-tmp.ppm
+    fi
+fi
+
+if [ $opt_k -eq 0 ] ; then
+    rm -f $name-tmp.png
+    if [ $ext = "tex" ] ; then
+        rm -f $name.dvi $name.aux $name.log $name.out $name.pdf $name.eps
+    fi
+fi
+
+exit 0

@@ -1,0 +1,4 @@
+SCALE 0.158 .633  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM his5sec.model
+PARAM dna5seg.model
+END

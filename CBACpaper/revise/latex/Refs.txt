@@ -1,0 +1,1566 @@
+advertisement: compare things at compare-stuff.com
+<http://compare-stuff.com>!
+
+next <node170.html> up <thesis.html> previous <node168.html> contents
+<node1.html>
+* Next:* About this document ... <node170.html> * Up:* Computational
+Analysis of Protein <thesis.html> * Previous:* Topologies <node168.html>
+  * Contents <node1.html>*
+
+
+    Bibliography
+
+Abagyan /et al./, 1994
+    Abagyan, R., Frishman, D. & Argos, P. (1994).
+    Recognition of distantly related proteins through energy
+    calculations. /Proteins: Struct., Funct., Genet./ *19*, 132-140.
+
+Abrahams /et al./, 1994
+    Abrahams, J. P., Leslie, A. G. W., Lutter, R. & Walker, J. E. (1994).
+    Structure at 2.8Å resolution of F1-ATPase from bovine heart
+    mitochondria. /Nature/ *370*, 621-628.
+
+Altschul /et al./, 1990
+    Altschul, S. F., Gish, W., Miller, W., Myers, E. W. & Lipman, D. J.
+    (1990).
+    Basic local alignment search tool. /J. Mol. Biol./ *215*, 403-410.
+
+Anfinsen, 1973
+    Anfinsen, C. B. (1973).
+    Principles that govern the folding of protein chains. /Science/
+    *181*, 223-230.
+
+Arevalo /et al./, 1994
+    Arevalo, J. H., Hassig, C. A., Stura, E. A., Sims, M. J.,
+    Taussig, M. J. & Wilson, I. A. (1994).
+    Structural-analysis of antibody specificity -- detailed comparison
+    of 5 Fab'-steroid complexes. /J. Mol. Biol./ *241*, 663-690.
+
+Argos, 1987
+    Argos, P. (1987).
+    A sensitive procedure to compare amino-acid sequences. /J. Mol.
+    Biol./ *193*, 385-396.
+
+Argos /et al./, 1983
+    Argos, P., Hanei, M., Wilson, J. M. & Kelley, W. N. (1983).
+    A possible nucleotide-binding domain in the tertiary fold of
+    phosphoribosyltransferases. /J. Biol. Chem./ *258*, 6450- 6457.
+
+Attwood /et al./, 1997
+    Attwood, T. K., Beck, M. E., Bleasby, A. J., Degtyarenko, K.,
+    Michie, A. D. & Parrysmith, D. J. (1997).
+    Novel developments with the PRINTS protein fingerprint database.
+    /Nuc. Ac. Res./ *25*, 212-216.
+
+Aurora /et al./, 1994
+    Aurora, R., Srinivasan, R. & Rose, G. D. (1994).
+    Rules for alpha-helix termination by glycine. /Science/ * 264*,
+    1126-1130.
+
+Bailey, 1981
+    Bailey, N. T. J., (1981).
+    /Statistical Methods in Biology/.
+    Hodder and Stoughton, 2nd edition.
+
+Bairoch & Apweller, 1997
+    Bairoch, A. & Apweller, R. (1997).
+    The SWISS-PROT protein sequence data bank and its supplement TrEMBL.
+    /Nuc. Ac. Res./ *25*, 31-36.
+
+Bairoch & Boeckmann, 1991
+    Bairoch, A. & Boeckmann, B. (1991).
+    The SWISS-PROT protein-sequence data-bank. /Nuc. Ac. Res./ * 19*,
+    2247-2248.
+
+Bairoch /et al./, 1997
+    Bairoch, A., Bucher, P. & Hofmann, K. (1997).
+    The PROSITE database, its status in 1997. /Nuc. Ac. Res./ * 25*,
+    217-221.
+
+Bamborough & Cohen, 1996
+    Bamborough, P. & Cohen, F. E. (1996).
+    Modeling protein-ligand complexes. /Curr. Opin. Struct. Biol./ *6*,
+    236-241.
+
+Barker & Dayhoff, 1972
+    Barker, W. C. & Dayhoff, M. O., (1972).
+    Detecting distant relationships: Computer methods and results.
+    In /Atlas of Protein Sequence and Structure/ (Dayhoff, M. O., ed.),
+    volume 5. National Biomedical Research Foundation, Sliver Spring,
+    Maryland.
+
+Barlow & Richards, 1995
+    Barlow, T. W. & Richards, W. G. (1995).
+    A novel representation of protein-structure. /J. Mol. Graph./ *13*,
+    373.
+
+Barton, 1990
+    Barton, G. J. (1990).
+    Protein multiple sequence alignment and flexible pattern- matching.
+    /Meth. Enzymol./ *183*, 403-428.
+
+Barton, 1995
+    Barton, G. J. (1995).
+    Protein secondary structure prediction. /Curr. Opin. Struct. Biol./
+    *5*, 372-376.
+
+Barton & Sternberg, 1987
+    Barton, G. J. & Sternberg, M. J. E. (1987).
+    Evaluation and improvements in the automatic alignment of protein
+    sequences. /Protein Eng./ *1*, 89-94.
+
+Baumann /et al./, 1993
+    Baumann, U., Wu, S., Flaherty, K. M. & McKay, D. B. (1993).
+    3-dimensional structure of the alkaline protease of /Pseudomonas
+    aeruginosa/ -- a 2-domain protein with a calcium-binding
+    parallel-beta roll motif. /EMBO J./ *12*, 3357-3364.
+
+Benner /et al./, 1994
+    Benner, S. A., Badcoe, I., Cohen, M. A. & Gerloff, D. L. (1994).
+    Bona-fide prediction of aspects of protein conformation -- assigning
+    interior and surface residues from patterns of variation and
+    conservation in homologous protein sequences. /J. Mol. Biol./ *235*,
+    926-958.
+
+Benner & Gerloff, 1991
+    Benner, S. A. & Gerloff, D. (1991).
+    Patterns of divergence in homologous proteins as indicators of
+    secondary and tertiary structure -- a prediction of the structure of
+    the catalytic domain of protein-kinases. /Adv. Enz. Reg./ *31*,
+    121-181.
+
+Bernstein /et al./, 1977
+    Bernstein, F. C., Koetzle, T. F., Williams, G. J. B., Meyer, E. F.,
+    Brice, M. D., Rodgers, J. R., Kennard, O., Shimanouchi, T. &
+    Tasumi, M. (1977).
+    The Protein Data Bank: A computer-based archival file for
+    macromolecular structures. /J. Mol. Biol./ *112*, 535-542.
+
+Blundell & Johnson, 1993
+    Blundell, T. L. & Johnson, M. S. (1993).
+    Catching a common fold. /Prot. Sci./ *2*, 877-883.
+
+Boberg /et al./, 1995
+    Boberg, J., Salakoski, T. & Vihinen, M. (1995).
+    Accurate prediction of protein secondary structural class with fuzzy
+    structural vectors. /Protein Eng./ *8*, 505-512.
+
+Bowie /et al./, 1990
+    Bowie, J. U., Clarke, N. D., Pabo, C. O. & Sauer, R. T. (1990).
+    Identification of protein folds -- matching hydrophobicity patterns
+    of sequence sets with solvent accessibility patterns of known
+    structures. /Proteins: Struct., Funct., Genet./ *7*, 257-264.
+
+Bowie /et al./, 1991
+    Bowie, J. U., Luthy, R. & Eisenberg, D. (1991).
+    A method to identify protein sequences that fold into a known
+    3-dimensional structure. /Science/ *253*, 164-170.
+
+Branden & Tooze, 1991
+    Branden, C. & Tooze, J., (1991).
+    /Introduction to Protein Structure/.
+    Garland Publishing, Inc., New York.
+
+Brenner, 1996
+    Brenner, S. E., (1996).
+    /Molecular propinquity: evolutionary and structural relationships of
+    proteins./
+    PhD thesis, University of Cambridge.
+
+Brinkman /et al./, 1990
+    Brinkman, K., Termaat, R., Berden, J. H. M. & Smeenk, R. J. T. (1990).
+    Anti-DNA antibodies and lupus nephritis: The complexity of
+    cross-reactivity. /Immun. Today/ *11*, 232-234.
+
+Brunger /et al./, 1991
+    Brunger, A. T., Leahy, D. J., Hynes, T. R. & Fox, R. O. (1991).
+    2.9 Å-resolution structure of an anti-dinitrophenyl-spin-label
+    monoclonal-antibody Fab fragment with bound hapten. /J. Mol. Biol./
+    *221*, 239-256.
+
+Bruns & Karplus, 1995
+    Bruns, C. M. & Karplus, P. A. (1995).
+    Refined crystal-structure of spinach ferredoxin reductase at 1.7Å
+    resolution -- oxidized, reduced and 2'-phospho-5'- AMP bound-states.
+    /J. Mol. Biol./ *247*, 125-145.
+
+Bryant & Altschul, 1995
+    Bryant, S. H. & Altschul, S. F. (1995).
+    Statistics of sequence-structure threading. /Curr. Opin. Struct.
+    Biol./ *5*, 236-244.
+
+Bull & Breese, 1974
+    Bull, H. & Breese, K. (1974).
+    Surface tension of amino acid solutions: A hydrophobicity scale of
+    the amino acid residues. /Arch. Biochem. Biophys./ *161*, 665-670.
+
+Bult /et al./, 1996
+    Bult, C. J., White, O., Olsen, G. J., Zhou, L. X.,
+    Fleischmann, R. D., Sutton, G. G., Blake, J. A., Fitzgerald, L. M.,
+    Clayton, R. A., Gocayne, J. D., Kerlavage, A. R., Dougherty, B. A.,
+    Tomb, J. F., Adams, M. D., Reich, C. I., Overbeek, R.,
+    Kirkness, E. F., Weinstock, K. G., Merrick, J. M., Glodek, A.,
+    Scott, J. L., Geoghagen, N. S. M., Weidman, J. F., Fuhrmann, J. L.,
+    Nguyen, D., Utterback, T. R., Kelley, J. M., Peterson, J. D.,
+    Sadow, P. W., Hanna, M. C., Cotton, M. D., Roberts, K. M.,
+    Hurst, M. A., Kaine, B. P., Borodovsky, M., Klenk, H. P.,
+    Fraser, C. M., Smith, H. O., Woese, C. R. & Venter, J. C. (1996).
+    Complete genome sequence of the methanogenic archaeon,
+    /Methanococcus jannaschii/. /Science/ *273*, 1058-1073.
+
+Cabral /et al./, 1996
+    Cabral, J. H. M., Petosa, C., Sutcliffe, M. J., Raza, S., Byron, O.,
+    Poy, F., Marfatia, S. M., Chishti, A. H. & Liddington, R. C. (1996).
+    Crystal-structure of a PDZ domain. /Nature/ *382*, 649-652.
+
+Carrington & Boothroyd, 1996
+    Carrington, M. & Boothroyd, J. (1996).
+    Implications of conserved structural motifs in disparate trypanosome
+    surface-proteins. /Mol. Biochem. Parasitol./ *81*, 119-126.
+
+Cedano /et al./, 1997
+    Cedano, J., Aloy, P., Perezpons, J. A. & Querol, E. (1997).
+    Relation between amino acid composition and cellular location of
+    proteins. /J. Mol. Biol./ *266*, 594-600.
+
+Chester & Hawkins, 1995
+    Chester, K. A. & Hawkins, R. E. (1995).
+    Clinical issues in antibody design. /Trends Biotechnol./ * 13*,
+    294-300.
+
+Chothia, 1976
+    Chothia, C. (1976).
+    The nature of the accessible and buried surfaces in proteins. /J.
+    Mol. Biol./ *105*, 1-14.
+
+Chothia, 1992
+    Chothia, C. (1992).
+    Proteins -- 1000 families for the molecular biologist. /Nature/
+    *357*, 543-544.
+
+Chothia & Janin, 1975
+    Chothia, C. & Janin, J. (1975).
+    Principles of protein-protein recognition. /Nature/ *256*, 705-708.
+
+Chothia & Lesk, 1986
+    Chothia, C. & Lesk, A. M. (1986).
+    The relation between the divergence of sequence and structure in
+    proteins. /EMBO J./ *5*, 823-826.
+
+Chothia & Lesk, 1987
+    Chothia, C. & Lesk, A. M. (1987).
+    Canonical structures for the hypervariable regions of
+    immunoglobulins. /J. Mol. Biol./ *196*, 901-917.
+
+Chothia /et al./, 1986
+    Chothia, C., Lesk, A. M., Levitt, M., Amit, A. G., Mariuzza, R. A.,
+    Phillips, S. E. V. & Poljak, R. J. (1986).
+    The predicted structure of immunoglobulin D1.3 and its comparison
+    with the crystal structure. /Science/ *233*, 755-758.
+
+Chothia /et al./, 1989
+    Chothia, C., Lesk, A. M., Tramontano, A., Levitt, M.,
+    Smith-Gill, S. J., Air, G., Sheriff, S., Padlan, E. A.,
+    Davies, D. R., Tulip, W. R., Colman, P. M., Alzri, P. M. &
+    Poljak, R. J. (1989).
+    Conformations of immunoglobulin hypervariable regions. /Nature/
+    *342*, 877-883.
+
+Chou & Zhang, 1994
+    Chou, K. C. & Zhang, C. T. (1994).
+    Predicting protein-folding types by distance functions that make
+    allowances for amino-acid interactions. /J. Biol. Chem./ *269*,
+    22014-22020.
+
+Chou & Zhang, 1995
+    Chou, K. C. & Zhang, C. T. (1995).
+    Prediction of protein structural classes. /Crit. Rev. Biochem. Mol.
+    Biol./ *30*, 275-349.
+
+Chou, 1989
+    Chou, P. Y., (1989).
+    Prediction of protein structural classes from amino acid composition.
+    In /Prediction of protein structures and the principles of protein
+    conformation/ (Fasman, G. D., ed.), pp. 549-586. Plenum Press.
+
+Chou & Fasman, 1974
+    Chou, P. Y. & Fasman, G. D. (1974).
+    Prediction of protein conformation. /Biochemistry/ *13*, 222-245.
+
+Churchill /et al./, 1994
+    Churchill, M. E. A., Stura, E. A., Pinilla, C., Appel, J. R.,
+    Houghten, R. A., Kono, D. H., Balderas, R. S., Fieser, G. G.,
+    Schulzegahmen, U. & Wilson, I. A. (1994).
+    Crystal-structure of a peptide complex of antiinfluenza peptide
+    antibody-Fab-26/9 -- comparison of 2 different antibodies bound to
+    the same peptide antigen. /J. Mol. Biol./ *241*, 534-556.
+
+Connolly, 1983
+    Connolly, M. L. (1983).
+    Analytical molecular surface calculation. /J. Appl. Cryst./ * 16*,
+    548-558.
+
+Connolly, 1996
+    Connolly, M. L. (1996).
+    Molecular surfaces: A review. /Network Science/ *2*,
+    http://www.awod.com/netsci/Science/Compchem/feature14.html.
+
+Cook /et al./, 1992
+    Cook, W. J., Jeffrey, L. C., Sullivan, M. L. & Vierstra, R. D. (1992).
+    3-dimensional structure of a ubiquitin-conjugating enzyme (E2). /J.
+    Biol. Chem./ *267*, 15116-15121.
+
+Cowan /et al./, 1992
+    Cowan, S. W., Schirmer, T., Rummel, G., Steiert, M., Ghosh, R.,
+    Pauptit, R. A., Jansonius, J. N. & Rosenbusch, J. P. (1992).
+    Crystal-structures explain functional-properties of 2 /Escherichia
+    coli/ porins. /Nature/ *358*, 727-733.
+
+Dayhoff /et al./, 1978
+    Dayhoff, M. O., Schwartz, R. M. & Orcutt, B. C., (1978).
+    A model of evolutionary change in proteins.
+    In /Atlas of Protein Sequence and Structure/ (Dayhoff, M. O., ed.),
+    volume 5, Suppl. 3, pp. 345-352. National Biomedical Research
+    Foundation, Silver Spring, Washington D.C.
+
+Defay & Cohen, 1996
+    Defay, T. R. & Cohen, F. E. (1996).
+    Multiple sequence information for threading algorithms. /J. Mol.
+    Biol./ *262*, 314-323.
+
+Deisenhofer /et al./, 1985
+    Deisenhofer, J., Epp, O., Miki, K., Huber, R. & Michel, H. (1985).
+    Structure of the protein subunits in the photosynthetic reaction
+    center of /Rhodopseudomonas viridis/ at 3Å resolution. / Nature/
+    *318*, 618-624.
+
+Delaney, 1992
+    Delaney, J. S. (1992).
+    Finding and filling protein cavities using cellular logic
+    operations. /J. Mol. Graph./ *10*, 174.
+
+Diederichs /et al./, 1991
+    Diederichs, K., Boone, T. & Karplus, P. A. (1991).
+    Novel fold and putative receptor-binding site of
+    granulocyte-macrophage colony-stimulating factor. /Science/ *254*,
+    1779-1782.
+
+Dill, 1990
+    Dill, K. A. (1990).
+    Dominant forces in protein folding. /Biochemistry/ *29*, 7133-7155.
+
+Dill /et al./, 1995
+    Dill, K. A., Bromberg, S., Yue, K. Z., Fiebig, K. M., Yee, D. P.,
+    Thomas, P. D. & Chan, H. S. (1995).
+    Principles of protein-folding -- a perspective from simple exact
+    models. /Prot. Sci./ *4*, 561-602.
+
+Donnelly /et al./, 1994
+    Donnelly, D., Overington, J. P. & Blundell, T. L. (1994).
+    The prediction and orientation of alpha-helices from sequence
+    alignments -- the combined use of environment-dependent substitution
+    tables, Fourier-transform methods and helix capping rules. /Protein
+    Eng./ * 7*, 645-653.
+
+Doolittle, 1981
+    Doolittle, R. F. (1981).
+    Similar amino-acid sequences -- chance or common ancestry? /
+    Science/ *214*, 149-159.
+
+Dubchak /et al./, 1995
+    Dubchak, I., Muchnik, I., Holbrook, S. R. & Kim, S. H. (1995).
+    Prediction of protein-folding class using global description of
+    amino-acid-sequence. /Proc. Natl. Acad. Sci. USA/ *92*, 8700-8704.
+
+Dunbrack /et al./, 1997
+    Dunbrack, R. L., Gerloff, D. L., Bower, M., Chen, X. W.,
+    Lichtarge, O. & Cohen, F. E. (1997).
+    Meeting review: the second meeting on the critical assessment of
+    techniques for protein structure prediction (CASP2), Asilomar,
+    California, December 13-16, 1996. /Folding & Design/ *2*, R27-R42.
+
+Durbin & Mitchison, 1990
+    Durbin, R. & Mitchison, G. (1990).
+    A dimension reduction framework for understanding cortical maps. /
+    Nature/ *343*, 644-647.
+
+Eddy, 1996
+    Eddy, S. R. (1996).
+    Hidden Markov-models. /Curr. Opin. Struct. Biol./ *6*, 361-365.
+
+Eisenberg & McLachlan, 1986
+    Eisenberg, D. & McLachlan, A. D. (1986).
+    Solvation energy in protein folding and binding. /Nature/ * 319*,
+    199-203.
+
+Eisenhaber /et al./, 1996b
+    Eisenhaber, F., Frommel, C. & Argos, P. (1996b).
+    Prediction of secondary structural content of proteins from their
+    amino-acid-composition alone. (2) The paradox with secondary
+    structural class. /Proteins: Struct., Funct., Genet./ *25*, 169-179.
+
+Eisenhaber /et al./, 1996a
+    Eisenhaber, F., Imperiale, F., Argos, P. & Frommel, C. (1996a).
+    Prediction of secondary structural content of proteins from their
+    amino-acid-composition alone. (1) New analytic vector decomposition
+    methods. /Proteins: Struct., Funct., Genet./ *25*, 157-168.
+
+Elmasry & Fersht, 1994
+    Elmasry, N. F. & Fersht, A. R. (1994).
+    Mutational analysis of the N-capping box of the alpha-helix of
+    chymotrypsin inhibitor-2. /Protein Eng./ *7*, 777-782.
+
+Falicov & Cohen, 1996
+    Falicov, A. & Cohen, F. E. (1996).
+    A surface of minimum area metric for the structural comparison of
+    proteins. /J. Mol. Biol./ *258*, 871-892.
+
+Farber, 1993
+    Farber, G. K. (1993).
+    An alpha/beta-barrel full of evolutionary trouble. /Curr. Opin.
+    Struct. Biol./ *3*, 409-412.
+
+Ferran /et al./, 1994
+    Ferran, E. A., Pflugfelder, B. & Ferrara, P. (1994).
+    Self-organized neural maps of human protein sequences. /Prot. Sci./
+    *3*, 507-521.
+
+Fersht, 1984
+    Fersht, A. R. (1984).
+    Basis of biological specificity. /Trends Biochem. Sci./ *9*, 145-147.
+
+Fersht, 1987
+    Fersht, A. R. (1987).
+    The hydrogen-bond in molecular recognition. /Trends Biochem. Sci./
+    *12*, 301-304.
+
+Fischer & Eisenberg, 1996
+    Fischer, D. & Eisenberg, D. (1996).
+    Protein fold recognition using sequence-derived predictions. / Prot.
+    Sci./ *5*, 947-955.
+
+Fischer /et al./, 1996
+    Fischer, D., Elofsson, A., Rice, D. & Eisenberg, D., (1996).
+    Assessing the performance of fold recognition methods by means of a
+    comprehensive benchmark.
+    In /Pacific Symposium on Biocomputing, Hawaii./, pp. 300-318.
+
+Fiser /et al./, 1996
+    Fiser, A., Simon, I. & Barton, G. J. (1996).
+    Conservation of amino-acids in multiple alignments -- aspartic acid
+    has unexpected conservation. /FEBS Lett./ *397*, 225-229.
+
+Fleischmann /et al./, 1995
+    Fleischmann, R. D., Adams, M. D., White, O., Clayton, R. A.,
+    Kirkness, E. F., Kerlavage, A. R., Bult, C. J., Tomb, J. F.,
+    Dougherty, B. A., Merrick, J. M., McKenney, K., Sutton, G.,
+    Fitzhugh, W., Fields, C., Gocayne, J. D., Scott, J., Shirley, R.,
+    Liu, L. I., Glodek, A., Kelley, J. M., Weidman, J. F.,
+    Phillips, C. A., Spriggs, T., Hedblom, E., Cotton, M. D.,
+    Utterback, T. R., Hanna, M. C., Nguyen, D. T., Saudek, D. M.,
+    Brandon, R. C., Fine, L. D., Fritchman, J. L., Fuhrmann, J. L.,
+    Geoghagen, N. S. M., Gnehm, C. L., McDonald, L. A., Small, K. V.,
+    Fraser, C. M., Smith, H. O. & Venter, J. C. (1995).
+    Whole-genome random sequencing and assembly of /Haemophilus
+    influenzae/ rd. /Science/ *269*, 496-512.
+
+Flockner /et al./, 1995
+    Flockner, H., Braxenthaler, M., Lackner, P., Jaritz, M., Ortner, M.
+    & Sippl, M. J. (1995).
+    Progress in fold recognition. /Proteins: Struct., Funct., Genet./
+    *23*, 376-386.
+
+Flores /et al./, 1994
+    Flores, T. P., Moss, D. S. & Thornton, J. M. (1994).
+    An algorithm for automatically generating protein topology cartoons.
+    /Protein Eng./ *7*, 31-37.
+
+Fraser /et al./, 1995
+    Fraser, C. M., Gocayne, J. D., White, O., Adams, M. D.,
+    Clayton, R. A., Fleischmann, R. D., Bult, C. J., Kerlavage, A. R.,
+    Sutton, G., Kelley, J. M., Fritchman, J. L., Weidman, J. F.,
+    Small, K. V., Sandusky, M., Fuhrmann, J., Nguyen, D.,
+    Utterback, T. R., Saudek, D. M., Phillips, C. A., Merrick, J. M.,
+    Tomb, J. F., Dougherty, B. A., Bott, K. F., Hu, P. C.,
+    Lucier, T. S., Peterson, S. N., Smith, H. O., Hutchison, C. A. &
+    Venter, J. C. (1995).
+    The minimal gene complement of /Mycoplasma genitalium/. / Science/
+    *270*, 397-403.
+
+Freedman, 1995
+    Freedman, R. B. (1995).
+    The formation of protein disulfide bonds. /Curr. Opin. Struct.
+    Biol./ *5*, 85-91.
+
+Frishman & Argos, 1996
+    Frishman, D. & Argos, P. (1996).
+    Incorporation of non-local interactions in protein secondary
+    structure prediction from the amino-acid sequence. /Protein
+    Engineering/ *9*, 133-142.
+
+Frishman & Argos, 1997a
+    Frishman, D. & Argos, P. (1997a).
+    The future of protein secondary structure prediction accuracy. /
+    Folding & Design/ *2*, 159-162.
+
+Frishman & Argos, 1997b
+    Frishman, D. & Argos, P. (1997b).
+    Seventy-five percent accuracy in protein secondary structure
+    prediction. /Proteins: Struct., Funct., Genet./ *27*, 329-335.
+
+Garnier /et al./, 1978
+    Garnier, J., Osguthorpe, D. J. & Robson, B. (1978).
+    Analysis of the accuracy and implications of simple methods for
+    predicting the secondary structure of globular proteins. /J. Mol.
+    Biol./ *120*, 97-120.
+
+Gerstein, 1992
+    Gerstein, M. (1992).
+    A resolution-sensitive procedure for comparing protein surfaces and
+    its application to the comparison of antigen combining sites. /Acta
+    Cryst./ *A48*, 271-276.
+
+Gibrat /et al./, 1987
+    Gibrat, J. F., Garnier, J. & Robson, B. (1987).
+    Further developments of protein secondary structure prediction using
+    information-theory -- new parameters and consideration of residue
+    pairs. /J. Mol. Biol./ *198*, 425-443.
+
+Gobel /et al./, 1994
+    Gobel, U., Sander, C., Schneider, R. & Valencia, A. (1994).
+    Correlated mutations and residue contacts in proteins. /Proteins:
+    Struct., Funct., Genet./ *18*, 309-317.
+
+Godzik /et al./, 1992
+    Godzik, A., Kolinski, A. & Skolnick, J. (1992).
+    Topology fingerprint approach to the inverse protein folding
+    problem. /J. Mol. Biol./ *227*, 227-238.
+
+Gribskov /et al./, 1990
+    Gribskov, M., Luthy, R. & Eisenberg, D. (1990).
+    Profile analysis. /Meth. Enzymol./ *183*, 146-159.
+
+Gribskov /et al./, 1987
+    Gribskov, M., McLachlan, A. D. & Eisenberg, D. (1987).
+    Profile analysis -- detection of distantly related proteins. / Proc.
+    Natl. Acad. Sci. USA/ *84*, 4355-4358.
+
+Han & Baker, 1995
+    Han, K. F. & Baker, D. (1995).
+    Recurring local sequence motifs in proteins. /J. Mol. Biol./ * 251*,
+    176-187.
+
+Han & Baker, 1996
+    Han, K. F. & Baker, D. (1996).
+    Global properties of the mapping between local amino-acid sequence
+    and local-structure in proteins. /Proc. Natl. Acad. Sci. USA/ *93*,
+    5814-5818.
+
+Hanke /et al./, 1996
+    Hanke, J., Beckmann, G., Bork, P. & Reich, J. G. (1996).
+    Self-organizing hierarchical networks for pattern-recognition in
+    protein-sequence. /Prot. Sci./ *5*, 72-82.
+
+Hao /et al./, 1992
+    Hao, M. H., Rackovsky, S., Liwo, A., Pincus, M. R. & Scheraga, H. A.
+    (1992).
+    Effects of compact volume and chain stiffness on the conformations
+    of native proteins. /Proc. Natl. Acad. Sci. USA/ *89*, 6614-6618.
+
+Hartl, 1996
+    Hartl, F. U. (1996).
+    Molecular chaperones in cellular protein-folding. /Nature/ * 381*,
+    571-580.
+
+Hendlich /et al./, 1990
+    Hendlich, M., Lackner, P., Weitckus, S., Floeckner, H.,
+    Froschauer, R., Gottsbacher, K., Casari, G. & Sippl, M. J. (1990).
+    Identification of native protein folds amongst a large number of
+    incorrect models -- the calculation of low-energy conformations from
+    potentials of mean force. /J. Mol. Biol./ *216*, 167-180.
+
+Henikoff, 1996
+    Henikoff, S. (1996).
+    Scores for sequence searches and alignments. /Curr. Opin. Struct.
+    Biol./ *6*, 353-360.
+
+Henikoff & Henikoff, 1992
+    Henikoff, S. & Henikoff, J. G. (1992).
+    Amino-acid substitution matrices from protein blocks. /Proc. Natl.
+    Acad. Sci. USA/ *89*, 10915-10919.
+
+Henikoff & Henikoff, 1994
+    Henikoff, S. & Henikoff, J. G. (1994).
+    Protein family classification based on searching a database of
+    blocks. /Genomics/ *19*, 97-107.
+
+Henikoff & Henikoff, 1997
+    Henikoff, S. & Henikoff, J. G. (1997).
+    Embedding strategies for effective use of information from multiple
+    sequence alignments. /Prot. Sci./ *6*, 698-705.
+
+Hennig /et al./, 1995
+    Hennig, M., Darimont, B., Sterner, R., Kirschner, K. &
+    Jansonius, J. N. (1995).
+    2.0Å structure of indole-3-glycerol phosphate synthase from the
+    hyperthermophile /Sulfolobus solfataricus/ -- possible determinants
+    of protein stability. /Structure/ *3*, 1295-1306.
+
+Herron /et al./, 1991
+    Herron, J. N., He, X. M., Ballard, D. W., Blier, P. R., Pace, P. E.,
+    Bothwell, A. L. M., Voss, E. W. & Edmundson, A. B. (1991).
+    An auto-antibody to single-stranded-DNA -- comparison of the
+    3-dimensional structures of the unliganded Fab and a deoxynucleotide
+    Fab complex. /Proteins: Struct., Funct., Genet./ *11*, 159-175.
+
+Hilvert, 1994
+    Hilvert, D. (1994).
+    Catalytic antibodies. /Curr. Opin. Struct. Biol./ *4*, 612-617.
+
+Hobohm & Sander, 1995
+    Hobohm, U. & Sander, C. (1995).
+    A sequence property approach to searching protein databases. /J.
+    Mol. Biol./ *251*, 390-399.
+
+Holm & Sander, 1993
+    Holm, L. & Sander, C. (1993).
+    Protein-structure comparison by alignment of distance matrices. / J.
+    Mol. Biol./ *233*, 123-138.
+
+Holm & Sander, 1994
+    Holm, L. & Sander, C. (1994).
+    The FSSP database of structurally aligned protein fold families.
+    /Nuc. Ac. Res./ *22*, 3600-3609.
+
+Hubbard & Argos, 1994
+    Hubbard, S. J. & Argos, P. (1994).
+    Cavities and packing at protein interfaces. /Prot. Sci./ *3*,
+    2194-2206.
+
+Hubbard & Park, 1995
+    Hubbard, T. J. & Park, J. (1995).
+    Fold recognition and /ab initio/ structure predictions using hidden
+    Markov-models and beta-strand pair potentials. /Proteins: Struct.,
+    Funct., Genet./ *23*, 398-402.
+
+Hubbard, 1997
+    Hubbard, T. J. P. (1997).
+    New horizons in sequence analysis. /Curr. Opin. Struct. Biol./ *7*,
+    190-193.
+
+Hutchinson & Thornton, 1990
+    Hutchinson, E. G. & Thornton, J. M. (1990).
+    HERA -- a program to draw schematic diagrams of protein secondary
+    structures. /Proteins: Struct., Funct., Genet./ *8*, 203-212.
+
+Hutchinson & Thornton, 1994
+    Hutchinson, E. G. & Thornton, J. M. (1994).
+    A revised set of potentials for beta-turn formation in proteins. /
+    Prot. Sci./ *3*, 2207-2216.
+
+Islam /et al./, 1995
+    Islam, S. A., Luo, J. C. & Sternberg, M. J. E. (1995).
+    Identification and analysis of domains in proteins. /Protein Eng./
+    *8*, 513-525.
+
+Jeffrey /et al./, 1995
+    Jeffrey, P. D., Schildbach, J. F., Chang, C. Y. Y., Kussie, P. H.,
+    Margolies, M. N. & Sheriff, S. (1995).
+    Structure and specificity of the antidigoxin antibody-40-50. /J.
+    Mol. Biol./ *248*, 344-360.
+
+Jimenez /et al./, 1994
+    Jimenez, M. A., Munoz, V., Rico, M. & Serrano, L. (1994).
+    Helix stop and start signals in peptides and proteins -- the capping
+    box does not necessarily prevent helix elongation. /J. Mol. Biol./ *
+    242*, 487-496.
+
+Johnson & Overington, 1993
+    Johnson, M. S. & Overington, J. P. (1993).
+    A structural basis for sequence comparisons -- an evaluation of
+    scoring methodologies. /J. Mol. Biol./ *233*, 716-738.
+
+Johnson /et al./, 1990
+    Johnson, M. S., Sali, A. & Blundell, T. L. (1990).
+    Phylogenetic-relationships from 3-dimensional protein structures.
+    /Meth. Enzymol./ *183*, 670-690.
+
+Jones /et al./, 1992
+    Jones, D. T., Taylor, W. R. & Thornton, J. M. (1992).
+    A new approach to protein fold recognition. /Nature/ *358*, 86-89.
+
+Jones & Thornton, 1996
+    Jones, D. T. & Thornton, J. M. (1996).
+    Potential-energy functions for threading. /Curr. Opin. Struct.
+    Biol./ *6*, 210-216.
+
+Jones & Thornton, 1995
+    Jones, S. & Thornton, J. M. (1995).
+    Protein-protein interactions -- a review of protein dimer
+    structures. /Progr. Biophy. molec. Biol./ *63*, 31-65.
+
+Jones & Thornton, 1996
+    Jones, S. & Thornton, J. M. (1996).
+    Principles of protein-protein interactions. /Proc. Natl. Acad. Sci.
+    USA/ *93*, 13-20.
+
+Kabsch & Sander, 1983
+    Kabsch, W. & Sander, C. (1983).
+    Dictionary of protein secondary structure -- pattern-recognition of
+    hydrogen-bonded and geometrical features. /Biopolymers/ *22*,
+    2577-2637.
+
+Kabsch & Sander, 1984
+    Kabsch, W. & Sander, C. (1984).
+    On the use of sequence homologies to predict protein-structure --
+    identical pentapeptides can have completely different conformations.
+    / Proc. Natl. Acad. Sci. USA/ *81*, 1075-1078.
+
+Kendrew /et al./, 1958
+    Kendrew, J. C. et al. (1958).
+    A three-dimensional model of the myoglobin molecule obtained by
+    X-ray analysis. /Nature/ *181*, 662-666.
+
+Kendrew /et al./, 1960
+    Kendrew, J. C. et al. (1960).
+    Structure of myoglobin. /Nature/ *185*, 422-427.
+
+Killard /et al./, 1995
+    Killard, A. J., Deasy, B., O'Kennedy, R. & Smyth, M. R. (1995).
+    Antibodies -- production, functions and applications in biosensors.
+    /Trends Anal. Chem./ *14*, 257-266.
+
+King & Sternberg, 1996
+    King, R. D. & Sternberg, M. J. E. (1996).
+    Identification and application of the concepts important for
+    accurate and reliable protein secondary structure prediction. /Prot.
+    Sci./ * 5*, 2298-2310.
+
+Klein & Schulz, 1991
+    Klein, C. & Schulz, G. E. (1991).
+    Structure of cyclodextrin glycosyltransferase refined at 2.0-Å
+    resolution. /J. Mol. Biol./ *217*, 737-750.
+
+Klein & Delisi, 1986a
+    Klein, P. & Delisi, C. (1986a).
+    Prediction of protein structural class from the amino-acid sequence.
+    /Biopolymers/ *25*, 1659-1672.
+
+Klein & Delisi, 1986b
+    Klein, P. & Delisi, C. (1986b).
+    Prediction of protein structural class from the amino-acid sequence.
+    /Biopolymers/ *25*, 1659-1672.
+
+Kohonen, 1990
+    Kohonen, T. (1990).
+    The self-organizing map. /Proc. IEEE/ *78*, 1464-1480.
+
+Kohonen, 1993
+    Kohonen, T. (1993).
+    Physiological interpretation of the self-organizing map algorithm.
+    /Neur. Networks/ *6*, 895-905.
+
+Kohonen & Makisara, 1989
+    Kohonen, T. & Makisara, K. (1989).
+    The self-organizing feature maps. /Phys. Scripta/ *39*, 168-172.
+
+Korndorfer /et al./, 1995
+    Korndorfer, I., Steipe, B., Huber, R., Tomschy, A. & Jaenicke, R.
+    (1995).
+    The crystal-structure of holo-glyceraldehyde-3-phosphate
+    dehydrogenase from the hyperthermophilic bacterium /Thermotoga
+    maritima/ at 2.5Å resolution. /J. Mol. Biol./ *246*, 511-521.
+
+Kraulis, 1991
+    Kraulis, P. J. (1991).
+    Molscript -- a program to produce both detailed and schematic plots
+    of protein structures. /J. Appl. Cryst./ *24*, 946-950.
+
+Krogh /et al./, 1994
+    Krogh, A., Brown, M., Mian, I. S., Sjolander, K. & Haussler, D. (1994).
+    Hidden Markov-models in computational biology -- applications to
+    protein modeling. /J. Mol. Biol./ *235*, 1501-1531.
+
+Kubota /et al./, 1981
+    Kubota, Y., Takahashi, S., Nishikawa, K. & Ooi, T. (1981).
+    Homology in protein sequences expressed by correlation-
+    coefficients. /J. Theor. Biol./ *91*, 347-361.
+
+Kuhn /et al./, 1992
+    Kuhn, L. A., Siani, M. A., Pique, M. E., Fisher, C. L.,
+    Getzoff, E. D. & Tainer, J. A. (1992).
+    The interdependence of protein surface topography and bound water
+    molecules revealed by surface accessibility and fractal density
+    measures. /J. Mol. Biol./ *228*, 13-22.
+
+Kyte & Doolittle, 1982
+    Kyte, J. & Doolittle, R. F. (1982).
+    A simple method for displaying the hydropathic character of a
+    protein. /J. Mol. Biol./ *157*, 105-132.
+
+Ladunga & Smith, 1997
+    Ladunga, I. & Smith, R. F. (1997).
+    Amino acid substitutions preserve protein folding by conserving
+    steric and hydrophobicity properties. /Protein Eng./ *10*, 187-196.
+
+Laskowski /et al./, 1996
+    Laskowski, R. A., Luscombe, N. M., Swindells, M. B. &
+    Thornton, J. M. (1996).
+    Protein clefts in molecular recognition and function. /Prot. Sci./
+    *5*, 2438-2452.
+
+Lathrop, 1994
+    Lathrop, R. H. (1994).
+    The protein threading problem with sequence amino-acid interaction
+    preferences is NP-complete. /Protein Eng./ *7*, 1059-1068.
+
+Lathrop & Smith, 1996
+    Lathrop, R. H. & Smith, T. F. (1996).
+    Global optimum protein threading with gapped alignment and empirical
+    pair score functions. /J. Mol. Biol./ *255*, 641-665.
+
+Lattman, 1995
+    Lattman, E. E. (1995).
+    Protein-structure prediction -- a special issue. /Proteins: Struct.,
+    Funct., Genet./ *23*, 1.
+
+Lawrence & Colman, 1993
+    Lawrence, M. C. & Colman, P. M. (1993).
+    Shape complementarity at protein/protein interfaces. /J. Mol. Biol./
+    *234*, 946-950.
+
+Lee & Richards, 1971
+    Lee, B. K. & Richards, F. M. (1971).
+    The interpretation of protein structures: Estimation of static
+    accessibility. /J. Mol. Biol./ *55*, 379-400.
+
+Lemer /et al./, 1995
+    Lemer, C. M. R., Rooman, M. J. & Wodak, S. J. (1995).
+    Protein-structure prediction by threading methods -- evaluation of
+    current techniques. /Proteins: Struct., Funct., Genet./ *23*, 337-355.
+
+Lescar /et al./, 1995
+    Lescar, J., Pellegrini, M., Souchon, H., Tello, D., Poljak, R. J.,
+    Peterson, N., Greene, M. & Alzari, P. M. (1995).
+    Crystal-structure of a cross-reaction complex between Fab F9.13.7
+    and guinea-fowl lysozyme. /J. Biol. Chem./ *270*, 18067-18076.
+
+Levinthal, 1968
+    Levinthal, C. (1968).
+    Are there pathways for protein folding? /J. Chem. Phys./ * 65*, 44-45.
+
+Levitt & Chothia, 1976
+    Levitt, M. & Chothia, C. (1976).
+    Structural patterns in globular proteins. /Nature/ *261*, 552-557.
+
+Lim, 1974a
+    Lim, V. I. (1974a).
+    Structural principles of the globular organisation of protein
+    chains. a stereochemical theory of globular protein secondary
+    structure. /J. Mol. Biol./ *88*, 857-872.
+
+Lim, 1974b
+    Lim, V. I. (1974b).
+    Algorithms for the prediction of $\alpha $-helical and $\beta
+    $-structural regions in globular proteins. /J. Mol. Biol./ * 88*,
+    873-894.
+
+Love /et al./, 1993
+    Love, R. A., Villafranca, J. E., Aust, R. M., Nakamura, K. K.,
+    Jue, R. A., Major, J. G., Radhakrishnan, R. & Butler, W. F. (1993).
+    How the anti-(metal chelate) antibody CHA255 is specific for the
+    metal-ion of its antigen -- X-ray structures for 2 Fab' hapten
+    complexes with different metals in the chelate. /Biochemistry/ *32*,
+    10950-10959.
+
+Low /et al./, 1968
+    Low, B. W., Lovell, F. W. & Rudko, A. D. (1968).
+    Prediction of alpha-helical regions in proteins of known sequence.
+    /Proc. Natl. Acad. Sci. USA/ *60*, 1519-1526.
+
+MacCallum /et al./, 1996
+    MacCallum, R. M., Martin, A. C. R. & Thornton, J. M. (1996).
+    Antibody-antigen interactions: Contact analysis and binding site
+    topography. /J. Mol. Biol./ *262*.5, 732-745.
+
+Madej /et al./, 1995
+    Madej, T., Gibrat, J. F. & Bryant, S. H. (1995).
+    Threading a database of protein cores. /Proteins: Struct., Funct.,
+    Genet./ *23*, 356-369.
+
+Marchler-Bauer & Bryant, 1997
+    Marchler-Bauer, A. & Bryant, S. H. (1997).
+    A measure of success in fold recognition. /Trends Biochem. Sci./
+    *22*, 236-240.
+
+Martin & Thornton, 1996
+    Martin, A. C. R. & Thornton, J. M. (1996).
+    Structural families in loops of homologous proteins -- automatic
+    classification, modeling and application to antibodies. /J. Mol.
+    Biol./ *263*, 800-815.
+
+Martin /et al./, 1995
+    Martin, A. C. R., Toda, K., Stirk, H. J. & Thornton, J. M. (1995).
+    Long loops in proteins. /Protein Eng./ *8*, 1093-1101.
+
+Martin /et al./, 1991
+    Martin, A. C. R., Cheetham, J. C. & Rees, A. R. (1991).
+    Molecular modelling of antibody combining sites. /Meth. Enzymol./
+    *203*, 121-153.
+
+Matsuo & Nishikawa, 1995
+    Matsuo, Y. & Nishikawa, K. (1995).
+    Assessment of a protein fold recognition method that takes into
+    account 4 physicochemical properties -- side-chain packing,
+    solvation, hydrogen-bonding, and local conformation. /Proteins:
+    Struct., Funct., Genet./ *23*, 370-375.
+
+Matthews, 1975
+    Matthews, B. W. (1975).
+    Comparison of the predicted and observed secondary structure of T4
+    phage lysozyme. /Biochim. Biophys. Acta/ *405*, 442-451.
+
+May, 1996
+    May, A. C. W. (1996).
+    Pairwise iterative superposition of distantly related proteins and
+    assessment of the significance of 3-D structural similarity.
+    /Protein Eng./ *9*, 1093-1101.
+
+May & Johnson, 1994
+    May, A. C. W. & Johnson, M. S. (1994).
+    Protein-structure comparisons using a combination of a genetic
+    algorithm, dynamic-programming and least-squares minimization.
+    /Protein Eng./ *7*, 475-485.
+
+May & Johnson, 1995
+    May, A. C. W. & Johnson, M. S. (1995).
+    Improved genetic algorithm-based protein-structure comparisons --
+    pairwise and multiple superpositions. /Protein Eng./ *8*, 873-882.
+
+McLachlan /et al./, 1984
+    McLachlan, A. D., Staden, R. & Boswell, D. R. (1984).
+    A method for measuring the non-random bias of a codon usage table.
+    /Nuc. Ac. Res./ *12*, 9567-9575.
+
+Metfessel /et al./, 1993
+    Metfessel, B. A., Saurugger, P. N., Connelly, D. P. & Rich, S. S.
+    (1993).
+    Cross-validation of protein structural class prediction using
+    statistical clustering and neural networks. /Prot. Sci./ *2*,
+    1171-1182.
+
+Michie /et al./, 1996
+    Michie, A. D., Orengo, C. A. & Thornton, J. M. (1996).
+    Analysis of domain structural class using an automated class
+    assignment protocol. /J. Mol. Biol./ *262*, 168-185.
+
+Michie /et al./, 1994
+    Michie, D., Spiegelhalter, D. J. & Taylor, C. C., (1994).
+    /Machine learning, neural and statistical classification/.
+    Ellis Horwood.
+
+Miller, 1994
+    Miller, K. D. (1994).
+    Models of activity-dependent neural development. /Prog. Brain Res./
+    *102*, 303-318.
+
+Murzin /et al./, 1995
+    Murzin, A. G., Brenner, S. E., Hubbard, T. & Chothia, C. (1995).
+    SCOP -- a structural classification of proteins database for the
+    investigation of sequences and structures. /J. Mol. Biol./ *247*,
+    536-540.
+
+Muskal & Kim, 1992
+    Muskal, S. M. & Kim, S. H. (1992).
+    Predicting protein secondary structure-content -- a tandem neural
+    network approach. /J. Mol. Biol./ *225*, 713-727.
+
+Nagano, 1973
+    Nagano, K. (1973).
+    Logical analysis of the mechanism of protein folding. /J. Mol.
+    Biol./ *75*, 401-420.
+
+Nakai /et al./, 1988
+    Nakai, K., Kidera, A. & Kanehisa, M. (1988).
+    Cluster-analysis of amino-acid indexes for prediction of protein-
+    structure and function. /Protein Eng./ *2*, 93-100.
+
+Nakashima & Nishikawa, 1992
+    Nakashima, H. & Nishikawa, K. (1992).
+    The amino-acid-composition is different between the cytoplasmic and
+    extracellular sides in membrane-proteins. /FEBS Lett./ *303*, 141-146.
+
+Nakashima & Nishikawa, 1994
+    Nakashima, H. & Nishikawa, K. (1994).
+    Discrimination of intracellular and extracellular proteins using
+    amino-acid-composition and residue-pair frequencies. /J. Mol. Biol./
+    * 238*, 54-61.
+
+Nakashima /et al./, 1986
+    Nakashima, H., Nishikawa, K. & Ooi, T. (1986).
+    The folding type of a protein is relevant to the amino-acid
+    composition. /J. Biochem./ *99*, 153-162.
+
+NC-IUBMB, 1992
+    NC-IUBMB, (1992).
+    /Enzyme Nomenclature/.
+    Academic Press.
+
+Needleman & Wunsch, 1970
+    Needleman, S. B. & Wunsch, C. D. (1970).
+    A general method applicable to the search for similarities in the
+    amino acid sequence of two proteins. /J. Mol. Biol./ *48*, 443-453.
+
+Nicholls /et al./, 1991
+    Nicholls, A., Sharp, K. A. & Honig, B. (1991).
+    Protein folding and association -- insights from the interfacial and
+    thermodynamic properties of hydrocarbons. /Proteins: Struct.,
+    Funct., Genet./ *11,*, 281-296.
+
+Nishikawa /et al./, 1983
+    Nishikawa, K., Kubota, Y. & Ooi, T. (1983).
+    Classification of proteins into groups based on amino-acid
+    composition and other characters (2) Grouping into 4 types. /J.
+    Biochem./ *94*, 997-1007.
+
+Nishikawa & Ooi, 1982
+    Nishikawa, K. & Ooi, T. (1982).
+    Correlation of the amino-acid composition of a protein to its
+    structural and biological characters. /J. Biochem./ *91*, 1821-1824.
+
+Noble /et al./, 1993
+    Noble, M. E. M., Cleasby, A., Johnson, L. N., Egmond, M. R. &
+    Frenken, L. G. J. (1993).
+    The crystal-structure of triacylglycerol lipase from /Pseudomonas
+    glumae/ reveals a partially redundant catalytic aspartate. /FEBS
+    Lett./ *331*, 123-128.
+
+Noji /et al./, 1997
+    Noji, H., Yasuda, R., Yoshida, M. & Kinosita, K. (1997).
+    Direct observation of the rotation of F-1-ATPase. /Nature/ *386*,
+    299-302.
+
+Norel /et al./, 1994
+    Norel, R., Lin, S. L., Wolfson, H. J. & Nussinov, R. (1994).
+    Shape complementarity at protein-protein interfaces. / Biopolymers/
+    *34*, 933-940.
+
+Olmea & Valencia, 1997
+    Olmea, O. & Valencia, A. (1997).
+    Improving contact predictions by the combination of correlated
+    mutations and other sources of sequence information. /Folding &
+    Design/ *2*, s25-s32.
+
+Orengo /et al./, 1994
+    Orengo, C. A., Jones, D. T. & Thornton, J. M. (1994).
+    Protein superfamilies and domain superfolds. /Nature/ *372*, 631-634.
+
+Orengo /et al./, 1997
+    Orengo, C. A., Michie, A. D., Jones, S., Jones, D. T.,
+    Swindells, M. B. & Thornton, J. M. (1997).
+    A hierarchic classification of protein domain structures. /
+    Structure/ *5*, 1093-1108.
+
+Padlan /et al./, 1995
+    Padlan, E. A., Abergel, C. & Tipper, J. P. (1995).
+    Identification of specificity-determining residues in antibodies.
+    /FASEB J./ *9*, 133-139.
+
+Padlan /et al./, 1989
+    Padlan, E. A., Silverton, E. W., Sheriff, S., Cohen, G. H.,
+    Smithgill, S. J. & Davies, D. R. (1989).
+    Structure of an antibody antigen complex -- crystal-structure of the
+    HyHEL-10 Fab-lysozyme complex. /Proc. Natl. Acad. Sci. USA/ *86*,
+    5938-5942.
+
+Pauling & Corey, 1951
+    Pauling, L. & Corey, R. B. (1951).
+    Configurations of polypeptide chains with favored orientations
+    around single bonds: two new pleated sheets. /Proc. Natl. Acad. Sci.
+    USA/ * 37*, 729-740.
+
+Pauling /et al./, 1951
+    Pauling, L., Corey, R. B. & Branson, H. R. (1951).
+    The structure of proteins: two hydrogen-bonded helical
+    configurations of the polypeptide chain. /Proc. Natl. Acad. Sci.
+    USA/ *37*, 205-211.
+
+Pearson, 1990
+    Pearson, W. R. (1990).
+    Rapid and sensitive sequence comparison with FASTP and FASTA. /Meth.
+    Enzymol./ *183*, 63-98.
+
+Pearson, 1995
+    Pearson, W. R. (1995).
+    Comparison of methods for searching protein-sequence databases. /
+    Prot. Sci./ *4*, 1145-1160.
+
+Periti /et al./, 1967
+    Periti, P. F., Quagliarotti, G. & Liquori, A. M. (1967).
+    Recognition of alpha-helical segments in proteins of known primary
+    structure. /J. Mol. Biol./ *24*, 313-322.
+
+Peters /et al./, 1996
+    Peters, K. P., Fauck, J. & Frommel, C. (1996).
+    The automatic search for ligand-binding sites in proteins of known
+    3-dimensional structure using only geometric criteria. /J. Mol.
+    Biol./ *256*, 201-213.
+
+Phillips, 1970
+    Phillips, D. C. (1970).
+    Development of crystallographic enzymology. /Biochem. Soc. Symp./
+    *31*, 11-28.
+
+Pokkuluri /et al./, 1994
+    Pokkuluri, P. R., Bouthillier, F., Li, Y. G., Kuderova, A., Lee, J.
+    & Cygler, M. (1994).
+    Preparation, characterization and crystallization of an antibody Fab
+    fragment that recognizes RNA -- crystal-structures of native Fab and
+    3 Fab-mononucleotide complexes. /J. Mol. Biol./ *243*, 283-297.
+
+Ponder & Richards, 1987
+    Ponder, J. W. & Richards, F. M. (1987).
+    Tertiary templates for proteins -- use of packing criteria in the
+    enumeration of allowed sequences for different structural classes.
+    /J. Mol. Biol./ *193*, 775-791.
+
+Prasad /et al./, 1988
+    Prasad, L., Vandonselaar, M., Lee, J. S. & Delbaere, L. T. J. (1988).
+    Structure determination of a monoclonal Fab fragment specific for
+    histidine-containing protein of the phosphoenolpyruvate -- sugar
+    phosphotransferase system of /Escherichia coli/. /J. Biol. Chem./
+    *263*, 2571- 2574.
+
+Presnell /et al./, 1992
+    Presnell, S. R., Cohen, B. I. & Cohen, F. E. (1992).
+    A segment-based approach to protein secondary structure prediction.
+    /Biochemistry/ *31*, 983-993.
+
+Ptitsyn, 1969
+    Ptitsyn, O. B. (1969).
+    Statistical analysis of the distribution of amino acid residues
+    among helical and non-helical regions in globular proteins. /J. Mol.
+    Biol./ *42*, 501-510.
+
+Radzicka & Wolfenden, 1988
+    Radzicka, A. & Wolfenden, R. (1988).
+    Comparing the polarities of the amino-acids -- side-chain
+    distribution coefficients between the vapor-phase, cyclohexane,
+    1-octanol, and neutral aqueous-solution. /Biochemistry/ *27*,
+    1664-1670.
+
+Rao & G., 1973
+    Rao, S. T. & G., R. M. (1973).
+    Comparison of super-secondary structures in proteins. /J. Mol.
+    Biol./ *286*, 241-256.
+
+Reardon & Farber, 1995
+    Reardon, D. & Farber, G. K. (1995).
+    Protein motifs (4) The structure and evolution of alpha/beta barrel
+    proteins. /FASEB J./ *9*, 497-503.
+
+Rees /et al./, 1994
+    Rees, A. R., Staunton, D., Webster, D. M., Searle, S. J.,
+    Henry, A. H. & Pedersen, J. T. (1994).
+    Antibody design: beyond the natural limits. /Trends Biotechnol./
+    *12*, 199-206.
+
+Rice & Eisenberg, 1997
+    Rice, D. W. & Eisenberg, D. (1997).
+    A 3D-1D substitution matrix for protein fold recognition that
+    includes predicted secondary structure of the sequence. /J. Mol.
+    Biol./ *267*, 1026-1038.
+
+Richards, 1974
+    Richards, F. M. (1974).
+    The interpretation of protein structures: Total volume, group volume
+    distributions and packing density. /J. Mol. Biol./ *82*, 1-14.
+
+Richardson, 1981
+    Richardson, J. S. (1981).
+    The anatomy and taxonomy of protein structure. /Adv. Prot. Chem./
+    *34*, 168-339.
+
+Richardson, 1985
+    Richardson, J. S. (1985).
+    Schematic drawings of protein structures. /Meth. Enzymol./ * 115*,
+    359-380.
+
+Richardson, 1986
+    Richardson, J. S. (1986).
+    Beta-sheet -- the greek key topology as a favored form in folding
+    and structure. /Federation Proceedings/ *45*, 1829.
+
+Rini /et al./, 1993
+    Rini, J. M., Stanfield, R. L., Stura, E. A., Salinas, P. A.,
+    Profy, A. T. & Wilson, I. A. (1993).
+    Crystal-structure of a human-immunodeficiency-virus type-1
+    neutralizing antibody, 50.1, in complex with its V3 loop peptide
+    antigen. /Proc. Natl. Acad. Sci. USA/ *90*, 6325-6329.
+
+Rohde & Bork, 1993
+    Rohde, K. & Bork, P. (1993).
+    A fast, sensitive pattern-matching approach for protein sequences.
+    /Comput. Appl. Biosci./ *9*, 183-189.
+
+Rooman & Wodak, 1991
+    Rooman, M. J. & Wodak, S. J. (1991).
+    Weak correlation between predictive power of individual sequence
+    patterns and overall prediction accuracy in proteins. /Proteins:
+    Struct., Funct., Genet./ *9*, 69-78.
+
+Rost /et al./, 1995
+    Rost, B., Casadio, R., Fariselli, P. & Sander, C. (1995).
+    Transmembrane helices predicted at 95-percent accuracy. /Prot. Sci./
+    *4*, 521-533.
+
+Rost & Sander, 1993
+    Rost, B. & Sander, C. (1993).
+    Prediction of protein secondary structure at better than 70 percent
+    accuracy. /J. Mol. Biol./ *232*, 584-599.
+
+Rost & Sander, 1994
+    Rost, B. & Sander, C. (1994).
+    Combining evolutionary information and neural networks to predict
+    protein secondary structure. /Proteins: Struct., Funct., Genet./ *
+    19*, 55-72.
+
+Rost /et al./, 1994
+    Rost, B., Sander, C. & Schneider, R. (1994).
+    Redefining the goals of protein secondary structure prediction. / J.
+    Mol. Biol./ *235*, 13-26.
+
+Rost /et al./, 1997
+    Rost, B., Schneider, R. & Sander, C. (1997).
+    Protein fold recognition by prediction-based threading. /J. Mol.
+    Biol./ *270*, 471-480.
+
+Russell & Barton, 1992
+    Russell, R. B. & Barton, G. J. (1992).
+    Multiple protein-sequence alignment from tertiary structure
+    comparison -- assignment of global and residue confidence levels. /
+    Proteins: Struct., Funct., Genet./ *14*, 309-323.
+
+Russell & Barton, 1993
+    Russell, R. B. & Barton, G. J. (1993).
+    The limits of protein secondary structure prediction accuracy from
+    multiple sequence alignment. /J. Mol. Biol./ *234*, 951-957.
+
+Russell & Barton, 1994
+    Russell, R. B. & Barton, G. J. (1994).
+    Structural features can be unconserved in proteins with similar
+    folds -- an analysis of side-chain to side-chain contacts secondary
+    structure and accessibility. /J. Mol. Biol./ *244*, 332-350.
+
+Russell /et al./, 1996
+    Russell, R. B., Copley, R. R. & Barton, G. J. (1996).
+    Protein fold recognition by mapping predicted secondary structures.
+    /J. Mol. Biol./ *259*, 349-365.
+
+Russell /et al./, 1997
+    Russell, R. B., Saqi, M. A. S., Sayle, R. A., Bates, P. A. &
+    Sternberg, M. J. E. (1997).
+    Recognition of analogous and homologous protein folds: Analysis of
+    sequence and structure conservation. /J. Mol. Biol./ *269*, 423-439.
+
+Sack /et al./, 1989
+    Sack, J. S., Saper, M. A. & Quiocho, F. A. (1989).
+    Periplasmic binding-protein structure and function -- refined X-ray
+    structures of the leucine isoleucine valine-binding protein and its
+    complex with leucine. /J. Mol. Biol./ *206*, 171-191.
+
+Salamov & Solovyev, 1995
+    Salamov, A. A. & Solovyev, V. V. (1995).
+    Prediction of protein secondary structure by combining
+    nearest-neighbor algorithms and multiple sequence alignments. /J.
+    Mol. Biol./ *247*, 11-15.
+
+Salamov & Solovyev, 1997
+    Salamov, A. A. & Solovyev, V. V. (1997).
+    Protein secondary structure prediction using local alignments. / J.
+    Mol. Biol./ *268*, 31-36.
+
+Sammon, 1969
+    Sammon, J. W. (1969).
+    A nonlinear mapping for data structure analysis. /IEEE Trans.
+    Comput./ *C-18*, 401-409.
+
+Sanchez & Sali, 1997
+    Sanchez, R. & Sali, A. (1997).
+    Advances in comparative protein-structure modelling. /Curr. Opin.
+    Struct. Biol./ *7*, 206-214.
+
+Sander & Schneider, 1991
+    Sander, C. & Schneider, R. (1991).
+    Database of homology-derived protein structures and the structural
+    meaning of sequence alignment. /Proteins: Struct., Funct., Genet./ *
+    9*, 56-68.
+
+Satow /et al./, 1986
+    Satow, Y., Cohen, G. H., Padlan, E. A. & Davies, D. R. (1986).
+    Phosphocholine binding immunoglobulin Fab McPC603 an X-ray-
+    diffraction study at 2.7Å. /J. Mol. Biol./ *190*, 593-604.
+
+Sayle & Milnerwhite, 1995
+    Sayle, R. A. & Milnerwhite, E. J. (1995).
+    Rasmol -- biomolecular graphics for all. /Trends Biochem. Sci./
+    *20*, 374-376.
+
+Schulz, 1977
+    Schulz, G. E. (1977).
+    Recognition of phylogenetic relationships from polypeptide chain
+    fold similarities. /J. Molec. Evol./ *9*, 339-342.
+
+Schulzegahmen /et al./, 1993
+    Schulzegahmen, U., Rini, J. M. & Wilson, I. A. (1993).
+    Detailed analysis of the free and bound conformations of an antibody
+    -- X-ray structures of Fab 17/9 and 3 different Fab-peptide
+    complexes. /J. Mol. Biol./ *234*, 1098-1118.
+
+Siddiqui & Barton, 1995
+    Siddiqui, A. S. & Barton, G. J. (1995).
+    Continuous and discontinuous domains -- an algorithm for the
+    automatic-generation of reliable protein domain definitions. /Prot.
+    Sci./ *4*, 872-884.
+
+Sippl, 1990
+    Sippl, M. J. (1990).
+    Calculation of conformational ensembles from potentials of mean
+    force -- an approach to the knowledge-based prediction of local
+    structures in globular-proteins. /J. Mol. Biol./ *213*, 859-883.
+
+Smith & Waterman, 1981
+    Smith, T. F. & Waterman, M. S. (1981).
+    Identification of common molecular subsequences. /J. Mol. Biol./
+    *147*, 195-197.
+
+Sonnhammer & Kahn, 1994
+    Sonnhammer, E. L. L. & Kahn, D. (1994).
+    Modular arrangement of proteins as inferred from analysis of
+    homology. /Prot. Sci./ *3*, 482-492.
+
+Stanfield /et al./, 1993
+    Stanfield, R. L., Takimotokamimura, M., Rini, J. M., Profy, A. T. &
+    Wilson, I. A. (1993).
+    Major antigen-induced domain rearrangements in an antibody. /
+    Structure/ *1*, 83-93.
+
+Sternberg & Thornton, 1976
+    Sternberg, M. J. E. & Thornton, J. M. (1976).
+    On the conformation of proteins: the handedness of the beta-strand -
+    alpha-helix - beta-strand unit. /J. Mol. Biol./ *105*, 367-382.
+
+Swindells, 1995a
+    Swindells, M. B. (1995a).
+    A procedure for detecting structural domains in proteins. /Prot.
+    Sci./ *4*, 103-112.
+
+Swindells, 1995b
+    Swindells, M. B. (1995b).
+    A procedure for the automatic-determination of hydrophobic cores in
+    protein structures. /Prot. Sci./ *4*, 93-102.
+
+Taylor, 1986
+    Taylor, W. R. (1986).
+    Identification of protein-sequence homology by consensus template
+    alignment. /J. Mol. Biol./ *188*, 233-258.
+
+Taylor, 1997
+    Taylor, W. R. (1997).
+    Multiple sequence threading: An analysis of alignment quality and
+    stability. /J. Mol. Biol./ *269*, 902-943.
+
+Taylor & Orengo, 1989
+    Taylor, W. R. & Orengo, C. A. (1989).
+    Protein-structure alignment. /J. Mol. Biol./ *208*, 1-22.
+
+Taylor & Thornton, 1984
+    Taylor, W. R. & Thornton, J. M. (1984).
+    Recognition of super-secondary structure in proteins. /J. Mol.
+    Biol./ *173*, 487-514.
+
+Taylor /et al./, 1983
+    Taylor, W. R., Thornton, J. M. & Turnell, W. G. (1983).
+    An ellipsoid approximation of protein shape. /J. Mol. Graph./ *1*,
+    30-38.
+
+Thomas /et al./, 1996
+    Thomas, D. J., Casari, G. & Sander, C. (1996).
+    The prediction of protein contacts from multiple sequence
+    alignments. /Protein Eng./ *9*, 941-948.
+
+Thomas & Dill, 1996
+    Thomas, P. D. & Dill, K. A. (1996).
+    Statistical potentials extracted from protein structures -- how
+    accurate are they? /J. Mol. Biol./ *257*, 457-469.
+
+Thompson /et al./, 1994
+    Thompson, J. D., Higgins, D. G. & Gibson, T. J. (1994).
+    CLUSTAL W: improving the sensitivity of progressive multiple
+    sequence alignment through sequence weighting, positions-specific
+    gap penalties and weight matrix choice. /Nuc. Ac. Res./ *22*,
+    4673-4680.
+
+Tomii & Kanehisa, 1996
+    Tomii, K. & Kanehisa, M. (1996).
+    Analysis of amino-acid indexes and mutation matrices for sequence
+    comparison and structure prediction of proteins. /Protein Eng./ *9*,
+    27-36.
+
+Tsai & Nussinov, 1997
+    Tsai, C. J. & Nussinov, R. (1997).
+    Hydrophobic folding units derived from dissimilar monomer structures
+    and their interactions. /Prot. Sci./ *6*, 24-42.
+
+Tulip /et al./, 1992
+    Tulip, W. R., Varghese, J. N., Laver, W. G., Webster, R. G. &
+    Colman, P. M. (1992).
+    Refined crystal-structure of the influenza virus-N9 neuraminidase
+    NC41 Fab complex. /J. Mol. Biol./ *227*, 122-148.
+
+Unger & Moult, 1993
+    Unger, R. & Moult, J. (1993).
+    Genetic algorithms for protein folding simulations. /J. Mol. Biol./
+    *231*, 75-81.
+
+Urfer & Kirschner, 1992
+    Urfer, R. & Kirschner, K. (1992).
+    The importance of surface loops for stabilizing an eightfold
+    beta-alpha barrel protein. /Prot. Sci./ *1*, 31-45.
+
+Van-Heel, 1991
+    Van-Heel, M. (1991).
+    A new family of powerful multivariate statistical sequence- analysis
+    techniques. /J. Mol. Biol./ *220*, 877-887.
+
+Varghese /et al./, 1994
+    Varghese, J. N., Garrett, T. P. J., Colman, P. M., Chen, L.,
+    Hoj, P. B. & Fincher, G. B. (1994).
+    3-dimensional structures of 2 plant beta-glucan endohydrolases with
+    distinct substrate specificities. /Proc. Natl. Acad. Sci. USA/ *91*,
+    2785-2789.
+
+Wallace /et al./, 1996
+    Wallace, A. C., Laskowski, R. A. & Thornton, J. M. (1996).
+    Derivation of 3D coordinate templates for searching structural
+    databases -- application to Ser-His-Asp catalytic triads in the
+    serine proteinases and lipases. /Prot. Sci./ *5*, 1001-1013.
+
+Wang, 1994
+    Wang, Z. X. (1994).
+    Assessing the accuracy of protein secondary structure. /Nature:
+    Struct. Biol./ *1*, 145-146.
+
+Ward, 1963
+    Ward, J. H. (1963).
+    Hierachical grouping to optimize an objective function. /J. Am.
+    Statist. Assoc./ *58*, 236-244.
+
+Webster /et al./, 1994
+    Webster, D. M., Henry, A. H. & Rees, A. R. (1994).
+    Antibody-antigen interactions. /Curr. Opin. Struct. Biol./ * 4*,
+    123-129.
+
+Weiss & Schulz, 1992
+    Weiss, M. S. & Schulz, G. E. (1992).
+    Structure of porin refined at 1.8Å resolution. /J. Mol. Biol./
+    *227*, 493-509.
+
+Weiss & Kulikowski, 1991
+    Weiss, S. M. & Kulikowski, C. A., (1991).
+    /Computer systems that learn/.
+    Morgan-Kaufmann.
+
+Wilson & Stanfield, 1994
+    Wilson, I. A. & Stanfield, R. L. (1994).
+    Antibody-antigen interactions -- new structures and new
+    conformational-changes. /Curr. Opin. Struct. Biol./ *4*, 857-867.
+
+Wilson & Stanfield, 1993
+    Wilson, I. A. & Stanfield, R. L. (1993).
+    Antibody-antigen interactions. /Curr. Opin. Struct. Biol./ * 3*,
+    113-118.
+
+Winter /et al./, 1994
+    Winter, G., Griffiths, A. D., Hawkins, R. E. & Hoogenboom, H. R.
+    (1994).
+    Making antibodies by phage display technology. /Annu. Rev. Immunol./
+    *12*, 433-455.
+
+Wishart, 1969
+    Wishart, D. (1969).
+    An algorithm for hierachical classifications. /Biometrics/ * 25*,
+    165-170.
+
+Wong /et al./, 1995
+    Wong, Y. W., Kussie, P. H., Parhamiseren, B. & Margolies, M. N. (1995).
+    Modulation of antibody-affinity by an engineered amino-acid
+    substitution. /J. Immunol./ *154*, 3351-3358.
+
+Woody, 1995
+    Woody, R. W. (1995).
+    Circular-dichroism. /Meth. Enzymol./ *246*, 34-71.
+
+Wu /et al./, 1992
+    Wu, C., Whitson, G., McLarty, J., Ermongkoncha, A. & Chang, T. C.
+    (1992).
+    Protein classification artificial neural system. /Prot. Sci./ *1*,
+    667-677.
+
+Wu & Kabat, 1970
+    Wu, T. T. & Kabat, E. A. (1970).
+    An analysis of the sequences of the variable regions of Bence Jones
+    proteins and myeloma light chains and their implications for
+    antibody complementarity. /J. Exp. Med./ *132*, 211-250.
+
+Yang /et al./, 1996
+    Yang, A. S., Hitz, B. & Honig, B. (1996).
+    Free-energy determinants of secondary structure formation (3)
+    beta-turns and their role in protein-folding. /J. Mol. Biol./ *259*,
+    873-882.
+
+Yi & Lander, 1993
+    Yi, T. M. & Lander, E. S. (1993).
+    Protein secondary structure prediction using nearest-neighbor
+    methods. /J. Mol. Biol./ *232*, 1117-1129.
+
+Yip /et al./, 1995
+    Yip, K. S. P., Stillman, T. J., Britton, K. L., Artymiuk, P. J.,
+    Baker, P. J., Sedelnikova, S. E., Engel, P. C., Pasquo, A.,
+    Chiaraluce, R., Consalvi, V., Scandurra, R. & Rice, D. W. (1995).
+    The structure of /Pyrococcus furiosus/ glutamate-dehydrogenase
+    reveals a key role for ion-pair networks in maintaining enzyme
+    stability at extreme temperatures. /Structure/ *3*, 1147-1158.
+
+Zehfus, 1995
+    Zehfus, M. H. (1995).
+    Automatic recognition of hydrophobic clusters and their correlation
+    with protein-folding units. /Prot. Sci./ *4*, 1188-1202.
+
+Zhang & Chou, 1992
+    Zhang, C. T. & Chou, K. C. (1992).
+    An optimization approach to predicting protein structural class from
+    amino-acid-composition. /Prot. Sci./ *1*, 401-408.
+
+Zhou /et al./, 1992
+    Zhou, G. F., Xu, X. H. & Zhang, C. T. (1992).
+    A weighting method for predicting protein structural class from
+    amino-acid-composition. /Eur. J. Neurosci./ *210*, 747- 749.
+
+Zhu, 1995
+    Zhu, Z. Y. (1995).
+    A new approach to the evaluation of protein secondary structure
+    predictions at the level of the elements of secondary structure.
+    /Protein Eng./ *8*, 103-108.
+
+Zvelebil /et al./, 1987
+    Zvelebil, M. J., Barton, G. J., Taylor, W. R. & Sternberg, M. J. E.
+    (1987).
+    Prediction of protein secondary structure and active-sites using the
+alignment of homologous sequences. /J. Mol. Biol./ *195*, 957-961.
+
+
+------------------------------------------------------------------------
+Copyright Bob MacCallum - DISCLAIMER: this was written in 1997 and may
+contain out-of-date information.
+

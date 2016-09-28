@@ -1,0 +1,12 @@
+GROUP 5 4    -5.0  1.0  0.0    5.0  0.0  0.0
+INPUT actin.dom1.dat
+INPUT actin.dom2.dat
+INPUT actin.dom3.dat
+INPUT actin.dom4.dat
+REBOND local   32 127
+REBOND local  172  33
+REBOND local   90 173
+REBOND local  216 281
+REBOND local  372 217
+REBOND local  280  91
+RETERM local    1 126

@@ -1,0 +1,31 @@
+GROUP 0 3
+SPINX  90.0
+SPINZ  90.0
+TRANS  17.0  -17.0   17.0
+INPUT unit0.dat
+SPINX -90.0
+SPINY  90.0
+TRANS  17.0   17.0   17.0
+INPUT unit0.dat
+SPINX -90.0
+SPINY  90.0
+TRANS  17.0   17.0  -17.0
+INPUT unit0.dat
+#SPINX 180.0
+#TRANS  17.0  -17.0  -17.0
+#INPUT unit0.dat
+#SPINX 180.0
+#TRANS -17.0  -17.0  -17.0
+#INPUT unit0.dat
+#SPINX -90.0
+#SPINY -90.0
+#TRANS -17.0   17.0  -17.0
+#INPUT unit0.dat
+#SPINX -90.0
+#SPINY -90.0
+#TRANS -17.0   17.0   17.0
+#INPUT unit0.dat
+#SPINX  90.0
+#SPINZ -90.0
+#TRANS -17.0  -17.0   17.0
+#INPUT unit0.dat

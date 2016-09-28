@@ -1,0 +1,8 @@
+#NOMOVE
+#NORUN
+SCALE 0.158 6.33  # scalein = .6/3.8, scaleout = 3.8/.6
+#PARAM atom.model
+PARAM memb.model
+END
+#GROUP 0 100
+#INPUT protons.dat

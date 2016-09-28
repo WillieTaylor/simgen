@@ -1,0 +1,12 @@
+GROUP 0 1
+GROUP 1 10  0  10 0  0 -10 0
+INPUT* atom.dat
+INPUT* atom.dat
+INPUT* atom.dat
+INPUT* atom.dat
+INPUT* atom.dat
+INPUT* atom.dat
+INPUT* atom.dat
+INPUT* atom.dat
+INPUT* atom.dat
+INPUT* atom.dat

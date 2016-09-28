@@ -1,0 +1,335 @@
+\subsection{Collision detection test data}
+
+\subsubsection{Colliding Hilbert chains}
+
+For test data,
+a general model of a simple macromolecule was based on a linear chain of atoms.
+This chain was then 'packaged' into a hierarchy of spherical objects, each of which contained
+eight children arranged as a cube.   To maintain equal bond-lengths between the atoms, the path of the
+chain followed a recursive Hilbert curve, in which each level of the hierarchy is identical\footnote{
+A Hilbert curve ({\tt https://en.wikipedia.org/wiki/Hilbert\_curve}) is the spatial equivalent of a 
+Gray code ({\tt https://en.wikipedia.org/wiki/Gray\_code}) in which successive elements are
+only one step away from their neighbours.
+}.   This arrangement generates a homogeneously packed chain which allows the effects of
+collisions to be monitored without the added complication of variable internal structure and density.
+
+Collisions between these objects were then engineered by applying an external
+displacement to propel two identical objects into each other.   To avoid a direct "head-on"
+collision, the objects were displaced by half their radius from their line of approach.
+As the chain forms a cube, this means that the collision surface encompasses half a face of each cube.
+During the collision, the number of bumping atoms was monitored between the two objects
+and also within each object.
+
+\paragraph{8+8 crash:\\}
+
+The model was initially tested with only a hard repulsion at the atomic level.
+However, without the protective shell of their parent, the bonds between atoms were flexible enough 
+to allow bonded pairs to transiently pass through each other resulting 
+in interpenetrating chains, even though these still preserved their steric and average bond lengths.
+
+To investigate the contribution of the soft repulsion component of higher level objects,
+the first construct of interest involves the collision of two cubes of eight atoms.  The
+repulsion strength at both levels was set to a value of 1 for both hard and soft modes
+(although the atomic level only has hard repulsion).   With these values, the containing
+spherical shells repelled each other before the atoms could make contact.
+
+The $soft$ parameter value was then decreased, allowing inter-penetration of the high
+level spheres,  until the internal atoms made contact.   This occurred when $soft = hard/5$
+but most of the displacement still derived from the high-level soft repulsion component
+and the internal arrangement of the atoms was almost unchanged.   With no soft repulsion,
+the atomic configuration was markedly displaced and as a compromise, $soft = hard/10$
+was taken as a combination that allowed a roughly equal contribution from each level.
+
+\paragraph{64+64 crash:\\}
+
+The next level of model considered was the 64 atom chain (Figure 1(a)) and keeping the values established
+above for the first level in the hierarchy, an equivalent evaluation was made for the second level.
+As with the smaller test object, the first level spheres initially made contact when $soft = hard/5$,
+however, because of the added buffering effect of the first-level spheres, the atoms remained
+well separated between the two colliding objects even when $soft = hard/10$.  To compensate for
+this additive contribution, the $hard$ parameter value on both levels was halved and the 10\%
+ratio to the $soft$ parameter retained giving $hard = 0.5, soft = 0.05$.  
+(Or 50:5, as a percentage of the atomic value). 
+
+\begin{figure}
+\centering
+\subfigure[64+64]{
+\epsfxsize=190pt \epsfbox{figs/cube/crash2.eps}
+}
+\subfigure[512+512]{
+\epsfxsize=192pt \epsfbox{figs/cube/crash3.eps}
+}
+\subfigure[4096+4096]{
+\epsfxsize=390pt \epsfbox{figs/cube/crash4.eps}
+}
+\caption[]{
+\label{Fig:cubes}
+\begin{footnotesize}
+{\bf Idealised chain collisions} of increasing size. $a$) Two 64 atom chains are directed into each
+other from left and right.   Groups of 8 atoms are enclosed in 8 transparent green virtual spheres
+which in turn are enclosed in a larger red sphere.  $b$) A third level is added to the hierarchy
+with the virtual spheres and atoms now coloured by their collision state: dark-blue designates no
+clash while cyan to green to yellow colours are associated with collisions of increasingly distant
+relatives.  Cyan = same parent (cousins), green = second cousins, yellow = third. $c$) The number
+of levels is increased to four but with smaller atoms and the virtual spheres not rendered to allow
+the distribution of clashes to be visualised at the atomic level.  The colliding bodies remain distinct
+with only occasional flashes of red (fourth cousins) indicating clashes between atoms in the collision
+interface (which runs bottom left to top right).   The distortion of the structures has been 
+distributed evenly through many localized (green) interactions.
+\end{footnotesize}
+}
+\end{figure}
+
+
+\paragraph{512+512 crash:\\}
+
+The evaluation protocol was extended to the 3-level hierarchy of 512 atoms per chain (Figure 1(b)).
+Transferring the values from the previous test again led to a lack of direct contact at the
+atomic level and these were reduced to $hard = 0.2$, keeping the $soft = hard/10$ ratio.
+This produced a result at the mid-point of the collision (when the centroids of the bodies
+draw level on their collision course) that was comparable to the smaller systems.
+
+\paragraph{4096+4096 crash:\\}
+
+For the largest model tested, with the chain packaged into 4 levels of containers,  the
+progression of reducing the values of the $hard$ and $soft$ parameters was continued.
+However, this led to a marked number (100s) of steric violations at the atomic level both
+between and within the colliding bodies.   Keeping the two parameters at their previous
+levels ($hard = 0.2$, $soft = 0.02$) the number of clashes between the bodies decreased
+(10s) but the number of internal violations remained high.   This can be seen in Figure 1(c)
+as green coloured atoms and indicates that the distortions produced by the collision are
+being distributed through the objects rather than concentrated at the collision interface.
+
+As this model extends beyond the normal size range of compact biological molecules,
+no further experimentation was made.   Of greater interest is the degree of distortion 
+observed in the "crumple-zone" and to investigate this a more realistic protein model
+was used.
+
+
+\subsubsection{Colliding multiple protein domains}
+
+Progressing to a more biologically realistic system and also to introduce a variety
+of container shapes, the small chemotaxis-Y protein (PDB code: {\tt 3chy}), was used
+and modelled with tubes to contain its secondary structure elements and an ellipsoid
+to contain the protein.    The structure was also stabilised with 'hydrogen-bond'-like
+links between the $i..i+3$ and $i..i+4$ positions in the \AHs\ and links between
+hydrogen-bonded positions in the \BS. (Figure 2(a)).
+
+A series of multi-domain models were then constructed with the protein chain as a
+node on a Hilbert curve giving models of 1, 8 and 64 domains.   The link between 
+domains was also optionally broken, making the domains equivalent to subunits.
+Collisions between these constructs were engineered as above, with the coordinates
+being saved at the start of the run and at the end, after the structures were well
+past each other.    To monitor the distortion experienced by the domains/subunits
+during the collision, each domain in the starting structure was compared to each
+domain in the final structure and the smallest, mean and largest root-mean-square
+deviation (RMSD) recorded. 
+
+\paragraph{Single domain collision:\\}
+
+Two single domain structures were collided using the same parameters as determined
+for the equivalent sized Hilbert chains of the previous subsection ($hard = 1.0$, $soft = 0.1$).
+Comparing combinations of the two starting and two final structures, the mean RMS
+deviation was 3.6\AA , which is not far in excess of the 2.4\AA\ mean deviation seen
+when the two structures travel the same distance but do not collide.   For a protein
+of this size, with any RMSD under 5\AA, the structures retain a clear correspondence. 
+
+Increasing the $soft$ parameter to 0.2 led to less distortion (mean RMSD = 3.1) which
+is closer to the un-collided value.   While, retaining the same $hard:soft$ ratio
+with $hard = 0.5$ gave a deviation of 4.0\AA, which is still acceptable and only
+when the parameter values were dropped as low as $hard = 0.5$, $soft = 0.01$ was the
+5\AA\ 'threshold' exceed.  
+
+\begin{figure}
+\centering
+\subfigure[]{
+\epsfxsize=190pt \epsfbox{figs/prot/net3chy.eps}
+}
+\subfigure[]{
+\epsfxsize=190pt \epsfbox{figs/prot/bad3chy.eps}
+}
+\caption[]{
+\label{Fig:bumps}
+\begin{footnotesize}
+{\bf Small globular protein Che-Y} used for testing.
+$a$) The \CA\ backbone is drawn in a ball-and-stick representation with secondary structures
+contained in transparent tubes: red = \AH, green = \Bs s and cyan = loops.  Residues in these
+tubes are restrained to lie at the surface but only weakly for loops.   Thin lines connect
+residues in \A\ and \B\ elements that are hydrogen-bonded.   In some of the tests, an additional 
+link was added between the two loop segments that connect domains (horizontal line lower-front).
+The ellipsoid that contains the whole domain is rendered as a feint mesh.
+$b$) Superposition of structure before and after collision represented by a stick \CA\ backbone
+and ball-and-stick backbone, respectively.   The chains are coloured from amino (blue) terminus 
+through the spectrum to the carboxy (red) terminus.  The largest deviation is seen in the 
+C-terminal \AH\ which contributed most to the overall 5\AA\ root mean square deviation.
+This level was set as a target threshold to remain below. 
+\end{footnotesize}
+}
+\end{figure}
+
+\paragraph{8+8 domain collision:\\}
+
+The same approach was applied to the larger 8-domain construct over a series of collisions 
+ranging from a glancing blow to almost head-on collision.  The tests were repeated
+both with the domains in a continuous chain and as separate (unbonded) subunits.
+The repulsion of the highest level sphere was set initially low with $hard=0.2, soft=0.1$
+and the two $hard$/$soft$ parameter combinations applied to the secondary structure and domain 
+levels were tested.  (Table 1).
+
+The mean RMSD over the domains before and after the collision seldom exceeded the (self-imposed)
+threshold if 5\AA\ RMSD for both parameter combinations and, as would be expected, the deviations
+were slightly reduced when the domains were treated as subunits.   However, some of the worst
+distortions seen in the full (almost head-on) collisions had markedly elevated RMSD values, up to 8\AA.
+Despite excluding the 5 residue amino and 5 residue carboxy terminal linking segments from the comparison
+(which often must diverge in different directions), examination of these worst cases revealed that a
+large component of the error often came from displacement of the un-tethered C-terminal \AH.
+(Figure 2(b)).
+
+To reduce this source of error, a link as added between the mid-points of the 5-residue N- and C-terminal
+segments that connect domains.  However, this had little effect, and even led to a slight overall increase in RMS
+deviations.   On visual examination the distortions appeared to remain associated with the terminal helix
+which was still able to be markedly displaced despite the C-terminal tether but now this occurred more
+at the expense of disrupting other neighbouring secondary structure elements.
+
+To allow contact at the atomic level between the colliding objects,
+it is desirable to limit the repulsion from the higher levels of the hierarchy.
+With the $hard$:$soft$ parameter combinations used above of 20:10, 50:20, 50:20 for the protein, domain 
+and secondary structure levels respectively (as a percentage of the atomic level), the colliding surfaces
+were able to make contact but without serious deformation occurring.   These values were adopted for
+all further simulations.
+
+\begin{table}
+\centering
+\begin{tabular}{l|rrr|rrr||rrr|rrr|}
+$a$  & \multicolumn{12}{c}{\bf hard:soft = 50:20} \\
+     & \multicolumn{6}{|c||}{\bf subunit} & \multicolumn{6}{c|}{\bf domains} \\
+     & \multicolumn{3}{|c|}{no link} & \multicolumn{3}{c||}{link on}  & \multicolumn{3}{c|}{no link} & \multicolumn{3}{c|}{link on}\\
+\hline
+miss & 2.29 & 2.82 & 3.32 &   2.27 & 2.81 & 3.48 &      2.40 & 3.06 & 4.16 &   2.10 & 3.12 & 4.45 \\
+clip & 2.31 & 3.02 & 3.68 &   2.61 & 3.04 & 3.58 &      2.34 & 3.72 & 5.17 &   2.87 & 3.93 & 5.45 \\
+half & 2.60 & 3.82 & 5.01 &   2.48 & 3.84 & 5.18 &      2.48 & 3.84 & 5.18 &   3.02 & 4.71 & 8.28 \\
+full & 4.19 & 5.13 & 6.28 &   3.48 & 5.26 & 7.01 &      3.74 & 5.25 & 7.09 &   3.71 & 5.72 & 8.47 \\
+\hline \hline
+       \multicolumn{13}{c}{} \\
+$b$  & \multicolumn{12}{c}{\bf hard:soft = 100:20} \\
+     & \multicolumn{6}{|c||}{\bf subunit} & \multicolumn{6}{c|}{\bf domains} \\
+     & \multicolumn{3}{|c|}{no link} & \multicolumn{3}{c||}{link on}  & \multicolumn{3}{c|}{no link} & \multicolumn{3}{c|}{link on}\\
+\hline
+miss & 2.36 & 2.91 & 3.50 &   2.06 & 2.75 & 3.27 &      2.08 & 2.93 & 4.18 &   2.27 & 3.11 & 4.25 \\
+clip & 2.50 & 3.04 & 3.62 &   2.54 & 3.08 & 3.81 &      2.35 & 3.64 & 5.14 &   2.61 & 3.79 & 5.45 \\
+half & 2.63 & 3.60 & 4.83 &   2.35 & 3.68 & 4.76 &      2.73 & 4.40 & 7.63 &   2.78 & 4.37 & 6.65 \\
+full & 3.80 & 4.66 & 5.48 &   3.52 & 4.56 & 5.49 &      3.31 & 4.83 & 8.26 &   3.04 & 5.09 & 8.45 \\
+\hline \hline
+\end{tabular}
+\caption{
+\label{Tab:bumps}
+{\bf Collision induced distortions}.
+The RMSD values observed in the small chemotaxis-Y protein (PDB code: {\tt 3chy}) during the collision
+of two 8-domain/subunit collisions are tabulated as the minimum, average and maximum values when each
+domain is compared pairwise with each other before and after the collision.   Four degrees of collision
+severity were tested from a complete {\bf miss} through a glancing blow ({\bf clip}) to a {\bf half} face
+collision and finally an almost head-on collision ({\bf full}).    The models were tested both as individual
+{\bf subunit}s and as {\bf domains} linked in a Hilbert curve.   The 'loose' C-terminal \AH\ was either
+tethered ({\bf link on}) or free ({\bf no link}).    Two parameter combinations were tested with the
+{\bf hard:soft} repulsion ratio at both domain and secondary structure levels set to ($a$) 50:20 and ($b$) 
+100:20, as a percentage of the unit weight at the atomic level.  The repulsion parameters for the 
+highest protein level was held at the lower value of 20:10.
+}
+\end{table}
+
+%hard:soft = 100:20
+%    subunit
+%	no link  miss     frame = 990 aa = 19 bb = 32 ab = 0	RMS:  min = 2.369 ave = 2.91038 max = 3.504
+%	no link  clip     frame = 390 aa = 12 bb = 11 ab = 3	RMS:  min = 2.501 ave = 3.04747 max = 3.628
+%	no link  half     frame = 790 aa = 63 bb = 45 ab = 5	RMS:  min = 2.634 ave = 3.60256 max = 4.835
+%	no link  full     frame = 1080 aa = 97 bb = 106 ab = 7	RMS:  min = 3.799 ave = 4.66473 max = 5.485
+%
+%	link on  miss     frame = 990 aa = 25 bb = 12 ab = 0	RMS:  min = 2.066 ave = 2.75384 max = 3.274
+%	link on  clip     frame = 810 aa = 20 bb = 37 ab = 3	RMS:  min = 2.540 ave = 3.08316 max = 3.814
+%	link on  half     frame = 780 aa = 49 bb = 55 ab = 8	RMS:  min = 2.358 ave = 3.68389 max = 4.761
+%	link on  full     frame = 1060 aa = 107 bb = 98 ab = 8	RMS:  min = 3.525 ave = 4.56773 max = 5.496
+%
+%    domains
+%	no link  miss     frame = 990 aa = 36 bb = 23 ab = 0	RMS:  min = 2.088 ave = 2.93714 max = 4.186
+%	no link  clip     frame = 700 aa = 39 bb = 67 ab = 2	RMS:  min = 2.352 ave = 3.64122 max = 5.143
+%	no link  half     frame = 1320 aa = 75 bb = 98 ab = 3	RMS:  min = 2.739 ave = 4.40182 max = 7.633
+%	no link  full     frame = 1610 aa = 120 bb = 104 ab = 6	RMS:  min = 3.309 ave = 4.83634 max = 8.263
+%
+%	link on  miss     frame = 990 aa = 25 bb = 34 ab = 0	RMS:  min = 2.269 ave = 3.11580 max = 4.255
+%	link on  clip     frame = 1020 aa = 61 bb = 64 ab = 3	RMS:  min = 2.617 ave = 3.79832 max = 5.482
+%	link on  half     frame = 1350 aa = 80 bb = 121 ab = 9	RMS:  min = 2.786 ave = 4.37453 max = 6.655
+%	link on  full     frame = 990 aa = 85 bb = 108 ab = 3	RMS:  min = 3.041 ave = 5.09632 max = 8.449
+%
+%hard:soft = 50:20
+%    subunit
+%	no link  miss     frame = 990 aa = 25 bb = 25 ab = 0	RMS:  min = 2.296 ave = 2.82268 max = 3.324
+%	no link  clip     frame = 860 aa = 38 bb = 31 ab = 2	RMS:  min = 2.315 ave = 3.02307 max = 3.688
+%	no link  half     frame = 830 aa = 53 bb = 82 ab = 7	RMS:  min = 2.608 ave = 3.82729 max = 5.013
+%	no link  full     frame = 350 aa = 10 bb = 5 ab = 5	RMS:  min = 4.195 ave = 5.13120 max = 6.289
+%
+%	link on  miss     frame = 990 aa = 18 bb = 28 ab = 0	RMS:  min = 2.271 ave = 2.81993 max = 3.483
+%	link on  clip     frame = 1010 aa = 37 bb = 35 ab = 2	RMS:  min = 2.616 ave = 3.04413 max = 3.581
+%	link on  half     frame = 770 aa = 67 bb = 66 ab = 8	RMS:  min = 2.488 ave = 3.84289 max = 5.183
+%	link on  full     frame = 1120 aa = 125 bb = 132 ab = 5	RMS:  min = 3.481 ave = 5.26102 max = 7.018
+%
+%    domains
+%	no link  miss     frame = 990 aa = 37 bb = 22 ab = 0	RMS:  min = 2.400 ave = 3.06962 max = 4.162
+%	no link  clip     frame = 1050 aa = 53 bb = 85 ab = 2	RMS:  min = 2.344 ave = 3.72846 max = 5.174
+%	no link  half     frame = 1030 aa = 104 bb = 105 ab = 5	RMS:  min = 2.815 ave = 4.45303 max = 6.800
+%	no link  full     frame = 370 aa = 13 bb = 18 ab = 3	RMS:  min = 3.749 ave = 5.25678 max = 7.099
+%
+%	link on  miss     frame = 990 aa = 29 bb = 24 ab = 0	RMS:  min = 2.101 ave = 3.12647 max = 4.451
+%	link on  clip     frame = 1190 aa = 64 bb = 77 ab = 3	RMS:  min = 2.870 ave = 3.93120 max = 5.458
+%	link on  half     frame = 1130 aa = 91 bb = 94 ab = 3	RMS:  min = 3.027 ave = 4.71534 max = 8.282
+%	link on  full     frame = 1400 aa = 135 bb = 120 ab = 7	RMS:  min = 3.717 ave = 5.72397 max = 8.475
+%
+%
+
+\paragraph{64+64 domain collision:\\}
+
+The next larger complete Hilbert curve of protein domains comprises 64 domains (8256 residues)
+and the interaction of two such objects approaches the computational limits of what can be run
+on a laptop computer in real time (over a few minutes).   Nevertheless, a small number of test
+were conducted with the highest level in the hierarchy consisting of a sphere of unlinked proteins,
+each composed of 8 linked domains as employed above.    The $soft:hard$ parameter combination
+for this level was again set to 10:5 (percent of atomic).
+
+The mean domain start/final RMSD value after a half-face collision was 6.5\AA.  No inter-object
+clashes were seen at the atomic level but a marked number of intra-object clashes built-up
+during the collision.   It seemed likely that this higher than expected RMSD value 
+was therefore a consequence of the speed of the collision giving insufficient time for the
+'shock-wave' of compression to dissipate through the domains. (Figure 3)
+
+The collision was then re-run in 'slow-motion' with a time-step slowed by a factor of 10.
+(The collision that normally took a few minutes now took 30).  The mean RMSD then dropped to
+the acceptable value of 5.3\AA\ but intra-body clashes were still prominent during the collision.
+This was similar to the collision of the largest Hilbert cubes, with the intra-object
+collisions absorbing the 'energy' of the crash.
+
+% RMS:  min = 3.422 ave = 5.36615 max = 8.861
+
+\begin{figure}
+\centering
+\subfigure[]{
+\epsfxsize=190pt \epsfbox{figs/prot/bump1.eps}
+}
+\subfigure[]{
+\epsfxsize=190pt \epsfbox{figs/prot/bump2.eps}
+}
+\subfigure[]{
+\epsfxsize=190pt \epsfbox{figs/prot/bump3.eps}
+}
+\subfigure[]{
+\epsfxsize=190pt \epsfbox{figs/prot/bump4.eps}
+}
+\caption[]{
+\label{Fig:bumps}
+\begin{footnotesize}
+{\bf Multi-domain protein collisions}.  Two 8256 residue chains, aranged as 64 domains each in a
+Hilbert curve, are directed into each other.  The frames $a$---$d$ show the progression of the
+collision from initial contact to the point where the structures are almost past each other.
+Pairs of colliding objects are coloured by their separation in the structural hierarchy (as described
+in Figure 1) from green for first-cousins through yellow, red and magenta for inreasing levels or removal.
+\end{footnotesize}
+}
+\end{figure}

@@ -1,0 +1,1 @@
+cat $argv[1] | grep -v 'string{' | egrep '@|title' | sed 's/.rticle{//' | sed 's/.n.ollection{//' | sed 's/.n.roceedings{//' | sed 's/title..//' | awk 'BEGIN{RS="@"}{print $1,$2,$3,$4,$5,$6,$7,$8}' | sed 's/\"//g' | sort > summary.txt

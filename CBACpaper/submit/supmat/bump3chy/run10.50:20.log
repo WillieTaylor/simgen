@@ -1,0 +1,24 @@
+
+hard:soft = 50:20
+subunit
+	no link  miss     frame = 990 aa = 28 bb = 27 ab = 0	RMS:  min = 2.441 ave = 2.96249 max = 3.438
+	no link  clip     frame = 400 aa = 14 bb = 14 ab = 5	RMS:  min = 2.467 ave = 3.20554 max = 3.991
+	no link  half     frame = 790 aa = 61 bb = 66 ab = 12	RMS:  min = 2.703 ave = 3.76394 max = 4.999
+	no link  full     frame = 1100 aa = 121 bb = 118 ab = 19	RMS:  min = 3.989 ave = 4.90155 max = 6.318
+
+	link on  miss     frame = 990 aa = 30 bb = 24 ab = 0	RMS:  min = 2.194 ave = 2.85945 max = 3.479
+	link on  clip     frame = 410 aa = 15 bb = 16 ab = 4	RMS:  min = 2.436 ave = 3.07354 max = 3.562
+	link on  half     frame = 740 aa = 45 bb = 45 ab = 13	RMS:  min = 2.502 ave = 3.79202 max = 5.139
+	link on  full     frame = 1110 aa = 113 bb = 112 ab = 15	RMS:  min = 3.551 ave = 4.75123 max = 6.172
+
+hard:soft = 50:20
+domains
+	no link  miss     frame = 990 aa = 31 bb = 35 ab = 0	RMS:  min = 2.429 ave = 3.11896 max = 4.141
+	no link  clip     frame = 460 aa = 29 bb = 30 ab = 6	RMS:  min = 2.319 ave = 3.67896 max = 5.412
+	no link  half     frame = 840 aa = 89 bb = 89 ab = 9	RMS:  min = 2.754 ave = 4.41116 max = 7.218
+	no link  full     frame = 1160 aa = 93 bb = 121 ab = 11	RMS:  min = 2.927 ave = 5.0644 max = 7.954
+
+	link on  miss     frame = 990 aa = 25 bb = 42 ab = 0	RMS:  min = 2.362 ave = 3.20732 max = 4.112
+	link on  clip     frame = 1070 aa = 69 bb = 77 ab = 4	RMS:  min = 2.653 ave = 3.90463 max = 5.156
+	link on  half     frame = 780 aa = 75 bb = 86 ab = 12	RMS:  min = 2.372 ave = 4.56583 max = 7.384
+	link on  full     frame = 990 aa = 111 bb = 117 ab = 9	RMS:  min = 3.250 ave = 5.30937 max = 7.928

@@ -1,0 +1,32 @@
+NORUN
+NOMOVE
+#NOVIEW
+SCALE 0.15
+PARAM stem.model
+END
+GROUP 0 1
+GROUP 0 5
+SPINX 120
+TRANS  30  30  90
+INPUT stem1a.dat
+TRANS   0 -60   0
+INPUT stem1b.dat
+SPINZ -180
+TRANS  30  90  60
+INPUT stem2a.dat
+TRANS   0  30   0
+INPUT stem2b.dat
+SPINZ  90
+TRANS -120  60   0
+INPUT stem3.dat
+REBOND pdbid  12 13
+REBOND pdbid  20 21
+REBOND pdbid  34 35
+REBOND pdbid  42 43
+REBOND pdbid  63 64
+REBOND pdbid  84 85
+RETERM pdbid   1 93
+#LINKS pdbid links.dat
+#LINKS pdbid dummy.dat
+#LINKS pdbid pseudo.dat
+#PRINT

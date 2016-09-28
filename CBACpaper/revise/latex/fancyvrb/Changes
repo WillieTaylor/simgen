@@ -1,0 +1,11 @@
+--- fancyvrb.sty
+2.8  2010/05/14  - fixed several trailing spaces (hv)
+                 - changed license to LPPL
+2.7a 2008/02/07  - NMM fixed lastline=firstline bug
+2.7  2000/03/21  - changed how fancyvrb.cfg included DG/SR 
+2.6  1998/07/17  - Three bug corrected, options numberblanklines,
+                   label, labelposition and leftline added and few
+                   precisions.
+v2.5  1998/01/28 - First public release.
+v2.0  1994/03/30 - First version personally shown by Timothy
+                   \textsc{van Zandt}

@@ -1,0 +1,44 @@
+        0,    50,   50,   50,  100,    0,    0,    0,    0,    0,       // hard  :kick size = []/100
+        0,    20,   20,   20,  100,    0,    0,    0,    0,    0,       // soft  :kick size = []/100
+
+subunit
+
+miss	min = 1.954 ave = 2.50335 max = 3.183
+clip	min = 2.082 ave = 2.72707 max = 3.441
+half	min = 2.338 ave = 3.24126 max = 4.075
+full	min = 2.959 ave = 3.94160 max = 5.076
++cyclic 
+miss	min = 2.196 ave = 2.70574 max = 3.407
+clip	min = 2.181 ave = 2.73415 max = 3.752
+half	min = 2.341 ave = 3.13871 max = 3.941
+full	min = 2.755 ave = 3.84095 max = 5.124
+
+domain
+
+miss	min = 1.976 ave = 3.21243 max = 5.068
+clip	min = 2.410 ave = 3.48240 max = 5.381
+half	min = 2.517 ave = 3.98062 max = 6.346
+full	min = 2.920 ave = 4.67958 max = 6.835
++cyclic
+miss	min = 2.086 ave = 2.99124 max = 4.311
+clip	min = 2.286 ave = 3.31564 max = 4.540
+half	min = 2.413 ave = 3.68511 max = 5.277
+full	min = 3.064 ave = 4.39963 max = 6.509
+
+
+        0,   100,  100,  100,  100,    0,    0,    0,    0,    0,       // hard  :kick size = []/100
+        0,    20,   20,   20,  100,    0,    0,    0,    0,    0,       // soft  :kick size = []/100
+
+subunit
+
+miss	min = 2.094 ave = 2.61102 max = 3.196
+clip	min = 2.325 ave = 2.77458 max = 3.369
+half	min = 2.445 ave = 3.11307 max = 3.908
+full	min = 2.373 ave = 3.44704 max = 4.402
+
+domain
+
+miss	min = 2.087 ave = 3.12982 max = 4.723
+clip	min = 2.333 ave = 3.46321 max = 5.276
+half	min = 2.380 ave = 3.70701 max = 5.532
+full	min = 3.031 ave = 4.28208 max = 6.384

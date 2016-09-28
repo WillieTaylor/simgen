@@ -1,0 +1,224 @@
+\begin{thebibliography}{}
+
+\bibitem[Astumian, 2001]{AstumianRD01}
+Astumian, R.~D. (2001{\em{}}).
+\newblock Making molecules into motors.
+\newblock {\em Sci. Am.} {\bf 285}, 56--64.
+
+\bibitem[Asz\'{o}di \& Taylor, 1994]{AszodiAet94a}
+Asz\'{o}di, A. \& Taylor, W.~R. (1994{\em{}}).
+\newblock Folding polypeptide $\alpha$-carbon backbones by distance geometry
+  methods.
+\newblock {\em Biopolymers, } {\bf 34}, 489--506.
+
+\bibitem[Bershitsky {\em et~al.}, 2009]{BershitskySYet09}
+Bershitsky, S.~Y., Ferenczi, M.~A., Koubassova, N.~A.  \& Tsaturyan, A.~K.
+  (2009{\em{}}).
+\newblock Insight into the actin-myosin motor from {X}-ray diffraction on
+  muscle.
+\newblock {\em Front. Biosci.} {\bf 14}, 3188--3213.
+
+\bibitem[Burghardt \& Hu, 2007]{BurghardtTPet07}
+Burghardt, T.~P. \& Hu, J. Y.and~Ajtai, K. (2007{\em{}}).
+\newblock Myosin dynamics on the millisecond time scale.
+\newblock {\em Biophys. Chem.} {\bf 131}, 15--28.
+
+\bibitem[Chen {\em et~al.}, 2002]{ChenLFet02}
+Chen, L.~F., Winkler, H., Reedy, M.~K., Reedy, M.~C.  \& A., T.~K.
+  (2002{\em{}}).
+\newblock Molecular modeling of averaged rigor crossbridges from tomograms of
+  insect flight muscle.
+\newblock {\em J. Struct. Biol.} {\bf 138}, 92--104.
+
+\bibitem[Coureux {\em et~al.}, 2004]{CoureuxPDet04}
+Coureux, P.~D., Sweeney, H.~L.  \& Houdusse, A. (2004{\em{}}).
+\newblock Three myosin v structures delineate essential features of
+  chemo-mechanical transduction.
+\newblock {\em EMBO J.} {\bf 23} (23), 4527--37.
+
+\bibitem[{De La Cruz} {\em et~al.}, 1999]{DeLaCruzEMet99}
+{De La Cruz}, E.~M., Wells, A.~L., Rosenfeld, S.~S., Ostap, E.~M.  \& Sweeney,
+  H.~L. (1999{\em{}}).
+\newblock The kinetic mechanism of myosin v.
+\newblock {\em Proc Natl Acad Sci U S A, } {\bf 96} (24), 13726--31.
+
+\bibitem[Dominguez {\em et~al.}, 1998]{DominguezRet98}
+Dominguez, R., Freyzon, Y., Trybus, K.~M.  \& Cohen, C. (1998{\em{}}).
+\newblock Crystal structure of a vertebrate smooth muscle myosin motor domain
+  and its complex with the essential light chain: visualization of the
+  pre-power stroke state.
+\newblock {\em Cell, } {\bf 94}, 559--571.
+
+\bibitem[Forkey {\em et~al.}, 2003]{ForkeyJNet03}
+Forkey, J.~N., Quinlan, M.~E., Shaw, M.~A., Corrie, J.~E.  \& Goldman, Y.~E.
+  (2003{\em{}}).
+\newblock Three-dimensional structural dynamics of myosin v by single-molecule
+  fluorescence polarization.
+\newblock {\em Nature, } {\bf 422} (6930), 399--404.
+
+\bibitem[Hofacker, 2003]{HofackerIL03}
+Hofacker, I.~L. (2003{\em{}}).
+\newblock Vienna {RNA} secondary structure server.
+\newblock {\em Nucleic Acids Res.} {\bf 31}, 3429--3431.
+
+\bibitem[Holmes, 2009]{HolmesKC09}
+Holmes, K.~C. (2009{\em{}}).
+\newblock Actin in a twist.
+\newblock {\em Nature, } {\bf 457}, 389--390.
+
+\bibitem[Holmes {\em et~al.}, 2003]{HolmesKCet03}
+Holmes, K.~C., Angert, I., Kull, J., Werner, J.  \& Schr{\"o}der, R.~R.
+  (2003{\em{}}).
+\newblock Electron cryo-microscopy shows how strong binding of myosin to actin
+  releases nucleotide.
+\newblock {\em Nature, } {\bf 425}, 423--427.
+
+\bibitem[Holmes {\em et~al.}, 1990]{HolmesKCet90}
+Holmes, K.~C., Popp, D., Gebhard, W.  \& Kabsch, W. (1990{\em{}}).
+\newblock Atomic model of the actin filament.
+\newblock {\em Nature, } {\bf 347}, 44--49.
+
+\bibitem[Holmes {\em et~al.}, 2004]{HolmesKCet04}
+Holmes, K.~C., Schr{\"o}der, R.~R., Sweeney, H.~L.  \& Houdusse, A.
+  (2004{\em{}}).
+\newblock The structure of the rigor complex and its implications for the power
+  stroke.
+\newblock {\em Phil. Trans. R. Soc. B, } {\bf 359}, 1819--1828.
+
+\bibitem[Izvekov \& Voth, 2005]{IzvekovSet05}
+Izvekov, S. \& Voth, G.~A. (2005{\em{}}).
+\newblock A multiscale coarse-graining method for biomolecular systems.
+\newblock {\em J. Phys. Chem. B, } {\bf 109}, 2469--2473.
+
+\bibitem[Katsimitsoulia \& Taylor, 2010]{KatsimitsouliaZet10a}
+Katsimitsoulia, Z. \& Taylor, W.~R. (2010{\em{}}).
+\newblock A hierarchic algorithm for simple {B}rownian dynamics.
+\newblock {\em Compu. Biol. Chem, } {\bf 34}, 71--79.
+\newblock {\tt doi.10.1016/j.compbiolchem.2010.01.001}.
+
+\bibitem[Kawakubo {\em et~al.}, 2005]{KawakuboTet05}
+Kawakubo, T., Okada, O.,   \& Minami, T. (2005{\em{}}).
+\newblock Molecular dynamics simulations of evolved collective motions of atoms
+  in the myosin motor domain upon perturbation of the {ATP}ase pocket.
+\newblock {\em Biophys. Chem.} {\bf 115}, 77--85.
+
+\bibitem[Kawakubo {\em et~al.}, 2009]{KawakuboTet09}
+Kawakubo, T., Okada, O.  \& Minami, T. (2009{\em{}}).
+\newblock Dynamic conformational changes due to the atp hydrolysis in the motor
+  domain of myosin: 10-ns molecular dynamics simulations.
+\newblock {\em Biophys. Chem.} {\bf 141}, 75--86.
+
+\bibitem[Kodera {\em et~al.}, 2010]{KoderaNet10}
+Kodera, N., Yamamoto, D., Ishikawa, R.  \& Ando, T. (2010{\em{}}).
+\newblock Video imaging of walking myosin v by high-speed atomic force
+  microscopy.
+\newblock {\em Nature, } {\bf 468}, 72--76.
+
+\bibitem[Krebs \& Gerstein, 2000]{KrebsWGet00}
+Krebs, W.~G. \& Gerstein, M. (2000{\em{}}).
+\newblock The morph server: a standardized system for analysing and visualizing
+  macromolecular motions in a database framework.
+\newblock {\em Nuc. acids Res.} {\bf 28}, 1665--1675.
+
+\bibitem[Liu {\em et~al.}, 2006{\em{a}}]{LiuJet06a}
+Liu, J., Taylor, D.~W., Krementsova, E.~B., Trybus, K.~M.  \& Taylor, K.~A.
+  (2006{\em{a}}).
+\newblock Three-dimensional structure of the myosin v inhibited state by
+  cryoelectron tomography.
+\newblock {\em Nature, } {\bf 442}, 208--211.
+
+\bibitem[Liu {\em et~al.}, 2006{\em{b}}]{LiuYet06}
+Liu, Y., Scolari, M., Im, W.  \& Woo, H.-J. (2006{\em{b}}).
+\newblock Protein-protein interactions in actin-myosin binding and structural
+  effects of {R405Q} mutation: a molecular dynamics study.
+\newblock {\em Proteins: Struc. Fun. Bioinfo.} {\bf 64}, 156--166.
+
+\bibitem[Lorenz \& Holmes, 2010]{LorenzMet10}
+Lorenz, M. \& Holmes, K.~C. (2010{\em{}}).
+\newblock The actin-myosin interface.
+\newblock {\em Proc. Natl. Acad. Sci. U S A, } {\bf 107}, 12529--12534.
+
+\bibitem[Mehta {\em et~al.}, 1999]{MehtaADet99}
+Mehta, A.~D., Rock, R.~S., Rief, M., Spudich, J.~A., Mooseker, M.~S.  \&
+  Cheney, R.~E. (1999{\em{}}).
+\newblock Myosin-v is a processive actin-based motor.
+\newblock {\em Nature, } {\bf 400} (6744), 590--3.
+
+\bibitem[Parker {\em et~al.}, 2009]{ParkerDet09}
+Parker, D., Bryant, Z.  \& Delp, S.~L. (2009{\em{}}).
+\newblock Coarse-grained structural modelling of molecular motors using
+  multibody dynamics.
+\newblock {\em Cell. Mol. Bioeng.} {\bf 2}, 366--374.
+
+\bibitem[Reedy, 2000]{ReedyMC00}
+Reedy, M.~C. (2000{\em{}}).
+\newblock Visualizing myosin's power stroke in muscle contraction.
+\newblock {\em J. Cell Sci.} {\bf 113}, 3551--3562.
+
+\bibitem[Schlick, 2002]{SchlickT02}
+Schlick, T. (2002{\em{}}).
+\newblock {\em Molecular modeling and simulation : an interdisciplinary guide}.
+\newblock Springer, New York and London.
+
+\bibitem[Spudich, 1994]{SpudichJA94}
+Spudich, J.~A. (1994{\em{}}).
+\newblock How molecular motors work.
+\newblock {\em Nature, } {\bf 372} (6506), 515--8.
+
+\bibitem[Taylor, 1999]{TaylorWR99b}
+Taylor, W.~R. (1999{\em{}}).
+\newblock Protein structure domain identification.
+\newblock {\em Prot. Engng.} {\bf 12}, 203--216.
+
+\bibitem[Taylor, 2001]{TaylorWR01a}
+Taylor, W.~R. (2001{\em{}}).
+\newblock Defining linear segments in protein structure.
+\newblock {\em J. Molec. Biol.} {\bf 310}, 1135--1150.
+
+\bibitem[Taylor \& Asz\'odi, 2005]{TaylorWRet05}
+Taylor, W.~R. \& Asz\'odi, A. (2005{\em{}}).
+\newblock {\em Protein Geometry, Classification, Topology and Symmetry}.
+\newblock Institute of Physics.
+\newblock Currently published by CRC Press.
+
+\bibitem[Taylor \& Katsimitsoulia, 2010{\em{a}}]{TaylorWRet10a}
+Taylor, W.~R. \& Katsimitsoulia, Z. (2010{\em{a}}).
+\newblock A soft collision detection algorithm for simple {B}rownian dynamics.
+\newblock {\em Compu. Biol. Chem, } {\bf 34}, 1--10.
+\newblock {\tt doi.10.1016/jcompbiolchem.2009.11.003}.
+
+\bibitem[Taylor \& Katsimitsoulia, 2010{\em{b}}]{TaylorWRet10b}
+Taylor, W.~R. \& Katsimitsoulia, Z. (2010{\em{b}}).
+\newblock A coarse-grained model for actin myosin simulation.
+\newblock {\em J. Molec. Graph. Model.} {\bf 29}, 266--279.
+
+\bibitem[Taylor {\em et~al.}, 2011]{TaylorWRet11a}
+Taylor, W.~R., Katsimitsoulia, Z.  \& Poliakov, A. (2011{\em{}}).
+\newblock Simulation of cell movement and interaction.
+\newblock {\em J. Bioinfo. Compu. Biol.} {\bf 9}, 91--110.
+
+\bibitem[Taylor {\em et~al.}, 1983]{TaylorWRet83b}
+Taylor, W.~R., Thornton, J.~M.  \& Turnell, W.~G. (1983{\em{}}).
+\newblock A ellipsoidal approximation of protein shape.
+\newblock {\em J. Molec. Graphics, } {\bf 1}, 30--38.
+
+\bibitem[Veigel {\em et~al.}, 2005]{VeigelCet05}
+Veigel, C., Schmitz, S., Wang, F.  \& Sellers, J.~R. (2005{\em{}}).
+\newblock Load-dependent kinetics of myosin-{V} can explain its high
+  processivity.
+\newblock {\em Nat. Cell Biol.} {\bf 7}, 861--869.
+
+\bibitem[Zhang {\em et~al.}, 2009]{ZhangZet09}
+Zhang, Z., Pfaendtner, J., Grafmuller, A.  \& Voth, G.~A. (2009{\em{}}).
+\newblock Defining coarse-grained representations of large biomolecules and
+  biomolecular complexes from elastic network models.
+\newblock {\em Biophys. J.} {\bf 97}, 2327--2337.
+
+\bibitem[Zheng, 2011]{ZhengW11}
+Zheng, W. (2011{\em{}}).
+\newblock Coarse-grained modelling of conformational transitions underlying the
+  processive stepping of myosin {V} dimer along filamentous actin.
+\newblock {\em Proteins: Struc. Fun. Bioinfo.} {\bf online},
+  DOI:10.1002/prot.23055.
+
+\end{thebibliography}

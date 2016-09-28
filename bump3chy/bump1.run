@@ -1,0 +1,15 @@
+#NORUN
+#NOVIEW
+SCALE 0.158 6.33  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM temp.model
+END
+GROUP 0 2
+#  Y = +/- 50 = miss
+#  Y = +/- 25 = clip
+#  Y = +/- 15 = half
+#  Y = +/-  5 = full
+TRANS  50   25  0
+INPUT unit1.dat
+TRANS -50  -25  0
+INPUT unit1.dat
+LINKS pdbid links.dat

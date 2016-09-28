@@ -1,0 +1,5 @@
+NORUN
+PARAM test6.model
+END
+GROUP 0 1
+INPUT cube3.dat

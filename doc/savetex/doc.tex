@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{latex/ntgclass/a4}
+\usepackage{epsfig}
+%\usepackage{graphicx}
+%\usepackage{floatfig}
+%\usepackage{floatflt}
+\usepackage{latex/subfigure/subfigure}
+\usepackage{latex/multirow/multirow}
+%\usepackage{rotate}
+%\usepackage{rotating}
+%\usepackage{doublespace}
+\usepackage{latex/setspace/setspace}
+
+\include{latex/header}
+
+\usepackage{lmodern}
+\renewcommand\ttfamily{\usefont{T1}{lmtt}{m}{n}}
+
+\newcommand{\TT}[1]{{\ttfamily\bfseries #1}}
+\newcommand{\Tt}[1]{{\tt #1}}
+\newcommand{\NAME}{{\TT{SimGen}}}
+
+\setstretch{1.5}
+
+\begin{document}
+
+\title{\bf \NAME --- a generalised multi-scale simulation program
+}
+
+\author{
+William~R.~Taylor\\ \\ \\ \\
+$^\dagger$Division of Mathematical Biology,\\
+MRC National Institute for Medical Research,\\
+The Ridgeway, Mill Hill, London NW7 1AA, U.K.\\ \\ 
+}
+\begin{singlespace}
+\maketitle
+\end{singlespace}
+\clearpage
+%\include{abstract}
+%\clearpage
+\part{Overview and Model Construction}
+\include{main}
+\clearpage
+\include{params}
+\clearpage
+\include{models}
+\clearpage
+\include{actin}
+\clearpage
+\part{Implementation and Simulation}
+\include{shaker}
+\clearpage
+\include{bumper}
+\clearpage
+\include{linker}
+\clearpage
+\include{keeper}
+\clearpage
+%\begin{singlespace}
+%\bibliographystyle{latex/jtb}
+%\bibliography{latex/newrefs}
+%\paragraph{Acknowledgements:}
+%The work was supported by the Medical Research Council (UK) and
+%\clearpage
+%\include{appendix}
+%\end{singlespace}
+\end{document}

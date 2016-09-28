@@ -1,0 +1,110 @@
+Dear Jaap,
+
+The referee is correct in pointing out that the coverage of the literature is 
+indeed rather thin.   I have rectified this by adding the following references
+to the revised paper, not just in the section titled "Relationship to other
+methods", but also, where relevant to the Introduction section also.
+
+The new citations follow with an indication of the section in which they first
+occur.  As the paper is now in the Elsiever LaTeX format, it is not possible to
+make a full "diff" of the changes so instead I have included the changed lines
+containing the citation.
+
+I hope this addresses the referees concern.
+
+With best wishes, Willie
+
+-------------------------------------------------------
+
+New citations and text:
+
+Introduction
+:
+\cite{BondPJet07,IzvekovSet05}.  (See Ref.\cite{TozziniV05} for a review).
+:
+use of a bounding-box construct \cite{TeschnerMet05}.  This is a box in which a group of points is contained
+:
+the use of neighbour-lists in molecular dynamics (MD) \cite{VerletL67}.   In general, the bounding
+:
+on the "world" coordinate frame is less relevant.  (See Ref.\cite{MuthBet07} for a review).
+:
+for an RNA stem-loop \cite{DingFet08} or an \AH\ \cite{MinaryPet10} or even a general peptide \cite{VachaRet14}.
+:
+solution for the contact-normal between two ellipsoids is not trivial \cite{DonevAet04b,KallrathJ15}.
+
+\subsection{Relationship to other methods}
+As outlined in the Introduction, the current method lies somewhere between a
+hierarchical bounding box approach \cite{TeschnerMet05} and the neighbour-list
+approaches more commonly found in conventional molecular dynamics.   Although improvements
+have been made since their original implementation \cite{VerletL67}, such as the cell-based
+algorithm \cite{YaoZet04},  the neighbour-list approach requires the lists to be updated frequently
+which involves considerable "book-keeping", especially for objects of different shapes
+and sizes \cite{DonevAet05,MuthBet07}.   By contrast in the current method, the
+neighbour-list is a fixed hierarchy in which the lower levels are only evaluated
+when higher levels collide.
+:
+move of the system, which is similar to the the approach of Sim {\em et al.} \cite{SimAYLet12b},
+or perhaps exploiting the hierarchic organisation along the lines of Gipson {\em et al.} \cite{GipsonBet13}.
+A second path to resolve the problem might be through a variation of Gaussian elastic
+networks \cite{ZhangZet09}.  However, elastic...
+
+Additional references:
+
+title = "{SIMS}: A Hybrid Method for Rapid Conformational Analysis",
+author = "Gipson, B. and Moll, M. and Kavraki, L. E.",
+journal = "{PLoS ONE}", volume = "8", pages = "e68826", year = "2013",
+
+title = "Coarse-grained models for proteins",
+author = "Tozzini, V.",
+journal = "Curr. Opinion Struct. Biol.",
+volume = "15", year = "2005", pages = "144--150"
+
+author = "Kallrath, J.",
+title = "Packing ellipsoids into volume-minimizing rectangular boxes",
+journal = "J. Global Optimisation", volume = "?", pages = "1--35", year = "2015",
+
+author = "Yao, Z. and Wang, J-S and Liu, G-R and Cheng, M.",
+title = "Improved neighbor list algorithm in molecular simulations using cell decomposition and data sorting method",
+journal = "Comp. Phys. Comm.", volume = "161", pages = "27--35", year = "2004"
+
+author = "Verlet, L.",
+title = "Computer 'experiments' on classical fluids. {I}. Thermodynamical properties of {Lennard-Jones} molecules",
+journal = "Phys. Rev.", volume = "159", pages = "98--103", year = "1967",
+
+title = "Collision Detection and Administration Methods for Many Particles with Different Sizes",
+author = "Muth, B. and Müller, M.-K. and Eberhard, P. and Luding, S.",
+booktitle = "4th International Conference on Discrete Element Methods, DEM 2007", year = "2007",
+
+title = "Unusually Dense Crystal Packings of Ellipsoids",
+author = "Donev, A. and Stillinger, F. H. and Chaikin, P. M. and Torquato, S.",
+journal = "Phys. Rev. Lett.", volume = "25", year = "2004", pages = "255506",
+
+title = "Improving the Density of Jammed Disordered Packings using Ellipsoids",
+author = "Donev, A. and Cisse, I. and Sachs, D. and Variano, E. A. and Stillinger, F. H. and Connelly, R. and Torquato, S. and Chaikin, P. M.",
+journal = "Science", volume = "303", year = "2004", pages = "990--993"
+
+title = "Neighbor list collision-driven molecular dynamics simulation for nonspherical hard particles.  {I}. Algorithmic details",
+author = "Donev, A. and Torquato, S. and Stillinger, F. H.",
+journal = "J. Comp. Phys.", volume = "202", year = "2005", pages = "737--764"
+
+author = "Teschner, M. and Kimmerle, S. and Heidelberger, B. and Zachmann, G. and Raghupathi, L. et al.",
+title = "Collision Detection for Deformable Objects.",
+booktitle = "Computer Graphics Forum", publisher = "Wiley", year = "2005",
+
+author = "Zhang, Z. and Pfaendtner, J. and Grafmuller, A. and Voth, G. A.",
+title = "Defining coarse-grained representations of large biomolecules and
+biomolecular complexes from elastic network models.",
+journal = "Biophys. J.", volume = "97", pages = "2327--2337", year = "2009"
+
+title = "Conformational Optimization with Natural Degrees of Freedom: A Novel Stochastic Chain Closure Algorithm",
+author = "Minary, P. and Levitt, M.",
+journal = "J. Comp. Biol.", volume = "17", pages = "993--1010", year = "2010"
+
+title = "Modeling and design by hierarchical natural moves",
+author = "Sim, A.Y.L. and Levitt, M. and Minary, P.",
+journal = "Proc. Natnl. Acad. Sci., U.S.A.", volume = "109", pages = "2890--2895", year = "2012"
+
+author = "Ding, F. and Sharma, S. and Chalasani, P. and Demidov, V.V. and Broude, N.E. and Dokholyan, N",
+title = "{\em Ab initio} {RNA} folding by discrete molecular dynamics: From structure prediction to folding mechanisms",
+journal = "{RNA}", volume = "14", pages = "1164--1173", year = "2008"
+

@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: paper.aux
+The style file: elsarticle-num.bst
+Database file #1: latex/newrefs.bib
+Warning--entry type for "KallrathJ15" isn't style-file defined
+--line 53 of file latex/newrefs.bib
+Database file #2: extra.bib
+Warning--empty pages in TeschnerMet05
+Warning--empty publisher in MuthBet07
+Warning--empty pages in MuthBet07
+Warning--empty pages in TaylorWRet12c
+You've used 26 entries,
+            2937 wiz_defined-function locations,
+            934 strings with 10690 characters,
+and the built_in function-call counts, 7919 in all, are:
+= -- 787
+> -- 270
+< -- 0
++ -- 107
+- -- 81
+* -- 571
+:= -- 1114
+add.period$ -- 26
+call.type$ -- 26
+change.case$ -- 31
+chr.to.int$ -- 0
+cite$ -- 30
+duplicate$ -- 223
+empty$ -- 851
+format.name$ -- 103
+if$ -- 1991
+int.to.chr$ -- 0
+int.to.str$ -- 26
+missing$ -- 25
+newline$ -- 86
+num.names$ -- 28
+pop$ -- 145
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 469
+stack$ -- 0
+substring$ -- 580
+swap$ -- 23
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 70
+width$ -- 28
+write$ -- 223
+(There were 5 warnings)

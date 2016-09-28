@@ -1,0 +1,132 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{LevittMet75}
+M.~Michael~Levitt, A.~Warshel, Computer simulation of protein folding, Nature
+  253 (1975) 694--698.
+
+\bibitem{BondPJet07}
+P.~Bond, J.~Holyoake, A.~Ivetac, S.~Khalid, M.~Sansom, Coarse-grained molecular
+  dynamics simulations of membrane proteins and peptides, J. Struct. Biol. 157
+  (2007) 593--605.
+
+\bibitem{IzvekovSet05}
+S.~Izvekov, , G.~A. Voth, A multiscale coarse-graining method for biomolecular
+  systems, J. Phys. Chem. lett. B 109 (2005) 2469--2473.
+
+\bibitem{TozziniV05}
+V.~Tozzini, Coarse-grained models for proteins, Curr. Opinion Struct. Biol. 15
+  (2005) 144--150.
+
+\bibitem{KatsimitsouliaZet10a}
+Z.~Katsimitsoulia, W.~R. Taylor, A hierarchic algorithm for simple {B}rownian
+  dynamics, Compu. Biol. Chem 34 (2010) 71--79, {\tt
+  doi.10.1016/j.compbiolchem.2010.01.001}.
+
+\bibitem{TaylorWRet10a}
+W.~R. Taylor, Z.~Katsimitsoulia, A soft collision detection algorithm for
+  simple {B}rownian dynamics, Compu. Biol. Chem 34 (2010) 1--10, {\tt
+  doi.10.1016/jcompbiolchem.2009.11.003}.
+
+\bibitem{TeschnerMet05}
+M.~Teschner, S.~Kimmerle, B.~Heidelberger, G.~Zachmann, L.~e.~a. Raghupathi,
+  Collision detection for deformable objects., in: Computer Graphics Forum,
+  Wiley, 2005, inria-00394479.
+
+\bibitem{VerletL67}
+L.~Verlet, Computer 'experiments' on classical fluids. {I}. thermodynamical
+  properties of {Lennard-Jones} molecules, Phys. Rev. 159 (1967) 98--103,
+  doi:10.1103/physrev.159.98.
+
+\bibitem{MuthBet07}
+B.~Muth, M.-K. Müller, P.~Eberhard, S.~Luding, Collision detection and
+  administration methods for many particles with different sizes, in: 4th
+  International Conference on Discrete Element Methods, DEM 2007, 2007, {\tt
+  http://doc.utwente.nl/80337/1/Muth07collision.pdf}.
+
+\bibitem{DingFet08}
+F.~Ding, S.~Sharma, P.~Chalasani, V.~Demidov, N.~Broude, N.~Dokholyan, {\em Ab
+  initio} {RNA} folding by discrete molecular dynamics: From structure
+  prediction to folding mechanisms, {RNA} 14 (2008) 1164--1173.
+
+\bibitem{MinaryPet10}
+P.~Minary, M.~Levitt, Conformational optimization with natural degrees of
+  freedom: A novel stochastic chain closure algorithm, J. Comp. Biol. 17 (2010)
+  993--1010.
+
+\bibitem{VachaRet14}
+R.~V{\'a}cha, S.~Linse, M.~Lund, Surface effects on aggregation kinetics of
+  amyloidogenic peptides., J. Am. Chem. Soc 136 (2014) 11776--11782, dOI:
+  10.1021/ja505502e.
+
+\bibitem{DonevAet04b}
+A.~Donev, I.~Cisse, D.~Sachs, E.~A. Variano, F.~H. Stillinger, R.~Connelly,
+  S.~Torquato, P.~M. Chaikin, Improving the density of jammed disordered
+  packings using ellipsoids, Science 303 (2004) 990--993.
+
+\bibitem{KallrathJ15}
+J.~Kallrath, Packing ellipsoids into volume-minimizing rectangular boxes,
+  doi:10.1007/s10898-015-0348-6 (2015).
+
+\bibitem{TaylorWRet12c}
+W.~R. Taylor, Z.~Katsimitsoulia, Generalised multi-level coarse-grained
+  molecular simulation and its application to myosin-{V} movement, in:
+  T.~Schlick (Ed.), Innovations in biomolecular modeling and simulations, RSC
+  biomolecular sciences, ISSN 1757-7152 ; no. 23-24, Royal Society of Chemistry
+  (Great Britain), 2012.
+
+\bibitem{TaylorWRet83b}
+W.~R. Taylor, J.~M. Thornton, W.~G. Turnell, A ellipsoidal approximation of
+  protein shape, J. Molec. Graphics 1 (1983) 30--38.
+
+\bibitem{AszodiAet94a}
+A.~Asz\'{o}di, W.~R. Taylor, Folding polypeptide $\alpha$-carbon backbones by
+  distance geometry methods, Biopolymers 34 (1994) 489--506.
+
+\bibitem{TaylorWRet13}
+W.~Taylor, R.~Hamilton, M.~Sadowski, Prediction of contacts from correlated
+  sequence substitutions, Curr. Opinion Struct. Biol. 23 (2013) 473--479.
+
+\bibitem{TaylorWRet94a}
+W.~R. Taylor, D.~T. Jones, N.~M. Green, A method for $\alpha$-helical integral
+  membrane protein fold prediction, Prot. Struct. Funct. Genet. 18 (1994)
+  281--294.
+
+\bibitem{HofackerIL03}
+I.~L. Hofacker, Vienna {RNA} secondary structure server, Nucleic Acids Res. 31
+  (2003) 3429--3431.
+
+\bibitem{YaoZet04}
+Z.~Yao, J.-S. Wang, G.-R. Liu, M.~Cheng, Improved neighbor list algorithm in
+  molecular simulations using cell decomposition and data sorting method, Comp.
+  Phys. Comm. 161 (2004) 27--35.
+
+\bibitem{DonevAet05}
+A.~Donev, S.~Torquato, F.~H. Stillinger, Neighbor list collision-driven
+  molecular dynamics simulation for nonspherical hard particles. {I}.
+  algorithmic details, J. Comp. Phys. 202 (2005) 737--764.
+
+\bibitem{PerioleXet09}
+X.~Periole, M.~Cavalli, S.-J. Marrink, M.~Ceruso, Combining an elastic network
+  with a coarse-grained molecular force field: structure, dynamics, and
+  intermolecular recognition., J. Chem. Theory Comp. 5 (2009) 2531--2543.
+
+\bibitem{SimAYLet12b}
+A.~Sim, M.~Levitt, P.~Minary, Modeling and design by hierarchical natural
+  moves, Proc. Natnl. Acad. Sci., U.S.A. 109 (2012) 2890--2895.
+
+\bibitem{GipsonBet13}
+B.~Gipson, M.~Moll, L.~E. Kavraki, {SIMS}: A hybrid method for rapid
+  conformational analysis, {PLoS ONE} 8 (2013) e68826,
+  doi:10.1371/journal.pone.0068826.
+
+\bibitem{ZhangZet09}
+Z.~Zhang, J.~Pfaendtner, A.~Grafmuller, G.~A. Voth, Defining coarse-grained
+  representations of large biomolecules and biomolecular complexes from elastic
+  network models., Biophys. J. 97 (2009) 2327--2337.
+
+\end{thebibliography}

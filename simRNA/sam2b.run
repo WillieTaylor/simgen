@@ -1,0 +1,7 @@
+NORUN
+#NOMOVE
+SCALE 0.15
+PARAM rnastem.model
+END
+GROUP 0 1
+INPUT stem2b.dat

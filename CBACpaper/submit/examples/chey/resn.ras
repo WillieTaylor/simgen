@@ -1,0 +1,7 @@
+wireframe off
+backbone 100
+cpk 111
+colour group
+label %r
+colour labels grey
+set picking monitor

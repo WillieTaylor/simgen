@@ -1,0 +1,10 @@
+#NORUN
+#NOMOVE
+SCALE 0.158 6.33  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM unit2.model
+END
+GROUP 0 2
+TRANS  120  30  0
+INPUT unit2.dat
+TRANS -120 -30  0
+INPUT unit2.dat

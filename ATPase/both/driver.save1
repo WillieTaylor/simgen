@@ -1,0 +1,87 @@
+#include "sims/util.hpp"
+#include "sims/geom.hpp"
+#include "sims/cell.hpp"
+#include "sims/data.hpp"
+
+#include <GL/gl.h>
+#include <GL/glu.h>
+#include <GL/glut.h>
+
+void driver ()
+{
+int	frame = Data::frame;
+Cell	*world = Cell::world;
+Cell	*A = world->child[0]; // A subunit
+Cell	*C = world->child[1]; // C ring
+Cell	*B = world->child[2]; // memBrane and H+ (as 50 groups of 10)
+Cell	*memb = B->child[0];
+Data	*model = Data::model+world->model;
+int	depth = Data::depth;
+int	total = Cell::total;
+int	run = 2000;
+float	spin = 0.5;
+float	kick = 0.1;
+int	nbags = memb->kids/2; // number of groups of protons (followed by matching dummy groups)
+int	cytH = 0, lumH = 0, held = 0;
+int	nprot;
+float	pKa[26];
+	FOR(i,26) pKa[i] = 0.0;
+// R=12.48 K=10.53 Y=10.46 H=6.04 C=8.37 D=3.90 E=4.07
+// A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+//       4 5     8
+	pKa[4]=3.9; pKa[5]=4.1; pKa[8]=6.0;
+// jiggle the C-ring
+	C->spin(C->endN,C->endC,spin*(randf()-0.5));
+// kick protons out of the membrane
+	nprot = 0;
+	FOR(i,nbags) {
+		memb->child[i]->xyz.x *= 0.5;
+		memb->child[i]->xyz.z *= 0.5;
+		memb->child[i+nbags]->xyz = memb->child[i]->xyz * -1.0;
+		FOR(j,memb->child[i]->kids)
+		{ Cell	*H = memb->child[i]->child[j];
+			nprot++;
+			if(H->link[0].to != 0) { held++; continue; } // do not expel
+			if(H->xyz.y < memb->xyz.y-3) { cytH++; continue; }
+			if(H->xyz.y > memb->xyz.y+3) { lumH++; continue; }
+			if(H->xyz.y < memb->xyz.y) H->xyz.y -= kick;
+			if(H->xyz.y > memb->xyz.y) H->xyz.y += kick;
+		}
+	}
+	Pi(held) Pi(cytH) Pi(lumH) NL
+	if (cytH+lumH < nprot*0.9) return;
+// link protons to residues in A-subunit
+	FOR(i,A->kids) FOR(j,A->child[i]->kids) FOR(k,A->child[i]->child[j]->kids)
+	{ Cell *res = A->child[i]->child[j]->child[k]; char aa = res->cdata[4];
+		if (aa!='E' &&aa!='D' && aa!='E' && aa!='H') continue;
+		if (res->link[2].to != 0) // the residue is linked to a proton
+		{ Cell	*p = res->link[2].to;
+		  Vec	s = (res->xyz - res->sis->xyz) + (res->xyz - res->bro->xyz);
+			p->xyz = res->xyz + s.getVec(Data::distH);
+			continue;
+		}
+		FOR(m,nbags) { int linked = 0;
+			FOR(n,memb->child[m]->kids)
+			{ Cell	*H = memb->child[m]->child[n];
+		  	float d = H->xyz | res->xyz;
+				if (d > 1.0) continue;
+				if (H->link[0].to != 0) { // the proton is linked to a residue
+					if (randf()<0.5) { // kill the incoming link (and relink H below)
+						H->link[0].to->link[2].to = 0;
+					} else {
+						continue;
+					}
+				}
+				//Pi(res->resn) Pc(res->cdata[4]) Pr(d) NL
+				H->link[0].to = res;
+				res->link[2].to = H;
+				H->link[0].type = res->link[2].type = 16; // for H-bond length
+				H->link[0].next = res->link[2].next = 50; // for H-bond length
+				linked = 1;
+				break;
+			}
+			if (linked) break;
+		}
+	}
+//exit(1);	
+}

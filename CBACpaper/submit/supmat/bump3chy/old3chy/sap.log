@@ -1,0 +1,161 @@
+ file1 = 3chy.ten
+ prot1->Compound = 
+ file2 = temp.cas
+ prot2->Compound = 
+ARNDCQEGHILKMFPSTWYVBZX
+matrix constant = 8
+Cycle 1, 18 residues selected
+Cycle 2, 27 residues selected
+Cycle 3, 36 residues selected
+Cycle 4, 45 residues selected
+Cycle 5, 53 residues selected
+
+ score = 26375.888672
+
+Percent sel on aln =  100.00
+Percent aln in sel =   41.41
+ *G    1 125.9   1 A* 
+ *G    2 123.2   2 D  
+**G    3 376.7   3 K* 
+**G    4 635.4   4 E  
+**G    5 594.9   5 L**
+**G    6 618.5   6 K* 
+**G    7 611.4   7 F**
+**G    8 669.8   8 L**
+**G    9 642.1   9 V**
+**G   10 634.1  10 V**
+**G   11 293.0  11 D**
+ *G   12 361.7  12 D* 
+ *G   13 612.9  13 F* 
+ *G   14 127.9  14 S* 
+  G   15 195.4  15 T  
+**G   16 306.2  16 M**
+ *G   17 365.1  17 R**
+ *G   18 377.4  18 R* 
+**G   19 376.3  19 I* 
+**G   20 326.3  20 V**
+ *G   21 395.6  21 R**
+ *G   22 385.9  22 N* 
+**G   23 369.6  23 L* 
+**G   24 379.0  24 L**
+ *G   25 430.7  25 K* 
+ *G   26 450.7  26 E  
+**G   27 295.6  27 L* 
+ *G   28 514.8  28 G  
+**G   29 195.3  29 F**
+**G   30 344.2  30 N* 
+ *G   31 606.0  31 N* 
+**G   32 484.9  32 V* 
+ *G   33 585.1  33 E* 
+ *G   34 566.0  34 E* 
+ *G   35 597.3  35 A* 
+ *G   36 559.7  36 E* 
+ *G   37 254.7  37 D* 
+ *G   38 468.4  38 G**
+ *G   39 515.2  39 V* 
+ *G   40 436.2  40 D* 
+**G   41 504.3  41 A**
+**G   42 447.4  42 L* 
+ *G   43 525.6  43 N  
+**G   44 498.5  44 K* 
+**G   45 497.6  45 L**
+ *G   46 540.9  46 Q* 
+ *G   47 489.0  47 A  
+ *G   48 110.1  48 G* 
+**G   49 448.4  49 G* 
+**G   50 330.5  50 Y**
+**G   51 566.5  51 G* 
+**G   52 542.5  52 F**
+**G   53 580.9  53 V**
+**G   54 543.5  54 I**
+**G   55 475.9  55 S**
+**G   56 616.8  56 D**
+**G   57 385.3  57 W* 
+ *G   58 174.6  58 N* 
+ *G   59 122.9  59 M**
+  G   60 578.5  60 P* 
+ *G   61 570.2  61 N  
+**G   62 582.7  62 M**
+**G   63 609.5  63 D* 
+**G   64 594.3  64 G**
+**G   65 522.8  65 L* 
+**G   66 567.1  66 E* 
+**G   67 528.1  67 L* 
+**G   68 577.1  68 L**
+**G   69 539.5  69 K* 
+**G   70 586.0  70 T* 
+**G   71 558.1  71 I**
+**G   72 580.5  72 R**
+ *G   73 579.9  73 A* 
+**G   74  79.2  74 D* 
+**G   75 108.1  75 G  
+**G   76 118.8  76 A* 
+**G   77 189.1  77 M**
+**G   78 228.5  78 S**
+**G   79 441.3  79 A* 
+**G   80 338.5  80 L**
+**G   81 472.0  81 P**
+**G   82 521.3  82 V**
+**G   83 536.6  83 L**
+**G   84 168.4  84 M**
+**G   85 163.3  85 V**
+**G   86 423.4  86 T**
+ *G   87 235.9  87 A* 
+ *G   88 230.9  88 E* 
+ *G   89  90.4  89 A* 
+ *G   90 466.0  90 K* 
+ *G   91 581.2  91 K  
+ *G   92 558.5  92 E  
+**G   93 581.3  93 N**
+**G   94 589.7  94 I**
+**G   95 539.1  95 I* 
+**G   96 577.8  96 A* 
+**G   97 558.4  97 A**
+**G   98 576.5  98 A* 
+**G   99 472.6  99 Q  
+**G  100 393.1 100 A* 
+**G  102 525.8 101 G* 
+**G  103 542.0 102 A**
+**G  104 487.8 103 S* 
+**G  105 482.8 104 G* 
+**G  106 525.8 105 Y**
+**G  107 460.2 106 V* 
+ *G  108 484.1 107 V* 
+ *G  109 398.9 108 K* 
+ *G  110 558.7 109 P  
+ *G  111  90.6 110 F* 
+**G  112 107.0 111 T* 
+ *G  113 406.4 112 A* 
+**G  114 374.8 113 A  
+**G  115 309.0 114 T* 
+**G  116 358.5 115 L**
+**G  117 332.2 116 E* 
+**G  118 395.2 117 E* 
+**G  119 386.6 118 K**
+**G  120 368.6 119 L**
+**G  121 409.1 120 N* 
+**G  122 395.3 121 K* 
+**G  123 423.5 122 I**
+**G  124 375.9 123 F**
+**G  126 431.6 124 E* 
+ *G  127 333.5 125 K* 
+**G  128 703.2 126 L**
+**G  129 215.2 127 G  
+**G  130 250.3 128 M* 
+temp.cas Weighted RMSd =   0.370 over 128 atoms 120.337639 54957.593750   7.8 98.474336
+temp.cas Un-weighted RMSd =   0.383 over best 110 atoms ( 54957.593750    7.8 )
+temp.cas Un-weighted RMSd =   0.384 over best 122 atoms ( 54957.593750    7.8 )
+temp.cas Un-weighted RMSd =   0.393 over best 128 atoms ( 54957.593750    7.8 )
+temp.cas Un-weighted RMSd =   0.393 over best 128 atoms ( 54957.593750    7.8 )
+temp.cas Un-weighted RMSd =   0.393 over best 128 atoms ( 54957.593750    7.8 )
+temp.cas Un-weighted RMSd =   0.393 over best 128 atoms ( 54957.593750    7.8 )
+temp.cas Un-weighted RMSd =   0.393 over best 128 atoms ( 54957.593750    7.8 )
+temp.cas Un-weighted RMSd =   0.393 over best 128 atoms ( 54957.593750    7.8 )
+temp.cas Un-weighted RMSd =   0.393 over best 128 atoms ( 54957.593750    7.8 )
+temp.cas Un-weighted RMSd =   0.393 over best 128 atoms ( 54957.593750    7.8 )
+temp.cas Un-weighted RMSd =   0.393 over best 128 atoms ( 54957.593750    7.8 )
+temp.cas Un-weighted RMSd =   0.393 over best 128 atoms ( 54957.593750    7.8 )
+temp.cas Un-weighted RMSd =   0.393 over best 128 atoms ( 54957.593750    7.8 )
+temp.cas Un-weighted RMSd =   0.393 over best 128 atoms ( 54957.593750    7.8 )
+temp.cas Un-weighted RMSd =   0.393 over best 128 atoms ( 54957.593750    7.8 )
+temp.cas Un-weighted RMSd =   0.393 over all 128 matched atoms 120.337639 54957.593750    7.8 98.474336

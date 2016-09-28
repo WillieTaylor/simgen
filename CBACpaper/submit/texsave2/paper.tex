@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{latex/ntgclass/a4}
+\usepackage{epsfig}
+%\usepackage{graphicx}
+%\usepackage{floatfig}
+%\usepackage{floatflt}
+\usepackage{latex/subfigure/subfigure}
+\usepackage{latex/multirow/multirow}
+%\usepackage{rotate}
+%\usepackage{rotating}
+%\usepackage{doublespace}
+\usepackage{latex/setspace/setspace}
+\usepackage{latex/fancyvrb}
+\usepackage{latex/caption}
+\usepackage{latex/caption3}
+
+\include{latex/header}
+
+\usepackage{lmodern}
+\renewcommand\ttfamily{\usefont{T1}{lmtt}{m}{n}}
+
+\newcommand{\TT}[1]{{\ttfamily\bfseries #1}}
+\newcommand{\Tt}[1]{{\tt #1}}
+\newcommand{\NAME}{{\TT{SimGen}}}
+
+\setstretch{1.5}
+
+\begin{document}
+
+\title{\bf A generalised multi-scale collision handling algorithm for coarse-grainned simulation
+}
+
+\author{
+William~R.~Taylor\\ \\ \\ \\
+$^\dagger$Francsis Crick Institute,\\
+The Ridgeway, Mill Hill, London NW7 1AA, U.K.\\ \\ 
+}
+\begin{singlespace}
+\maketitle
+\end{singlespace}
+\clearpage
+%\include{abstract}
+%\clearpage
+\section{Overview and Model Design}
+\include{intro}
+\clearpage
+\section{Algorithms and Implementation}
+\include{bumper}
+\clearpage
+\include{keeper}
+\clearpage
+\section{Examples and Applications}
+\include{test}
+\include{real}
+\clearpage
+%\begin{singlespace}
+%\bibliographystyle{latex/jtb}
+%\bibliography{latex/newrefs}
+%\paragraph{Acknowledgements:}
+%The work was supported by the Medical Research Council (UK) and
+%\clearpage
+%\include{appendix}
+%\end{singlespace}
+\end{document}

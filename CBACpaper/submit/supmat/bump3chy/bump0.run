@@ -1,0 +1,15 @@
+#NOMOVE
+#NORUN
+SCALE 0.158 6.33  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM unit0.model
+END
+GROUP 0 2
+#  Y = +/-16 = miss
+#  Y = +/- 8 = clip
+#  Y = +/- 4 = half
+#  Y = +/- 2 = full
+TRANS  30  4 0
+INPUT unit0.dat
+TRANS -30 -4 0
+INPUT unit0.dat
+LINKS pdbid links.dat

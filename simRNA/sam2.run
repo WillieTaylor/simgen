@@ -1,0 +1,16 @@
+NORUN
+#NOMOVE
+#NOVIEW
+SCALE 0.15
+PARAM test.model
+END
+GROUP 0 1
+GROUP 0 2
+TRANS  15 0 0
+INPUT stem2aa.dat
+TRANS -15 0 0
+INPUT stem2bb.dat
+REBOND pdbid  42 43
+RETERM pdbid  13 60
+#LINKS pdbid dummy.dat
+#PRINT

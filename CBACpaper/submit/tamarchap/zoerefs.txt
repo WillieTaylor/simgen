@@ -1,0 +1,563 @@
+Adamovic, I., Mijailovich, S. M., and Karplus, M. (2008). The elastic properties of the
+structurally characterized myosin II S2 subdomain: a molecular dynamics and normal mode
+analysis. Biophys J 94, 3779-3789.
+Adelman, M. R., and Taylor, E. W. (1969a). Further purification and characterization of
+slime mold myosin and slime mold actin. Biochemistry 8, 4976-4988.
+Adelman, M. R., and Taylor, E. W. (1969b). Isolation of an actomyosin-like protein complex
+from slime mold plasmodium and the separation of the complex into actin- and myosin-like
+fractions. Biochemistry 8, 4964-4975.
+Adelstein, R. S., Pollard, T. D., and Kuehl, W. M. (1971). Isolation and characterization
+of myosin and two myosin fragments from human blood platelets. Proc Natl Acad Sci U S A
+68, 2703-2707.
+Altis, A., Nguyen, P. H., Hegger, R., and Stock, G. (2007). Dihedral angle principal
+component analysis of molecular dynamics simulations. J Chem Phys 126, 244111.
+Ando, T., Kodera, N., Takai, E., Maruyama, D., Saito, K., and Toda, A. (2001). A high-
+speed atomic force microscope for studying biological macromolecules. Proc Natl Acad Sci U
+S A 98, 12468-12472.
+Astumian, R. D. (1997). Thermodynamics and kinetics of molecular motors. Biophys J 98,
+2401-2409.
+Astumian, R. D. (2001). Making molecules into motors. Sci Am 285, 56-64.
+Astumian, R. D., and Bier, M. (1996). Mechanochemical coupling of the motion of molecular
+motors to ATP hydrolysis. Biophys J 70, 637-653.
+Baker, J. E., Krementsova, E. B., Kennedy, G. G., Armstrong, A., Trybus, K. M., and
+Warshaw, D. M. (2004). Myosin V processivity: multiple kinetic pathways for head-to-head
+coordination. Proc Natl Acad Sci U S A 101, 5542-5546.
+Balsera, M. A., Wriggers, W., Oono, Y., and Schulten, K. (1996). Principal Component
+Analysis and Long Time Protein Dynamics. Journal of Physical Chemistry 100, 2567-2572.
+Barbato, G., Ikura, M., Kay, L. E., Pastor, R. W., and Bax, A. (1992). Backbone dynamics
+of calmodulin studied by 15N relaxation using inverse detected two-dimensional NMR
+spectroscopy: the central helix is flexible. Biochemistry 31, 5269-5278.
+Berg, J. S., Powell, B. C., and Cheney, R. E. (2001). A millennial myosin census. Mol Biol
+Cell 12, 780-794.
+Bergen, G. J. A. v. d. (1999). Enhancing GJK: Computing Minimum and Penetration Distances
+Between Convex Polyhedra. Journal of Graphics Tools 4, 7-25.
+Bergen, G. J. A. v. d. (2004). Collision detection in interactive 3D environments.
+Amsterdam ; Boston: Elsevier/Morgan Kaufman.
+Bershitsky, S. Y., Ferenczi, M. A., Koubassova, N. A., and Tsaturyan, A. K. (2009).
+Insight into the actin-myosin motor from x-ray diffraction on muscle. Front Biosci 14,
+3188-3213.
+Bookwalter, C. S., Lord, M., and Trybus, K. M. (2009). Essential features of the class V
+myosin from budding yeast for ASH1 mRNA transport. Mol Biol Cell 20, 3414-3421.
+Brenner, B., Xu, S., Chalovich, J. M., and Yu, L. C. (1996). Radial equilibrium lengths of
+actomyosin cross-bridges in muscle. Biophys J 71, 2751-2758.
+Brooks, B. R., Brooks, C. L., 3rd, Mackerell, A. D., Jr., et al. (2009). CHARMM: the
+biomolecular simulation program. J Comput Chem 30, 1545-1614.
+Burghardt, T. P., Hu, J. Y., and Ajtai, K. (2007). Myosin dynamics on the millisecond time
+scale. Biophys Chem 131, 15-28.
+Bustamante, C., Keller, D., and Oster, G. (2001). The physics of molecular motors. Acc
+Chem Res 34, 412-420.
+Cameron, S. (1997). Enhancing GJK: Computing Minimum and Penetration Distances Between
+Convex Polyhedra. IEEE Int. Conf. Robotics and Automation 4, 3112-3117.
+Carballido-Lopez, R. (2006). The bacterial actin-like cytoskeleton. Microbiol Mol Biol Rev
+70, 888-909.
+Caves, L. S., Evanseck, J. D., and Karplus, M. (1998). Locally accessible conformations of
+proteins: multiple molecular dynamics simulations of crambin. Protein Sci 7, 649-666.
+Cecchini, M., Houdusse, A., and Karplus, M. (2008). Allosteric communication in myosin V:
+from small conformational changes to large directed movements. PLoS Comput Biol 4,
+e1000129.
+Chen, C., Xiao, Y., and Zhang, L. (2005). A directed essential dynamics simulation of
+peptide folding. Biophys J 88, 3276-3285.
+Chen, L. F., Winkler, H., Reedy, M. K., Reedy, M. C., and Taylor, K. A. (2002). Molecular
+modeling of averaged rigor crossbridges from tomograms of insect flight muscle. J Struct
+Biol 138, 92-104.
+Cheney, R. E., Riley, M. A., and Mooseker, M. S. (1993). Phylogenetic analysis of the
+myosin superfamily. Cell Motil Cytoskeleton 24, 215-223.
+Cheney, R. E., and Rodriguez, O. C. (2001). Cell biology. A switch to release the motor.
+Science 293, 1263-1264.
+Chin, N. (1995). A walk through BSP trees. In Graphics Gems V, A. W. Paeth (ed), 121-138:
+Associated Press.
+Chu, J. W., and Voth, G. A. (2006). Coarse-grained modeling of the actin filament derived
+from atomistic-scale simulations. Biophys J 90, 1572-1582.
+Chung, K., Twilleager, D., and Yang, C. Communications in Java 3D Interest Group. Accessed
+2010.
+Clark, J., Singer, E. M., Korns, D. R., and Smith, S. S. (2004). Design and analysis of
+nanoscale bioassemblies. Biotechniques 36, 992-996, 998-1001.
+Coluccio, L. M. (2008). Myosins:A Superfamily of Molecular Motors. Dordrecht, The
+Netherlands: Springer Verlag.
+Cordova, N. J., Ermentrout, B., and Oster, G. F. (1992). Dynamics of single-motor
+molecules: the thermal ratchet model. Proc Natl Acad Sci U S A 89, 339-343.
+Coureux, P. D., Sweeney, H. L., and Houdusse, A. (2004). Three myosin V structures
+delineate essential features of chemo-mechanical transduction. Embo J 23, 4527-4537.
+Coureux, P. D., Wells, A. L., Menetrey, J., et al. (2003). A structural state of the
+myosin V motor without bound nucleotide. Nature 425, 419-423.
+Cross, R. A. (2006). Myosin's mechanical ratchet. Proc Natl Acad Sci U S A 103, 8911-8912.
+de Groot, B. L., Amadei, A., van Aalten, D. M., and Berendsen, H. J. (1996). Toward an
+exhaustive sampling of the configurational spaces of the two forms of the peptide hormone
+guanylin. J Biomol Struct Dyn 13, 741-751.
+de Groot, B. L., van Aalten, D. M., Scheek, R. M., Amadei, A., Vriend, G., and Berendsen,
+H. J. (1997). Prediction of protein conformational freedom from distance constraints.
+Proteins 29, 240-251.
+De La Cruz, E. M., and Ostap, E. M. (2009). Kinetic and equilibrium analysis of the myosin
+ATPase. Methods Enzymol 455, 157-192.
+De La Cruz, E. M., Wells, A. L., Rosenfeld, S. S., Ostap, E. M., and Sweeney, H. L.
+(1999). The kinetic mechanism of myosin V. Proc Natl Acad Sci U S A 96, 13726-13731.
+De La Cruz, E. M., Wells, A. L., Sweeney, H. L., and Ostap, E. M. (2000). Actin and light
+chain isoform dependence of myosin V kinetics. Biochemistry 39, 14196-14202.
+Dogterom, M., Janson, M. E., Faivre-Moskalenko, C., et al. (2002). Force generation by
+polymerizing microtubules. Applied Physics A: Materials Science &amp; Processing 75, 331-
+336.
+Dokholyan, N. V. (2006). Studies of folding and misfolding using simplified models. Curr
+Opin Struct Biol 16, 79-85.
+Duan, Y., and Kollman, P. A. (1998). Pathways to a Protein Folding Intermediate Observed
+in a 1-Microsecond Simulation in Aqueous Solution. 740-744.
+                                                                                           222
+Dunn, A. R., and Spudich, J. A. (2007). Dynamics of the unbound head during myosin V
+processive translocation. Nat Struct Mol Biol 14, 246-248.
+Dunn, F., and Parberry, I. (2002). 3D Math Primer for Graphics and Game Development:
+Wordware Publishing Inc.
+Dyer, R. B. (2007). Ultrafast and downhill protein folding. Curr Opin Struct Biol 17, 38-
+47.
+Elber, R., Ghosh, A., and Cardenas, A. (2002). Long time dynamics of complex systems. Acc
+Chem Res 35, 396-403.
+Elcock, A. H. (2004). Molecular Simulations of Diffusion and Association in
+Multimacromolecular Systems. In Methods in Enzymology, L. Brand, and M. L. Johnson (eds),
+166-198: Academic Press.
+Elston, T., Wang, H., and Oster, G. (1998). Energy transduction in ATP synthase. Nature
+391, 510-513.
+Ericson, C. (2005). Real-time collision detection. Amsterdam ; London: Elsevier.
+Espinoza-Fonseca, L. M., Kast, D., and Thomas, D. D. (2007). Molecular dynamics
+simulations reveal a disorder-to-order transition on phosphorylation of smooth muscle
+myosin. Biophys J 93, 2083-2090.
+Ferenczi, M. A., Bershitsky, S. Y., Koubassova, N., et al. (2005). The "roll and lock"
+mechanism of force generation in muscle. Structure 13, 131-141.
+Feynman, R. P. (1963). The Feynman lectures on physics, Vol. 1., Chapter 46. Reading,
+Mass.: Addison-Wesley Pub. Co.
+Field, M. (2007). A practical introduction to the simulation of molecular systems, 2nd ed.
+edition. Cambridge: Cambridge University Press.
+Field, M. J., Bash, P. A., and Karplus, M. (1990). A combined quantum mechanical and
+molecular mechanical potential for molecular dynamics simulations. Journal of
+Computational Chemistry 11, 700-733.
+Fischer, S., Windshugel, B., Horak, D., Holmes, K. C., and Smith, J. C. (2005). Structural
+mechanism of the recovery stroke in the myosin molecular motor. Proc Natl Acad Sci U S A
+102, 6873-6878.
+Forgacs, E., Sakamoto, T., Cartwright, S., et al. (2009). Switch 1 mutation S217A converts
+myosin V into a low duty ratio motor. J Biol Chem 284, 2138-2149.
+Forkey, J. N., Quinlan, M. E., Shaw, M. A., Corrie, J. E., and Goldman, Y. E. (2003).
+Three-dimensional structural dynamics of myosin V by single-molecule fluorescence
+polarization. Nature 422, 399-404.
+Foth, B. J., Goedecke, M. C., and Soldati, D. (2006). New insights into myosin evolution
+and classification. Proc Natl Acad Sci U S A 103, 3681-3686.
+Gachet, Y., and Hyams, J. S. (2005). Endocytosis in fission yeast is spatially associated
+with the actin cytoskeleton during polarised cell growth and cytokinesis. J Cell Sci 118,
+4231-4242.
+Gachet, Y., Tournier, S., Millar, J. B., and Hyams, J. S. (2001). A MAP kinase-dependent
+actin checkpoint ensures proper spindle orientation in fission yeast. Nature 412, 352-355.
+Galletta, B. J., Mooren, O. L., and Cooper, J. A. (2010). Actin dynamics and endocytosis
+in yeast and mammals. Curr Opin Biotechnol 21, 1-7.
+Ganoth, A., Nachliel, E., Friedman, R., and Gutman, M. (2007). Myosin V movement: lessons
+from molecular dynamics studies of IQ peptides in the lever arm. Biochemistry 46, 14524-
+14536.
+Gebhardt, J. C., Clemen, A. E., Jaud, J., and Rief, M. (2006). Myosin-V is a mechanical
+ratchet. Proc Natl Acad Sci U S A 103, 8680-8685.
+Geeves, M. A., and Holmes, K. C. (2005). The molecular mechanism of muscle contraction.
+Adv Protein Chem 71, 161-193.
+Gilbert, E., and Foo, C.-P. (1990). Computing the Distance between General Convex Objects
+in Three-dimensional Space. IEEE Journal of Robotics and Automation 6, 53-61.
+Gilbert, E., Johnson, D., and Keerthi, S. S. (1988). A fast procedure for computing the
+distance between complex objects in three dimensional space. IEEE Journal of Robotics and
+Automation 4, 193-203.
+Goldman, Y. E. (1998). Wag the tail: structural dynamics of actomyosin. Cell 93, 1-4.
+Goodson, H. V., and Spudich, J. A. (1993). Molecular evolution of the myosin family:
+relationships derived from comparisons of amino acid sequences. Proc Natl Acad Sci U S A
+90, 659-663.
+Gottschalk, S. (2000). Collision Queries Using Oriented Bounding Boxes. Phd. Thesis,
+University of N. Carolina, Chapel Hill.
+Gruy, F. (2009). Light-scattering cross section as a function of pair distribution
+density. Journal of Quantitative Spectroscopy and Radiative Transfer 110, 240-246.
+Hamada, K., and Hori, Y. (1996). Octree-based approach to real-time collision-free path
+planning for robot manipulator. In Proceedings of the Internatioal Workshop on Advanced
+Motion Control, 705-710. Los Alamitos, CA: IEEE Computer Society Press.
+Hamelberg, D., de Oliveira, C. A., and McCammon, J. A. (2007). Sampling of slow diffusive
+conformational transitions with accelerated molecular dynamics. J Chem Phys 127, 155102.
+Hamelberg, D., Mongan, J., and McCammon, J. A. (2004). Accelerated molecular dynamics: a
+promising and efficient simulation method for biomolecules. J Chem Phys 120, 11919-11929.
+Hammer, J. A., 3rd, Jung, G., and Korn, E. D. (1986). Genetic evidence that Acanthamoeba
+myosin I is a true myosin. Proc Natl Acad Sci U S A 83, 4655-4659.
+Harford, J., and Squire, J. (1986). "Crystalline" myosin cross-bridge array in relaxed
+bony fish muscle. Low-angle x-ray diffraction from plaice fin muscle and its
+interpretation. Biophys J 50, 145-155.
+Hatano, S., and Tazawa, M. (1968). Isolation, purification and characterization of byosin
+B from myxomycete plasmodium. Biochim Biophys Acta 154, 507-519.
+Hayward, S., Kitao, A., and Berendsen, H. J. (1997). Model-free methods of analyzing
+domain motions in proteins from simulation: a comparison of normal mode analysis and
+molecular dynamics simulation of lysozyme. Proteins 27, 425-437.
+Heng, Y.-W., and Koh, C.-G. Actin cytoskeleton dynamics and the cell division cycle. Int J
+Biochem Cell Biol In Press, Corrected Proof.
+Henzler-Wildman, K., and Kern, D. (2007). Dynamic personalities of proteins. Nature 450,
+964-972.
+Hess, H., Clemmens, J., Matzke, C. M., Bachand, G. D., Bunker, B. C., and Vogel, V.
+(2002). Ratchet patterns sort molecular shuttles. Applied Physics A: Materials Science
+&amp; Processing 75, 309-313.
+Heuser, J. E., and Kirschner, M. W. (1980). Filament organization revealed in platinum
+replicas of freeze-dried cytoskeletons. J Cell Biol 86, 212-234.
+Higgins, D. G., Bleasby, A. J., and Fuchs, R. (1992). CLUSTAL V: improved software for
+multiple sequence alignment. Comput Appl Biosci 8, 189-191.
+Hodge, T., and Cope, M. J. (2000). A myosin family tree. J Cell Sci 113 Pt 19, 3353-3354.
+Holmes, K. C. (1998). A molecular model for muscle contraction. Acta Crystallogr A 54,
+789-797.
+Holmes, K. C., Popp, D., Gebhard, W., and Kabsch, W. (1990). Atomic model of the actin
+filament. Nature 347, 44-49.
+Holzbaur, E. L., and Goldman, Y. E. (2010). Coordination of molecular motors: from in
+vitro assays to intracellular dynamics. Curr Opin Cell Biol 22, 4-13.
+Homma, K., Saito, J., Ikebe, R., and Ikebe, M. (2000). Ca(2+)-dependent regulation of the
+motor activity of myosin V. J Biol Chem 275, 34766-34771.
+Huxley, H. E., and Brown, W. (1967). The low-angle x-ray diagram of vertebrate striated
+muscle and its behaviour during contraction and rigor. J Mol Biol 30, 383-434.
+Insall, R. H., and Machesky, L. M. (2009). Actin dynamics at the leading edge: from simple
+machinery to complex networks. Dev Cell 17, 310-322.
+Irving, T. C., Konhilas, J., Perry, D., Fischetti, R., and de Tombe, P. P. (2000).
+Myofilament lattice spacing as a function of sarcomere length in isolated rat myocardium.
+Am J Physiol Heart Circ Physiol 279, H2568-2573.
+Ishii, Y., Esaki, S., and Yanagida, T. (2002). Experimental studies of the myosin-actin
+motor. Applied Physics A: Materials Science &amp; Processing 75, 325-330.
+Izvekov, S., and Voth, G. A. (2005). A multiscale coarse-graining method for biomolecular
+systems. J Phys Chem B 109, 2469-2473.
+Jiménez, P., Thomas, F., and Torras, C. (2001). 3D collision detection: a survey.
+Computers & Graphics 25, 269-285.
+Julicher, F., Ajdari, A., and Prost, J. (1997). Modeling molecular motors. Reviews of
+Modern Physics 69, 1269.
+Jung, D., and Gupta, K. K. (1996). Octree-based hierarchical distance maps for collision
+detection. In Proceedings of the International Workshop on Advanced Motion Control, 454-
+459. Los Alamitos, CA: IEEE Computer Society Press.
+Kabsch, W., Mannherz, H. G., Suck, D., Pai, E. F., and Holmes, K. C. (1990). Atomic
+structure of the actin:DNase I complex. Nature 347, 37-44.
+Karcher, R. L., Roland, J. T., Zappacosta, F., et al. (2001). Cell cycle regulation of
+myosin-V by calcium/calmodulin-dependent protein kinase II. Science 293, 1317-1320.
+Katsimitsoulia, Z., and Taylor, W. R. (2010a). Coarse-grained Simulation of Myosin-V
+Movement. Submitted to Journal of Molecular Graphics.
+Katsimitsoulia, Z., and Taylor, W. R. (2010b). A hierarchic collision detection algorithm
+for simple Brownian dynamics. Comput Biol Chem 34, 71-79. Epub 2010 Feb 2014.
+Kawakubo, T., Okada, O., and Minami, T. (2005). Molecular dynamics simulations of evolved
+collective motions of atoms in the myosin motor domain upon perturbation of the ATPase
+pocket. Biophys Chem 115, 77-85.
+Kawakubo, T., Okada, O., and Minami, T. (2009). Dynamic conformational changes due to the
+ATP hydrolysis in the motor domain of myosin: 10-ns molecular dynamics simulations.
+Biophys Chem 141, 75-86.
+Khromov, A. S., Webb, M. R., Ferenczi, M. A., Trentham, D. R., Somlyo, A. P., and Somlyo,
+A. V. (2004). Myosin regulatory light chain phosphorylation and strain modulate adenosine
+diphosphate release from smooth muscle Myosin. Biophys J 86, 2318-2328.
+Kitamura, K., Tokunaga, M., Iwane, A. H., and Yanagida, T. (1999). A single myosin head
+moves along an actin filament with regular steps of 5.3 nanometres. Nature 397, 129-134.
+Klumpp, S., Nieuwenhuizen, T. M., and Lipowsky, R. (2005). Movements of molecular motors:
+Ratchets, random walks and traffic phenomena. Physica E: Low-dimensional Systems and
+Nanostructures 29, 380-389.
+Kockara, S., Halic, T., Bayrak, C., Iqbal, K., and Rowe, R. A. (2009). Contact Detection
+Algorithms. Journal of Computers 4, 1053-1063.
+Kodera, N., Yamamoto, D., Ishikawa, R., and Ando, T. (2010). Video imaging of walking
+myosin V by high-speed atomic force microscopy. Nature 468, 72-76.
+Kolomeisky, A., B., and Phillips, H. I. (2005). Dynamic properties of motor proteins with
+two subunits. J. Phys. Condens. Matter 17, S3887.
+Korn, E. D. (2000). Coevolution of head, neck, and tail domains of myosin heavy chains.
+Proc Natl Acad Sci U S A 97, 12559-12564.
+Kovaleva, E. S., Subbotin, S. A., Masler, E. P., and Chitwood, D. J. (2005). Molecular
+characterization of the actin gene from cyst nematodes in comparison to those from other
+nematodes. Comparative Parasitology 72, 39-49.
+Lan, G., and Sun, S. X. (2005). Dynamics of myosin-V processivity. Biophys J 88, 999-1008.
+Lawson, J. D., Pate, E., Rayment, I., and Yount, R. G. (2004). Molecular dynamics analysis
+of structural factors influencing back door pi release in myosin. Biophys J 86, 3794-3803.
+Lazaridis, T., and Karplus, M. (1997). "New view" of protein folding reconciled with the
+old through multiple unfolding simulations. Science 278, 1928-1931.
+Lee,      A.      (2000).      Building       your      own      subdivision      surfaces.
+http://www.gamasutra.com/view/feature/3135/building_your_own_subdivision_.php?page=3
+Accessed 2010.
+Leopold, P. E., Montal, M., and Onuchic, J. N. (1992). Protein folding funnels: a kinetic
+approach to the sequence-structure relationship. Proc Natl Acad Sci U S A 89, 8721-8725.
+Levi, V., Serpinskaya, A. S., Gratton, E., and Gelfand, V. (2006). Organelle transport
+along microtubules in Xenopus melanophores: evidence for cooperation between multiple
+motors. Biophys J 90, 318-327.
+Li, G., and Cui, Q. (2002). A coarse-grained normal mode approach for macromolecules: an
+efficient implementation and application to Ca(2+)-ATPase. Biophys J 83, 2457-2474.
+Li, G., and Cui, Q. (2004a). Analysis of functional motions in Brownian molecular machines
+with an efficient block normal mode approach: myosin-II and Ca2+ -ATPase. Biophys J 86,
+743-763.
+Li, G., and Cui, Q. (2004b). Mechanochemical Coupling in Myosin: A Theoretical Analysis
+with Molecular Dynamics and Combined QM/MM Reaction Path Calculations. The Journal of
+Physical Chemistry B 108, 3342-3357.
+Ligon, L. A., Tokito, M., Finklestein, J. M., Grossman, F. E., and Holzbaur, E. L. (2004).
+A direct interaction between cytoplasmic dynein and kinesin I may coordinate motor
+activity. J Biol Chem 279, 19201-19208.
+Lin, C. T., Kao, M. T., Kurabayashi, K., and Meyhofer, E. (2006). Efficient designs for
+powering microscale devices with nanoscale biomolecular motors. Small 2, 281-287.
+Lin, M. C., and Canny, J. F. (1991). A Fast Algorithm for Incremental Distance Calculation
+In Proceedings of the IEEE International Conference on Robotics and Automation 1008-1014.
+Los Alamitos, CA.: IEEE Computer Society Press.
+Lindorff-Larsen, K., Rogen, P., Paci, E., Vendruscolo, M., and Dobson, C. M. (2005).
+Protein folding and the organization of the protein topology universe. Trends Biochem Sci
+30, 13-19.
+Lipowsky, R., and Harms, T. (2000). Molecular motors and nonuniform ratchets. Eur Biophys
+J 29, 542-548.
+Liu, J., Taylor, D. W., Krementsova, E. B., Trybus, K. M., and Taylor, K. A. (2006a).
+Three-dimensional structure of the myosin V inhibited state by cryoelectron tomography.
+Nature 442, 208-211.
+Liu, Y., Scolari, M., Im, W., and Woo, H. J. (2006b). Protein-protein interactions in
+actin-myosin binding and structural effects of R405Q mutation: a molecular dynamics study.
+Proteins 64, 156-166.
+Lorenz, M., and Holmes, K. C. (2010). The actin-myosin interface. Proc Natl Acad Sci U S A
+107, 12529-12534.
+Lorenz, M., Popp, D., and Holmes, K. C. (1993). Refinement of the F-actin model against X-
+ray fiber diffraction data by the use of a directed mutation algorithm. J Mol Biol 234,
+826-836.
+Lou, H., and Cukier, R. I. (2006). Molecular Dynamics of Apo-Adenylate Kinase:&nbsp; A
+Principal Component Analysis. 12796-12808.
+Lu, D., Aksimentiev, A., Shih, A. Y., et al. (2006). The role of molecular modeling in
+bionanotechnology. Phys Biol 3, S40-53.
+MacIntosh, B. R. (2003). Role of calcium sensitivity modulation in skeletal muscle
+performance. News Physiol Sci 18, 222-225.
+Mackerell, A. D., Jr. (2004). Empirical force fields for biological macromolecules:
+overview and issues. J Comput Chem 25, 1584-1604.
+Maisuradze, G. G., and Leitner, D. M. (2007). Free energy landscape of a biomolecule in
+dihedral principal component space: sampling convergence and correspondence between
+structures and minima. Proteins 67, 569-578.
+Maruta, H., and Korn, E. D. (1977). Acanthamoeba myosin II. J Biol Chem 252, 6501-6509.
+McCammon, J. A., Gelin, B. R., and Karplus, M. (1977). Dynamics of folded proteins. Nature
+267, 585-590.
+Miller, M. S., Palmer, B. M., Ruch, S., et al. (2005). The essential light chain N-
+terminal extension alters force and fiber kinetics in mouse cardiac muscle. J Biol Chem
+280, 34427-34434.
+Millman, B. M. (1998). The filament lattice of striated muscle. Physiol Rev 78, 359-391.
+Minehardt, T. J., Cooke, R., Pate, E., and Kollman, P. A. (2001). Molecular dynamics study
+of the energetic, mechanistic, and structural implications of a closed phosphate tube in
+ncd. Biophys J 80, 1151-1168.
+Minehardt, T. J., Marzari, N., Cooke, R., Pate, E., Kollman, P. A., and Car, R. (2002). A
+classical and ab initio study of the interaction of the myosin triphosphate binding domain
+with ATP. Biophys J 82, 660-675.
+Mirtich,  B.  (1998).   V-clip: Fast and    robust  polyhedral   collision  detection.
+Transactions on Graphics 17, 177-208.
+Moore, J. R., Krementsova, E. B., Trybus, K. M., and Warshaw, D. M. (2001). Myosin V
+exhibits a high duty cycle and large unitary displacement. J Cell Biol 155, 625-635.
+Moseley, J. B., and Goode, B. L. (2006). The yeast actin cytoskeleton: from cellular
+function to biochemical mechanism. Microbiol Mol Biol Rev 70, 605-645.
+Nagy, A., Piszczek, G., and Sellers, J. R. (2009). Extensibility of the extended tail
+domain of processive and nonprocessive myosin V molecules. Biophys J 97, 3123-3131.
+Nakaseko, Y., and Yanagida, M. (2001). Cell biology. Cytoskeleton in the cell cycle.
+Nature 412, 291-292.
+Oda, T., Iwasa, M., Aihara, T., Maeda, Y., and Narita, A. (2009). The nature of the
+globular- to fibrous-actin transition. Nature 457, 441-445.
+Oda, T., and Maeda, Y. (2010). Multiple Conformations of F-actin. Structure 18, 761-767.
+Odronitz, F., and Kollmar, M. (2007). Drawing the tree of eukaryotic life based on the
+analysis of 2,269 manually annotated myosins from 328 species. Genome Biol 8, R196.
+Olivares, A. O., and De La Cruz, E. M. (2005). Holding the reins on myosin V. Proc Natl
+Acad Sci U S A 102, 13719-13720.
+Onishi, H. (1993). [Structure and molecular dynamics of smooth muscle myosin examined by
+using a zero-length cross-linker]. Tanpakushitsu Kakusan Koso 38, 2261-2271.
+Pande, V. S., Baker, I., Chapman, J., et al. (2003). Atomistic protein folding simulations
+on the submillisecond time scale using worldwide distributed computing. Biopolymers 68,
+91-109.
+Parker, D., Bryant, Z., and Delp, S. L. (2009). Coarse-Grained Structural Modeling of
+Molecular Motors Using Multibody Dynamics. Cell Mol Bioeng 2, 366-374.
+Pashkova, N., Jin, Y., Ramaswamy, S., and Weisman, L. S. (2006). Structural basis for
+myosin V discrimination between distinct cargoes. Embo J 25, 693-700.
+Pearlman, D. A., Case, D. A., Caldwell, J. W., et al. (1995). AMBER, a computer program
+for applying molecular mechanics, normal mode analysis, molecular dynamics and free energy
+calculations to elucidate the structures and energies of molecules. Comp. Phys. Commun.
+91, 1-41.
+Pearson, A. M., and Young, R. B. (1989). Muscle and meat biochemistry. London: Academic
+Press Inc.
+Peskin, C. S., Odell, G. M., and Oster, G. F. (1993). Cellular motions and thermal
+fluctuations: the Brownian ratchet. Biophys J 65, 316-324.
+Petrone, P., and Pande, V. S. (2006). Can conformational change be described by only a few
+normal modes? Biophys J 90, 1583-1593.
+Pollard, T. D., and Korn, E. D. (1973). Acanthamoeba myosin. I. Isolation from
+Acanthamoeba castellanii of an enzyme similar to muscle myosin. J Biol Chem 248, 4682-
+4690.
+Pollard, T. D., Stafford, W. F., and Porter, M. E. (1978). Characterization of a second
+myosin from Acanthamoeba castellanii. J Biol Chem 253, 4798-4808.
+Porto, M., Urbakh, M., and Klafter, J. (2000). Molecular motor that never steps backwards.
+Phys Rev Lett 85, 491-494.
+Purcell, T. J., Morris, C., Spudich, J. A., and Sweeney, H. L. (2002). Role of the lever
+arm in the processive stepping of myosin V. Proc Natl Acad Sci U S A 99, 14159-14164.
+Purcell, T. J., Sweeney, H. L., and Spudich, J. A. (2005). A force-dependent state
+controls the coordination of processive myosin V. Proc Natl Acad Sci U S A 102, 13873-
+13878.
+Rabbitz, R. (1994). Fast collision detection of moving convex polyhedra. In Graphics Gems
+IV, P. Heckbert (ed), 83-109. Boston: Academic Press.
+Rayment, I., Rypniewski, W. R., Schmidt-Base, K., et al. (1993). Three-dimensional
+structure of myosin subfragment-1: a molecular motor. Science 261, 50-58.
+Reilein, A. R., Serpinskaya, A. S., Karcher, R. L., Dujardin, D. L., Vallee, R. B., and
+Gelfand, V. I. (2003). Differential regulation of dynein-driven melanosome movement.
+Biochem Biophys Res Commun 309, 652-658.
+Reimann, P., and Hänggi, P. (2002). Introduction to the physics of Brownian motors.
+Applied Physics A: Materials Science &amp; Processing 75, 169-178.
+Richards, T. A., and Cavalier-Smith, T. (2005). Myosin domain evolution and the primary
+divergence of eukaryotes. Nature 436, 1113-1118.
+Rief, M., Rock, R. S., Mehta, A. D., Mooseker, M. S., Cheney, R. E., and Spudich, J. A.
+(2000). Myosin-V stepping kinetics: a molecular model for processivity. Proc Natl Acad Sci
+U S A 97, 9482-9486.
+Rivero, F., and Cvrckova, F. (2007). Origins and evolution of the actin cytoskeleton. Adv
+Exp Med Biol 607, 97-110.
+Roger, A. J., and Hug, L. A. (2006). The origin and diversification of eukaryotes:
+problems with molecular phylogenetics and molecular clock estimation. Philos Trans R Soc
+Lond B Biol Sci 361, 1039-1054.
+Rogers, S. L., and Gelfand, V. I. (1998). Myosin cooperates with microtubule motors during
+organelle transport in melanophores. Curr Biol 8, 161-164.
+Roland, J. T., Lapierre, L. A., and Goldenring, J. R. (2009). Alternative splicing in
+class V myosins determines association with Rab10. J Biol Chem 284, 1213-1223.
+Ruff, C., Furch, M., Brenner, B., Manstein, D. J., and Meyhofer, E. (2001). Single-
+molecule tracking of myosins with genetically engineered amplifier domains. Nat Struct
+Biol 8, 226-229.
+Ryadnov, M. G. (2007). Peptide alpha-helices for synthetic nanostructures. Biochem Soc
+Trans 35, 487-491.
+Ryckaert, J.-P., Ciccotti, G., and Berendsen, H. J. C. (1977). Numerical integration of
+the cartesian equations of motion of a system with constraints: molecular dynamics of n-
+alkanes. Journal of Computational Physics 23, 327-341.
+Sakamoto, T., Amitani, I., Yokota, E., and Ando, T. (2000). Direct observation of
+processive movement by individual myosin V molecules. Biochem Biophys Res Commun 272, 586-
+590.
+Sakamoto, T., Wang, F., Schmitz, S., et al. (2003). Neck length and processivity of myosin
+V. J Biol Chem 278, 29201-29207.
+Sakamoto, T., Yildez, A., Selvin, P. R., and Sellers, J. R. (2005). Step-size is
+determined by neck length in myosin V. Biochemistry 44, 16203-16210.
+Sali, A., Shakhnovich, E., and Karplus, M. (1994). Kinetics of protein folding. A lattice
+model study of the requirements for folding to the native state. J Mol Biol 235, 1614-
+1636.
+Sanbonmatsu, K. Y., and Tung, C. S. (2007). High performance computing in biology:
+multimillion atom simulations of nanoscale systems. J Struct Biol 157, 470-480.
+Sarikaya, M., Tamerler, C., Jen, A. K., Schulten, K., and Baneyx, F. (2003). Molecular
+biomimetics: nanotechnology through biology. Nat Mater 2, 577-585.
+Scheraga, H. A., Khalili, M., and Liwo, A. (2007). Protein-folding dynamics: overview of
+molecular simulation techniques. Annu Rev Phys Chem 58, 57-83.
+Schlick, T. (2002). Molecular modeling and simulation : an interdisciplinary guide. New
+York ; London: Springer.
+Schlitter, J., Engels, M., and Kruger, P. (1994). Targeted molecular dynamics: a new
+approach for searching pathways of conformational transitions. J Mol Graph 12, 84-89.
+Schroder, G. F., Brunger, A. T., and Levitt, M. (2007). Combining efficient conformational
+sampling with a deformable elastic network model facilitates structure refinement at low
+resolution. Structure 15, 1630-1641.
+Schwarzl, S. M., Smith, J. C., and Fischer, S. (2006). Insights into the chemomechanical
+coupling of the myosin motor from simulation of its ATP hydrolysis mechanism. Biochemistry
+45, 5830-5847.
+Segev, N. (2009). Trafficking inside cells : pathways, mechanisms, and regulation. Austin,
+Tex.
+New York, N.Y.: Landes Bioscience ;
+Springer Science+Business Media.
+Selman, D. (2002). Java 3D programming. Greenwich, Conn.: Manning.
+Seperack, P. K., Mercer, J. A., Strobel, M. C., Copeland, N. G., and Jenkins, N. A.
+(1995). Retroviral sequences located within an intron of the dilute gene alter dilute
+expression in a tissue-specific manner. Embo J 14, 2326-2332.
+Shakhnovich, E. (2006). Protein folding thermodynamics and dynamics: where physics,
+chemistry, and biology meet. Chem Rev 106, 1559-1588.
+Shakhnovich, E., Farztdinov, G., Gutin, A. M., and Karplus, M. (1991). Protein folding
+bottlenecks: A lattice Monte Carlo simulation. Phys Rev Lett 67, 1665-1668.
+Shen, M. Y., and Sali, A. (2006). Statistical potential for assessment and prediction of
+protein structures. Protein Sci 15, 2507-2524.
+Sherrod, A., Cengage Learning (Firm), Course Technology Inc., and Books24x7 Inc. (2008).
+Game graphics programming. Accessed
+Singh, U. C., and Kollman, P. A. (1986). A combined ab initio quantum mechanical and
+molecular mechanical method for carrying out simulations on complex molecular systems:
+Applications to the CH3Cl + Cl− exchange reaction and gas phase protonation of polyethers.
+Journal of Computational Chemistry 7, 718-730.
+Soheilifard, R., Makarov, D. E., and Rodin, G. J. (2008). Critical evaluation of simple
+network models of protein dynamics and their comparison with crystallographic B-factors.
+Phys Biol 5, 26008.
+Soldati, T., and Schliwa, M. (2006). Powering membrane traffic in endocytosis and
+recycling. Nat Rev Mol Cell Biol 7, 897-908.
+Spirin, A. S. (2009). The ribosome as a conveying thermal ratchet machine. J Biol Chem
+284, 21103-21119.
+Spudich, J. A. (1994). How molecular motors work. Nature 372, 515-518.
+Squire, J. M., Al-Khayat, H. A., Knupp, C., and Luther, P. K. (2005). Molecular
+architecture in muscle contractile assemblies. Adv Protein Chem 71, 17-87.
+Stewart, M. (2007). Ratcheting mRNA out of the nucleus. Mol Cell 25, 327-330.
+Takagishi, Y., and Murata, Y. (2006). Myosin Va mutation in rats is an animal model for
+the human hereditary neurological disease, Griscelli syndrome type 1. Ann N Y Acad Sci
+1086, 66-80.
+Taylor, W. R. (1993). Protein fold refinement: building models from idealized folds using
+motif constraints and multiple sequence data. Protein Eng 6, 593-604.
+Taylor, W. R. (1999). Protein structural domain identification. Protein Eng 12, 203-216.
+Taylor, W. R. (2001). Defining linear segments in protein structure. J Mol Biol 310, 1135-
+1150.
+Taylor, W. R., and Katsimitsoulia, Z. (2010a). A coarse-grained molecular model for actin-
+myosin simulation. J Mol Graph Model 29, 266-279. Epub 2010 Jul 2013.
+Taylor, W. R., and Katsimitsoulia, Z. (2010b). A soft collision detection algorithm for
+simple Brownian dynamics. Comput Biol Chem 34, 1-10. Epub 2009 Dec 2021.
+Thibault, W. C., and Naylor, B. F. (1987). Set operation on polyhedra using binary space
+partitioning trees. ACM Computer Graphics 21, 153-162.
+Thompson, R. F., and Langford, G. M. (2002). Myosin superfamily evolutionary history. Anat
+Rec 268, 276-289.
+Tirion, M. M. (1996). Large Amplitude Elastic Motions in Proteins from a Single-Parameter,
+Atomic Analysis. Phys Rev Lett 77, 1905-1908.
+Tirion, M. M., ben-Avraham, D., Lorenz, M., and Holmes, K. C. (1995). Normal modes as
+refinement parameters for the F-actin model. Biophys J 68, 5-12.
+Togashi, Y., Yanagida, T., and Mikhailov, A. S. (2010). Nonlinearity of mechanochemical
+motions in motor proteins. PLoS Comput Biol 6, e1000814.
+Tousignant, A., and Pelletier, J. N. (2004). Protein Motions Promote Catalysis. Chemistry
+& Biology 11, 1037-1042.
+Trybus, K. M. (2008). Myosin V from head to tail. Cell Mol Life Sci 65, 1378-1389.
+Tsong, T. Y., and Xie, T. D. (2002). Ion pump as molecular ratchet and effects of noise:
+electric activation of cation pumping by Na,K-ATPase. Applied Physics A: Materials Science
+&amp; Processing 75, 345-352.
+Uemura, S., Higuchi, H., Olivares, A. O., De La Cruz, E. M., and Ishiwata, S. (2004).
+Mechanochemical coupling of two substeps in a single myosin V motor. Nat Struct Mol Biol
+11, 877-883.
+Urbanc, B., Borreguero, J. M., Cruz, L., and Stanley, H. E. (2006). Ab initio discrete
+molecular dynamics approach to protein folding and aggregation. Methods Enzymol 412, 314-
+338.
+van der Spoel, D., de Groot, B. L., Hayward, S., Berendsen, H. J., and Vogel, H. J.
+(1996). Bending of the calmodulin central helix: a theoretical study. Protein Sci 5, 2044-
+2053.
+Van Der Spoel, D., Lindahl, E., Hess, B., Groenhof, G., Mark, A. E., and Berendsen, H. J.
+(2005). GROMACS: fast, flexible, and free. J Comput Chem 26, 1701-1718.
+Van Gunsteren, W. F., and Karplus, M. (1982). Effect of constraints on the dynamics of
+macromolecules. Macromolecules 15, 1528-1544.
+Veigel, C., Schmitz, S., Wang, F., and Sellers, J. R. (2005). Load-dependent kinetics of
+myosin-V can explain its high processivity. Nat Cell Biol 7, 861-869.
+Veigel, C., Wang, F., Bartoo, M. L., Sellers, J. R., and Molloy, J. E. (2002). The gated
+gait of the processive molecular motor, myosin V. Nat Cell Biol 4, 59-65.
+Wang, F., Chen, L., Arcucci, O., et al. (2000). Effect of ADP and ionic strength on the
+kinetic and motile properties of recombinant mouse myosin V. J Biol Chem 275, 4329-4335.
+Wang, F. S., Wolenski, J. S., Cheney, R. E., Mooseker, M. S., and Jay, D. G. (1996).
+Function of myosin-V in filopodial extension of neuronal growth cones. Science 273, 660-
+663.
+Wang, H., and Oster, G. (1998). Energy transduction in the F1 motor of ATP synthase.
+Nature 396, 279-282.
+Wang, H., and Oster, G. (2002). Ratchets, power strokes, and molecular motors. Applied
+Physics A: Materials Science &amp; Processing 75, 315-323.
+Warshel, A., and Levitt, M. (1976). Theoretical studies of enzymic reactions: dielectric,
+electrostatic and steric stabilization of the carbonium ion in the reaction of lysozyme. J
+Mol Biol 103, 227-249.
+Watanabe, S., Mabuchi, K., Ikebe, R., and Ikebe, M. (2006).                Mechanoenzymatic
+characterization of human myosin Vb. Biochemistry 45, 2729-2738.
+Weisberg, A., and Winegrad, S. (1996). Alteration of myosin cross bridges by
+phosphorylation of myosin-binding protein C in cardiac muscle. Proc Natl Acad Sci U S A
+93, 8999-9003.
+Welte, M. A. (2004). Bidirectional transport along microtubules. Curr Biol 14, R525-537.
+Williams, P. D., Pollock, D. D., and Goldstein, R. A. (2001). Evolution of functionality
+in lattice proteins. J Mol Graph Model 19, 150-156.
+Win, T. Z., Gachet, Y., Mulvihill, D. P., May, K. M., and Hyams, J. S. (2001). Two type V
+myosins with non-overlapping functions in the fission yeast Schizosaccharomyces pombe:
+Myo52 is concerned with growth polarity and cytokinesis, Myo51 is a component of the
+cytokinetic actin ring. J Cell Sci 114, 69-79.
+Wolynes, P. G. (2005). Recent successes of the energy landscape theory of protein folding
+and function. Q Rev Biophys 38, 405-410.
+Woo, H. J. (2007). Exploration of the conformational space of myosin recovery stroke via
+molecular dynamics. Biophys Chem 125, 127-137.
+Wozniak, M. J., and Allan, V. J. (2009). Carrier Motility. In Trafficking Inside Cells:
+Pathways, Mechanisms and Regulation, N. Segev (ed), 233-253. Texas: Landis Bioscience.
+Wu, X. S., Rao, K., Zhang, H., et al. (2002). Identification of an organelle receptor for
+myosin-Va. Nat Cell Biol 4, 271-278.
+Yang,     C.     (2005).      Communications    in      Java     3D     Interest     Group.
+http://forums.java.net/jive/thread.jspa?messageID=42803&#42803.Accessed 2010.
+Yang, L., Song, G., and Jernigan, R. L. (2007). How Well Can We Understand Large-Scale
+Protein Motions Using Normal Modes of Elastic Network Models? Biophys J.
+Yildiz, A., Forkey, J. N., McKinney, S. A., Ha, T., Goldman, Y. E., and Selvin, P. R.
+(2003). Myosin V walks hand-over-hand: single fluorophore imaging with 1.5-nm
+localization. Science 300, 2061-2065.
+Younge, K., Johnston, B., Christenson, C., et al. (2006). The use of radial distribution
+and pair-correlation functions to analyze and descirbe biological aggregations. Limnol.
+Oceanogr. Methods 4, 382-391.
+Yu, H., Ma, L., Yang, Y., and Cui, Q. (2007a). Mechanochemical coupling in the myosin
+motor domain. I. Insights from equilibrium active-site simulations. PLoS Comput Biol 3,
+e21.
+Yu, H., Ma, L., Yang, Y., and Cui, Q. (2007b). Mechanochemical coupling in the myosin
+motor domain. II. Analysis of critical residues. PLoS Comput Biol 3, e23.
+Zagrovic, B., Sorin, E. J., and Pande, V. (2001). Beta-hairpin folding simulations in
+atomistic detail using an implicit solvent model. J Mol Biol 313, 151-169.
+Zhang, Z., Pfaendtner, J., Grafmuller, A., and Voth, G. A. (2009). Defining coarse-grained
+representations of large biomolecules and biomolecular complexes from elastic network
+models. Biophys J 97, 2327-2337.
+Zhang, Z., Shi, Y., and Liu, H. (2003). Molecular dynamics simulations of peptides and
+proteins with amplified collective motions. Biophys J 84, 3583-3593.
+Zheng, W., Brooks, B. R., and Hummer, G. (2007). Protein conformational transitions
+explored by mixed elastic network models. Proteins.
+Zheng, W., Brooks, B. R., and Thirumalai, D. (2006). Low-frequency normal modes that
+describe allosteric transitions in biological nanomachines are robust to sequence
+variations. Proc Natl Acad Sci U S A 103, 7664-7669.

@@ -1,0 +1,2342 @@
+ Running at  speed = 5
+ line = SCALE 0.158 0.633  # scalein = .6/3.8, scaleout = 3.8/.6
+Reading parameters from main/refine/prot.model
+ i = 0    0     2     2     1     0     0     0     0     0     0 
+ i = 1  999    50     8     2     0     0     0     0     0     0 
+ i = 2    0     0    16     8     0     0     0     0     0     0 
+ i = 3    0     0     0    10     0     0     0     0     0     0 
+ i = 4    0     0     1     1     0     0     0     0     0     0 
+ i = 5    0     0     0     1     0     0     0     0     0     0 
+ i = 6    0   -20    20     0     0     0     0     0     0     0 
+ i = 7    0     0     0     4     0     0     0     0     0     0 
+ i = 8    0     0    50    50     0     0     0     0     0     0 
+ i = 9    0     0    50     0     0     0     0     0     0     0 
+End of parameters
+
+ Read  nmodels = 1
+Model 0 is protein with  Data::bondCA = 0.6 Data::scalein = 0.157895
+ set GROUP  sort = 0 n = 1 level = 0 at[level] = 0 cell->uid = 0
+ line = INPUT prot.dat
+Reading file prot.dat
+ deep = 1
+ set GROUP  sort = 0 n = 15 level = 1 at[level] = 0 cell->uid = 1
+ line = GROUP 0  15          9.36 -2.87 -0.87     -9.29  4.36 -1.27
+ Axis ends read  v = -1.47237 0.57079 -0.0315789 cell->ends = 1
+ set GROUP  sort = 0 n = 8 level = 2 at[level] = 0 cell->uid = 2
+ set ATOM  level = 3 at[level] = 0 cell->uid = 17
+ set ATOM  level = 3 at[level] = 1 cell->uid = 18
+ set ATOM  level = 3 at[level] = 2 cell->uid = 19
+ set ATOM  level = 3 at[level] = 3 cell->uid = 20
+ set ATOM  level = 3 at[level] = 4 cell->uid = 21
+ set ATOM  level = 3 at[level] = 5 cell->uid = 22
+ set ATOM  level = 3 at[level] = 6 cell->uid = 23
+ set ATOM  level = 3 at[level] = 7 cell->uid = 24
+ EoG  level = 2 cell->uid = 2 moves[level].set = 0
+ End of Cell  cell->level = 2 cell->id = 0 cell->uid = 2 cell->kids = 8 cell->ends = 0
+ Next  cell->uid = 3 last = T have = G
+ set GROUP  sort = 1 n = 25 level = 2 at[level] = 1 cell->uid = 3
+ set ATOM  level = 3 at[level] = 0 cell->uid = 25
+ set ATOM  level = 3 at[level] = 1 cell->uid = 26
+ set ATOM  level = 3 at[level] = 2 cell->uid = 27
+ set ATOM  level = 3 at[level] = 3 cell->uid = 28
+ set ATOM  level = 3 at[level] = 4 cell->uid = 29
+ set ATOM  level = 3 at[level] = 5 cell->uid = 30
+ set ATOM  level = 3 at[level] = 6 cell->uid = 31
+ set ATOM  level = 3 at[level] = 7 cell->uid = 32
+ set ATOM  level = 3 at[level] = 8 cell->uid = 33
+ set ATOM  level = 3 at[level] = 9 cell->uid = 34
+ set ATOM  level = 3 at[level] = 10 cell->uid = 35
+ set ATOM  level = 3 at[level] = 11 cell->uid = 36
+ set ATOM  level = 3 at[level] = 12 cell->uid = 37
+ set ATOM  level = 3 at[level] = 13 cell->uid = 38
+ set ATOM  level = 3 at[level] = 14 cell->uid = 39
+ set ATOM  level = 3 at[level] = 15 cell->uid = 40
+ set ATOM  level = 3 at[level] = 16 cell->uid = 41
+ set ATOM  level = 3 at[level] = 17 cell->uid = 42
+ set ATOM  level = 3 at[level] = 18 cell->uid = 43
+ set ATOM  level = 3 at[level] = 19 cell->uid = 44
+ set ATOM  level = 3 at[level] = 20 cell->uid = 45
+ set ATOM  level = 3 at[level] = 21 cell->uid = 46
+ set ATOM  level = 3 at[level] = 22 cell->uid = 47
+ set ATOM  level = 3 at[level] = 23 cell->uid = 48
+ set ATOM  level = 3 at[level] = 24 cell->uid = 49
+ EoG  level = 2 cell->uid = 3 moves[level].set = 0
+ End of Cell  cell->level = 2 cell->id = 1 cell->uid = 3 cell->kids = 25 cell->ends = 0
+ Next  cell->uid = 4 last = T have = G
+ set GROUP  sort = 0 n = 10 level = 2 at[level] = 2 cell->uid = 4
+ set ATOM  level = 3 at[level] = 0 cell->uid = 50
+ set ATOM  level = 3 at[level] = 1 cell->uid = 51
+ set ATOM  level = 3 at[level] = 2 cell->uid = 52
+ set ATOM  level = 3 at[level] = 3 cell->uid = 53
+ set ATOM  level = 3 at[level] = 4 cell->uid = 54
+ set ATOM  level = 3 at[level] = 5 cell->uid = 55
+ set ATOM  level = 3 at[level] = 6 cell->uid = 56
+ set ATOM  level = 3 at[level] = 7 cell->uid = 57
+ set ATOM  level = 3 at[level] = 8 cell->uid = 58
+ set ATOM  level = 3 at[level] = 9 cell->uid = 59
+ EoG  level = 2 cell->uid = 4 moves[level].set = 0
+ End of Cell  cell->level = 2 cell->id = 2 cell->uid = 4 cell->kids = 10 cell->ends = 0
+ Next  cell->uid = 5 last = T have = G
+ set GROUP  sort = 1 n = 24 level = 2 at[level] = 3 cell->uid = 5
+ set ATOM  level = 3 at[level] = 0 cell->uid = 60
+ set ATOM  level = 3 at[level] = 1 cell->uid = 61
+ set ATOM  level = 3 at[level] = 2 cell->uid = 62
+ set ATOM  level = 3 at[level] = 3 cell->uid = 63
+ set ATOM  level = 3 at[level] = 4 cell->uid = 64
+ set ATOM  level = 3 at[level] = 5 cell->uid = 65
+ set ATOM  level = 3 at[level] = 6 cell->uid = 66
+ set ATOM  level = 3 at[level] = 7 cell->uid = 67
+ set ATOM  level = 3 at[level] = 8 cell->uid = 68
+ set ATOM  level = 3 at[level] = 9 cell->uid = 69
+ set ATOM  level = 3 at[level] = 10 cell->uid = 70
+ set ATOM  level = 3 at[level] = 11 cell->uid = 71
+ set ATOM  level = 3 at[level] = 12 cell->uid = 72
+ set ATOM  level = 3 at[level] = 13 cell->uid = 73
+ set ATOM  level = 3 at[level] = 14 cell->uid = 74
+ set ATOM  level = 3 at[level] = 15 cell->uid = 75
+ set ATOM  level = 3 at[level] = 16 cell->uid = 76
+ set ATOM  level = 3 at[level] = 17 cell->uid = 77
+ set ATOM  level = 3 at[level] = 18 cell->uid = 78
+ set ATOM  level = 3 at[level] = 19 cell->uid = 79
+ set ATOM  level = 3 at[level] = 20 cell->uid = 80
+ set ATOM  level = 3 at[level] = 21 cell->uid = 81
+ set ATOM  level = 3 at[level] = 22 cell->uid = 82
+ set ATOM  level = 3 at[level] = 23 cell->uid = 83
+ EoG  level = 2 cell->uid = 5 moves[level].set = 0
+ End of Cell  cell->level = 2 cell->id = 3 cell->uid = 5 cell->kids = 24 cell->ends = 0
+ Next  cell->uid = 6 last = T have = G
+ set GROUP  sort = 0 n = 14 level = 2 at[level] = 4 cell->uid = 6
+ set ATOM  level = 3 at[level] = 0 cell->uid = 84
+ set ATOM  level = 3 at[level] = 1 cell->uid = 85
+ set ATOM  level = 3 at[level] = 2 cell->uid = 86
+ set ATOM  level = 3 at[level] = 3 cell->uid = 87
+ set ATOM  level = 3 at[level] = 4 cell->uid = 88
+ set ATOM  level = 3 at[level] = 5 cell->uid = 89
+ set ATOM  level = 3 at[level] = 6 cell->uid = 90
+ set ATOM  level = 3 at[level] = 7 cell->uid = 91
+ set ATOM  level = 3 at[level] = 8 cell->uid = 92
+ set ATOM  level = 3 at[level] = 9 cell->uid = 93
+ set ATOM  level = 3 at[level] = 10 cell->uid = 94
+ set ATOM  level = 3 at[level] = 11 cell->uid = 95
+ set ATOM  level = 3 at[level] = 12 cell->uid = 96
+ set ATOM  level = 3 at[level] = 13 cell->uid = 97
+ EoG  level = 2 cell->uid = 6 moves[level].set = 0
+ End of Cell  cell->level = 2 cell->id = 4 cell->uid = 6 cell->kids = 14 cell->ends = 0
+ Next  cell->uid = 7 last = T have = G
+ set GROUP  sort = 1 n = 22 level = 2 at[level] = 5 cell->uid = 7
+ set ATOM  level = 3 at[level] = 0 cell->uid = 98
+ set ATOM  level = 3 at[level] = 1 cell->uid = 99
+ set ATOM  level = 3 at[level] = 2 cell->uid = 100
+ set ATOM  level = 3 at[level] = 3 cell->uid = 101
+ set ATOM  level = 3 at[level] = 4 cell->uid = 102
+ set ATOM  level = 3 at[level] = 5 cell->uid = 103
+ set ATOM  level = 3 at[level] = 6 cell->uid = 104
+ set ATOM  level = 3 at[level] = 7 cell->uid = 105
+ set ATOM  level = 3 at[level] = 8 cell->uid = 106
+ set ATOM  level = 3 at[level] = 9 cell->uid = 107
+ set ATOM  level = 3 at[level] = 10 cell->uid = 108
+ set ATOM  level = 3 at[level] = 11 cell->uid = 109
+ set ATOM  level = 3 at[level] = 12 cell->uid = 110
+ set ATOM  level = 3 at[level] = 13 cell->uid = 111
+ set ATOM  level = 3 at[level] = 14 cell->uid = 112
+ set ATOM  level = 3 at[level] = 15 cell->uid = 113
+ set ATOM  level = 3 at[level] = 16 cell->uid = 114
+ set ATOM  level = 3 at[level] = 17 cell->uid = 115
+ set ATOM  level = 3 at[level] = 18 cell->uid = 116
+ set ATOM  level = 3 at[level] = 19 cell->uid = 117
+ set ATOM  level = 3 at[level] = 20 cell->uid = 118
+ set ATOM  level = 3 at[level] = 21 cell->uid = 119
+ EoG  level = 2 cell->uid = 7 moves[level].set = 0
+ End of Cell  cell->level = 2 cell->id = 5 cell->uid = 7 cell->kids = 22 cell->ends = 0
+ Next  cell->uid = 8 last = T have = G
+ set GROUP  sort = 0 n = 19 level = 2 at[level] = 6 cell->uid = 8
+ set ATOM  level = 3 at[level] = 0 cell->uid = 120
+ set ATOM  level = 3 at[level] = 1 cell->uid = 121
+ set ATOM  level = 3 at[level] = 2 cell->uid = 122
+ set ATOM  level = 3 at[level] = 3 cell->uid = 123
+ set ATOM  level = 3 at[level] = 4 cell->uid = 124
+ set ATOM  level = 3 at[level] = 5 cell->uid = 125
+ set ATOM  level = 3 at[level] = 6 cell->uid = 126
+ set ATOM  level = 3 at[level] = 7 cell->uid = 127
+ set ATOM  level = 3 at[level] = 8 cell->uid = 128
+ set ATOM  level = 3 at[level] = 9 cell->uid = 129
+ set ATOM  level = 3 at[level] = 10 cell->uid = 130
+ set ATOM  level = 3 at[level] = 11 cell->uid = 131
+ set ATOM  level = 3 at[level] = 12 cell->uid = 132
+ set ATOM  level = 3 at[level] = 13 cell->uid = 133
+ set ATOM  level = 3 at[level] = 14 cell->uid = 134
+ set ATOM  level = 3 at[level] = 15 cell->uid = 135
+ set ATOM  level = 3 at[level] = 16 cell->uid = 136
+ set ATOM  level = 3 at[level] = 17 cell->uid = 137
+ set ATOM  level = 3 at[level] = 18 cell->uid = 138
+ EoG  level = 2 cell->uid = 8 moves[level].set = 0
+ End of Cell  cell->level = 2 cell->id = 6 cell->uid = 8 cell->kids = 19 cell->ends = 0
+ Next  cell->uid = 9 last = T have = G
+ set GROUP  sort = 1 n = 23 level = 2 at[level] = 7 cell->uid = 9
+ set ATOM  level = 3 at[level] = 0 cell->uid = 139
+ set ATOM  level = 3 at[level] = 1 cell->uid = 140
+ set ATOM  level = 3 at[level] = 2 cell->uid = 141
+ set ATOM  level = 3 at[level] = 3 cell->uid = 142
+ set ATOM  level = 3 at[level] = 4 cell->uid = 143
+ set ATOM  level = 3 at[level] = 5 cell->uid = 144
+ set ATOM  level = 3 at[level] = 6 cell->uid = 145
+ set ATOM  level = 3 at[level] = 7 cell->uid = 146
+ set ATOM  level = 3 at[level] = 8 cell->uid = 147
+ set ATOM  level = 3 at[level] = 9 cell->uid = 148
+ set ATOM  level = 3 at[level] = 10 cell->uid = 149
+ set ATOM  level = 3 at[level] = 11 cell->uid = 150
+ set ATOM  level = 3 at[level] = 12 cell->uid = 151
+ set ATOM  level = 3 at[level] = 13 cell->uid = 152
+ set ATOM  level = 3 at[level] = 14 cell->uid = 153
+ set ATOM  level = 3 at[level] = 15 cell->uid = 154
+ set ATOM  level = 3 at[level] = 16 cell->uid = 155
+ set ATOM  level = 3 at[level] = 17 cell->uid = 156
+ set ATOM  level = 3 at[level] = 18 cell->uid = 157
+ set ATOM  level = 3 at[level] = 19 cell->uid = 158
+ set ATOM  level = 3 at[level] = 20 cell->uid = 159
+ set ATOM  level = 3 at[level] = 21 cell->uid = 160
+ set ATOM  level = 3 at[level] = 22 cell->uid = 161
+ EoG  level = 2 cell->uid = 9 moves[level].set = 0
+ End of Cell  cell->level = 2 cell->id = 7 cell->uid = 9 cell->kids = 23 cell->ends = 0
+ Next  cell->uid = 10 last = T have = G
+ set GROUP  sort = 0 n = 27 level = 2 at[level] = 8 cell->uid = 10
+ set ATOM  level = 3 at[level] = 0 cell->uid = 162
+ set ATOM  level = 3 at[level] = 1 cell->uid = 163
+ set ATOM  level = 3 at[level] = 2 cell->uid = 164
+ set ATOM  level = 3 at[level] = 3 cell->uid = 165
+ set ATOM  level = 3 at[level] = 4 cell->uid = 166
+ set ATOM  level = 3 at[level] = 5 cell->uid = 167
+ set ATOM  level = 3 at[level] = 6 cell->uid = 168
+ set ATOM  level = 3 at[level] = 7 cell->uid = 169
+ set ATOM  level = 3 at[level] = 8 cell->uid = 170
+ set ATOM  level = 3 at[level] = 9 cell->uid = 171
+ set ATOM  level = 3 at[level] = 10 cell->uid = 172
+ set ATOM  level = 3 at[level] = 11 cell->uid = 173
+ set ATOM  level = 3 at[level] = 12 cell->uid = 174
+ set ATOM  level = 3 at[level] = 13 cell->uid = 175
+ set ATOM  level = 3 at[level] = 14 cell->uid = 176
+ set ATOM  level = 3 at[level] = 15 cell->uid = 177
+ set ATOM  level = 3 at[level] = 16 cell->uid = 178
+ set ATOM  level = 3 at[level] = 17 cell->uid = 179
+ set ATOM  level = 3 at[level] = 18 cell->uid = 180
+ set ATOM  level = 3 at[level] = 19 cell->uid = 181
+ set ATOM  level = 3 at[level] = 20 cell->uid = 182
+ set ATOM  level = 3 at[level] = 21 cell->uid = 183
+ set ATOM  level = 3 at[level] = 22 cell->uid = 184
+ set ATOM  level = 3 at[level] = 23 cell->uid = 185
+ set ATOM  level = 3 at[level] = 24 cell->uid = 186
+ set ATOM  level = 3 at[level] = 25 cell->uid = 187
+ set ATOM  level = 3 at[level] = 26 cell->uid = 188
+ EoG  level = 2 cell->uid = 10 moves[level].set = 0
+ End of Cell  cell->level = 2 cell->id = 8 cell->uid = 10 cell->kids = 27 cell->ends = 0
+ Next  cell->uid = 11 last = T have = G
+ set GROUP  sort = 1 n = 25 level = 2 at[level] = 9 cell->uid = 11
+ set ATOM  level = 3 at[level] = 0 cell->uid = 189
+ set ATOM  level = 3 at[level] = 1 cell->uid = 190
+ set ATOM  level = 3 at[level] = 2 cell->uid = 191
+ set ATOM  level = 3 at[level] = 3 cell->uid = 192
+ set ATOM  level = 3 at[level] = 4 cell->uid = 193
+ set ATOM  level = 3 at[level] = 5 cell->uid = 194
+ set ATOM  level = 3 at[level] = 6 cell->uid = 195
+ set ATOM  level = 3 at[level] = 7 cell->uid = 196
+ set ATOM  level = 3 at[level] = 8 cell->uid = 197
+ set ATOM  level = 3 at[level] = 9 cell->uid = 198
+ set ATOM  level = 3 at[level] = 10 cell->uid = 199
+ set ATOM  level = 3 at[level] = 11 cell->uid = 200
+ set ATOM  level = 3 at[level] = 12 cell->uid = 201
+ set ATOM  level = 3 at[level] = 13 cell->uid = 202
+ set ATOM  level = 3 at[level] = 14 cell->uid = 203
+ set ATOM  level = 3 at[level] = 15 cell->uid = 204
+ set ATOM  level = 3 at[level] = 16 cell->uid = 205
+ set ATOM  level = 3 at[level] = 17 cell->uid = 206
+ set ATOM  level = 3 at[level] = 18 cell->uid = 207
+ set ATOM  level = 3 at[level] = 19 cell->uid = 208
+ set ATOM  level = 3 at[level] = 20 cell->uid = 209
+ set ATOM  level = 3 at[level] = 21 cell->uid = 210
+ set ATOM  level = 3 at[level] = 22 cell->uid = 211
+ set ATOM  level = 3 at[level] = 23 cell->uid = 212
+ set ATOM  level = 3 at[level] = 24 cell->uid = 213
+ EoG  level = 2 cell->uid = 11 moves[level].set = 0
+ End of Cell  cell->level = 2 cell->id = 9 cell->uid = 11 cell->kids = 25 cell->ends = 0
+ Next  cell->uid = 12 last = T have = G
+ set GROUP  sort = 0 n = 25 level = 2 at[level] = 10 cell->uid = 12
+ set ATOM  level = 3 at[level] = 0 cell->uid = 214
+ set ATOM  level = 3 at[level] = 1 cell->uid = 215
+ set ATOM  level = 3 at[level] = 2 cell->uid = 216
+ set ATOM  level = 3 at[level] = 3 cell->uid = 217
+ set ATOM  level = 3 at[level] = 4 cell->uid = 218
+ set ATOM  level = 3 at[level] = 5 cell->uid = 219
+ set ATOM  level = 3 at[level] = 6 cell->uid = 220
+ set ATOM  level = 3 at[level] = 7 cell->uid = 221
+ set ATOM  level = 3 at[level] = 8 cell->uid = 222
+ set ATOM  level = 3 at[level] = 9 cell->uid = 223
+ set ATOM  level = 3 at[level] = 10 cell->uid = 224
+ set ATOM  level = 3 at[level] = 11 cell->uid = 225
+ set ATOM  level = 3 at[level] = 12 cell->uid = 226
+ set ATOM  level = 3 at[level] = 13 cell->uid = 227
+ set ATOM  level = 3 at[level] = 14 cell->uid = 228
+ set ATOM  level = 3 at[level] = 15 cell->uid = 229
+ set ATOM  level = 3 at[level] = 16 cell->uid = 230
+ set ATOM  level = 3 at[level] = 17 cell->uid = 231
+ set ATOM  level = 3 at[level] = 18 cell->uid = 232
+ set ATOM  level = 3 at[level] = 19 cell->uid = 233
+ set ATOM  level = 3 at[level] = 20 cell->uid = 234
+ set ATOM  level = 3 at[level] = 21 cell->uid = 235
+ set ATOM  level = 3 at[level] = 22 cell->uid = 236
+ set ATOM  level = 3 at[level] = 23 cell->uid = 237
+ set ATOM  level = 3 at[level] = 24 cell->uid = 238
+ EoG  level = 2 cell->uid = 12 moves[level].set = 0
+ End of Cell  cell->level = 2 cell->id = 10 cell->uid = 12 cell->kids = 25 cell->ends = 0
+ Next  cell->uid = 13 last = T have = G
+ set GROUP  sort = 1 n = 25 level = 2 at[level] = 11 cell->uid = 13
+ set ATOM  level = 3 at[level] = 0 cell->uid = 239
+ set ATOM  level = 3 at[level] = 1 cell->uid = 240
+ set ATOM  level = 3 at[level] = 2 cell->uid = 241
+ set ATOM  level = 3 at[level] = 3 cell->uid = 242
+ set ATOM  level = 3 at[level] = 4 cell->uid = 243
+ set ATOM  level = 3 at[level] = 5 cell->uid = 244
+ set ATOM  level = 3 at[level] = 6 cell->uid = 245
+ set ATOM  level = 3 at[level] = 7 cell->uid = 246
+ set ATOM  level = 3 at[level] = 8 cell->uid = 247
+ set ATOM  level = 3 at[level] = 9 cell->uid = 248
+ set ATOM  level = 3 at[level] = 10 cell->uid = 249
+ set ATOM  level = 3 at[level] = 11 cell->uid = 250
+ set ATOM  level = 3 at[level] = 12 cell->uid = 251
+ set ATOM  level = 3 at[level] = 13 cell->uid = 252
+ set ATOM  level = 3 at[level] = 14 cell->uid = 253
+ set ATOM  level = 3 at[level] = 15 cell->uid = 254
+ set ATOM  level = 3 at[level] = 16 cell->uid = 255
+ set ATOM  level = 3 at[level] = 17 cell->uid = 256
+ set ATOM  level = 3 at[level] = 18 cell->uid = 257
+ set ATOM  level = 3 at[level] = 19 cell->uid = 258
+ set ATOM  level = 3 at[level] = 20 cell->uid = 259
+ set ATOM  level = 3 at[level] = 21 cell->uid = 260
+ set ATOM  level = 3 at[level] = 22 cell->uid = 261
+ set ATOM  level = 3 at[level] = 23 cell->uid = 262
+ set ATOM  level = 3 at[level] = 24 cell->uid = 263
+ EoG  level = 2 cell->uid = 13 moves[level].set = 0
+ End of Cell  cell->level = 2 cell->id = 11 cell->uid = 13 cell->kids = 25 cell->ends = 0
+ Next  cell->uid = 14 last = T have = G
+ set GROUP  sort = 0 n = 8 level = 2 at[level] = 12 cell->uid = 14
+ set ATOM  level = 3 at[level] = 0 cell->uid = 264
+ set ATOM  level = 3 at[level] = 1 cell->uid = 265
+ set ATOM  level = 3 at[level] = 2 cell->uid = 266
+ set ATOM  level = 3 at[level] = 3 cell->uid = 267
+ set ATOM  level = 3 at[level] = 4 cell->uid = 268
+ set ATOM  level = 3 at[level] = 5 cell->uid = 269
+ set ATOM  level = 3 at[level] = 6 cell->uid = 270
+ set ATOM  level = 3 at[level] = 7 cell->uid = 271
+ EoG  level = 2 cell->uid = 14 moves[level].set = 0
+ End of Cell  cell->level = 2 cell->id = 12 cell->uid = 14 cell->kids = 8 cell->ends = 0
+ Next  cell->uid = 15 last = T have = G
+ set GROUP  sort = 1 n = 24 level = 2 at[level] = 13 cell->uid = 15
+ set ATOM  level = 3 at[level] = 0 cell->uid = 272
+ set ATOM  level = 3 at[level] = 1 cell->uid = 273
+ set ATOM  level = 3 at[level] = 2 cell->uid = 274
+ set ATOM  level = 3 at[level] = 3 cell->uid = 275
+ set ATOM  level = 3 at[level] = 4 cell->uid = 276
+ set ATOM  level = 3 at[level] = 5 cell->uid = 277
+ set ATOM  level = 3 at[level] = 6 cell->uid = 278
+ set ATOM  level = 3 at[level] = 7 cell->uid = 279
+ set ATOM  level = 3 at[level] = 8 cell->uid = 280
+ set ATOM  level = 3 at[level] = 9 cell->uid = 281
+ set ATOM  level = 3 at[level] = 10 cell->uid = 282
+ set ATOM  level = 3 at[level] = 11 cell->uid = 283
+ set ATOM  level = 3 at[level] = 12 cell->uid = 284
+ set ATOM  level = 3 at[level] = 13 cell->uid = 285
+ set ATOM  level = 3 at[level] = 14 cell->uid = 286
+ set ATOM  level = 3 at[level] = 15 cell->uid = 287
+ set ATOM  level = 3 at[level] = 16 cell->uid = 288
+ set ATOM  level = 3 at[level] = 17 cell->uid = 289
+ set ATOM  level = 3 at[level] = 18 cell->uid = 290
+ set ATOM  level = 3 at[level] = 19 cell->uid = 291
+ set ATOM  level = 3 at[level] = 20 cell->uid = 292
+ set ATOM  level = 3 at[level] = 21 cell->uid = 293
+ set ATOM  level = 3 at[level] = 22 cell->uid = 294
+ set ATOM  level = 3 at[level] = 23 cell->uid = 295
+ EoG  level = 2 cell->uid = 15 moves[level].set = 0
+ End of Cell  cell->level = 2 cell->id = 13 cell->uid = 15 cell->kids = 24 cell->ends = 0
+ Next  cell->uid = 16 last = T have = G
+ set GROUP  sort = 0 n = 17 level = 2 at[level] = 14 cell->uid = 16
+ set ATOM  level = 3 at[level] = 0 cell->uid = 296
+ set ATOM  level = 3 at[level] = 1 cell->uid = 297
+ set ATOM  level = 3 at[level] = 2 cell->uid = 298
+ set ATOM  level = 3 at[level] = 3 cell->uid = 299
+ set ATOM  level = 3 at[level] = 4 cell->uid = 300
+ set ATOM  level = 3 at[level] = 5 cell->uid = 301
+ set ATOM  level = 3 at[level] = 6 cell->uid = 302
+ set ATOM  level = 3 at[level] = 7 cell->uid = 303
+ set ATOM  level = 3 at[level] = 8 cell->uid = 304
+ set ATOM  level = 3 at[level] = 9 cell->uid = 305
+ set ATOM  level = 3 at[level] = 10 cell->uid = 306
+ set ATOM  level = 3 at[level] = 11 cell->uid = 307
+ set ATOM  level = 3 at[level] = 12 cell->uid = 308
+ set ATOM  level = 3 at[level] = 13 cell->uid = 309
+ set ATOM  level = 3 at[level] = 14 cell->uid = 310
+ set ATOM  level = 3 at[level] = 15 cell->uid = 311
+ set ATOM  level = 3 at[level] = 16 cell->uid = 312
+ EoF
+  Moved back to previous file
+  EoF
+  EoG  level = 2 cell->uid = 16 moves[level].set = 0
+ End of Cell  cell->level = 2 cell->id = 14 cell->uid = 16 cell->kids = 17 cell->ends = 0
+ EoG  level = 1 cell->uid = 1 moves[level].set = 0
+ End of Cell  cell->level = 1 cell->id = 0 cell->uid = 1 cell->kids = 15 cell->ends = 1
+ all groups complete
+  End
+  End of Cell  cell->level = 0 cell->id = 0 cell->uid = 0 cell->kids = 1 cell->ends = 0
+ End of World
+  Cell::total = 312
+Data structures all setup
+ Cell::total = 312
+ Data::depth = 3
+ Data::shrink = 0
+ uid = 0 atom = 0 btom = 0 ctom = 0 level = 0 kids = 1 type = 0 sort = 0 xyz = -0.16457 -0.0353215 -0.14314 nbonds = 0 nlinks = 0 model = 0
+	 uid = 1 atom = 0 btom = 0 ctom = 0 level = 1 kids = 15 type = 2 sort = 0 xyz = -0.16457 -0.0353215 -0.14314 nbonds = 0 nlinks = 0 model = 0
+		 uid = 2 atom = 0 btom = 0 ctom = 0 level = 2 kids = 8 type = 2 sort = 0 xyz = 3.46789 -0.0336692 2.18555 nbonds = 1 nlinks = 0 model = 0
+			 uid = 17 atom = 1 btom = 1 ctom = 1 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.51593 -0.121123 2.72017 nbonds = 1 nlinks = 10 model = 0
+			 uid = 18 atom = 2 btom = 2 ctom = 2 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.40114 -0.124597 2.60664 nbonds = 1 nlinks = 10 model = 0
+			 uid = 19 atom = 3 btom = 3 ctom = 3 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.72978 0.0396137 2.37027 nbonds = 1 nlinks = 10 model = 0
+			 uid = 20 atom = 4 btom = 4 ctom = 4 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.49293 0.248666 1.85348 nbonds = 1 nlinks = 10 model = 0
+			 uid = 21 atom = 5 btom = 5 ctom = 5 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.25609 -0.297018 1.7398 nbonds = 1 nlinks = 10 model = 0
+			 uid = 22 atom = 6 btom = 6 ctom = 6 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.01925 -0.311702 2.29701 nbonds = 1 nlinks = 10 model = 0
+			 uid = 23 atom = 7 btom = 7 ctom = 7 level = 3 kids = 0 type = 1 sort = 0 xyz = 2.78241 0.239351 2.21206 nbonds = 1 nlinks = 10 model = 0
+			 uid = 24 atom = 8 btom = 8 ctom = 8 level = 3 kids = 0 type = 1 sort = 0 xyz = 2.54557 0.0574558 1.68501 nbonds = 1 nlinks = 10 model = 0
+		 uid = 3 atom = 0 btom = 0 ctom = 0 level = 2 kids = 25 type = 2 sort = 1 xyz = -0.533382 -0.07078 2.0265 nbonds = 1 nlinks = 0 model = 0
+			 uid = 25 atom = 9 btom = 9 ctom = 9 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.30872 -0.428702 1.95785 nbonds = 1 nlinks = 10 model = 0
+			 uid = 26 atom = 10 btom = 10 ctom = 10 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.07188 -0.0734389 2.38764 nbonds = 1 nlinks = 10 model = 0
+			 uid = 27 atom = 11 btom = 11 ctom = 11 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.83504 0.286087 1.96164 nbonds = 1 nlinks = 10 model = 0
+			 uid = 28 atom = 12 btom = 12 ctom = 12 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.5982 -0.197228 1.68375 nbonds = 1 nlinks = 10 model = 0
+			 uid = 29 atom = 13 btom = 13 ctom = 13 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.36136 -0.384492 2.2089 nbonds = 1 nlinks = 10 model = 0
+			 uid = 30 atom = 14 btom = 14 ctom = 14 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.12451 0.165614 2.29953 nbonds = 1 nlinks = 10 model = 0
+			 uid = 31 atom = 15 btom = 15 ctom = 15 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.887671 0.156772 1.74201 nbonds = 1 nlinks = 10 model = 0
+			 uid = 32 atom = 16 btom = 16 ctom = 16 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.650829 -0.390176 1.85017 nbonds = 1 nlinks = 10 model = 0
+			 uid = 33 atom = 17 btom = 17 ctom = 17 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.413987 -0.186334 2.36901 nbonds = 1 nlinks = 10 model = 0
+			 uid = 34 atom = 18 btom = 18 ctom = 18 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.177145 0.287824 2.07596 nbonds = 1 nlinks = 10 model = 0
+			 uid = 35 atom = 19 btom = 19 ctom = 19 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.0596974 -0.0849653 1.66164 nbonds = 1 nlinks = 10 model = 0
+			 uid = 36 atom = 20 btom = 20 ctom = 20 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.296539 -0.426334 2.10232 nbonds = 1 nlinks = 10 model = 0
+			 uid = 37 atom = 21 btom = 21 ctom = 21 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.533382 0.0681926 2.35969 nbonds = 1 nlinks = 10 model = 0
+			 uid = 38 atom = 22 btom = 22 ctom = 22 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.770224 0.233193 1.82711 nbonds = 1 nlinks = 10 model = 0
+			 uid = 39 atom = 23 btom = 23 ctom = 23 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.00707 -0.320228 1.75969 nbonds = 1 nlinks = 10 model = 0
+			 uid = 40 atom = 24 btom = 24 ctom = 24 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.24391 -0.28786 2.31627 nbonds = 1 nlinks = 10 model = 0
+			 uid = 41 atom = 25 btom = 25 ctom = 25 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.48075 0.254035 2.18522 nbonds = 1 nlinks = 10 model = 0
+			 uid = 42 atom = 26 btom = 26 ctom = 26 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.71759 0.0285611 1.67538 nbonds = 1 nlinks = 10 model = 0
+			 uid = 43 atom = 27 btom = 27 ctom = 27 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.95443 -0.432965 1.98817 nbonds = 1 nlinks = 10 model = 0
+			 uid = 44 atom = 28 btom = 28 ctom = 28 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.19128 -0.0429653 2.38653 nbonds = 1 nlinks = 10 model = 0
+			 uid = 45 atom = 29 btom = 29 ctom = 29 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.42812 0.279456 1.9318 nbonds = 1 nlinks = 10 model = 0
+			 uid = 46 atom = 30 btom = 30 ctom = 30 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.66496 -0.225492 1.69543 nbonds = 1 nlinks = 10 model = 0
+			 uid = 47 atom = 31 btom = 31 ctom = 31 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.9018 -0.367913 2.23448 nbonds = 1 nlinks = 10 model = 0
+			 uid = 48 atom = 32 btom = 32 ctom = 32 level = 3 kids = 0 type = 1 sort = 1 xyz = -3.13864 0.187719 2.27853 nbonds = 1 nlinks = 10 model = 0
+			 uid = 49 atom = 33 btom = 33 ctom = 33 level = 3 kids = 0 type = 1 sort = 1 xyz = -3.37549 0.13214 1.72385 nbonds = 1 nlinks = 10 model = 0
+		 uid = 4 atom = 0 btom = 0 ctom = 0 level = 2 kids = 10 type = 2 sort = 0 xyz = -3.65291 0.606993 0.69114 nbonds = 1 nlinks = 0 model = 0
+			 uid = 50 atom = 34 btom = 34 ctom = 34 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.61233 -0.403755 1.87748 nbonds = 1 nlinks = 10 model = 0
+			 uid = 51 atom = 35 btom = 35 ctom = 35 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.84917 -0.157123 2.37738 nbonds = 1 nlinks = 10 model = 0
+			 uid = 52 atom = 36 btom = 36 ctom = 36 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.27628 0.639772 0.220376 nbonds = 1 nlinks = 10 model = 0
+			 uid = 53 atom = 37 btom = 37 ctom = 37 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.53807 1.04193 0.133534 nbonds = 1 nlinks = 10 model = 0
+			 uid = 54 atom = 38 btom = 38 ctom = 38 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.91659 1.10193 0.0656397 nbonds = 1 nlinks = 10 model = 0
+			 uid = 55 atom = 39 btom = 39 ctom = 39 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.67296 1.09972 0.620166 nbonds = 1 nlinks = 10 model = 0
+			 uid = 56 atom = 40 btom = 40 ctom = 40 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.57807 0.503035 0.577219 nbonds = 1 nlinks = 10 model = 0
+			 uid = 57 atom = 41 btom = 41 ctom = 41 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.31407 0.582614 0.0380081 nbonds = 1 nlinks = 10 model = 0
+			 uid = 58 atom = 42 btom = 42 ctom = 42 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.96164 1.01556 0.273113 nbonds = 1 nlinks = 10 model = 0
+			 uid = 59 atom = 43 btom = 43 ctom = 43 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.80991 0.646245 0.728482 nbonds = 1 nlinks = 10 model = 0
+		 uid = 5 atom = 0 btom = 0 ctom = 0 level = 2 kids = 24 type = 2 sort = 1 xyz = 0.0543881 -0.103485 0.350423 nbonds = 1 nlinks = 0 model = 0
+			 uid = 60 atom = 44 btom = 44 ctom = 44 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.67491 0.209666 0.331061 nbonds = 1 nlinks = 10 model = 0
+			 uid = 61 atom = 45 btom = 45 ctom = 45 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.33338 0.599193 0.0173239 nbonds = 1 nlinks = 10 model = 0
+			 uid = 62 atom = 46 btom = 46 ctom = 46 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.04854 0.761666 0.526692 nbonds = 1 nlinks = 10 model = 0
+			 uid = 63 atom = 47 btom = 47 ctom = 47 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.95017 0.178719 0.65885 nbonds = 1 nlinks = 10 model = 0
+			 uid = 64 atom = 48 btom = 48 ctom = 48 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.72849 0.088719 0.102271 nbonds = 1 nlinks = 10 model = 0
+			 uid = 65 atom = 49 btom = 49 ctom = 49 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.36454 0.568403 0.168587 nbonds = 1 nlinks = 10 model = 0
+			 uid = 66 atom = 50 btom = 50 ctom = 50 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.17443 0.35193 0.701482 nbonds = 1 nlinks = 10 model = 0
+			 uid = 67 atom = 51 btom = 51 ctom = 51 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.06486 -0.18586 0.445219 nbonds = 1 nlinks = 10 model = 0
+			 uid = 68 atom = 52 btom = 52 ctom = 52 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.75254 0.0869821 0.00374492 nbonds = 1 nlinks = 10 model = 0
+			 uid = 69 atom = 53 btom = 53 ctom = 53 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.432013 0.392035 0.417271 nbonds = 1 nlinks = 10 model = 0
+			 uid = 70 atom = 54 btom = 54 ctom = 54 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.317066 -0.124755 0.711429 nbonds = 1 nlinks = 10 model = 0
+			 uid = 71 atom = 55 btom = 55 ctom = 55 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.137066 -0.381018 0.192903 nbonds = 1 nlinks = 10 model = 0
+			 uid = 72 atom = 56 btom = 56 ctom = 56 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.225303 0.0918768 0.0836397 nbonds = 1 nlinks = 10 model = 0
+			 uid = 73 atom = 57 btom = 57 ctom = 57 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.457566 0.0441926 0.641008 nbonds = 1 nlinks = 10 model = 0
+			 uid = 74 atom = 58 btom = 58 ctom = 58 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.553882 -0.547123 0.55164 nbonds = 1 nlinks = 10 model = 0
+			 uid = 75 atom = 59 btom = 59 ctom = 59 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.828776 -0.423965 0.026166 nbonds = 1 nlinks = 10 model = 0
+			 uid = 76 atom = 60 btom = 60 ctom = 60 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.17583 -0.0120179 0.302955 nbonds = 1 nlinks = 10 model = 0
+			 uid = 77 atom = 61 btom = 61 ctom = 61 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.31857 -0.417334 0.729745 nbonds = 1 nlinks = 10 model = 0
+			 uid = 78 atom = 62 btom = 62 ctom = 62 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.46209 -0.820281 0.300745 nbonds = 1 nlinks = 10 model = 0
+			 uid = 79 atom = 63 btom = 63 ctom = 63 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.80962 -0.406597 0.0269554 nbonds = 1 nlinks = 10 model = 0
+			 uid = 80 atom = 64 btom = 64 ctom = 64 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.08372 -0.286597 0.553534 nbonds = 1 nlinks = 10 model = 0
+			 uid = 81 atom = 65 btom = 65 ctom = 65 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.17988 -0.878228 0.639745 nbonds = 1 nlinks = 10 model = 0
+			 uid = 82 atom = 66 btom = 66 ctom = 66 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.41293 -0.922755 0.0823765 nbonds = 1 nlinks = 10 model = 0
+			 uid = 83 atom = 67 btom = 67 ctom = 67 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.77515 -0.450492 0.194798 nbonds = 1 nlinks = 10 model = 0
+		 uid = 6 atom = 0 btom = 0 ctom = 0 level = 2 kids = 14 type = 2 sort = 0 xyz = 3.22967 -1.98658 0.363249 nbonds = 1 nlinks = 0 model = 0
+			 uid = 84 atom = 68 btom = 68 ctom = 68 level = 3 kids = 0 type = 1 sort = 0 xyz = 2.95451 -0.709755 0.712061 nbonds = 1 nlinks = 10 model = 0
+			 uid = 85 atom = 69 btom = 69 ctom = 69 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.06978 -1.22497 0.415219 nbonds = 1 nlinks = 10 model = 0
+			 uid = 86 atom = 70 btom = 70 ctom = 70 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.39078 -0.917386 0.00374492 nbonds = 1 nlinks = 10 model = 0
+			 uid = 87 atom = 71 btom = 71 ctom = 71 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.70246 -0.647228 0.447271 nbonds = 1 nlinks = 10 model = 0
+			 uid = 88 atom = 72 btom = 72 ctom = 72 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.81188 -1.18644 0.700534 nbonds = 1 nlinks = 10 model = 0
+			 uid = 89 atom = 73 btom = 73 ctom = 73 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.00262 -1.39975 0.16685 nbonds = 1 nlinks = 10 model = 0
+			 uid = 90 atom = 74 btom = 74 ctom = 74 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.12957 -2.51354 0.413482 nbonds = 1 nlinks = 10 model = 0
+			 uid = 91 atom = 75 btom = 75 ctom = 75 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.37341 -3.28518 0.641324 nbonds = 1 nlinks = 10 model = 0
+			 uid = 92 atom = 76 btom = 76 ctom = 76 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.34372 -2.68123 0.677482 nbonds = 1 nlinks = 10 model = 0
+			 uid = 93 atom = 77 btom = 77 ctom = 77 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.22941 -2.65012 0.0834818 nbonds = 1 nlinks = 10 model = 0
+			 uid = 94 atom = 78 btom = 78 ctom = 78 level = 3 kids = 0 type = 1 sort = 0 xyz = 2.79172 -3.06428 0.144745 nbonds = 1 nlinks = 10 model = 0
+			 uid = 95 atom = 79 btom = 79 ctom = 79 level = 3 kids = 0 type = 1 sort = 0 xyz = 2.55409 -2.74691 0.602798 nbonds = 1 nlinks = 10 model = 0
+			 uid = 96 atom = 80 btom = 80 ctom = 80 level = 3 kids = 0 type = 1 sort = 0 xyz = 2.56846 -2.24497 0.263955 nbonds = 1 nlinks = 10 model = 0
+			 uid = 97 atom = 81 btom = 81 ctom = 81 level = 3 kids = 0 type = 1 sort = 0 xyz = 2.29293 -2.54039 -0.187466 nbonds = 1 nlinks = 10 model = 0
+		 uid = 7 atom = 0 btom = 0 ctom = 0 level = 2 kids = 22 type = 2 sort = 1 xyz = -0.252085 -1.52562 -0.391702 nbonds = 1 nlinks = 0 model = 0
+			 uid = 98 atom = 82 btom = 82 ctom = 82 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.86867 -2.73618 0.198113 nbonds = 1 nlinks = 10 model = 0
+			 uid = 99 atom = 83 btom = 83 ctom = 83 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.78736 -2.17012 0.39785 nbonds = 1 nlinks = 10 model = 0
+			 uid = 100 atom = 84 btom = 84 ctom = 84 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.73257 -1.97528 -0.173097 nbonds = 1 nlinks = 10 model = 0
+			 uid = 101 atom = 85 btom = 85 ctom = 85 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.32536 -2.40997 -0.283466 nbonds = 1 nlinks = 10 model = 0
+			 uid = 102 atom = 86 btom = 86 ctom = 86 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.0173 -2.24891 0.212482 nbonds = 1 nlinks = 10 model = 0
+			 uid = 103 atom = 87 btom = 87 ctom = 87 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.0263 -1.67086 0.0318502 nbonds = 1 nlinks = 10 model = 0
+			 uid = 104 atom = 88 btom = 88 ctom = 88 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.823092 -1.83712 -0.513992 nbonds = 1 nlinks = 10 model = 0
+			 uid = 105 atom = 89 btom = 89 ctom = 89 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.378618 -2.15497 -0.252992 nbonds = 1 nlinks = 10 model = 0
+			 uid = 106 atom = 90 btom = 90 ctom = 90 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.232092 -1.67465 0.0856923 nbonds = 1 nlinks = 10 model = 0
+			 uid = 107 atom = 91 btom = 91 ctom = 91 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.220882 -1.32712 -0.410255 nbonds = 1 nlinks = 10 model = 0
+			 uid = 108 atom = 92 btom = 92 ctom = 92 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.13675 -1.73054 -0.686255 nbonds = 1 nlinks = 10 model = 0
+			 uid = 109 atom = 93 btom = 93 ctom = 93 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.506066 -1.73339 -0.206255 nbonds = 1 nlinks = 10 model = 0
+			 uid = 110 atom = 94 btom = 94 ctom = 94 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.524855 -1.12802 -0.215571 nbonds = 1 nlinks = 10 model = 0
+			 uid = 111 atom = 95 btom = 95 ctom = 95 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.656855 -1.14018 -0.806571 nbonds = 1 nlinks = 10 model = 0
+			 uid = 112 atom = 96 btom = 96 ctom = 96 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.09912 -1.54028 -0.700624 nbonds = 1 nlinks = 10 model = 0
+			 uid = 113 atom = 97 btom = 97 ctom = 97 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.31733 -1.1847 -0.261676 nbonds = 1 nlinks = 10 model = 0
+			 uid = 114 atom = 98 btom = 98 ctom = 98 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.30533 -0.710386 -0.638255 nbonds = 1 nlinks = 10 model = 0
+			 uid = 115 atom = 99 btom = 99 ctom = 99 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.59949 -1.03423 -1.05731 nbonds = 1 nlinks = 10 model = 0
+			 uid = 116 atom = 100 btom = 100 ctom = 100 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.01459 -1.19228 -0.645518 nbonds = 1 nlinks = 10 model = 0
+			 uid = 117 atom = 101 btom = 101 ctom = 101 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.08059 -0.611228 -0.487466 nbonds = 1 nlinks = 10 model = 0
+			 uid = 118 atom = 102 btom = 102 ctom = 102 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.14991 -0.459492 -1.06978 nbonds = 1 nlinks = 10 model = 0
+			 uid = 119 atom = 103 btom = 103 ctom = 103 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.56722 -0.893702 -1.13436 nbonds = 1 nlinks = 10 model = 0
+		 uid = 8 atom = 0 btom = 0 ctom = 0 level = 2 kids = 19 type = 2 sort = 0 xyz = -3.797 0.375256 -1.92616 nbonds = 1 nlinks = 0 model = 0
+			 uid = 120 atom = 104 btom = 104 ctom = 104 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.85728 -0.68986 -0.643308 nbonds = 1 nlinks = 10 model = 0
+			 uid = 121 atom = 105 btom = 105 ctom = 105 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.84464 -0.127439 -0.867992 nbonds = 1 nlinks = 10 model = 0
+			 uid = 122 atom = 106 btom = 106 ctom = 106 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.06712 -0.330965 -1.39315 nbonds = 1 nlinks = 10 model = 0
+			 uid = 123 atom = 107 btom = 107 ctom = 107 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.50843 -0.619913 -1.09552 nbonds = 1 nlinks = 10 model = 0
+			 uid = 124 atom = 108 btom = 108 ctom = 108 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.63665 -0.112597 -0.790624 nbonds = 1 nlinks = 10 model = 0
+			 uid = 125 atom = 109 btom = 109 ctom = 109 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.65764 0.196403 -1.3112 nbonds = 1 nlinks = 10 model = 0
+			 uid = 126 atom = 110 btom = 110 ctom = 110 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.03012 -0.220281 -1.54473 nbonds = 1 nlinks = 10 model = 0
+			 uid = 127 atom = 111 btom = 111 ctom = 111 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.38428 -0.17986 -1.0551 nbonds = 1 nlinks = 10 model = 0
+			 uid = 128 atom = 112 btom = 112 ctom = 112 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.39359 0.423298 -1.11036 nbonds = 1 nlinks = 10 model = 0
+			 uid = 129 atom = 113 btom = 113 ctom = 113 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.54407 0.368666 -1.69441 nbonds = 1 nlinks = 10 model = 0
+			 uid = 130 atom = 114 btom = 114 ctom = 114 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.8807 1.16209 -2.27104 nbonds = 1 nlinks = 10 model = 0
+			 uid = 131 atom = 115 btom = 115 ctom = 115 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.33422 1.61351 -2.82873 nbonds = 1 nlinks = 10 model = 0
+			 uid = 132 atom = 116 btom = 116 ctom = 116 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.4757 1.0304 -2.74631 nbonds = 1 nlinks = 10 model = 0
+			 uid = 133 atom = 117 btom = 117 ctom = 117 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.15738 0.882298 -3.24004 nbonds = 1 nlinks = 10 model = 0
+			 uid = 134 atom = 118 btom = 118 ctom = 118 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.68543 1.19998 -3.03241 nbonds = 1 nlinks = 10 model = 0
+			 uid = 135 atom = 119 btom = 119 ctom = 119 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.72775 0.916561 -2.49873 nbonds = 1 nlinks = 10 model = 0
+			 uid = 136 atom = 120 btom = 120 ctom = 120 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.7407 0.381614 -2.78262 nbonds = 1 nlinks = 10 model = 0
+			 uid = 137 atom = 121 btom = 121 ctom = 121 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.24964 0.537456 -3.1011 nbonds = 1 nlinks = 10 model = 0
+			 uid = 138 atom = 122 btom = 122 ctom = 122 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.96764 0.698509 -2.58968 nbonds = 1 nlinks = 10 model = 0
+		 uid = 9 atom = 0 btom = 0 ctom = 0 level = 2 kids = 23 type = 2 sort = 1 xyz = -0.899663 -1.22742 -2.10824 nbonds = 1 nlinks = 0 model = 0
+			 uid = 139 atom = 123 btom = 123 ctom = 123 level = 3 kids = 0 type = 1 sort = 1 xyz = -3.11528 0.166877 -2.33957 nbonds = 1 nlinks = 10 model = 0
+			 uid = 140 atom = 124 btom = 124 ctom = 124 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.90054 -0.123018 -2.8262 nbonds = 1 nlinks = 10 model = 0
+			 uid = 141 atom = 125 btom = 125 ctom = 125 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.38549 0.193561 -2.78894 nbonds = 1 nlinks = 10 model = 0
+			 uid = 142 atom = 126 btom = 126 ctom = 126 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.3397 0.0522453 -2.20157 nbonds = 1 nlinks = 10 model = 0
+			 uid = 143 atom = 127 btom = 127 ctom = 127 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.42701 -0.532123 -2.33436 nbonds = 1 nlinks = 10 model = 0
+			 uid = 144 atom = 128 btom = 128 ctom = 128 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.99754 -0.50086 -2.76036 nbonds = 1 nlinks = 10 model = 0
+			 uid = 145 atom = 129 btom = 129 ctom = 129 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.61938 -0.24586 -2.36183 nbonds = 1 nlinks = 10 model = 0
+			 uid = 146 atom = 130 btom = 130 ctom = 130 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.73954 -0.686386 -1.96394 nbonds = 1 nlinks = 10 model = 0
+			 uid = 147 atom = 131 btom = 131 ctom = 131 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.63091 -1.1026 -2.39026 nbonds = 1 nlinks = 10 model = 0
+			 uid = 148 atom = 132 btom = 132 ctom = 132 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.10528 -0.831965 -2.52226 nbonds = 1 nlinks = 10 model = 0
+			 uid = 149 atom = 133 btom = 133 ctom = 133 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.957329 -0.830544 -1.93489 nbonds = 1 nlinks = 10 model = 0
+			 uid = 150 atom = 134 btom = 134 ctom = 134 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.09154 -1.41997 -1.89841 nbonds = 1 nlinks = 10 model = 0
+			 uid = 151 atom = 135 btom = 135 ctom = 135 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.747645 -1.5297 -2.38473 nbonds = 1 nlinks = 10 model = 0
+			 uid = 152 atom = 136 btom = 136 ctom = 136 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.291961 -1.21928 -2.13383 nbonds = 1 nlinks = 10 model = 0
+			 uid = 153 atom = 137 btom = 137 ctom = 137 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.354329 -1.5387 -1.62304 nbonds = 1 nlinks = 10 model = 0
+			 uid = 154 atom = 138 btom = 138 ctom = 138 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.34375 -2.05344 -1.94199 nbonds = 1 nlinks = 10 model = 0
+			 uid = 155 atom = 139 btom = 139 ctom = 139 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.158829 -1.86886 -2.22526 nbonds = 1 nlinks = 10 model = 0
+			 uid = 156 atom = 140 btom = 140 ctom = 140 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.413197 -1.73828 -1.69126 nbonds = 1 nlinks = 10 model = 0
+			 uid = 157 atom = 141 btom = 141 ctom = 141 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.263987 -2.2876 -1.48441 nbonds = 1 nlinks = 10 model = 0
+			 uid = 158 atom = 142 btom = 142 ctom = 142 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.506987 -2.5407 -1.97815 nbonds = 1 nlinks = 10 model = 0
+			 uid = 159 atom = 143 btom = 143 ctom = 143 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.01367 -2.21939 -1.8951 nbonds = 1 nlinks = 10 model = 0
+			 uid = 160 atom = 144 btom = 144 ctom = 144 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.03404 -2.39923 -1.31689 nbonds = 1 nlinks = 10 model = 0
+			 uid = 161 atom = 145 btom = 145 ctom = 145 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.96425 -2.97475 -1.49231 nbonds = 1 nlinks = 10 model = 0
+		 uid = 10 atom = 0 btom = 0 ctom = 0 level = 2 kids = 27 type = 2 sort = 0 xyz = 3.34796 -3.0766 -1.43681 nbonds = 1 nlinks = 0 model = 0
+			 uid = 162 atom = 146 btom = 146 ctom = 146 level = 3 kids = 0 type = 1 sort = 0 xyz = 1.41267 -2.90812 -1.89383 nbonds = 1 nlinks = 10 model = 0
+			 uid = 163 atom = 147 btom = 147 ctom = 147 level = 3 kids = 0 type = 1 sort = 0 xyz = 1.76683 -2.6746 -1.46152 nbonds = 1 nlinks = 10 model = 0
+			 uid = 164 atom = 148 btom = 148 ctom = 148 level = 3 kids = 0 type = 1 sort = 0 xyz = 1.63609 -3.14276 -1.09994 nbonds = 1 nlinks = 10 model = 0
+			 uid = 165 atom = 149 btom = 149 ctom = 149 level = 3 kids = 0 type = 1 sort = 0 xyz = 1.77267 -3.5277 -1.54726 nbonds = 1 nlinks = 10 model = 0
+			 uid = 166 atom = 150 btom = 150 ctom = 150 level = 3 kids = 0 type = 1 sort = 0 xyz = 2.29862 -3.24065 -1.63536 nbonds = 1 nlinks = 10 model = 0
+			 uid = 167 atom = 151 btom = 151 ctom = 151 level = 3 kids = 0 type = 1 sort = 0 xyz = 2.41862 -3.27633 -1.04262 nbonds = 1 nlinks = 10 model = 0
+			 uid = 168 atom = 152 btom = 152 ctom = 152 level = 3 kids = 0 type = 1 sort = 0 xyz = 2.29388 -3.86891 -1.05194 nbonds = 1 nlinks = 10 model = 0
+			 uid = 169 atom = 153 btom = 153 ctom = 153 level = 3 kids = 0 type = 1 sort = 0 xyz = 2.66241 -3.94028 -1.52736 nbonds = 1 nlinks = 10 model = 0
+			 uid = 170 atom = 154 btom = 154 ctom = 154 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.19057 -3.99381 -1.52436 nbonds = 1 nlinks = 10 model = 0
+			 uid = 171 atom = 155 btom = 155 ctom = 155 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.71872 -4.04749 -1.52136 nbonds = 1 nlinks = 10 model = 0
+			 uid = 172 atom = 156 btom = 156 ctom = 156 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.98809 -4.00076 -1.52389 nbonds = 1 nlinks = 10 model = 0
+			 uid = 173 atom = 157 btom = 157 ctom = 157 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.21499 -3.93776 -1.52736 nbonds = 1 nlinks = 10 model = 0
+			 uid = 174 atom = 158 btom = 158 ctom = 158 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.41978 -3.86607 -1.53115 nbonds = 1 nlinks = 10 model = 0
+			 uid = 175 atom = 159 btom = 159 ctom = 159 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.61051 -3.78886 -1.53541 nbonds = 1 nlinks = 10 model = 0
+			 uid = 176 atom = 160 btom = 160 ctom = 160 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.69704 -3.67139 -1.54189 nbonds = 1 nlinks = 10 model = 0
+			 uid = 177 atom = 161 btom = 161 ctom = 161 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.67936 -3.51349 -1.55057 nbonds = 1 nlinks = 10 model = 0
+			 uid = 178 atom = 162 btom = 162 ctom = 162 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.64746 -3.35023 -1.55957 nbonds = 1 nlinks = 10 model = 0
+			 uid = 179 atom = 163 btom = 163 ctom = 163 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.59362 -3.17828 -1.56889 nbonds = 1 nlinks = 10 model = 0
+			 uid = 180 atom = 164 btom = 164 ctom = 164 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.4973 -2.98991 -1.57931 nbonds = 1 nlinks = 10 model = 0
+			 uid = 181 atom = 165 btom = 165 ctom = 165 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.1422 -2.70144 -1.5951 nbonds = 1 nlinks = 10 model = 0
+			 uid = 182 atom = 166 btom = 166 ctom = 166 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.78709 -2.41281 -1.61104 nbonds = 1 nlinks = 10 model = 0
+			 uid = 183 atom = 167 btom = 167 ctom = 167 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.52578 -2.39528 -1.06489 nbonds = 1 nlinks = 10 model = 0
+			 uid = 184 atom = 168 btom = 168 ctom = 168 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.59036 -1.79307 -1.05226 nbonds = 1 nlinks = 10 model = 0
+			 uid = 185 atom = 169 btom = 169 ctom = 169 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.34104 -1.7536 -1.60299 nbonds = 1 nlinks = 10 model = 0
+			 uid = 186 atom = 170 btom = 170 ctom = 170 level = 3 kids = 0 type = 1 sort = 0 xyz = 2.87793 -2.09812 -1.4192 nbonds = 1 nlinks = 10 model = 0
+			 uid = 187 atom = 171 btom = 171 ctom = 171 level = 3 kids = 0 type = 1 sort = 0 xyz = 2.80483 -1.74302 -0.93415 nbonds = 1 nlinks = 10 model = 0
+			 uid = 188 atom = 172 btom = 172 ctom = 172 level = 3 kids = 0 type = 1 sort = 0 xyz = 2.80657 -1.25339 -1.29068 nbonds = 1 nlinks = 10 model = 0
+		 uid = 11 atom = 0 btom = 0 ctom = 0 level = 2 kids = 25 type = 2 sort = 1 xyz = -0.0604869 -0.0730284 -1.28981 nbonds = 1 nlinks = 0 model = 0
+			 uid = 189 atom = 173 btom = 173 ctom = 173 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.39162 -1.51139 -1.64878 nbonds = 1 nlinks = 10 model = 0
+			 uid = 190 atom = 174 btom = 174 ctom = 174 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.05025 -1.63723 -1.16452 nbonds = 1 nlinks = 10 model = 0
+			 uid = 191 atom = 175 btom = 175 ctom = 175 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.09936 -1.06281 -0.978992 nbonds = 1 nlinks = 10 model = 0
+			 uid = 192 atom = 176 btom = 176 ctom = 176 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.93562 -0.86986 -1.52941 nbonds = 1 nlinks = 10 model = 0
+			 uid = 193 atom = 177 btom = 177 ctom = 177 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.45736 -1.24139 -1.51868 nbonds = 1 nlinks = 10 model = 0
+			 uid = 194 atom = 178 btom = 178 ctom = 178 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.30404 -1.03012 -0.972203 nbonds = 1 nlinks = 10 model = 0
+			 uid = 195 atom = 179 btom = 179 ctom = 179 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.34951 -0.462176 -1.17778 nbonds = 1 nlinks = 10 model = 0
+			 uid = 196 atom = 180 btom = 180 ctom = 180 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.999145 -0.604281 -1.65099 nbonds = 1 nlinks = 10 model = 0
+			 uid = 197 atom = 181 btom = 181 ctom = 181 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.591145 -0.849807 -1.27662 nbonds = 1 nlinks = 10 model = 0
+			 uid = 198 atom = 182 btom = 182 ctom = 182 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.599355 -0.348492 -0.936834 nbonds = 1 nlinks = 10 model = 0
+			 uid = 199 atom = 183 btom = 183 ctom = 183 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.516934 -0.00996525 -1.43231 nbonds = 1 nlinks = 10 model = 0
+			 uid = 200 atom = 184 btom = 184 ctom = 184 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.0505131 -0.360176 -1.59541 nbonds = 1 nlinks = 10 model = 0
+			 uid = 201 atom = 185 btom = 185 ctom = 185 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.188224 -0.302228 -1.04183 nbonds = 1 nlinks = 10 model = 0
+			 uid = 202 atom = 186 btom = 186 ctom = 186 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.124118 0.299193 -1.0761 nbonds = 1 nlinks = 10 model = 0
+			 uid = 203 atom = 187 btom = 187 ctom = 187 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.395697 0.298403 -1.61752 nbonds = 1 nlinks = 10 model = 0
+			 uid = 204 atom = 188 btom = 188 ctom = 188 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.850434 -0.0309652 -1.39031 nbonds = 1 nlinks = 10 model = 0
+			 uid = 205 atom = 189 btom = 189 ctom = 189 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.904276 0.358877 -0.929887 nbonds = 1 nlinks = 10 model = 0
+			 uid = 206 atom = 190 btom = 190 ctom = 190 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.917855 0.821035 -1.32115 nbonds = 1 nlinks = 10 model = 0
+			 uid = 207 atom = 191 btom = 191 ctom = 191 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.3467 0.538245 -1.64215 nbonds = 1 nlinks = 10 model = 0
+			 uid = 208 atom = 192 btom = 192 ctom = 192 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.6677 0.448561 -1.13641 nbonds = 1 nlinks = 10 model = 0
+			 uid = 209 atom = 193 btom = 193 ctom = 193 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.61196 1.03514 -0.995729 nbonds = 1 nlinks = 10 model = 0
+			 uid = 210 atom = 194 btom = 194 ctom = 194 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.79828 1.18735 -1.55168 nbonds = 1 nlinks = 10 model = 0
+			 uid = 211 atom = 195 btom = 195 ctom = 195 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.27512 0.818351 -1.49404 nbonds = 1 nlinks = 10 model = 0
+			 uid = 212 atom = 196 btom = 196 ctom = 196 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.40633 1.0694 -0.958781 nbonds = 1 nlinks = 10 model = 0
+			 uid = 213 atom = 197 btom = 197 ctom = 197 level = 3 kids = 0 type = 1 sort = 1 xyz = -2.37033 1.62061 -1.20715 nbonds = 1 nlinks = 10 model = 0
+		 uid = 12 atom = 0 btom = 0 ctom = 0 level = 2 kids = 25 type = 2 sort = 0 xyz = -3.48857 2.43293 -0.315272 nbonds = 1 nlinks = 0 model = 0
+			 uid = 214 atom = 198 btom = 198 ctom = 198 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.73949 1.44472 -1.65399 nbonds = 1 nlinks = 10 model = 0
+			 uid = 215 atom = 199 btom = 199 ctom = 199 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.13138 1.22793 -1.24631 nbonds = 1 nlinks = 10 model = 0
+			 uid = 216 atom = 200 btom = 200 ctom = 200 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.11007 1.75277 -0.944729 nbonds = 1 nlinks = 10 model = 0
+			 uid = 217 atom = 201 btom = 201 ctom = 201 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.21317 2.05419 -1.45994 nbonds = 1 nlinks = 10 model = 0
+			 uid = 218 atom = 202 btom = 202 ctom = 202 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.68528 1.69356 -1.57773 nbonds = 1 nlinks = 10 model = 0
+			 uid = 219 atom = 203 btom = 203 ctom = 203 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.90128 1.79256 -1.02052 nbonds = 1 nlinks = 10 model = 0
+			 uid = 220 atom = 204 btom = 204 ctom = 204 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.8397 2.38956 -1.10136 nbonds = 1 nlinks = 10 model = 0
+			 uid = 221 atom = 205 btom = 205 ctom = 205 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.24943 2.61661 -0.898466 nbonds = 1 nlinks = 10 model = 0
+			 uid = 222 atom = 206 btom = 206 ctom = 206 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.65933 2.84351 -0.695571 nbonds = 1 nlinks = 10 model = 0
+			 uid = 223 atom = 207 btom = 207 ctom = 207 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.81043 2.9703 -0.48715 nbonds = 1 nlinks = 10 model = 0
+			 uid = 224 atom = 208 btom = 208 ctom = 208 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.91891 3.08067 -0.277939 nbonds = 1 nlinks = 10 model = 0
+			 uid = 225 atom = 209 btom = 209 ctom = 209 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.88717 3.13656 -0.0655709 nbonds = 1 nlinks = 10 model = 0
+			 uid = 226 atom = 210 btom = 210 ctom = 210 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.71507 3.13798 0.149798 nbonds = 1 nlinks = 10 model = 0
+			 uid = 227 atom = 211 btom = 211 ctom = 211 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.50033 3.12314 0.365955 nbonds = 1 nlinks = 10 model = 0
+			 uid = 228 atom = 212 btom = 212 ctom = 212 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.0268 3.00788 0.587798 nbonds = 1 nlinks = 10 model = 0
+			 uid = 229 atom = 213 btom = 213 ctom = 213 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.55343 2.89277 0.809482 nbonds = 1 nlinks = 10 model = 0
+			 uid = 230 atom = 214 btom = 214 ctom = 214 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.56212 2.44388 0.402903 nbonds = 1 nlinks = 10 model = 0
+			 uid = 231 atom = 215 btom = 215 ctom = 215 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.25296 2.78935 0.0130607 nbonds = 1 nlinks = 10 model = 0
+			 uid = 232 atom = 216 btom = 216 ctom = 216 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.84638 2.91425 0.444429 nbonds = 1 nlinks = 10 model = 0
+			 uid = 233 atom = 217 btom = 217 ctom = 217 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.79238 2.3234 0.566324 nbonds = 1 nlinks = 10 model = 0
+			 uid = 234 atom = 218 btom = 218 ctom = 218 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.71012 2.2083 -0.0226235 nbonds = 1 nlinks = 10 model = 0
+			 uid = 235 atom = 219 btom = 219 ctom = 219 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.28554 2.63935 -0.048834 nbonds = 1 nlinks = 10 model = 0
+			 uid = 236 atom = 220 btom = 220 ctom = 220 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.01112 2.39998 0.435271 nbonds = 1 nlinks = 10 model = 0
+			 uid = 237 atom = 221 btom = 221 ctom = 221 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.02564 1.85335 0.174587 nbonds = 1 nlinks = 10 model = 0
+			 uid = 238 atom = 222 btom = 222 ctom = 222 level = 3 kids = 0 type = 1 sort = 0 xyz = -1.78675 2.08672 -0.330676 nbonds = 1 nlinks = 10 model = 0
+		 uid = 13 atom = 0 btom = 0 ctom = 0 level = 2 kids = 25 type = 2 sort = 1 xyz = 1.10006 0.989729 -0.606038 nbonds = 1 nlinks = 0 model = 0
+			 uid = 239 atom = 223 btom = 223 ctom = 223 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.34938 2.3493 -0.00414982 nbonds = 1 nlinks = 10 model = 0
+			 uid = 240 atom = 224 btom = 224 ctom = 224 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.23601 1.82146 0.270587 nbonds = 1 nlinks = 10 model = 0
+			 uid = 241 atom = 225 btom = 225 ctom = 225 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.20586 1.54625 -0.26815 nbonds = 1 nlinks = 10 model = 0
+			 uid = 242 atom = 226 btom = 226 ctom = 226 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.821855 1.9713 -0.465045 nbonds = 1 nlinks = 10 model = 0
+			 uid = 243 atom = 227 btom = 227 ctom = 227 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.480961 1.89409 0.0296397 nbonds = 1 nlinks = 10 model = 0
+			 uid = 244 atom = 228 btom = 228 ctom = 228 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.478434 1.29582 -0.0639919 nbonds = 1 nlinks = 10 model = 0
+			 uid = 245 atom = 229 btom = 229 ctom = 229 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.312171 1.38535 -0.639518 nbonds = 1 nlinks = 10 model = 0
+			 uid = 246 atom = 230 btom = 230 ctom = 230 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.134039 1.75103 -0.454939 nbonds = 1 nlinks = 10 model = 0
+			 uid = 247 atom = 231 btom = 231 ctom = 231 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.316724 1.33025 -0.059413 nbonds = 1 nlinks = 10 model = 0
+			 uid = 248 atom = 232 btom = 232 ctom = 232 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.313408 0.913719 -0.499308 nbonds = 1 nlinks = 10 model = 0
+			 uid = 249 atom = 233 btom = 233 ctom = 233 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.639934 1.28209 -0.852202 nbonds = 1 nlinks = 10 model = 0
+			 uid = 250 atom = 234 btom = 234 ctom = 234 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.03499 1.3664 -0.400781 nbonds = 1 nlinks = 10 model = 0
+			 uid = 251 atom = 235 btom = 235 ctom = 235 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.07572 0.767035 -0.322939 nbonds = 1 nlinks = 10 model = 0
+			 uid = 252 atom = 236 btom = 236 ctom = 236 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.17425 0.695666 -0.916308 nbonds = 1 nlinks = 10 model = 0
+			 uid = 253 atom = 237 btom = 237 ctom = 237 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.60641 1.11961 -0.896729 nbonds = 1 nlinks = 10 model = 0
+			 uid = 254 atom = 238 btom = 238 ctom = 238 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.86188 0.839035 -0.424623 nbonds = 1 nlinks = 10 model = 0
+			 uid = 255 atom = 239 btom = 239 ctom = 239 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.84657 0.314193 -0.726676 nbonds = 1 nlinks = 10 model = 0
+			 uid = 256 atom = 240 btom = 240 ctom = 240 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.10472 0.581035 -1.20541 nbonds = 1 nlinks = 10 model = 0
+			 uid = 257 atom = 241 btom = 241 ctom = 241 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.53593 0.809824 -0.846834 nbonds = 1 nlinks = 10 model = 0
+			 uid = 258 atom = 242 btom = 242 ctom = 242 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.63225 0.260666 -0.61015 nbonds = 1 nlinks = 10 model = 0
+			 uid = 259 atom = 243 btom = 243 ctom = 243 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.67472 0.0266663 -1.1672 nbonds = 1 nlinks = 10 model = 0
+			 uid = 260 atom = 244 btom = 244 ctom = 244 level = 3 kids = 0 type = 1 sort = 1 xyz = 3.07136 0.458508 -1.31957 nbonds = 1 nlinks = 10 model = 0
+			 uid = 261 atom = 245 btom = 245 ctom = 245 level = 3 kids = 0 type = 1 sort = 1 xyz = 3.39551 0.337561 -0.82236 nbonds = 1 nlinks = 10 model = 0
+			 uid = 262 atom = 246 btom = 246 ctom = 246 level = 3 kids = 0 type = 1 sort = 1 xyz = 3.39125 -0.25186 -0.961624 nbonds = 1 nlinks = 10 model = 0
+			 uid = 263 atom = 247 btom = 247 ctom = 247 level = 3 kids = 0 type = 1 sort = 1 xyz = 3.57662 -0.121755 -1.52326 nbonds = 1 nlinks = 10 model = 0
+		 uid = 14 atom = 0 btom = 0 ctom = 0 level = 2 kids = 8 type = 2 sort = 0 xyz = 4.22718 0.24389 -0.64167 nbonds = 1 nlinks = 0 model = 0
+			 uid = 264 atom = 248 btom = 248 ctom = 248 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.02283 0.220561 -1.2981 nbonds = 1 nlinks = 10 model = 0
+			 uid = 265 atom = 249 btom = 249 ctom = 249 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.18641 -0.232439 -0.930834 nbonds = 1 nlinks = 10 model = 0
+			 uid = 266 atom = 250 btom = 250 ctom = 250 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.19004 -0.614071 -1.4012 nbonds = 1 nlinks = 10 model = 0
+			 uid = 267 atom = 251 btom = 251 ctom = 251 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.53314 -0.225965 -1.71494 nbonds = 1 nlinks = 10 model = 0
+			 uid = 268 atom = 252 btom = 252 ctom = 252 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.85888 0.30393 -0.683097 nbonds = 1 nlinks = 10 model = 0
+			 uid = 269 atom = 253 btom = 253 ctom = 253 level = 3 kids = 0 type = 1 sort = 0 xyz = 4.30136 1.17582 0.329955 nbonds = 1 nlinks = 10 model = 0
+			 uid = 270 atom = 254 btom = 254 ctom = 254 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.94593 0.793403 0.0228502 nbonds = 1 nlinks = 10 model = 0
+			 uid = 271 atom = 255 btom = 255 ctom = 255 level = 3 kids = 0 type = 1 sort = 0 xyz = 3.77888 0.529877 0.542008 nbonds = 1 nlinks = 10 model = 0
+		 uid = 15 atom = 0 btom = 0 ctom = 0 level = 2 kids = 24 type = 2 sort = 1 xyz = 0.920566 1.24255 1.02263 nbonds = 1 nlinks = 0 model = 0
+			 uid = 272 atom = 256 btom = 256 ctom = 256 level = 3 kids = 0 type = 1 sort = 1 xyz = 3.65162 1.07303 0.777903 nbonds = 1 nlinks = 10 model = 0
+			 uid = 273 atom = 257 btom = 257 ctom = 257 level = 3 kids = 0 type = 1 sort = 1 xyz = 3.32178 1.20961 0.288587 nbonds = 1 nlinks = 10 model = 0
+			 uid = 274 atom = 258 btom = 258 ctom = 258 level = 3 kids = 0 type = 1 sort = 1 xyz = 3.02446 0.684614 0.341008 nbonds = 1 nlinks = 10 model = 0
+			 uid = 275 atom = 259 btom = 259 ctom = 259 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.91788 0.801929 0.925692 nbonds = 1 nlinks = 10 model = 0
+			 uid = 276 atom = 260 btom = 260 ctom = 260 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.71104 1.35203 0.77885 nbonds = 1 nlinks = 10 model = 0
+			 uid = 277 atom = 261 btom = 261 ctom = 261 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.34899 1.1054 0.360429 nbonds = 1 nlinks = 10 model = 0
+			 uid = 278 atom = 262 btom = 262 ctom = 262 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.14278 0.710035 0.770482 nbonds = 1 nlinks = 10 model = 0
+			 uid = 279 atom = 263 btom = 263 ctom = 263 level = 3 kids = 0 type = 1 sort = 1 xyz = 2.03604 1.16446 1.15653 nbonds = 1 nlinks = 10 model = 0
+			 uid = 280 atom = 264 btom = 264 ctom = 264 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.73809 1.46446 0.722955 nbonds = 1 nlinks = 10 model = 0
+			 uid = 281 atom = 265 btom = 265 ctom = 265 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.40872 0.96993 0.605324 nbonds = 1 nlinks = 10 model = 0
+			 uid = 282 atom = 266 btom = 266 ctom = 266 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.28178 0.91293 1.1949 nbonds = 1 nlinks = 10 model = 0
+			 uid = 283 atom = 267 btom = 267 ctom = 267 level = 3 kids = 0 type = 1 sort = 1 xyz = 1.11425 1.49461 1.21622 nbonds = 1 nlinks = 10 model = 0
+			 uid = 284 atom = 268 btom = 268 ctom = 268 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.758513 1.41109 0.733061 nbonds = 1 nlinks = 10 model = 0
+			 uid = 285 atom = 269 btom = 269 ctom = 269 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.510776 0.926035 0.99785 nbonds = 1 nlinks = 10 model = 0
+			 uid = 286 atom = 270 btom = 270 ctom = 270 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.412408 1.24925 1.50059 nbonds = 1 nlinks = 10 model = 0
+			 uid = 287 atom = 271 btom = 271 ctom = 271 level = 3 kids = 0 type = 1 sort = 1 xyz = 0.153145 1.68598 1.17043 nbonds = 1 nlinks = 10 model = 0
+			 uid = 288 atom = 272 btom = 272 ctom = 272 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.198487 1.27372 0.899482 nbonds = 1 nlinks = 10 model = 0
+			 uid = 289 atom = 273 btom = 273 ctom = 273 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.356066 1.05093 1.44011 nbonds = 1 nlinks = 10 model = 0
+			 uid = 290 atom = 274 btom = 274 ctom = 274 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.490592 1.60925 1.63243 nbonds = 1 nlinks = 10 model = 0
+			 uid = 291 atom = 275 btom = 275 ctom = 275 level = 3 kids = 0 type = 1 sort = 1 xyz = -0.827224 1.69988 1.13711 nbonds = 1 nlinks = 10 model = 0
+			 uid = 292 atom = 276 btom = 276 ctom = 276 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.11491 1.17598 1.23532 nbonds = 1 nlinks = 10 model = 0
+			 uid = 293 atom = 277 btom = 277 ctom = 277 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.21801 1.33893 1.80959 nbonds = 1 nlinks = 10 model = 0
+			 uid = 294 atom = 278 btom = 278 ctom = 278 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.43591 1.87151 1.62059 nbonds = 1 nlinks = 10 model = 0
+			 uid = 295 atom = 279 btom = 279 ctom = 279 level = 3 kids = 0 type = 1 sort = 1 xyz = -1.79749 1.58556 1.22775 nbonds = 1 nlinks = 10 model = 0
+		 uid = 16 atom = 0 btom = 0 ctom = 0 level = 2 kids = 17 type = 2 sort = 0 xyz = -3.66363 2.20583 2.07621 nbonds = 1 nlinks = 0 model = 0
+			 uid = 296 atom = 280 btom = 280 ctom = 280 level = 3 kids = 0 type = 1 sort = 0 xyz = -1.99296 1.22161 1.67064 nbonds = 1 nlinks = 10 model = 0
+			 uid = 297 atom = 281 btom = 281 ctom = 281 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.10396 1.70414 2.01959 nbonds = 1 nlinks = 10 model = 0
+			 uid = 298 atom = 282 btom = 282 ctom = 282 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.41107 1.96293 1.56611 nbonds = 1 nlinks = 10 model = 0
+			 uid = 299 atom = 283 btom = 283 ctom = 283 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.73286 1.45498 1.49285 nbonds = 1 nlinks = 10 model = 0
+			 uid = 300 atom = 284 btom = 284 ctom = 284 level = 3 kids = 0 type = 1 sort = 0 xyz = -2.85317 1.44409 2.08638 nbonds = 1 nlinks = 10 model = 0
+			 uid = 301 atom = 285 btom = 285 ctom = 285 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.0308 2.02277 2.06206 nbonds = 1 nlinks = 10 model = 0
+			 uid = 302 atom = 286 btom = 286 ctom = 286 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.38938 1.89409 1.59122 nbonds = 1 nlinks = 10 model = 0
+			 uid = 303 atom = 287 btom = 287 ctom = 287 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.62622 1.42814 1.89738 nbonds = 1 nlinks = 10 model = 0
+			 uid = 304 atom = 288 btom = 288 ctom = 288 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.72554 1.78972 2.37296 nbonds = 1 nlinks = 10 model = 0
+			 uid = 305 atom = 289 btom = 289 ctom = 289 level = 3 kids = 0 type = 1 sort = 0 xyz = -3.99554 2.19346 2.01122 nbonds = 1 nlinks = 10 model = 0
+			 uid = 306 atom = 290 btom = 290 ctom = 290 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.38222 2.46125 2.0938 nbonds = 1 nlinks = 10 model = 0
+			 uid = 307 atom = 291 btom = 291 ctom = 291 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.76891 2.72904 2.17622 nbonds = 1 nlinks = 10 model = 0
+			 uid = 308 atom = 292 btom = 292 ctom = 292 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.89696 2.89672 2.26432 nbonds = 1 nlinks = 10 model = 0
+			 uid = 309 atom = 293 btom = 293 ctom = 293 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.98254 3.04782 2.35322 nbonds = 1 nlinks = 10 model = 0
+			 uid = 310 atom = 294 btom = 294 ctom = 294 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.78722 3.0903 2.44811 nbonds = 1 nlinks = 10 model = 0
+			 uid = 311 atom = 295 btom = 295 ctom = 295 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.54943 3.11619 2.54396 nbonds = 1 nlinks = 10 model = 0
+			 uid = 312 atom = 296 btom = 296 ctom = 296 level = 3 kids = 0 type = 1 sort = 0 xyz = -4.05286 3.04182 2.64548 nbonds = 1 nlinks = 10 model = 0
+ Reset  Cell::world->xyz = 0 0 0
+Pre-sorting XYZ lists
+Rough sort done
+Sorting X
+Sorting Y
+Sorting Z
+XYZ lists sorted
+ No viewing 
+Starting sorter 
+Starting bumper 
+Starting mover
+Starting linker 
+Starting driver
+Starting fixers 
+Starting looker 
+ links = 6
+Cell 37 linked to cell 73   PDBids = 21 to 57   dist = 2.006842
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.769864
+Cell 116 linked to cell 146   PDBids = 100 to 130   dist = 1.382500
+Cell 64 linked to cell 113   PDBids = 48 to 97   dist = 1.402855
+Cell 116 linked to cell 142   PDBids = 100 to 126   dist = 1.957161
+Cell 48 linked to cell 63   PDBids = 32 to 47   dist = 2.041569
+ links = 7
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.736542
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.245483
+ links = 8
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.819455
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.267808
+Cell 68 linked to cell 109   PDBids = 52 to 93   dist = 1.757594
+ links = 9
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.858792
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.264121
+Cell 71 linked to cell 106   PDBids = 55 to 90   dist = 1.081142
+ links = 10
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.838952
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.284359
+Cell 105 linked to cell 151   PDBids = 89 to 135   dist = 2.515851
+ links = 11
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.855366
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.280248
+Cell 105 linked to cell 151   PDBids = 89 to 135   dist = 2.514334
+Cell 45 linked to cell 63   PDBids = 29 to 47   dist = 1.338541
+ links = 12
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.862018
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.305640
+Cell 105 linked to cell 151   PDBids = 89 to 135   dist = 2.493286
+Cell 51 linked to cell 302   PDBids = 35 to 286   dist = 1.807468
+ links = 13
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.879991
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.289500
+Cell 105 linked to cell 151   PDBids = 89 to 135   dist = 2.487094
+Cell 49 linked to cell 63   PDBids = 33 to 47   dist = 1.774380
+ links = 14
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.922028
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.304268
+Cell 105 linked to cell 151   PDBids = 89 to 135   dist = 2.462934
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.676147
+ links = 15
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.911518
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.353421
+Cell 105 linked to cell 151   PDBids = 89 to 135   dist = 2.440011
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.659243
+Cell 37 linked to cell 286   PDBids = 21 to 270   dist = 1.499242
+ links = 16
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.918710
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.368611
+Cell 105 linked to cell 151   PDBids = 89 to 135   dist = 2.471043
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.690650
+Cell 122 linked to cell 211   PDBids = 106 to 195   dist = 1.269500
+ links = 17
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.905977
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.359475
+Cell 105 linked to cell 151   PDBids = 89 to 135   dist = 2.477352
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.668146
+Cell 60 linked to cell 143   PDBids = 44 to 127   dist = 2.765176
+ links = 18
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.909508
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.346388
+Cell 105 linked to cell 151   PDBids = 89 to 135   dist = 2.474184
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.661189
+Cell 60 linked to cell 143   PDBids = 44 to 127   dist = 2.731377
+Cell 251 linked to cell 281   PDBids = 235 to 265   dist = 1.022377
+ links = 19
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.946724
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.319055
+Cell 105 linked to cell 151   PDBids = 89 to 135   dist = 2.479464
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.716629
+Cell 60 linked to cell 143   PDBids = 44 to 127   dist = 2.748888
+Cell 109 linked to cell 150   PDBids = 93 to 134   dist = 1.853755
+ links = 20
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.701646
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.329122
+Cell 105 linked to cell 151   PDBids = 89 to 135   dist = 2.277591
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.647173
+Cell 60 linked to cell 143   PDBids = 44 to 127   dist = 2.716228
+Cell 68 linked to cell 110   PDBids = 52 to 94   dist = 0.857921
+ links = 21
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.731056
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.303360
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.617717
+Cell 60 linked to cell 143   PDBids = 44 to 127   dist = 2.711841
+Cell 34 linked to cell 74   PDBids = 18 to 58   dist = 1.251227
+ links = 22
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.738761
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.282254
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.605924
+Cell 60 linked to cell 143   PDBids = 44 to 127   dist = 2.679266
+Cell 126 linked to cell 215   PDBids = 110 to 199   dist = 1.702417
+ links = 23
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.736070
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.287774
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.617992
+Cell 60 linked to cell 143   PDBids = 44 to 127   dist = 2.708001
+Cell 101 linked to cell 158   PDBids = 85 to 142   dist = 1.819389
+ links = 24
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.725325
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.277513
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.613559
+Cell 60 linked to cell 143   PDBids = 44 to 127   dist = 2.680293
+Cell 122 linked to cell 208   PDBids = 106 to 192   dist = 1.716942
+ links = 25
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.759229
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.276685
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.695273
+Cell 60 linked to cell 143   PDBids = 44 to 127   dist = 2.760653
+Cell 97 linked to cell 162   PDBids = 81 to 146   dist = 2.124644
+ links = 26
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.760937
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.271569
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.660523
+Cell 60 linked to cell 143   PDBids = 44 to 127   dist = 2.737484
+Cell 108 linked to cell 197   PDBids = 92 to 181   dist = 1.054460
+ links = 27
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.764332
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.281041
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.666378
+Cell 60 linked to cell 143   PDBids = 44 to 127   dist = 2.735861
+Cell 239 linked to cell 295   PDBids = 223 to 279   dist = 1.342557
+ links = 28
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.760962
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.294180
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.659928
+Cell 60 linked to cell 143   PDBids = 44 to 127   dist = 2.709801
+Cell 113 linked to cell 143   PDBids = 97 to 127   dist = 1.872638
+ links = 29
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.474916
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.279297
+Cell 64 linked to cell 143   PDBids = 48 to 127   dist = 2.189232
+Cell 60 linked to cell 143   PDBids = 44 to 127   dist = 2.488729
+Cell 115 linked to cell 204   PDBids = 99 to 188   dist = 1.128656
+ links = 30
+Cell 64 linked to cell 147   PDBids = 48 to 131   dist = 2.111228
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.258813
+Cell 60 linked to cell 143   PDBids = 44 to 127   dist = 1.856958
+Cell 42 linked to cell 70   PDBids = 26 to 54   dist = 1.190559
+ links = 31
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.234654
+Cell 112 linked to cell 146   PDBids = 96 to 130   dist = 0.875040
+ links = 32
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.303700
+Cell 114 linked to cell 205   PDBids = 98 to 189   dist = 1.007864
+ links = 33
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.320008
+Cell 44 linked to cell 293   PDBids = 28 to 277   dist = 1.535956
+ links = 34
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.294207
+Cell 115 linked to cell 208   PDBids = 99 to 192   dist = 1.197608
+ links = 35
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.296907
+Cell 111 linked to cell 201   PDBids = 95 to 185   dist = 1.193660
+ links = 36
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.279923
+Cell 36 linked to cell 286   PDBids = 20 to 270   dist = 1.615555
+ links = 37
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.347047
+Cell 113 linked to cell 147   PDBids = 97 to 131   dist = 0.938686
+ links = 38
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.326514
+Cell 101 linked to cell 151   PDBids = 85 to 135   dist = 1.848862
+ links = 39
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.276148
+Cell 40 linked to cell 286   PDBids = 24 to 270   dist = 1.942966
+ links = 40
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.264484
+Cell 246 linked to cell 291   PDBids = 230 to 275   dist = 1.926628
+ links = 41
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.256881
+Cell 38 linked to cell 70   PDBids = 22 to 54   dist = 1.087549
+ links = 42
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.224158
+Cell 61 linked to cell 139   PDBids = 45 to 123   dist = 1.656257
+ links = 43
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.202889
+Cell 47 linked to cell 299   PDBids = 31 to 283   dist = 1.802266
+ links = 44
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.183011
+Cell 108 linked to cell 150   PDBids = 92 to 134   dist = 0.701513
+ links = 45
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.192405
+Cell 79 linked to cell 95   PDBids = 63 to 79   dist = 2.556302
+ links = 46
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.209566
+Cell 79 linked to cell 95   PDBids = 63 to 79   dist = 2.526743
+Cell 69 linked to cell 288   PDBids = 53 to 272   dist = 1.504075
+ links = 47
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.219738
+Cell 79 linked to cell 95   PDBids = 63 to 79   dist = 2.534141
+Cell 216 linked to cell 236   PDBids = 200 to 220   dist = 1.809336
+ links = 48
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.230493
+Cell 79 linked to cell 95   PDBids = 63 to 79   dist = 2.524316
+Cell 76 linked to cell 103   PDBids = 60 to 87   dist = 1.933834
+ links = 49
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.283410
+Cell 79 linked to cell 95   PDBids = 63 to 79   dist = 2.379022
+Cell 112 linked to cell 149   PDBids = 96 to 133   dist = 0.791674
+ links = 50
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.327620
+Cell 79 linked to cell 95   PDBids = 63 to 79   dist = 2.320364
+Cell 69 linked to cell 110   PDBids = 53 to 94   dist = 1.476429
+ links = 51
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.487600
+Cell 61 linked to cell 117   PDBids = 45 to 101   dist = 0.977851
+ links = 52
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.505909
+Cell 242 linked to cell 295   PDBids = 226 to 279   dist = 1.652939
+ links = 53
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.568960
+Cell 75 linked to cell 106   PDBids = 59 to 90   dist = 0.769359
+ links = 54
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.603599
+Cell 51 linked to cell 305   PDBids = 35 to 289   dist = 1.926702
+ links = 55
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.606042
+Cell 60 linked to cell 140   PDBids = 44 to 124   dist = 1.719041
+ links = 56
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.616326
+Cell 38 linked to cell 73   PDBids = 22 to 57   dist = 1.190697
+ links = 57
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.660102
+Cell 104 linked to cell 154   PDBids = 88 to 138   dist = 1.631054
+ links = 58
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.644724
+Cell 119 linked to cell 208   PDBids = 103 to 192   dist = 1.132471
+ links = 59
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.672736
+Cell 40 linked to cell 290   PDBids = 24 to 274   dist = 1.202349
+ links = 60
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.687180
+Cell 115 linked to cell 201   PDBids = 99 to 185   dist = 2.058447
+ links = 61
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.607347
+Cell 111 linked to cell 247   PDBids = 95 to 231   dist = 2.283562
+ links = 62
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.601330
+Cell 105 linked to cell 154   PDBids = 89 to 138   dist = 1.670220
+ links = 63
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.602777
+Cell 112 linked to cell 201   PDBids = 96 to 185   dist = 1.484102
+ links = 64
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.632072
+Cell 44 linked to cell 299   PDBids = 28 to 283   dist = 1.183411
+ links = 65
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.614705
+Cell 45 linked to cell 66   PDBids = 29 to 50   dist = 1.082482
+ links = 66
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.603669
+Cell 109 linked to cell 147   PDBids = 93 to 131   dist = 0.970842
+ links = 67
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.622684
+Cell 112 linked to cell 150   PDBids = 96 to 134   dist = 1.388031
+ links = 68
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.653113
+Cell 157 linked to cell 186   PDBids = 141 to 170   dist = 2.393926
+ links = 69
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.645252
+Cell 157 linked to cell 186   PDBids = 141 to 170   dist = 2.352622
+Cell 115 linked to cell 205   PDBids = 99 to 189   dist = 1.192636
+ links = 70
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.637047
+Cell 157 linked to cell 186   PDBids = 141 to 170   dist = 2.259496
+Cell 45 linked to cell 67   PDBids = 29 to 51   dist = 1.363751
+ links = 71
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.660618
+Cell 68 linked to cell 106   PDBids = 52 to 90   dist = 1.632352
+ links = 72
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.702565
+Cell 113 linked to cell 146   PDBids = 97 to 130   dist = 1.500532
+ links = 73
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.685005
+Cell 242 linked to cell 291   PDBids = 226 to 275   dist = 0.958612
+ links = 74
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.666996
+Cell 202 linked to cell 248   PDBids = 186 to 232   dist = 0.808184
+ links = 75
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.643892
+Cell 45 linked to cell 70   PDBids = 29 to 54   dist = 1.642841
+ links = 76
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.645639
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 2.971373
+ links = 77
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.656893
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.009966
+Cell 213 linked to cell 237   PDBids = 197 to 221   dist = 1.522546
+ links = 78
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.684949
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.028073
+Cell 118 linked to cell 209   PDBids = 102 to 193   dist = 1.167950
+ links = 79
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.716948
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 2.993599
+Cell 198 linked to cell 252   PDBids = 182 to 236   dist = 1.197192
+ links = 80
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.723709
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.013709
+Cell 77 linked to cell 282   PDBids = 61 to 266   dist = 0.911089
+ links = 81
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.703609
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.058650
+Cell 112 linked to cell 197   PDBids = 96 to 181   dist = 1.603718
+ links = 82
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.676932
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.072799
+Cell 72 linked to cell 285   PDBids = 56 to 269   dist = 1.432656
+ links = 83
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.680105
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.106243
+Cell 69 linked to cell 284   PDBids = 53 to 268   dist = 1.783264
+ links = 84
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.690754
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.048085
+Cell 118 linked to cell 212   PDBids = 102 to 196   dist = 1.067463
+ links = 85
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.693331
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.071547
+Cell 40 linked to cell 66   PDBids = 24 to 50   dist = 1.223850
+ links = 86
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.678206
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.121692
+Cell 122 linked to cell 207   PDBids = 106 to 191   dist = 2.257701
+ links = 87
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.645068
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.141311
+Cell 122 linked to cell 207   PDBids = 106 to 191   dist = 2.288793
+Cell 117 linked to cell 240   PDBids = 101 to 224   dist = 0.953149
+ links = 88
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.643582
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.141278
+Cell 122 linked to cell 207   PDBids = 106 to 191   dist = 2.301897
+Cell 57 linked to cell 139   PDBids = 41 to 123   dist = 1.645723
+ links = 89
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.645335
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.138209
+Cell 122 linked to cell 207   PDBids = 106 to 191   dist = 2.311753
+Cell 212 linked to cell 240   PDBids = 196 to 224   dist = 0.888140
+ links = 90
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.660035
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.000657
+Cell 122 linked to cell 207   PDBids = 106 to 191   dist = 2.200938
+Cell 64 linked to cell 140   PDBids = 48 to 124   dist = 1.519512
+ links = 91
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.699555
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.041744
+Cell 37 linked to cell 77   PDBids = 21 to 61   dist = 1.448388
+ links = 92
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.712199
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.059181
+Cell 238 linked to cell 295   PDBids = 222 to 279   dist = 1.510442
+ links = 93
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.694312
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.092711
+Cell 64 linked to cell 109   PDBids = 48 to 93   dist = 1.599022
+ links = 94
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.694709
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.131735
+Cell 33 linked to cell 283   PDBids = 17 to 267   dist = 1.919954
+ links = 95
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.688071
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.130180
+Cell 205 linked to cell 244   PDBids = 189 to 228   dist = 1.077672
+ links = 96
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.686625
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.176580
+Cell 58 linked to cell 117   PDBids = 42 to 101   dist = 1.645857
+ links = 97
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.667511
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.163789
+Cell 119 linked to cell 204   PDBids = 103 to 188   dist = 1.719263
+ links = 98
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.661309
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.204407
+Cell 108 linked to cell 153   PDBids = 92 to 137   dist = 1.231862
+ links = 99
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.679739
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.179513
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 2.959812
+ links = 100
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.679817
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.174369
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.003129
+Cell 44 linked to cell 66   PDBids = 28 to 50   dist = 0.939285
+ links = 101
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.654169
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.185636
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.021690
+Cell 33 linked to cell 286   PDBids = 17 to 270   dist = 1.511609
+ links = 102
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.654845
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.141511
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.076022
+Cell 109 linked to cell 146   PDBids = 93 to 130   dist = 1.599716
+ links = 103
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.648204
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.189044
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.102845
+Cell 61 linked to cell 116   PDBids = 45 to 100   dist = 1.362522
+ links = 104
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.642776
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.164085
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.110456
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.675565
+ links = 105
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.613087
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.098554
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.090450
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.697898
+Cell 118 linked to cell 208   PDBids = 102 to 192   dist = 0.712381
+ links = 106
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.593561
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.161248
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.088931
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.760230
+Cell 160 linked to cell 186   PDBids = 144 to 170   dist = 1.311385
+ links = 107
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.561084
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.207609
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.120029
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.779557
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.354911
+ links = 108
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.553958
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.245137
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.135418
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.750564
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.357479
+Cell 194 linked to cell 255   PDBids = 178 to 239   dist = 1.141199
+ links = 109
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.567720
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.253117
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.140604
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.754594
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.328477
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.234010
+ links = 110
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.569633
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.305672
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.138336
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.752078
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.358234
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.200984
+Cell 61 linked to cell 120   PDBids = 45 to 104   dist = 1.401876
+ links = 111
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.586855
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.240623
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.164079
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.767399
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.381310
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.186633
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.577571
+ links = 112
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.581015
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.233395
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.151370
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.771833
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.405468
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.148883
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.605146
+Cell 44 linked to cell 288   PDBids = 28 to 272   dist = 2.208474
+ links = 113
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.579769
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.243246
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.128607
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.761046
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.413226
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.127218
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.570601
+Cell 44 linked to cell 288   PDBids = 28 to 272   dist = 2.192158
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.783337
+ links = 114
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.561899
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.232188
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.120912
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.748107
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.397144
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.103031
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.596370
+Cell 44 linked to cell 288   PDBids = 28 to 272   dist = 2.202711
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.738206
+Cell 72 linked to cell 106   PDBids = 56 to 90   dist = 0.679855
+ links = 115
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.599273
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.275938
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.078630
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.728703
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.369756
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.070672
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.598717
+Cell 44 linked to cell 288   PDBids = 28 to 272   dist = 2.219531
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.744680
+Cell 111 linked to cell 205   PDBids = 95 to 189   dist = 1.620505
+ links = 116
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.621505
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.308765
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.082733
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.709472
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.360159
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.006553
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.597812
+Cell 44 linked to cell 288   PDBids = 28 to 272   dist = 2.268485
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.720469
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.481925
+ links = 117
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.640716
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.330446
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.112559
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.706019
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.356536
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.004095
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.612146
+Cell 44 linked to cell 288   PDBids = 28 to 272   dist = 2.307463
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.729316
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.497226
+Cell 198 linked to cell 255   PDBids = 182 to 239   dist = 1.201252
+ links = 118
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.622510
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.345881
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.137704
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.724776
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.377221
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.961502
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.648441
+Cell 44 linked to cell 288   PDBids = 28 to 272   dist = 2.293481
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.737522
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.516808
+Cell 65 linked to cell 113   PDBids = 49 to 97   dist = 1.024773
+ links = 119
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.626960
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.349435
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.103805
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.730167
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.364034
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.974553
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.630231
+Cell 44 linked to cell 288   PDBids = 28 to 272   dist = 2.302114
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.715998
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.513766
+Cell 61 linked to cell 143   PDBids = 45 to 127   dist = 0.918958
+ links = 120
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.654003
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.381980
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.105930
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.724682
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.360466
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.988221
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.633288
+Cell 44 linked to cell 288   PDBids = 28 to 272   dist = 2.246238
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.738010
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.521738
+Cell 36 linked to cell 290   PDBids = 20 to 274   dist = 1.729295
+ links = 121
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.639299
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.364256
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.083413
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.728098
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.355733
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.022393
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.605404
+Cell 44 linked to cell 288   PDBids = 28 to 272   dist = 2.329739
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.710104
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.521761
+Cell 44 linked to cell 289   PDBids = 28 to 273   dist = 1.726776
+ links = 122
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.599787
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.368950
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.053000
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.758476
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.381879
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.023667
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.614133
+Cell 44 linked to cell 288   PDBids = 28 to 272   dist = 2.107359
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.716724
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.493471
+Cell 165 linked to cell 186   PDBids = 149 to 170   dist = 1.484755
+ links = 123
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.588216
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.391970
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.106854
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.708722
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.318847
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.076496
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.631604
+Cell 44 linked to cell 288   PDBids = 28 to 272   dist = 2.032805
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.703847
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.481271
+Cell 110 linked to cell 247   PDBids = 94 to 231   dist = 1.111571
+ links = 124
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.554707
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.422989
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.101240
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.672698
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.307581
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.048712
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.625901
+Cell 44 linked to cell 288   PDBids = 28 to 272   dist = 1.940815
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.675244
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.483659
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.096207
+ links = 125
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.546241
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.435791
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.095486
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.628351
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.287688
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.958626
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.610979
+Cell 44 linked to cell 288   PDBids = 28 to 272   dist = 2.047124
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.688758
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.485416
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.097452
+Cell 75 linked to cell 102   PDBids = 59 to 86   dist = 1.089968
+ links = 126
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.569423
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.439726
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.070210
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.662311
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.289751
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.917859
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.622515
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.668634
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.412290
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.116985
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.636222
+ links = 127
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.540387
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.438751
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.102368
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.657460
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.306592
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.950455
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.621532
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.693212
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.420887
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.071418
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.634417
+Cell 38 linked to cell 74   PDBids = 22 to 58   dist = 1.258848
+ links = 128
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.543520
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.425718
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.076743
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.648543
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.297824
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.968742
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.600410
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.651985
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.487570
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.982731
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.651392
+Cell 108 linked to cell 154   PDBids = 92 to 138   dist = 1.567351
+ links = 129
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.546574
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.281174
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.079905
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.639225
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.278055
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.952368
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.593561
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.671769
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.467545
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.982825
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.646296
+Cell 101 linked to cell 155   PDBids = 85 to 139   dist = 1.163435
+ links = 130
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.563166
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.261163
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.075936
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.655765
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.319917
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.944747
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.596987
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.681666
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.435611
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.092315
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.623826
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.702804
+ links = 131
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.595423
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.183967
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.089554
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.668999
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.319423
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.933455
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.594663
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.649508
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.420911
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.078291
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.609763
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.574176
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.588260
+ links = 132
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.630497
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.241210
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.090330
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.673685
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.341973
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.939076
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.665328
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.645321
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.462040
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.116956
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.625285
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.687862
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.597138
+Cell 34 linked to cell 73   PDBids = 18 to 57   dist = 1.240906
+ links = 133
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.645961
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.278656
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.050840
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.675076
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.340993
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.925752
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.637075
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.661499
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.498852
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.058701
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.614053
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.741536
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.609138
+Cell 153 linked to cell 193   PDBids = 137 to 177   dist = 1.383458
+ links = 134
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.619819
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.266795
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.067736
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.659827
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.360793
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.911911
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.675686
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.677016
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.481995
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.074081
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.642879
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.665928
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.625200
+Cell 71 linked to cell 102   PDBids = 55 to 86   dist = 1.511588
+ links = 135
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.625874
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.280631
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.089226
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.639027
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.331459
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.901176
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.695674
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.674416
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.509788
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.018887
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.646167
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.841490
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.626096
+Cell 111 linked to cell 251   PDBids = 95 to 235   dist = 1.032022
+ links = 136
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.615358
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.316841
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.087145
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.655676
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.331880
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.905932
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.752100
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.673069
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.543143
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.037259
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.638403
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.844539
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.643911
+Cell 264 linked to cell 274   PDBids = 248 to 258   dist = 1.816380
+ links = 137
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.621338
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.329561
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.065826
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.653978
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.317646
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.922976
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.761905
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.685181
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.536460
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.057997
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.577305
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.854712
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.657799
+Cell 34 linked to cell 81   PDBids = 18 to 65   dist = 1.649561
+ links = 138
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.650878
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.308718
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.077626
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.645900
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.300663
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.941437
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.731207
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.672574
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.567274
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.050750
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.564567
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.845873
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.627141
+Cell 153 linked to cell 197   PDBids = 137 to 181   dist = 1.477583
+ links = 139
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.676586
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.345731
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.067558
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.661995
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.296500
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.965707
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.798394
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.661722
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.572477
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.054476
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.562022
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.880573
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.644884
+Cell 68 linked to cell 150   PDBids = 52 to 134   dist = 2.065368
+ links = 140
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.679881
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.266769
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.076303
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.625469
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.263472
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.949690
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.785976
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.680958
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.582283
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.096251
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.549816
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.611753
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.646600
+Cell 68 linked to cell 150   PDBids = 52 to 134   dist = 1.905203
+Cell 73 linked to cell 286   PDBids = 57 to 270   dist = 1.428229
+ links = 141
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.658277
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.296327
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.083561
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.655413
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.279249
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.986976
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.790915
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.694091
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.608765
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.071335
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.581727
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.808358
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.679746
+ links = 142
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.660144
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.285495
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.091216
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.688069
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.320837
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.991886
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.813255
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.727479
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.533447
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.060258
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.592338
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.742827
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.688118
+ links = 143
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.626332
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.292693
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.101190
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.690302
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.334375
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.985898
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.791226
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.716139
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.510913
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.091081
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.567869
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.678416
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.726225
+ links = 144
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.611675
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.269432
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.120211
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.671597
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.287784
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.971189
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.778817
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.686633
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.492051
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.058244
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.562617
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.819412
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.689491
+ links = 145
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.623071
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.275054
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.075726
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.672861
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.297589
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 2.985114
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.766080
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.771710
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.523455
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 3.008990
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.564533
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.771749
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.732059
+ links = 146
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.658849
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.259830
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.081766
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.662877
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.294624
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.049258
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.783535
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.740554
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.566445
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.884169
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.551175
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.842668
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.693633
+ links = 147
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.671555
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.270834
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.065604
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.671035
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.293490
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.069381
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.750322
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.732273
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.591151
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.828294
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.546417
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.845655
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.675902
+ links = 148
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.690943
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.234776
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.041230
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.634623
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.245827
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.080338
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.692316
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.716899
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.619568
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.848720
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.525628
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.902866
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.671666
+ links = 149
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.665467
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.227473
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 2.996301
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.598559
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.229146
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.059837
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.726450
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.726395
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.615137
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.837189
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.521350
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.882012
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.676938
+ links = 150
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.719421
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.227343
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.002263
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.562943
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.232881
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.097869
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.718746
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.739933
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.553118
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.884526
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.477174
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.856807
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.733665
+ links = 151
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.735960
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.214808
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 2.990741
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.578674
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.210483
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.131352
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.709309
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.709092
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.542939
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.906463
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.468075
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.776745
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.735399
+ links = 152
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.736594
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.216835
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.008202
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.621142
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.239929
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.117874
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.692886
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.692549
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.518256
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.924617
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.501375
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.925856
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.720149
+ links = 153
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.749229
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.207073
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.024177
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.622233
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.255387
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.146144
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.674265
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.678371
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.483484
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.936327
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.502049
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.921168
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.729971
+ links = 154
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.721774
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.215497
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.040082
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.616729
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.255806
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.161555
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.722342
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.696997
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.457650
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.951171
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.493677
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.906757
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.725750
+ links = 155
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.733391
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.211520
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.041053
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.653853
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.271944
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.149303
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.698194
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.685944
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.512766
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.884300
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.464856
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.938102
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.719673
+ links = 156
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.765219
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.204675
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.065037
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.659254
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.271895
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.165845
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.725311
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.696266
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.521297
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.851781
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.462649
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.944045
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.712361
+ links = 157
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.783825
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.219305
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.096706
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.642443
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.284330
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.186277
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.736425
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.696347
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.542979
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.811416
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.426823
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.944601
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.719841
+ links = 158
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.798651
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.211143
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.084555
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.607938
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.224728
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.166373
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.733150
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.712244
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.566783
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.787530
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.454775
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.892180
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.726972
+ links = 159
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.839350
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.211291
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.090221
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.572734
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.190384
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.186833
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.681985
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.687841
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.601443
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.745263
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.441157
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.891093
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.684168
+ links = 160
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.858588
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.212646
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.101037
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.537022
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.171983
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.204026
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.732181
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.690796
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.640665
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.768864
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.410397
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.840214
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.707264
+ links = 161
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.869066
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.224914
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.119808
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.530264
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.161573
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.230671
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.702906
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.682491
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.556439
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.723788
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.421747
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.772457
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.705772
+ links = 162
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.850725
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.213924
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.128062
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.561515
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.155011
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.212271
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.728826
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.666095
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.591775
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.713990
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.407608
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.844834
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.676911
+ links = 163
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.845272
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.242413
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.117138
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.541722
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.171954
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.146065
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.703420
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.668032
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.626796
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.734933
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.432562
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.807106
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.698605
+ links = 164
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.818760
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.219729
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.143206
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.543730
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.172588
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.185060
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.688206
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.650316
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.614279
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.703341
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.429979
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.877326
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.687180
+ links = 165
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.785070
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.231007
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.141701
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.554718
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.221067
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.220434
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.693991
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.660356
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.610626
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.727766
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.406361
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.872646
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.687325
+ links = 166
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.808853
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.204694
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.141290
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.575532
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.220335
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.229202
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.654319
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.700896
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.584289
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.740683
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.401403
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.893106
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.726492
+ links = 167
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.849616
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.176568
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.156959
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.564852
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.221809
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.253110
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.679589
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.698718
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.575405
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.770855
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.424208
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.856528
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.722888
+ links = 168
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.865544
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.183057
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.170274
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.547389
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.211188
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.295326
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.636338
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.694086
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.582414
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.781195
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.441393
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.902873
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.702543
+ links = 169
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.882284
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.185458
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.178685
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.509544
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.186123
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.299902
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.646611
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.701323
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.584712
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.805545
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.424227
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.920239
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.702749
+ links = 170
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.901657
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.187391
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.122953
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.480865
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.158329
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.305804
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.657654
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.712106
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.507288
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.814786
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.425110
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.974290
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.722934
+ links = 171
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.917645
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.222098
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.099866
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.522383
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.158132
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.302557
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.648547
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.701633
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.523844
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.787072
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.411693
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.897562
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.719801
+ links = 172
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.879275
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.104605
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.059293
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.519991
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.147091
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.319013
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.629668
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.701570
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.468303
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.775199
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.391747
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.976641
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.706300
+ links = 173
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.838320
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.109255
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.091566
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.509194
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.137429
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.320497
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.639891
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.684433
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.460685
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.790305
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.403897
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 3.001570
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.708051
+ links = 174
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.842468
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.125275
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.104087
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.503246
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.118677
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.334255
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.657310
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.655906
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.467582
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.781684
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.372801
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.992080
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.697178
+ links = 175
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.870591
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.144234
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.099524
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.494678
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.098165
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.327365
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.652919
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.684850
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.495772
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.800434
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.368030
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.992208
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.684691
+ links = 176
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.864295
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.149219
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.105585
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.476281
+Cell 123 linked to cell 134   PDBids = 107 to 118   dist = 2.071431
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.315759
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.647386
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.637684
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.526489
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.832021
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.388144
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.983482
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.663743
+ links = 177
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.845937
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.183221
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.125625
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.150420
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.307386
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.667745
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.489817
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.550064
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.832271
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.342286
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.956061
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.494405
+ links = 178
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.815353
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.168816
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.109379
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.142345
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.338856
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.679075
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.488148
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.542161
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.857134
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.355767
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.805308
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.486528
+ links = 179
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.826898
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.166567
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.093034
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.130320
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.289291
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.690813
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.496002
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.583960
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.826428
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.342039
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.956879
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.481960
+ links = 180
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.817306
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.133420
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.122677
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.134246
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.295225
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.694040
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.484340
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.604936
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.834808
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.341480
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.973764
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.475554
+ links = 181
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.836544
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.147162
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.146291
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.117437
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.260480
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.719264
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.463169
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.634785
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.818482
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.350970
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.927337
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.485030
+ links = 182
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.853689
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.154237
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.141817
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.130744
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.229289
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.673964
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.480212
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.633885
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.810828
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.365945
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.955710
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.500351
+ links = 183
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.821316
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.160775
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.139821
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.145930
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.205379
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.682504
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.474402
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.629815
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.763391
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.378687
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.858129
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.517384
+ links = 184
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.840651
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.148211
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.146540
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.137916
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.214819
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.712853
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.473672
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.645823
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.756255
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.390479
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.865756
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.499205
+ links = 185
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.837250
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.173777
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.178701
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.132743
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.260400
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.706124
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.486047
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.643027
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.768634
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.382607
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.960664
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.521993
+ links = 186
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.852413
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.185300
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.166351
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.166819
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.255215
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.686577
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.491342
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.619687
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.757250
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.359087
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.980900
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.511736
+ links = 187
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.814869
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.194058
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.168731
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.143285
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.255013
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.715704
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.436248
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.626859
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.750874
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.344148
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.962766
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.478222
+ links = 188
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.795355
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.165947
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.166524
+Cell 123 linked to cell 133   PDBids = 107 to 117   dist = 2.089159
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.225087
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.723389
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.452723
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.587312
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.739591
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.385924
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.944243
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.494637
+ links = 189
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.797095
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.131749
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.178730
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.266892
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.709298
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.352125
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.573870
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.727965
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.389629
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 3.009507
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.404432
+ links = 190
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.774915
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.151414
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.204173
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.249485
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.702328
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.407524
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.640683
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.768640
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.388747
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.896739
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.448307
+ links = 191
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.750173
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.132625
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.201681
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.286474
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.690169
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.407329
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.663593
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.748114
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.415562
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 3.100241
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.461134
+ links = 192
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.743649
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.121675
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.166754
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.284571
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.689840
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.393840
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.626525
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.771829
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.395602
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 3.101255
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.466409
+ links = 193
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.780476
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.104146
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.163484
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.273478
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.700698
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.384551
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.552965
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.757012
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.435576
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 3.210429
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.437534
+ links = 194
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.760713
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.130864
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.166977
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.298561
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.641239
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.376898
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.513970
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.774486
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.444338
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 3.178962
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.441831
+ links = 195
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.802139
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.108928
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.116099
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.313874
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.673841
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.376412
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.516442
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.775002
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.448818
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 3.014008
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.407583
+ links = 196
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.784674
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.133031
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.091370
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.308895
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.658461
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.338622
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.515479
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.786102
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.442037
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.997979
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.405627
+ links = 197
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.764981
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.119028
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.079357
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.327930
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.619918
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.355265
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.535225
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.791212
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.426744
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.951841
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.416975
+ links = 198
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.763404
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.129134
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.096014
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.298884
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.644045
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.343486
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.565955
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.787018
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.416079
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.812217
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.399723
+ links = 199
+Cell 96 linked to cell 173   PDBids = 80 to 157   dist = 3.743135
+Cell 127 linked to cell 211   PDBids = 111 to 195   dist = 3.102273
+Cell 177 linked to cell 188   PDBids = 161 to 172   dist = 3.082419
+Cell 176 linked to cell 186   PDBids = 160 to 170   dist = 3.300033
+Cell 125 linked to cell 209   PDBids = 109 to 193   dist = 2.649686
+Cell 120 linked to cell 134   PDBids = 104 to 118   dist = 2.327404
+Cell 46 linked to cell 306   PDBids = 30 to 290   dist = 3.555071
+Cell 60 linked to cell 136   PDBids = 44 to 120   dist = 2.781259
+Cell 224 linked to cell 264   PDBids = 208 to 248   dist = 9.380330
+Cell 121 linked to cell 289   PDBids = 105 to 273   dist = 2.912891
+Cell 61 linked to cell 134   PDBids = 45 to 118   dist = 3.391511

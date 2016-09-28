@@ -1,0 +1,82 @@
+      To overcome such restrictions, a large variety of approaches that
+simplify force fields have been developed, including Gaussian network
+models (GNM), elastic network models (ENM), lattice and Gō models. Lattice
+models, for example, do this by restricting a system’s coordinates to
+lattice positions and these simplified models are allowed to adopt only a
+small discrete number of conformational states, while the constituent
+neighbour monomers experience some sort of interaction specified by the
+monomer types and connections. For example, the interactions between
+adjacent monomers can be chosen as random variables from a continuous
+probability distribution [Sali, Shakhnovich and Karplus, 1994; Shakhnovich
+et al., 1991].    In addition to studying specific protein folding dynamics,
+lattice models have also been used to try and answer broader, more general
+theoretical questions about proteins, like why some sequences are protein-
+like and others are not. This is because there is a huge interest not only
+in how proteins function once in their folded state, but also in how
+exactly proteins come to adopt and fold into their native states.
+      It   should  be   mentioned   at this  point that,  although  all  the
+approaches already mentioned thus far have been described from the point of
+view of their utility in simulating macromolecular dynamics, they are
+useful for probing many intrinsic properties of these systems, or for
+investigating models of evolution of these systems [Williams, Pollock and
+Goldstein,   2001],   and  have   even  been  used to  facilitate  structure
+refinement [Schroder, Brunger and Levitt, 2007].
+      The advantages of simplified and/or constrained models are clear in
+terms of computational gains, but the agreement between constrained and
+unconstrained trajectories depends on the formulation details and the
+constraining scheme. For example, van Gunsteren and Karplus showed in their
+BPTI protein simulations that the use of fixed bond lengths does not
+significantly alter a system’s dynamical properties, but that fixing bond
+angles does [Van Gunsteren and Karplus, 1982].
+      Above we touched on the idea that QC and MM methods suffer from one
+major drawback which is an inability to sample large time scales and/or
+large systems based on computational limits that make such simulations
+impractical.   CG approaches have been developed with the goal to further
+simplify atomistic models, and this simpler description of the effective
+interactions in a given system is to be achieved while not losing the
+ability of the resulting models to predict properties of interest[Izvekov
+and Voth, 2005]. For most such models, the technical implementation
+involves two distinct phases – partitioning the system into the larger
+structural units to reduce the system complexity, and construction of an
+effective force field to describe the interaction between the coarse
+grained structural units [Izvekov and Voth, 2005]. CG models of proteins
+often combine groups of atoms in a given structure into a system of rigid
+bodies connected by joints, and contact between the bodies considers such
+things as excluded volume constraints and spring potentials to model
+elasticity in the system[Parker, Bryant and Delp, 2009].
+      Coarse  graining   is  also  often   used  by  collective  coordinate
+algorithms. These aim to separate the large collective motions from the
+smaller, and presumably less important, motions to obtain information about
+structural flexibility and therefore function. This group of methods
+includes principal component analysis (PCA), normal mode analysis and their
+derivatives. PCA is a dimensionality reducing method and is another well
+established mathematical technique that is borrowed from the field of
+statistical analysis to be applied to biological simulations of proteins by
+                                                                            25
+[Altis et al., 2007; Balsera et al., 1996; Caves et al., 1998; Lou and
+Cukier, 2006; Maisuradze and Leitner, 2007] and others. The ensemble of
+structures analyzed may be from either a collection of X-ray structures in
+the PDB Databank or from any simulation trajectory, such as a molecular
+dynamics run. Alternatively, when these are not available, conformational
+sampling techniques can be used as an alternative to generate an ensemble.
+The CONCOORD program [de Groot et al., 1997], for example, does not rely on
+a potential surface, but only on geometric considerations that are used to
+generate a series of conformations (not a time series) that satisfy a set
+of distance constraints.   The benefit of this method is that it can sample
+conformations that might otherwise not be found in a typical MD simulation
+and as such can be used to complement such dynamic, energy-based methods.
+      NMA methods are based on the harmonic approximation which says that
+changes in energy on displacement from a stationary point are a quadratic
+function of that displacement. This approximation is valid when the
+displacements are small enough so that higher order terms in the function
+that describes the displacement can be ignored; otherwise anharmonic
+theories that include them are necessary. NMA methods are therefore local.
+They consider only a limited portion of the potential energy surface and
+the dynamics of the system within it. Seminal contributions in the field of
+normal modes applied to proteins simulations have been made by Tirion,
+Bahar, and Jernigan among others (see [Chu and Voth, 2006; Hayward, Kitao
+and Berendsen, 1997; Soheilifard, Makarov and Rodin, 2008; Tirion, 1996;
+                                                                            26
+Tirion et al., 1995; van der Spoel et al., 1996; Yang, Song and Jernigan,
+2007; Zhang et al., 2009] for examples and reviews).
+

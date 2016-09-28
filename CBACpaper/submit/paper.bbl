@@ -1,0 +1,71 @@
+\begin{thebibliography}{}
+
+\bibitem[Asz\'{o}di \& Taylor, 1994]{AszodiAet94a}
+Asz\'{o}di, A. \& Taylor, W.~R. (1994{\em{}}).
+\newblock Folding polypeptide $\alpha$-carbon backbones by distance geometry
+  methods.
+\newblock {\em Biopolymers, } {\bf 34}, 489--506.
+
+\bibitem[Bond {\em et~al.}, 2007]{BondPJet07}
+Bond, P., Holyoake, J., Ivetac, A., Khalid, S.  \& Sansom, M. (2007{\em{}}).
+\newblock Coarse-grained molecular dynamics simulations of membrane proteins
+  and peptides.
+\newblock {\em J. Struct. Biol.} {\bf 157}, 593--¿605.
+
+\bibitem[Izvekov {\em et~al.}, 2005]{IzvekovSet05}
+Izvekov, S.,   \& Voth, G.~A. (2005{\em{}}).
+\newblock A multiscale coarse-graining method for biomolecular systems.
+\newblock {\em J. Phys. Chem. lett. B, } {\bf 109}, 2469--2473.
+
+\bibitem[Katsimitsoulia \& Taylor, 2010]{KatsimitsouliaZet10a}
+Katsimitsoulia, Z. \& Taylor, W.~R. (2010{\em{}}).
+\newblock A hierarchic algorithm for simple {B}rownian dynamics.
+\newblock {\em Compu. Biol. Chem, } {\bf 34}, 71--79.
+\newblock {\tt doi.10.1016/j.compbiolchem.2010.01.001}.
+
+\bibitem[Michael~Levitt \& Warshel, 1975]{LevittMet75}
+Michael~Levitt, M. \& Warshel, A. (1975{\em{}}).
+\newblock Computer simulation of protein folding.
+\newblock {\em Nature, } {\bf 253}, 694--698.
+
+\bibitem[Taylor {\em et~al.}, 2013]{TaylorWRet13}
+Taylor, W., Hamilton, R.  \& Sadowski, M. (2013{\em{}}).
+\newblock Prediction of contacts from correlated sequence substitutions.
+\newblock {\em Curr. Opinion Struct. Biol.} {\bf 23}, 473--479.
+
+\bibitem[Taylor, 1983]{TaylorWR83}
+Taylor, W.~R. (1983{\em{}}).
+\newblock Ellipsoidal representation of protein topography.
+\newblock {\em J. Molec. Graphics, } {\bf 1}, 54--54.
+
+\bibitem[Taylor {\em et~al.}, 1994]{TaylorWRet94a}
+Taylor, W.~R., Jones, D.~T.  \& Green, N.~M. (1994{\em{}}).
+\newblock A method for $\alpha$-helical integral membrane protein fold
+  prediction.
+\newblock {\em Prot. Struct. Funct. Genet.} {\bf 18}, 281--294.
+
+\bibitem[Taylor \& Katsimitsoulia, 2010{\em{a}}]{TaylorWRet10a}
+Taylor, W.~R. \& Katsimitsoulia, Z. (2010{\em{a}}).
+\newblock A soft collision detection algorithm for simple {B}rownian dynamics.
+\newblock {\em Compu. Biol. Chem, } {\bf 34}, 1--10.
+\newblock {\tt doi.10.1016/jcompbiolchem.2009.11.003}.
+
+\bibitem[Taylor \& Katsimitsoulia, 2010{\em{b}}]{TaylorWRet10b}
+Taylor, W.~R. \& Katsimitsoulia, Z. (2010{\em{b}}).
+\newblock A coarse-grained model for actin myosin simulation.
+\newblock {\em J. Molec. Graph. Model.} {\bf 29}, 266--279.
+
+\bibitem[Taylor \& Katsimitsoulia, 2012]{TaylorWRet12c}
+Taylor, W.~R. \& Katsimitsoulia, Z. (2012{\em{}}).
+\newblock Generalised multi-level coarse-grained molecular simulation and its
+  application to myosin-{V} movement.
+\newblock In {\em Innovations in biomolecular modeling and simulations},
+  (Schlick, T., ed.), RSC biomolecular sciences, ISSN 1757-7152 ; no. 23-24.
+  Royal Society of Chemistry (Great Britain).
+
+\bibitem[Taylor {\em et~al.}, 1983]{TaylorWRet83b}
+Taylor, W.~R., Thornton, J.~M.  \& Turnell, W.~G. (1983{\em{}}).
+\newblock A ellipsoidal approximation of protein shape.
+\newblock {\em J. Molec. Graphics, } {\bf 1}, 30--38.
+
+\end{thebibliography}

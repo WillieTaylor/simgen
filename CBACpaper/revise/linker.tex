@@ -1,0 +1,46 @@
+\section{Bonds and links}
+
+The maintenance of bond and link lengths is very similar and the two routines,
+\TT{bonder} and \TT{linker}, that implement this task will be considered together.
+Both recursively traverse the object tree looking for things to fix.
+
+\subsection{\TT{bonder}}
+
+\subsubsection{Bond lengths}
+
+The \TT{bonder} simply checks if an object has any assigned bonds and if so, uses
+the utility {\tt part2cells()} to push them towards their assigned bond length.
+
+\subsubsection{Nucleic acid exceptions}
+
+Exceptions need to be made when bonding tubes in nucleic acids, which occur both at
+the secondary structure level as basepairs and the domain level
+as segments of double helix. 
+
+For basepairs, if these are part of a double helix, their 'bond-length' is the distance
+between their mid-points (object centre) which is refined to an ideal base-stacking separation.  
+Outside a base-pair, say in a loop region, the 'secondary structure', like a loop in a protein,
+can contain multiple nucleotides and no bond length is refined.
+
+At the domain level, double-stranded DNA segments will always be bonded end-to-end
+at a specific distance that allows the helix to run continuously from one segment to
+the next.   On the other hand, when the segment is an RNA stem-loop, the chain can enter
+and exit the same end of the tube or, with an insertion, even through the side.
+
+
+\subsection{\TT{linker}}
+
+\subsubsection{Breaking links}
+
+The \TT{linker} follows the same basic outline as the \TT{bonder} but with the main
+difference that links can be made and broken during the simulation.   The dynamic creation
+of links is not a built-in feature of \NAME\ and must be provided through the user-supplied
+\TT{driver} routine.   However, if a link becomes over stretched, it is automatically destroyed in
+the \TT{linker}.    The default length of a link is the bump diameter and the default extension
+is 50\%, beyond which the link breaks.
+
+\subsubsection{Preset link lengths}
+
+Local links are automatically created for standard secondary structures,  not only between the H-bonded
+connections in the \AH, i---i+3 and i---i+4, but also between the i-1---i+1 separation along a \Bs.
+However, the non-local links between strands in a \BS\ must be user defined.

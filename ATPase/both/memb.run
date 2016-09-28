@@ -1,0 +1,6 @@
+#NOMOVE
+SCALE 0.158 0.633  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM memb.model
+END
+GROUP 0 1
+INPUT memb.dat

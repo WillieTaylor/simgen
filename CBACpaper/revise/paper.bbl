@@ -1,0 +1,78 @@
+\begin{thebibliography}{10}
+
+\bibitem{LevittMet75}
+M.~Michael~Levitt and A.~Warshel.
+\newblock Computer simulation of protein folding.
+\newblock {\em Nature}, 253:694--698, 1975.
+
+\bibitem{BondPJet07}
+P.J. Bond, J.~Holyoake, A.~Ivetac, S.~Khalid, and M.S.P. Sansom.
+\newblock Coarse-grained molecular dynamics simulations of membrane proteins
+  and peptides.
+\newblock {\em J. Struct. Biol.}, 157:593--605, 2007.
+
+\bibitem{IzvekovSet05}
+S.~Izvekov, , and G.~A. Voth.
+\newblock A multiscale coarse-graining method for biomolecular systems.
+\newblock {\em J. Phys. Chem. lett. B}, 109:2469--2473, 2005.
+
+\bibitem{KatsimitsouliaZet10a}
+Z.~Katsimitsoulia and W.~R. Taylor.
+\newblock A hierarchic algorithm for simple {B}rownian dynamics.
+\newblock {\em Compu. Biol. Chem}, 34:71--79, 2010.
+\newblock {\tt doi.10.1016/j.compbiolchem.2010.01.001}.
+
+\bibitem{TaylorWRet10a}
+W.~R. Taylor and Z.~Katsimitsoulia.
+\newblock A soft collision detection algorithm for simple {B}rownian dynamics.
+\newblock {\em Compu. Biol. Chem}, 34:1--10, 2010.
+\newblock {\tt doi.10.1016/jcompbiolchem.2009.11.003}.
+
+\bibitem{VachaRet14}
+R.~V{\'a}cha, S.~Linse, and M.~Lund.
+\newblock Surface effects on aggregation kinetics of amyloidogenic peptides.
+\newblock {\em J. Am. Chem. Soc}, 136:11776--11782, 2014.
+\newblock DOI: 10.1021/ja505502e.
+
+\bibitem{TaylorWRet12c}
+W.~R. Taylor and Z.~Katsimitsoulia.
+\newblock Generalised multi-level coarse-grained molecular simulation and its
+  application to myosin-{V} movement.
+\newblock In T~Schlick, editor, {\em Innovations in biomolecular modeling and
+  simulations}, RSC biomolecular sciences, ISSN 1757-7152 ; no. 23-24. Royal
+  Society of Chemistry (Great Britain), 2012.
+
+\bibitem{TaylorWRet83b}
+W.~R. Taylor, J.~M. Thornton, and W.~G. Turnell.
+\newblock A ellipsoidal approximation of protein shape.
+\newblock {\em J. Molec. Graphics}, 1:30--38, 1983.
+
+\bibitem{AszodiAet94a}
+A.~Asz\'{o}di and W.~R. Taylor.
+\newblock Folding polypeptide $\alpha$-carbon backbones by distance geometry
+  methods.
+\newblock {\em Biopolymers}, 34:489--506, 1994.
+
+\bibitem{TaylorWRet13}
+W.R. Taylor, R.S. Hamilton, and M.I. Sadowski.
+\newblock Prediction of contacts from correlated sequence substitutions.
+\newblock {\em Curr. Opinion Struct. Biol.}, 23:473--479, 2013.
+
+\bibitem{TaylorWRet94a}
+W.~R. Taylor, D.~T. Jones, and N.~M. Green.
+\newblock A method for $\alpha$-helical integral membrane protein fold
+  prediction.
+\newblock {\em Prot. Struct. Funct. Genet.}, 18:281--294, 1994.
+
+\bibitem{HofackerIL03}
+I.~L. Hofacker.
+\newblock Vienna {RNA} secondary structure server.
+\newblock {\em Nucleic Acids Res.}, 31:3429--3431, 2003.
+
+\bibitem{PerioleXet09}
+X.~Periole, M.~Cavalli, S-J. Marrink, and M.A. Ceruso.
+\newblock Combining an elastic network with a coarse-grained molecular force
+  field: structure, dynamics, and intermolecular recognition.
+\newblock {\em J. Chem. Theory Comp.}, 5:2531--2543, 2009.
+
+\end{thebibliography}

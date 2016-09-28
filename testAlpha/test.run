@@ -1,0 +1,11 @@
+#NOMOVE
+#NORUN
+SCALE 0.158 6.33  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM unit0.model
+END
+GROUP 0 1
+INPUT tail.dom0.dat
+#SHEET
+#BETA 34 70 6
+#ALPHA pdbid
+#Hbond 11 14 5 3

@@ -1,0 +1,254 @@
+HIDDEN
+SCALE 0.158 .633  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM his5sec.model
+PARAM dna5seg.model
+END
+GROUP 0 50
+	INPUT nucseg.dat
+	TRANS  0  0  -30
+	TWIST    0  90  -10     0  90  10    110
+	INPUT nucseg.dat
+	TRANS  0  0  -60
+	TWIST    0  90  -10     0  90  10    220
+	INPUT nucseg.dat
+	TRANS  0  0  -90
+	TWIST    0  90  -10     0  90  10    330
+	INPUT nucseg.dat
+	TRANS  0  0  -120
+	TWIST    0  90  -10     0  90  10    440
+	INPUT nucseg.dat
+	TRANS  0  0  -150
+	TWIST    0  90  -10     0  90  10    550
+	INPUT nucseg.dat
+	TRANS  0  0  -180
+	TWIST    0  90  -10     0  90  10    660
+	INPUT nucseg.dat
+	TRANS  0  0  -210
+	TWIST    0  90  -10     0  90  10    770
+	INPUT nucseg.dat
+	TRANS  0  0  -240
+	TWIST    0  90  -10     0  90  10    880
+	INPUT nucseg.dat
+	TRANS  0  0  -270
+	TWIST    0  90  -10     0  90  10    990
+	INPUT nucseg.dat
+	TRANS  0  0  -300
+	TWIST    0  90  -10     0  90  10    1100
+	INPUT nucseg.dat
+	TRANS  0  0  -330
+	TWIST    0  90  -10     0  90  10    1210
+	INPUT nucseg.dat
+	TRANS  0  0  -360
+	TWIST    0  90  -10     0  90  10    1320
+	INPUT nucseg.dat
+	TRANS  0  0  -390
+	TWIST    0  90  -10     0  90  10    1430
+	INPUT nucseg.dat
+	TRANS  0  0  -420
+	TWIST    0  90  -10     0  90  10    1540
+	INPUT nucseg.dat
+	TRANS  0  0  -450
+	TWIST    0  90  -10     0  90  10    1650
+	INPUT nucseg.dat
+	TRANS  0  0  -480
+	TWIST    0  90  -10     0  90  10    1760
+	INPUT nucseg.dat
+	TRANS  0  0  -510
+	TWIST    0  90  -10     0  90  10    1870
+	INPUT nucseg.dat
+	TRANS  0  0  -540
+	TWIST    0  90  -10     0  90  10    1980
+	INPUT nucseg.dat
+	TRANS  0  0  -570
+	TWIST    0  90  -10     0  90  10    2090
+	INPUT nucseg.dat
+	TRANS  0  0  -600
+	TWIST    0  90  -10     0  90  10    2200
+	INPUT nucseg.dat
+	TRANS  0  0  -630
+	TWIST    0  90  -10     0  90  10    2310
+	INPUT nucseg.dat
+	TRANS  0  0  -660
+	TWIST    0  90  -10     0  90  10    2420
+	INPUT nucseg.dat
+	TRANS  0  0  -690
+	TWIST    0  90  -10     0  90  10    2530
+	INPUT nucseg.dat
+	TRANS  0  0  -720
+	TWIST    0  90  -10     0  90  10    2640
+	INPUT nucseg.dat
+	TRANS  0  0  -750
+	TWIST    0  90  -10     0  90  10    2750
+	INPUT nucseg.dat
+	TRANS  0  0  -780
+	TWIST    0  90  -10     0  90  10    2860
+	INPUT nucseg.dat
+	TRANS  0  0  -810
+	TWIST    0  90  -10     0  90  10    2970
+	INPUT nucseg.dat
+	TRANS  0  0  -840
+	TWIST    0  90  -10     0  90  10    3080
+	INPUT nucseg.dat
+	TRANS  0  0  -870
+	TWIST    0  90  -10     0  90  10    3190
+	INPUT nucseg.dat
+	TRANS  0  0  -900
+	TWIST    0  90  -10     0  90  10    3300
+	INPUT nucseg.dat
+	TRANS  0  0  -930
+	TWIST    0  90  -10     0  90  10    3410
+	INPUT nucseg.dat
+	TRANS  0  0  -960
+	TWIST    0  90  -10     0  90  10    3520
+	INPUT nucseg.dat
+	TRANS  0  0  -990
+	TWIST    0  90  -10     0  90  10    3630
+	INPUT nucseg.dat
+	TRANS  0  0  -1020
+	TWIST    0  90  -10     0  90  10    3740
+	INPUT nucseg.dat
+	TRANS  0  0  -1050
+	TWIST    0  90  -10     0  90  10    3850
+	INPUT nucseg.dat
+	TRANS  0  0  -1080
+	TWIST    0  90  -10     0  90  10    3960
+	INPUT nucseg.dat
+	TRANS  0  0  -1110
+	TWIST    0  90  -10     0  90  10    4070
+	INPUT nucseg.dat
+	TRANS  0  0  -1140
+	TWIST    0  90  -10     0  90  10    4180
+	INPUT nucseg.dat
+	TRANS  0  0  -1170
+	TWIST    0  90  -10     0  90  10    4290
+	INPUT nucseg.dat
+	TRANS  0  0  -1200
+	TWIST    0  90  -10     0  90  10    4400
+	INPUT nucseg.dat
+	TRANS  0  0  -1230
+	TWIST    0  90  -10     0  90  10    4510
+	INPUT nucseg.dat
+	TRANS  0  0  -1260
+	TWIST    0  90  -10     0  90  10    4620
+	INPUT nucseg.dat
+	TRANS  0  0  -1290
+	TWIST    0  90  -10     0  90  10    4730
+	INPUT nucseg.dat
+	TRANS  0  0  -1320
+	TWIST    0  90  -10     0  90  10    4840
+	INPUT nucseg.dat
+	TRANS  0  0  -1350
+	TWIST    0  90  -10     0  90  10    4950
+	INPUT nucseg.dat
+	TRANS  0  0  -1380
+	TWIST    0  90  -10     0  90  10    5060
+	INPUT nucseg.dat
+	TRANS  0  0  -1410
+	TWIST    0  90  -10     0  90  10    5170
+	INPUT nucseg.dat
+	TRANS  0  0  -1440
+	TWIST    0  90  -10     0  90  10    5280
+	INPUT nucseg.dat
+	TRANS  0  0  -1470
+	TWIST    0  90  -10     0  90  10    5390
+	INPUT nucseg.dat
+REBOND atomid   1141  1959
+REBOND atomid   1988  1142
+REBOND atomid   2294  3112
+REBOND atomid   3141  2295
+REBOND atomid   3447  4265
+REBOND atomid   4294  3448
+REBOND atomid   4600  5418
+REBOND atomid   5447  4601
+REBOND atomid   5753  6571
+REBOND atomid   6600  5754
+REBOND atomid   6906  7724
+REBOND atomid   7753  6907
+REBOND atomid   8059  8877
+REBOND atomid   8906  8060
+REBOND atomid   9212  10030
+REBOND atomid   10059  9213
+REBOND atomid   10365  11183
+REBOND atomid   11212  10366
+REBOND atomid   11518  12336
+REBOND atomid   12365  11519
+REBOND atomid   12671  13489
+REBOND atomid   13518  12672
+REBOND atomid   13824  14642
+REBOND atomid   14671  13825
+REBOND atomid   14977  15795
+REBOND atomid   15824  14978
+REBOND atomid   16130  16948
+REBOND atomid   16977  16131
+REBOND atomid   17283  18101
+REBOND atomid   18130  17284
+REBOND atomid   18436  19254
+REBOND atomid   19283  18437
+REBOND atomid   19589  20407
+REBOND atomid   20436  19590
+REBOND atomid   20742  21560
+REBOND atomid   21589  20743
+REBOND atomid   21895  22713
+REBOND atomid   22742  21896
+REBOND atomid   23048  23866
+REBOND atomid   23895  23049
+REBOND atomid   24201  25019
+REBOND atomid   25048  24202
+REBOND atomid   25354  26172
+REBOND atomid   26201  25355
+REBOND atomid   26507  27325
+REBOND atomid   27354  26508
+REBOND atomid   27660  28478
+REBOND atomid   28507  27661
+REBOND atomid   28813  29631
+REBOND atomid   29660  28814
+REBOND atomid   29966  30784
+REBOND atomid   30813  29967
+REBOND atomid   31119  31937
+REBOND atomid   31966  31120
+REBOND atomid   32272  33090
+REBOND atomid   33119  32273
+REBOND atomid   33425  34243
+REBOND atomid   34272  33426
+REBOND atomid   34578  35396
+REBOND atomid   35425  34579
+REBOND atomid   35731  36549
+REBOND atomid   36578  35732
+REBOND atomid   36884  37702
+REBOND atomid   37731  36885
+REBOND atomid   38037  38855
+REBOND atomid   38884  38038
+REBOND atomid   39190  40008
+REBOND atomid   40037  39191
+REBOND atomid   40343  41161
+REBOND atomid   41190  40344
+REBOND atomid   41496  42314
+REBOND atomid   42343  41497
+REBOND atomid   42649  43467
+REBOND atomid   43496  42650
+REBOND atomid   43802  44620
+REBOND atomid   44649  43803
+REBOND atomid   44955  45773
+REBOND atomid   45802  44956
+REBOND atomid   46108  46926
+REBOND atomid   46955  46109
+REBOND atomid   47261  48079
+REBOND atomid   48108  47262
+REBOND atomid   48414  49232
+REBOND atomid   49261  48415
+REBOND atomid   49567  50385
+REBOND atomid   50414  49568
+REBOND atomid   50720  51538
+REBOND atomid   51567  50721
+REBOND atomid   51873  52691
+REBOND atomid   52720  51874
+REBOND atomid   53026  53844
+REBOND atomid   53873  53027
+REBOND atomid   54179  54997
+REBOND atomid   55026  54180
+REBOND atomid   55332  56150
+REBOND atomid   56179  55333
+REBOND atomid   56485  57303
+REBOND atomid   57332  56486
+RETERM atomid 806 835
+END

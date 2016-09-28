@@ -1,0 +1,573 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2013.5.31)  27 JUL 2016 12:13
+entering extended mode
+ %&-line parsing enabled.
+**paper
+(./paper.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(./elsarticle.cls
+Document Class: elsarticle 2009/09/17, 1.20b: Elsevier Ltd
+\@bls=\dimen102
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen103
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/pifont.sty
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+\c@tnote=\count87
+\c@fnote=\count88
+\c@cnote=\count89
+\c@ead=\count90
+\c@author=\count91
+\@eadauthor=\toks15
+\c@affn=\count92
+\absbox=\box26
+\keybox=\box27
+\Columnwidth=\dimen106
+\space@left=\dimen107
+\els@boxa=\box28
+\els@boxb=\box29
+\leftMargin=\dimen108
+\@enLab=\toks16
+\@sep=\skip43
+\@@sep=\skip44
+ (./paper.spl)
+(/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
+Package: natbib 2009/07/16 8.31 (PWD, AO)
+\bibhang=\skip45
+\bibsep=\skip46
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count93
+)
+\splwrite=\write3
+\openout3 = `paper.spl'.
+
+\appnamewidth=\dimen109
+) (./latex/subfigure.sty
+
+LaTeX Warning: You have requested package `latex/subfigure',
+               but the package provides `subfigure'.
+
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip47
+\subfigcapskip=\skip48
+\subfigcaptopadj=\dimen110
+\subfigbottomskip=\skip49
+\subfigcapmargin=\dimen111
+\subfiglabelskip=\skip50
+\c@subfigure=\count94
+\c@lofdepth=\count95
+\c@subtable=\count96
+\c@lotdepth=\count97
+\subfig@top=\skip51
+\subfig@bottom=\skip52
+) (./latex/multirow.sty
+\bigstrutjot=\dimen112
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen113
+\epsfysize=\dimen114
+) (./lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count98
+\output=\toks17
+\linenoprevgraf=\count99
+\linenumbersep=\dimen115
+\linenumberwidth=\dimen116
+\c@linenumber=\count100
+\c@pagewiselinenumber=\count101
+\c@LN@truepage=\count102
+\c@internallinenumber=\count103
+\c@internallinenumbers=\count104
+\quotelinenumbersep=\dimen117
+\bframerule=\dimen118
+\bframesep=\dimen119
+\bframebox=\box30
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen120
+\Hy@linkcounter=\count105
+\Hy@pagecounter=\count106
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3428.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count107
+\Field@Width=\dimen121
+\Fld@charsize=\dimen122
+\Field@toks=\toks18
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count108
+\c@Item=\count109
+\c@Hfootnote=\count110
+)
+*hyperref using default driver hdvips*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2009/10/09 v6.79a Hyperref driver for dvips
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2009/10/09 v6.79a Hyperref definitions for pdfmark specials
+\pdf@docset=\toks19
+\pdf@box=\box31
+\pdf@toks=\toks20
+\pdf@defaulttoks=\toks21
+\Fld@listcount=\count111
+))
+(./latex/fancyvrb.sty
+
+LaTeX Warning: You have requested package `latex/fancyvrb',
+               but the package provides `fancyvrb'.
+
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count112
+\FV@InFile=\read1
+\FV@TabBox=\box32
+\c@FancyVerbLine=\count113
+\FV@StepNumber=\count114
+\FV@OutFile=\write4
+) (./latex/caption.sty
+
+LaTeX Warning: You have requested package `latex/caption',
+               but the package provides `caption'.
+
+Package: caption 2015/09/20 v3.3-118 Customizing captions (AR)
+(./latex/caption3.sty
+
+LaTeX Warning: You have requested package `latex/caption3',
+               but the package provides `caption3'.
+
+Package: caption3 2015/09/20 v1.7-117 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen123
+\captionmargin@=\dimen124
+\captionwidth=\dimen125
+\caption@tempdima=\dimen126
+\caption@indent=\dimen127
+\caption@parindent=\dimen128
+\caption@hangindent=\dimen129
+)
+\c@ContinuedFloat=\count115
+Package caption Info: hyperref package is loaded.
+)
+\@input{latex/header.aux}
+\openout2 = `latex/header.aux'.
+
+(./latex/header.tex) (./paper.aux
+
+LaTeX Warning: Label `Fig:box3' multiply defined.
+
+
+LaTeX Warning: Label `Fig:bumps' multiply defined.
+
+)
+\openout1 = `paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+Package hyperref Info: Link coloring OFF on input line 53.
+ (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count116
+)
+LaTeX Info: Redefining \ref on input line 53.
+LaTeX Info: Redefining \pageref on input line 53.
+ (./paper.out)
+(./paper.out)
+\@outlinefile=\write5
+\openout5 = `paper.out'.
+
+\AtBeginShipoutBox=\box33
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 77.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 77.
+ [1
+
+
+
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 123.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 123.
+ [2
+
+] [3] [4] [5]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 269.
+ [6] [7] [8]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 327.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\times' on input line 327.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 327.
+
+[9
+
+]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 417.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11] [12]
+File: figs/geom/ellipse.eps Graphic file (type eps)
+ <figs/geom/ellipse.eps>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13]
+Underfull \hbox (badness 2521) in paragraph at lines 645--645
+[]|\OT1/cmr/m/n/8 Box 5: [] \OT1/cmr/bx/n/8 Code for the \OT1/cmtt/m/n/8 tube[]
+to[]egg \OT1/cmr/bx/n/8 rou-tine \OT1/cmr/m/n/8 that de-ter-mines if a tube and
+
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 645--645
+\OT1/cmr/m/n/8 an el-lip-soid make con-tact. The method uses the fast \OT1/cmtt
+/m/n/8 inEgg() \OT1/cmr/m/n/8 rou-tine (Box
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 645--645
+\OT1/cmr/m/n/8 4) to check for con-tact and if none is found, re-turns the sep-
+a-rat-ing dis-tance
+ []
+
+
+Underfull \hbox (badness 5189) in paragraph at lines 645--645
+\OT1/cmr/m/n/8 us-ing the \OT1/cmtt/m/n/8 vec[]to[]egg() \OT1/cmr/m/n/8 rou-tin
+e which is based on the al-go-rithm de-scribed at:
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14]
+File: figs/geom/ellipsoid.eps Graphic file (type eps)
+ <figs/geom/ellipsoid.eps>
+Overfull \hbox (65.0pt too wide) in paragraph at lines 665--678
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[15]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16]
+Overfull \hbox (17.60948pt too wide) in paragraph at lines 1531--1540
+\OT1/cmr/m/n/10 call \OT1/cmtt/m/n/10 packTube() \OT1/cmr/m/n/10 with a skipped
+ gen-er-a-tion as: \OT1/cmtt/m/n/10 packTube(grandparent,child,...)
+ []
+
+[17]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/it' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/it' tried instead on input line 2041
+.
+ [18] [19] [20] [21] [22] [23] [24] [25
+
+]
+File: figs/cube/crash2.eps Graphic file (type eps)
+ <figs/cube/crash2.eps>
+File: figs/cube/crash3.eps Graphic file (type eps)
+
+<figs/cube/crash3.eps>
+File: figs/cube/crash4.eps Graphic file (type eps)
+ <figs/cube/crash4.eps>
+Overfull \hbox (51.66666pt too wide) in paragraph at lines 2142--2164
+ [][][]  [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 349.38123pt on input line 2165.
+
+[26] [27] [28]
+File: figs/prot/net3chy.eps Graphic file (type eps)
+ <figs/prot/net3chy.eps>
+File: figs/prot/bad3chy.eps Graphic file (type eps)
+ <figs/prot/bad3chy.eps>
+
+LaTeX Warning: Float too large for page by 87.181pt on input line 2252.
+
+[29] [30]
+Overfull \hbox (45.33421pt too wide) in paragraph at lines 2287--2321
+ [][] 
+ []
+
+[31] [32]
+File: figs/prot/bump1.eps Graphic file (type eps)
+ <figs/prot/bump1.eps>
+File: figs/prot/bump2.eps Graphic file (type eps)
+ <figs/prot/bump2.eps>
+File: figs/prot/bump3.eps Graphic file (type eps)
+ <figs/prot/bump3.eps>
+File: figs/prot/bump4.eps Graphic file (type eps)
+
+<figs/prot/bump4.eps>
+
+LaTeX Warning: Float too large for page by 181.2835pt on input line 2419.
+
+[33] [34]
+File: figs/rhod/rhod.eps Graphic file (type eps)
+ <figs/rhod/rhod.eps>
+File: figs/rhod/ring.eps Graphic file (type eps)
+ <figs/rhod/ring.eps>
+File: figs/rhod/rmsds.eps Graphic file (type eps)
+ <figs/rhod/rmsds.eps>
+File: figs/rhod/super.eps Graphic file (type eps)
+
+<figs/rhod/super.eps>
+
+LaTeX Warning: Float too large for page by 47.02623pt on input line 2521.
+
+[35] [36] [37]
+File: figs/ribo/rna0.eps Graphic file (type eps)
+ <figs/ribo/rna0.eps>
+File: figs/ribo/rna1.eps Graphic file (type eps)
+ <figs/ribo/rna1.eps>
+File: figs/ribo/rna2.eps Graphic file (type eps)
+ <figs/ribo/rna2.eps>
+File: figs/ribo/rna5.eps Graphic file (type eps)
+
+<figs/ribo/rna5.eps>
+
+LaTeX Warning: Float too large for page by 467.08391pt on input line 2579.
+
+[38] [39]
+File: figs/ribo/score.eps Graphic file (type eps)
+ <figs/ribo/score.eps>
+File: figs/ribo/best.eps Graphic file (type eps)
+ <figs/ribo/best.eps> [40] [41] [42
+
+] [43]
+[44] [45] [46] (./paper.bbl
+Underfull \hbox (badness 1946) in paragraph at lines 26--29
+[]\OT1/cmr/m/n/10 Z. Kat-sim-it-sou-lia, W. R. Tay-lor, A hi-er-ar-chic al-go-r
+ithm for sim-
+ []
+
+
+Underfull \hbox (badness 5893) in paragraph at lines 26--29
+\OT1/cmr/m/n/10 ple Brow-n-ian dy-nam-ics, Compu. Biol. Chem 34 (2010) 71--79,
+ []
+
+Missing character: There is no ü in font cmr10!
+[47
+
+] [48]
+Underfull \hbox (badness 4060) in paragraph at lines 123--126
+[]\OT1/cmr/m/n/10 B. Gip-son, M. Moll, L. E. Kavraki, SIMS: A hy-brid method
+ []
+
+
+Underfull \hbox (badness 4792) in paragraph at lines 123--126
+\OT1/cmr/m/n/10 for rapid con-for-ma-tional anal-y-sis, PLoS ONE 8 (2013) e6882
+6,
+ []
+
+) [49] (./paper.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred inside a group at level 5)
+
+### simple group (level 5) entered at line 481 ({)
+### simple group (level 4) entered at line 481 ({)
+### simple group (level 3) entered at line 480 ({)
+### simple group (level 2) entered at line 480 ({)
+### simple group (level 1) entered at line 478 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 6499 strings out of 495062
+ 95405 string characters out of 1182644
+ 189203 words of memory out of 3000000
+ 9571 multiletter control sequences out of 15000+50000
+ 9204 words of font info for 34 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 38i,8n,39p,1189b,532s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on paper.dvi (49 pages, 170416 bytes).

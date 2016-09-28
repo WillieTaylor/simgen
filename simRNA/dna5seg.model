@@ -1,0 +1,11 @@
+DNA
+    0,    0,    1,    2,    2,    1,    0,    0,    0,    0,    // types : type for each level, -ve = wire
+ 9999,  999,  200,  -30,    6,    2,    0,    0,    0,    0,    // sizes :(diamater = []/10, grid = size*2)
+    0,    0,  200,   30,    6,   15,    0,    0,    0,    0,    // bumps :(11 = i-->i+2 dist in alpha)
+    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    // links : number of assigned slots
+    0,    0,    1,    1,    1,    1,    0,    0,    0,    0,    // chain :(1=linear, -1=circular)
+    0,    0,    0,    1,    1,    1,    0,    0,    0,    0,    // move  :kick size (uses []/100)
+    0,    0,    1,  -10,    0,    0,    0,    0,    0,    0,    // keep  :kick (uses 1-[]/100 on children)
+    0,    0,    0,    0,    0,    8,    0,    0,    0,    0,    // bonds : bond length
+    0,    0,   10,   10,  100,  100,    0,    0,    0,    0,    // bump  :kick size (uses []/100)
+    0,    0,   10,   10,  100,    0,    0,    0,    0,    0,    // bump  :kick size (uses []/100)

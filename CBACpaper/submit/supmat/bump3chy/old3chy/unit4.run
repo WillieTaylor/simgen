@@ -1,0 +1,5 @@
+NORUN
+SCALE 0.158 0.1   # scalein = .6/3.8, scaleout = 3.8/.6 = 6.33333
+PARAM move6.model
+END
+INPUT unit4.dat

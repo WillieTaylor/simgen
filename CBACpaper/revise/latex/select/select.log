@@ -1,0 +1,794 @@
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=latex 2010.5.4)  30 APR 2012 10:27
+entering extended mode
+ %&-line parsing enabled.
+**select
+(./select.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german-x-2008-06-18, ngerman-x-2008-06-18, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, la
+tin, mongolian, mongolian2a, bokmal, nynorsk, polish, portuguese, romanian, rus
+sian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turkish, ukenglis
+h, ukrainian, uppersorbian, welsh, loaded.
+(/usr/share/texmf/tex/latex/base/report.cls
+Document Class: report 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/size12.clo
+File: size12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./select.aux)
+\openout1 = `select.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+
+
+LaTeX Warning: Citation `CohenFEet80a' on page 1 undefined on input line 3.
+
+
+LaTeX Warning: Citation `CohenFEet80b' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `CohenFEet81' on page 1 undefined on input line 5.
+
+
+LaTeX Warning: Citation `TaylorWR81' on page 1 undefined on input line 6.
+
+
+LaTeX Warning: Citation `SternbergMJEet81' on page 1 undefined on input line 7.
+
+
+
+LaTeX Warning: Citation `CohenFEet82a' on page 1 undefined on input line 8.
+
+
+LaTeX Warning: Citation `SternbergMJEet82a' on page 1 undefined on input line 9
+.
+
+
+LaTeX Warning: Citation `TaylorWRet83a' on page 1 undefined on input line 10.
+
+
+LaTeX Warning: Citation `TaylorWRet83b' on page 1 undefined on input line 11.
+
+
+LaTeX Warning: Citation `SternbergMJEet84' on page 1 undefined on input line 12
+.
+
+
+LaTeX Warning: Citation `TaylorWR84' on page 1 undefined on input line 13.
+
+
+LaTeX Warning: Citation `TaylorWRet84' on page 1 undefined on input line 14.
+
+
+LaTeX Warning: Citation `GarrattRCet85' on page 1 undefined on input line 15.
+
+
+LaTeX Warning: Citation `ThorntonJMet85' on page 1 undefined on input line 16.
+
+
+LaTeX Warning: Citation `SternbergMJEet85a' on page 1 undefined on input line 1
+7.
+
+
+LaTeX Warning: Citation `SternbergMJEet85b' on page 1 undefined on input line 1
+8.
+
+
+LaTeX Warning: Citation `RawlingsCJet85b' on page 1 undefined on input line 19.
+
+
+
+LaTeX Warning: Citation `BlundellTLet86' on page 1 undefined on input line 20.
+
+
+LaTeX Warning: Citation `NikasIet86' on page 1 undefined on input line 21.
+
+
+LaTeX Warning: Citation `BarlowDJet86' on page 1 undefined on input line 22.
+
+
+LaTeX Warning: Citation `GreenNMet86' on page 1 undefined on input line 23.
+
+
+LaTeX Warning: Citation `ThorntonJMet86' on page 1 undefined on input line 24.
+
+
+LaTeX Warning: Citation `RothbardJBet86' on page 1 undefined on input line 25.
+
+
+LaTeX Warning: Citation `KnottTJet86' on page 1 undefined on input line 26.
+
+
+LaTeX Warning: Citation `RawlingsCJet86a' on page 1 undefined on input line 27.
+
+
+
+LaTeX Warning: Citation `TaylorWR86a' on page 1 undefined on input line 28.
+
+
+LaTeX Warning: Citation `TaylorWR86b' on page 1 undefined on input line 29.
+
+
+LaTeX Warning: Citation `TaylorWR86c' on page 1 undefined on input line 30.
+
+
+LaTeX Warning: Citation `TaylorWR86d' on page 1 undefined on input line 31.
+
+
+LaTeX Warning: Citation `GeisowMJet87' on page 1 undefined on input line 32.
+
+
+LaTeX Warning: Citation `ZvelebilMJet87' on page 1 undefined on input line 33.
+
+
+LaTeX Warning: Citation `TaylorWR87' on page 1 undefined on input line 34.
+
+
+LaTeX Warning: Citation `BajajMet87' on page 1 undefined on input line 35.
+
+
+LaTeX Warning: Citation `TaylorWRet87' on page 1 undefined on input line 36.
+
+
+LaTeX Warning: Citation `PearlLHet87a' on page 1 undefined on input line 37.
+
+
+LaTeX Warning: Citation `EngelJet87b' on page 1 undefined on input line 38.
+
+
+LaTeX Warning: Citation `PearlLHet87b' on page 1 undefined on input line 39.
+
+
+LaTeX Warning: Citation `GreenNMet88' on page 1 undefined on input line 40.
+
+
+LaTeX Warning: Citation `RodriguesVet88' on page 1 undefined on input line 41.
+
+
+LaTeX Warning: Citation `TaylorSAet88' on page 1 undefined on input line 42.
+
+
+LaTeX Warning: Citation `TaylorWR88a' on page 1 undefined on input line 43.
+
+
+LaTeX Warning: Citation `RothbardJBet88a' on page 1 undefined on input line 44.
+
+
+
+LaTeX Warning: Citation `TaylorWR88b' on page 1 undefined on input line 45.
+
+
+LaTeX Warning: Citation `RothbardJBet88b' on page 1 undefined on input line 46.
+
+
+
+LaTeX Warning: Citation `TaylorWR88c' on page 1 undefined on input line 47.
+
+
+LaTeX Warning: Citation `TaylorWR89' on page 1 undefined on input line 48.
+
+
+LaTeX Warning: Citation `TaylorWRet89a' on page 1 undefined on input line 49.
+
+
+LaTeX Warning: Citation `RothbardJBet89a' on page 1 undefined on input line 50.
+
+
+
+LaTeX Warning: Citation `TaylorWRet89b' on page 1 undefined on input line 51.
+
+
+LaTeX Warning: Citation `RothbardJBet89b' on page 1 undefined on input line 52.
+
+
+
+LaTeX Warning: Citation `ThorntonJMet89b' on page 1 undefined on input line 53.
+
+
+
+LaTeX Warning: Citation `TaylorWRet89c' on page 1 undefined on input line 54.
+
+
+LaTeX Warning: Citation `TaylorWRet90' on page 1 undefined on input line 55.
+
+
+LaTeX Warning: Citation `KellyCet90' on page 1 undefined on input line 56.
+
+
+LaTeX Warning: Citation `OrengoCAet90a' on page 1 undefined on input line 57.
+
+
+LaTeX Warning: Citation `TaylorWR90a' on page 1 undefined on input line 58.
+
+
+LaTeX Warning: Citation `TaylorWR90b' on page 1 undefined on input line 59.
+
+
+LaTeX Warning: Citation `TaylorWRet91' on page 1 undefined on input line 60.
+
+
+LaTeX Warning: Citation `GarrattRet91' on page 1 undefined on input line 61.
+
+
+LaTeX Warning: Citation `TaylorWR91a' on page 1 undefined on input line 62.
+
+
+LaTeX Warning: Citation `RippmannFet91a' on page 1 undefined on input line 63.
+
+
+LaTeX Warning: Citation `RippmannFet91b' on page 1 undefined on input line 64.
+
+
+LaTeX Warning: Citation `LaPollaRJet91b' on page 1 undefined on input line 65.
+
+
+LaTeX Warning: Citation `TaylorWR91b' on page 1 undefined on input line 66.
+
+
+LaTeX Warning: Citation `OrengoCAet92' on page 1 undefined on input line 67.
+
+
+LaTeX Warning: Citation `TaylorWR92a' on page 1 undefined on input line 68.
+
+
+LaTeX Warning: Citation `JonesDTet92a' on page 1 undefined on input line 69.
+
+
+LaTeX Warning: Citation `TaylorWR92b' on page 1 undefined on input line 70.
+
+
+LaTeX Warning: Citation `JonesDTet92b' on page 1 undefined on input line 71.
+
+
+LaTeX Warning: Citation `TaylorWR92c' on page 1 undefined on input line 72.
+
+
+LaTeX Warning: Citation `TaylorWR92d' on page 1 undefined on input line 73.
+
+
+LaTeX Warning: Citation `LaThangueNBet93' on page 1 undefined on input line 74.
+
+
+
+LaTeX Warning: Citation `TaylorWR93a' on page 1 undefined on input line 75.
+
+
+LaTeX Warning: Citation `TaylorWRet93a' on page 1 undefined on input line 76.
+
+
+LaTeX Warning: Citation `AszodiAet93a' on page 1 undefined on input line 77.
+
+
+LaTeX Warning: Citation `JonesDTet93a' on page 1 undefined on input line 78.
+
+
+LaTeX Warning: Citation `OrengoCAet93a' on page 1 undefined on input line 79.
+
+
+LaTeX Warning: Citation `TaylorWR93b' on page 1 undefined on input line 80.
+
+
+LaTeX Warning: Citation `OrengoCAet93b' on page 1 undefined on input line 81.
+
+
+LaTeX Warning: Citation `TaylorWRet93b' on page 1 undefined on input line 82.
+
+
+LaTeX Warning: Citation `OrengoCAet93c' on page 1 undefined on input line 83.
+
+
+LaTeX Warning: Citation `TaylorWR93d' on page 1 undefined on input line 84.
+
+
+LaTeX Warning: Citation `TaylorWR93e' on page 1 undefined on input line 85.
+
+
+LaTeX Warning: Citation `StokesDLet94' on page 1 undefined on input line 86.
+
+
+LaTeX Warning: Citation `BhattacharyaSet94' on page 1 undefined on input line 8
+7.
+
+
+LaTeX Warning: Citation `ThorntonJMet94' on page 1 undefined on input line 88.
+
+
+LaTeX Warning: Citation `ChothiaCet94' on page 1 undefined on input line 89.
+
+
+LaTeX Warning: Citation `TaylorWR94a' on page 1 undefined on input line 90.
+
+
+LaTeX Warning: Citation `JonesDTet94a' on page 1 undefined on input line 91.
+
+
+LaTeX Warning: Citation `TaylorWRet94a' on page 1 undefined on input line 92.
+
+
+LaTeX Warning: Citation `HatrickKet94a' on page 1 undefined on input line 93.
+
+
+LaTeX Warning: Citation `OrengoCAet94a' on page 1 undefined on input line 94.
+
+
+LaTeX Warning: Citation `AszodiAet94a' on page 1 undefined on input line 95.
+
+
+LaTeX Warning: Citation `TaylorWRet94b' on page 1 undefined on input line 96.
+
+
+LaTeX Warning: Citation `JonesDTet94b' on page 1 undefined on input line 97.
+
+
+LaTeX Warning: Citation `AszodiAet94b' on page 1 undefined on input line 98.
+
+
+LaTeX Warning: Citation `TaylorWR94b' on page 1 undefined on input line 99.
+
+
+LaTeX Warning: Citation `TaylorWRet94c' on page 1 undefined on input line 100.
+
+
+LaTeX Warning: Citation `TaylorWR94c' on page 1 undefined on input line 101.
+
+
+LaTeX Warning: Citation `AszodiAet94c' on page 1 undefined on input line 102.
+
+
+LaTeX Warning: Citation `TaylorWRet94d' on page 1 undefined on input line 103.
+
+
+LaTeX Warning: Citation `TaylorWRet94e' on page 1 undefined on input line 104.
+
+
+LaTeX Warning: Citation `TaylorWRet95a' on page 1 undefined on input line 105.
+
+
+LaTeX Warning: Citation `AszodiAet95a' on page 1 undefined on input line 106.
+
+
+LaTeX Warning: Citation `TaylorWR95a' on page 1 undefined on input line 107.
+
+
+LaTeX Warning: Citation `TaylorWR95b' on page 1 undefined on input line 108.
+
+
+LaTeX Warning: Citation `TaylorWRet95b' on page 1 undefined on input line 109.
+
+
+LaTeX Warning: Citation `AszodiAet95b' on page 1 undefined on input line 110.
+
+
+LaTeX Warning: Citation `AszodiAet95c' on page 1 undefined on input line 111.
+
+
+LaTeX Warning: Citation `BrownNPet96' on page 1 undefined on input line 112.
+
+
+LaTeX Warning: Citation `OrengoCAet96' on page 1 undefined on input line 113.
+
+
+LaTeX Warning: Citation `TaylorWR96a' on page 1 undefined on input line 114.
+
+
+LaTeX Warning: Citation `AszodiAet96a' on page 1 undefined on input line 115.
+
+
+LaTeX Warning: Citation `WernerEet96a' on page 1 undefined on input line 116.
+
+
+LaTeX Warning: Citation `TaylorWR96b' on page 1 undefined on input line 117.
+
+
+LaTeX Warning: Citation `TaylorWR96c' on page 1 undefined on input line 118.
+
+
+LaTeX Warning: Citation `HeringaJet97' on page 1 undefined on input line 119.
+
+
+LaTeX Warning: Citation `AszodiAet97a' on page 1 undefined on input line 120.
+
+
+LaTeX Warning: Citation `TaylorWRet97a' on page 1 undefined on input line 121.
+
+
+LaTeX Warning: Citation `PollockDDet97a' on page 1 undefined on input line 122.
+
+
+
+LaTeX Warning: Citation `TaylorWR97b' on page 1 undefined on input line 123.
+
+
+LaTeX Warning: Citation `AszodiAet97b' on page 1 undefined on input line 124.
+
+
+LaTeX Warning: Citation `TaylorWR97c' on page 1 undefined on input line 125.
+
+
+LaTeX Warning: Citation `AszodiAet97c' on page 1 undefined on input line 126.
+
+
+LaTeX Warning: Citation `TaylorWRet97c' on page 1 undefined on input line 127.
+
+
+LaTeX Warning: Citation `TaylorWR97d' on page 1 undefined on input line 128.
+
+
+LaTeX Warning: Citation `TaylorWR97e' on page 1 undefined on input line 129.
+
+
+LaTeX Warning: Citation `JonesDTet98' on page 1 undefined on input line 130.
+
+
+LaTeX Warning: Citation `RittingerKet98' on page 1 undefined on input line 131.
+
+
+
+LaTeX Warning: Citation `HigginsDGet98' on page 1 undefined on input line 132.
+
+
+LaTeX Warning: Citation `WernerEet98' on page 1 undefined on input line 133.
+
+
+LaTeX Warning: Citation `TaylorWR98a' on page 1 undefined on input line 134.
+
+
+LaTeX Warning: Citation `MunroREJet99' on page 1 undefined on input line 135.
+
+
+LaTeX Warning: Citation `JonassenIet99' on page 1 undefined on input line 136.
+
+
+LaTeX Warning: Citation `PollockDDet99a' on page 1 undefined on input line 137.
+
+
+
+LaTeX Warning: Citation `TaylorWR99a' on page 1 undefined on input line 138.
+
+
+LaTeX Warning: Citation `TaylorWRet99a' on page 1 undefined on input line 139.
+
+
+LaTeX Warning: Citation `TaylorWRet99b' on page 1 undefined on input line 140.
+
+
+LaTeX Warning: Citation `TaylorWR99b' on page 1 undefined on input line 141.
+
+
+LaTeX Warning: Citation `TaylorWR99c' on page 1 undefined on input line 142.
+
+
+LaTeX Warning: Citation `TaylorWRet99c' on page 1 undefined on input line 143.
+
+
+LaTeX Warning: Citation `EidhammerIet00' on page 1 undefined on input line 144.
+
+
+
+LaTeX Warning: Citation `JonassenIet00a' on page 1 undefined on input line 145.
+
+
+
+LaTeX Warning: Citation `TaylorWR00a' on page 1 undefined on input line 146.
+
+
+LaTeX Warning: Citation `HigginsDGet00a' on page 1 undefined on input line 147.
+
+
+
+LaTeX Warning: Citation `HigginsDGet00b' on page 1 undefined on input line 148.
+
+
+
+LaTeX Warning: Citation `TaylorWR00b' on page 1 undefined on input line 149.
+
+
+LaTeX Warning: Citation `TaylorWR00c' on page 1 undefined on input line 150.
+
+
+LaTeX Warning: Citation `TaylorWR00d' on page 1 undefined on input line 151.
+
+
+LaTeX Warning: Citation `OgunMet01' on page 1 undefined on input line 152.
+
+
+LaTeX Warning: Citation `TaylorWR01a' on page 1 undefined on input line 153.
+
+
+LaTeX Warning: Citation `TaylorWRet01b' on page 1 undefined on input line 154.
+
+
+LaTeX Warning: Citation `JonassenIet02' on page 1 undefined on input line 155.
+
+
+LaTeX Warning: Citation `ConklinDet02' on page 1 undefined on input line 156.
+
+
+LaTeX Warning: Citation `TaylorWR02a' on page 1 undefined on input line 157.
+
+
+LaTeX Warning: Citation `SaldanhaJWet02a' on page 1 undefined on input line 158
+.
+
+
+LaTeX Warning: Citation `TaylorWRet02a' on page 1 undefined on input line 159.
+
+
+LaTeX Warning: Citation `LinKet02a' on page 1 undefined on input line 160.
+
+
+LaTeX Warning: Citation `LinKet02b' on page 1 undefined on input line 161.
+
+
+LaTeX Warning: Citation `TaylorWR02b' on page 1 undefined on input line 162.
+
+
+LaTeX Warning: Citation `TaylorWR02c' on page 1 undefined on input line 163.
+
+
+LaTeX Warning: Citation `LinKet02c' on page 1 undefined on input line 164.
+
+
+LaTeX Warning: Citation `LinKet03a' on page 1 undefined on input line 165.
+
+
+LaTeX Warning: Citation `PetersenKet03a' on page 1 undefined on input line 166.
+
+
+
+LaTeX Warning: Citation `TaylorWRet03a' on page 1 undefined on input line 167.
+
+
+LaTeX Warning: Citation `MombelliEet03a' on page 1 undefined on input line 168.
+
+
+
+LaTeX Warning: Citation `TaylorWRet03b' on page 1 undefined on input line 169.
+
+
+LaTeX Warning: Citation `TaylorWRet03c' on page 1 undefined on input line 170.
+
+
+LaTeX Warning: Citation `StevensAet04' on page 1 undefined on input line 171.
+
+
+LaTeX Warning: Citation `MurrayKBet04' on page 1 undefined on input line 172.
+
+
+LaTeX Warning: Citation `JohannissenLOet04' on page 1 undefined on input line 1
+73.
+
+
+LaTeX Warning: Citation `EidhammerIet04' on page 1 undefined on input line 174.
+
+
+
+LaTeX Warning: Citation `TaylorWR04a' on page 1 undefined on input line 175.
+
+
+LaTeX Warning: Citation `TaylorWRet04a' on page 1 undefined on input line 176.
+
+
+LaTeX Warning: Citation `TaylorWRet04b' on page 1 undefined on input line 177.
+
+
+LaTeX Warning: Citation `BakerDet05' on page 1 undefined on input line 178.
+
+
+LaTeX Warning: Citation `LinKet05' on page 1 undefined on input line 179.
+
+
+LaTeX Warning: Citation `TaylorWRet05' on page 1 undefined on input line 180.
+
+
+LaTeX Warning: Citation `TaylorWR05a' on page 1 undefined on input line 181.
+
+
+LaTeX Warning: Citation `TaylorWR05b' on page 1 undefined on input line 182.
+
+
+LaTeX Warning: Citation `TaylorWR05c' on page 1 undefined on input line 183.
+
+
+LaTeX Warning: Citation `TaylorWR05d' on page 1 undefined on input line 184.
+
+
+LaTeX Warning: Citation `SnellEAet06' on page 1 undefined on input line 185.
+
+
+LaTeX Warning: Citation `VesterstromJet06' on page 1 undefined on input line 18
+6.
+
+
+LaTeX Warning: Citation `JonassenIet06' on page 1 undefined on input line 187.
+
+
+LaTeX Warning: Citation `TaylorWR06a' on page 1 undefined on input line 188.
+
+
+LaTeX Warning: Citation `TaylorWRet06a' on page 1 undefined on input line 189.
+
+
+LaTeX Warning: Citation `TaylorWR06b' on page 1 undefined on input line 190.
+
+
+LaTeX Warning: Citation `TaylorWR06c' on page 1 undefined on input line 191.
+
+
+LaTeX Warning: Citation `TaylorWR06d' on page 1 undefined on input line 192.
+
+
+LaTeX Warning: Citation `KloseDet07' on page 1 undefined on input line 193.
+
+
+LaTeX Warning: Citation `TaylorWR07a' on page 1 undefined on input line 194.
+
+
+LaTeX Warning: Citation `TaylorWR07b' on page 1 undefined on input line 195.
+
+
+LaTeX Warning: Citation `BartlettGJet08' on page 1 undefined on input line 196.
+
+
+
+LaTeX Warning: Citation `ChelliahVet08' on page 1 undefined on input line 197.
+
+
+LaTeX Warning: Citation `HollupSMet08' on page 1 undefined on input line 198.
+
+
+LaTeX Warning: Citation `TaylorWRet08a' on page 1 undefined on input line 199.
+
+
+LaTeX Warning: Citation `MargueronRet09' on page 1 undefined on input line 200.
+
+
+
+LaTeX Warning: Citation `MortuzaGBet09' on page 1 undefined on input line 201.
+
+
+LaTeX Warning: Citation `TaylorWRet09a' on page 1 undefined on input line 202.
+
+
+LaTeX Warning: Citation `MacDonaldJTet10' on page 1 undefined on input line 203
+.
+
+
+LaTeX Warning: Citation `GraingerBet10' on page 1 undefined on input line 204.
+
+
+LaTeX Warning: Citation `GoldstoneDCet10' on page 1 undefined on input line 205
+.
+
+
+LaTeX Warning: Citation `TaylorWRet10a' on page 1 undefined on input line 206.
+
+
+LaTeX Warning: Citation `KatsimitsouliaZet10a' on page 1 undefined on input lin
+e 207.
+
+
+LaTeX Warning: Citation `SadowskiMIet10a' on page 1 undefined on input line 208
+.
+
+
+LaTeX Warning: Citation `TaylorWRet10b' on page 1 undefined on input line 209.
+
+
+LaTeX Warning: Citation `SadowskiMIet10b' on page 1 undefined on input line 210
+.
+
+
+LaTeX Warning: Citation `DekkerCet11' on page 1 undefined on input line 211.
+
+
+LaTeX Warning: Citation `FarrowREet11' on page 1 undefined on input line 212.
+
+
+LaTeX Warning: Citation `HollupSMet11' on page 1 undefined on input line 213.
+
+
+LaTeX Warning: Citation `SadowskiMIet11a' on page 1 undefined on input line 214
+.
+
+
+LaTeX Warning: Citation `HollupSMet11a' on page 1 undefined on input line 215.
+
+
+LaTeX Warning: Citation `TaylorWRet11a' on page 1 undefined on input line 216.
+
+
+LaTeX Warning: Citation `SadowskiMIet11b' on page 1 undefined on input line 217
+.
+
+
+LaTeX Warning: Citation `HollupSMet11b' on page 1 undefined on input line 218.
+
+
+LaTeX Warning: Citation `TaylorWRet11b' on page 1 undefined on input line 219.
+
+
+LaTeX Warning: Citation `TaylorWRet12a' on page 1 undefined on input line 220.
+
+[1
+
+] [2] (./select.bbl
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 5.
+ [3
+
+
+] [4] [5] [6] [7] [8] [9] [10] [11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 636--642
+[]\OT1/cmr/m/n/12 W. R. Tay-lor.  An in-ves-ti-ga-tion of conservation-biased
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 636--642
+\OT1/cmr/m/n/12 gap-penalties for mul-ti-ple pro-tein se-quence align-ment.
+ []
+
+
+Underfull \hbox (badness 5288) in paragraph at lines 636--642
+\OT1/cmr/m/it/12 Gene\OT1/cmr/m/n/12 , 165:GC27--35, 1995.  In-ter-net jour-nal
+ Gene Com-bis:
+ []
+
+[13] [14] [15] [16] [17] [18] [19] [20]
+Underfull \hbox (badness 4060) in paragraph at lines 1151--1155
+[]\OT1/cmr/m/n/12 W. R. Tay-lor.  Pro-tein knots and fold com-plex-ity: some
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1151--1155
+\OT1/cmr/m/n/12 new twists.  \OT1/cmr/m/it/12 Comp. Biol. Chem.\OT1/cmr/m/n/12 
+, 31:151--162, 2007.
+ []
+
+[21] [22]) [23] [24] (./select.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 472 strings out of 493887
+ 5807 string characters out of 1155273
+ 59889 words of memory out of 3500000
+ 3816 multiletter control sequences out of 10000+50000
+ 7805 words of font info for 28 fonts, out of 3000000 for 5000
+ 714 hyphenation exceptions out of 8191
+ 22i,4n,21p,134b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on select.dvi (24 pages, 64656 bytes).

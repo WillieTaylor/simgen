@@ -1,0 +1,11 @@
+PROT bump
+	  0,    1,    1,    1,    1,    0,    0,    0,    0,  	// types (type for each level), -ve = wire
+       5000,  160,   70,   30,   10,    0,    0,    0,    0,  	// sizes (diamater = []/10, grid = size*2)
+	  0,  160,   70,   30,   10,    0,    0,    0,    0,  	// bumps (11 = i-->i+2 in alpha)
+	  0,    0,    0,    0,    0,    0,    0,    0,    0,  	// links
+	  0,    0,    1,    1,    1,    0,    0,    0,    0,  	// chain (N=linear, -N=circular), N = valance
+	  0,    0,    0,    0,    0,    0,    0,    0,    0,  	// move kick (use []/100), -ve = no spin
+	  0,    0,    0,    0,    0,    0,    0,    0,    0,  	// keep (use 1-[]/100 on children)
+	  0,    0,    1,    1,    1,    0,    0,    0,    0,  	// bond 
+	  0,   20,   20,   20,  100,    0,    0,    0,    0,  	// hard kick (use []/100)
+	  0,    2,    2,    2,  100,    0,    0,    0,    0,  	// soft kick (use []/100)

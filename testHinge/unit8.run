@@ -1,0 +1,14 @@
+NORUN
+#NOMOVE
+SCALE 0.158 6.33  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM unit1.model
+END
+GROUP 0 1
+INPUT unit8.dat
+HINGE 2 0 1 2
+HINGE 2 1 2 2
+HINGE 2 2 3 2
+HINGE 2 3 4 2
+HINGE 2 4 5 2
+HINGE 2 5 6 2
+HINGE 2 6 7 2

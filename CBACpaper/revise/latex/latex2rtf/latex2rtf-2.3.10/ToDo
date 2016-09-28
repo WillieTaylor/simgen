@@ -1,0 +1,16 @@
+Fit & Finish:
+	
+	last line tabular in one column mode
+	extra spaces around \hline in tabular
+
+Potential Features:
+
+	Expand -f support to array
+	Expand -f support to weird characters
+	
+	New diagnostic level to replace Warning for expected stuff
+
+    add style support for superscript natbib entries
+
+	support \hsize
+	add support for \hspace

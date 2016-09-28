@@ -1,0 +1,23 @@
+#NORUN
+#NOMOVE
+#NOVIEW
+SCALE 0.15
+PARAM rna.model
+END
+GROUP 0 1
+GROUP 0 5
+INPUT* stem1a.dat  100 100 100
+INPUT* stem1b.dat  100 100 100
+INPUT* stem2a.dat  100 100 100
+INPUT* stem2b.dat  100 100 100
+INPUT* stem3.dat   100 100 100
+REBOND pdbid  12 13
+REBOND pdbid  20 21
+REBOND pdbid  34 35
+REBOND pdbid  42 43
+REBOND pdbid  63 64
+REBOND pdbid  84 85
+RETERM pdbid   1 93
+LINKS pdbid links.dat
+#LINKS pdbid dummy.dat
+#PRINT

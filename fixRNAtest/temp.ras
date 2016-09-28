@@ -1,0 +1,6 @@
+wireframe off
+cpk 22
+colour chain
+label %r
+colour labels white
+set picking monitor

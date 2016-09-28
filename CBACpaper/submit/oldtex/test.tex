@@ -1,0 +1,157 @@
+\section{Test data}
+
+\subsection{Colliding Hilbert chains}
+
+To retain a connection to macromolecules, idealised test data was based on a linear chain of atoms.
+This chain was then 'packaged' into a hierarchy of spherical objects, each of which contained
+eight children arranged as a cube.   To maintain equal bond-lengths between the atoms, the path of the
+chain followed a recursive Hilbert curve, in which each level of the hierachry is identical\footnote{
+A Hilbert curve ({\tt https://en.wikipedia.org/wiki/Hilbert\_curve}) is the spatial equivalent of a 
+Gray code ({\tt https://en.wikipedia.org/wiki/Gray\_code}) in which successive elements are
+only one step away from their neighbours.
+}.   This arrangement generates homogeneously packed chains which allows the effects of collisions
+to be monitored as displacements get propogated through the structure.
+
+Collisions between these objects were then engineered by applying an external
+motion to propel two identical objects into each other.   To avoide a direct "head-on"
+collision, the objects were displaced by half their radius from their line of approach.
+As the chain forms a cube, this means that the collision surface encompases
+half a face of each cube.
+During the collision, the number of bumping atoms was monitored between the two objects
+and also within each object.
+
+\subsubsection{8+8 crash}
+
+To investigate the the contribution of the soft repulsion component of higher level objects,
+the first construct of interest involves the collision of two cubes of eight atoms.  The
+repulsion strength at both levels was set to a value of 1 for both hard and soft modes
+(although the atomic level only has hard repulsion).   With these values, the containing
+spherical shells repelled each other before the atoms could make contact.
+
+The $soft$ parameter value was then decreased, allowing interpenetration of the high
+level spheres,  until the internal atoms made contact.   This occured when $soft = hard/5$
+but most of the displacement still derived from the high-level soft repulsion component
+and the internal arrangement of the atoms was almost unchanged.   With no soft repulsion,
+the atomic configuration was markedly displaced and as a comprimise, $soft = hard/10$
+was taken as a combination that allowed a contribution from each level.
+
+\subsubsection{64+64 crash}
+
+The next level of model considered was the 64 atom chain and keeping the values established
+above for the first level in the hierarchy, an equivalment evaluation was made for the second level.
+As with the smaller test object, the first level spheres initally made contact when $soft = hard/5$,
+however, because of the added buffering effect of the first-level spheres, the atoms remained
+well separated between the two colliding objects even when $soft = hard/10$.  To compensate for
+this additive contribution, the $hard$ parameter value on both levels was halved and the 10\%
+ratio to the $soft$ parameter retained giving $hard = 0.5, soft = 0.05$. 
+
+\subsubsection{512+512 crash}
+
+The evaluation protocol was extended to the 3-level hierarch of 512 atoms per chain.
+Transfering the values from the previous test again led to a lack of direct contact at the
+atomic level and these were reduced to $hard = 0.2$, keeping the $soft = hard/10$ ratio.
+This produced a result at the mid-point of the collision (when the centroids of the bodies
+draw level on their collision course) that was comparable to the smaller systems.
+
+\subsubsection{4096+4096 crash}
+
+For the largest model tested, with the chain packaged into 4 levels of containers,  the
+progression of reducing the values of the $hard$ and $soft$ parameters was continued.
+However, this led to a marked number (100s) of steric violations at the atomic level both
+between and within the colliding bodies.   Keeping the two parameters at their previous
+levels ($hard = 0.2$, $soft = 0.02$) the number of clashes between the bodies decreased
+(10s) but the number of internal violations remained high.
+
+As this model extends beyond the normal size range of compact biological molecules,
+no further experimentaion was made.   Of greater interest is the degree of distortion 
+observed in the "crumple-zone" and to investigate this a more realistic protein model
+was used.
+
+
+\subsection{Colliding multiple protein domains}
+
+To progress to a more biologically realistic system and also to introduce a variety
+of container shapes, the small chemotaxis-Y protein (PDB code: {\tt 3chy}), was used
+and modelled with tubes to contain its secondary structure elements and an ellipsoid
+to contain the protein.    The structure was also stabilised with 'hydrogen-bond'-like
+links between the $i..i+3$ and $i..i+4$ positions in the \AHs\ and links between
+hydrogen-bonded positions in the \BS.
+
+A series of multi-domain models were then constructed with the protein chain as a
+node on a Hilbert curve giving models of 1, 8 and 64 domains.   The link between 
+domains was also optionally broken, making the domains equivalent to subunits.
+Collisions between these constructs was engineered as above with the coordinates
+being saved at the start of the run and at the end, after the structures were well
+past each other.    To monitor the distortion experienced by the domains/subunits
+during the collision each domain in the starting structure was comapred to each
+domain in the final structure and the smallest, mean and largest root-mean-square
+(RMS) deviations recorded. 
+
+\subsubsection{Single domain collision}
+
+Two single domain structures were collided using the same parameters as determined
+for the equivalent sized "cubic" chains of the previous section ($hard = 1.0$, $soft = 0.1$).
+Comparing combinations of the two starting and two final strutctures, the mean RMS
+deviation was 3.6\AA , which is not far in excess of the 2.4\AA\ mean deviation seen
+when the two structures travel the same distance but do not collide.   For a protein
+of this size, with any RMS deviation under 5\AA, the stuctures retain a clear correspondance. 
+
+Increasing the $soft$ parameter to 0.2 led to less distortion (mean RMS = 3.1) which
+is closer to the un-collided value.   While, retaining the same $hard:soft$ ratio
+with $hard = 0.5$ gave a deviation of 4.0\AA, which is still acceptable and only
+when the parameter values were dropped as low as $hard = 0.5$, $soft = 0.01$ was the
+5\AA\ 'threshhold' exceded.  
+
+\subsubsection{8+8 domain collision}
+
+The same approach to the larger 8-domain constructs over a series of collisions 
+ranging from a glancing blow to almost head-on collision.  The tests were repeated
+both with the domains in a continuous chain and as separate (unbonded) subunits).
+For two of the $hard$/$soft$ parameter combinations examined above, all mean RMS
+devaiations (over 64 start/final domain combinations) remained below 5\AA, however,
+some of the worst individual deviations were over 5 but almost always when the
+domains were connected in a chain.   Despite excluding the 5 amino and 5 carboxy
+terminal linking residues from the comparison, examination of these worst cases
+revealled that most of the deviation came from displacement of the untethered C-terminal
+helix as a result of shear forces during the collision.
+
+\begin{verbatim}
+----------------------------------------------------------------------------------
+        0,    50,   50,   50,  100,  // hard  :kick size = []/100
+        0,    20,   20,   20,  100,  // soft  :kick size = []/100
+
+subunit
+
+miss	min = 1.954 ave = 2.50335 max = 3.183
+clip	min = 2.082 ave = 2.72707 max = 3.441
+half	min = 2.338 ave = 3.24126 max = 4.075
+full	min = 2.959 ave = 3.94160 max = 5.076
+
+domain
+
+miss	min = 2.025 ave = 3.15143 max = 4.868
+clip	min = 2.298 ave = 3.44083 max = 5.519
+half	min = 2.243 ave = 4.08091 max = 6.746
+full	min = 2.947 ave = 4.82165 max = 8.467
+
+
+----------------------------------------------------------------------------------
+        0,   100,  100,  100,  100,  // hard  :kick size = []/100
+        0,    20,   20,   20,  100,  // soft  :kick size = []/100
+
+subunit
+
+miss	min = 1.848 ave = 2.57102 max = 3.307
+clip	min = 2.207 ave = 2.70812 max = 3.240
+half	min = 2.261 ave = 3.09951 max = 4.096
+full	min = 2.840 ave = 3.66765 max = 4.670
+
+domain
+
+miss	min = 1.850 ave = 3.14264 max = 4.838
+clip	min = 2.375 ave = 3.50274 max = 5.259
+half	min = 2.335 ave = 3.69418 max = 6.195
+full	min = 2.572 ave = 4.16718 max = 6.271
+
+----------------------------------------------------------------------------------
+\end{verbatim}

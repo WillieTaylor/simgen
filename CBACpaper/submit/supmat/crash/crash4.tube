@@ -1,0 +1,9 @@
+#NORUN
+#NOMOVE
+PARAM tube4.model
+END
+GROUP 0 2
+TRANS -50.0  -25.0   0.0
+INPUT cube3.dat
+TRANS  50.0   25.0   0.0
+INPUT cube3.dat

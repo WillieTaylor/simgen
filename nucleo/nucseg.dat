@@ -1,0 +1,6 @@
+GROUP 0 2
+	MODEL 0
+	INPUT his4sec.dat
+	MODEL 1
+	INPUT dnaseg.dat
+TER

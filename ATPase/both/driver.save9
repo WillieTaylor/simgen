@@ -1,0 +1,260 @@
+#include "sims/util.hpp"
+#include "sims/geom.hpp"
+#include "sims/cell.hpp"
+#include "sims/data.hpp"
+
+#include <GL/gl.h>
+#include <GL/glu.h>
+#include <GL/glut.h>
+
+//	Y = rotation axis, +Y -> periplasmic space, -Y -> cytoso (matrix)
+//	http://www.mrc-mbu.cam.ac.uk/projects/2245/atp-synthase
+//	viewed from F1 (cyt) rotation is anti-clockwise
+//	proton conc. is high on peri side (+Y) set by cyt2per = -1
+
+void driver ()
+{
+int	frame = Data::frame;
+Cell	*world = Cell::world;
+Cell	*A = world->child[0]; // A subunit
+Cell	*C = world->child[1]; // C ring
+Cell	*B = world->child[2]; // memBrane and H+ (as 10 groups of 10)
+Cell	*memb = B->child[0];
+Cell	**prot = new Cell*[100]; // list of ionisable residues
+Data	*model = Data::model+world->model;
+int	depth = Data::depth;
+int	total = Cell::total;
+int	run = 2000;
+//			PARAMETERS
+float	spin = 0.1;	// size of C-ring jiggle
+float	kick = 0.1;	// kick size to expel protons from membrane
+float	jump = 2.0;	// distance protons can jump to a CA
+float	skip = 0.5;	// chance of stealing a proton (FIX to inc pKa)
+float	zone = 2.5;	// half membrane thickness
+float	free = 0.5;	// chance to disassociate
+float	hout = 1.0;	// extension of H on side chain (matches Data::distH in linker())
+float	rout = 0.2;	// random addition to extended H position
+//
+int	cyt2per = -1;	// set direction of proton gradient
+int	tries = 5;	// number of attempts to get -ve GLU out of memb
+//
+int static move[100][100], stay[100];	// matrix to count transitions and vector to count time held
+int	nbags = memb->kids/2; // number of groups of protons (followed by matching dummy groups)
+int	cytH = 0, perH = 0, held = 0, ring = 0;
+float	turn, ECAng, best, safe = 0.5;
+int	before, after, loading = C->idata[0];
+int	n, nprot, allH, badH;
+Seg	axis;
+FILE	*save;
+float	pKa[26];
+	FOR(i,26) pKa[i] = 0.0;
+// R=12.48 K=10.53 Y=10.46 H=6.04 C=8.37 D=3.90 E=4.07
+// A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+//       4 5     8
+	pKa[4]=3.9; pKa[5]=4.1; pKa[8]=6.0;
+	if (loading==0) cyt2per = 0; // protons kept on their own side once loading finished
+//	Data::distH = hout;	// needs to be set if value is picked-up in linker()
+// save the A-subunit structure at the start
+	if (frame == 0) {
+		C->idata[0] = 1; // set flag for C-ring loading
+		save = fopen("save.pdb","w");
+		FOR(i,A->kids) FOR(j,A->child[i]->kids) FOR(k,A->child[i]->child[j]->kids)
+		{ Cell *res = A->child[i]->child[j]->child[k];
+			fprintf(save,"%f %f %f\n", res->xyz.x, res->xyz.y, res->xyz.z);
+		}
+		fclose(save);
+		return;
+	}
+// restore the A-subunit structure every 100th frame
+	if (frame%100 == 0) {
+		Pi(frame) NL
+		// read saved coordinates
+		save = fopen("save.pdb","r");
+		FOR(i,A->kids) FOR(j,A->child[i]->kids) FOR(k,A->child[i]->child[j]->kids)
+		{ Cell *res = A->child[i]->child[j]->child[k];
+			fscanf(save,"%f %f %f", &(res->xyz.x), &(res->xyz.y), &(res->xyz.z));
+		}
+		fclose(save);
+		// average X,Z across the ring
+		FOR(i,C->kids) FOR(j,C->child[i]->kids) FOR(k,C->child[i]->child[j]->kids)
+		{ Cell *res = C->child[i]->child[j]->child[k];
+	  	int	n = (i+4)%8;
+	  	Cell *ser = C->child[n]->child[j]->child[k];
+	  	Vec	mid = (res->xyz & ser->xyz) - C->xyz;
+			mid.y = 0.0;
+			res->xyz -= mid;
+			ser->xyz += mid;
+		}
+	}
+// kick free protons out of the membrane
+	badH = allH = 0;
+	FOR(i,nbags) {
+		memb->child[i]->xyz.x *= 0.5;
+		memb->child[i]->xyz.z *= 0.5;
+		memb->child[i+nbags]->xyz = memb->child[i]->xyz * -1.0;
+		FOR(j,memb->child[i]->kids)
+		{ Cell	*H = memb->child[i]->child[j];
+		  float mid = memb->xyz.y;
+			allH++;
+			if(H->link[0].to != 0) { held++; continue; } // do not expel
+			if(H->xyz.y < mid-zone) { cytH++; continue; }
+			if(H->xyz.y > mid+zone) { perH++; continue; }
+			if (cyt2per == 0) { // 50:50
+				if(H->xyz.y < mid) H->xyz.y -= kick;
+				if(H->xyz.y > mid) H->xyz.y += kick;
+			} 
+			if (cyt2per == 1) { // all+
+				if(H->xyz.y < mid) H->xyz.y += kick;
+				if(H->xyz.y > mid) H->xyz.y += kick;
+			} 
+			if (cyt2per == -1) { // all-
+				if(H->xyz.y < mid) H->xyz.y -= kick;
+				if(H->xyz.y > mid) H->xyz.y -= kick;
+			}
+			badH++;
+		}
+	}
+	Pi(held) Pi(cytH) Pi(perH) Pi(allH) Pi(badH) NL
+	if (badH > allH*0.1 && frame < 500) return;
+// compile list of ionisable residues (just E58 in Cring)
+	nprot = 0;
+	FOR(i,C->kids) FOR(j,C->child[i]->kids) FOR(k,C->child[i]->child[j]->kids)
+	{ Cell *res = C->child[i]->child[j]->child[k]; char aa = res->cdata[4];
+		if (aa != 'E') continue;
+		prot[nprot++] = res;
+		if(res->link[2].to != 0) ring++;
+	}
+	// first C->kids are in the C-ring
+	FOR(i,A->kids) FOR(j,A->child[i]->kids) FOR(k,A->child[i]->child[j]->kids)
+	{ Cell *res = A->child[i]->child[j]->child[k]; char aa = res->cdata[4];
+		if (aa!='E' && aa!='D' && aa!='H') continue;
+		prot[nprot++] = res;
+	}
+	FOR(i,nprot) prot[i]->idata[0] = i;
+	Pi(nprot) Pi(ring) NL
+	n = nprot+2;
+// link protons to residues in A-subunit and E58 in Cring
+	FOR(i,nprot) { Cell *res = prot[i];	// loop over ionisable residues
+		if (res->link[2].to != 0)	// the residue is linked to a proton
+		{ Cell	*h = res->link[2].to;	// h = proton currently held by res
+		  Vec	s = (res->xyz - res->sis->xyz) + (res->xyz - res->bro->xyz);
+		  float bond = hout;
+			if (((h->xyz.y < memb->xyz.y-zone)
+			  || (h->xyz.y > memb->xyz.y+zone)) && randf()<free) { // dissociate
+				res->link[2].to = h->link[0].to = 0;	// kill both links
+				if (h->xyz.y < memb->xyz.y-zone) move[i][n-1]++; // move to cyto
+				if (h->xyz.y > memb->xyz.y+zone) move[i][n-2]++; // move to peri
+				bond += jump;
+			}
+			// reset proton bond (far away if gone)
+			h->xyz = res->xyz + s.getVec(bond) + get_rand(rout);
+			continue;	// only one proton per residue
+		}
+		FOR(j,nbags) { int linked = 0;		// loops over all protons
+			FOR(k,memb->child[j]->kids)	// to see if res can catch one
+			{ Cell	*H = memb->child[j]->child[k];
+			  Cell	*rin = H->link[0].to;	// H has incoming link from a residue
+		  	  float d = H->xyz | res->xyz;
+				if (d > jump) continue;	// can't jump to current residue
+				if (rin != 0)	// the proton is linked to residue rin
+				{ int	r = rin->idata[0];	// position of rin in prot[]
+					if (rin->resn==58 && rin->cdata[4]=='E') { // link is from C-ring E58
+						if (i < C->kids) continue;	// ring can't steal from ring
+						if (loading) continue;	// no stealing from ring when loading
+					} 
+					if (randf()<skip) { // kill the incoming link (and relink H below)
+						rin->link[2].to = 0;
+					} else {
+						continue;
+					}
+					move[r][i]++;	// move of H from rin to res
+				} else { // otherwise H is picked-up from the free pool
+					if (H->xyz.y < memb->xyz.y-zone) move[n-1][i]++; // move from cyto
+					if (H->xyz.y > memb->xyz.y+zone) move[n-2][i]++; // move from peri
+				}
+				H->link[0].to = res;
+				res->link[2].to = H;
+				H->link[0].type = res->link[2].type = 16; // sets H-bond length in linker()
+				H->link[0].next = res->link[2].next = 100; // +100% = H-bond max-length
+				linked = 1;
+				break;
+			}
+			if (linked) break;
+		}
+	}
+// jiggle the C-ring and count protons on memb side
+	axis = Seg(C->endN,C->endC);
+	before = 0;
+	FOR(i,C->kids) { Cell *glu = prot[i];
+		if (angle(glu->xyz,C->xyz,A->xyz) > safe) {	// on memb side
+			if (glu->link[2].to == 0) before++; 
+		}
+	}
+	FOR(i,C->kids) { Cell *glu = prot[i]; char e,a;
+		if (angle(glu->xyz,C->xyz,A->xyz) > safe) a = '-'; else a = '_';
+		if (glu->link[2].to == 0) e = '.'; else e = '*';
+		printf("%c%c%c", a,e,a);
+	}
+	Pi(before) NL
+	if (loading) { // still loading C-ring GLUs
+		if (before) { float s = 0.01;
+			if (cyt2per==1) s = -s;
+			C->spin(axis,s); // slowly turn C-ring
+			Pt(Loading C-ring) NL
+			return;
+		} else {
+			Pt(Loaded) NL
+			C->idata[0] = 0;
+			FOR(i,n) FOR(j,n) move[i][j] = 0;
+		}
+	}
+	best = 999.9;
+	FOR(j,tries) { float bad = 0.0; // tries to get a better position
+		turn = spin*(randf()-0.5);
+		C->spin(axis,turn);
+		after = 0;
+		FOR(i,C->kids)
+		{ Cell	*glu = prot[i];
+		  float at = angle(glu->xyz,C->xyz,A->xyz);
+			if (at > safe) {     // on memb side
+				if (glu->link[2].to == 0) { // ionised
+					bad += at;
+					after++;
+				} 
+			}
+		}
+		FOR(i,C->kids) { Cell *glu = prot[i]; char e,a;
+			if (angle(glu->xyz,C->xyz,A->xyz) > safe) a = '-'; else a = '_';
+			if (glu->link[2].to == 0) e = '.'; else e = '*';
+			printf("%c%c%c", a,e,a);
+		}
+		Pi(after) Pr(bad) 
+		if (bad < best) { // keep the move
+			best = bad;
+			Pt(keep)
+		} else {	// undo the last move
+			Pt(skip)
+			C->spin(axis,-turn);
+		} NL
+		if ((after < 1) || (after < before)) {
+			// Pt(move) NL
+			break;
+		}
+	}
+// print the transitions
+	FOR(i,n) { int r; char a;
+		if (i == C->kids) NL
+		if (i == nprot) NL
+		if (i<nprot) {
+			r = prot[i]->resn; a = prot[i]->cdata[4];
+		}
+		if (i==nprot) { r = -1; a = 'p'; }
+		if (i >nprot) { r = -1; a = 'c'; }
+		printf("%3d%c  ", r,a);
+		FOR(j,n) {
+			printf("%4d", move[i][j]);
+			if (j == C->kids-1) printf("    ");
+			if (j == nprot-1) printf("    ");
+		} NL
+	} NL
+}

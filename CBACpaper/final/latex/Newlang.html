@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <META NAME="Author" CONTENT="Thomas Link">
+   <TITLE>tex2doc</TITLE>
+   <link rel="stylesheet" href="tmldoc.css" type="text/css">
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+
+<H1>
+tex2doc</H1>
+
+<H3>
+How do I adapt tex2doc for a different language?</H3>
+In order to make tex2doc deal properly with your language, you have to
+edit the macro tex2doc. (1) Search for "~~~", in order to find the appropriate
+locations in the source code. (2) Insert the proper values. (To find out
+the search patters, open the find dialog, and select paragraph, non-breaking
+space, and tabulator from the "special" menu.)
+
+<P>The construct, which has to be edited, looks like this:
+
+<P><TT>&nbsp; if [check for language1] then</TT>
+<BR><TT>&nbsp;&nbsp;&nbsp; [definitions1]</TT>
+<BR><TT>&nbsp; elseif [check for language2] then</TT>
+<BR><TT>&nbsp;&nbsp;&nbsp; [definitions2]</TT>
+<BR><TT>&nbsp; elseif [check for your language] then</TT>
+<BR><TT>&nbsp;&nbsp;&nbsp; [your definitions]</TT>
+<BR><TT>&nbsp; else</TT>
+<BR><TT>&nbsp;&nbsp;&nbsp; [alert]</TT>
+<BR><TT>&nbsp; endif</TT>
+
+<P>Thus, as an example, the following two lines:
+
+<P><TT>&nbsp; ElseIf xlanguage$ = "~~~" Then</TT>
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp; xr$ = "~~~"</TT>
+
+<P>should become - in case you write in French -
+
+<P><TT>&nbsp; ElseIf xlanguage$ = "Fran&ccedil;ais" then</TT>
+<BR><TT>&nbsp;&nbsp;&nbsp; xr$ = "^p"</TT>
+<BR><TT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ^^
+or whatever is the correct pattern.</TT>
+
+<P>In case you don't use inputenc or something similar, you might also want to edit the procedure "languageSpecificChars".
+
+<!--INC:"sig-n 0010.inc"-->
+<br>
+<br>
+<br>
+<p class="sig">
+--
+<br>
+<!--INC:"email 0010.inc"-->
+<a href="mailto:t.link@gmx.at"><!--/INC:"email 0010.inc"-->Thomas Link</a>,
+last updated <!--DATE-->25.01.2001<!--/DATE-->
+</p><!--/INC:"sig-n 0010.inc"-->
+
+</BODY>
+</HTML>

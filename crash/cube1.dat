@@ -1,0 +1,31 @@
+GROUP 0 8
+SPINX  90.0
+SPINZ -90.0
+TRANS -4.0  -4.0   4.0
+INPUT cube0.dat
+SPINX -90.0
+SPINY -90.0
+TRANS -4.0   4.0   4.0
+INPUT cube0.dat
+SPINX -90.0
+SPINY -90.0
+TRANS -4.0   4.0  -4.0
+INPUT cube0.dat
+SPINX 180.0
+TRANS -4.0  -4.0  -4.0
+INPUT cube0.dat
+SPINX 180.0
+TRANS  4.0  -4.0  -4.0
+INPUT cube0.dat
+SPINX -90.0
+SPINY  90.0
+TRANS  4.0   4.0  -4.0
+INPUT cube0.dat
+SPINX -90.0
+SPINY  90.0
+TRANS  4.0   4.0   4.0
+INPUT cube0.dat
+SPINX  90.0
+SPINZ  90.0
+TRANS  4.0  -4.0   4.0
+INPUT cube0.dat

@@ -1,0 +1,8 @@
+load super.pdb
+wireframe off
+backbone 100
+select *A
+cpk 180
+select
+colour group
+set picking monitor

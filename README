@@ -1,0 +1,12 @@
+All files required to make simgen are contained in this directory.
+The default driver (and its helpers) is an empty C++ shell and it 
+is recommended that customised driver routines are created in separate 
+directories elsewhere.
+
+The user manual is in the sub-directory doc and the API is specified
+as comments in the utility files: cell.hpp  data.hpp  geom.hpp  Mat.hpp  
+Seg.hpp  util.hpp  Vec.hpp
+
+Most test application directories have informative names and in each
+there is usually a tcsh script to run the program otherwise try:
+simgen somefile.run 

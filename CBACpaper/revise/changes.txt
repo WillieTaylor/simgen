@@ -1,0 +1,194 @@
+39c39
+< use of a bounding-box construct.  This is a box in which a group of points are contained
+---
+> use of a bounding-box construct.  This is a box in which a group of points is contained
+56c56
+< they too are elongated.   In this work, the original method based on sphere's is
+---
+> they too are elongated.   In this work, the original method based on spheres is
+87,90c87,89
+< straight section of pipe with hemi-spherical end-caps).   The use of the original box
+< registered on the coordinate frame was avoided for reasons mentioned above and without
+< this registration, any advantage is lost in calculating the overlap between arbitrarily
+< orientated rectangular boxes.
+---
+> straight section of pipe with hemi-spherical end-caps).  Both spheres and tubes have been
+> used widely in coarse-grainned modelling, with the latter being a good representation
+> for an RNA stem-loop or an \AH\ or even a general peptide \cite{VachaRet14}.
+139c138,143
+< dependent on the displacement of the children as in high speed collisions, any
+---
+> dependent on the displacement of the children as in high speed\footnote{
+> The term "speed" is used throught to refer to the step size per cycle of any
+> geometric transformation.   As the stepsize is not related to any physical
+> process, it does not have any implications for biological macromolecules.
+> }
+> collisions, any
+208c212
+< was accommodated in the refinement of ideal distances and angles.
+---
+> was accommodated in the choice of ideal distances and angles.
+18c18
+< the high-level objects are the bounding-volvumes for their children. 
+---
+> the high-level objects are the bounding-volumes for their children. 
+166c166
+< is itself recursive and id called on the children of any clashing children that it encounters. 
+---
+> is itself recursive and is called on the children of any clashing children that it encounters. 
+171c171
+< which are dealt with by the {\tt touch()} routine.i (Box 3).
+---
+> which are dealt with by the {\tt touch()} routine (Box 3).
+423c423
+< The error is typically less than 0.001\%.
+---
+> The error is typically less than 0.1\%.
+0a1,46
+> \section{Bonds and links}
+> 
+> The maintenance of bond and link lengths is very similar and the two routines,
+> \TT{bonder} and \TT{linker}, that implement this task will be considered together.
+> Both recursively traverse the object tree looking for things to fix.
+> 
+> \subsection{\TT{bonder}}
+> 
+> \subsubsection{Bond lengths}
+> 
+> The \TT{bonder} simply checks if an object has any assigned bonds and if so, uses
+> the utility {\tt part2cells()} to push them towards their assigned bond length.
+> 
+> \subsubsection{Nucleic acid exceptions}
+> 
+> Exceptions need to be made when bonding tubes in nucleic acids, which occur both at
+> the secondary structure level as basepairs and the domain level
+> as segments of double helix. 
+> 
+> For basepairs, if these are part of a double helix, their 'bond-length' is the distance
+> between their mid-points (object centre) which is refined to an ideal base-stacking separation.  
+> Outside a base-pair, say in a loop region, the 'secondary structure', like a loop in a protein,
+> can contain multiple nucleotides and no bond length is refined.
+> 
+> At the domain level, double-stranded DNA segments will always be bonded end-to-end
+> at a specific distance that allows the helix to run continuously from one segment to
+> the next.   On the other hand, when the segment is an RNA stem-loop, the chain can enter
+> and exit the same end of the tube or, with an insertion, even through the side.
+> 
+> 
+> \subsection{\TT{linker}}
+> 
+> \subsubsection{Breaking links}
+> 
+> The \TT{linker} follows the same basic outline as the \TT{bonder} but with the main
+> difference that links can be made and broken during the simulation.   The dynamic creation
+> of links is not a built-in feature of \NAME\ and must be provided through the user-supplied
+> \TT{driver} routine.   However, if a link becomes over stretched, it is automatically destroyed in
+> the \TT{linker}.    The default length of a link is the bump diameter and the default extension
+> is 50\%, beyond which the link breaks.
+> 
+> \subsubsection{Preset link lengths}
+> 
+> Local links are automatically created for standard secondary structures,  not only between the H-bonded
+> connections in the \AH, i---i+3 and i---i+4, but also between the i-1---i+1 separation along a \Bs.
+> However, the non-local links between strands in a \BS\ must be user defined.
+17c17
+< motion to propel two identical objects into each other.   To avoid a direct "head-on"
+---
+> displacement to propel two identical objects into each other.   To avoid a direct "head-on"
+25c25,30
+< To investigate the the contribution of the soft repulsion component of higher level objects,
+---
+> The model was initially tested with only a hard repulsion at the atomic level.
+> However, without the protective shell of their parent, the bonds between atoms were flexible enough 
+> to allow bonded pairs to transiently pass through each other resulting 
+> in interpenetrating chains, even though these still preserved their steric and average bond lengths.
+> 
+> To investigate the contribution of the soft repulsion component of higher level objects,
+116c121
+< Collisions between these constructs was engineered as above with the coordinates
+---
+> Collisions between these constructs were engineered as above, with the coordinates
+126c131
+< for the equivalent sized "cubic" chains of the previous subsection ($hard = 1.0$, $soft = 0.1$).
+---
+> for the equivalent sized Hilbert chains of the previous subsection ($hard = 1.0$, $soft = 0.1$).
+11c11
+< mutations.  (See \cite{TaylorWRet13} for a review).
+---
+> mutations.  (See ref.\cite{TaylorWRet13} for a review).
+43,45d42
+< The method was also applied to a protein of unknown structure, FlhA, which is
+< a component in the type-III secretion system and thought to form a ring
+< of nine proteins (\Fig{flhA-model}).
+47c44
+< As an exercise in structure prediction, the helices were allowed to move
+---
+> As an exercise in structure refinement, the helices were allowed to move
+55a53,56
+> The method was also applied to a protein of unknown structure, FlhA: which is
+> a core component in the bacterial flagellum motor (in its type-III secretion 
+> sub-system) and thought to form a ring of nine proteins (\Fig{flhA-model}).
+> 
+94c95
+< $b$) The highest scoring rhodopsin model is superposed on the native structure.
+---
+> $b$) The highest scoring rhodopsin model is superposed on the native structure (PDB code {\tt 1GZM}).
+106c107
+< prediction methods produce a "clover-leaf" structure reminiscent of tRNA, and like that molecule, its
+---
+> prediction methods \cite{HofackerIL03} produce a "clover-leaf" structure reminiscent of tRNA, and like that molecule, its
+197a199,201
+> The blue dots mark models that started from the 'default' secondary structure layout
+> (Figure 6a) and the red dots started from the alternative arrangement with two stemloops
+> (top and right) in swapped positions.
+2a3,10
+> The behaviour of the current method has been investigated using two distinct
+> approaches: in the examples involving collisions, a constant driving displacement
+> was applied to a single high-level object (to force it to make contact with 
+> another object), by contrast,  in the examples involving constraint satisfaction the 
+> displacements were instead applied to the lowest level objects ("atoms").  In the first
+> case, the response of the lower level objects to maintain structural integrity was monitored
+> whereas in the second, the resulting rearrangement of the higher levels objects was of interest.
+> 
+57c65
+< a binding event would stil rely on external knowledge of the residues involved.
+---
+> a binding event would still rely on external knowledge of the residues involved.
+79c87
+< be transfered to another assembly or a large multi-domain chain may be cleaved.
+---
+> be transferred to another assembly or a large multi-domain chain may be cleaved.
+82a91,123
+> 
+> \subsection{Relationship to other methods}
+> 
+> Given a model in which all the constraints have been chosen well to avoid bond
+> or bump violations at all levels, then in the absence of any user applied displacements,
+> the behaviour of the current method is to do nothing.
+> It is left entirely up to the user how things should move, which is done by implementing
+> custom code in what is called the "driver" routine.    This code can be either very
+> simple, such as the few lines of code needed to implement the collision displacement or
+> quite complicated such as the code to apply the distance constraints described in the
+> Results section.
+> 
+> Extrapolating this progression, the constraints could be applied in the form of a potential and
+> indeed a potential could even be applied to many pairs of atoms \cite{PerioleXet09}.   The next
+> obvious step would be to implement full molecular dynamics, Lagrangian mechanics or Monte Carlo.
+> However, the problem with implementing anything complicated in the driver routine is that at some
+> point, the current method will start to act on the (common) coordinates and if the
+> driver code requires consistency in terms of distances and derived potentials, forces and
+> velocities, then a multitude of problems will arise.
+> 
+> The simplest approach to this problem is to attach a warning notice stating that \NAME\ cannot
+> be used in combination with any method that requires global internal consistency.   The only
+> route that might avoid this incompatibility would be through a more stochastic approach
+> in which the displacements made at all levels are treated as a (semi) random Monte Carlo
+> move of the system.
+> A second path to resolve the problem might be through a variation of Gaussian elastic
+> networks, However, elastic
+> networks require a fixed topology that cannot be expected to remain intact across the
+> large (driven) displacements envisaged for the current method.
+> 
+> These possible developments will be reconsidered at a later time as it is currently
+> unclear, not only how a consistent potential could be applied but also how potentials
+> on different levels should interact.

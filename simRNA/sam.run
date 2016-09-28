@@ -1,0 +1,24 @@
+#NORUN
+#NOMOVE
+NOVIEW
+SCALE 0.15
+PARAM rnastem.model
+END
+GROUP 0 3
+TRANS -30 0 0
+INPUT stem1.dat
+TRANS 0 30 0
+INPUT stem2.dat
+TRANS 30 0 0
+INPUT loops.dat
+REBOND pdbid   9 10
+REBOND pdbid  13 14
+REBOND pdbid  20 21
+REBOND pdbid  28 29
+REBOND pdbid  36 37
+REBOND pdbid  61 62
+REBOND pdbid  66 67
+RETERM pdbid   1 94
+LINKS pdbid links.dat
+#PRINT
+END

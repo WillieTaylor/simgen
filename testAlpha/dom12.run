@@ -1,0 +1,16 @@
+NORUN
+NOMOVE
+SCALE 0.158 6.33  # scalein = .6/3.8, scaleout = 3.8/.6
+PARAM unit0.model
+END
+GROUP 0 2
+INPUT tail.dom1.dat
+INPUT tail.dom2.dat
+ALPHA atomid
+Hbond 10 76 5 3
+Hbond 10 77 5 4
+Hbond 11 77 5 3
+Hbond 11 78 5 4
+Hbond 12 78 5 3
+Hbond 12 79 5 4
+END

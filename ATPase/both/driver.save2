@@ -1,0 +1,156 @@
+#include "sims/util.hpp"
+#include "sims/geom.hpp"
+#include "sims/cell.hpp"
+#include "sims/data.hpp"
+
+#include <GL/gl.h>
+#include <GL/glu.h>
+#include <GL/glut.h>
+
+void driver ()
+{
+int	frame = Data::frame;
+Cell	*world = Cell::world;
+Cell	*A = world->child[0]; // A subunit
+Cell	*C = world->child[1]; // C ring
+Cell	*B = world->child[2]; // memBrane and H+ (as 50 groups of 10)
+Cell	*memb = B->child[0];
+Cell	**prot = new Cell*[100];
+Data	*model = Data::model+world->model;
+int	depth = Data::depth;
+int	total = Cell::total;
+int	run = 2000;
+float	spin = 0.2;
+float	kick = 0.1;
+float	jump = 2.0;
+int	nbags = memb->kids/2; // number of groups of protons (followed by matching dummy groups)
+int	cytH = 0, lumH = 0, held = 0, ring = 0;
+float	turn;
+int	before, after;
+int	nprot, allH, badH;
+FILE	*save;
+float	pKa[26];
+	FOR(i,26) pKa[i] = 0.0;
+// R=12.48 K=10.53 Y=10.46 H=6.04 C=8.37 D=3.90 E=4.07
+// A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+//       4 5     8
+	pKa[4]=3.9; pKa[5]=4.1; pKa[8]=6.0;
+// save the A-subunit structure at the start
+	if (frame == 0) {
+		C->idata[0] = 0; // set flag for C-ring loading
+		save = fopen("save.pdb","w");
+		FOR(i,A->kids) FOR(j,A->child[i]->kids) FOR(k,A->child[i]->child[j]->kids)
+		{ Cell *res = A->child[i]->child[j]->child[k];
+			fprintf(save,"%f %f %f\n", res->xyz.x, res->xyz.y, res->xyz.z);
+		}
+		fclose(save);
+		return;
+	}
+// restore the A-subunit structure every 100th frame
+	if (frame%100 == 0) {
+		Pi(frame) NL
+		save = fopen("save.pdb","r");
+		FOR(i,A->kids) FOR(j,A->child[i]->kids) FOR(k,A->child[i]->child[j]->kids)
+		{ Cell *res = A->child[i]->child[j]->child[k]; char aa = res->cdata[4];
+			fscanf(save,"%f %f %f", &(res->xyz.x), &(res->xyz.y), &(res->xyz.z));
+		}
+		fclose(save);
+	}
+// kick free protons out of the membrane
+	badH = allH = 0;
+	FOR(i,nbags) {
+		memb->child[i]->xyz.x *= 0.5;
+		memb->child[i]->xyz.z *= 0.5;
+		memb->child[i+nbags]->xyz = memb->child[i]->xyz * -1.0;
+		FOR(j,memb->child[i]->kids)
+		{ Cell	*H = memb->child[i]->child[j];
+			allH++;
+			if(H->link[0].to != 0) { held++; continue; } // do not expel
+			if(H->xyz.y < memb->xyz.y-3) { cytH++; continue; }
+			if(H->xyz.y > memb->xyz.y+3) { lumH++; continue; }
+			if(H->xyz.y < memb->xyz.y) H->xyz.y -= kick;
+			if(H->xyz.y > memb->xyz.y) H->xyz.y += kick;
+			badH++;
+		}
+	}
+	Pi(held) Pi(cytH) Pi(lumH) Pi(allH) Pi(badH) NL
+	if (badH > allH*0.1 && frame < 500) return;
+// compile list of ionisable residues (just E58 in Cring)
+	nprot = 0;
+	FOR(i,C->kids) FOR(j,C->child[i]->kids) FOR(k,C->child[i]->child[j]->kids)
+	{ Cell *res = C->child[i]->child[j]->child[k]; char aa = res->cdata[4];
+		if (aa != 'E') continue;
+		prot[nprot++] = res;
+		if(res->link[2].to != 0) ring++;
+	}
+	// first C->kids are in the C-ring
+	FOR(i,A->kids) FOR(j,A->child[i]->kids) FOR(k,A->child[i]->child[j]->kids)
+	{ Cell *res = A->child[i]->child[j]->child[k]; char aa = res->cdata[4];
+		if (aa!='E' && aa!='D' && aa!='H') continue;
+		prot[nprot++] = res;
+	}
+	Pi(nprot) Pi(ring) NL
+// link protons to residues in A-subunit and E58 in Cring
+	FOR(i,nprot) { Cell *res = prot[i];	// loop over ionisable residues
+		if (res->link[2].to != 0)	// the residue is linked to a proton
+		{ Cell	*p = res->link[2].to;	// reset proton bond
+		  Vec	s = (res->xyz - res->sis->xyz) + (res->xyz - res->bro->xyz);
+			p->xyz = res->xyz + s.getVec(Data::distH);
+			continue;		// only one proton per residue
+		}
+		FOR(j,nbags) { int linked = 0;		// loops over
+			FOR(k,memb->child[j]->kids)	// all protons
+			{ Cell	*H = memb->child[j]->child[k];
+		  	  float d = H->xyz | res->xyz;
+				if (d > jump) continue;	// can't jump to current residue
+				if (H->link[0].to != 0) {  // the proton is linked to a residue
+					if (i < C->kids) { // C-ring GLU
+						if (H->link[0].to->resn == res->resn) continue;  // ring can't steal from ring
+					} 
+					if (randf()<0.5) { // kill the incoming link (and relink H below)
+						H->link[0].to->link[2].to = 0;
+					} else {
+						continue;
+					}
+				}
+				//Pi(res->resn) Pc(res->cdata[4]) Pr(d) NL
+				H->link[0].to = res;
+				res->link[2].to = H;
+				H->link[0].type = res->link[2].type = 16; // sets H-bond length in linker()
+				H->link[0].next = res->link[2].next = 100;//50; // +50% = H-bond max-length
+				linked = 1;
+				break;
+			}
+			if (linked) break;
+		}
+	}
+//exit(1);	
+// jiggle the C-ring
+	before = 0;
+	FOR(i,C->kids) { Cell *glu = prot[i];
+		if (glu->xyz.x > C->xyz.x) {	// on memb side
+			if (glu->link[2].to == 0) before++; 
+		}
+	}
+	if (before > 0 && C->idata[0] == 0) { // still loading C-ring GLUs
+		C->spin(C->endN,C->endC,0.01);
+		Pt(Loading C-ring) NL
+		return;
+	}
+	if (C->idata[0] == 0) { // flag C-ring loaded
+		Pt(Loaded) NL
+		C->idata[0] = 1;
+	}
+	turn = spin*(randf()-0.5);
+	C->spin(C->endN,C->endC,turn);
+	after = 0;
+	FOR(i,C->kids) { Cell *glu = prot[i];
+		if (glu->xyz.x > C->xyz.x) {	// on memb side
+			if (glu->link[2].to == 0) after++; 
+		}
+	}
+	Pi(before) Pi(after) NL
+	if (after > before) {	// undo last turn
+		C->spin(C->endN,C->endC,-turn);
+	}
+}

@@ -1,0 +1,190 @@
+\section{Overview}
+
+\subsection{Introduction}
+
+Molecular simulation methods are increasingly being applied to ever larger systems.
+However, given finite computational resources, there is inevitably a limit to the
+size of the system that can be simulated in a reasonable time.   Approaches to 
+circumvent this limitation generally follow the original approach of Levitt and
+reduce the number of simulated particles by combining groups of atoms, such as an
+amino acid side-chain, into a single pseudo-atom with a spherical radius that
+reflects the volume of the combined atoms.
+This coarse-grained approach suffers from the problem that as the number of combined
+atoms increases in number, so their representation becomes less realistic.  Taken
+to an extreme degree, if a protein is represented by a single sphere, then all 
+the details of its structure become hidden.  
+
+In this work, I describe a development of an earlier algorithm for collision 
+detection between groups of multiple points into a general method that allows
+points (atoms) to be grouped into a variety of shapes but still retaining the 
+property that the interaction (or collision) of the higher-level objects is based
+on the interaction of their component atoms.
+
+\subsection{Hierarchic collision detection}
+
+Fast collision detection in interactive computer game simulations is enabled by the
+use of a bounding-box construct.  This is a box in which a group of points are contained
+and the calculation of the interactions between points in different boxes is not
+evaluated until their boxes overlap.    This approach is similar to, but distinct from,
+the use of neighbour-lists in molecular dynamics (MD).   In general, the bounding
+box can be any shape but should, ideally have a simple shape to allow for fast
+overlap calculation.    The advantage of a box that is aligned with the coordinate
+frame is that only X,Y,Z values need be compared, without the more costly calculation
+of a 3D distance. Unfortunately, unlike objects in computer games, in the molecular
+world the dominant orientation dictated by gravity is absent so a construct based
+on the "world" coordinate frame is less relevant.
+
+Previously, this approach was used to speed collision detection
+between atoms using a simple spherical "box" but when dealing with non-spherical objects,
+such as alpha-helices of nucleic acid segments, a sphere is not an ideal shape and
+when made large enough to enclose an elongated object many other objects can be
+brought into the calculation even when they are far from interacting, especially if
+they too are elongated.   In this work, the original method based on sphere's is
+extended to a wider variety of shapes and into a generalised hierarchy in which the
+boxes themselves can be assigned different collision properties at any level in the
+hierarchy. 
+
+For example; attributing a box object with hard-shell collision behaviour is equivalent to
+ignoring all their internal components when two objects collide.    If this absolute
+degree of repulsion is softened, then the objects can now partly interpenetrate,
+allowing their internal components to come into contact, with their own collision
+properties contributing to the interaction.   If the high-level objects do not
+repel at all, then all repulsion will be determined by the structure and properties of
+the internal components.
+
+Through this approach, the coarse-grained representation at the high-level does not
+mask the details of the interaction at the lower level, however, it is still being
+used to save computation time, especially where it retains a good shape match to the
+interacting surface of its components.
+
+
+\section{Model specification}
+
+\subsection{Object descriptions}
+ 
+The choice of shapes for the higher level objects (or containers) is, in principle, not
+limited but simple shapes have been chosen that reflect those encountered in biomolecular
+models.   These include a sphere, which can be generalised as an oblate or prolate ellipsoid
+(but not scalene, as will be discussed below) and a tube (or more precisely, a fixed-length
+straight section of pipe with hemi-spherical end-caps).   The use of the original box
+registered on the coordinate frame was avoided for reasons mentioned above and without
+this registration, the overlap between arbitraily orientated boxes are are not so simple.
+
+Objects at any level can adopt any mix of these basic shapes which can be different 
+sizes and differing degrees of eccentricity for ellipsoids (from "cigar" to "flying 
+saucer") and tubes can have differing length:radius ratios (from "coin" to "pencil").
+
+For each of these objects and their pairwise interactions, it is necessary to have 
+a fast algorithm to compute their surface and the point at which their surfaces
+make contact.   For spheres, both these are trivial and between fixed-length straight
+tubes, both with themselves and spheres, the calculations require only slightly more
+"book-keeping".    However, the interaction of ellipsoids is less simple and an analytic
+solution for the contact-normal between two ellipsoids is not known nnd its numerical
+solution is far from trivial.    Although it is slightly simpler for non-scalene ellipsoids,
+an exact solution was passed over in favour of a fast iterative heuristic.  
+
+\subsection{Coupling the levels}
+
+It would be of little use if objects were to wander outside their container as their
+interactions would not be detected until their containers eventually made contact.
+Although this might be avoided or reduced by having a large container, for computational
+efficiency, it is better if the container maintains a close fit to its contents.
+
+The task of ensuring a good match between the parent container and its enclosed
+children was obtained it two main ways: firstly, by maintaining the centre of the
+parent container at the centroid of its children and secondly, by applying any
+displacement or rotation of the parent automatically to all its children and recursively
+to any children that they also contain.   However, while these two conditions serve
+to synchronise the motion between levels, they do not prevent the escape of children
+through isotropic diffusion.   This was tackled directly by applying a corrective push
+to return any wayward children back into the parental fold.   With a few minor elaborations
+described below, these couplings constitute the only direct connection between levels in the
+hierarchy of objects as no collisions are possible between objects at different levels.
+
+Despite their simplicity, these couplings are sufficient to generate appropriate
+behaviour during collisions.   For example; if at one extreme, the parent shapes interact
+as hard surfaces then in a collision, all their contents will move with them during
+recoil.   At the other extreme, if the parents have no repulsion but their children do,
+then the parent containers will interpenetrate, allowing collisions to occur between
+the children which will repel each other and as a result, their centroids will 
+separate with the centres of their parents tracking this displacement.   In the intermediate
+situation, where the parents retain some repulsive behaviour, their inter-penetration
+will be reduced like the collision of two soft bodies but retaining the hard-shell
+repulsion between children.   
+
+An option was added to exaggerate this "current-in-jelly" collision model by making
+the soft parental repulsion dependent on the number of colliding children.   This
+allows two parental containers to pass through each other undeflected until their
+children clash: at which point the parental repulsion becomes active and guides the
+two families of points apart before extensive interaction occurs between the 
+children.   Such behaviour prevents the separation of the parents being completely
+dependent on the displacement of the children as in high speed collisions, any
+internal structure within the children can be disrupted before separation is attained.
+
+A further modification was introduced to deal with the possible situation where
+two families of points have collided and overlapped to such an extent that there is no
+dominant direction of separation provided by the children.   To avoid this family
+grid-lock, children with different parents were not repelled along their contact
+normal but each was given an additional vectorial component back towards their
+parental centre.
+
+\subsection{Parental realignment}
+
+The way in which parents track their children was described above only in terms of
+translation, but for objects other that the sphere, a rotational realignment must also
+be considered.   Any parental rotation is automatically communicated to its children but
+a rotation of the children, either caused randomly or by a push or pull on a group of
+bonded children, does not get communicated up to the parent in the same way.
+
+However, for both the ellipsoid and tube, there is a unique axis of symmetry and this can
+be recalculated from the configuration of the children.  If the children are bonded
+in a chain then the axis can be simply reset by considering a small group of position
+around the termini (or jointly the complementary 5\',3\' pairs in double-stranded
+nucleic acids).   More generally, the axis can be recalculated from the moments
+of inertia of the point set, irrespective of their connectivity.
+This computationally more expensive calculation was made much less frequently
+compared to the positional tracking up-date. 
+
+\section{Shape correspondance to molecular objects}
+
+Although the mapping of the objects described above to molecular substructures is quite
+arbitrary and could be divised "from scratch" with each application, there are some
+natural associations and in the program that implements the methods (called \NAME),
+the construction of these have been facilitated by specialised routines that parse
+the input stream. (See \cite{} for an outline).
+
+\subsection{Proteins}
+
+The "atomic" level for protein structure is assumed to be the chain constructed on
+consecutive \CA\ positions.   By default, the atomic level is always a hard-sphere
+and in the internal coordinate representation of 0.6 units to 3.8\AA\ (the \CA--\CA\
+'bond' distance), the bump-radius is set to 3 which is the closest approach distance 
+between positions i and i+2.   Bonded positions (i, i+1) do not bump.  
+
+The natural object to represent secondary structure elements is a tube.   Preset
+length:radius ratios are adopted for alpha, beta and coil structures with the ratio
+determined by the axial displacement per residue for each secondary structure which
+is 1.5 and 3.0 for alpha and beta, respectivefully.   Given the more irregular nature
+of the coil regions, an arbitrary value of 0.5 was used but the coil residues were
+only weakly constrained to keep within this (short) tube.
+
+The domain level of structure is best represented by an ellipsoid.   Although the
+average domain shape is a scalene ellipsoid (semiaxes A$\ne$B$\ne$C), the program picks
+the closest symmetric prolate ellipsoid (A$\ne$B=C) or oblate ellipsoid (A=B$\ne$C).
+
+The overall protein envelope is again generally ellipsoidal, but this and higher
+level (quaternary) assemblies are best determined on an individual basis.
+
+\subsection{Nucleic acids}
+
+The atomic level representation for DNA and RNA was taken as the phosphate atom.
+
+In double stranded RNA and DNA it is desirable to have base-paired phosphates
+move as a linked entity and this was achieved by enclosing them at either end of
+a tube.  As well as linking the phosphates, the tube provides a volume to mimic
+the bulk lost with the (unrepresented) nucleotide bases.
+
+Segments of base-pairred phosphate ladders are again best represented as a tube
+which is a good model for the hairpins found in RNA but to represent an extended
+chain of DNA, a succession of segments was used that allowed the double-helix
+of the phosphate backbone to progress uninterupted from one to the next.

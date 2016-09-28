@@ -1,0 +1,315 @@
+\section{Implementation}
+
+\subsection{Overview}
+
+As outlined in the introduction, the nature of macromolecular
+structure data is clearly hierarchic so it is natural to turn to a
+hierarchic data structure to capture it.  With a view to generality,
+it was our aim that the structure of each unit in the hierarchy at 
+any level should be identical with the distinction between levels
+being made only through externally specified (user) parameters.
+The most fundamental aspects to be specified include the shape of
+the unit, its linkage to other units (such as whether it is in a
+chain or multiply bonded) and how units interact with each other.
+For ease of description, a unit contained in a higher level unit
+will be called its "child" with the higher level referred to as
+the "parent" of the lower level unit.   Units with the same parent
+are therefore "siblings" and if they form a chain, are designated
+"sister" (preceeding) and "brother" (following).   Anthropomorphic
+terms based on family relationships will be used through.
+
+Interactions can be distinguished as inter- and intra-level.
+Within a level (intra) these will either be repulsive (active for
+a pair of units in collision) or attractive (active between a
+bonded pair).  However, there are no bonds between levels
+(unless individually specified by the user) and no bumps between
+levels.  Inter-level interaction consists only of coordination of
+motion and containment.  Coordinated movement means that when a parent
+moves, all its children move too, which by implication, propagates
+down through all successive generations.  In the opposite direction,
+the centroid of the children determines the position of the parent. 
+This relationship also implies indirect interaction between the 
+levels so that when children in different families collide then
+their parents will also experience a lesser repulsion.
+Containment was implemented as a simple kick-back to any children
+that had 'strayed' beyond the shape boundary of their parent.
+
+The motion of each unit is purely random with a fixed step-size
+defined in the user-specified parameter file.  Every move is
+accepted whether it violates bond geometry of leads to collisions
+\cite{KatsimitsouliaZet10a}.
+Clearly this would lead to a degradation in the molecular structure
+so independently of this imposed motion, the bond lengths and local
+chain geometry (if there is a chain) are continually refined towards
+their initial configuration.  Similarly, units in collision are
+also corrected.   All these processes run concurrently (implemented
+as separate threads) and in addition a user specified process
+also runs in parallel in which the directed elements of the model
+are specified.   All of these processes operate on a single
+representation of the coordinates so care has been taken to ensure
+that undefined states do not arise in one process that would 
+disrupt another.  In general, this can be avoided with each 
+process working on a temporary copy of the coordinates it needs
+then writing these in one step back into the structure.
+
+The overall structure of the implementation is shown in Figure 1 along
+with the names of the processes that will be referred to below.
+The two processes that maintain the integrity of the molecular structure
+are the collision detection and correction process and the process that
+maintains the specified links in the chain: respectively, called the 
+{\tt bumper} and the {\tt linker} which will be considered first.
+
+\begin{figure}
+\centering
+\epsfxsize=300pt \epsfbox{figs/control.eps}
+\caption{
+\label{Fig:control}
+The structure of the program is viewed as independent processes acting
+on a single common {\tt hierarchic data structure}. 
+The {\tt mover} routine gives every object a random displacement. 
+The {\tt linker} routine maintains bonded distances and cross-links. 
+The {\tt keeper} routine restrains children to stay inside their parents.
+The {\tt bumper} routine detects collisions and corrects steric violations.
+The {\tt driver} is a user supplied routine that implements the application
+specific aspects of the dynamics.   Each routine is independent and runs
+as a parallel process (threads) interacting only with the common data.
+}
+\end{figure}
+
+\subsection{Steric exclusion}
+
+It is intended that the implementation should be applied to very large
+systems so any collision detection based on a full pairwise algorithm
+would be impractical.  This is commonly avoided in molecular (and other)
+dynamics programs through the use of a neighbour list in which each atom
+maintains a list of its current neighbours and checks only these for
+collision.  This has the unavoidable problem that the list must be
+revised periodically.   We adopted a similar approach except that we
+used the hierarchic structure of the data to provide built-in neighbour
+lists where any unit only checks its siblings for collisions.  As each
+family is usually in the order of 10--100 units, this would not be a
+large task to compute in a pairwise manner, however, we use a faster
+approach based on ranked lists of units that are maintained for each
+dimension (X,Y,Z).   As sorting avoids quadratic operations in the
+number of objects, this is much faster for large families \cite{TaylorWRet10a}.
+
+When two units are in collision, they are repelled only if they have no
+children.  Again a single (user specified) kick-back step is applied
+equally to each unit along the line connecting their centres.
+If the units have children, then collisions are found between their
+joint families within a restricted range along the line connecting the
+two parent centres.  If there are no grandchildren, repulsion is again
+implemented along the line connecting their two centres, otherwise the
+process is repeated at each lower level until the lowest atomic\footnote{
+The term "atomic" only means the lowest level in the 
+hierarchy, which in the protein applications discussed, is the
+residue level (based on the \CA\ position).}
+level is reached.
+
+As mentioned above, parents of different families will automatically
+adjust their position indirectly to the repulsion between their families
+as the centroid of the children will move slightly apart.   This is 
+often a small effect, and before it becomes significant, the children 
+can become bunched at the collision interface which has the reverse
+effect of bringing the parents (and hence their children) even closer
+together.   To avoid this, on the return path from the traversal of the
+family hierarchy (ie: revisiting the parents of the colliding children),
+the parents themselves are given a small direct displacement proportional
+to the number of their children that were in collision.   If only the 
+positions of the atomic level units were observed, this would have the
+appearance of a repulsive 'field'  as there would seem to be "action
+at a distance" across a family.  Alternatively it can be imagined that
+the children are embedded in a soft parental jelly-like matrix.
+Computationally the approach means that in any collision at a high
+level, there will be fewer low-level collisions generated which saves
+on computational expense.
+
+This approach to the treatment of collisions has an additional effect
+in that it is relatively insensitive to the shape of the colliding
+objects, which in our implementation can be spheres,
+ellipsoids or tubes (discussed in more detail below).  If we assume
+that the atomic level consists of spheres, then different shapes at 
+higher levels are primarily defined by the distribution of their
+children within them which in turn is determined by the shape within
+which the family is confined.  The only discrepancy comes through
+the point at which units at the parental level detect collision as,
+for computational simplicity, this is kept as an isotropic test at the
+radius of their (user defined) bumping sphere.   Objects that are
+long-thin tubes or extremely prolate ellipsoids which are fully contained
+in a bumping sphere can therefore be considered in collision before
+any of their family members come in contact.  At worst, however, this
+is just a slight waste of computer time as the count of colliding
+children will be zero and the parents will not react.
+
+\subsection{Polymers and Cross-linking}
+
+\subsubsection{Specifying chain connectivity}
+
+Unless liquids are bring modelled, the links between units (which are not
+distinguished from bonds) are the components that impart greatest structure.
+For biological polymers, links between just adjacent units along a chain,
+combined with steric exclusion, are sufficient to define a basic model. However,
+even this, apparently simple, imposition of structure leads to complications
+in a hierarchic model.  If the atomic level is a linear chain, then so too
+are all higher levels but this is not so if each atomic family forms a separate
+or a circular chain.  Then higher levels can be unlinked (eg; a liquid of cyclic
+peptides \cite{TaylorWRet11a}) or otherwise linked in their own way.  The linkage polymer state of
+each level can be specified by the user independently but chain interdependencies
+are checked internally and imposed by the program.
+
+The structural hierarchy (family structure) is not determined by chain
+connectivity but should be based on groups of units that will tend to move
+together as they are all acted upon by their parent's transform operations.
+At the lower level, such groupings will typically consist of consecutive 
+units along a chain (such as an \AH), however, at the domain level and
+secondary structure level for RNA, families of units will also be composed of
+sequentially discontinuous segments which are pre-calculated automatically \cite{TaylorWR99b}.   
+Computationally, this requires some
+book-keeping to keep note of which members are linked across families.  To
+facilitate this, each unit holds a record of its preceding unit, referred to
+as its "sister", and its following unit, referred to as its "brother"; both
+of which may specify any unit in any family at the same level.  Together,
+the sisters and brothers constitute two linked-lists, with brothers running
+from the start of the chain to the end and sister in the opposite direction.
+
+As chain connectivity is not restricted by family groupings, its path at 
+the next higher level is not necessarily linear and can be branched.  This
+means that each unit may have more than one brother or sister which is
+equivalent to branches in the chain in both directions.  In general, this
+specifies a network and to deal with the associated "book-keeping", each
+unit holds a stack of its brothers and sisters.   Following a chain is therefore
+not simple and when listing a chain in "sequential order", the lists of brothers
+and sisters are followed recursively from any given starting unit.
+
+\subsubsection{Inter-chain cross-links}
+
+Polymer chain links are such a common feature of biological macromolecules that
+the capacity to encode them was included as a general feature in the data structure
+of each unit.   Inter-chain cross-links, which are less ubiquitous, were allocated
+only as requested by the user in the data file that specifies the model.  For any
+level, a fixed number of links could be specified, not all of which need necessarily
+be used.   If no linking capacity is specified then computer memory is not
+allocated.
+
+Although links can be individually specified, some automated features were 
+incorporated to ease the burden of assigning the local cross-links associated with
+secondary structure, both in proteins and RNA.  For proteins, two types of secondary
+structure can be defined: the \AH\ and \BS.   The former is purely local and two
+links were automatically set to the relative chain positions +4 and -3 of the 
+ideal length found in proteins.  Similarly, two local links were made along a \Bs\
+to the +2 and -2 positions.   However, each strand in a sheet makes non-local (hydrogen-bonded)
+links which can be specified by data provided in the coordinate input specification.
+Again, these links are automatically generated by a separate program that calculates the
+definition of secondary structures \cite{TaylorWR01a}.    Similarly, for RNA, the base-pairings are
+pre-calculated by a separate program \cite{HofackerIL03}.
+
+At a higher level, links between secondary structures can be allocated within a
+given range of interaction.   Unlike the secondary structures which are pre-calculated,
+these links are computed as part of the data input process.
+
+\subsection{Geometric regularisation}
+
+Steric exclusion combined with the range of linkage described above can generate a
+relatively stable structure.   However, given the background of "thermal" noise generated by {\tt mover}, 
+any less constrained parts of the structure will be free to diverge from their starting
+configuration under the given distance constraints.  Typically, this involves twisting
+and shearing that can generate large motions with little violation of the specified
+distances, which in principle, cannot constrain chirality.  A general mechanism,
+based only on local angles and distances was provided to reduce these distortions
+and was applied equally to all levels that form a chain.
+
+In a chain segment of five units (designated: b2,b1,c0,a1,a2), six distances were
+recorded from the starting configuration in the upper half of the matrix of pairwise
+distances excluding adjacent units.  Three angles were also recored as b1-c0-a1 and
+the torsion angles around b1-c0 and c0-a1.   These local distances were continually
+refined as were the angles.  Distances can be regularised with little disruption,
+however, refining torsion angles can sometimes lead to an error propagation
+with dramatic effects.  To limit the potential for this the torsion angles were
+dialled-up exactly to generate new positions for b2 (b2') and a2 (a2').   These were
+used to form a basis-set of unit length vectors along: $x = a2'-b2', y = c0-(a2'+b2')/2$,
+with $z$ mutually orthogonal.   Starting from the centroid of the five points, the 
+coefficients of an equivalent basis-set defined on the original positions were applied
+to the new basis-set to generate the new coordinate positions.  The result is a
+compromise between angle and position that remains stable over repeated application.
+
+Although only local information is used, its application over all levels leads to a
+global effect and indeed is sufficient by itself to recapitulate a large structure.
+As the procedure was designed to correct defects caused by the addition of random
+motion (by {\tt mover}), it was not implemented as an independent
+parallel process but included in {\tt mover} and applied after the coordinates had been 
+displaced, so keeping a balance between disruption and correction.  A final feature
+was included to allow for the necessary requirement that in a dynamic model, the
+starting configuration of the structure should not be exclusively maintained.  This
+was accommodated by periodically shifting the target distances and angles towards
+those found in the current configuration.   The overall effect of this procedure is
+to provide a buffering effect against random motion and is similar to giving
+rigidity to the structure but still allowing movement under a persistent "force".
+In the current implementation, this shift is by 1\% once in roughly every 100
+activations of {\tt mover}.  This can be adjusted depending on the application.
+
+\subsection{Shape specification}
+
+Three basic shapes were implemented: cylinder, ellipsoid and sphere.  Although the 
+sphere is a special instance of an ellipsoid, there are implementation details,
+described below, that make them distinct.   Each shape type by itself has elements
+of symmetry that can make their orientation arbitrary, however, this symmetry is
+broken when a unit contains children in an irregular configuration.  Thus each unit
+needs to have an associated reference frame that determines its orientation and is
+acted on by rotational operations.   For a unit in a chain, the current reference 
+frame is based on the direction from its sister to brother (X) with the Y direction 
+as the projection of the unit's position onto this line in an orthogonal direction
+and Z as their mutual perpendicular.   A consequence of this is that flexing of the
+chain does not preserve the end-point distances between consecutive cylinders or
+ellipsoids along the chain.
+
+The length of cylinders and ellipsoids is set by reading in two end-points from the
+coordinate input data which have been pre-calculated from the inertial axes of
+the point-set that comprises the current unit (say, a secondary structure element or
+a domain) \cite{TaylorWRet83b}.  As well as the length, the line linking these end-points specifies the
+axis that corresponds with the X direction in the internal reference frame. 
+The two end-points are then set within the data-structure that defines each unit as
+two points equidistant from the central point along the X direction.   While the length
+of a unit is determined by these end-points, this is different from the size of each
+unit which is set generically for every unit on a given level by a value specified in
+the parameter file that describes the model.   For a sphere, this is the only value
+that is needed and specifies the radius.  For a cylinder, it also specifies the
+radius which is the thickness of the tube.  For an ellipsoid, the end-points specify
+the length along the X axis and the size parameter specifies the other two axes.
+Therefore all ellipsoids are radially symmetric around X, giving a progression from
+oblate (disc) through spherical to prolate (cigar).  Ignoring scalene ellipsoids
+excludes only long flat discs which are not common shapes for secondary structures
+or domains \cite{AszodiAet94a}.
+
+\subsection{Implementation}
+
+\subsubsection{Time and memory allocation}
+
+The adoption of a common data structure for each node in the hierarchy can lead
+to the allocation of memory for variables that are seldom, if ever, used.  For
+example; the data structure allows for a general shape type which includes
+the coordinates of the end-points for tubes and ellipsoids yet if the object is
+a sphere, which it commonly is on the most populated atomic level, then space
+is wasted.   Fortunately, with a reasonable workstation or laptop, memory is
+seldom a limitation for the system and tests have been made using over a 
+million allocated nodes.
+
+With a parallel implementation (using threads), the time allocated to the
+different processes can present scheduling considerations.  A simple solution was
+adopted in which the call-back loop of each process was interleaved with a
+sleep call which suspended the process for a fixed period of time (currently 0.1~sec.).
+Within each process, higher priority was allocated to branches in the hierarchy
+that were in an active state, such as undergoing collision or close to a component
+that had been selected as being of special interest (such as the myosin molecule
+in the example considered below) or close to the user viewpoint if the system is 
+viewed interactively.
+
+\subsubsection{Visualisation}
+
+Objects were visualised in a simple viewer with all levels except the atomic being
+rendered as transparent according to the shape they had been given.  Objects in a
+chain were linked by a thin tube which for spheres ran along the centre-centre
+direction and so was always normal to the spherical surface.  For cylinders and
+ellipsoids, the linker tube ran from a sphere placed on the end-points, which for
+cylinders had the same radius as the cylinder (producing sausage-like objects)
+and for ellipsoids, was only slightly larger than the linker tube.  This provides 
+a visual distinction between spheres and spherical ellipsoids. 
