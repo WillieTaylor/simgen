@@ -10,3 +10,8 @@ Seg.hpp  util.hpp  Vec.hpp
 Most test application directories have informative names and in each
 there is usually a tcsh script to run the program otherwise try:
 simgen somefile.run 
+
+NB: I forgot to mention the interactive controls. JKL = rot.XYZ and XYZ
+for translation. (Z trans = zoom). Each is reversed in lower-case. For 
+rotation, these are velocity increments and Q sets them back to zero.  
+ESC = quit.
